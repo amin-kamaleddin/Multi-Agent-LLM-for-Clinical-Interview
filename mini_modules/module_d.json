@@ -1,0 +1,29 @@
+{
+    "D": {
+      "title": "Panic Disorder",
+      "questions": [
+        { "id": "D1a", "text": "Have you, on more than one occasion, had spells or attacks when you suddenly felt anxious, very frightened, uncomfortable or uneasy in situations where most people would not feel that way?" },
+        { "id": "D1b", "text": "Did the spells surge to a peak within ten minutes of starting?" },
+  
+        { "id": "D2",  "text": "Did any of those spells come on unexpectedly or occur in an unpredictable or unprovoked manner?" },
+        { "id": "D3",  "text": "After an attack, did you spend a month or more with persistent concern about another attack, or worries about its consequences, or did you change your behaviour because of the attacks?" },
+  
+        { "id": "D4a", "text": "During the worst attack, did you have skipping, racing or pounding of your heart?" },
+        { "id": "D4b", "text": "Did you have sweating or clammy hands?" },
+        { "id": "D4c", "text": "Were you trembling or shaking?" },
+        { "id": "D4d", "text": "Did you have shortness of breath or smothering sensations?" },
+        { "id": "D4e", "text": "Did you have a choking sensation or lump in your throat?" },
+        { "id": "D4f", "text": "Did you have chest pain, pressure or discomfort?" },
+        { "id": "D4g", "text": "Did you have nausea, stomach problems or sudden diarrhoea?" },
+        { "id": "D4h", "text": "Did you feel dizzy, light-headed or faint?" },
+        { "id": "D4i", "text": "Did you have hot flushes or chills?" },
+        { "id": "D4j", "text": "Did you have tingling or numbness in parts of your body?" },
+        { "id": "D4k", "text": "Did things feel strange, unreal or detached, or did you feel outside your body?" },
+        { "id": "D4l", "text": "Did you fear that you were losing control or going crazy?" },
+        { "id": "D4m", "text": "Did you fear that you were dying?" },
+  
+        { "id": "D5", "text": "Were both criterion D3 and at least four D4 symptoms present?" },
+        { "id": "D6", "text": "In the past month, did you have persistent concern about another attack, or did you change behaviour because of the attacks?" }
+      ]
+    }
+  }

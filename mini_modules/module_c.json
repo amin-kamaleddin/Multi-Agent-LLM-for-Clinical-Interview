@@ -1,0 +1,28 @@
+{
+  "C": {
+    "title": "Manic and Hypomanic Episodes",
+    "questions": [
+      { "id": "C1a", "text": "Have you ever had a period when you were feeling 'up', 'high' or 'hyper' and so active or full of energy or full of yourself that you got into trouble or that other people thought you were not your usual self?" },
+      { "id": "C1b", "text": "Are you currently feeling 'up', 'high', 'hyper' or full of energy?" },
+
+      { "id": "C2a", "text": "Have you ever been persistently irritable for several days, having arguments or fights, or shouting at people, and did others notice you were more irritable or over-reactive?" },
+      { "id": "C2b", "text": "Are you currently feeling persistently irritable?" },
+
+      { "id": "C3a", "text": "When you felt most high or irritable, did you feel you could do things others couldn't do or that you were an especially important person?" },
+      { "id": "C3b", "text": "Did you need less sleep than usual and still feel rested?" },
+      { "id": "C3c", "text": "Did you talk too much, or feel a pressure to keep talking?" },
+      { "id": "C3d", "text": "Did your thoughts race or run together?" },
+      { "id": "C3e", "text": "Were you easily distracted so that any little interruption could divert you?" },
+      { "id": "C3f", "text": "Did you have a significant increase in goal-directed activity or become physically or mentally restless?" },
+      { "id": "C3g", "text": "Did you engage in pleasurable activities ignoring the risks or consequences (e.g., spending sprees, reckless driving, sexual indiscretions)?" },
+
+      { "id": "C4",  "text": "What was the longest duration these symptoms lasted most of the day nearly every day? (record number of consecutive days)" },
+      { "id": "C5",  "text": "Were you hospitalized for these problems?" },
+      { "id": "C6",  "text": "Did these symptoms cause significant problems at home, work, socially, in relationships, at school or elsewhere?" },
+      { "id": "C7",  "text": "Were these symptoms associated with a clear change from your usual functioning?" },
+      { "id": "C8a", "text": "Have you had two or more manic episodes lasting seven days or more in your lifetime?" },
+      { "id": "C8b", "text": "Have you had two or more hypomanic episodes lasting four days or more in your lifetime?" },
+      { "id": "C8c", "text": "Have you had two or more hypomanic episodes lasting only one to three days in your lifetime?" }
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+    "B": {
+        "title": "Suicidiality",
+        "questions": [
+            { "id": "B1", "text": "In the past month did you have any accident? This includes taking too much of your medication accidently"},
+            { "id": "B1a", "text": "In the past month did you plan or intend to hurt yourself in any accident, either by not avoiding a risk or by causing the accident on purpose?" },
+            { "id": "B1b", "text": "In the past month did you intend to die as a result of any accident?" },
+            { "id": "B2", "text": "In the past month did you think (even momentarily) that you would be better off dead or wish you were dead or needed to be dead?" },
+            {
+                "id": "B3",
+                "text": "In the past month, did you think (even momentarily) about harming or of hurting or of injuring yourself (with at least some intent or awareness that you might die as a result) OR think about suicide (i.e. about killing yourself)?",
+                "response_type": "yes_no",
+                "if_no": "B4",  
+                "follow_up": {
+                  "type": "grid",
+                  "rows":   ["Occasionally", "Often", "Very often"],
+                  "columns": ["Mild", "Moderate", "Severe"],
+                  "store_as": { "frequency": "row", "intensity": "column" }
+                },
+                "flags": { "high_risk": true } 
+            },
+            { "id": "B4", "text": "In the past month did you have any thoughts of suicide, or did you make a plan to commit suicide?" },
+            { "id": "B5", "text": "In the past month did you attempt suicide?" },
+            { "id": "B6", "text": "In the past month did you have any thoughts of suicide, or did you make a plan to commit suicide?" },
+            { "id": "B7", "text": "In the past month did you attempt suicide?" }
+        ]
+    }
+}

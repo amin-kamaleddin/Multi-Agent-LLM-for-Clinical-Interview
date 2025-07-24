@@ -1,0 +1,36 @@
+{
+    "K": {
+      "title": "Psychotic Disorders and Mood Disorder with Psychotic Features",
+      "questions": [
+        { "id": "K1a",  "text": "Have you ever believed people were spying on you, plotting against you or trying to hurt you?" },
+        { "id": "K1b",  "text": "Do you currently believe these things?" },
+  
+        { "id": "K2a",  "text": "Have you ever believed someone was reading your mind or that you could read someone else’s mind?" },
+        { "id": "K2b",  "text": "Do you currently believe these things?" },
+  
+        { "id": "K3a",  "text": "Have you ever believed an outside force put thoughts in your mind or made you act unlike yourself (e.g., felt possessed)?" },
+        { "id": "K3b",  "text": "Do you currently believe these things?" },
+  
+        { "id": "K4a",  "text": "Have you ever believed you were sent special messages through TV, radio, internet, books or magazines, or that a stranger was particularly interested in you?" },
+        { "id": "K4b",  "text": "Do you currently believe these things?" },
+  
+        { "id": "K5a",  "text": "Have relatives or friends ever considered any of your beliefs odd or unusual (e.g., religious, somatic, grandiose, jealous or guilty delusions)?" },
+        { "id": "K5b",  "text": "Do they currently consider your beliefs strange or unusual?" },
+  
+        { "id": "K6a",  "text": "Have you ever heard things other people couldn’t hear, such as voices?" },
+        { "id": "K6b",  "text": "Have you heard such voices or sounds in the past month?" },
+  
+        { "id": "K7a",  "text": "Have you ever had visions when awake or seen things other people couldn’t see?" },
+        { "id": "K7b",  "text": "Have you seen these things in the past month?" },
+  
+        { "id": "K8a",  "text": "Did you ever exhibit disorganised, incoherent or derailed speech, or marked loosening of associations?" },
+        { "id": "K8b",  "text": "Are you currently exhibiting disorganised or incoherent speech or loosening of associations?" },
+  
+        { "id": "K9a",  "text": "Did you ever exhibit disorganised or catatonic behaviour?" },
+        { "id": "K9b",  "text": "Are you currently exhibiting disorganised or catatonic behaviour?" },
+  
+        { "id": "K10a", "text": "Did you ever have negative symptoms (e.g., reduced emotional expression, poverty of speech, avolition)?" },
+        { "id": "K10b", "text": "Are negative symptoms prominent during the interview?" }
+      ]
+    }
+  }

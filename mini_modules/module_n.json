@@ -1,0 +1,20 @@
+{
+    "N": {
+      "title": "Generalized Anxiety Disorder",
+      "questions": [
+        { "id": "N1a", "text": "Over the past six months, have you been excessively anxious or worried about several routine things?" },
+        { "id": "N1b", "text": "Are these anxieties and worries present on most days?" },
+  
+        { "id": "N2",  "text": "Do you find it difficult to control the worries?" },
+  
+        { "id": "N3a", "text": "When anxious, did you feel restless, keyed up or on edge most of the time?" },
+        { "id": "N3b", "text": "Did you have muscle tension?" },
+        { "id": "N3c", "text": "Did you feel tired or exhausted easily?" },
+        { "id": "N3d", "text": "Did you have difficulty concentrating or find your mind going blank?" },
+        { "id": "N3e", "text": "Did you feel irritable?" },
+        { "id": "N3f", "text": "Did you have difficulty sleeping (difficulty falling asleep, waking in the night, early waking, or sleeping excessively)?" },
+  
+        { "id": "N4",  "text": "Do these anxieties and worries significantly disrupt your ability to work, function socially, maintain relationships, or do they cause significant distress?" }
+      ]
+    }
+  }

@@ -1,0 +1,728 @@
+[
+  {
+    "id": "A1",
+    "module": "Major Depressive Episode",
+    "text": "a Were you ever depressed or down, or felt sad, empty or hopeless NO YES most of the day, nearly every day, for two weeks? IF NO, CODE NO TO A1b: IF YES ASK: b For the past two weeks, were you depressed or down, or felt sad, empty or hopeless NO YES most of the day, nearly every day?",
+    "response": "yes_no"
+  },
+  {
+    "id": "A2",
+    "module": "Major Depressive Episode",
+    "text": "a Were you ever much less interested in most things or much less able to NO YES enjoy the things you used to enjoy most of the time, for two weeks? IF NO, CODE NO TO A2b: IF YES ASK: b In the past two weeks, were you much less interested in most things or NO YES much less able to enjoy the things you used to enjoy, most of the time? ➨ IS A1a OR A2a CODED YES? NO YES",
+    "response": "yes_no"
+  },
+  {
+    "id": "A3",
+    "module": "Major Depressive Episode",
+    "text": "IF A1b OR A2b = YES: EXPLORE THE CURRENT AND THE MOST SYMPTOMATIC PAST EPISODE, OTHERWISE IF A1b AND A2b = NO: EXPLORE ONLY THE MOST SYMPTOMATIC PAST EPISODE Over that two week period, when you felt depressed or uninterested: Past 2 Weeks Past Episode a Was your appetite decreased or increased nearly every day? Did your NO YES NO YES weight decrease or increase without trying intentionally (i.e., by ±5% of body weight or ±8 lb or ± 3.5 kg, for a 160 lb/70 kg person in a month)? IF YES TO EITHER, CODE YES b Did you have trouble sleeping nearly every night NO YES NO YES (difficulty falling asleep, waking up in the middle of the night, early morning wakening or sleeping excessively)? c Did you talk or move more slowly than normal or were you fidgety, restless NO YES NO YES or having trouble sitting still almost every day? Did anyone notice this? d Did you feel tired or without energy almost every day? NO YES NO YES e Did you feel worthless or guilty almost every day? NO YES NO YES IF YES, ASK FOR EXAMPLES. LOOK FOR DELUSIONS OF FAILURE, OF INADEQUACY, OF RUIN OR OF GUILT, OR OF NEEDING PUNISHMENT OR DELUSIONS OF DISEASE OR DEATH OR NIHILISTIC OR SOMATIC DELUSIONS THE EXAMPLES ARE CONSISTENT WITH A DELUSIONAL IDEA. Current Episode ☐ No ☐ Yes Past Episode ☐ No ☐ Yes f Did you have difficulty concentrating, thinking or making decisions NO YES NO YES almost every day? g Did you repeatedly think about death (FEAR OF DYING DOES NOT COUNT HERE), NO YES NO YES or have any thoughts of killing yourself, or have any intent or plan to kill yourself? Did you attempt suicide? IF YES TO EITHER, CODE YES",
+    "response": "yes_no"
+  },
+  {
+    "id": "A4",
+    "module": "Major Depressive Episode",
+    "text": "Did these symptoms cause significant distress or problems at home, NO YES NO YES at work, at school, socially, in your relationships, or in some other important way, and are they a change from your previous functioning? M.I.N.I. 7.0.2 (August 8, 2016) (8/8/16) 5 etisbew no ot si tI",
+    "response": "yes_no"
+  },
+  {
+    "id": "A5",
+    "module": "Major Depressive Episode",
+    "text": "In between 2 episodes of depression, did you ever have an interval of at least 2 months, without any significant depression or any significant loss of interest? N/A NO YES ARE 5 OR MORE ANSWERS (A1-A3) CODED YES AND IS A4 CODED YES NO YES FOR THAT TIME FRAME? MAJOR DEPRESSIVE AND EPISODE IS “RULE OUT ORGANIC CAUSE (O2 SUMMARY)” CODED YES? CURRENT ☐ SPECIFY IF THE EPISODE IS CURRENT AND / OR PAST PAST ☐ RECURRENT ☐ IF A5 IS CODED YES, CODE YES FOR RECURRENT",
+    "response": "yes_no"
+  },
+  {
+    "id": "A6",
+    "module": "Suicidality",
+    "text": "a How many episodes of depression did you have in your lifetime? _____ Between each episode there must be at least 2 months without any significant depression M.I.N.I. 7.0.2 (August 8, 2016) (8/8/16) 6 etisbew no ot si tI Points In the past month did you:",
+    "response": "yes_no"
+  },
+  {
+    "id": "B1",
+    "module": "Suicidality",
+    "text": "Have any accident? This includes taking too much of your medication accidentally. NO YES 0 IF NO TO B1, SKIP TO B2. IF YES, ASK B1a:",
+    "response": "yes_no"
+  },
+  {
+    "id": "B1a",
+    "module": "Suicidality",
+    "text": "Plan or intend to hurt yourself in any accident, either by not avoiding a risk or NO YES 0 by causing the accident on purpose? IF NO TO B1a, SKIP TO B2. IF YES, ASK B1b:",
+    "response": "yes_no"
+  },
+  {
+    "id": "B1b",
+    "module": "Suicidality",
+    "text": "Intend to die as a result of any accident? NO YES 0",
+    "response": "yes_no"
+  },
+  {
+    "id": "B2",
+    "module": "Suicidality",
+    "text": "Think (even momentarily) that you would be better off dead or wish you were dead or NO YES 1 needed to be dead?",
+    "response": "yes_no"
+  },
+  {
+    "id": "B3",
+    "module": "Suicidality",
+    "text": "Think (even momentarily) about harming or of hurting or of injuring yourself NO YES 6 -with at least some intent or awareness that you might die as a result -or think about suicide (i.e. about killing yourself)? IF NO TO B2 + B3, SKIP TO B4. OTHERWISE ASK: Frequency Intensity Occasionally ☐ Mild ☐ Often ☐ Moderate ☐ Very often ☐ Severe ☐",
+    "response": "yes_no"
+  },
+  {
+    "id": "B4",
+    "module": "Suicidality",
+    "text": "Hear a voice or voices telling you to kill yourself or have dreams with any suicidal content? NO YES 4 IF YES, mark either or both: ☐ was it a voice or voices? ☐ was it a dream?",
+    "response": "yes_no"
+  },
+  {
+    "id": "B5",
+    "module": "Suicidality",
+    "text": "Have a suicide method in mind (i.e. how)? NO YES 8",
+    "response": "yes_no"
+  },
+  {
+    "id": "B6",
+    "module": "Suicidality",
+    "text": "Have a suicide means in mind (i.e. with what)? NO YES 8",
+    "response": "yes_no"
+  },
+  {
+    "id": "B7",
+    "module": "Suicidality",
+    "text": "Have any place in mind to attempt suicide (i.e. where)? NO YES 8",
+    "response": "yes_no"
+  },
+  {
+    "id": "B8",
+    "module": "Suicidality",
+    "text": "Have any date/timeframe in mind to attempt suicide (i.e. when)? NO YES 8",
+    "response": "yes_no"
+  },
+  {
+    "id": "B9",
+    "module": "Suicidality",
+    "text": "Think about any task you would like to complete before trying to kill yourself? NO YES 8 (e.g. writing a suicide note)",
+    "response": "yes_no"
+  },
+  {
+    "id": "B10",
+    "module": "Suicidality",
+    "text": "Intend to act on thoughts of killing yourself? NO YES 8 IF YES, mark either or both: ☐ did you intend to act at the time? ☐ did you intend to act at some time in the future?",
+    "response": "yes_no"
+  },
+  {
+    "id": "B11",
+    "module": "Suicidality",
+    "text": "Intend to die as a result of a suicidal act? NO YES 8 IF YES, mark either or both: ☐ did you intend to die by suicide at the time? ☐ did you intend to die by suicide at some time in the future?",
+    "response": "yes_no"
+  },
+  {
+    "id": "B12",
+    "module": "Suicidality",
+    "text": "Feel the need or impulse to kill yourself or to plan to kill yourself sooner rather than later? NO YES 8 IF YES, mark either or both: ☐ was this to kill yourself? ☐ was this to plan to kill yourself? IF YES, mark either or both: ☐ was this largely unprovoked? ☐ was this provoked? IN ASSESSING WHETHER THIS WAS LARGELY UNPROVOKED ASK: “5 minutes before this Impulse, could you have predicted it would occur at that time?” IF NO TO B12, SKIP TO B14 M.I.N.I. 7.0.2 (August 8, 2016) (8/8/16) 7 etisbew no ot si tI",
+    "response": "yes_no"
+  },
+  {
+    "id": "B13",
+    "module": "Suicidality",
+    "text": "Have difficulty resisting these impulses? NO YES 8",
+    "response": "yes_no"
+  },
+  {
+    "id": "B14",
+    "module": "Suicidality",
+    "text": "Take any active steps to prepare for a suicide attempt in which you expected or intended to die (include anything done or purposely not done that put you closer to making a suicide attempt)? This includes times when you were going to kill yourself, but were interrupted or stopped yourself, before harming yourself. NO YES IF NO TO B14, SKIP TO B15",
+    "response": "yes_no"
+  },
+  {
+    "id": "B14a",
+    "module": "Suicidality",
+    "text": "Take active steps to prepare to kill yourself, but you did not start the suicide attempt? NO YES 9",
+    "response": "yes_no"
+  },
+  {
+    "id": "B14b",
+    "module": "Suicidality",
+    "text": "Take active steps to prepare to kill yourself, but then you stopped yourself just before NO YES 10 harming yourself (“aborted”)",
+    "response": "yes_no"
+  },
+  {
+    "id": "B14c",
+    "module": "Suicidality",
+    "text": "Take active steps to prepare to kill yourself, but then someone or something stopped you just before harming yourself (“interrupted”)? NO YES 11",
+    "response": "yes_no"
+  },
+  {
+    "id": "B15",
+    "module": "Suicidality",
+    "text": "Injure yourself on purpose without intending to kill yourself? NO YES 0",
+    "response": "yes_no"
+  },
+  {
+    "id": "B16",
+    "module": "Suicidality",
+    "text": "Attempt suicide (to kill yourself)? NO YES IF NO TO B16, SKIP TO B17",
+    "response": "yes_no"
+  },
+  {
+    "id": "B16a",
+    "module": "Suicidality",
+    "text": "Start a suicide attempt (to kill yourself), but then you decided to stop NO YES 12 and did not finish the attempt?",
+    "response": "yes_no"
+  },
+  {
+    "id": "B16b",
+    "module": "Suicidality",
+    "text": "Start a suicide attempt (to kill yourself), but then you were interrupted NO YES 13 and did not finish the attempt?",
+    "response": "yes_no"
+  },
+  {
+    "id": "B16c",
+    "module": "Suicidality",
+    "text": "Went through with a suicide attempt (to kill yourself), completely as you meant to? NO YES 14 A suicide attempt means you did something where you could possibly be injured, with at least a slight intent to die IF NO TO B16c, SKIP TO B17: Hope to be rescued / survive ☐ ☐ Expected / intended to die",
+    "response": "yes_no"
+  },
+  {
+    "id": "B17",
+    "module": "Suicidality",
+    "text": "TIME SPENT PER DAY WITH ANY SUICIDAL IMPULSES, THOUGHTS OR ACTIONS: Usual time spent per day: ____ hours ____ minutes Least amount of time spent per day: ____ hours ____ minutes Most amount of time spent per day: ____ hours ____ minutes In your lifetime:",
+    "response": "yes_no"
+  },
+  {
+    "id": "B18",
+    "module": "Suicidality",
+    "text": "Did you ever make a suicide attempt (try to kill yourself)? NO YES 4 If YES, how many times? _____________ If YES, when was the last suicide attempt? ☐ Current: within the past 12 months ☐ In early remission: between 12 and 24 months ago ☐ In remission: more than 24 months ago “A suicide attempt is any self injurious behavior, with at least some intent (> 0) to die as a result of the act. Evidence that the individual intended to kill him-or herself, at least to some degree, can be explicit or inferred from the behavior or circumstance. For example, it is defined as a suicide attempt if it is clearly not an accident or if the individual thinks the act could be lethal, even though denying intent.” (FDA Guidance for Industry Suicidal Ideation and Behavior Document 2012 and C-CASA definition). Posner K et al. Am J Psychiatry 2007; 164 (7): 1035-1043 & http://www.fda.gov/Drugs/GuidanceComplianceRegulatoryInformation/Guidances/default.htm/",
+    "response": "yes_no"
+  },
+  {
+    "id": "B19",
+    "module": "Manic And Hypomanic Episodes",
+    "text": "How likely are you to try to kill yourself within the next 3 months on a scale of 0-100% ______% ANY LIKELIHOOD > 0% ON B19 SHOULD BE CODED YES NO YES 13 M.I.N.I. 7.0.2 (August 8, 2016) (8/8/16) 8 etisbew no ot si tI NO YES IS AT LEAST 1 OF THE ABOVE (EXCEPT B1) CODED YES? SUICIDALITY IF YES, ADD THE TOTAL POINTS FOR THE ANSWERS (B1-B19) CHECKED ‘YES’ AND SPECIFY THE SUICIDALITY SCORE CATEGORY AS INDICATED IN THE DIAGNOSTIC BOX: 1-8 points Low ☐ INDICATE WHETHER THE SUICIDALITY IS CURRENT (PAST MONTH) OR A LIFETIME SUICIDE ATTEMPT 9-16 points Moderate ☐ OR BOTH BY MARKING THE APPROPRIATE BOXES OR BY LEAVING EITHER OR BOTH OF THEM UNMARKED >17 points High ☐ CURRENT = ANY POSITIVE RESPONSE IN B1a THROUGH B16C OR ANY TIME SPENT IN B17 LIFETIME ATTEMPT = B18 CODED YES LIKELY IN THE NEAR FUTURE = B19 CODED YES. CURRENT ☐ MAKE ANY ADDITIONAL COMMENTS ABOUT YOUR ASSESSMENT OF THIS PATIENT’S CURRENT LIFETIME ATTEMPT ☐ AND NEAR FUTURE SUICIDALITY IN THE SPACE BELOW: LIKELY IN NEAR FUTURE ☐ NO YES IS B18 CODED YES? SUICIDAL BEHAVIOR AND A YES RESPONSE TO DISORDER Was the suicidal act started when the subject was not in a state of confusion or delirium? Current ☐ AND A YES RESPONSE TO In early remission ☐ In remission ☐ Was the suicidal act done without a political or religious purpose? IF YES, SPECIFY WHETHER THE DISORDER IS CURRENT, IN EARLY REMISSION OR IN REMISSION M.I.N.I. 7.0.2 (August 8, 2016) (8/8/16) 9 etisbew no ot si tI (➨MEANS: GO TO THE DIAGNOSTIC BOXES, CIRCLE NO IN MANIC AND HYPOMANIC DIAGNOSTIC BOXES, AND MOVE TO NEXT MODULE) Do you have any family history of manic-depressive illness or bipolar disorder, or any family member who had mood swings treated with a medication like lithium, NO YES sodium valproate (Depakote) or lamotrigine (Lamictal)? THIS QUESTION IS NOT A CRITERION FOR BIPOLAR DISORDER, BUT IS ASKED TO INCREASE THE CLINICIAN’S VIGILANCE ABOUT THE RISK FOR BIPOLAR DISORDER IF YES, PLEASE SPECIFY WHO:________________________________________",
+    "response": "yes_no"
+  },
+  {
+    "id": "C1",
+    "module": "Manic And Hypomanic Episodes",
+    "text": "a Have you ever had a period of time when you were feeling 'up' or 'high' or ‘hyper’ NO YES and so active or full of energy or full of yourself that you got into trouble, - or that other people thought you were not your usual self? (Do not consider times when you were intoxicated on drugs or alcohol.) IF PATIENT IS PUZZLED OR UNCLEAR ABOUT WHAT YOU MEAN BY 'UP' OR 'HIGH' OR ‘HYPER’, CLARIFY AS FOLLOWS: By 'up' or 'high' or ‘hyper’ I mean: having elated mood; increased energy or increased activity; needing less sleep; having rapid thoughts; being full of ideas; having an increase in productivity, motivation, creativity, or impulsive behavior; phoning or working excessively or spending more money IF NO, CODE NO TO C1b: IF YES ASK: b Are you currently feeling ‘up’ or ‘high’ or ‘hyper’ or full of energy? NO YES",
+    "response": "yes_no"
+  },
+  {
+    "id": "C2",
+    "module": "Manic And Hypomanic Episodes",
+    "text": "a Have you ever been persistently irritable, for several days, so that you NO YES had arguments or verbal or physical fights, or shouted at people outside your family? Have you or others noticed that you have been more irritable or over reacted, compared to other people, even in situations that you felt were justified? IF NO, CODE NO TO C2b: IF YES ASK: b Are you currently feeling persistently irritable? NO YES ➨ IS C1a OR C2a CODED YES? NO YES",
+    "response": "yes_no"
+  },
+  {
+    "id": "C3",
+    "module": "Manic And Hypomanic Episodes",
+    "text": "IF C1b OR C2b = YES: EXPLORE THE CURRENT EPISODE FIRST AND THEN THE MOST SYMPTOMATIC PAST EPISODE, OTHERWISE IF C1b AND C2b = NO: EXPLORE ONLY THE MOST SYMPTOMATIC PAST EPISODE WHEN EXPLORING THE CURRENT EPISODE, PREFACE EACH QUESTION AS FOLLOWS: Over the past few days including today, when you felt high and full of energy or irritable, did you: WHEN EXPLORING THE PAST EPISODE, PREFACE EACH QUESTION AS FOLLOWS: Over a period of a few days in the past, when you felt most high and most full of energy or most irritable, did you: Current Episode Past Episode a Feel that you could do things others couldn't do, or that you were an NO YES NO YES especially important person? IF YES, ASK FOR EXAMPLES THE EXAMPLES ARE CONSISTENT WITH A DELUSIONAL IDEA. Current Episode ☐ No ☐ Yes Past Episode ☐ No ☐ Yes b Need less sleep (for example, feel rested after only a few hours sleep)? NO YES NO YES M.I.N.I. 7.0.2 (August 8, 2016) (8/8/16) 10 etisbew no ot si tI Current Episode Past Episode c Talk too much without stopping, or felt a pressure to keep talking? NO YES NO YES d Notice your thoughts going very fast or running together or racing NO YES NO YES or moving very quickly from one subject to another? e Become easily distracted so that any little interruption could distract you? NO YES NO YES f Have a significant increase in your activity or drive, at work, at school, NO YES NO YES socially or sexually or did you become physically or mentally restless? This increase in activity may be with or without a purpose g Want so much to engage in pleasurable activities that you ignored the risks or NO YES NO YES consequences (for example, spending sprees, reckless driving, or sexual indiscretions)?",
+    "response": "yes_no"
+  },
+  {
+    "id": "C3",
+    "module": "Manic And Hypomanic Episodes",
+    "text": "SUMMARY: WHEN RATING CURRENT EPISODE: NO YES NO YES IF C1b IS NO, ARE 4 OR MORE C3 ANSWERS INCLUDING C3f CODED YES? IF C1b IS YES, ARE 3 OR MORE C3 ANSWERS INCLUDING C3f CODED YES? WHEN RATING PAST EPISODE: IF C1a IS NO, ARE 4 OR MORE C3 ANSWERS INCLUDING C3f CODED YES? IF C1a IS YES, ARE 3 OR MORE C3 ANSWERS INCLUDING C3f CODED YES? CODE YES ONLY IF THE ABOVE 3 OR 4 SYMPTOMS OCCURRED DURING THE SAME TIME PERIOD RULE: ELATION/EXPANSIVENESS REQUIRES ONLY 3 OF THE C3 SYMPTOMS, WHILE IRRITABLE MOOD ALONE REQUIRES 4 OF THE C3 SYMPTOMS",
+    "response": "yes_no"
+  },
+  {
+    "id": "C4",
+    "module": "Manic And Hypomanic Episodes",
+    "text": "What is the longest time these symptoms lasted (most of the day nearly every day)? ASSESS THIS DURATION FROM THE VERY START TO THE VERY END OF SYMPTOMS, NOT JUST THE PEAK a) 3 consecutive days or less ☐ ☐ b) 4, 5 or 6 consecutive days or more ☐ ☐ c) 7 consecutive days or more ☐ ☐",
+    "response": "yes_no"
+  },
+  {
+    "id": "C5",
+    "module": "Manic And Hypomanic Episodes",
+    "text": "Were you hospitalized for these problems? NO YES NO YES IF YES, CIRCLE YES IN MANIC EPISODE FOR THAT TIME FRAME AND GO TO C7",
+    "response": "yes_no"
+  },
+  {
+    "id": "C6",
+    "module": "Manic And Hypomanic Episodes",
+    "text": "Did these symptoms cause significant problems at home, at work, socially, NO YES NO YES in your relationships, at school or in some other important way?",
+    "response": "yes_no"
+  },
+  {
+    "id": "C7",
+    "module": "Manic And Hypomanic Episodes",
+    "text": "Were these symptoms associated with a clear change in the way that you NO YES NO YES previously functioned and that was different from the way that you usually are? ARE C3 SUMMARY AND C7 AND (C4C OR C5 OR C6 OR ANY PSYCHOTIC FEATURE IN K1 THROUGH K8) NO YES CODED YES? MANIC EPISODE AND IS “RULE OUT ORGANIC CAUSE (O2 SUMMARY)” CODED YES? CURRENT ☐ PAST ☐ SPECIFY IF THE EPISODE IS CURRENT AND / OR PAST M.I.N.I. 7.0.2 (August 8, 2016) (8/8/16) 11 etisbew no ot si tI IS C3 SUMMARY CODED YES AND ARE C5 AND C6 CODED NO AND C7 CODED YES, HYPOMANIC EPISODE AND IS EITHER C4b OR C4C CODED YES? AND IS “RULE OUT ORGANIC CAUSE (O2 SUMMARY)” CODED YES? AND CURRENT ☐ NO ARE ALL PSYCHOTIC FEATURES IN K1 THROUGH K8 CODED NO? ☐ YES SPECIFY IF THE EPISODE IS CURRENT AND / OR PAST. PAST ☐ NO ☐ YES IF YES TO CURRENT MANIC EPISODE, THEN CODE CURRENT HYPOMANIC EPISODE AS NO ☐ NOT EXPLORED IF YES TO PAST MANIC EPISODE, THEN CODE PAST HYPOMANIC EPISODE AS NOT EXPLORED ARE C3 SUMMARY AND C4a CODED YES AND IS C5 CODED NO? HYPOMANIC SYMPTOMS SPECIFY IF THE EPISODE IS CURRENT AND / OR PAST CURRENT ☐ NO IF YES TO CURRENT MANIC EPISODE OR HYPOMANIC EPISODE, ☐ YES THEN CODE CURRENT HYPOMANIC SYMPTOMS AS NO PAST ☐ NO IF YES TO PAST MANIC EPISODE OR YES TO PAST HYPOMANIC EPISODE, ☐ YES THEN CODE PAST HYPOMANIC SYMPTOMS AS NOT EXPLORED ☐ NOT EXPLORED",
+    "response": "yes_no"
+  },
+  {
+    "id": "C8",
+    "module": "Panic Disorder",
+    "text": "a)IF MANIC EPISODE IS POSITIVE FOR EITHER CURRENT OR PAST ASK: Did you have 2 or more of these (manic) episodes lasting 7 days or more (C4c) in your lifetime (including the current episode if present)? NO YES b)IF MANIC OR HYPOMANIC EPISODE IS POSITIVE FOR EITHER CURRENT OR PAST ASK: Did you have 2 or more of these (hypomanic) episodes lasting 4 days or more (C4b) in your lifetime (including the current episode)? NO YES c)IF THE PAST “HYPOMANIC SYMPTOMS” CATEGORY IS CODED POSITIVE ASK: Did you have these hypomanic symptoms lasting only 1 to 3 days (C4a) 2 or more times in your lifetime, (including the current episode if present)? NO YES M.I.N.I. 7.0.2 (August 8, 2016) (8/8/16) 12 etisbew no ot si tI (➨MEANS: GO TO THE DIAGNOSTIC BOX, CIRCLE NO AND MOVE TO THE NEXT MODULE) ➨",
+    "response": "yes_no"
+  },
+  {
+    "id": "D1",
+    "module": "Panic Disorder",
+    "text": "a Have you, on more than one occasion, had spells or attacks when you suddenly NO YES felt anxious, very frightened, uncomfortable or uneasy, even in situations where most people would not feel that way? ➨ b Did the spells surge to a peak within 10 minutes of starting? NO YES ➨",
+    "response": "yes_no"
+  },
+  {
+    "id": "D2",
+    "module": "Panic Disorder",
+    "text": "At any time in the past, did any of those spells or attacks come on unexpectedly NO YES or occur in an unpredictable or unprovoked manner?",
+    "response": "yes_no"
+  },
+  {
+    "id": "D3",
+    "module": "Panic Disorder",
+    "text": "Have you ever had one such attack followed by a month or more of persistent NO YES concern about having another attack, or worries about the consequences of the attack - or did you make any significant change in your behavior because of the attacks (e.g., avoiding unfamiliar situations, or avoiding leaving your house or shopping alone, or doing things to avoid having a panic attack or visiting your doctor or the emergency room more frequently)?",
+    "response": "yes_no"
+  },
+  {
+    "id": "D4",
+    "module": "Panic Disorder",
+    "text": "During the worst attack that you can remember: a Did you have skipping, racing or pounding of your heart? NO YES b Did you have sweating or clammy hands? NO YES c Were you trembling or shaking? NO YES d Did you have shortness of breath or difficulty breathing or a smothering sensation? NO YES e Did you have a choking sensation or a lump in your throat? NO YES f Did you have chest pain, pressure or discomfort? NO YES g Did you have nausea, stomach problems or sudden diarrhea? NO YES h Did you feel dizzy, unsteady, lightheaded or feel faint? NO YES i Did you have hot flushes or chills? NO YES j Did you have tingling or numbness in parts of your body? NO YES k Did things around you feel strange, unreal, detached or unfamiliar, or did NO YES you feel outside of or detached from part or all of your body? l Did you fear that you were losing control or going crazy? NO YES m Did you fear that you were dying? NO YES ➨",
+    "response": "yes_no"
+  },
+  {
+    "id": "D5",
+    "module": "Panic Disorder",
+    "text": "ARE BOTH D3, AND 4 OR MORE D4 ANSWERS, CODED YES? NO YES PANIC DISORDER LIFETIME",
+    "response": "yes_no"
+  },
+  {
+    "id": "D6",
+    "module": "Agoraphobia",
+    "text": "In the past month did you have persistent concern about having another attack, NO YES or worry about the consequences of the attacks, PANIC DISORDER or did you change your behavior in any way because of the attacks? CURRENT M.I.N.I. 7.0.2 (August 8, 2016) (8/8/16) 13 etisbew no ot si tI IS EITHER D5 OR D6 CODED YES? NO YES AND PANIC DISORDER IS “RULE OUT ORGANIC CAUSE (O2 SUMMARY)” CODED YES? ☐ LIFETIME ☐ SPECIFY IF THE EPISODE IS CURRENT AND / OR LIFETIME. CURRENT (➨MEANS: GO TO THE DIAGNOSTIC BOX, CIRCLE NO AND MOVE TO THE NEXT MODULE)",
+    "response": "yes_no"
+  },
+  {
+    "id": "E1",
+    "module": "Agoraphobia",
+    "text": "Do you feel anxious or uneasy in places or situations where help might not be available or escape might be difficult if you had a panic attack or panic-like or embarrassing symptoms, like: being in a crowd, or standing in a line (queue), being in an open space or when crossing a bridge, being in an enclosed space, when you are alone away from home, or alone at home, ➨ or traveling in a bus, train or car or using public transportation? NO YES ➨ ARE 2 OR MORE OF THE ABOVE SITUATIONS IN E1 CODED YES? NO YES ➨",
+    "response": "yes_no"
+  },
+  {
+    "id": "E2",
+    "module": "Agoraphobia",
+    "text": "Do these situations almost always bring on fear or anxiety? NO YES ➨",
+    "response": "yes_no"
+  },
+  {
+    "id": "E3",
+    "module": "Agoraphobia",
+    "text": "Do you fear these situations so much that you avoid them, or suffer NO YES through them, or need a companion to face them? ➨",
+    "response": "yes_no"
+  },
+  {
+    "id": "E4",
+    "module": "Agoraphobia",
+    "text": "Is this fear or anxiety excessive or out of proportion to the real danger in the situation? NO YES ➨",
+    "response": "yes_no"
+  },
+  {
+    "id": "E5",
+    "module": "Agoraphobia",
+    "text": "Did this avoidance, fear or anxiety persist for at least 6 months? NO YES ➨",
+    "response": "yes_no"
+  },
+  {
+    "id": "E6",
+    "module": "Social Anxiety Disorder (Social Phobia)",
+    "text": "Did these symptoms cause significant distress or problems at home, NO YES at work, socially, at school or in some other important way? IS E6 CODED YES? NO YES AGORAPHOBIA CURRENT M.I.N.I. 7.0.2 (August 8, 2016) (8/8/16) 14 etisbew no ot si tI (➨MEANS: GO TO THE DIAGNOSTIC BOX, CIRCLE NO AND MOVE TO THE NEXT MODULE) ➨",
+    "response": "yes_no"
+  },
+  {
+    "id": "F1",
+    "module": "Social Anxiety Disorder (Social Phobia)",
+    "text": "In the past month, did you have persistent fear and significant anxiety at being watched, NO YES being the focus of attention, or of being humiliated or embarrassed or rejected? This includes things like speaking in public, eating in public or with others, writing while someone watches, performing in front of others or being in social situations EXAMPLES OF SUCH SOCIAL SITUATIONS TYPICALLY INCLUDE • INITIATING OR MAINTAINING A CONVERSATION, • PARTICIPATING IN SMALL GROUPS, • DATING, • SPEAKING TO AUTHORITY FIGURES, • ATTENDING PARTIES, • PUBLIC SPEAKING, • EATING IN FRONT OF OTHERS, • PERFORMING IN FRONT OF OTHERS, • URINATING IN A PUBLIC WASHROOM, ETC ➨",
+    "response": "yes_no"
+  },
+  {
+    "id": "F2",
+    "module": "Social Anxiety Disorder (Social Phobia)",
+    "text": "Do these social situations almost always bring on fear or anxiety? NO YES ➨",
+    "response": "yes_no"
+  },
+  {
+    "id": "F3",
+    "module": "Social Anxiety Disorder (Social Phobia)",
+    "text": "Do you fear these social situations so much that you avoid them, or suffer NO YES through them, or need a companion to face them? ➨",
+    "response": "yes_no"
+  },
+  {
+    "id": "F4",
+    "module": "Social Anxiety Disorder (Social Phobia)",
+    "text": "Is this social fear or anxiety excessive or unreasonable in these social situations? NO YES ➨",
+    "response": "yes_no"
+  },
+  {
+    "id": "F5",
+    "module": "Social Anxiety Disorder (Social Phobia)",
+    "text": "Did this social avoidance, fear or anxiety persist for at least 6 months? NO YES ➨",
+    "response": "yes_no"
+  },
+  {
+    "id": "F6",
+    "module": "Obsessive-Compulsive Disorder",
+    "text": "Did these social fears cause significant distress or interfere with your ability NO YES to function at work, at school or socially or in your relationships or in some other important way? NO YES IS F6 CODED YES? SOCIAL ANXIETY AND DISORDER (Social Phobia) IS “RULE OUT ORGANIC CAUSE (O2 SUMMARY)” CODED YES? CURRENT NOTE TO CLINICIAN: PLEASE SPECIFY IF THE SUBJECT’S FEARS ARE RESTRICTED TO SPEAKING OR RESTRICTED TO PERFORMANCE PERFORMING IN PUBLIC ☐ SAD ONLY M.I.N.I. 7.0.2 (August 8, 2016) (8/8/16) 15 etisbew no ot si tI (➨MEANS: GO TO THE DIAGNOSTIC BOX, CIRCLE NO AND MOVE TO THE NEXT MODULE)",
+    "response": "yes_no"
+  },
+  {
+    "id": "G1a",
+    "module": "Obsessive-Compulsive Disorder",
+    "text": "In the past month, have you been bothered by recurrent thoughts, impulses, or NO YES images that were unwanted, distasteful, inappropriate, intrusive, or distressing? - ¯ (For example, the idea that you were dirty, contaminated or had germs, or fear of SKIP TO G3a contaminating others, or fear of harming someone even though it disturbs or distresses you, or fear you would act on some impulse, or fear or superstitions that you would be responsible for things going wrong, or obsessions with sexual thoughts, images or impulses, or religious obsessions.)",
+    "response": "yes_no"
+  },
+  {
+    "id": "G1b",
+    "module": "Obsessive-Compulsive Disorder",
+    "text": "In the past month, did you try to suppress these thoughts, impulses, or NO YES images or to neutralize or to reduce them with some other thought or action? ¯ SKIP TO G3a (DO NOT INCLUDE SIMPLY EXCESSIVE WORRIES ABOUT REAL LIFE PROBLEMS. DO NOT INCLUDE OBSESSIONS DIRECTLY RELATED TO HOARDING, HAIR PULLING, SKIN PICKING, BODY DYSMORPHIC DISORDER, EATING DISORDERS, SEXUAL DEVIATIONS, PATHOLOGICAL GAMBLING, OR ALCOHOL OR DRUG ABUSE BECAUSE THE PATIENT MAY DERIVE PLEASURE FROM THE ACTIVITY AND MAY WANT TO RESIST IT ONLY BECAUSE OF ITS NEGATIVE CONSEQUENCES.)",
+    "response": "yes_no"
+  },
+  {
+    "id": "G2",
+    "module": "Obsessive-Compulsive Disorder",
+    "text": "Did they keep coming back into your mind even when you tried to ignore or NO YES get rid of them? obsessions",
+    "response": "yes_no"
+  },
+  {
+    "id": "G3a",
+    "module": "Obsessive-Compulsive Disorder",
+    "text": "In the past month, did you feel driven to do something repeatedly in response to an NO YES obsession or in response to a rigid rule, like washing or cleaning excessively, counting or checking things over and over, or repeating or arranging things, or other superstitious rituals?",
+    "response": "yes_no"
+  },
+  {
+    "id": "G3b",
+    "module": "Obsessive-Compulsive Disorder",
+    "text": "Are these rituals done to prevent or reduce anxiety or distress or to prevent something NO YES bad from happening and are they excessive or unreasonable? compulsions ➨ ARE (G1a AND G1b AND G2) OR (G3a AND G3b) CODED YES? NO YES",
+    "response": "yes_no"
+  },
+  {
+    "id": "G4",
+    "module": "Posttraumatic Stress Disorder",
+    "text": "In the past month, did these obsessive thoughts and/or compulsive behaviors NO YES cause significant distress, or interfere with your ability to function at home, at work, at school or socially or in your relationships or in some other important way or did they O.C.D take more than one hour a day? CURRENT AND INSIGHT: ☐ IS “RULE OUT ORGANIC CAUSE (O2 SUMMARY)” CODED YES? GOOD OR FAIR (CHECK FOR ANY OBSESSIVE COMPULSIVE SYMPTOMS STARTING WITHIN 3 WEEKS OF AN INFECTION) POOR ☐ ☐ ABSENT SPECIFY THE LEVEL OF INSIGHT AND IF THE EPISODE IS TIC-RELATED ☐ DELUSIONAL ☐ TIC-RELATED M.I.N.I. 7.0.2 (August 8, 2016) (8/8/16) 16 etisbew no ot si tI (➨MEANS: GO TO THE DIAGNOSTIC BOX, CIRCLE NO, AND MOVE TO THE NEXT MODULE) ➨",
+    "response": "yes_no"
+  },
+  {
+    "id": "H1",
+    "module": "Posttraumatic Stress Disorder",
+    "text": "Have you ever experienced or witnessed or had to deal with an extremely traumatic NO YES event that included actual or threatened death or serious injury or sexual violence to you or someone else? EXAMPLES OF TRAUMATIC EVENTS INCLUDE: SERIOUS ACCIDENTS, SEXUAL OR PHYSICAL ASSAULT, A TERRORIST ATTACK, BEING HELD HOSTAGE, KIDNAPPING, FIRE, DISCOVERING A BODY, WAR, OR NATURAL DISASTER, WITNESSING THE VIOLENT OR SUDDEN DEATH OF SOMEONE CLOSE TO YOU, OR A LIFE THREATENING ILLNESS ➨",
+    "response": "yes_no"
+  },
+  {
+    "id": "H2",
+    "module": "Posttraumatic Stress Disorder",
+    "text": "Starting after the traumatic event, did you repeatedly re-experience the event NO YES in an unwanted mentally distressing way, (such as in recurrent dreams related to the event, intense recollections or memories, or flashbacks or as if the event was recurring) or did you have intense physical or psychological reactions when you were reminded about the event or exposed to a similar event?",
+    "response": "yes_no"
+  },
+  {
+    "id": "H3",
+    "module": "Posttraumatic Stress Disorder",
+    "text": "In the past month: a Did you persistently try to avoid thinking about or remembering distressing details NO YES or feelings related to the event? b Did you persistently try to avoid people, conversations, places, situations, NO YES activities or things that bring back distressing recollections of the event? ➨ ARE 1 OR MORE H3 ANSWERS CODED YES? NO YES",
+    "response": "yes_no"
+  },
+  {
+    "id": "H4",
+    "module": "Posttraumatic Stress Disorder",
+    "text": "In the past month: a Did you have trouble recalling some important part of the trauma? NO YES (but not because of or related to head trauma, alcohol or drugs) b Were you constantly and unreasonably negative about yourself or others or the world? NO YES c Did you constantly blame yourself or others in unreasonable ways for the trauma? NO YES d Were your feelings always negative (such as fear, horror, anger, guilt or shame)? NO YES e Have you become much less interested in participating in activities that NO YES were meaningful to you before? f Did you feel detached or estranged from others? NO YES g Were you unable to experience any good feelings (such as happiness, satisfaction NO YES or loving feelings)? ➨ ARE 2 OR MORE H4 ANSWERS CODED YES? NO YES M.I.N.I. 7.0.2 (August 8, 2016) (8/8/16) 17 etisbew no ot si tI",
+    "response": "yes_no"
+  },
+  {
+    "id": "H5",
+    "module": "Posttraumatic Stress Disorder",
+    "text": "In the past month: a Were you especially irritable or did you have outbursts of anger with little or no provocation? NO YES b Were you more reckless or more self-destructive? NO YES c Were you more nervous or constantly on your guard? NO YES d Were you more easily startled? NO YES e Did you have more difficulty concentrating? NO YES f Did you have more difficulty sleeping? NO YES ➨ ARE 2 OR MORE H5 ANSWERS CODED YES? NO YES ➨",
+    "response": "yes_no"
+  },
+  {
+    "id": "H6",
+    "module": "Posttraumatic Stress Disorder",
+    "text": "Did all these problems start after the traumatic event and last for more than one month? NO YES NO YES",
+    "response": "yes_no"
+  },
+  {
+    "id": "H7",
+    "module": "Alcohol Use Disorder",
+    "text": "During the past month, did these problems cause significant distress, or interfere with your ability to function at home, at work, at POSTTRAUMATIC school or socially or in your relationships or in some other important way? STRESS DISORDER CURRENT AND IS “RULE OUT ORGANIC CAUSE (O2 SUMMARY)” CODED YES? WITH ☐ DEPERSONALIZATION DEREALIZATION ☐ SPECIFY IF THE CONDITION IS ASSOCIATED WITH DEPERSONALIZATION, DEREALIZATION OR ☐ DELAYED EXPRESSION WITH DELAYED EXPRESSION M.I.N.I. 7.0.2 (August 8, 2016) (8/8/16) 18 etisbew no ot si tI (➨MEANS: GO TO DIAGNOSTIC BOX, CIRCLE NO AND MOVE TO THE NEXT MODULE) ➨",
+    "response": "yes_no"
+  },
+  {
+    "id": "I1",
+    "module": "Alcohol Use Disorder",
+    "text": "In the past 12 months, have you had 3 or more alcoholic drinks, - within a NO YES 3 hour period, - on 3 or more occasions?",
+    "response": "yes_no"
+  },
+  {
+    "id": "I2",
+    "module": "Alcohol Use Disorder",
+    "text": "In the past 12 months: a During the times when you drank alcohol, did you end up drinking more than NO YES you planned when you started? b Did you repeatedly want to reduce or control your alcohol use? NO YES Did you try to cut down or control your alcohol use, but failed? IF YES TO EITHER, CODE YES c On the days that you drank, did you spend substantial time obtaining NO YES alcohol, drinking, or recovering from the effects of alcohol? d Did you crave or have a strong desire or urge to use alcohol? NO YES e Did you spend less time meeting your responsibilities at work, at school, NO YES or at home, because of your repeated drinking? f If your drinking caused problems with your family or other people, NO YES did you still keep on drinking? g Were you intoxicated more than once in any situation where you or others were physically NO YES at risk, for example, driving a car, riding a motorbike, using machinery, boating, etc.? h Did you continue to use alcohol, even though it was clear that the alcohol NO YES had caused or worsened psychological or physical problems? i Did you reduce or give up important work, social or recreational activities NO YES because of your drinking? j Did you need to drink a lot more in order to get the same effect that you got when you first NO YES started drinking or did you get much less effect with continued use of the same amount? k1 When you cut down on heavy or prolonged drinking did you have any of the following: NO YES 1.increased sweating or increased heart rate, ☐ 2.hand tremor or “the shakes” ☐ 3.trouble sleeping ☐ 4.nausea or vomiting ☐ 5.hearing or seeing things other people could not see or hear or having sensations in your skin for no apparent reason ☐ 6.agitation ☐ 7.anxiety ☐ 8.seizures ☐ IF YES TO 2 OR MORE OF THE ABOVE 8, CODE k1 AS YES k2 Did you drink alcohol to reduce or avoid withdrawal symptoms or to avoid being hung-over? NO YES M.I.N.I. 7.0.2 (August 8, 2016) (8/8/16) 19 etisbew no ot si tI",
+    "response": "yes_no"
+  },
+  {
+    "id": "I2k",
+    "module": "Substance Use Disorder (Non-Alcohol)",
+    "text": "SUMMARY: IF YES TO I2k1 OR I2k2, CODE YES NO YES ARE 2 OR MORE I2 ANSWERS FROM I2a THROUGH I2k SUMMARY CODED YES? NO YES (I2k1 AND I2k2 TOGETHER COUNT AS ONE AMONG THESE CHOICES) ALCOHOL USE DISORDER PAST 12 MONTHS SPECIFIERS FOR ALCOHOL USE DISORDER: SPECIFY IF: MILD = 2-3 OF THE I2 SYMPTOMS MILD ☐ MODERATE = 4-5 OF THE I2 SYMPTOMS MODERATE ☐ SEVERE = 6 OR MORE OF THE I2 SYMPTOMS ☐ SEVERE IN EARLY REMISSION = CRITERIA NOT MET FOR BETWEEN 3 & 12 MONTHS IN SUSTAINED REMISSION = CRITERIA NOT MET FOR 12 MONTHS OR MORE. IN EARLY REMISSION ☐ (BOTH WITH THE EXCEPTION OF CRITERION d- (CRAVING) ABOVE.) IN SUSTAINED REMISSION ☐ IN A CONTROLLED ENVIRONMENT = WHERE ALCOHOL ACCESS IS RESTRICTED ☐ IN A CONTROLLED ENVIRONMENT M.I.N.I. 7.0.2 (August 8, 2016) (8/8/16) 20 etisbew no ot si tI (➨MEANS: GO TO THE DIAGNOSTIC BOX, CIRCLE NO AND MOVE TO THE NEXT MODULE) Now I am going to show you / read to you a list of street drugs or medicines ➨",
+    "response": "yes_no"
+  },
+  {
+    "id": "J1",
+    "module": "Substance Use Disorder (Non-Alcohol)",
+    "text": "a In the past 12 months, did you take any of these drugs more than once, NO YES to get high, to feel elated, to get “a buzz” or to change your mood? CIRCLE EACH DRUG TAKEN: Stimulants: amphetamines, \"speed\", crystal meth, “crank”, Dexedrine, Ritalin, diet pills Cocaine: snorting, IV, freebase, crack, \"speedball\" Opiates: heroin, morphine, Dilaudid, opium, Demerol, methadone, Darvon, codeine, Percodan, Vicodin, OxyContin Hallucinogens: LSD (\"acid\"), mescaline, peyote, psilocybin, STP, \"mushrooms\", “ecstasy”, MDA, MDMA Dissociative Drugs: PCP (Phencyclidine ,\"Angel Dust\", \"Peace Pill\", “Hog”), or ketamine (“Special K”) Inhalants: \"glue\", ethyl chloride, “rush”, nitrous oxide (\"laughing gas\"), amyl or butyl nitrate (\"poppers\") Cannabis: marijuana, hashish (\"hash\"), THC, \"pot\", \"grass\", \"weed\", \"reefer\" Sedatives, Hypnotics or Anxiolytics: Quaalude, Seconal (\"reds\"), Valium, Xanax, Librium, Ativan, Dalmane, Halcion, barbiturates, Miltown, GHB, Roofinol, “Roofies” Miscellaneous: steroids, nonprescription sleep or diet pills. Cough Medicine? Any others? SPECIFY THE MOST USED DRUG(S): WHICH DRUG(S) CAUSE THE BIGGEST PROBLEMS? FIRST EXPLORE THE CRITERIA BELOW FOR THE DRUG CLASS CAUSING THE BIGGEST PROBLEMS AND THE ONE MOST LIKELY TO MEET CRITERIA FOR SUBSTANCE USE DISORDER. IF SEVERAL DRUG CLASSES HAVE BEEN MISUSED, EXPLORE AS MANY OR AS FEW AS REQUIRED BY THE PROTOCOL",
+    "response": "yes_no"
+  },
+  {
+    "id": "J2",
+    "module": "Substance Use Disorder (Non-Alcohol)",
+    "text": "Considering your use of (NAME OF DRUG / DRUG CLASS SELECTED), in the past 12 months: a During the times when you used the drug, did you end up using more NO YES (NAME OF DRUG / DRUG CLASS SELECTED) than you planned when you started? b Did you repeatedly want to reduce or control your (NAME OF DRUG / DRUG CLASS SELECTED) use? NO YES Did you try to cut down or control your (NAME OF DRUG / DRUG CLASS SELECTED) use, but failed? IF YES TO EITHER, CODE YES c On the days that you used more (NAME OF DRUG / DRUG CLASS SELECTED), did you spend substantial NO YES time obtaining (NAME OF DRUG / DRUG CLASS SELECTED), using it, or recovering from the its effects? d Did you crave or have a strong desire or urge to use (NAME OF DRUG / DRUG CLASS SELECTED)? NO YES e Did you spend less time meeting your responsibilities at work, at school, or at home, NO YES because of your repeated (NAME OF DRUG / DRUG CLASS SELECTED) use? f If your (NAME OF DRUG / DRUG CLASS SELECTED) use caused problems with your family or NO YES other people, did you still keep on using it? g Did you use the drug more than once in any situation where you or others were physically NO YES at risk, for example, driving a car, riding a motorbike, using machinery, boating, etc.? h Did you continue to use (NAME OF DRUG / DRUG CLASS SELECTED), even though it was clear NO YES that the (NAME OF DRUG / DRUG CLASS SELECTED) had caused or worsened psychological or physical problems? M.I.N.I. 7.0.2 (August 8, 2016) (8/8/16) 21 etisbew no ot si tI i Did you reduce or give up important work, social or recreational activities NO YES because of your (NAME OF DRUG / DRUG CLASS SELECTED) use? j Did you need to use (NAME OF DRUG / DRUG CLASS SELECTED) a lot more in order to get the NO YES same effect that you got when you first started using it or did you get much less effect with continued use of the same amount? THIS CRITERION IS CODED NO IF THE MEDICATION IS PRESCRIBED AND USED UNDER APPROPRIATE MEDICAL SUPERVISION k1 When you cut down on heavy or prolonged use of the drug did you have any of the NO YES following withdrawal symptoms: IF YES TO THE REQUIRED NUMBER OF WITHDRAWAL SYMPTOMS FOR EACH CLASS, CODE J2k1 AS YES THIS CRITERION IS CODED NO IF THE MEDICATION IS PRESCRIBED AND USED UNDER APPROPRIATE MEDICAL SUPERVISION Sedatives, Hypnotics or Anxiolytics (2 or more withdrawal symptoms) 1. increased sweating or increased heart rate ☐ 2. hand tremor or “the shakes” ☐ 3. trouble sleeping ☐ 4. nausea or vomiting ☐ 5.hearing or seeing things other people could not see or hear or having sensations in your skin for no apparent reason ☐ 6.agitation ☐ 7.anxiety ☐ 8.seizures ☐ Opiates (3 or more withdrawal symptoms) 1.feeling depressed ☐ 2.nausea or vomiting ☐ 3.muscle aches ☐ 4.runny nose or teary eyes ☐ 5.dilated pupils, goose bumps or hair standing on end or sweating ☐ 6.diarrhea ☐ 7.yawning ☐ 8.hot flashes ☐ 9.trouble sleeping ☐ Stimulants and Cocaine (2 or more withdrawal symptoms) 1.fatigue ☐ 2.vivid or unpleasant dreams ☐ 3.difficulty sleeping or sleeping too much ☐ 4.increased appetite ☐ 5.feeling or looking physically or mentally slowed down ☐ Cannabis (3 or more withdrawal symptoms) 1.irritability, anger or aggression ☐ 2.nervousness or anxiety ☐ 3.trouble sleeping ☐ 4.appetite or weight loss ☐ 5.restlessness ☐ 6.feeling depressed ☐ 7.significant discomfort from one of the following: “stomach pain”, tremors or “shakes”, sweating, hot flashes, chills, headaches. ☐ k2 Did you use (NAME OF DRUG / DRUG CLASS SELECTED) to reduce or avoid withdrawal symptoms? NO YES M.I.N.I. 7.0.2 (August 8, 2016) (8/8/16) 22 etisbew no ot si tI",
+    "response": "yes_no"
+  },
+  {
+    "id": "J2k",
+    "module": "Psychotic Disorders And Mood Disorder With Psychotic Features",
+    "text": "SUMMARY: IF YES TO J2k1 OR J2k2, CODE YES. NO YES ARE 2 OR MORE J2 ANSWERS FROM J2a THROUGH J2k SUMMARY CODED YES? NO YES (J2k1 AND J2k2 TOGETHER COUNT AS ONE AMONG THESE CHOICES.) SUBSTANCE (Drug or Drug Class Name) USE DISORDER PAST 12 MONTHS SPECIFIERS FOR SUBSTANCE USE DISORDER: SPECIFY IF: ☐ MILD MILD = 2-3 OF THE J2 SYMPTOMS MODERATE = 4-5 OF THE J2 SYMPTOMS MODERATE ☐ SEVERE = 6 OR MORE OF THE J2 SYMPTOMS SEVERE ☐ IN EARLY REMISSION = CRITERIA NOT MET FOR BETWEEN 3 & 12 MONTHS. ☐ IN EARLY REMISSION IN SUSTAINED REMISSION = CRITERIA NOT MET FOR 12 MONTHS OR MORE ☐ (BOTH WITH THE EXCEPTION OF CRITERION d- (CRAVING) ABOVE.) IN SUSTAINED REMISSION IN A CONTROLLED ENVIRONMENT = WHERE SUBSTANCE / DRUG ACCESS IS RESTRICTED. IN A CONTROLLED ENVIRONMENT ☐ M.I.N.I. 7.0.2 (August 8, 2016) (8/8/16) 23 etisbew no ot si tI ASK FOR AN EXAMPLE OF EACH QUESTION ANSWERED POSITIVELY. CODE YES ONLY IF THE EXAMPLES CLEARLY SHOW A DISTORTION OF THOUGHT OR OF PERCEPTION OR IF THEY ARE NOT CULTURALLY APPROPRIATE. THE PURPOSE OF THIS MODULE IS TO EXCLUDE PATIENTS WITH PSYCHOTIC DISORDERS. THIS MODULE NEEDS EXPERIENCE Now I am going to ask you about unusual experiences that some people have",
+    "response": "yes_no"
+  },
+  {
+    "id": "K1",
+    "module": "Psychotic Disorders And Mood Disorder With Psychotic Features",
+    "text": "a Have you ever believed that people were spying on you, or that someone NO YES was plotting against you, or trying to hurt you? NOTE: ASK FOR EXAMPLES TO RULE OUT ACTUAL STALKING b IF YES: do you currently believe these things? NO YES",
+    "response": "yes_no"
+  },
+  {
+    "id": "K2",
+    "module": "Psychotic Disorders And Mood Disorder With Psychotic Features",
+    "text": "a Have you ever believed that someone was reading your mind or could hear NO YES your thoughts, or that you could actually read someone’s mind or hear what another person was thinking? b IF YES: do you currently believe these things? NO YES",
+    "response": "yes_no"
+  },
+  {
+    "id": "K3",
+    "module": "Psychotic Disorders And Mood Disorder With Psychotic Features",
+    "text": "a Have you ever believed that someone or some force outside of yourself NO YES put thoughts in your mind that were not your own, or made you act in a way that was not your usual self? Have you ever felt that you were possessed? CLINICIAN: ASK FOR EXAMPLES AND DISCOUNT ANY THAT ARE NOT PSYCHOTIC b IF YES: do you currently believe these things? NO YES",
+    "response": "yes_no"
+  },
+  {
+    "id": "K4",
+    "module": "Psychotic Disorders And Mood Disorder With Psychotic Features",
+    "text": "a Have you ever believed that you were being sent special messages through NO YES the TV, radio, internet, newspapers, books, or magazines or that a person you did not personally know was particularly interested in you? b IF YES: do you currently believe these things? NO YES",
+    "response": "yes_no"
+  },
+  {
+    "id": "K5",
+    "module": "Psychotic Disorders And Mood Disorder With Psychotic Features",
+    "text": "a Have your relatives or friends ever considered any of your beliefs odd NO YES or unusual? CLINICIAN: ASK FOR EXAMPLES. ONLY CODE YES IF THE EXAMPLES ARE CLEARLY DELUSIONAL IDEAS NOT EXPLORED IN QUESTIONS K1 TO K4. FOR EXAMPLE, RELIGIOUS, DEATH, DISEASE OR SOMATIC DELUSIONS, DELUSIONS OF GRANDIOSITY, JEALOUSY OR GUILT, OR OF FAILURE, INADEQUACY, RUIN, OR DESTITUTION, OR NIHILISTIC DELUSIONS b IF YES: do they currently consider your beliefs strange or unusual? NO YES",
+    "response": "yes_no"
+  },
+  {
+    "id": "K6",
+    "module": "Psychotic Disorders And Mood Disorder With Psychotic Features",
+    "text": "a Have you ever heard things other people couldn't hear, such as voices? NO YES IF YES TO VOICE HALLUCINATION: Was the voice commenting on your thoughts NO YES or behavior or did you hear two or more voices talking to each other? b IF YES TO K6a: have you heard sounds / voices in the past month? NO YES IF YES TO VOICE HALLUCINATION: Was the voice commenting on your thoughts NO YES or behavior or did you hear two or more voices talking to each other? M.I.N.I. 7.0.2 (August 8, 2016) (8/8/16) 24 etisbew no ot si tI",
+    "response": "yes_no"
+  },
+  {
+    "id": "K7",
+    "module": "Psychotic Disorders And Mood Disorder With Psychotic Features",
+    "text": "a Have you ever had visions when you were awake or have you ever seen things NO YES other people couldn't see? CLINICIAN: CHECK TO SEE IF THESE ARE CULTURALLY INAPPROPRIATE b IF YES: have you seen these things in the past month? NO YES CLINICIAN'S JUDGMENT",
+    "response": "yes_no"
+  },
+  {
+    "id": "K8",
+    "module": "Psychotic Disorders And Mood Disorder With Psychotic Features",
+    "text": "a DID THE PATIENT EVER IN THE PAST EXHIBIT DISORGANIZED, INCOHERENT OR DERAILED NO YES SPEECH, OR MARKED LOOSENING OF ASSOCIATIONS?",
+    "response": "yes_no"
+  },
+  {
+    "id": "K8",
+    "module": "Psychotic Disorders And Mood Disorder With Psychotic Features",
+    "text": "b IS THE PATIENT CURRENTLY EXHIBITING INCOHERENCE, DISORGANIZED OR DERAILED NO YES SPEECH, OR MARKED LOOSENING OF ASSOCIATIONS?",
+    "response": "yes_no"
+  },
+  {
+    "id": "K9",
+    "module": "Psychotic Disorders And Mood Disorder With Psychotic Features",
+    "text": "a DID THE PATIENT EVER IN THE PAST EXHIBIT DISORGANIZED OR CATATONIC NO YES BEHAVIOR?",
+    "response": "yes_no"
+  },
+  {
+    "id": "K9",
+    "module": "Psychotic Disorders And Mood Disorder With Psychotic Features",
+    "text": "b IS THE PATIENT CURRENTLY EXHIBITING DISORGANIZED OR CATATONIC NO YES BEHAVIOR?",
+    "response": "yes_no"
+  },
+  {
+    "id": "K10",
+    "module": "Psychotic Disorders And Mood Disorder With Psychotic Features",
+    "text": "a DID THE PATIENT EVER IN THE PAST HAVE NEGATIVE SYMPTOMS, E.G. SIGNIFICANT REDUCTION OF NO YES EMOTIONAL EXPRESSION OR AFFECTIVE FLATTENING, POVERTY OF SPEECH (ALOGIA) OR AN INABILITY TO INITIATE OR PERSIST IN GOAL-DIRECTED ACTIVITIES (AVOLITION)?",
+    "response": "yes_no"
+  },
+  {
+    "id": "K10",
+    "module": "Psychotic Disorders And Mood Disorder With Psychotic Features",
+    "text": "b ARE NEGATIVE SYMPTOMS OF SCHIZOPHRENIA, E.G. SIGNIFICANT REDUCTION OF EMOTIONAL NO YES EXPRESSION OR AFFECTIVE FLATTENING, POVERTY OF SPEECH (ALOGIA) OR AN INABILITY TO INITIATE OR PERSIST IN GOAL-DIRECTED ACTIVITIES (AVOLITION), PROMINENT DURING THE INTERVIEW?",
+    "response": "yes_no"
+  },
+  {
+    "id": "K11",
+    "module": "Psychotic Disorders And Mood Disorder With Psychotic Features",
+    "text": "a ARE 1 OR MORE « a » QUESTIONS FROM K1a TO K7a, CODED YES? AND IS EITHER: MAJOR DEPRESSIVE EPISODE, (CURRENT, RECURRENT OR PAST) OR MANIC OR HYPOMANIC EPISODE, (CURRENT OR PAST) CODED YES? AND HOW LONG HAS THE MOOD EPISODE LASTED? _________ HOW LONG HAS THE PSYCHOTIC EPISODE LASTED? _________ IF SUCH A MOOD EPISODE IS PRESENT, CODE YES TO K11a ONLY IF THE MOOD DISTURBANCE IS PRESENT FOR THE MAJORITY OF THE TOTAL DURATION OF THE ACTIVE AND RESIDUAL PERIODS OF THE PSYCHOTIC SYMPTOMS. OTHERWISE CODE NO. NO YES 9 K13 IF NO TO K11a AND THE TOTAL DURATION OF THE MOOD EPISODE IS LESS THAN THE TOTAL DURATION OF THE PSYCHOTIC EPISODE, THEN CIRCLE NO IN BOTH ‘MOOD DISORDER WITH PSYCHOTIC FEATURES’ DIAGNOSTIC BOXES AND MOVE TO K13 M.I.N.I. 7.0.2 (August 8, 2016) (8/8/16) 25 etisbew no ot si tI b You told me earlier that you had period(s) when you felt (depressed/high/persistently NO YES irritable) Were the beliefs and experiences you just described (SYMPTOMS CODED YES FROM K1a TO MOOD DISORDER WITH",
+    "response": "yes_no"
+  },
+  {
+    "id": "K7a",
+    "module": "Psychotic Disorders And Mood Disorder With Psychotic Features",
+    "text": ") restricted exclusively to times when you were feeling depressed/high/irritable? PSYCHOTIC FEATURES IF THE PATIENT EVER HAD A PERIOD OF AT LEAST 2 WEEKS OF HAVING THESE BELIEFS OR EXPERIENCE (PSYCHOTIC SYMPTOMS) WHEN THEY WERE NOT DEPRESSED/HIGH/IRRITABLE, CODE NO TO THIS LIFETIME DISORDER IF THE ANSWER IS NO TO THIS DISORDER GROUPING, ALSO CIRCLE NO TO K12 AND MOVE TO K13",
+    "response": "yes_no"
+  },
+  {
+    "id": "K12",
+    "module": "Psychotic Disorders And Mood Disorder With Psychotic Features",
+    "text": "a ARE 1 OR MORE « b » QUESTIONS FROM K1b TO K7b CODED YES? NO YES AND IS EITHER: MAJOR DEPRESSIVE EPISODE (CURRENT) MOOD DISORDER WITH OR PSYCHOTIC FEATURES MANIC OR HYPOMANIC EPISODE (CURRENT) CODED YES? CURRENT IF THE ANSWER IS YES TO THIS DISORDER (LIFETIME OR CURRENT), CIRCLE NO TO K13 AND K14 AND MOVE TO THE NEXT MODULE",
+    "response": "yes_no"
+  },
+  {
+    "id": "K13",
+    "module": "Psychotic Disorders And Mood Disorder With Psychotic Features",
+    "text": "ARE 1 OR MORE « b » QUESTIONS FROM K1b TO K8b, CODED YES? NO YES AND PSYCHOTIC DISORDER CURRENT ARE 2 OR MORE « b » QUESTIONS FROM K1b TO K10b, CODED YES? AND DID AT LEAST TWO OF THE PSYCHOTIC SYMPTOMS OCCUR DURING THE SAME 1-MONTH PERIOD? AND IS “RULE OUT ORGANIC CAUSE (O2 SUMMARY)” CODED YES?",
+    "response": "yes_no"
+  },
+  {
+    "id": "K14",
+    "module": "Anorexia Nervosa",
+    "text": "IS K13 CODED YES? NO YES OR (ARE 1 OR MORE « a » QUESTIONS FROM K1a TO K8a, CODED YES? PSYCHOTIC DISORDER AND LIFETIME ARE 2 OR MORE « a » QUESTIONS FROM K1a TO K10a, CODED YES AND DID AT LEAST 2 OF THE PSYCHOTIC SYMPTOMS OCCUR DURING THE SAME 1-MONTH PERIOD?) AND IS “RULE OUT ORGANIC CAUSE (O2 SUMMARY)” CODED YES? M.I.N.I. 7.0.2 (August 8, 2016) (8/8/16) 26 etisbew no ot si tI (➨MEANS: GO TO THE DIAGNOSTIC BOX, CIRCLE NO, AND MOVE TO THE NEXT MODULE) ☐ ☐ ☐",
+    "response": "yes_no"
+  },
+  {
+    "id": "L1",
+    "module": "Anorexia Nervosa",
+    "text": "a How tall are you? ft in ☐ ☐ ☐ cm ☐ ☐ ☐ b. What was your lowest weight in the past 3 months? lb ☐ ☐ ☐ kg ➨ c. IS PATIENT’S WEIGHT EQUAL TO OR BELOW THE THRESHOLD CORRESPONDING TO NO YES HIS / HER HEIGHT? (SEE TABLE BELOW.) In the past 3 months: ➨",
+    "response": "yes_no"
+  },
+  {
+    "id": "L2",
+    "module": "Anorexia Nervosa",
+    "text": "In spite of this low weight, have you tried not to gain weight or to restrict your food intake? NO YES ➨",
+    "response": "yes_no"
+  },
+  {
+    "id": "L3",
+    "module": "Anorexia Nervosa",
+    "text": "Have you intensely feared gaining weight or becoming fat, even though you were underweight? NO YES",
+    "response": "yes_no"
+  },
+  {
+    "id": "L4",
+    "module": "Anorexia Nervosa",
+    "text": "a Have you considered yourself too big / fat or that part of your body was too big / fat? NO YES b Has your body weight or shape greatly influenced how you felt about yourself? NO YES c Have you thought that your current low body weight was normal or excessive? NO YES ➨",
+    "response": "yes_no"
+  },
+  {
+    "id": "L5",
+    "module": "Bulimia Nervosa",
+    "text": "ARE 1 OR MORE ITEMS FROM L4 CODED YES? NO YES IS L5 CODED YES? NO YES ANOREXIA NERVOSA CURRENT HEIGHT / WEIGHT TABLE CORRESPONDING TO A BMI THRESHOLD OF 17.0 KG/M 2 Height/Weight ft/in 4'9 4'10 4'11 5'0 5'1 5'2 5'3 5'4 5'5 5'6 5'7 5'8 5'9 5'10 lb 79 82 84 87 90 93 96 99 102 106 109 112 115 119 cm 145 147 150 152 155 158 160 163 165 168 170 173 175 178 kg 36 37 38.5 39.5 41 42.5 43.5 45.5 46.5 48 49 51 52 54 Height/Weight ft/in 5'11 6'0 6'1 6'2 6'3 lb 122 125 129 133 136 cm 180 183 185 188 191 kg 55 57 58.5 60 62 The weight thresholds above are calculated using a body mass index (BMI) equal to or below 17.0 kg/m2 for the patient's height using the Center of Disease Control & Prevention BMI Calculator. This is the threshold guideline below which a person is deemed underweight by the DSM-5 for Anorexia Nervosa M.I.N.I. 7.0.2 (August 8, 2016) (8/8/16) 27 etisbew no ot si tI (➨MEANS: GO TO THE DIAGNOSTIC BOXES, CIRCLE NO IN THE 3 BULIMIA SECTION DIAGNOSTIC BOXES, AND MOVE TO BINGE EATING DISORDER) ➨",
+    "response": "yes_no"
+  },
+  {
+    "id": "M1",
+    "module": "Bulimia Nervosa",
+    "text": "In the past three months, did you have eating binges or times when you ate NO YES a very large amount of food within a 2-hour period? ➨",
+    "response": "yes_no"
+  },
+  {
+    "id": "M2",
+    "module": "Bulimia Nervosa",
+    "text": "During these binges, did you feel that your eating was out of control? NO YES ➨",
+    "response": "yes_no"
+  },
+  {
+    "id": "M3",
+    "module": "Bulimia Nervosa",
+    "text": "In the last 3 months, did you have eating binges as often as once a week? NO YES ➨",
+    "response": "yes_no"
+  },
+  {
+    "id": "M4",
+    "module": "Bulimia Nervosa",
+    "text": "Did you do anything to compensate for, or to prevent a weight gain, NO YES like vomiting, fasting, exercising or taking laxatives, enemas, diuretics (fluid pills), or other medications? Did you do this as often as once a week?",
+    "response": "yes_no"
+  },
+  {
+    "id": "M4a",
+    "module": "Bulimia Nervosa",
+    "text": "Number of Episodes of Inappropriate Compensatory Behaviors per Week? ______ Number of Days of Inappropriate Compensatory Behaviors per Week? ______ ➨",
+    "response": "yes_no"
+  },
+  {
+    "id": "M5",
+    "module": "Bulimia Nervosa",
+    "text": "Does your body weight or shape greatly influence how you feel about yourself? NO YES",
+    "response": "yes_no"
+  },
+  {
+    "id": "M6",
+    "module": "Bulimia Nervosa",
+    "text": "DO THE PATIENT’S SYMPTOMS MEET CRITERIA FOR ANOREXIA NERVOSA? NO YES ¯ Skip to M8",
+    "response": "yes_no"
+  },
+  {
+    "id": "M7",
+    "module": "Bulimia Nervosa",
+    "text": "Do these binges occur only when you are under (______lb/kg)? NO YES CLINICIAN: WRITE IN THE ABOVE PARENTHESIS THE THRESHOLD WEIGHT FOR THIS PATIENT’S HEIGHT FROM THE HEIGHT / WEIGHT TABLE IN THE ANOREXIA NERVOSA MODULE NO YES",
+    "response": "yes_no"
+  },
+  {
+    "id": "M8",
+    "module": "Generalized Anxiety Disorder",
+    "text": "IS M5 CODED YES AND IS EITHER M6 OR M7 CODED NO? BULIMIA NERVOSA CURRENT IS M7 CODED YES? NO YES ANOREXIA NERVOSA Binge Eating/Purging Type CURRENT M.I.N.I. 7.0.2 (August 8, 2016) (8/8/16) 28 etisbew no ot si tI DO THE PATIENT’S SYMPTOMS MEET CRITERIA FOR ANOREXIA NERVOSA? NO YES AND ANOREXIA NERVOSA IS M2 OR M4 CODED NO? Restricting Type CURRENT SPECIFIERS OF EATING DISORDER: SPECIFY IF: ☐ MILD MILD = 1-3 EPISODES OF INAPPROPRIATE COMPENSATORY BEHAVIORS MODERATE ☐ MODERATE = 4-7 EPISODES OF INAPPROPRIATE COMPENSATORY BEHAVIORS ☐ SEVERE = 8-13 EPISODES OF INAPPROPRIATE COMPENSATORY BEHAVIORS SEVERE EXTREME = 14 OR MORE EPISODES OF INAPPROPRIATE COMPENSATORY BEHAVIORS EXTREME ☐ MB. BINGE EATING DISORDER (➨MEANS: GO TO THE DIAGNOSTIC BOX, CIRCLE NO IN THE DIAGNOSTIC BOX, AND MOVE TO THE NEXT MODULE) ➨ MB1 DO THE PATIENT’S SYMPTOMS MEET CRITERIA FOR ANOREXIA NERVOSA? NO YES ➨ MB2 DO THE PATIENT’S SYMPTOMS MEET CRITERIA FOR BULIMIA NERVOSA? NO YES ➨ MB3 IS M2 CODED YES? NO YES ➨ MB4 IS M3 CODED YES? NO YES ➨ MB5 IS M4 CODED YES? NO YES In the last 3 months during the binging did you: MB6a Eat more rapidly than normal? NO YES MB6b Eat until you felt uncomfortably full? NO YES MB6c Eat large amounts of food when you were not hungry? NO YES MB6d Eat alone because you felt embarrassed about how much you were eating? NO YES MB6e Feel guilty, depressed or disgusted with yourself after binging? NO YES ➨ ARE 3 OR MORE MB6 QUESTIONS CODED YES? NO YES M.I.N.I. 7.0.2 (August 8, 2016) (8/8/16) 29 etisbew no ot si tI ➨ MB7 Does your binging distress you a lot? NO YES MB8 Number of Binge Eating Episodes per Week? ______ Number of Binge Eating Days per Week? ______ NO YES IS MB7 CODED YES? BINGE-EATING DISORDER CURRENT SPECIFIERS OF EATING DISORDER: SPECIFY IF: MILD = 1-3 EPISODES OF BINGE EATING PER WEEK ☐ MILD MODERATE = 4-7 EPISODES OF BINGE EATING PER WEEK SEVERE = 8-13 EPISODES OF BINGE EATING PER WEEK MODERATE ☐ EXTREME = 14 OR MORE EPISODES OF BINGE EATING PER WEEK SEVERE ☐ ☐ EXTREME M.I.N.I. 7.0.2 (August 8, 2016) (8/8/16) 30 etisbew no ot si tI (➨MEANS: GO TO THE DIAGNOSTIC BOX, CIRCLE NO, AND MOVE TO THE NEXT MODULE) ➨",
+    "response": "yes_no"
+  },
+  {
+    "id": "N1",
+    "module": "Generalized Anxiety Disorder",
+    "text": "a Were you excessively anxious or worried about several routine things, NO YES over the past 6 months? IN ENGLISH, IF THE PATIENT IS UNCLEAR ABOUT WHAT YOU MEAN, PROBE BY ASKING (Do others think that you are a worrier or a “worry wart”?) AND GET EXAMPLES ➨ b Are these anxieties and worries present most days? NO YES ➨ ARE THE PATIENT’S ANXIETY AND WORRIES RESTRICTED EXCLUSIVELY NO YES TO, OR BETTER EXPLAINED BY, ANY DISORDER PRIOR TO THIS POINT? ➨",
+    "response": "yes_no"
+  },
+  {
+    "id": "N2",
+    "module": "Generalized Anxiety Disorder",
+    "text": "Do you find it difficult to control the worries? NO YES",
+    "response": "yes_no"
+  },
+  {
+    "id": "N3",
+    "module": "Generalized Anxiety Disorder",
+    "text": "FOR THE FOLLOWING, CODE NO IF THE SYMPTOMS ARE CONFINED TO FEATURES OF ANY DISORDER EXPLORED PRIOR TO THIS POINT When you were anxious over the past 6 months, did you, most of the time: a Feel restless, keyed up or on edge? NO YES b Have muscle tension? NO YES c Feel tired, weak or exhausted easily? NO YES d Have difficulty concentrating or find your mind going blank? NO YES e Feel irritable? NO YES f Have difficulty sleeping (difficulty falling asleep, waking up in the middle NO YES of the night, early morning wakening or sleeping excessively)? ➨ ARE 3 OR MORE N3 ANSWERS CODED YES? NO YES NO YES",
+    "response": "yes_no"
+  },
+  {
+    "id": "N4",
+    "module": "Rule Out Medical, Organic Or Drug Causes For All Disorders",
+    "text": "Do these anxieties and worries significantly disrupt your ability to work, to function socially or in your relationships or in other important areas of your life or cause you significant distress? GENERALIZED ANXIETY DISORDER AND IS “RULE OUT ORGANIC CAUSE (O2 SUMMARY)” CODED YES? CURRENT IF THE PATIENT CODES POSITIVE FOR ANY CURRENT DISORDER OR A MAJOR DEPRESSIVE EPISODE OR A MANIC OR A HYPOMANIC EPISODE ASK: Just before these symptoms began:",
+    "response": "yes_no"
+  },
+  {
+    "id": "O1a",
+    "module": "Rule Out Medical, Organic Or Drug Causes For All Disorders",
+    "text": "Were you taking any drugs or medicines or in withdrawal from any of these? ☐ No ☐ Yes ☐ Uncertain",
+    "response": "yes_no"
+  },
+  {
+    "id": "O1b",
+    "module": "Rule Out Medical, Organic Or Drug Causes For All Disorders",
+    "text": "Did you have any medical illness? ☐ No ☐ Yes ☐ Uncertain",
+    "response": "yes_no"
+  },
+  {
+    "id": "O2",
+    "module": "Rule Out Medical, Organic Or Drug Causes For All Disorders",
+    "text": "IF O1a OR O1b IS CODED YES, IN THE CLINICIAN’S JUDGMENT, IS EITHER LIKELY TO BE A DIRECT CAUSE OF THE PATIENT'S DISORDER? IF NECESSARY, ASK ADDITIONAL OPEN-ENDED QUESTIONS. ☐ No ☐ Yes ☐ Uncertain",
+    "response": "yes_no"
+  },
+  {
+    "id": "O2",
+    "module": "Antisocial Personality Disorder",
+    "text": "SUMMARY: HAS AN “ORGANIC” / MEDICAL / DRUG RELATED CAUSE BEEN RULED OUT? ☐ No ☐ Yes ☐ Uncertain IF O2 IS YES, THEN O2 SUMMARY IS NO. IF O2 IS NO, THEN O2 SUMMARY IS YES. OTHERWISE IT IS UNCERTAIN M.I.N.I. 7.0.2 (August 8, 2016) (8/8/16) 31 etisbew no ot si tI (➨MEANS: SKIP ALL THE P2 QUESTIONS, GO TO THE DIAGNOSTIC BOX AND CIRCLE NO)",
+    "response": "yes_no"
+  },
+  {
+    "id": "P1",
+    "module": "Antisocial Personality Disorder",
+    "text": "Before you were 15 years old, did you: a repeatedly skip school or run away from home overnight or stayed out NO YES at night against your parent’s rules? b repeatedly lie, cheat, \"con\" others, or steal or break into someone’s house or car? NO YES c start fights or bully, threaten, or intimidate others? NO YES d deliberately destroy things or start fires? NO YES e deliberately hurt animals or people? NO YES f force someone into sexual activity? NO YES ➨ ARE 2 OR MORE P1 ANSWERS CODED YES? NO YES DO NOT CODE YES TO THE BEHAVIORS BELOW IF THEY ARE EXCLUSIVELY POLITICALLY OR RELIGIOUSLY MOTIVATED",
+    "response": "yes_no"
+  },
+  {
+    "id": "P2",
+    "module": "Antisocial Personality Disorder",
+    "text": "Since you were 15 years old, have you: a done things that are illegal or would be grounds to get arrested, even if you didn't NO YES get caught (for example destroying property, shoplifting, stealing, selling drugs, or committing a felony)? b often lied or \"conned\" other people to get money or pleasure, or lied just NO YES for fun? c been impulsive and didn’t care about planning ahead? NO YES d been in physical fights repeatedly or assaulted others (including physical fights NO YES with your spouse or children)? e exposed others or yourself to danger without caring? NO YES f repeatedly behaved in a way that others would consider irresponsible, like NO YES failing to pay for things you owed, deliberately being impulsive or deliberately not working to support yourself? g felt no guilt after hurting, mistreating, lying to, or stealing from others, or NO YES after damaging property? NO YES ARE 3 OR MORE P2 QUESTIONS CODED YES? ANTISOCIAL PERSONALITY DISORDER LIFETIME ADDITIONAL OPTIONAL INTERVIEW ASSESSMENTS ON PAGES 36 & 37 M.I.N.I. 7.0.2 (August 8, 2016) (8/8/16) 32 etisbew no ot si tI MOOD DISORDERS: DIAGNOSTIC ALGORITHM Consult Modules: A Major Depressive Episode C (Hypo)manic Episode K Psychotic Disorders MODULE K: 1a IS K11b CODED YES? NO YES 1b IS K12a CODED YES? NO YES MODULES A and C: Current Past 2 a CIRCLE YES IF A DELUSIONAL IDEA IS IDENTIFIED IN A3e YES YES OR IN ANY PSYCHOTIC FEATURE IN K1 THROUGH K7 b CIRCLE YES IF A DELUSIONAL IDEA IS IDENTIFIED IN C3a YES YES OR IN ANY PSYCHOTIC FEATURE IN K1 THROUGH K7 c IS MAJOR DEPRESSIVE EPISODE CODED YES (CURRENT OR PAST)? MAJOR DEPRESSIVE AND DISORDER IS MANIC EPISODE CODED NO (CURRENT AND PAST)? AND Current Past IS HYPOMANIC EPISODE CODED NO (CURRENT AND PAST)? MDD ☐ ☐ AND IS “RULE OUT ORGANIC CAUSE (O2 SUMMARY)” CODED YES? With Psychotic Features Current ☐ SPECIFY: Past ☐ • IF THE DEPRESSIVE EPISODE IS CURRENT OR PAST OR BOTH • WITH PSYCHOTIC FEATURES CURRENT: IF 1b OR 2a (CURRENT) = YES WITH PSYCHOTIC FEATURES PAST: IF 1a OR 2a (PAST) = YES M.I.N.I. 7.0.2 (August 8, 2016) (8/8/16) 33 etisbew no ot si tI d IS MANIC EPISODE CODED YES (CURRENT OR PAST)? BIPOLAR I AND DISORDER IS “RULE OUT ORGANIC CAUSE (O2 SUMMARY)” CODED YES? Current Past SPECIFY: Bipolar I Disorder ☐ ☐ Single Manic Episode ☐ ☐ • IF THE BIPOLAR I DISORDER IS CURRENT OR PAST OR BOTH • WITH SINGLE MANIC EPISODE: IF MANIC EPISODE (CURRENT OR PAST) = YES With Psychotic Features AND MAJOR DEPRESSIVE EPISODE (CURRENT AND PAST) = NO Current ☐ Past ☐ • WITH PSYCHOTIC FEATURES CURRENT: IF 1b OR 2a (CURRENT) OR 2b (CURRENT) = YES WITH PSYCHOTIC FEATURES PAST: IF 1a OR 2a (PAST) OR 2b (PAST) = YES Most Recent Episode Manic ☐ • IF THE MOST RECENT EPISODE IS MANIC, DEPRESSED, OR HYPOMANIC (MUTUALLY EXCLUSIVE) Depressed ☐ Hypomanic ☐ • IF THE MOST RECENT MOOD EPISODE IS WITH MIXED, ANXIOUS OR PSYCHOTIC FEATURES Most Recent Episode HYPO/MANIC WITH MIXED FEATURES = HYPO/MANIC + AT LEAST 3 SYMPTOMS FROM A3 With mixed features ☐ With anxious distress ☐ DEPRESSED WITH MIXED FEATURES = MAJOR DEPRESSIVE EPISODE + AT LEAST 3 SYMPTOMS FROM C3 Most Recent Episode WITH ANXIOUS DISTRESS = WITH AT LEAST 3 SYMPTOMS FROM N3 Mild ☐ Moderate ☐ Severe ☐ e IS MAJOR DEPRESSIVE EPISODE CODED YES (CURRENT OR PAST)? AND BIPOLAR II IS HYPOMANIC EPISODE CODED YES (CURRENT OR PAST)? DISORDER AND IS MANIC EPISODE CODED NO (CURRENT AND PAST)? Current Past AND Bipolar II Disorder ☐ ☐ IS “RULE OUT ORGANIC CAUSE (O2 SUMMARY)” CODED YES? SPECIFY: Most Recent Episode Hypomanic ☐ • IF THE BIPOLAR DISORDER IS CURRENT OR PAST OR BOTH Depressed ☐ • IF THE MOST RECENT MOOD EPISODE IS HYPOMANIC OR DEPRESSED (MUTUALLY EXCLUSIVE) Most Recent Episode With mixed features ☐ • IF THE MOST RECENT MOOD EPISODE IS WITH MIXED, ANXIOUS OR PSYCHOTIC FEATURES With anxious distress ☐ With psychotic features ☐ HYPOMANIC WITH MIXED FEATURES = HYPOMANIC + AT LEAST 3 SYMPTOMS FROM A3 DEPRESSED WITH MIXED FEATURES = MAJOR DEPRESSIVE EPISODE + AT LEAST 3 SYMPTOMS FROM C3 Most Recent Episode Mild ☐ WITH ANXIOUS DISTRESS = WITH AT LEAST 3 SYMPTOMS FROM N3 Moderate ☐ Severe ☐ WITH PSYCHOTIC FEATURES = IF 1b OR 2a (CURRENT) OR 2b (CURRENT) = YES M.I.N.I. 7.0.2 (August 8, 2016) (8/8/16) 34 etisbew no ot si tI f IS MAJOR DEPRESSIVE EPISODE CODED NO (CURRENT AND PAST)? OTHER SPECIFIED BIPOLAR AND AND RELATED DISORDER IS MANIC EPISODE CODED NO (CURRENT AND PAST)? AND Current Past IS C4b CODED YES FOR THE APPROPRIATE TIME FRAME? Other Specified ☐ ☐ AND Bipolar and Related IS C8b CODED YES? Disorder ___________________________________________________ OR ___________________________________________________ IS MANIC EPISODE CODED NO (CURRENT AND PAST)? AND IS HYPOMANIC EPISODE CODED NO (CURRENT AND PAST)? AND IS C4a CODED YES FOR THE APPROPRIATE TIME FRAME? AND IS C8c CODED YES? SPECIFY IF THE OTHER SPECIFIED BIPOLAR AND RELATED DISORDER IS CURRENT OR PAST OR BOTH M.I.N.I. 7.0.2 (August 8, 2016) (8/8/16) 35 etisbew no ot si tI OPTIONAL ASSESSMENT MEASURES TO TRACK CHANGES OVER TIME A: CROSS CUTTING MEASURES SEVERITY OF SYMPTOM Use this scale to rate the severity of your symptom in the score column in the table below: Not present Mild Moderate Severe Extreme 0 1 2 3 4 5 6 7 8 9 10 Assessment of Symptoms That Cut Across Disorders Symptom Name Score 1 Depression 2 Anger 3 Mania (feeling up or high or hyper or full of energy with racing thoughts) 4 Anxiety 5 Physical (somatic) symptoms Suicidal thoughts, impulses, plans, intent, (ANY thoughts of killing yourself), or 6 any preparations to kill yourself or ANY attempt to kill yourself Hearing sounds or voices others can’t hear or fearing someone can hear or read 7 your thoughts or believing things others don’t accept as true e.g. that people are spying on you or plotting against you or talking about you (Psychosis) 8 Sleep problems 9 Memory problems 10 Repetitive or obsessive thoughts or compulsive behaviors Feeling things around you are strange, unreal, detached or unfamiliar, or 11 feeling outside or detached from part or all of your body (Dissociation) 12 Ability to function at work, at home, in your life, or in your relationships 13 Overusing alcohol or drugs M.I.N.I. 7.0.2 (August 8, 2016) (8/8/16) 36 etisbew no ot si tI B: DISABILITY / FUNCTIONAL IMPAIRMENT SEVERITY OF DISABILITY / IMPAIRMENT Use this scale to rate in the score column of the table below, how much your symptoms have disrupted your ability to function in the following areas of your life: Not present Mild Moderate Severe Extreme 0 1 2 3 4 5 6 7 8 9 10 Assessment of Impairment of Functioning /Disability Domain Name Score 1 Work or school work 2 Social life or leisure activities (like hobbies or things you do for enjoyment) 3 Family life and / or home responsibilities 4 Ability to get along with people 5 Personal and social relationships 6 Ability to understand and to communicate with others Ability to take care of yourself (washing, showering, bathing, dressing properly, 7 brushing teeth, laundry, combing / brushing hair, eating regularly) 8 Made you disruptive or aggressive towards others 9 Financially (ability to manage your money) 10 Ability to get around physically 11 Spiritual or religious life 12 How much did your condition have an impact on other people in your family? M.I.N.I. 7.0.2 (August 8, 2016) (8/8/16) 37 etisbew no ot si tI REFERENCES 1.Sheehan DV, Lecrubier Y, Harnett-Sheehan K, Amorim P, Janavs J, Weiller E, Hergueta T, Baker R, Dunbar G: The Mini International Neuropsychiatric Interview (M.I.N.I.): The Development and Validation of a Structured Diagnostic Psychiatric Interview. J. Clin Psychiatry, 1998;59(suppl 20): 22-33 2.Sheehan DV, Lecrubier Y, Harnett-Sheehan K, Janavs J, Weiller E, Bonara LI, Keskiner A, Schinka J, Knapp E, Sheehan MF, Dunbar GC. Reliability and Validity of the MINI International Neuropsychiatric Interview (M.I.N.I.): According to the SCID-P. European Psychiatry. 1997; 12:232-241 3.Lecrubier Y, Sheehan D, Weiller E, Amorim P, Bonora I, Sheehan K, Janavs J, Dunbar G. The MINI International Neuropsychiatric Interview (M.I.N.I.) A Short Diagnostic Structured Interview: Reliability and Validity According to the CIDI. European Psychiatry 1997; 12: 224-231 4. Amorim P, Lecrubier Y, Weiller E, Hergueta T, Sheehan D: DSM-III-R Psychotic Disorders: procedural validity of the Mini International Neuropsychiatric Interview (M.I.N.I.). Concordance and causes for discordance with the CIDI. European Psychiatry 1998; 13:26-34 ACKNOWLEDGEMENTS The author wishes to acknowledge the valuable contributions made to the earlier versions of the MINI for DSM III-R and DSM IV by: 1. Yves Lecrubier, my close collaborator (now deceased) on the initial development of the MINI for DSM III-R, the DSM IV and ICD-10 2. Juris Janavs, Emanuelle Weiller, Christer Allgulander, Kathy Harnett-Sheehan, Roxy Baker, Michael Sheehan, Chris Gray, Thierry Hergueta, N. Kadri, David Baldwin, Christian Even, Rosario Hidalgo, Marelli Soto-Colon, Ossama Osman 3. Patricia Amorim for her extensive work on the development of the expanded version of the Psychotic Disorders Module and algorithms for DSM III-R. We have evolved her model further in the MINI for Psychotic Disorders 7 and in the MINI Plus 7 for DSM- 5 4 Executive Scientific committee for the MINI 6.0.0 for DSM-IV: Christer Allgulander, Stockholm, Sweden A.Carlo Altamura, Milano, Italy Cyril Hoschl, Praha, Czech Republic George Papadimitriou, Athens, Greece Hans Ågren, Göteborg, Sweden Hans-Jürgen Möller, München, Germany Hans-Ulrich Wittchen, Dresden, Germany István Bitter, Budapest, Hungary Jean-Pierre Lépine, Paris, France Jules Angst, Zurich, Switzerland Julio Bobes, Oviedo, Spain Luciano Conti, Pisa, Italy Marelli Colon-Soto MD, Puerto Rico, United States Michael Van Ameringen MD, Toronto, Canada Rosario Hidalgo MD, Tampa, United States Siegfried Kasper, Vienna, Austria Thomas Schlaepfer, Bonn, Germany 5. Mapi and the many academic translation teams internationally who collaborated in ensuring that quality translations became available in over 70 languages or language variants. Mapi (http://www.mapigroup.com) is now the official translation and linguistic validation service for all variants of the MINI 6. Individual clinicians and patients who over the years made countless suggestions to help improve the accuracy and clinical value to the MINI: JM Giddens for her advice on the MINI 7 version of the Suicidality Disorders Module, Dr. Michael Van Ameringen for assistance with the ADHD module, and Dr Pauline Powers for her advice on the modules on Anorexia Nervosa and Bulimia 7. Validation studies of the MINI were made possible, in part, by grants from SmithKlineBeecham and the European Commission M.I.N.I. 7.0.2 (August 8, 2016) (8/8/16) 38 etisbew no ot si tI M.I.N.I. PLUS The shaded modules below are additional modules available in the MINI PLUS beyond what is available in the standard MINI The un-shaded modules below are in the standard MINI These MINI PLUS modules can be inserted into or used in place of the standard MINI modules, as dictated by the specific needs of any study MODULES TIME FRAME A MAJOR DEPRESSIVE EPISODE Current (2 weeks) Past Recurrent MAJOR DEPRESSIVE DISORDER Current (2 weeks) Past Recurrent MDD WITH ANXIOUS DISTRESS Current (2 weeks) MDD WITH MIXED FEATURES Current (2 weeks) MDD WITH MELANCHOLIC FEATURES Current (2 weeks) MDD WITH ATYPICAL FEATURES Current (2 weeks) MDD WITH PSYCHOTIC FEATURES Current (2 weeks) MDD WITH CATATONIA Current (2 weeks) MDD WITH SEASONAL PATTERN Current (2 weeks) MAJOR DEPRESSIVE DISORDER WITH PSYCHOTIC FEATURES Current Past SUBSTANCE- / MEDICATION-INDUCED DEPRESSIVE DISORDER Current (2 weeks) Past DEPRESSIVE DISORDER DUE TO ANOTHER MEDICAL CONDITION Current (2 weeks) Past AY PERSISITENT DEPRESSIVE DISORDER Current OTHER SPECIFIED DEPRESSIVE DISORDER Current (2 weeks) Past Recurrent B SUICIDALITY Current (Past Month) ☐ Lifetime attempt ☐ ☐ Low ☐ Moderate ☐ High SUICIDE BEHAVIOR DISORDER Current ☐ (In Past Year) In early remission ☐ (1 - 2 Years Ago) In remission ☐ (> 2 Years Ago) C MANIC EPISODE Current Past HYPOMANIC EPISODE Current Past BIPOLAR I DISORDER Current Past BIPOLAR II DISORDER Current Past BIPOLAR I DISORDER WITH PSYCHOTIC FEATURES Current Past SUBSTANCE- / MEDICATION-INDUCED BIPOLAR DISORDER AND RELATED DISORDER Current (2 weeks) Past M.I.N.I. 7.0.2 (August 8, 2016) (8/8/16) 39 etisbew no ot si tI BIPOLAR DISORDER AND RELATED DISORDER DUE TO A GENERAL MEDICAL CONDITION Current (2 weeks) Past OTHER SPECIFIED BIPOLAR DISORDER AND RELATED DISORDER Current (2 weeks) Past UNSPECIFIED BIPOLAR AND RELATED DISORDER Current (2 weeks) Past D PANIC DISORDER Current (Past Month) Lifetime E AGORAPHOBIA Current F SOCIAL ANXIETY DISORDER (Social Phobia) Current (Past Month) Performance only type ☐ FA SPECIFIC PHOBIA Current SUBSTANCE- / MEDICATION-INDUCED ANXIETY DISORDER Current ANXIETY DISORDER DUE TO ANOTHER MEDICAL CONDITION Current G OBSESSIVE-COMPULSIVE DISORDER (OCD) Current (Past Month) SUBSTANCE- / MEDICATION-INDUCED OBSESSIVE- COMPULSIVE DISORDER AND Current (2 weeks) RELATED DISORDER Past OBSESSIVE-COMPULSIVE AND RELATED DISORDER DUE TO A GENERAL MEDICAL Current (2 weeks) CONDITION Past HOARDING DISORDER Current H POSTTRAUMATIC STRESS DISORDER Current (Past Month) HL POSTTRAUMATIC STRESS DISORDER Lifetime HAS ACUTE STRESS DISORDER Current (2 weeks) I ALCOHOL USE DISORDER Past 12 Months IL ALCOHOL USE DISORDER Lifetime J SUBSTANCE USE DISORDER Past 12 Months JL SUBSTANCE USE DISORDER (Non-alcohol) Lifetime K ANY PSYCHOTIC DISORDER Current Lifetime SCHIZOPHRENIA Current Lifetime SCHIZOAFFECTIVE DISORDER Current Bipolar type ☐ Lifetime Depressive type ☐ SCHIZOPHRENIFORM DISORDER Current Lifetime BRIEF PSYCHOTIC DISORDER Current Lifetime DELUSIONAL DISORDER Current Lifetime SUBSTANCE- / MEDICATION-INDUCED PSYCHOTIC DISORDER Current Lifetime PSYCHOTIC DISORDER DUE TO ANOTHER MEDICAL CONDITION Current Lifetime M.I.N.I. 7.0.2 (August 8, 2016) (8/8/16) 40 etisbew no ot si tI OTHER SPECIFIED SCHIZOPHRENIA SPECTRUM AND OTHER PSYCHOTIC DISORDER Current Lifetime UNSPECIFIED SCHIZOPHRENIA SPECTRUM AND OTHER PSYCHOTIC DISORDER Current Lifetime L ANOREXIA NERVOSA Current (Past 3 Months) ANOREXIA NERVOSA, BINGE EATING/PURGING TYPE Current ANOREXIA NERVOSA, RESTRICTING TYPE Current M BULIMIA NERVOSA Current (Past 3 Months) MB BINGE-EATING DISORDER Current (Past 3 Months) N GENERALIZED ANXIETY DISORDER (GAD) Current (Past 6 Months) SUBSTANCE- / MEDICATION-INDUCED GAD Current GAD DUE TO ANOTHER MEDICAL CONDITION Current O SOMATIC SYMPTOM DISORDER Current P ILLNESS ANXIETY DISORDER Current Q BODY DYSMORPHIC DISORDER Current R INTERMITTENT EXPLOSIVE DISORDER Current S CONDUCT DISORDER Current (past 12 months) T ATTENTION DEFICIT/ HYPERACTIVITY DISORDER Current (Past 6 months) (Children /Adolescents) ADHD COMBINED PRESENTATION ☐ ADHD PREDOMINANTLY INATTENTIVE PRESENTATION ☐ ADHD PREDOMINANTLY HYPERACTIVE / IMPULSIVE PRESENTATION ☐ TA ATTENTION DEFICIT/ HYPERACTIVITY DISORDER Current (Past 6 months) (Adults) ADHD COMBINED PRESENTATION ☐ ADHD PREDOMINANTLY INATTENTIVE PRESENTATION ☐ ADHD PREDOMINANTLY HYPERACTIVE / IMPULSIVE PRESENTATION ☐ U PREMENSTRUAL DYSPHORIC DISORDER Current V ADJUSTMENT DISORDERS Current W BORDERLINE PERSONALITY DISORDER Current X MEDICAL, ORGANIC, DRUG CAUSE RULED OUT Y ANTISOCIAL PERSONALITY DISORDER Lifetime For Schizophrenia and psychotic disorder studies and for psychotic disorder subtyping in clinical settings, use the MINI for Psychotic Disorders instead of the standard MINI. For many clinical settings this level of psychotic disorder subtyping detail is not necessary and the standard MINI is sufficient For children and adolescents, use the MINI Kid or the MINI Kid Parent of the MIN Kid for Psychotic Disorders A computerized version of the MINI is available. For information on the availability and licensing of any version of the MINI, whether computerized or paper / pdf versions, contact David Sheehan MD MBA at davidvsheehan@gmail.com M.I.N.I. 7.0.2 (August 8, 2016) (8/8/16) 41 etisbew no ot si tI",
+    "response": "yes_no"
+  }
+]

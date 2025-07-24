@@ -1,0 +1,19 @@
+{
+    "L": {
+      "title": "Anorexia Nervosa",
+      "questions": [
+        { "id": "L1a", "text": "What is your height?" },
+        { "id": "L1b", "text": "What was your lowest weight in the past three months?" },
+        { "id": "L1c", "text": "Is your weight at or below the threshold corresponding to your height?" },
+  
+        { "id": "L2",  "text": "In the past three months, in spite of low weight, have you tried not to gain weight or restrict food intake?" },
+        { "id": "L3",  "text": "Have you intensely feared gaining weight or becoming fat even though underweight?" },
+  
+        { "id": "L4a", "text": "Have you considered yourself too big or thought part of your body was too big/fat?" },
+        { "id": "L4b", "text": "Has your body weight or shape greatly influenced how you felt about yourself?" },
+        { "id": "L4c", "text": "Have you thought your current low body weight was normal or excessive?" },
+  
+        { "id": "L5",  "text": "Is at least one item from L4 coded yes (i.e., disturbance in body perception)?" }
+      ]
+    }
+  }

@@ -1,0 +1,21 @@
+{
+    "I": {
+      "title": "Substance Use Disorder (Drugs)",
+      "questions": [
+        { "id": "J1a", "text": "In the past 12 months, did you take any non-prescribed drugs more than once to get high or change your mood?" },
+  
+        { "id": "J2a", "text": "During times you used the drug, did you end up using more than you intended?" },
+        { "id": "J2b", "text": "Did you repeatedly want to reduce or control your drug use?" },
+        { "id": "J2c", "text": "Did you spend substantial time obtaining, using or recovering from the drug’s effects?" },
+        { "id": "J2d", "text": "Did you crave or have a strong urge to use the drug?" },
+        { "id": "J2e", "text": "Did you neglect responsibilities at work, school or home because of drug use?" },
+        { "id": "J2f", "text": "If drug use caused problems with family or others, did you continue anyway?" },
+        { "id": "J2g", "text": "Did you use drugs in situations where you or others were physically at risk (e.g., driving)?" },
+        { "id": "J2h", "text": "Did you continue using despite knowing it caused or worsened psychological or physical problems?" },
+        { "id": "J2i", "text": "Did you reduce or give up important social, work or recreational activities because of drug use?" },
+        { "id": "J2j", "text": "Did you need markedly more drug to get the same effect, or did the same amount have much less effect?" },
+        { "id": "J2k1", "text": "When you cut down, did you experience withdrawal symptoms (see list)?" },
+        { "id": "J2k2", "text": "Did you use the drug to relieve or avoid withdrawal symptoms?" }
+      ]
+    }
+  }

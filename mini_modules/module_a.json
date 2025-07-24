@@ -1,0 +1,24 @@
+{
+  "A": {
+    "title": "Major Depressive Episode",
+    "questions": [
+      { "id": "A1a", "text": "Were you ever depressed or down, or felt sad, empty or hopeless most of the day, nearly every day, for two weeks?" },
+      { "id": "A1b", "text": "For the past two weeks, were you depressed or down, or felt sad, empty or hopeless most of the day, nearly every day?" },
+
+      { "id": "A2a", "text": "Were you ever much less interested in most things or much less able to enjoy the things you used to enjoy most of the time, for two weeks?" },
+      { "id": "A2b", "text": "In the past two weeks, were you much less interested in most things or much less able to enjoy the things you used to enjoy most of the time?" },
+
+      { "id": "A3a", "text": "During that two-week period, was your appetite decreased or increased nearly every day, or did your weight change significantly without trying?" },
+      { "id": "A3b", "text": "Did you have trouble sleeping nearly every night (difficulty falling asleep, early-morning waking, or sleeping excessively)?" },
+      { "id": "A3c", "text": "Did you talk or move more slowly than normal, or were you fidgety, restless or unable to sit still almost every day (and did anyone notice)?" },
+      { "id": "A3d", "text": "Did you feel tired or without energy almost every day?" },
+      { "id": "A3e", "text": "Did you feel worthless or guilty almost every day?" },
+      { "id": "A3f", "text": "Did you have difficulty concentrating, thinking or making decisions almost every day?" },
+      { "id": "A3g", "text": "Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?" },
+
+      { "id": "A4",  "text": "Did these symptoms cause significant distress or problems at home, work, school, socially, or in other important areas, and represent a change from your previous functioning?" },
+      { "id": "A5",  "text": "Between depressive episodes, did you ever have an interval of at least two months without significant depression or loss of interest?" },
+      { "id": "A6a","text": "How many episodes of depression have you had in your lifetime? (There must be at least two months between episodes without significant depression.)" }
+    ]
+  }
+}
