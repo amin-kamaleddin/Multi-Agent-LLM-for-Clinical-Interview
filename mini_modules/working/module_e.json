@@ -1,0 +1,74 @@
+{
+  "module": {
+    "id": "E",
+    "name": "Agoraphobia"
+  },
+  "instructions": [
+    "➨ means: circle NO in the diagnostic box and move to the next module",
+    "If E1 = NO → END_MODULE",
+    "If E1 = YES → proceed E2 → E3 → E4 → E5 → E6",
+    "If any of E2–E5 = NO → END_MODULE",
+    "If E6 = YES → DIAGNOSTIC (Agoraphobia current)"
+  ],
+  "questions": [
+    {
+      "id": "E1",
+      "prompt": "Do you feel anxious or uneasy in places or situations where help might not be available or escape difficult if you had a panic-like or embarrassing symptom, such as being in a crowd or queue, in an open space or crossing a bridge, in an enclosed space, when alone away from home, when alone at home, or traveling in a bus, train, car, or using public transportation?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "E2",
+        "no": "END_MODULE"
+      }
+    },
+    {
+      "id": "E2",
+      "prompt": "Do these situations almost always bring on fear or anxiety?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "E3",
+        "no": "END_MODULE"
+      }
+    },
+    {
+      "id": "E3",
+      "prompt": "Do you fear these situations so much that you avoid them, suffer through them, or need a companion to face them?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "E4",
+        "no": "END_MODULE"
+      }
+    },
+    {
+      "id": "E4",
+      "prompt": "Is this fear or anxiety excessive or out of proportion to the real danger in the situation?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "E5",
+        "no": "END_MODULE"
+      }
+    },
+    {
+      "id": "E5",
+      "prompt": "Did this avoidance, fear or anxiety persist for at least 6 months?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "E6",
+        "no": "END_MODULE"
+      }
+    },
+    {
+      "id": "E6",
+      "prompt": "Did these symptoms cause significant distress or problems at home, at work, at school or in some other important way?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "DIAGNOSTIC",
+        "no": "END_MODULE"
+      }
+    }
+  ],
+  "diagnosticCriteria": {
+    "agoraphobia": {
+      "current": "E6 == 'YES'"
+    }
+  }
+}
