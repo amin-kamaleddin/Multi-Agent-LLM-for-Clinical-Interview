@@ -1,0 +1,166 @@
+{
+  "module": {
+    "id": "A",
+    "name": "Major Depressive Episode"
+  },
+  "instructions": [
+    "If A1a = NO → set A1b = NO and jump to A2a",
+    "If A1a = YES → ask A1b",
+    "If A2a = NO → set A2b = NO and jump to A3a_recent",
+    "If A2a = YES → ask A2b",
+    "If A1b OR A2b = YES → explore both current and past episode items",
+    "If A1b AND A2b = NO → explore only past-episode items",
+    "Count each A3* group as positive if any response = YES",
+    "Assess A4 separately for current and past episodes",
+    "If A5 = YES → code recurrent; between episodes must be ≥2 months symptom-free",
+    "Diagnosis requires ≥5 symptoms (A3 groups), plus A1b or A2b = YES, plus A4 = YES, plus organic causes ruled out"
+  ],
+  "questions": [
+    {
+      "id": "A1a",
+      "prompt": "Were you ever depressed or down, or felt sad, empty or hopeless most of the day, nearly every day, for two weeks?",
+      "responseType": "yes_no",
+      "next": { "no": "A2a", "yes": "A1b" }
+    },
+    {
+      "id": "A1b",
+      "prompt": "For the past two weeks, were you depressed or down, or felt sad, empty or hopeless most of the day, nearly every day?",
+      "responseType": "yes_no",
+      "next": { "no": "A2a", "yes": "A2a" }
+    },
+    {
+      "id": "A2a",
+      "prompt": "Were you ever much less interested in most things or much less able to enjoy the things you used to enjoy most of the time, for two weeks?",
+      "responseType": "yes_no",
+      "next": { "no": "A3a_recent", "yes": "A2b" }
+    },
+    {
+      "id": "A2b",
+      "prompt": "In the past two weeks, were you much less interested in most things or much less able to enjoy the things you used to enjoy most of the time?",
+      "responseType": "yes_no",
+      "next": { "no": "A3a_recent", "yes": "A3a_recent" }
+    },
+    {
+      "id": "A3a_recent",
+      "group": "A3a",
+      "prompt": "(Past 2 weeks) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?",
+      "responseType": "yes_no"
+    },
+    {
+      "id": "A3a_past",
+      "group": "A3a",
+      "prompt": "(Past episode) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?",
+      "responseType": "yes_no"
+    },
+    {
+      "id": "A3b_recent",
+      "group": "A3b",
+      "prompt": "(Past 2 weeks) Did you have trouble sleeping nearly every night (difficulty falling asleep, early-morning waking, or sleeping excessively)?",
+      "responseType": "yes_no"
+    },
+    {
+      "id": "A3b_past",
+      "group": "A3b",
+      "prompt": "(Past episode) Did you have trouble sleeping nearly every night?",
+      "responseType": "yes_no"
+    },
+    {
+      "id": "A3c_recent",
+      "group": "A3c",
+      "prompt": "(Past 2 weeks) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day? Did anyone notice?",
+      "responseType": "yes_no"
+    },
+    {
+      "id": "A3c_past",
+      "group": "A3c",
+      "prompt": "(Past episode) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day?",
+      "responseType": "yes_no"
+    },
+    {
+      "id": "A3d_recent",
+      "group": "A3d",
+      "prompt": "(Past 2 weeks) Did you feel tired or without energy almost every day?",
+      "responseType": "yes_no"
+    },
+    {
+      "id": "A3d_past",
+      "group": "A3d",
+      "prompt": "(Past episode) Did you feel tired or without energy almost every day?",
+      "responseType": "yes_no"
+    },
+    {
+      "id": "A3e_recent",
+      "group": "A3e",
+      "prompt": "(Past 2 weeks) Did you feel worthless or guilty almost every day?",
+      "responseType": "yes_no",
+      "followUp": "If YES, ask for examples of delusional guilt/worthlessness (failure, disease, death, nihilistic content)."
+    },
+    {
+      "id": "A3e_past",
+      "group": "A3e",
+      "prompt": "(Past episode) Did you feel worthless or guilty almost every day?",
+      "responseType": "yes_no",
+      "followUp": "If YES, ask for examples of delusional guilt/worthlessness."
+    },
+    {
+      "id": "A3f_recent",
+      "group": "A3f",
+      "prompt": "(Past 2 weeks) Did you have difficulty concentrating, thinking, or making decisions almost every day?",
+      "responseType": "yes_no"
+    },
+    {
+      "id": "A3f_past",
+      "group": "A3f",
+      "prompt": "(Past episode) Did you have difficulty concentrating, thinking, or making decisions almost every day?",
+      "responseType": "yes_no"
+    },
+    {
+      "id": "A3g_recent",
+      "group": "A3g",
+      "prompt": "(Past 2 weeks) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?",
+      "responseType": "yes_no",
+      "safetyFlag": true
+    },
+    {
+      "id": "A3g_past",
+      "group": "A3g",
+      "prompt": "(Past episode) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?",
+      "responseType": "yes_no",
+      "safetyFlag": true
+    },
+    {
+      "id": "A4_current",
+      "group": "A4",
+      "prompt": "(Current episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?",
+      "responseType": "yes_no"
+    },
+    {
+      "id": "A4_past",
+      "group": "A4",
+      "prompt": "(Past episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?",
+      "responseType": "yes_no"
+    },
+    {
+      "id": "A5",
+      "prompt": "Between depressive episodes, did you ever have an interval of ≥ 2 months without significant depression or loss of interest?",
+      "responseType": "choice",
+      "options": ["N/A", "NO", "YES"]
+    },
+    {
+      "id": "A6a",
+      "prompt": "How many episodes of depression have you had in your lifetime? (≥ 2 months between episodes required.)",
+      "responseType": "number"
+    }
+  ],
+  "diagnosticCriteria": {
+    "majorDepressiveEpisode": {
+      "mustHave": [
+        "At least 5 symptom groups (A3a–A3g) coded YES",
+        "Core symptom: A1b=YES or A2b=YES",
+        "Functional impairment: A4_current=YES or A4_past=YES",
+        "Organic cause ruled out"
+      ],
+      "recurrent": "A5 = YES"
+    }
+  }
+}

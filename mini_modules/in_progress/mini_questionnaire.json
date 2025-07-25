@@ -1,9 +1,22 @@
 [
   {
-    "id": "A1",
+    "id": "A1a",
     "module": "Major Depressive Episode",
-    "text": "a Were you ever depressed or down, or felt sad, empty or hopeless NO YES most of the day, nearly every day, for two weeks? IF NO, CODE NO TO A1b: IF YES ASK: b For the past two weeks, were you depressed or down, or felt sad, empty or hopeless NO YES most of the day, nearly every day?",
-    "response": "yes_no"
+    "question_type": "screening",
+    "text": "Were you ever depressed or down, or felt sad, empty or hopeless most of the day, nearly every day, for two weeks?",
+    "response_type": "yes_no",
+    "skip_logic": {
+      "if_no": "skip_to_A1b_no",
+      "if_yes": "continue_to_A1b"
+    }
+  },
+  {
+    "id": "A1b",
+    "module": "Major Depressive Episode", 
+    "question_type": "current_symptoms",
+    "text": "For the past two weeks, were you depressed or down, or felt sad, empty or hopeless most of the day, nearly every day?",
+    "response_type": "yes_no",
+    "depends_on": "A1a_yes"
   },
   {
     "id": "A2",
