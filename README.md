@@ -1,6 +1,6 @@
 # 🧠 MINI Agentic Interview System
 
-This project implements an **agentic AI system** for conducting structured psychiatric assessments based on the **M.I.N.I. 7.0.2 (DSM-5)**. It leverages autonomous agents to simulate the roles of clinician and patient, perform response analysis, and guide the interview flow based on diagnostic logic.
+An agentic AI system for conducting MINI 7.0.2 psychiatric assessments using autonomous agents to simulate clinician-patient interaction, analyze responses, and follow diagnostic logic.
 
 ---
 
