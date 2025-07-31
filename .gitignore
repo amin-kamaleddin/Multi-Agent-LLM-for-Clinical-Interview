@@ -28,3 +28,6 @@ logs/
 dist/
 build/
 *.egg-info/
+
+# Reports
+reports/
