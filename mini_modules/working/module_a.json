@@ -167,7 +167,12 @@
       "id": "A6a",
       "prompt": "How many episodes of depression have you had in your lifetime? (≥2 months between episodes required.)",
       "responseType": "number",
-      "next": { "any": "END_MODULE" }
+      "next": { 
+        "yes": "END_MODULE",
+        "no": "END_MODULE",
+        "N/A": "END_MODULE",
+        "number": "END_MODULE" 
+      }
     }
   ],
   "diagnosticCriteria": {
