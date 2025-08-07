@@ -8,7 +8,7 @@ from pydantic import ValidationError
 # Load environment variables from .env file
 load_dotenv()
 from langchain_core.messages import SystemMessage, HumanMessage, AIMessage
-from .prompts import INTERVIEWER_SYSTEM_PROMPT, JUDGE_SYSTEM_PROMPT, DIAGNOSIS_SYSTEM_PROMPT
+from .prompts import INTERVIEWER_SYSTEM_PROMPT, JUDGE_SYSTEM_PROMPT, DIAGNOSIS_SYSTEM_PROMPT, EXPLAIN_PROMPT
 
 from .models import (
     InterviewState,
@@ -34,9 +34,14 @@ def interviewer_node(state: InterviewState) -> Dict[str, Any]:
     print("enter interviewer")
 
     # 1. Build the system prompt + history
-    q = state.module_loader.get_question(state.current_question_id)
-    sys_msg = SystemMessage(content=INTERVIEWER_SYSTEM_PROMPT.format(question=q.prompt))
-    msgs = state.messages + [sys_msg]
+    current_question = state.module_loader.get_question(state.current_question_id)
+    sys_msg = SystemMessage(content=INTERVIEWER_SYSTEM_PROMPT.format(question=current_question.prompt))
+    if len(state.judge_results) > 0:
+        if state.judge_results[-1] == "explain request":
+            patient_response = state.messages[-1].content
+            sys_msg = SystemMessage(EXPLAIN_PROMPT.format(response=patient_response, current_question=current_question.prompt))
+
+    msgs = [sys_msg]
 
     # 2. Invoke LLM to get the next question
     response = llm.invoke(msgs)
@@ -66,16 +71,16 @@ def judge_node(state: InterviewState) -> Dict[str, Any]:
     print(f"decision: {resp.classification}")
 
     label = str(resp.classification)
-    if label not in ("yes", "no", "need more clarification"):
+    if label not in ["yes", "no", "need more clarification", "N/A", "explain request"]:
         label = "need more clarification"
 
     print("exit judge")
     # TODO search for best practices of adding pydantic class to 'Messages'
-    return {"messages": [AIMessage(content=str(resp.reasoning))], "judge_results": [str(resp.classification)]}
+    return {"messages": [AIMessage(content=str(resp.reasoning))], "judge_results": [label]}
 
 
 def should_clarify(state: InterviewState) -> str:
-    return "clarify" if state.judge_results[-1] == "need more clarification" else "continue"
+    return "clarify" if state.judge_results[-1] in ["need more clarification", "explain request"] else "continue"
 
 
 def _log_entry(state: InterviewState) -> Dict[str, Any]:
@@ -154,7 +159,7 @@ def diagnosis(state: InterviewState):
         else:
             result[group_name] = {"diagnosis": False, "timeFrame": "unknown", "reasoning": "Invalid criteria format."}
             continue
-        prompt = JUDGE_SYSTEM_PROMPT.format(summary=summary, group_name=group_name, criteria_formatted=criteria_formatted)
+        prompt = DIAGNOSIS_SYSTEM_PROMPT.format(summary=summary, group_name=group_name, criteria_formatted=criteria_formatted)
 
         response = llm.invoke([HumanMessage(content=prompt)])
         content = response.content.strip()
@@ -169,4 +174,4 @@ def diagnosis(state: InterviewState):
 
         result[group_name] = group_result.model_dump()
 
-    return DiagnosisEvaluationOutput.model_validate(result)
+    return {'diagnosis_content': DiagnosisEvaluationOutput.model_validate(result)}
