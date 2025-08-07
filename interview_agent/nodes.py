@@ -30,12 +30,15 @@ diagnosis_llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.1).with_structured
 # -------------------------------- Nodes ------------------------------------ #
 def interviewer_node(state: InterviewState) -> Dict[str, Any]:
     """Interviewer node that presents questions, then collects user reply."""
+
+    # TODO when requesting explanation, interviewer does not understand.
+
     print("enter interviewer")
 
     # 1. Build the system prompt + history
     q = state.module_loader.get_question(state.current_question_id)
     sys_msg = SystemMessage(content=INTERVIEWER_SYSTEM_PROMPT.format(question=q.prompt))
-    msgs = [sys_msg] + state.messages
+    msgs = state.messages + [sys_msg]
 
     # 2. Invoke LLM to get the next question
     response = llm.invoke(msgs)
