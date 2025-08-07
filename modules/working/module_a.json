@@ -168,10 +168,10 @@
       "prompt": "How many episodes of depression have you had in your lifetime? (≥2 months between episodes required.)",
       "responseType": "number",
       "next": { 
-        "yes": "END_MODULE",
-        "no": "END_MODULE",
-        "N/A": "END_MODULE",
-        "number": "END_MODULE" 
+        "yes": "DIAGNOSTIC",
+        "no": "DIAGNOSTIC",
+        "N/A": "DIAGNOSTIC",
+        "number": "DIAGNOSTIC"
       }
     }
   ],

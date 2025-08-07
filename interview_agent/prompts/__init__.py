@@ -1,0 +1,9 @@
+from .interviewer import INTERVIEWER_SYSTEM_PROMPT
+from .judge import JUDGE_SYSTEM_PROMPT
+from .diagnosis import DIAGNOSIS_SYSTEM_PROMPT
+
+__all__ = [
+    "INTERVIEWER_SYSTEM_PROMPT",
+    "JUDGE_SYSTEM_PROMPT",
+    "DIAGNOSIS_SYSTEM_PROMPT"
+]
