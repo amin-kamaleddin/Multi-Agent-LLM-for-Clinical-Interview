@@ -4,6 +4,8 @@ from typing import Any, Dict
 from dotenv import load_dotenv
 from langchain_openai import ChatOpenAI
 
+from .prompts import INTERVIEWER_SYSTEM_PROMPT, JUDGE_SYSTEM_PROMPT, DIAGNOSIS_SYSTEM_PROMPT
+
 # Load environment variables from .env file
 load_dotenv()
 from langchain_core.messages import SystemMessage, HumanMessage, AIMessage
@@ -24,12 +26,6 @@ diagnosis_llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.1).with_structured
     DiagnosisResult
 )
 
-SYSTEM_MESSAGE_TEMPLATE = (
-    "You are a clinician administering the MINI.\n\n"
-    "Current question:\n{question}\n\n"
-    "- Present only this question.\n"
-    "- Ask the patient to answer yes or no. If uncertain, say 'feel free to explain'."
-)
 
 # -------------------------------- Nodes ------------------------------------ #
 def interviewer_node(state: InterviewState) -> Dict[str, Any]:
@@ -38,7 +34,7 @@ def interviewer_node(state: InterviewState) -> Dict[str, Any]:
 
     # 1. Build the system prompt + history
     q = state.module_loader.get_question(state.current_question_id)
-    sys_msg = SystemMessage(content=SYSTEM_MESSAGE_TEMPLATE.format(question=q.prompt))
+    sys_msg = SystemMessage(content=INTERVIEWER_SYSTEM_PROMPT.format(question=q.prompt))
     msgs = [sys_msg] + state.messages
 
     # 2. Invoke LLM to get the next question
@@ -60,30 +56,8 @@ def judge_node(state: InterviewState) -> Dict[str, Any]:
     print("enter judge")
     last_question = state.module_loader.get_question(state.current_question_id)
     patient_last_answer = state.messages[-1]
-    prompt = f"""
-You are a clinical psychological assessment agent. Analyze the patient's response to determine if it clearly answers the interviewer's question.
 
-CLASSIFICATION RULES: 
-- "need more clarification" - Response is ambiguous, uncertain, irrelevant, incomplete, or confidence is ≤70%
-
-ANALYSIS PROCESS:
-1. Does the response directly address the question asked?
-2. Is the patient's intent clear and unambiguous?
-3. Are you >70% confident in the positive/negative classification?
-
-If any answer above is "no", classify as "need more clarification".
-
-EXAMPLES:
-Question: "Do you often feel sad?"
-- "Yes, almost every day" → yes
-- "No, I'm generally happy" → no
-- "Sometimes, I guess" → need more clarification
-- "What do you mean by sad?" → need more clarification
-
-Question: {last_question.prompt}
-Patient Response: {patient_last_answer.content}
-
-"""
+    prompt = JUDGE_SYSTEM_PROMPT.format(last_question= last_question.prompt, patient_last_answer= patient_last_answer.content)
     resp = structured_llm.invoke([HumanMessage(content=prompt)])
 
     # Access Pydantic model attributes directly
@@ -95,6 +69,7 @@ Patient Response: {patient_last_answer.content}
         label = "need more clarification"
 
     print("exit judge")
+    # TODO search for best practices of adding pydantic class to 'Messages'
     return {"messages": [AIMessage(content=str(resp.reasoning))], "judge_results": [str(resp.classification)]}
 
 
@@ -148,9 +123,9 @@ def diagnosis(state: InterviewState):
 
     # Very slim logic here; adapt as needed
     summary = json.dumps(patient_responses, indent=2)
-    prompt = (
-        "Assess the following responses and produce a JSON answer.\n"
-        f"{summary}"
-    )
+    prompt = DIAGNOSIS_SYSTEM_PROMPT.format(summary= summary, group_name= module_name, criteria_formatted= criteria)
     resp = diagnosis_llm.invoke([HumanMessage(content=prompt)])
-    return resp
+    print('\n\n' + 15 * '--' + f" Start of Diagnosis {state.current_question_id}" + 15 * '--')
+    print(resp)
+    print('\n\n' + 15 * '--' + f" End of Diagnosis {state.current_question_id}" + 15 * '--')
+    return {"diagnosis_result": resp}
