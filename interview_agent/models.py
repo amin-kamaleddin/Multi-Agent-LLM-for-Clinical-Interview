@@ -67,11 +67,12 @@ class InterviewState(BaseModel):
     judge_results: Annotated[List[Any], operator.add] = Field(default_factory=list)
     module_completed: bool = False
     ready_for_diagnosis: bool = False
+    diagnosis_content: Optional[Any]= Field(default_factory=dict)
 
 # ---------------------------- LLM output schemas ---------------------------- #
 class ClassificationResult(BaseModel):
     reasoning: str
-    classification: Union[Literal["yes", "no", "need more clarification", "N/A"], int]
+    classification: Union[Literal["yes", "no", "need more clarification", "N/A", "explain request"], int]
 
 
 class DiagnosisResult(BaseModel):
