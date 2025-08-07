@@ -5,18 +5,35 @@ import sys
 import os
 from pathlib import Path
 
+
 def main():
-    # Default to module_a if no argument provided
-    if len(sys.argv) < 2:
+    module_file = None
+    question_id = None
+
+    i = 1
+    while i < len(sys.argv):
+        arg = sys.argv[i]
+        if arg == '--start_qid':
+            if i + 1 < len(sys.argv):
+                question_id = sys.argv[i + 1]
+                i += 2
+            else:
+                print("Error: --question_id requires a value")
+                sys.exit(1)
+        else:
+            # This is the module argument
+            if module_file is None:
+                module_file = arg
+            i += 1
+
+    # Default to module_a if no module specified
+    if module_file is None:
         module_file = "modules/working/module_a.json"
         print(f"No module specified, using default: {module_file}")
     else:
         # Allow just the module letter (a, b, e)
-        module_arg = sys.argv[1].lower()
-        if len(module_arg) == 1 and module_arg.isalpha():
-            module_file = f"modules/working/module_{module_arg}.json"
-        else:
-            module_file = sys.argv[1]
+        if len(module_file) == 1 and module_file.isalpha():
+            module_file = f"modules/working/module_{module_file.lower()}.json"
     
     # Check if file exists
     if not os.path.exists(module_file):
@@ -35,6 +52,8 @@ def main():
     try:
         from interview_agent.cli import run
         sys.argv = ["run_interview.py", module_file]
+        if question_id:
+            sys.argv.extend(["--start_qid", question_id])
         run()
     except KeyboardInterrupt:
         print("\n\nInterview interrupted by user.")
@@ -42,6 +61,7 @@ def main():
         print(f"\nError: {e}")
         import traceback
         traceback.print_exc()
+
 
 if __name__ == "__main__":
     main()
