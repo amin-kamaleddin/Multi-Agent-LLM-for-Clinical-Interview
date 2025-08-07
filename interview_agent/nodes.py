@@ -8,6 +8,7 @@ from pydantic import ValidationError
 # Load environment variables from .env file
 load_dotenv()
 from langchain_core.messages import SystemMessage, HumanMessage, AIMessage
+from .prompts import INTERVIEWER_SYSTEM_PROMPT, JUDGE_SYSTEM_PROMPT, DIAGNOSIS_SYSTEM_PROMPT
 
 from .models import (
     InterviewState,
@@ -153,55 +154,7 @@ def diagnosis(state: InterviewState):
         else:
             result[group_name] = {"diagnosis": False, "timeFrame": "unknown", "reasoning": "Invalid criteria format."}
             continue
-
-        prompt = (
-            "You are a psychiatric diagnostic evaluator.\n\n"
-
-            "=== Patient Summary ===\n"
-            "The patient's answers to yes/no questions are listed below:\n"
-            f"{summary}\n\n"
-
-            f"=== Diagnostic Group: {group_name} ===\n"
-            "Criteria to evaluate:\n"
-            f"{criteria_formatted}\n\n"
-
-            "=== Instructions ===\n"
-            "You must assess whether each diagnostic criterion is met, based solely on the patient's answers.\n\n"
-
-            "1. General Rules:\n"
-            "   - Analyze each criterion independently.\n"
-            "   - Provide a concise explanation for whether each is met.\n\n"
-
-            "2. Symptom Group Criteria (e.g., 'at least 5 symptom groups'):\n"
-            "   - Treat all questions that belong to the same symptom group as one unit.\n"
-            "   - If **any** question in a group is marked 'YES' (whether past or current), consider that symptom group as positive.\n"
-            "   - To satisfy the criterion, the required number of positive symptom groups must all come from **only one** time frame — either 'current' or 'past', not a mix.\n"
-            "   - List which symptom groups are positive and under which time frame(s).\n\n"
-
-            "3. Non-Time-Frame-Specific Items (e.g., A1a, A1b, A2):\n"
-            "   - For items that do **not** include a time frame suffix (like _past or _current), evaluate them as TRUE or FALSE regardless of time frame.\n"
-            "   - These items are valid if marked 'YES' in any context.\n\n"
-
-            "4. Organic Cause / Rule-Out Criteria:\n"
-            "   - For now, infer that organic causes are ruled out.\n\n"
-
-            "5. Diagnosis Summary:\n"
-            "   - After assessing all criteria, provide a final diagnosis summary.\n"
-            "   - If **all** criteria are met, the diagnosis is 'Yes'. Otherwise, it is 'No'.\n"
-            "   - For a positive diagnosis, also determine the **time frame**:\n"
-            "     - Choose from: **past**, **current**, or **both**.\n"
-            "     - This refers to the time frame in which the symptom group criteria were satisfied.\n"
-            "     - Do not use 'both' unless both past and current **independently** meet the symptom threshold.\n\n"
-
-            "=== Output Format ===\n"
-            "Return ONLY a JSON object with these fields:\n"
-            "{\n"
-            '  "diagnosis": true/false,\n'
-            '  "timeFrame": "past" | "current" | "both" | null,\n'
-            '  "reasoning": "<a concise explanation for the assessment>"\n'
-            "}\n"
-            "DO NOT include any other text outside this JSON.\n"
-        )
+        prompt = JUDGE_SYSTEM_PROMPT.format(summary=summary, group_name=group_name, criteria_formatted=criteria_formatted)
 
         response = llm.invoke([HumanMessage(content=prompt)])
         content = response.content.strip()
