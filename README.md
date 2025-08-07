@@ -1,67 +1,146 @@
-# 🧠 MINI Agentic Interview System
+# 🧠 MINI Interview Agent
 
-An agentic AI system for conducting MINI 7.0.2 psychiatric assessments using autonomous agents to simulate clinician-patient interaction, analyze responses, and follow diagnostic logic.
+An AI-powered agent system for conducting MINI (Mini International Neuropsychiatric Interview) assessments with intelligent response analysis and dynamic conversation flow.
 
----
+## Features
 
-## 🚀 Project Overview
+- **🔄 LangGraph-powered workflow** with conditional branching logic
+- **🤖 LLM-based response analysis** (yes/no/unclear classification) 
+- **🎯 Intelligent clarification** when patient responses are ambiguous
+- **📋 JSON-based modules** with branching questionnaire logic
+- **💬 Natural conversation flow** with professional clinical tone
+- **📊 Comprehensive logging** of all interactions and classifications
 
-This system features a modular and extensible architecture:
+## Quick Start
 
-### 🧑‍⚕️ Patient Agent
-- Simulates patient responses, which can be scripted or generated dynamically.
-- Supports real-time or offline interaction modes.
+### Prerequisites
 
-### 💬 Interview Agent
-- Administers MINI modules (e.g., depression, anxiety, phobia).
-- Handles question sequencing based on branching logic.
-- Follows MINI phrasing and time-frame instructions.
-- Handles transitions between modules and concludes the interview.
+```bash
+pip install -r requirements.txt
+```
 
-### ⚖️ Judge Agent
-- Monitors both patient responses and LLM analysis.
-- Validates consistency with MINI logic.
-- Flags **mismatches or inconsistencies** between the response and logic.
-- Passes flagged items to the **Client Observer**.
+Create a `.env` file with your OpenAI API key:
+```
+OPENAI_API_KEY=sk-proj-your-api-key-here
+```
 
-### 👁️ Client Observer
-- Receives flagged responses from the Judge Agent.
-- Allows a human reviewer (e.g., a clinician or researcher) to **inspect, override, or intervene** in real-time or post-interview.
-- Provides transparency and safety before any clinical or research action is taken.
+### Simple Usage
 
----
+**Option 1: Default module (Module A - Major Depression)**
+```bash
+python3 run_interview.py
+```
 
-### 🔧 Core Methods
+**Option 2: Specify module by letter**
+```bash
+python3 run_interview.py a    # Module A (Major Depression)
+python3 run_interview.py e    # Module E (Agoraphobia)
+```
 
-- `get_next_question()`:  
-  Returns the next relevant question based on MINI branching logic and past answers.
+**Option 3: Advanced usage with CLI**
+```bash
+python3 -c "from interview_agent.cli import run; run()" modules/working/module_a.json
+```
 
-- `ask_patient()`:  
-  Delivers the question to the patient agent and receives the answer.
+## 📁 Project Structure
 
-- `ask_clarification()`:  
-  Re-engages the patient if the answer is vague or uncertain.
+```
+mini-agenti-ai/
+├── interview_agent/          # Core Python package
+│   ├── models.py             # Data models and state management
+│   ├── nodes.py              # LangGraph nodes (interviewer, judge, etc.)
+│   ├── graph.py              # Graph construction and workflow
+│   └── cli.py                # Command-line interface
+├── modules/working/          # MINI questionnaire modules
+│   ├── module_a.json         # Major Depressive Episode
+│   └── module_e.json         # Agoraphobia
+├── notebooks/                # Jupyter notebooks for development
+├── run_interview.py          # Simple script to run interviews
+└── requirements.txt          # Python dependencies
+```
 
-- `analyze_response()`:  
-  Applies LLM analysis to map free-text answers to standardized MINI responses.
+## 🔄 How It Works
 
----
+### 1. **Interviewer Node**
+- Presents MINI questions using natural language
+- Collects patient responses through console input
+- Maintains conversation history and context
 
-## 🧪 Example: Agoraphobia Module (Module E)
+### 2. **Judge Node** 
+- Analyzes patient responses using GPT-4o-mini
+- Classifies responses as: `yes`, `no`, or `need more clarification`
+- Uses confidence thresholds (>70%) for reliable classification
 
-```text
-[Question E1]
-Clinician: Do you feel anxious or uneasy in places or situations where help might not be available or escape difficult if you had a panic-like or embarrassing symptom, such as being in a crowd or queue, in an open space or crossing a bridge, in an enclosed space, when alone away from home, when alone at home, or traveling in a bus, train, car, or using public transportation?
-Patient answered: yes
-LLM Analysis: yes
-Based on 'yes' response, next: E2
+### 3. **Conditional Flow**
+- **Clear responses** → Move to next question based on JSON branching logic
+- **Unclear responses** → Return to interviewer for clarification
+- **Module completion** → Generate diagnostic summary
 
-[Question E2]
-Clinician: Do these situations almost always bring on fear or anxiety?
-Patient answered: no
-LLM Analysis: no
-Based on 'no' response, next: END_MODULE
+### 4. **Response Analysis**
+```python
+# Example LLM prompt for response analysis
+"""
+Question: "Do you feel sad most days?"
+Patient Response: "Sometimes, I guess"
+Classification: need more clarification
+Reasoning: Response is ambiguous with uncertainty markers
+"""
+```
 
-======================================================================
-INTERVIEW COMPLETE
-======================================================================
+## Example Session
+
+```
+Starting interview with modules/working/module_a.json
+==================================================
+
+------------------------------ Start of question A1a------------------------------
+Were you ever depressed or down, or felt sad, empty or hopeless most of the day, 
+nearly every day, for two weeks? Please answer yes or no. If you're uncertain, 
+feel free to explain.
+You: I don't know, maybe sometimes
+
+enter judge
+reason behind the decision: Response is ambiguous with uncertainty markers
+decision: need more clarification
+exit judge
+
+enter interviewer
+------------------------------ Start of question A1a------------------------------
+Could you help me understand better - have you experienced periods where you felt 
+sad or hopeless most of the day, nearly every day, for at least two weeks? 
+Please answer yes or no.
+You: yes
+
+enter judge  
+reason behind the decision: Clear affirmative response
+decision: yes
+exit judge
+
+Moving to next question based on 'yes' response...
+```
+
+## 🛠️ Configuration
+
+### Environment Variables
+- `OPENAI_API_KEY`: Your OpenAI API key (required)
+
+### Module Structure
+Each JSON module contains:
+```json
+{
+  "module": {
+    "id": "A",
+    "name": "Major Depressive Episode"
+  },
+  "questions": [
+    {
+      "id": "A1a",
+      "prompt": "Question text...",
+      "next": {
+        "yes": "A1b",
+        "no": "A2a"
+      }
+    }
+  ]
+}
+```
