@@ -67,8 +67,6 @@ class InterviewState(BaseModel):
     judge_results: Annotated[List[Any], operator.add] = Field(default_factory=list)
     module_completed: bool = False
     ready_for_diagnosis: bool = False
-    diagnosis_result: Optional[Any] = Field(default_factory=list)
-
 
 # ---------------------------- LLM output schemas ---------------------------- #
 class ClassificationResult(BaseModel):
@@ -84,7 +82,7 @@ class DiagnosisResult(BaseModel):
 
 class CriteriaGroupResult(BaseModel):
     diagnosis: bool
-    timeFrame: Literal["past", "current", "both", "unknown"]
+    timeFrame: Optional[Literal['past', 'current', 'both']] = None
     reasoning: str
 
 
