@@ -27,7 +27,7 @@ structured_llm = judge_llm.with_structured_output(ClassificationResult)
 diagnosis_llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.1).with_structured_output(
     DiagnosisResult
 )
-patient_llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.5)
+patient_llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.9)
 
 
 # -------------------------------- Nodes ------------------------------------ #
