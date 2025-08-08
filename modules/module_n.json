@@ -1,0 +1,87 @@
+{
+  "module": {
+    "id": "N",
+    "name": "Generalized Anxiety Disorder"
+  },
+  "instructions": [
+    "➨ means: go to the diagnostic box, circle NO, and move to the next module",
+    "If patient is unclear about what you mean by 'worry wart', probe by asking (Do others think that you are a worrier or a 'worry wart'?) and get examples",
+    "For N3, code NO if the symptoms are confined to features of any disorder explored prior to this point",
+    "Are 3 or more N3 answers coded YES?",
+    "Are the patient's anxiety and worries restricted exclusively to, or better explained by, any disorder prior to this point?"
+  ],
+  "questions": [
+    {
+      "id": "N1a",
+      "prompt": "Were you excessively anxious or worried about several routine things, over the past 6 months?",
+      "responseType": "yes_no",
+      "note": "In English, if the patient is unclear about what you mean, probe by asking (Do others think that you are a worrier or a 'worry wart'?) and get examples",
+      "next": { "yes": "N1b", "no": "END_MODULE" }
+    },
+    {
+      "id": "N1b",
+      "prompt": "Are these anxieties and worries present most days?",
+      "responseType": "yes_no",
+      "next": { "yes": "N2", "no": "END_MODULE" }
+    },
+    {
+      "id": "N2",
+      "prompt": "Do you find it difficult to control the worries?",
+      "responseType": "yes_no",
+      "next": { "yes": "N3a", "no": "END_MODULE" }
+    },
+    {
+      "id": "N3a",
+      "group": "N3",
+      "prompt": "When you were anxious over the past 6 months, did you, most of the time: Feel restless, keyed up or on edge?",
+      "responseType": "yes_no",
+      "next": { "yes": "N3b", "no": "N3b" }
+    },
+    {
+      "id": "N3b",
+      "group": "N3",
+      "prompt": "Have muscle tension?",
+      "responseType": "yes_no",
+      "next": { "yes": "N3c", "no": "N3c" }
+    },
+    {
+      "id": "N3c",
+      "group": "N3",
+      "prompt": "Feel tired, weak or exhausted easily?",
+      "responseType": "yes_no",
+      "next": { "yes": "N3d", "no": "N3d" }
+    },
+    {
+      "id": "N3d",
+      "group": "N3",
+      "prompt": "Have difficulty concentrating or find your mind going blank?",
+      "responseType": "yes_no",
+      "next": { "yes": "N3e", "no": "N3e" }
+    },
+    {
+      "id": "N3e",
+      "group": "N3",
+      "prompt": "Feel irritable?",
+      "responseType": "yes_no",
+      "next": { "yes": "N3f", "no": "N3f" }
+    },
+    {
+      "id": "N3f",
+      "group": "N3",
+      "prompt": "Have difficulty sleeping (difficulty falling asleep, waking up in the middle of the night, early morning wakening or sleeping excessively)?",
+      "responseType": "yes_no",
+      "next": { "yes": "N4", "no": "N4" }
+    },
+    {
+      "id": "N4",
+      "prompt": "Do these anxieties and worries significantly disrupt your ability to work, to function socially or in your relationships or in other important areas of your life or cause you significant distress?",
+      "responseType": "yes_no",
+      "next": { "yes": "DIAGNOSTIC", "no": "END_MODULE" }
+    }
+  ],
+  "diagnosticCriteria": {
+    "generalizedAnxietyDisorder": {
+      "current": "N4 == 'YES' AND O2 Summary == 'YES' AND 3+ N3 symptoms == 'YES'"
+    }
+  }
+}
