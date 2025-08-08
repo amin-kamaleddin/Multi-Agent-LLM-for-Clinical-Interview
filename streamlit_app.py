@@ -122,6 +122,16 @@ def csv_string_from_log(conversation_log: list[dict]) -> str:
     return buf.getvalue()
 
 
+def _prettify_group_title(name: str) -> str:
+    """Make raw group keys more readable for display."""
+    if not isinstance(name, str):
+        return str(name)
+    pretty = name.replace("_", " ").replace("-", " ").strip()
+    if not pretty:
+        return name
+    return pretty[:1].upper() + pretty[1:]
+
+
 # --------------------------------- UI State ---------------------------------- #
 if "thread_id" not in st.session_state:
     st.session_state.thread_id = make_thread_id()
@@ -193,16 +203,29 @@ state: InterviewState = st.session_state.state
 if st.session_state.finished:
     st.success("Interview completed.")
 
-    # TODO: Add diagnosis output
-    # st.subheader("Diagnosis")
-    # diag_data = st.session_state.diagnosis_result.model_dump()
-    # for group_name, group_result in diag_data.items():
-    #     title_suffix = "Yes" if group_result.get("diagnosis") else "No"
-    #     with st.expander(f"{group_name} — {title_suffix}", expanded=True):
-    #         st.markdown(f"- **diagnosis**: {group_result.get('diagnosis')}")
-    #         st.markdown(f"- **timeFrame**: {group_result.get('timeFrame')}")
-    #         st.markdown("- **reasoning**:")
-    #         st.write(group_result.get("reasoning", ""))
+    if st.session_state.diagnosis_result is not None:
+        st.subheader("Diagnosis")
+        diag_data = st.session_state.diagnosis_result.model_dump()
+        total = len(diag_data)
+        met = [k for k, v in diag_data.items() if v.get("diagnosis") is True]
+        not_met = [k for k, v in diag_data.items() if v.get("diagnosis") is not True]
+
+        # Overall summary (all groups must be met to satisfy the diagnosis)
+        if total > 0 and len(not_met) == 0:
+            st.success("Meets all required criteria based on interview responses.")
+        else:
+            st.info("Does not meet all required criteria based on interview responses.")
+
+        # Detailed per‑group explanation
+        for group_name, group_result in diag_data.items():
+            title = _prettify_group_title(group_name)
+            st.markdown(f"### {title}")
+            st.markdown(f"- **Result**: {'Met' if group_result.get('diagnosis') else 'Not met'}")
+            timeframe = group_result.get("timeFrame") or "—"
+            st.markdown(f"- **Time frame**: {timeframe}")
+            st.markdown("- **Reasoning**:")
+            st.write(group_result.get("reasoning", ""))
+            st.markdown("---")
 
     csv_data = csv_string_from_log(state.conversation_log)
     st.download_button(
