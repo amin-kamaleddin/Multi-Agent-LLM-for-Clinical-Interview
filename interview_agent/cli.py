@@ -33,6 +33,7 @@ def run():
         module_loader=loader,
         current_question_id=start_qid,
         messages=[],
+        patient_agent=True
     )
 
     thread_id = f"session_{uuid.uuid4().hex[:8]}"

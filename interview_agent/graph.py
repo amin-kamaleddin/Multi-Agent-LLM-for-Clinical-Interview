@@ -10,6 +10,7 @@ from .nodes import (
     diagnosis,
     should_clarify,
     should_diagnose,
+    patient_node,
 )
 
 
@@ -17,12 +18,14 @@ def build_graph(loader: ModuleLoader, visualize: bool = True):
     sg = StateGraph(InterviewState)
 
     sg.add_node("interviewer", interviewer_node)
+    sg.add_node("patient", patient_node)
     sg.add_node("judge", judge_node)
     sg.add_node("selector", selector)
     sg.add_node("diagnosis", diagnosis)
 
     sg.add_edge(START, "interviewer")
-    sg.add_edge("interviewer", "judge")
+    sg.add_edge("interviewer", "patient")
+    sg.add_edge("patient", "judge")
 
     sg.add_conditional_edges("judge", should_clarify,
                              {"clarify": "interviewer", "continue": "selector"})
