@@ -37,7 +37,7 @@ def run():
     )
 
     thread_id = f"session_{uuid.uuid4().hex[:8]}"
-    result = app.invoke(state, config={"recursion_limit": 100})
+    result = app.invoke(state, config={"recursion_limit": 500})
     _save_log(result["conversation_log"], thread_id)
 
 
