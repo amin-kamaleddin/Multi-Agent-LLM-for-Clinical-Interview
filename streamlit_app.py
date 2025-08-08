@@ -192,14 +192,12 @@ with st.sidebar:
         st.session_state["clear_answer"] = True
         st.rerun()
 
-# If we haven't started yet
 if st.session_state.loader is None or st.session_state.state is None:
     st.info("Select a module in the sidebar and click 'Start / Reset Interview'.")
     st.stop()
 
 state: InterviewState = st.session_state.state
 
-# If finished, show outputs and CSV download
 if st.session_state.finished:
     st.success("Interview completed.")
 
@@ -210,13 +208,11 @@ if st.session_state.finished:
         met = [k for k, v in diag_data.items() if v.get("diagnosis") is True]
         not_met = [k for k, v in diag_data.items() if v.get("diagnosis") is not True]
 
-        # Overall summary (all groups must be met to satisfy the diagnosis)
         if total > 0 and len(not_met) == 0:
             st.success("Meets all required criteria based on interview responses.")
         else:
             st.info("Does not meet all required criteria based on interview responses.")
 
-        # Detailed per‑group explanation
         for group_name, group_result in diag_data.items():
             title = _prettify_group_title(group_name)
             st.markdown(f"### {title}")
