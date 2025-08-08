@@ -25,7 +25,7 @@ You must assess whether each diagnostic criterion is met, based solely on the pa
    - For now, infer that organic causes are ruled out.
 5. Diagnosis Summary:
    - After assessing all criteria, provide a final diagnosis summary.
-   - If **all** criteria are met, the diagnosis is 'Yes'. Otherwise, it is 'No'.
+   - If **all** criteria are met, the diagnosis is 'True'. Otherwise, it is 'False'.
    - For a positive diagnosis, also determine the **time frame**:
         - Choose from: **past**, **current**, or **both**.
         - This refers to the time frame in which the symptom group criteria were satisfied.
