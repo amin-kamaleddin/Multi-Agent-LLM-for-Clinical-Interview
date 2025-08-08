@@ -8,7 +8,8 @@ from pydantic import ValidationError
 # Load environment variables from .env file
 load_dotenv()
 from langchain_core.messages import SystemMessage, HumanMessage, AIMessage
-from .prompts import INTERVIEWER_SYSTEM_PROMPT, JUDGE_SYSTEM_PROMPT, DIAGNOSIS_SYSTEM_PROMPT, EXPLAIN_PROMPT
+from .prompts import INTERVIEWER_SYSTEM_PROMPT, JUDGE_SYSTEM_PROMPT, DIAGNOSIS_SYSTEM_PROMPT, EXPLAIN_PROMPT, \
+    PATIENT_SYSTEM_PROMPT, PATIENT_USER_PROMPT
 
 from .models import (
     InterviewState,
@@ -26,6 +27,7 @@ structured_llm = judge_llm.with_structured_output(ClassificationResult)
 diagnosis_llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.1).with_structured_output(
     DiagnosisResult
 )
+patient_llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.5)
 
 
 # -------------------------------- Nodes ------------------------------------ #
@@ -49,12 +51,24 @@ def interviewer_node(state: InterviewState) -> Dict[str, Any]:
     print(response.content)  # show question to user
 
     # 3. Immediately read the user's answer
-    user_input = input("You: ").strip()
-    human_msg = HumanMessage(content=user_input)
-    print(15* '--' + f" End of question {state.current_question_id}" + 15* '--' + '\n\n')
+
     print("exit interviewer")
     # 4. Return both the LLM question and the new HumanMessage
-    return {"messages": [response, human_msg]}
+    return {"messages": [response]}
+
+
+def patient_node(state: InterviewState):
+    print("enter patient node")
+    if not state.patient_agent:
+        result = input("You: ").strip()
+    else:
+        sys_msg = SystemMessage(content=PATIENT_SYSTEM_PROMPT)
+        patient_prompt = HumanMessage(content=PATIENT_USER_PROMPT.format(question=state.messages[-1].content))
+        result = patient_llm.invoke([sys_msg, patient_prompt])
+        print(f"agent response: {result.content}")
+
+    print(15 * '--' + f" End of question {state.current_question_id}" + 15 * '--' + '\n\n')
+    return {'messages': [result]}
 
 
 def judge_node(state: InterviewState) -> Dict[str, Any]:
