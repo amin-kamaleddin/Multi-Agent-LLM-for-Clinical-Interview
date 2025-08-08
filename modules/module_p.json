@@ -1,0 +1,111 @@
+{
+  "module": {
+    "id": "P",
+    "name": "Antisocial Personality Disorder"
+  },
+  "instructions": [
+    "➨ means: skip all the P2 questions, go to the diagnostic box and circle NO",
+    "Are 2 or more P1 answers coded YES?",
+    "Do not code YES to the behaviors below if they are exclusively politically or religiously motivated",
+    "Are 3 or more P2 questions coded YES?"
+  ],
+  "questions": [
+    {
+      "id": "P1a",
+      "group": "P1",
+      "prompt": "Before you were 15 years old, did you: repeatedly skip school or run away from home overnight or stayed out at night against your parent's rules?",
+      "responseType": "yes_no",
+      "next": { "yes": "P1b", "no": "P1b" }
+    },
+    {
+      "id": "P1b",
+      "group": "P1",
+      "prompt": "repeatedly lie, cheat, 'con' others, or steal or break into someone's house or car?",
+      "responseType": "yes_no",
+      "next": { "yes": "P1c", "no": "P1c" }
+    },
+    {
+      "id": "P1c",
+      "group": "P1",
+      "prompt": "start fights or bully, threaten, or intimidate others?",
+      "responseType": "yes_no",
+      "next": { "yes": "P1d", "no": "P1d" }
+    },
+    {
+      "id": "P1d",
+      "group": "P1",
+      "prompt": "deliberately destroy things or start fires?",
+      "responseType": "yes_no",
+      "next": { "yes": "P1e", "no": "P1e" }
+    },
+    {
+      "id": "P1e",
+      "group": "P1",
+      "prompt": "deliberately hurt animals or people?",
+      "responseType": "yes_no",
+      "next": { "yes": "P1f", "no": "P1f" }
+    },
+    {
+      "id": "P1f",
+      "group": "P1",
+      "prompt": "force someone into sexual activity?",
+      "responseType": "yes_no",
+      "next": { "yes": "P2a", "no": "P2a" }
+    },
+    {
+      "id": "P2a",
+      "group": "P2",
+      "prompt": "Since you were 15 years old, have you: done things that are illegal or would be grounds to get arrested, even if you didn't get caught (for example destroying property, shoplifting, stealing, selling drugs, or committing a felony)?",
+      "responseType": "yes_no",
+      "next": { "yes": "P2b", "no": "P2b" }
+    },
+    {
+      "id": "P2b",
+      "group": "P2",
+      "prompt": "often lied or 'conned' other people to get money or pleasure, or lied just for fun?",
+      "responseType": "yes_no",
+      "next": { "yes": "P2c", "no": "P2c" }
+    },
+    {
+      "id": "P2c",
+      "group": "P2",
+      "prompt": "been impulsive and didn't care about planning ahead?",
+      "responseType": "yes_no",
+      "next": { "yes": "P2d", "no": "P2d" }
+    },
+    {
+      "id": "P2d",
+      "group": "P2",
+      "prompt": "been in physical fights repeatedly or assaulted others (including physical fights with your spouse or children)?",
+      "responseType": "yes_no",
+      "next": { "yes": "P2e", "no": "P2e" }
+    },
+    {
+      "id": "P2e",
+      "group": "P2",
+      "prompt": "exposed others or yourself to danger without caring?",
+      "responseType": "yes_no",
+      "next": { "yes": "P2f", "no": "P2f" }
+    },
+    {
+      "id": "P2f",
+      "group": "P2",
+      "prompt": "repeatedly behaved in a way that others would consider irresponsible, like failing to pay for things you owed, deliberately being impulsive or deliberately not working to support yourself?",
+      "responseType": "yes_no",
+      "next": { "yes": "P2g", "no": "P2g" }
+    },
+    {
+      "id": "P2g",
+      "group": "P2",
+      "prompt": "felt no guilt after hurting, mistreating, lying to, or stealing from others, or after damaging property?",
+      "responseType": "yes_no",
+      "next": { "yes": "DIAGNOSTIC", "no": "DIAGNOSTIC" }
+    }
+  ],
+  "diagnosticCriteria": {
+    "antisocialPersonalityDisorder": {
+      "lifetime": "2+ P1 symptoms == 'YES' AND 3+ P2 symptoms == 'YES'",
+      "note": "Do not code YES to behaviors if they are exclusively politically or religiously motivated"
+    }
+  }
+}

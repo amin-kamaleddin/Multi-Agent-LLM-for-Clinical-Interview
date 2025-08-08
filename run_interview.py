@@ -8,38 +8,25 @@ from pathlib import Path
 
 def main():
     module_file = None
-    question_id = None
+    available_modules = ["a", "d", "e", "f", "g", "n", "o", "p"]
 
-    i = 1
-    while i < len(sys.argv):
-        arg = sys.argv[i]
-        if arg == '--start_qid':
-            if i + 1 < len(sys.argv):
-                question_id = sys.argv[i + 1]
-                i += 2
-            else:
-                print("Error: --question_id requires a value")
-                sys.exit(1)
+    print("Welcome to the MINI interview agent. I will guide you through a series of brief questions to assess your symptoms and help a clinician determine your next steps.")
+    print("Please enter the letter corresponding to the module you want to start with: (a, d, e, f, g, n, o, p)")
+    module_file = input()
+
+    while True:
+        if len(module_file) == 1 and module_file.isalpha() and module_file.lower() in available_modules:
+            module_file = f"modules/module_{module_file.lower()}.json"
+            break
         else:
-            # This is the module argument
-            if module_file is None:
-                module_file = arg
-            i += 1
-
-    # Default to module_a if no module specified
-    if module_file is None:
-        module_file = "modules/working/module_a.json"
-        print(f"No module specified, using default: {module_file}")
-    else:
-        # Allow just the module letter (a, b, e)
-        if len(module_file) == 1 and module_file.isalpha():
-            module_file = f"modules/working/module_{module_file.lower()}.json"
+            print("Invalid module letter. Please enter a valid letter: (a, d, e, f, g, n, o, p)")
+            module_file = input().strip()
     
     # Check if file exists
     if not os.path.exists(module_file):
         print(f"Error: Module file '{module_file}' not found")
         print("Available modules:")
-        modules_dir = Path("modules/working")
+        modules_dir = Path("modules/")
         if modules_dir.exists():
             for file in sorted(modules_dir.glob("module_*.json")):
                 module_letter = file.stem.split("_")[-1]
@@ -52,8 +39,6 @@ def main():
     try:
         from interview_agent.cli import run
         sys.argv = ["run_interview.py", module_file]
-        if question_id:
-            sys.argv.extend(["--start_qid", question_id])
         run()
     except KeyboardInterrupt:
         print("\n\nInterview interrupted by user.")
