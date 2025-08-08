@@ -170,6 +170,13 @@ def diagnosis(state: InterviewState):
             data = json.loads(content)
             group_result = CriteriaGroupResult.model_validate(data)
         except (json.JSONDecodeError, ValidationError) as e:
+            # Ensure the errors directory exists
+            os.makedirs("errors", exist_ok=True)
+            
+            # Save the raw LLM output
+            error_path = f"errors/group_{group_name}_raw.txt"
+            with open(error_path, "w", encoding="utf-8") as f:
+                f.write(content)
             raise ValueError(f"Failed to parse LLM JSON output for group '{group_name}': {e}\nRaw output:\n{content}")
 
         result[group_name] = group_result.model_dump()
