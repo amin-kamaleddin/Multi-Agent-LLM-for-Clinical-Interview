@@ -151,18 +151,22 @@ def diagnosis(state: InterviewState):
     for group_name, rule_list in criteria_groups.items():
         if isinstance(rule_list, list):
             if not rule_list:
-                result[group_name] = {"diagnosis": False, "timeFrame": "unknown", "reasoning": "No criteria provided."}
+                result[group_name] = {"diagnosis": False, "timeFrame": None, "reasoning": "No criteria provided."}
                 continue
             criteria_formatted = "\n".join(f"{i+1}. {crit}" for i, crit in enumerate(rule_list))
         elif isinstance(rule_list, str):
             criteria_formatted = rule_list.strip()
         else:
-            result[group_name] = {"diagnosis": False, "timeFrame": "unknown", "reasoning": "Invalid criteria format."}
+            result[group_name] = {"diagnosis": False, "timeFrame": None, "reasoning": "Invalid criteria format."}
             continue
         prompt = DIAGNOSIS_SYSTEM_PROMPT.format(summary=summary, group_name=group_name, criteria_formatted=criteria_formatted)
 
         response = llm.invoke([HumanMessage(content=prompt)])
         content = response.content.strip()
+
+        # remove markdown code block formatting
+        if content.startswith("```json"):
+            content = content.removeprefix("```json").removesuffix("```").strip()
 
         print(f"LLM JSON output for group '{group_name}':\n{content}\n{'-'*40}")
 
