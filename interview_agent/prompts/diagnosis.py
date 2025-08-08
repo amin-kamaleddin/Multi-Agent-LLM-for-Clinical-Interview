@@ -27,7 +27,7 @@ You must assess whether each diagnostic criterion is met, based solely on the pa
    - After assessing all criteria, provide a final diagnosis summary.
    - If **all** criteria are met, the diagnosis is 'Yes'. Otherwise, it is 'No'.
    - For a positive diagnosis, also determine the **time frame**:
-        - Choose from: **past**, **current**, **both**, or **unknown**.
+        - Choose from: **past**, **current**, or **both**.
         - This refers to the time frame in which the symptom group criteria were satisfied.
         - Do not use 'both' unless both past and current **independently** meet the symptom threshold.
         
@@ -35,7 +35,7 @@ You must assess whether each diagnostic criterion is met, based solely on the pa
             Return ONLY a JSON object with these fields:
             
             "diagnosis": true/false,
-            "timeFrame": "past" | "current" | "both" | "unknown",
+            "timeFrame": "past" | "current" | "both" | null,
             "reasoning": "<a concise explanation for the assessment>"
             
             DO NOT include any other text outside this JSON.
