@@ -64,7 +64,7 @@ def judge_node(state: InterviewState) -> Dict[str, Any]:
     patient_last_answer = state.messages[-1]
     
     response_text = patient_last_answer.content.strip().lower()
-        
+
     if response_text == "yes":
         print("Direct classification: YES (no LLM call needed)")
         label = "yes"
