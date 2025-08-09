@@ -247,12 +247,10 @@ if st.session_state.state:
     current_qid = st.session_state.state.current_question_id
     total_questions = len(st.session_state.state.module_loader.questions)
     
-    col1, col2, col3 = st.columns([2, 1, 1])
+    col1, col2 = st.columns([2, 1])
     with col1:
-        st.subheader("Question")
-    with col2:
-        st.metric("Question #", current_question_num)
-    with col3:        
+        st.subheader(f"Question #{current_question_num}")
+    with col2:        
         progress = min(current_question_num / total_questions, 1.0)
         st.metric("Progress", f"{progress:.0%}")
         
