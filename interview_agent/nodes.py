@@ -62,21 +62,35 @@ def judge_node(state: InterviewState) -> Dict[str, Any]:
     print("enter judge")
     last_question = state.module_loader.get_question(state.current_question_id)
     patient_last_answer = state.messages[-1]
+    
+    response_text = patient_last_answer.content.strip().lower()
+        
+    if response_text == "yes":
+        print("Direct classification: YES (no LLM call needed)")
+        label = "yes"
+        reasoning = f"Patient gave a clear affirmative response: '{patient_last_answer.content}'"
+    elif response_text == "no":
+        print("Direct classification: NO (no LLM call needed)")
+        label = "no"
+        reasoning = f"Patient gave a clear negative response: '{patient_last_answer.content}'"
+    else:        
+        print("MAKING AN LLM CALL TO JUDGE THE ANSWER")
+        prompt = JUDGE_SYSTEM_PROMPT.format(last_question= last_question.prompt, patient_last_answer= patient_last_answer.content)
+        resp = structured_llm.invoke([HumanMessage(content=prompt)])
 
-    prompt = JUDGE_SYSTEM_PROMPT.format(last_question= last_question.prompt, patient_last_answer= patient_last_answer.content)
-    resp = structured_llm.invoke([HumanMessage(content=prompt)])
+        # Access Pydantic model attributes directly
+        print(f"reason behind the decision: {resp.reasoning}")
+        print(f"decision: {resp.classification}")
 
-    # Access Pydantic model attributes directly
-    print(f"reason behind the decision: {resp.reasoning}")
-    print(f"decision: {resp.classification}")
-
-    label = str(resp.classification)
-    if label not in ["yes", "no", "need more clarification", "N/A", "explain request"]:
-        label = "need more clarification"
+        label = str(resp.classification)
+        reasoning = str(resp.reasoning)
+        
+        if label not in ["yes", "no", "need more clarification", "N/A", "explain request"]:
+            label = "need more clarification"
 
     print("exit judge")
     # TODO search for best practices of adding pydantic class to 'Messages'
-    return {"messages": [AIMessage(content=str(resp.reasoning))], "judge_results": [label]}
+    return {"messages": [AIMessage(content=reasoning)], "judge_results": [label]}
 
 
 def should_clarify(state: InterviewState) -> str:
