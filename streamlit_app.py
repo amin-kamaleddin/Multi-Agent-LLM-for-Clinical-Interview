@@ -302,14 +302,12 @@ elif submit_clicked:
         st.warning("Please enter an answer before submitting.")
         st.stop()
 
-if answer:  # Process the answer if any button was clicked
+if answer:
     human_msg = HumanMessage(content=answer)
     state.messages = list(state.messages) + [human_msg]
 
-    # Use the optimized judge_node function
     judge_result = judge_node(state)
     
-    # Apply the judge results to the state
     state.messages = list(state.messages) + judge_result["messages"]
     state.judge_results = list(state.judge_results) + judge_result["judge_results"]
 
