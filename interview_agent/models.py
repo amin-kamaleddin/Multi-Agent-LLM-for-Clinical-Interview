@@ -85,7 +85,7 @@ class DiagnosisResult(BaseModel):
 
 class CriteriaGroupResult(BaseModel):
     diagnosis: bool
-    timeFrame: Optional[Literal['past', 'current', 'both']] = None
+    timeFrame: Optional[Literal['past', 'recent', 'both']] = None
     reasoning: str
 
 

@@ -1,0 +1,12 @@
+{
+    "mustHave": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 not met: No symptom groups (A3a\u2013A3g) are positive in either past or recent time frames (all NO). Criterion 2 not met: Core symptom A1b or A2b not provided as YES (A1b and A2b not listed, assumed NO). Criterion 3 not met: Functional impairment (A4_current or A4_past) is NO. Organic cause ruled out by assumption. Therefore, diagnosis criteria are not fulfilled."
+    },
+    "recurrent": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "Criterion A5 is YES, which is the only criterion to evaluate for the 'recurrent' diagnostic group, so it is met. No symptom groups or time frames are required for this diagnosis."
+    }
+}

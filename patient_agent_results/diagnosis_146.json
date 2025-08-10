@@ -1,0 +1,12 @@
+{
+    "mustHave": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 not met: Only 3 symptom groups positive in past (A3b, A3f, A3b) and 4 in recent (A3b, A3d, A3f, A3b), fewer than required 5 in either time frame. Criterion 2 not met: Core symptom (A1b or A2b) is NO. Criteria 3 and 4 met."
+    },
+    "recurrent": {
+        "diagnosis": true,
+        "timeFrame": "recent",
+        "reasoning": "Criterion A5 is YES, satisfying the recurrent diagnostic group requirement. Symptom groups with recent YES responses are A3b_recent, A3d_recent, and A3f_recent, totaling 3 positive symptom groups in the recent time frame. Since A5 is YES and symptom groups meet the threshold in the recent time frame, diagnosis is true for recent."
+    }
+}
