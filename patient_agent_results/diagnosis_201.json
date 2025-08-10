@@ -1,0 +1,12 @@
+{
+    "mustHave": {
+        "diagnosis": true,
+        "timeFrame": "past",
+        "reasoning": "At least 5 symptom groups are positive in the past time frame (A3a_past to A3f_past = YES, A3g_past = YES), satisfying the symptom group criterion for past. Recent symptom groups are only 6 positive (A3a_recent to A3f_recent = YES, A3g_recent = NO), which is less than 7 but more than 5, so recent also meets the threshold. However, since the instruction requires all symptom groups to come from only one time frame, and recent has 6 positive groups, past has 7 positive groups, both meet the threshold independently. Therefore, both past and recent independently meet the symptom group criterion. Core symptom criterion is met (A1b=YES and A2b=YES). Functional impairment criterion is met (A4_current=YES and A4_past=YES). Organic cause is ruled out. Hence, diagnosis is true with time frame 'both'."
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion A5 is NO, but the recurrent diagnostic group requires A5=YES. Although multiple symptom groups are positive in both past and recent time frames, the failure to meet A5 means the recurrent diagnosis criteria are not met."
+    }
+}

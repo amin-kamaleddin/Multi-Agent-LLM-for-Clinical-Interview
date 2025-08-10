@@ -140,10 +140,10 @@
       "prompt": "(Past episode) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?",
       "responseType": "yes_no",
       "safetyFlag": true,
-      "next": { "yes": "A4_current", "no": "A4_current" }
+      "next": { "yes": "A4_recent", "no": "A4_recent" }
     },
     {
-      "id": "A4_current",
+      "id": "A4_recent",
       "group": "A4",
       "prompt": "(Current episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?",
       "responseType": "yes_no",
@@ -180,7 +180,7 @@
       "mustHave": [
         "At least 5 symptom groups (A3a–A3g) coded YES",
         "Core symptom: A1b=YES or A2b=YES",
-        "Functional impairment: A4_current=YES or A4_past=YES",
+        "Functional impairment: A4_recent=YES or A4_past=YES",
         "Organic cause ruled out"
       ],
       "recurrent": "A5 = YES"

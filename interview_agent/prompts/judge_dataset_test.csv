@@ -1,0 +1,881 @@
+question_code,question,answer,label
+A1a,"Were you ever depressed or down, or felt sad, empty or hopeless most of the day, nearly every day, for two weeks?","Yes, I have felt like that almost every day and it has been affecting my mood a lot",yes
+A1a,"Were you ever depressed or down, or felt sad, empty or hopeless most of the day, nearly every day, for two weeks?","Yes, that happens to me most days and it makes it hard to focus on anything",yes
+A1a,"Were you ever depressed or down, or felt sad, empty or hopeless most of the day, nearly every day, for two weeks?","Yes, I have been feeling exactly that way for the past two weeks",yes
+A1a,"Were you ever depressed or down, or felt sad, empty or hopeless most of the day, nearly every day, for two weeks?","Yes, nearly every day I feel this way and it does not seem to be getting better",yes
+A1a,"Were you ever depressed or down, or felt sad, empty or hopeless most of the day, nearly every day, for two weeks?","Yes, I have been experiencing this very often and it is exhausting",yes
+A1a,"Were you ever depressed or down, or felt sad, empty or hopeless most of the day, nearly every day, for two weeks?","Yes, this has been my experience almost every day recently",yes
+A1a,"Were you ever depressed or down, or felt sad, empty or hopeless most of the day, nearly every day, for two weeks?","Yes, it has been happening for a while and it is very difficult for me",yes
+A1a,"Were you ever depressed or down, or felt sad, empty or hopeless most of the day, nearly every day, for two weeks?","Yes, I notice it almost daily and it affects my ability to do things",yes
+A1a,"Were you ever depressed or down, or felt sad, empty or hopeless most of the day, nearly every day, for two weeks?","Yes, it has been consistent for the last couple of weeks and it is troubling",yes
+A1a,"Were you ever depressed or down, or felt sad, empty or hopeless most of the day, nearly every day, for two weeks?","Yes, exactly like that, it matches how I have been feeling",yes
+A1a,"Were you ever depressed or down, or felt sad, empty or hopeless most of the day, nearly every day, for two weeks?","No, I have not been feeling that way at all",no
+A1a,"Were you ever depressed or down, or felt sad, empty or hopeless most of the day, nearly every day, for two weeks?","No, I have not experienced that in the past two weeks",no
+A1a,"Were you ever depressed or down, or felt sad, empty or hopeless most of the day, nearly every day, for two weeks?","No, this has not been an issue for me",no
+A1a,"Were you ever depressed or down, or felt sad, empty or hopeless most of the day, nearly every day, for two weeks?","No, I have been feeling fine in that regard",no
+A1a,"Were you ever depressed or down, or felt sad, empty or hopeless most of the day, nearly every day, for two weeks?","No, I do not think that applies to me",no
+A1a,"Were you ever depressed or down, or felt sad, empty or hopeless most of the day, nearly every day, for two weeks?","No, that is not something I have noticed in myself",no
+A1a,"Were you ever depressed or down, or felt sad, empty or hopeless most of the day, nearly every day, for two weeks?","No, I have not gone through anything like that",no
+A1a,"Were you ever depressed or down, or felt sad, empty or hopeless most of the day, nearly every day, for two weeks?","No, I have been doing okay without those symptoms",no
+A1a,"Were you ever depressed or down, or felt sad, empty or hopeless most of the day, nearly every day, for two weeks?","No, I do not relate to that experience",no
+A1a,"Were you ever depressed or down, or felt sad, empty or hopeless most of the day, nearly every day, for two weeks?","No, I have not had that happen to me",no
+A1a,"Were you ever depressed or down, or felt sad, empty or hopeless most of the day, nearly every day, for two weeks?",Do you mean in the past two weeks or at any point in my life?,need more clarification
+A1a,"Were you ever depressed or down, or felt sad, empty or hopeless most of the day, nearly every day, for two weeks?","What exactly counts as most of the day, is it more than half the day or nearly all of it?",need more clarification
+A1a,"Were you ever depressed or down, or felt sad, empty or hopeless most of the day, nearly every day, for two weeks?",Could you explain more about what you mean by that?,need more clarification
+A1a,"Were you ever depressed or down, or felt sad, empty or hopeless most of the day, nearly every day, for two weeks?",I am not sure if you are asking about physical symptoms or emotional ones,need more clarification
+A1a,"Were you ever depressed or down, or felt sad, empty or hopeless most of the day, nearly every day, for two weeks?",Do you mean a change compared to how I usually feel?,need more clarification
+A1a,"Were you ever depressed or down, or felt sad, empty or hopeless most of the day, nearly every day, for two weeks?",Could you clarify what you mean by nearly every day?,need more clarification
+A1a,"Were you ever depressed or down, or felt sad, empty or hopeless most of the day, nearly every day, for two weeks?",Are you asking about just the recent weeks or also earlier times?,need more clarification
+A1a,"Were you ever depressed or down, or felt sad, empty or hopeless most of the day, nearly every day, for two weeks?",Do you mean symptoms that are noticeable to others or just to me?,need more clarification
+A1a,"Were you ever depressed or down, or felt sad, empty or hopeless most of the day, nearly every day, for two weeks?",I would need an example to know if this applies to me,need more clarification
+A1a,"Were you ever depressed or down, or felt sad, empty or hopeless most of the day, nearly every day, for two weeks?",Can you rephrase the question in a simpler way so I can answer more accurately?,need more clarification
+A1a,"Were you ever depressed or down, or felt sad, empty or hopeless most of the day, nearly every day, for two weeks?",Could you please explain what you mean by this question in more detail?,explain request
+A1a,"Were you ever depressed or down, or felt sad, empty or hopeless most of the day, nearly every day, for two weeks?","I am not sure I fully understand, can you give me an example?",explain request
+A1a,"Were you ever depressed or down, or felt sad, empty or hopeless most of the day, nearly every day, for two weeks?",Can you tell me more about what you want to know here?,explain request
+A1a,"Were you ever depressed or down, or felt sad, empty or hopeless most of the day, nearly every day, for two weeks?",I would like some explanation before I can answer properly.,explain request
+A1a,"Were you ever depressed or down, or felt sad, empty or hopeless most of the day, nearly every day, for two weeks?",Could you clarify what exactly you want me to think about?,explain request
+A1a,"Were you ever depressed or down, or felt sad, empty or hopeless most of the day, nearly every day, for two weeks?",Can you please explain this question so I am sure how to answer?,explain request
+A1a,"Were you ever depressed or down, or felt sad, empty or hopeless most of the day, nearly every day, for two weeks?","I do not understand the question fully, please explain more.",explain request
+A1a,"Were you ever depressed or down, or felt sad, empty or hopeless most of the day, nearly every day, for two weeks?",Could you give more details about what you mean?,explain request
+A1a,"Were you ever depressed or down, or felt sad, empty or hopeless most of the day, nearly every day, for two weeks?","I am confused by this question, can you rephrase it?",explain request
+A1a,"Were you ever depressed or down, or felt sad, empty or hopeless most of the day, nearly every day, for two weeks?",Please provide more information so I can respond accurately.,explain request
+A1b,"For the past two weeks, were you depressed or down, or felt sad, empty or hopeless most of the day, nearly every day?","Yes, I have felt like that almost every day and it has been affecting my mood a lot",yes
+A1b,"For the past two weeks, were you depressed or down, or felt sad, empty or hopeless most of the day, nearly every day?","Yes, that happens to me most days and it makes it hard to focus on anything",yes
+A1b,"For the past two weeks, were you depressed or down, or felt sad, empty or hopeless most of the day, nearly every day?","Yes, I have been feeling exactly that way for the past two weeks",yes
+A1b,"For the past two weeks, were you depressed or down, or felt sad, empty or hopeless most of the day, nearly every day?","Yes, nearly every day I feel this way and it does not seem to be getting better",yes
+A1b,"For the past two weeks, were you depressed or down, or felt sad, empty or hopeless most of the day, nearly every day?","Yes, I have been experiencing this very often and it is exhausting",yes
+A1b,"For the past two weeks, were you depressed or down, or felt sad, empty or hopeless most of the day, nearly every day?","Yes, this has been my experience almost every day recently",yes
+A1b,"For the past two weeks, were you depressed or down, or felt sad, empty or hopeless most of the day, nearly every day?","Yes, it has been happening for a while and it is very difficult for me",yes
+A1b,"For the past two weeks, were you depressed or down, or felt sad, empty or hopeless most of the day, nearly every day?","Yes, I notice it almost daily and it affects my ability to do things",yes
+A1b,"For the past two weeks, were you depressed or down, or felt sad, empty or hopeless most of the day, nearly every day?","Yes, it has been consistent for the last couple of weeks and it is troubling",yes
+A1b,"For the past two weeks, were you depressed or down, or felt sad, empty or hopeless most of the day, nearly every day?","Yes, exactly like that, it matches how I have been feeling",yes
+A1b,"For the past two weeks, were you depressed or down, or felt sad, empty or hopeless most of the day, nearly every day?","No, I have not been feeling that way at all",no
+A1b,"For the past two weeks, were you depressed or down, or felt sad, empty or hopeless most of the day, nearly every day?","No, I have not experienced that in the past two weeks",no
+A1b,"For the past two weeks, were you depressed or down, or felt sad, empty or hopeless most of the day, nearly every day?","No, this has not been an issue for me",no
+A1b,"For the past two weeks, were you depressed or down, or felt sad, empty or hopeless most of the day, nearly every day?","No, I have been feeling fine in that regard",no
+A1b,"For the past two weeks, were you depressed or down, or felt sad, empty or hopeless most of the day, nearly every day?","No, I do not think that applies to me",no
+A1b,"For the past two weeks, were you depressed or down, or felt sad, empty or hopeless most of the day, nearly every day?","No, that is not something I have noticed in myself",no
+A1b,"For the past two weeks, were you depressed or down, or felt sad, empty or hopeless most of the day, nearly every day?","No, I have not gone through anything like that",no
+A1b,"For the past two weeks, were you depressed or down, or felt sad, empty or hopeless most of the day, nearly every day?","No, I have been doing okay without those symptoms",no
+A1b,"For the past two weeks, were you depressed or down, or felt sad, empty or hopeless most of the day, nearly every day?","No, I do not relate to that experience",no
+A1b,"For the past two weeks, were you depressed or down, or felt sad, empty or hopeless most of the day, nearly every day?","No, I have not had that happen to me",no
+A1b,"For the past two weeks, were you depressed or down, or felt sad, empty or hopeless most of the day, nearly every day?",Do you mean in the past two weeks or at any point in my life?,need more clarification
+A1b,"For the past two weeks, were you depressed or down, or felt sad, empty or hopeless most of the day, nearly every day?","What exactly counts as most of the day, is it more than half the day or nearly all of it?",need more clarification
+A1b,"For the past two weeks, were you depressed or down, or felt sad, empty or hopeless most of the day, nearly every day?",Could you explain more about what you mean by that?,need more clarification
+A1b,"For the past two weeks, were you depressed or down, or felt sad, empty or hopeless most of the day, nearly every day?",I am not sure if you are asking about physical symptoms or emotional ones,need more clarification
+A1b,"For the past two weeks, were you depressed or down, or felt sad, empty or hopeless most of the day, nearly every day?",Do you mean a change compared to how I usually feel?,need more clarification
+A1b,"For the past two weeks, were you depressed or down, or felt sad, empty or hopeless most of the day, nearly every day?",Could you clarify what you mean by nearly every day?,need more clarification
+A1b,"For the past two weeks, were you depressed or down, or felt sad, empty or hopeless most of the day, nearly every day?",Are you asking about just the recent weeks or also earlier times?,need more clarification
+A1b,"For the past two weeks, were you depressed or down, or felt sad, empty or hopeless most of the day, nearly every day?",Do you mean symptoms that are noticeable to others or just to me?,need more clarification
+A1b,"For the past two weeks, were you depressed or down, or felt sad, empty or hopeless most of the day, nearly every day?",I would need an example to know if this applies to me,need more clarification
+A1b,"For the past two weeks, were you depressed or down, or felt sad, empty or hopeless most of the day, nearly every day?",Can you rephrase the question in a simpler way so I can answer more accurately?,need more clarification
+A1b,"For the past two weeks, were you depressed or down, or felt sad, empty or hopeless most of the day, nearly every day?",Could you please explain what you mean by this question in more detail?,explain request
+A1b,"For the past two weeks, were you depressed or down, or felt sad, empty or hopeless most of the day, nearly every day?","I am not sure I fully understand, can you give me an example?",explain request
+A1b,"For the past two weeks, were you depressed or down, or felt sad, empty or hopeless most of the day, nearly every day?",Can you tell me more about what you want to know here?,explain request
+A1b,"For the past two weeks, were you depressed or down, or felt sad, empty or hopeless most of the day, nearly every day?",I would like some explanation before I can answer properly.,explain request
+A1b,"For the past two weeks, were you depressed or down, or felt sad, empty or hopeless most of the day, nearly every day?",Could you clarify what exactly you want me to think about?,explain request
+A1b,"For the past two weeks, were you depressed or down, or felt sad, empty or hopeless most of the day, nearly every day?",Can you please explain this question so I am sure how to answer?,explain request
+A1b,"For the past two weeks, were you depressed or down, or felt sad, empty or hopeless most of the day, nearly every day?","I do not understand the question fully, please explain more.",explain request
+A1b,"For the past two weeks, were you depressed or down, or felt sad, empty or hopeless most of the day, nearly every day?",Could you give more details about what you mean?,explain request
+A1b,"For the past two weeks, were you depressed or down, or felt sad, empty or hopeless most of the day, nearly every day?","I am confused by this question, can you rephrase it?",explain request
+A1b,"For the past two weeks, were you depressed or down, or felt sad, empty or hopeless most of the day, nearly every day?",Please provide more information so I can respond accurately.,explain request
+A2a,"Were you ever much less interested in most things or much less able to enjoy the things you used to enjoy most of the time, for two weeks?","Yes, I have felt like that almost every day and it has been affecting my mood a lot",yes
+A2a,"Were you ever much less interested in most things or much less able to enjoy the things you used to enjoy most of the time, for two weeks?","Yes, that happens to me most days and it makes it hard to focus on anything",yes
+A2a,"Were you ever much less interested in most things or much less able to enjoy the things you used to enjoy most of the time, for two weeks?","Yes, I have been feeling exactly that way for the past two weeks",yes
+A2a,"Were you ever much less interested in most things or much less able to enjoy the things you used to enjoy most of the time, for two weeks?","Yes, nearly every day I feel this way and it does not seem to be getting better",yes
+A2a,"Were you ever much less interested in most things or much less able to enjoy the things you used to enjoy most of the time, for two weeks?","Yes, I have been experiencing this very often and it is exhausting",yes
+A2a,"Were you ever much less interested in most things or much less able to enjoy the things you used to enjoy most of the time, for two weeks?","Yes, this has been my experience almost every day recently",yes
+A2a,"Were you ever much less interested in most things or much less able to enjoy the things you used to enjoy most of the time, for two weeks?","Yes, it has been happening for a while and it is very difficult for me",yes
+A2a,"Were you ever much less interested in most things or much less able to enjoy the things you used to enjoy most of the time, for two weeks?","Yes, I notice it almost daily and it affects my ability to do things",yes
+A2a,"Were you ever much less interested in most things or much less able to enjoy the things you used to enjoy most of the time, for two weeks?","Yes, it has been consistent for the last couple of weeks and it is troubling",yes
+A2a,"Were you ever much less interested in most things or much less able to enjoy the things you used to enjoy most of the time, for two weeks?","Yes, exactly like that, it matches how I have been feeling",yes
+A2a,"Were you ever much less interested in most things or much less able to enjoy the things you used to enjoy most of the time, for two weeks?","No, I have not been feeling that way at all",no
+A2a,"Were you ever much less interested in most things or much less able to enjoy the things you used to enjoy most of the time, for two weeks?","No, I have not experienced that in the past two weeks",no
+A2a,"Were you ever much less interested in most things or much less able to enjoy the things you used to enjoy most of the time, for two weeks?","No, this has not been an issue for me",no
+A2a,"Were you ever much less interested in most things or much less able to enjoy the things you used to enjoy most of the time, for two weeks?","No, I have been feeling fine in that regard",no
+A2a,"Were you ever much less interested in most things or much less able to enjoy the things you used to enjoy most of the time, for two weeks?","No, I do not think that applies to me",no
+A2a,"Were you ever much less interested in most things or much less able to enjoy the things you used to enjoy most of the time, for two weeks?","No, that is not something I have noticed in myself",no
+A2a,"Were you ever much less interested in most things or much less able to enjoy the things you used to enjoy most of the time, for two weeks?","No, I have not gone through anything like that",no
+A2a,"Were you ever much less interested in most things or much less able to enjoy the things you used to enjoy most of the time, for two weeks?","No, I have been doing okay without those symptoms",no
+A2a,"Were you ever much less interested in most things or much less able to enjoy the things you used to enjoy most of the time, for two weeks?","No, I do not relate to that experience",no
+A2a,"Were you ever much less interested in most things or much less able to enjoy the things you used to enjoy most of the time, for two weeks?","No, I have not had that happen to me",no
+A2a,"Were you ever much less interested in most things or much less able to enjoy the things you used to enjoy most of the time, for two weeks?",Do you mean in the past two weeks or at any point in my life?,need more clarification
+A2a,"Were you ever much less interested in most things or much less able to enjoy the things you used to enjoy most of the time, for two weeks?","What exactly counts as most of the day, is it more than half the day or nearly all of it?",need more clarification
+A2a,"Were you ever much less interested in most things or much less able to enjoy the things you used to enjoy most of the time, for two weeks?",Could you explain more about what you mean by that?,need more clarification
+A2a,"Were you ever much less interested in most things or much less able to enjoy the things you used to enjoy most of the time, for two weeks?",I am not sure if you are asking about physical symptoms or emotional ones,need more clarification
+A2a,"Were you ever much less interested in most things or much less able to enjoy the things you used to enjoy most of the time, for two weeks?",Do you mean a change compared to how I usually feel?,need more clarification
+A2a,"Were you ever much less interested in most things or much less able to enjoy the things you used to enjoy most of the time, for two weeks?",Could you clarify what you mean by nearly every day?,need more clarification
+A2a,"Were you ever much less interested in most things or much less able to enjoy the things you used to enjoy most of the time, for two weeks?",Are you asking about just the recent weeks or also earlier times?,need more clarification
+A2a,"Were you ever much less interested in most things or much less able to enjoy the things you used to enjoy most of the time, for two weeks?",Do you mean symptoms that are noticeable to others or just to me?,need more clarification
+A2a,"Were you ever much less interested in most things or much less able to enjoy the things you used to enjoy most of the time, for two weeks?",I would need an example to know if this applies to me,need more clarification
+A2a,"Were you ever much less interested in most things or much less able to enjoy the things you used to enjoy most of the time, for two weeks?",Can you rephrase the question in a simpler way so I can answer more accurately?,need more clarification
+A2a,"Were you ever much less interested in most things or much less able to enjoy the things you used to enjoy most of the time, for two weeks?",Could you please explain what you mean by this question in more detail?,explain request
+A2a,"Were you ever much less interested in most things or much less able to enjoy the things you used to enjoy most of the time, for two weeks?","I am not sure I fully understand, can you give me an example?",explain request
+A2a,"Were you ever much less interested in most things or much less able to enjoy the things you used to enjoy most of the time, for two weeks?",Can you tell me more about what you want to know here?,explain request
+A2a,"Were you ever much less interested in most things or much less able to enjoy the things you used to enjoy most of the time, for two weeks?",I would like some explanation before I can answer properly.,explain request
+A2a,"Were you ever much less interested in most things or much less able to enjoy the things you used to enjoy most of the time, for two weeks?",Could you clarify what exactly you want me to think about?,explain request
+A2a,"Were you ever much less interested in most things or much less able to enjoy the things you used to enjoy most of the time, for two weeks?",Can you please explain this question so I am sure how to answer?,explain request
+A2a,"Were you ever much less interested in most things or much less able to enjoy the things you used to enjoy most of the time, for two weeks?","I do not understand the question fully, please explain more.",explain request
+A2a,"Were you ever much less interested in most things or much less able to enjoy the things you used to enjoy most of the time, for two weeks?",Could you give more details about what you mean?,explain request
+A2a,"Were you ever much less interested in most things or much less able to enjoy the things you used to enjoy most of the time, for two weeks?","I am confused by this question, can you rephrase it?",explain request
+A2a,"Were you ever much less interested in most things or much less able to enjoy the things you used to enjoy most of the time, for two weeks?",Please provide more information so I can respond accurately.,explain request
+A2b,"In the past two weeks, were you much less interested in most things or much less able to enjoy the things you used to enjoy most of the time?","Yes, I have felt like that almost every day and it has been affecting my mood a lot",yes
+A2b,"In the past two weeks, were you much less interested in most things or much less able to enjoy the things you used to enjoy most of the time?","Yes, that happens to me most days and it makes it hard to focus on anything",yes
+A2b,"In the past two weeks, were you much less interested in most things or much less able to enjoy the things you used to enjoy most of the time?","Yes, I have been feeling exactly that way for the past two weeks",yes
+A2b,"In the past two weeks, were you much less interested in most things or much less able to enjoy the things you used to enjoy most of the time?","Yes, nearly every day I feel this way and it does not seem to be getting better",yes
+A2b,"In the past two weeks, were you much less interested in most things or much less able to enjoy the things you used to enjoy most of the time?","Yes, I have been experiencing this very often and it is exhausting",yes
+A2b,"In the past two weeks, were you much less interested in most things or much less able to enjoy the things you used to enjoy most of the time?","Yes, this has been my experience almost every day recently",yes
+A2b,"In the past two weeks, were you much less interested in most things or much less able to enjoy the things you used to enjoy most of the time?","Yes, it has been happening for a while and it is very difficult for me",yes
+A2b,"In the past two weeks, were you much less interested in most things or much less able to enjoy the things you used to enjoy most of the time?","Yes, I notice it almost daily and it affects my ability to do things",yes
+A2b,"In the past two weeks, were you much less interested in most things or much less able to enjoy the things you used to enjoy most of the time?","Yes, it has been consistent for the last couple of weeks and it is troubling",yes
+A2b,"In the past two weeks, were you much less interested in most things or much less able to enjoy the things you used to enjoy most of the time?","Yes, exactly like that, it matches how I have been feeling",yes
+A2b,"In the past two weeks, were you much less interested in most things or much less able to enjoy the things you used to enjoy most of the time?","No, I have not been feeling that way at all",no
+A2b,"In the past two weeks, were you much less interested in most things or much less able to enjoy the things you used to enjoy most of the time?","No, I have not experienced that in the past two weeks",no
+A2b,"In the past two weeks, were you much less interested in most things or much less able to enjoy the things you used to enjoy most of the time?","No, this has not been an issue for me",no
+A2b,"In the past two weeks, were you much less interested in most things or much less able to enjoy the things you used to enjoy most of the time?","No, I have been feeling fine in that regard",no
+A2b,"In the past two weeks, were you much less interested in most things or much less able to enjoy the things you used to enjoy most of the time?","No, I do not think that applies to me",no
+A2b,"In the past two weeks, were you much less interested in most things or much less able to enjoy the things you used to enjoy most of the time?","No, that is not something I have noticed in myself",no
+A2b,"In the past two weeks, were you much less interested in most things or much less able to enjoy the things you used to enjoy most of the time?","No, I have not gone through anything like that",no
+A2b,"In the past two weeks, were you much less interested in most things or much less able to enjoy the things you used to enjoy most of the time?","No, I have been doing okay without those symptoms",no
+A2b,"In the past two weeks, were you much less interested in most things or much less able to enjoy the things you used to enjoy most of the time?","No, I do not relate to that experience",no
+A2b,"In the past two weeks, were you much less interested in most things or much less able to enjoy the things you used to enjoy most of the time?","No, I have not had that happen to me",no
+A2b,"In the past two weeks, were you much less interested in most things or much less able to enjoy the things you used to enjoy most of the time?",Do you mean in the past two weeks or at any point in my life?,need more clarification
+A2b,"In the past two weeks, were you much less interested in most things or much less able to enjoy the things you used to enjoy most of the time?","What exactly counts as most of the day, is it more than half the day or nearly all of it?",need more clarification
+A2b,"In the past two weeks, were you much less interested in most things or much less able to enjoy the things you used to enjoy most of the time?",Could you explain more about what you mean by that?,need more clarification
+A2b,"In the past two weeks, were you much less interested in most things or much less able to enjoy the things you used to enjoy most of the time?",I am not sure if you are asking about physical symptoms or emotional ones,need more clarification
+A2b,"In the past two weeks, were you much less interested in most things or much less able to enjoy the things you used to enjoy most of the time?",Do you mean a change compared to how I usually feel?,need more clarification
+A2b,"In the past two weeks, were you much less interested in most things or much less able to enjoy the things you used to enjoy most of the time?",Could you clarify what you mean by nearly every day?,need more clarification
+A2b,"In the past two weeks, were you much less interested in most things or much less able to enjoy the things you used to enjoy most of the time?",Are you asking about just the recent weeks or also earlier times?,need more clarification
+A2b,"In the past two weeks, were you much less interested in most things or much less able to enjoy the things you used to enjoy most of the time?",Do you mean symptoms that are noticeable to others or just to me?,need more clarification
+A2b,"In the past two weeks, were you much less interested in most things or much less able to enjoy the things you used to enjoy most of the time?",I would need an example to know if this applies to me,need more clarification
+A2b,"In the past two weeks, were you much less interested in most things or much less able to enjoy the things you used to enjoy most of the time?",Can you rephrase the question in a simpler way so I can answer more accurately?,need more clarification
+A2b,"In the past two weeks, were you much less interested in most things or much less able to enjoy the things you used to enjoy most of the time?",Could you please explain what you mean by this question in more detail?,explain request
+A2b,"In the past two weeks, were you much less interested in most things or much less able to enjoy the things you used to enjoy most of the time?","I am not sure I fully understand, can you give me an example?",explain request
+A2b,"In the past two weeks, were you much less interested in most things or much less able to enjoy the things you used to enjoy most of the time?",Can you tell me more about what you want to know here?,explain request
+A2b,"In the past two weeks, were you much less interested in most things or much less able to enjoy the things you used to enjoy most of the time?",I would like some explanation before I can answer properly.,explain request
+A2b,"In the past two weeks, were you much less interested in most things or much less able to enjoy the things you used to enjoy most of the time?",Could you clarify what exactly you want me to think about?,explain request
+A2b,"In the past two weeks, were you much less interested in most things or much less able to enjoy the things you used to enjoy most of the time?",Can you please explain this question so I am sure how to answer?,explain request
+A2b,"In the past two weeks, were you much less interested in most things or much less able to enjoy the things you used to enjoy most of the time?","I do not understand the question fully, please explain more.",explain request
+A2b,"In the past two weeks, were you much less interested in most things or much less able to enjoy the things you used to enjoy most of the time?",Could you give more details about what you mean?,explain request
+A2b,"In the past two weeks, were you much less interested in most things or much less able to enjoy the things you used to enjoy most of the time?","I am confused by this question, can you rephrase it?",explain request
+A2b,"In the past two weeks, were you much less interested in most things or much less able to enjoy the things you used to enjoy most of the time?",Please provide more information so I can respond accurately.,explain request
+A3a_recent,"(Past 2 weeks) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?","Yes, I have felt like that almost every day and it has been affecting my mood a lot",yes
+A3a_recent,"(Past 2 weeks) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?","Yes, that happens to me most days and it makes it hard to focus on anything",yes
+A3a_recent,"(Past 2 weeks) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?","Yes, I have been feeling exactly that way for the past two weeks",yes
+A3a_recent,"(Past 2 weeks) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?","Yes, nearly every day I feel this way and it does not seem to be getting better",yes
+A3a_recent,"(Past 2 weeks) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?","Yes, I have been experiencing this very often and it is exhausting",yes
+A3a_recent,"(Past 2 weeks) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?","Yes, this has been my experience almost every day recently",yes
+A3a_recent,"(Past 2 weeks) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?","Yes, it has been happening for a while and it is very difficult for me",yes
+A3a_recent,"(Past 2 weeks) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?","Yes, I notice it almost daily and it affects my ability to do things",yes
+A3a_recent,"(Past 2 weeks) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?","Yes, it has been consistent for the last couple of weeks and it is troubling",yes
+A3a_recent,"(Past 2 weeks) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?","Yes, exactly like that, it matches how I have been feeling",yes
+A3a_recent,"(Past 2 weeks) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?","No, I have not been feeling that way at all",no
+A3a_recent,"(Past 2 weeks) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?","No, I have not experienced that in the past two weeks",no
+A3a_recent,"(Past 2 weeks) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?","No, this has not been an issue for me",no
+A3a_recent,"(Past 2 weeks) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?","No, I have been feeling fine in that regard",no
+A3a_recent,"(Past 2 weeks) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?","No, I do not think that applies to me",no
+A3a_recent,"(Past 2 weeks) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?","No, that is not something I have noticed in myself",no
+A3a_recent,"(Past 2 weeks) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?","No, I have not gone through anything like that",no
+A3a_recent,"(Past 2 weeks) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?","No, I have been doing okay without those symptoms",no
+A3a_recent,"(Past 2 weeks) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?","No, I do not relate to that experience",no
+A3a_recent,"(Past 2 weeks) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?","No, I have not had that happen to me",no
+A3a_recent,"(Past 2 weeks) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?",Do you mean in the past two weeks or at any point in my life?,need more clarification
+A3a_recent,"(Past 2 weeks) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?","What exactly counts as most of the day, is it more than half the day or nearly all of it?",need more clarification
+A3a_recent,"(Past 2 weeks) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?",Could you explain more about what you mean by that?,need more clarification
+A3a_recent,"(Past 2 weeks) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?",I am not sure if you are asking about physical symptoms or emotional ones,need more clarification
+A3a_recent,"(Past 2 weeks) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?",Do you mean a change compared to how I usually feel?,need more clarification
+A3a_recent,"(Past 2 weeks) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?",Could you clarify what you mean by nearly every day?,need more clarification
+A3a_recent,"(Past 2 weeks) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?",Are you asking about just the recent weeks or also earlier times?,need more clarification
+A3a_recent,"(Past 2 weeks) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?",Do you mean symptoms that are noticeable to others or just to me?,need more clarification
+A3a_recent,"(Past 2 weeks) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?",I would need an example to know if this applies to me,need more clarification
+A3a_recent,"(Past 2 weeks) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?",Can you rephrase the question in a simpler way so I can answer more accurately?,need more clarification
+A3a_recent,"(Past 2 weeks) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?",Could you please explain what you mean by this question in more detail?,explain request
+A3a_recent,"(Past 2 weeks) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?","I am not sure I fully understand, can you give me an example?",explain request
+A3a_recent,"(Past 2 weeks) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?",Can you tell me more about what you want to know here?,explain request
+A3a_recent,"(Past 2 weeks) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?",I would like some explanation before I can answer properly.,explain request
+A3a_recent,"(Past 2 weeks) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?",Could you clarify what exactly you want me to think about?,explain request
+A3a_recent,"(Past 2 weeks) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?",Can you please explain this question so I am sure how to answer?,explain request
+A3a_recent,"(Past 2 weeks) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?","I do not understand the question fully, please explain more.",explain request
+A3a_recent,"(Past 2 weeks) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?",Could you give more details about what you mean?,explain request
+A3a_recent,"(Past 2 weeks) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?","I am confused by this question, can you rephrase it?",explain request
+A3a_recent,"(Past 2 weeks) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?",Please provide more information so I can respond accurately.,explain request
+A3a_past,"(Past episode) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?","Yes, I have felt like that almost every day and it has been affecting my mood a lot",yes
+A3a_past,"(Past episode) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?","Yes, that happens to me most days and it makes it hard to focus on anything",yes
+A3a_past,"(Past episode) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?","Yes, I have been feeling exactly that way for the past two weeks",yes
+A3a_past,"(Past episode) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?","Yes, nearly every day I feel this way and it does not seem to be getting better",yes
+A3a_past,"(Past episode) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?","Yes, I have been experiencing this very often and it is exhausting",yes
+A3a_past,"(Past episode) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?","Yes, this has been my experience almost every day recently",yes
+A3a_past,"(Past episode) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?","Yes, it has been happening for a while and it is very difficult for me",yes
+A3a_past,"(Past episode) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?","Yes, I notice it almost daily and it affects my ability to do things",yes
+A3a_past,"(Past episode) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?","Yes, it has been consistent for the last couple of weeks and it is troubling",yes
+A3a_past,"(Past episode) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?","Yes, exactly like that, it matches how I have been feeling",yes
+A3a_past,"(Past episode) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?","No, I have not been feeling that way at all",no
+A3a_past,"(Past episode) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?","No, I have not experienced that in the past two weeks",no
+A3a_past,"(Past episode) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?","No, this has not been an issue for me",no
+A3a_past,"(Past episode) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?","No, I have been feeling fine in that regard",no
+A3a_past,"(Past episode) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?","No, I do not think that applies to me",no
+A3a_past,"(Past episode) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?","No, that is not something I have noticed in myself",no
+A3a_past,"(Past episode) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?","No, I have not gone through anything like that",no
+A3a_past,"(Past episode) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?","No, I have been doing okay without those symptoms",no
+A3a_past,"(Past episode) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?","No, I do not relate to that experience",no
+A3a_past,"(Past episode) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?","No, I have not had that happen to me",no
+A3a_past,"(Past episode) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?",Do you mean in the past two weeks or at any point in my life?,need more clarification
+A3a_past,"(Past episode) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?","What exactly counts as most of the day, is it more than half the day or nearly all of it?",need more clarification
+A3a_past,"(Past episode) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?",Could you explain more about what you mean by that?,need more clarification
+A3a_past,"(Past episode) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?",I am not sure if you are asking about physical symptoms or emotional ones,need more clarification
+A3a_past,"(Past episode) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?",Do you mean a change compared to how I usually feel?,need more clarification
+A3a_past,"(Past episode) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?",Could you clarify what you mean by nearly every day?,need more clarification
+A3a_past,"(Past episode) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?",Are you asking about just the recent weeks or also earlier times?,need more clarification
+A3a_past,"(Past episode) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?",Do you mean symptoms that are noticeable to others or just to me?,need more clarification
+A3a_past,"(Past episode) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?",I would need an example to know if this applies to me,need more clarification
+A3a_past,"(Past episode) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?",Can you rephrase the question in a simpler way so I can answer more accurately?,need more clarification
+A3a_past,"(Past episode) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?",Could you please explain what you mean by this question in more detail?,explain request
+A3a_past,"(Past episode) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?","I am not sure I fully understand, can you give me an example?",explain request
+A3a_past,"(Past episode) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?",Can you tell me more about what you want to know here?,explain request
+A3a_past,"(Past episode) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?",I would like some explanation before I can answer properly.,explain request
+A3a_past,"(Past episode) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?",Could you clarify what exactly you want me to think about?,explain request
+A3a_past,"(Past episode) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?",Can you please explain this question so I am sure how to answer?,explain request
+A3a_past,"(Past episode) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?","I do not understand the question fully, please explain more.",explain request
+A3a_past,"(Past episode) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?",Could you give more details about what you mean?,explain request
+A3a_past,"(Past episode) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?","I am confused by this question, can you rephrase it?",explain request
+A3a_past,"(Past episode) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?",Please provide more information so I can respond accurately.,explain request
+A3b_recent,"(Past 2 weeks) Did you have trouble sleeping nearly every night (difficulty falling asleep, early waking, or sleeping excessively)?","Yes, I have felt like that almost every day and it has been affecting my mood a lot",yes
+A3b_recent,"(Past 2 weeks) Did you have trouble sleeping nearly every night (difficulty falling asleep, early waking, or sleeping excessively)?","Yes, that happens to me most days and it makes it hard to focus on anything",yes
+A3b_recent,"(Past 2 weeks) Did you have trouble sleeping nearly every night (difficulty falling asleep, early waking, or sleeping excessively)?","Yes, I have been feeling exactly that way for the past two weeks",yes
+A3b_recent,"(Past 2 weeks) Did you have trouble sleeping nearly every night (difficulty falling asleep, early waking, or sleeping excessively)?","Yes, nearly every day I feel this way and it does not seem to be getting better",yes
+A3b_recent,"(Past 2 weeks) Did you have trouble sleeping nearly every night (difficulty falling asleep, early waking, or sleeping excessively)?","Yes, I have been experiencing this very often and it is exhausting",yes
+A3b_recent,"(Past 2 weeks) Did you have trouble sleeping nearly every night (difficulty falling asleep, early waking, or sleeping excessively)?","Yes, this has been my experience almost every day recently",yes
+A3b_recent,"(Past 2 weeks) Did you have trouble sleeping nearly every night (difficulty falling asleep, early waking, or sleeping excessively)?","Yes, it has been happening for a while and it is very difficult for me",yes
+A3b_recent,"(Past 2 weeks) Did you have trouble sleeping nearly every night (difficulty falling asleep, early waking, or sleeping excessively)?","Yes, I notice it almost daily and it affects my ability to do things",yes
+A3b_recent,"(Past 2 weeks) Did you have trouble sleeping nearly every night (difficulty falling asleep, early waking, or sleeping excessively)?","Yes, it has been consistent for the last couple of weeks and it is troubling",yes
+A3b_recent,"(Past 2 weeks) Did you have trouble sleeping nearly every night (difficulty falling asleep, early waking, or sleeping excessively)?","Yes, exactly like that, it matches how I have been feeling",yes
+A3b_recent,"(Past 2 weeks) Did you have trouble sleeping nearly every night (difficulty falling asleep, early waking, or sleeping excessively)?","No, I have not been feeling that way at all",no
+A3b_recent,"(Past 2 weeks) Did you have trouble sleeping nearly every night (difficulty falling asleep, early waking, or sleeping excessively)?","No, I have not experienced that in the past two weeks",no
+A3b_recent,"(Past 2 weeks) Did you have trouble sleeping nearly every night (difficulty falling asleep, early waking, or sleeping excessively)?","No, this has not been an issue for me",no
+A3b_recent,"(Past 2 weeks) Did you have trouble sleeping nearly every night (difficulty falling asleep, early waking, or sleeping excessively)?","No, I have been feeling fine in that regard",no
+A3b_recent,"(Past 2 weeks) Did you have trouble sleeping nearly every night (difficulty falling asleep, early waking, or sleeping excessively)?","No, I do not think that applies to me",no
+A3b_recent,"(Past 2 weeks) Did you have trouble sleeping nearly every night (difficulty falling asleep, early waking, or sleeping excessively)?","No, that is not something I have noticed in myself",no
+A3b_recent,"(Past 2 weeks) Did you have trouble sleeping nearly every night (difficulty falling asleep, early waking, or sleeping excessively)?","No, I have not gone through anything like that",no
+A3b_recent,"(Past 2 weeks) Did you have trouble sleeping nearly every night (difficulty falling asleep, early waking, or sleeping excessively)?","No, I have been doing okay without those symptoms",no
+A3b_recent,"(Past 2 weeks) Did you have trouble sleeping nearly every night (difficulty falling asleep, early waking, or sleeping excessively)?","No, I do not relate to that experience",no
+A3b_recent,"(Past 2 weeks) Did you have trouble sleeping nearly every night (difficulty falling asleep, early waking, or sleeping excessively)?","No, I have not had that happen to me",no
+A3b_recent,"(Past 2 weeks) Did you have trouble sleeping nearly every night (difficulty falling asleep, early waking, or sleeping excessively)?",Do you mean in the past two weeks or at any point in my life?,need more clarification
+A3b_recent,"(Past 2 weeks) Did you have trouble sleeping nearly every night (difficulty falling asleep, early waking, or sleeping excessively)?","What exactly counts as most of the day, is it more than half the day or nearly all of it?",need more clarification
+A3b_recent,"(Past 2 weeks) Did you have trouble sleeping nearly every night (difficulty falling asleep, early waking, or sleeping excessively)?",Could you explain more about what you mean by that?,need more clarification
+A3b_recent,"(Past 2 weeks) Did you have trouble sleeping nearly every night (difficulty falling asleep, early waking, or sleeping excessively)?",I am not sure if you are asking about physical symptoms or emotional ones,need more clarification
+A3b_recent,"(Past 2 weeks) Did you have trouble sleeping nearly every night (difficulty falling asleep, early waking, or sleeping excessively)?",Do you mean a change compared to how I usually feel?,need more clarification
+A3b_recent,"(Past 2 weeks) Did you have trouble sleeping nearly every night (difficulty falling asleep, early waking, or sleeping excessively)?",Could you clarify what you mean by nearly every day?,need more clarification
+A3b_recent,"(Past 2 weeks) Did you have trouble sleeping nearly every night (difficulty falling asleep, early waking, or sleeping excessively)?",Are you asking about just the recent weeks or also earlier times?,need more clarification
+A3b_recent,"(Past 2 weeks) Did you have trouble sleeping nearly every night (difficulty falling asleep, early waking, or sleeping excessively)?",Do you mean symptoms that are noticeable to others or just to me?,need more clarification
+A3b_recent,"(Past 2 weeks) Did you have trouble sleeping nearly every night (difficulty falling asleep, early waking, or sleeping excessively)?",I would need an example to know if this applies to me,need more clarification
+A3b_recent,"(Past 2 weeks) Did you have trouble sleeping nearly every night (difficulty falling asleep, early waking, or sleeping excessively)?",Can you rephrase the question in a simpler way so I can answer more accurately?,need more clarification
+A3b_recent,"(Past 2 weeks) Did you have trouble sleeping nearly every night (difficulty falling asleep, early waking, or sleeping excessively)?",Could you please explain what you mean by this question in more detail?,explain request
+A3b_recent,"(Past 2 weeks) Did you have trouble sleeping nearly every night (difficulty falling asleep, early waking, or sleeping excessively)?","I am not sure I fully understand, can you give me an example?",explain request
+A3b_recent,"(Past 2 weeks) Did you have trouble sleeping nearly every night (difficulty falling asleep, early waking, or sleeping excessively)?",Can you tell me more about what you want to know here?,explain request
+A3b_recent,"(Past 2 weeks) Did you have trouble sleeping nearly every night (difficulty falling asleep, early waking, or sleeping excessively)?",I would like some explanation before I can answer properly.,explain request
+A3b_recent,"(Past 2 weeks) Did you have trouble sleeping nearly every night (difficulty falling asleep, early waking, or sleeping excessively)?",Could you clarify what exactly you want me to think about?,explain request
+A3b_recent,"(Past 2 weeks) Did you have trouble sleeping nearly every night (difficulty falling asleep, early waking, or sleeping excessively)?",Can you please explain this question so I am sure how to answer?,explain request
+A3b_recent,"(Past 2 weeks) Did you have trouble sleeping nearly every night (difficulty falling asleep, early waking, or sleeping excessively)?","I do not understand the question fully, please explain more.",explain request
+A3b_recent,"(Past 2 weeks) Did you have trouble sleeping nearly every night (difficulty falling asleep, early waking, or sleeping excessively)?",Could you give more details about what you mean?,explain request
+A3b_recent,"(Past 2 weeks) Did you have trouble sleeping nearly every night (difficulty falling asleep, early waking, or sleeping excessively)?","I am confused by this question, can you rephrase it?",explain request
+A3b_recent,"(Past 2 weeks) Did you have trouble sleeping nearly every night (difficulty falling asleep, early waking, or sleeping excessively)?",Please provide more information so I can respond accurately.,explain request
+A3b_past,(Past episode) Did you have trouble sleeping nearly every night?,"Yes, I have felt like that almost every day and it has been affecting my mood a lot",yes
+A3b_past,(Past episode) Did you have trouble sleeping nearly every night?,"Yes, that happens to me most days and it makes it hard to focus on anything",yes
+A3b_past,(Past episode) Did you have trouble sleeping nearly every night?,"Yes, I have been feeling exactly that way for the past two weeks",yes
+A3b_past,(Past episode) Did you have trouble sleeping nearly every night?,"Yes, nearly every day I feel this way and it does not seem to be getting better",yes
+A3b_past,(Past episode) Did you have trouble sleeping nearly every night?,"Yes, I have been experiencing this very often and it is exhausting",yes
+A3b_past,(Past episode) Did you have trouble sleeping nearly every night?,"Yes, this has been my experience almost every day recently",yes
+A3b_past,(Past episode) Did you have trouble sleeping nearly every night?,"Yes, it has been happening for a while and it is very difficult for me",yes
+A3b_past,(Past episode) Did you have trouble sleeping nearly every night?,"Yes, I notice it almost daily and it affects my ability to do things",yes
+A3b_past,(Past episode) Did you have trouble sleeping nearly every night?,"Yes, it has been consistent for the last couple of weeks and it is troubling",yes
+A3b_past,(Past episode) Did you have trouble sleeping nearly every night?,"Yes, exactly like that, it matches how I have been feeling",yes
+A3b_past,(Past episode) Did you have trouble sleeping nearly every night?,"No, I have not been feeling that way at all",no
+A3b_past,(Past episode) Did you have trouble sleeping nearly every night?,"No, I have not experienced that in the past two weeks",no
+A3b_past,(Past episode) Did you have trouble sleeping nearly every night?,"No, this has not been an issue for me",no
+A3b_past,(Past episode) Did you have trouble sleeping nearly every night?,"No, I have been feeling fine in that regard",no
+A3b_past,(Past episode) Did you have trouble sleeping nearly every night?,"No, I do not think that applies to me",no
+A3b_past,(Past episode) Did you have trouble sleeping nearly every night?,"No, that is not something I have noticed in myself",no
+A3b_past,(Past episode) Did you have trouble sleeping nearly every night?,"No, I have not gone through anything like that",no
+A3b_past,(Past episode) Did you have trouble sleeping nearly every night?,"No, I have been doing okay without those symptoms",no
+A3b_past,(Past episode) Did you have trouble sleeping nearly every night?,"No, I do not relate to that experience",no
+A3b_past,(Past episode) Did you have trouble sleeping nearly every night?,"No, I have not had that happen to me",no
+A3b_past,(Past episode) Did you have trouble sleeping nearly every night?,Do you mean in the past two weeks or at any point in my life?,need more clarification
+A3b_past,(Past episode) Did you have trouble sleeping nearly every night?,"What exactly counts as most of the day, is it more than half the day or nearly all of it?",need more clarification
+A3b_past,(Past episode) Did you have trouble sleeping nearly every night?,Could you explain more about what you mean by that?,need more clarification
+A3b_past,(Past episode) Did you have trouble sleeping nearly every night?,I am not sure if you are asking about physical symptoms or emotional ones,need more clarification
+A3b_past,(Past episode) Did you have trouble sleeping nearly every night?,Do you mean a change compared to how I usually feel?,need more clarification
+A3b_past,(Past episode) Did you have trouble sleeping nearly every night?,Could you clarify what you mean by nearly every day?,need more clarification
+A3b_past,(Past episode) Did you have trouble sleeping nearly every night?,Are you asking about just the recent weeks or also earlier times?,need more clarification
+A3b_past,(Past episode) Did you have trouble sleeping nearly every night?,Do you mean symptoms that are noticeable to others or just to me?,need more clarification
+A3b_past,(Past episode) Did you have trouble sleeping nearly every night?,I would need an example to know if this applies to me,need more clarification
+A3b_past,(Past episode) Did you have trouble sleeping nearly every night?,Can you rephrase the question in a simpler way so I can answer more accurately?,need more clarification
+A3b_past,(Past episode) Did you have trouble sleeping nearly every night?,Could you please explain what you mean by this question in more detail?,explain request
+A3b_past,(Past episode) Did you have trouble sleeping nearly every night?,"I am not sure I fully understand, can you give me an example?",explain request
+A3b_past,(Past episode) Did you have trouble sleeping nearly every night?,Can you tell me more about what you want to know here?,explain request
+A3b_past,(Past episode) Did you have trouble sleeping nearly every night?,I would like some explanation before I can answer properly.,explain request
+A3b_past,(Past episode) Did you have trouble sleeping nearly every night?,Could you clarify what exactly you want me to think about?,explain request
+A3b_past,(Past episode) Did you have trouble sleeping nearly every night?,Can you please explain this question so I am sure how to answer?,explain request
+A3b_past,(Past episode) Did you have trouble sleeping nearly every night?,"I do not understand the question fully, please explain more.",explain request
+A3b_past,(Past episode) Did you have trouble sleeping nearly every night?,Could you give more details about what you mean?,explain request
+A3b_past,(Past episode) Did you have trouble sleeping nearly every night?,"I am confused by this question, can you rephrase it?",explain request
+A3b_past,(Past episode) Did you have trouble sleeping nearly every night?,Please provide more information so I can respond accurately.,explain request
+A3c_recent,"(Past 2 weeks) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day? Did anyone notice?","Yes, I have felt like that almost every day and it has been affecting my mood a lot",yes
+A3c_recent,"(Past 2 weeks) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day? Did anyone notice?","Yes, that happens to me most days and it makes it hard to focus on anything",yes
+A3c_recent,"(Past 2 weeks) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day? Did anyone notice?","Yes, I have been feeling exactly that way for the past two weeks",yes
+A3c_recent,"(Past 2 weeks) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day? Did anyone notice?","Yes, nearly every day I feel this way and it does not seem to be getting better",yes
+A3c_recent,"(Past 2 weeks) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day? Did anyone notice?","Yes, I have been experiencing this very often and it is exhausting",yes
+A3c_recent,"(Past 2 weeks) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day? Did anyone notice?","Yes, this has been my experience almost every day recently",yes
+A3c_recent,"(Past 2 weeks) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day? Did anyone notice?","Yes, it has been happening for a while and it is very difficult for me",yes
+A3c_recent,"(Past 2 weeks) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day? Did anyone notice?","Yes, I notice it almost daily and it affects my ability to do things",yes
+A3c_recent,"(Past 2 weeks) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day? Did anyone notice?","Yes, it has been consistent for the last couple of weeks and it is troubling",yes
+A3c_recent,"(Past 2 weeks) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day? Did anyone notice?","Yes, exactly like that, it matches how I have been feeling",yes
+A3c_recent,"(Past 2 weeks) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day? Did anyone notice?","No, I have not been feeling that way at all",no
+A3c_recent,"(Past 2 weeks) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day? Did anyone notice?","No, I have not experienced that in the past two weeks",no
+A3c_recent,"(Past 2 weeks) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day? Did anyone notice?","No, this has not been an issue for me",no
+A3c_recent,"(Past 2 weeks) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day? Did anyone notice?","No, I have been feeling fine in that regard",no
+A3c_recent,"(Past 2 weeks) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day? Did anyone notice?","No, I do not think that applies to me",no
+A3c_recent,"(Past 2 weeks) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day? Did anyone notice?","No, that is not something I have noticed in myself",no
+A3c_recent,"(Past 2 weeks) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day? Did anyone notice?","No, I have not gone through anything like that",no
+A3c_recent,"(Past 2 weeks) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day? Did anyone notice?","No, I have been doing okay without those symptoms",no
+A3c_recent,"(Past 2 weeks) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day? Did anyone notice?","No, I do not relate to that experience",no
+A3c_recent,"(Past 2 weeks) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day? Did anyone notice?","No, I have not had that happen to me",no
+A3c_recent,"(Past 2 weeks) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day? Did anyone notice?",Do you mean in the past two weeks or at any point in my life?,need more clarification
+A3c_recent,"(Past 2 weeks) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day? Did anyone notice?","What exactly counts as most of the day, is it more than half the day or nearly all of it?",need more clarification
+A3c_recent,"(Past 2 weeks) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day? Did anyone notice?",Could you explain more about what you mean by that?,need more clarification
+A3c_recent,"(Past 2 weeks) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day? Did anyone notice?",I am not sure if you are asking about physical symptoms or emotional ones,need more clarification
+A3c_recent,"(Past 2 weeks) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day? Did anyone notice?",Do you mean a change compared to how I usually feel?,need more clarification
+A3c_recent,"(Past 2 weeks) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day? Did anyone notice?",Could you clarify what you mean by nearly every day?,need more clarification
+A3c_recent,"(Past 2 weeks) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day? Did anyone notice?",Are you asking about just the recent weeks or also earlier times?,need more clarification
+A3c_recent,"(Past 2 weeks) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day? Did anyone notice?",Do you mean symptoms that are noticeable to others or just to me?,need more clarification
+A3c_recent,"(Past 2 weeks) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day? Did anyone notice?",I would need an example to know if this applies to me,need more clarification
+A3c_recent,"(Past 2 weeks) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day? Did anyone notice?",Can you rephrase the question in a simpler way so I can answer more accurately?,need more clarification
+A3c_recent,"(Past 2 weeks) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day? Did anyone notice?",Could you please explain what you mean by this question in more detail?,explain request
+A3c_recent,"(Past 2 weeks) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day? Did anyone notice?","I am not sure I fully understand, can you give me an example?",explain request
+A3c_recent,"(Past 2 weeks) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day? Did anyone notice?",Can you tell me more about what you want to know here?,explain request
+A3c_recent,"(Past 2 weeks) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day? Did anyone notice?",I would like some explanation before I can answer properly.,explain request
+A3c_recent,"(Past 2 weeks) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day? Did anyone notice?",Could you clarify what exactly you want me to think about?,explain request
+A3c_recent,"(Past 2 weeks) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day? Did anyone notice?",Can you please explain this question so I am sure how to answer?,explain request
+A3c_recent,"(Past 2 weeks) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day? Did anyone notice?","I do not understand the question fully, please explain more.",explain request
+A3c_recent,"(Past 2 weeks) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day? Did anyone notice?",Could you give more details about what you mean?,explain request
+A3c_recent,"(Past 2 weeks) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day? Did anyone notice?","I am confused by this question, can you rephrase it?",explain request
+A3c_recent,"(Past 2 weeks) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day? Did anyone notice?",Please provide more information so I can respond accurately.,explain request
+A3c_past,"(Past episode) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day?","Yes, I have felt like that almost every day and it has been affecting my mood a lot",yes
+A3c_past,"(Past episode) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day?","Yes, that happens to me most days and it makes it hard to focus on anything",yes
+A3c_past,"(Past episode) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day?","Yes, I have been feeling exactly that way for the past two weeks",yes
+A3c_past,"(Past episode) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day?","Yes, nearly every day I feel this way and it does not seem to be getting better",yes
+A3c_past,"(Past episode) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day?","Yes, I have been experiencing this very often and it is exhausting",yes
+A3c_past,"(Past episode) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day?","Yes, this has been my experience almost every day recently",yes
+A3c_past,"(Past episode) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day?","Yes, it has been happening for a while and it is very difficult for me",yes
+A3c_past,"(Past episode) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day?","Yes, I notice it almost daily and it affects my ability to do things",yes
+A3c_past,"(Past episode) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day?","Yes, it has been consistent for the last couple of weeks and it is troubling",yes
+A3c_past,"(Past episode) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day?","Yes, exactly like that, it matches how I have been feeling",yes
+A3c_past,"(Past episode) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day?","No, I have not been feeling that way at all",no
+A3c_past,"(Past episode) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day?","No, I have not experienced that in the past two weeks",no
+A3c_past,"(Past episode) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day?","No, this has not been an issue for me",no
+A3c_past,"(Past episode) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day?","No, I have been feeling fine in that regard",no
+A3c_past,"(Past episode) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day?","No, I do not think that applies to me",no
+A3c_past,"(Past episode) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day?","No, that is not something I have noticed in myself",no
+A3c_past,"(Past episode) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day?","No, I have not gone through anything like that",no
+A3c_past,"(Past episode) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day?","No, I have been doing okay without those symptoms",no
+A3c_past,"(Past episode) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day?","No, I do not relate to that experience",no
+A3c_past,"(Past episode) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day?","No, I have not had that happen to me",no
+A3c_past,"(Past episode) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day?",Do you mean in the past two weeks or at any point in my life?,need more clarification
+A3c_past,"(Past episode) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day?","What exactly counts as most of the day, is it more than half the day or nearly all of it?",need more clarification
+A3c_past,"(Past episode) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day?",Could you explain more about what you mean by that?,need more clarification
+A3c_past,"(Past episode) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day?",I am not sure if you are asking about physical symptoms or emotional ones,need more clarification
+A3c_past,"(Past episode) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day?",Do you mean a change compared to how I usually feel?,need more clarification
+A3c_past,"(Past episode) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day?",Could you clarify what you mean by nearly every day?,need more clarification
+A3c_past,"(Past episode) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day?",Are you asking about just the recent weeks or also earlier times?,need more clarification
+A3c_past,"(Past episode) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day?",Do you mean symptoms that are noticeable to others or just to me?,need more clarification
+A3c_past,"(Past episode) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day?",I would need an example to know if this applies to me,need more clarification
+A3c_past,"(Past episode) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day?",Can you rephrase the question in a simpler way so I can answer more accurately?,need more clarification
+A3c_past,"(Past episode) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day?",Could you please explain what you mean by this question in more detail?,explain request
+A3c_past,"(Past episode) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day?","I am not sure I fully understand, can you give me an example?",explain request
+A3c_past,"(Past episode) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day?",Can you tell me more about what you want to know here?,explain request
+A3c_past,"(Past episode) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day?",I would like some explanation before I can answer properly.,explain request
+A3c_past,"(Past episode) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day?",Could you clarify what exactly you want me to think about?,explain request
+A3c_past,"(Past episode) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day?",Can you please explain this question so I am sure how to answer?,explain request
+A3c_past,"(Past episode) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day?","I do not understand the question fully, please explain more.",explain request
+A3c_past,"(Past episode) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day?",Could you give more details about what you mean?,explain request
+A3c_past,"(Past episode) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day?","I am confused by this question, can you rephrase it?",explain request
+A3c_past,"(Past episode) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day?",Please provide more information so I can respond accurately.,explain request
+A3d_recent,(Past 2 weeks) Did you feel tired or without energy almost every day?,"Yes, I have felt like that almost every day and it has been affecting my mood a lot",yes
+A3d_recent,(Past 2 weeks) Did you feel tired or without energy almost every day?,"Yes, that happens to me most days and it makes it hard to focus on anything",yes
+A3d_recent,(Past 2 weeks) Did you feel tired or without energy almost every day?,"Yes, I have been feeling exactly that way for the past two weeks",yes
+A3d_recent,(Past 2 weeks) Did you feel tired or without energy almost every day?,"Yes, nearly every day I feel this way and it does not seem to be getting better",yes
+A3d_recent,(Past 2 weeks) Did you feel tired or without energy almost every day?,"Yes, I have been experiencing this very often and it is exhausting",yes
+A3d_recent,(Past 2 weeks) Did you feel tired or without energy almost every day?,"Yes, this has been my experience almost every day recently",yes
+A3d_recent,(Past 2 weeks) Did you feel tired or without energy almost every day?,"Yes, it has been happening for a while and it is very difficult for me",yes
+A3d_recent,(Past 2 weeks) Did you feel tired or without energy almost every day?,"Yes, I notice it almost daily and it affects my ability to do things",yes
+A3d_recent,(Past 2 weeks) Did you feel tired or without energy almost every day?,"Yes, it has been consistent for the last couple of weeks and it is troubling",yes
+A3d_recent,(Past 2 weeks) Did you feel tired or without energy almost every day?,"Yes, exactly like that, it matches how I have been feeling",yes
+A3d_recent,(Past 2 weeks) Did you feel tired or without energy almost every day?,"No, I have not been feeling that way at all",no
+A3d_recent,(Past 2 weeks) Did you feel tired or without energy almost every day?,"No, I have not experienced that in the past two weeks",no
+A3d_recent,(Past 2 weeks) Did you feel tired or without energy almost every day?,"No, this has not been an issue for me",no
+A3d_recent,(Past 2 weeks) Did you feel tired or without energy almost every day?,"No, I have been feeling fine in that regard",no
+A3d_recent,(Past 2 weeks) Did you feel tired or without energy almost every day?,"No, I do not think that applies to me",no
+A3d_recent,(Past 2 weeks) Did you feel tired or without energy almost every day?,"No, that is not something I have noticed in myself",no
+A3d_recent,(Past 2 weeks) Did you feel tired or without energy almost every day?,"No, I have not gone through anything like that",no
+A3d_recent,(Past 2 weeks) Did you feel tired or without energy almost every day?,"No, I have been doing okay without those symptoms",no
+A3d_recent,(Past 2 weeks) Did you feel tired or without energy almost every day?,"No, I do not relate to that experience",no
+A3d_recent,(Past 2 weeks) Did you feel tired or without energy almost every day?,"No, I have not had that happen to me",no
+A3d_recent,(Past 2 weeks) Did you feel tired or without energy almost every day?,Do you mean in the past two weeks or at any point in my life?,need more clarification
+A3d_recent,(Past 2 weeks) Did you feel tired or without energy almost every day?,"What exactly counts as most of the day, is it more than half the day or nearly all of it?",need more clarification
+A3d_recent,(Past 2 weeks) Did you feel tired or without energy almost every day?,Could you explain more about what you mean by that?,need more clarification
+A3d_recent,(Past 2 weeks) Did you feel tired or without energy almost every day?,I am not sure if you are asking about physical symptoms or emotional ones,need more clarification
+A3d_recent,(Past 2 weeks) Did you feel tired or without energy almost every day?,Do you mean a change compared to how I usually feel?,need more clarification
+A3d_recent,(Past 2 weeks) Did you feel tired or without energy almost every day?,Could you clarify what you mean by nearly every day?,need more clarification
+A3d_recent,(Past 2 weeks) Did you feel tired or without energy almost every day?,Are you asking about just the recent weeks or also earlier times?,need more clarification
+A3d_recent,(Past 2 weeks) Did you feel tired or without energy almost every day?,Do you mean symptoms that are noticeable to others or just to me?,need more clarification
+A3d_recent,(Past 2 weeks) Did you feel tired or without energy almost every day?,I would need an example to know if this applies to me,need more clarification
+A3d_recent,(Past 2 weeks) Did you feel tired or without energy almost every day?,Can you rephrase the question in a simpler way so I can answer more accurately?,need more clarification
+A3d_recent,(Past 2 weeks) Did you feel tired or without energy almost every day?,Could you please explain what you mean by this question in more detail?,explain request
+A3d_recent,(Past 2 weeks) Did you feel tired or without energy almost every day?,"I am not sure I fully understand, can you give me an example?",explain request
+A3d_recent,(Past 2 weeks) Did you feel tired or without energy almost every day?,Can you tell me more about what you want to know here?,explain request
+A3d_recent,(Past 2 weeks) Did you feel tired or without energy almost every day?,I would like some explanation before I can answer properly.,explain request
+A3d_recent,(Past 2 weeks) Did you feel tired or without energy almost every day?,Could you clarify what exactly you want me to think about?,explain request
+A3d_recent,(Past 2 weeks) Did you feel tired or without energy almost every day?,Can you please explain this question so I am sure how to answer?,explain request
+A3d_recent,(Past 2 weeks) Did you feel tired or without energy almost every day?,"I do not understand the question fully, please explain more.",explain request
+A3d_recent,(Past 2 weeks) Did you feel tired or without energy almost every day?,Could you give more details about what you mean?,explain request
+A3d_recent,(Past 2 weeks) Did you feel tired or without energy almost every day?,"I am confused by this question, can you rephrase it?",explain request
+A3d_recent,(Past 2 weeks) Did you feel tired or without energy almost every day?,Please provide more information so I can respond accurately.,explain request
+A3d_past,(Past episode) Did you feel tired or without energy almost every day?,"Yes, I have felt like that almost every day and it has been affecting my mood a lot",yes
+A3d_past,(Past episode) Did you feel tired or without energy almost every day?,"Yes, that happens to me most days and it makes it hard to focus on anything",yes
+A3d_past,(Past episode) Did you feel tired or without energy almost every day?,"Yes, I have been feeling exactly that way for the past two weeks",yes
+A3d_past,(Past episode) Did you feel tired or without energy almost every day?,"Yes, nearly every day I feel this way and it does not seem to be getting better",yes
+A3d_past,(Past episode) Did you feel tired or without energy almost every day?,"Yes, I have been experiencing this very often and it is exhausting",yes
+A3d_past,(Past episode) Did you feel tired or without energy almost every day?,"Yes, this has been my experience almost every day recently",yes
+A3d_past,(Past episode) Did you feel tired or without energy almost every day?,"Yes, it has been happening for a while and it is very difficult for me",yes
+A3d_past,(Past episode) Did you feel tired or without energy almost every day?,"Yes, I notice it almost daily and it affects my ability to do things",yes
+A3d_past,(Past episode) Did you feel tired or without energy almost every day?,"Yes, it has been consistent for the last couple of weeks and it is troubling",yes
+A3d_past,(Past episode) Did you feel tired or without energy almost every day?,"Yes, exactly like that, it matches how I have been feeling",yes
+A3d_past,(Past episode) Did you feel tired or without energy almost every day?,"No, I have not been feeling that way at all",no
+A3d_past,(Past episode) Did you feel tired or without energy almost every day?,"No, I have not experienced that in the past two weeks",no
+A3d_past,(Past episode) Did you feel tired or without energy almost every day?,"No, this has not been an issue for me",no
+A3d_past,(Past episode) Did you feel tired or without energy almost every day?,"No, I have been feeling fine in that regard",no
+A3d_past,(Past episode) Did you feel tired or without energy almost every day?,"No, I do not think that applies to me",no
+A3d_past,(Past episode) Did you feel tired or without energy almost every day?,"No, that is not something I have noticed in myself",no
+A3d_past,(Past episode) Did you feel tired or without energy almost every day?,"No, I have not gone through anything like that",no
+A3d_past,(Past episode) Did you feel tired or without energy almost every day?,"No, I have been doing okay without those symptoms",no
+A3d_past,(Past episode) Did you feel tired or without energy almost every day?,"No, I do not relate to that experience",no
+A3d_past,(Past episode) Did you feel tired or without energy almost every day?,"No, I have not had that happen to me",no
+A3d_past,(Past episode) Did you feel tired or without energy almost every day?,Do you mean in the past two weeks or at any point in my life?,need more clarification
+A3d_past,(Past episode) Did you feel tired or without energy almost every day?,"What exactly counts as most of the day, is it more than half the day or nearly all of it?",need more clarification
+A3d_past,(Past episode) Did you feel tired or without energy almost every day?,Could you explain more about what you mean by that?,need more clarification
+A3d_past,(Past episode) Did you feel tired or without energy almost every day?,I am not sure if you are asking about physical symptoms or emotional ones,need more clarification
+A3d_past,(Past episode) Did you feel tired or without energy almost every day?,Do you mean a change compared to how I usually feel?,need more clarification
+A3d_past,(Past episode) Did you feel tired or without energy almost every day?,Could you clarify what you mean by nearly every day?,need more clarification
+A3d_past,(Past episode) Did you feel tired or without energy almost every day?,Are you asking about just the recent weeks or also earlier times?,need more clarification
+A3d_past,(Past episode) Did you feel tired or without energy almost every day?,Do you mean symptoms that are noticeable to others or just to me?,need more clarification
+A3d_past,(Past episode) Did you feel tired or without energy almost every day?,I would need an example to know if this applies to me,need more clarification
+A3d_past,(Past episode) Did you feel tired or without energy almost every day?,Can you rephrase the question in a simpler way so I can answer more accurately?,need more clarification
+A3d_past,(Past episode) Did you feel tired or without energy almost every day?,Could you please explain what you mean by this question in more detail?,explain request
+A3d_past,(Past episode) Did you feel tired or without energy almost every day?,"I am not sure I fully understand, can you give me an example?",explain request
+A3d_past,(Past episode) Did you feel tired or without energy almost every day?,Can you tell me more about what you want to know here?,explain request
+A3d_past,(Past episode) Did you feel tired or without energy almost every day?,I would like some explanation before I can answer properly.,explain request
+A3d_past,(Past episode) Did you feel tired or without energy almost every day?,Could you clarify what exactly you want me to think about?,explain request
+A3d_past,(Past episode) Did you feel tired or without energy almost every day?,Can you please explain this question so I am sure how to answer?,explain request
+A3d_past,(Past episode) Did you feel tired or without energy almost every day?,"I do not understand the question fully, please explain more.",explain request
+A3d_past,(Past episode) Did you feel tired or without energy almost every day?,Could you give more details about what you mean?,explain request
+A3d_past,(Past episode) Did you feel tired or without energy almost every day?,"I am confused by this question, can you rephrase it?",explain request
+A3d_past,(Past episode) Did you feel tired or without energy almost every day?,Please provide more information so I can respond accurately.,explain request
+A3e_recent,(Past 2 weeks) Did you feel worthless or guilty almost every day?,"Yes, I have felt like that almost every day and it has been affecting my mood a lot",yes
+A3e_recent,(Past 2 weeks) Did you feel worthless or guilty almost every day?,"Yes, that happens to me most days and it makes it hard to focus on anything",yes
+A3e_recent,(Past 2 weeks) Did you feel worthless or guilty almost every day?,"Yes, I have been feeling exactly that way for the past two weeks",yes
+A3e_recent,(Past 2 weeks) Did you feel worthless or guilty almost every day?,"Yes, nearly every day I feel this way and it does not seem to be getting better",yes
+A3e_recent,(Past 2 weeks) Did you feel worthless or guilty almost every day?,"Yes, I have been experiencing this very often and it is exhausting",yes
+A3e_recent,(Past 2 weeks) Did you feel worthless or guilty almost every day?,"Yes, this has been my experience almost every day recently",yes
+A3e_recent,(Past 2 weeks) Did you feel worthless or guilty almost every day?,"Yes, it has been happening for a while and it is very difficult for me",yes
+A3e_recent,(Past 2 weeks) Did you feel worthless or guilty almost every day?,"Yes, I notice it almost daily and it affects my ability to do things",yes
+A3e_recent,(Past 2 weeks) Did you feel worthless or guilty almost every day?,"Yes, it has been consistent for the last couple of weeks and it is troubling",yes
+A3e_recent,(Past 2 weeks) Did you feel worthless or guilty almost every day?,"Yes, exactly like that, it matches how I have been feeling",yes
+A3e_recent,(Past 2 weeks) Did you feel worthless or guilty almost every day?,"No, I have not been feeling that way at all",no
+A3e_recent,(Past 2 weeks) Did you feel worthless or guilty almost every day?,"No, I have not experienced that in the past two weeks",no
+A3e_recent,(Past 2 weeks) Did you feel worthless or guilty almost every day?,"No, this has not been an issue for me",no
+A3e_recent,(Past 2 weeks) Did you feel worthless or guilty almost every day?,"No, I have been feeling fine in that regard",no
+A3e_recent,(Past 2 weeks) Did you feel worthless or guilty almost every day?,"No, I do not think that applies to me",no
+A3e_recent,(Past 2 weeks) Did you feel worthless or guilty almost every day?,"No, that is not something I have noticed in myself",no
+A3e_recent,(Past 2 weeks) Did you feel worthless or guilty almost every day?,"No, I have not gone through anything like that",no
+A3e_recent,(Past 2 weeks) Did you feel worthless or guilty almost every day?,"No, I have been doing okay without those symptoms",no
+A3e_recent,(Past 2 weeks) Did you feel worthless or guilty almost every day?,"No, I do not relate to that experience",no
+A3e_recent,(Past 2 weeks) Did you feel worthless or guilty almost every day?,"No, I have not had that happen to me",no
+A3e_recent,(Past 2 weeks) Did you feel worthless or guilty almost every day?,Do you mean in the past two weeks or at any point in my life?,need more clarification
+A3e_recent,(Past 2 weeks) Did you feel worthless or guilty almost every day?,"What exactly counts as most of the day, is it more than half the day or nearly all of it?",need more clarification
+A3e_recent,(Past 2 weeks) Did you feel worthless or guilty almost every day?,Could you explain more about what you mean by that?,need more clarification
+A3e_recent,(Past 2 weeks) Did you feel worthless or guilty almost every day?,I am not sure if you are asking about physical symptoms or emotional ones,need more clarification
+A3e_recent,(Past 2 weeks) Did you feel worthless or guilty almost every day?,Do you mean a change compared to how I usually feel?,need more clarification
+A3e_recent,(Past 2 weeks) Did you feel worthless or guilty almost every day?,Could you clarify what you mean by nearly every day?,need more clarification
+A3e_recent,(Past 2 weeks) Did you feel worthless or guilty almost every day?,Are you asking about just the recent weeks or also earlier times?,need more clarification
+A3e_recent,(Past 2 weeks) Did you feel worthless or guilty almost every day?,Do you mean symptoms that are noticeable to others or just to me?,need more clarification
+A3e_recent,(Past 2 weeks) Did you feel worthless or guilty almost every day?,I would need an example to know if this applies to me,need more clarification
+A3e_recent,(Past 2 weeks) Did you feel worthless or guilty almost every day?,Can you rephrase the question in a simpler way so I can answer more accurately?,need more clarification
+A3e_recent,(Past 2 weeks) Did you feel worthless or guilty almost every day?,Could you please explain what you mean by this question in more detail?,explain request
+A3e_recent,(Past 2 weeks) Did you feel worthless or guilty almost every day?,"I am not sure I fully understand, can you give me an example?",explain request
+A3e_recent,(Past 2 weeks) Did you feel worthless or guilty almost every day?,Can you tell me more about what you want to know here?,explain request
+A3e_recent,(Past 2 weeks) Did you feel worthless or guilty almost every day?,I would like some explanation before I can answer properly.,explain request
+A3e_recent,(Past 2 weeks) Did you feel worthless or guilty almost every day?,Could you clarify what exactly you want me to think about?,explain request
+A3e_recent,(Past 2 weeks) Did you feel worthless or guilty almost every day?,Can you please explain this question so I am sure how to answer?,explain request
+A3e_recent,(Past 2 weeks) Did you feel worthless or guilty almost every day?,"I do not understand the question fully, please explain more.",explain request
+A3e_recent,(Past 2 weeks) Did you feel worthless or guilty almost every day?,Could you give more details about what you mean?,explain request
+A3e_recent,(Past 2 weeks) Did you feel worthless or guilty almost every day?,"I am confused by this question, can you rephrase it?",explain request
+A3e_recent,(Past 2 weeks) Did you feel worthless or guilty almost every day?,Please provide more information so I can respond accurately.,explain request
+A3e_past,(Past episode) Did you feel worthless or guilty almost every day?,"Yes, I have felt like that almost every day and it has been affecting my mood a lot",yes
+A3e_past,(Past episode) Did you feel worthless or guilty almost every day?,"Yes, that happens to me most days and it makes it hard to focus on anything",yes
+A3e_past,(Past episode) Did you feel worthless or guilty almost every day?,"Yes, I have been feeling exactly that way for the past two weeks",yes
+A3e_past,(Past episode) Did you feel worthless or guilty almost every day?,"Yes, nearly every day I feel this way and it does not seem to be getting better",yes
+A3e_past,(Past episode) Did you feel worthless or guilty almost every day?,"Yes, I have been experiencing this very often and it is exhausting",yes
+A3e_past,(Past episode) Did you feel worthless or guilty almost every day?,"Yes, this has been my experience almost every day recently",yes
+A3e_past,(Past episode) Did you feel worthless or guilty almost every day?,"Yes, it has been happening for a while and it is very difficult for me",yes
+A3e_past,(Past episode) Did you feel worthless or guilty almost every day?,"Yes, I notice it almost daily and it affects my ability to do things",yes
+A3e_past,(Past episode) Did you feel worthless or guilty almost every day?,"Yes, it has been consistent for the last couple of weeks and it is troubling",yes
+A3e_past,(Past episode) Did you feel worthless or guilty almost every day?,"Yes, exactly like that, it matches how I have been feeling",yes
+A3e_past,(Past episode) Did you feel worthless or guilty almost every day?,"No, I have not been feeling that way at all",no
+A3e_past,(Past episode) Did you feel worthless or guilty almost every day?,"No, I have not experienced that in the past two weeks",no
+A3e_past,(Past episode) Did you feel worthless or guilty almost every day?,"No, this has not been an issue for me",no
+A3e_past,(Past episode) Did you feel worthless or guilty almost every day?,"No, I have been feeling fine in that regard",no
+A3e_past,(Past episode) Did you feel worthless or guilty almost every day?,"No, I do not think that applies to me",no
+A3e_past,(Past episode) Did you feel worthless or guilty almost every day?,"No, that is not something I have noticed in myself",no
+A3e_past,(Past episode) Did you feel worthless or guilty almost every day?,"No, I have not gone through anything like that",no
+A3e_past,(Past episode) Did you feel worthless or guilty almost every day?,"No, I have been doing okay without those symptoms",no
+A3e_past,(Past episode) Did you feel worthless or guilty almost every day?,"No, I do not relate to that experience",no
+A3e_past,(Past episode) Did you feel worthless or guilty almost every day?,"No, I have not had that happen to me",no
+A3e_past,(Past episode) Did you feel worthless or guilty almost every day?,Do you mean in the past two weeks or at any point in my life?,need more clarification
+A3e_past,(Past episode) Did you feel worthless or guilty almost every day?,"What exactly counts as most of the day, is it more than half the day or nearly all of it?",need more clarification
+A3e_past,(Past episode) Did you feel worthless or guilty almost every day?,Could you explain more about what you mean by that?,need more clarification
+A3e_past,(Past episode) Did you feel worthless or guilty almost every day?,I am not sure if you are asking about physical symptoms or emotional ones,need more clarification
+A3e_past,(Past episode) Did you feel worthless or guilty almost every day?,Do you mean a change compared to how I usually feel?,need more clarification
+A3e_past,(Past episode) Did you feel worthless or guilty almost every day?,Could you clarify what you mean by nearly every day?,need more clarification
+A3e_past,(Past episode) Did you feel worthless or guilty almost every day?,Are you asking about just the recent weeks or also earlier times?,need more clarification
+A3e_past,(Past episode) Did you feel worthless or guilty almost every day?,Do you mean symptoms that are noticeable to others or just to me?,need more clarification
+A3e_past,(Past episode) Did you feel worthless or guilty almost every day?,I would need an example to know if this applies to me,need more clarification
+A3e_past,(Past episode) Did you feel worthless or guilty almost every day?,Can you rephrase the question in a simpler way so I can answer more accurately?,need more clarification
+A3e_past,(Past episode) Did you feel worthless or guilty almost every day?,Could you please explain what you mean by this question in more detail?,explain request
+A3e_past,(Past episode) Did you feel worthless or guilty almost every day?,"I am not sure I fully understand, can you give me an example?",explain request
+A3e_past,(Past episode) Did you feel worthless or guilty almost every day?,Can you tell me more about what you want to know here?,explain request
+A3e_past,(Past episode) Did you feel worthless or guilty almost every day?,I would like some explanation before I can answer properly.,explain request
+A3e_past,(Past episode) Did you feel worthless or guilty almost every day?,Could you clarify what exactly you want me to think about?,explain request
+A3e_past,(Past episode) Did you feel worthless or guilty almost every day?,Can you please explain this question so I am sure how to answer?,explain request
+A3e_past,(Past episode) Did you feel worthless or guilty almost every day?,"I do not understand the question fully, please explain more.",explain request
+A3e_past,(Past episode) Did you feel worthless or guilty almost every day?,Could you give more details about what you mean?,explain request
+A3e_past,(Past episode) Did you feel worthless or guilty almost every day?,"I am confused by this question, can you rephrase it?",explain request
+A3e_past,(Past episode) Did you feel worthless or guilty almost every day?,Please provide more information so I can respond accurately.,explain request
+A3f_recent,"(Past 2 weeks) Did you have difficulty concentrating, thinking, or making decisions almost every day?","Yes, I have felt like that almost every day and it has been affecting my mood a lot",yes
+A3f_recent,"(Past 2 weeks) Did you have difficulty concentrating, thinking, or making decisions almost every day?","Yes, that happens to me most days and it makes it hard to focus on anything",yes
+A3f_recent,"(Past 2 weeks) Did you have difficulty concentrating, thinking, or making decisions almost every day?","Yes, I have been feeling exactly that way for the past two weeks",yes
+A3f_recent,"(Past 2 weeks) Did you have difficulty concentrating, thinking, or making decisions almost every day?","Yes, nearly every day I feel this way and it does not seem to be getting better",yes
+A3f_recent,"(Past 2 weeks) Did you have difficulty concentrating, thinking, or making decisions almost every day?","Yes, I have been experiencing this very often and it is exhausting",yes
+A3f_recent,"(Past 2 weeks) Did you have difficulty concentrating, thinking, or making decisions almost every day?","Yes, this has been my experience almost every day recently",yes
+A3f_recent,"(Past 2 weeks) Did you have difficulty concentrating, thinking, or making decisions almost every day?","Yes, it has been happening for a while and it is very difficult for me",yes
+A3f_recent,"(Past 2 weeks) Did you have difficulty concentrating, thinking, or making decisions almost every day?","Yes, I notice it almost daily and it affects my ability to do things",yes
+A3f_recent,"(Past 2 weeks) Did you have difficulty concentrating, thinking, or making decisions almost every day?","Yes, it has been consistent for the last couple of weeks and it is troubling",yes
+A3f_recent,"(Past 2 weeks) Did you have difficulty concentrating, thinking, or making decisions almost every day?","Yes, exactly like that, it matches how I have been feeling",yes
+A3f_recent,"(Past 2 weeks) Did you have difficulty concentrating, thinking, or making decisions almost every day?","No, I have not been feeling that way at all",no
+A3f_recent,"(Past 2 weeks) Did you have difficulty concentrating, thinking, or making decisions almost every day?","No, I have not experienced that in the past two weeks",no
+A3f_recent,"(Past 2 weeks) Did you have difficulty concentrating, thinking, or making decisions almost every day?","No, this has not been an issue for me",no
+A3f_recent,"(Past 2 weeks) Did you have difficulty concentrating, thinking, or making decisions almost every day?","No, I have been feeling fine in that regard",no
+A3f_recent,"(Past 2 weeks) Did you have difficulty concentrating, thinking, or making decisions almost every day?","No, I do not think that applies to me",no
+A3f_recent,"(Past 2 weeks) Did you have difficulty concentrating, thinking, or making decisions almost every day?","No, that is not something I have noticed in myself",no
+A3f_recent,"(Past 2 weeks) Did you have difficulty concentrating, thinking, or making decisions almost every day?","No, I have not gone through anything like that",no
+A3f_recent,"(Past 2 weeks) Did you have difficulty concentrating, thinking, or making decisions almost every day?","No, I have been doing okay without those symptoms",no
+A3f_recent,"(Past 2 weeks) Did you have difficulty concentrating, thinking, or making decisions almost every day?","No, I do not relate to that experience",no
+A3f_recent,"(Past 2 weeks) Did you have difficulty concentrating, thinking, or making decisions almost every day?","No, I have not had that happen to me",no
+A3f_recent,"(Past 2 weeks) Did you have difficulty concentrating, thinking, or making decisions almost every day?",Do you mean in the past two weeks or at any point in my life?,need more clarification
+A3f_recent,"(Past 2 weeks) Did you have difficulty concentrating, thinking, or making decisions almost every day?","What exactly counts as most of the day, is it more than half the day or nearly all of it?",need more clarification
+A3f_recent,"(Past 2 weeks) Did you have difficulty concentrating, thinking, or making decisions almost every day?",Could you explain more about what you mean by that?,need more clarification
+A3f_recent,"(Past 2 weeks) Did you have difficulty concentrating, thinking, or making decisions almost every day?",I am not sure if you are asking about physical symptoms or emotional ones,need more clarification
+A3f_recent,"(Past 2 weeks) Did you have difficulty concentrating, thinking, or making decisions almost every day?",Do you mean a change compared to how I usually feel?,need more clarification
+A3f_recent,"(Past 2 weeks) Did you have difficulty concentrating, thinking, or making decisions almost every day?",Could you clarify what you mean by nearly every day?,need more clarification
+A3f_recent,"(Past 2 weeks) Did you have difficulty concentrating, thinking, or making decisions almost every day?",Are you asking about just the recent weeks or also earlier times?,need more clarification
+A3f_recent,"(Past 2 weeks) Did you have difficulty concentrating, thinking, or making decisions almost every day?",Do you mean symptoms that are noticeable to others or just to me?,need more clarification
+A3f_recent,"(Past 2 weeks) Did you have difficulty concentrating, thinking, or making decisions almost every day?",I would need an example to know if this applies to me,need more clarification
+A3f_recent,"(Past 2 weeks) Did you have difficulty concentrating, thinking, or making decisions almost every day?",Can you rephrase the question in a simpler way so I can answer more accurately?,need more clarification
+A3f_recent,"(Past 2 weeks) Did you have difficulty concentrating, thinking, or making decisions almost every day?",Could you please explain what you mean by this question in more detail?,explain request
+A3f_recent,"(Past 2 weeks) Did you have difficulty concentrating, thinking, or making decisions almost every day?","I am not sure I fully understand, can you give me an example?",explain request
+A3f_recent,"(Past 2 weeks) Did you have difficulty concentrating, thinking, or making decisions almost every day?",Can you tell me more about what you want to know here?,explain request
+A3f_recent,"(Past 2 weeks) Did you have difficulty concentrating, thinking, or making decisions almost every day?",I would like some explanation before I can answer properly.,explain request
+A3f_recent,"(Past 2 weeks) Did you have difficulty concentrating, thinking, or making decisions almost every day?",Could you clarify what exactly you want me to think about?,explain request
+A3f_recent,"(Past 2 weeks) Did you have difficulty concentrating, thinking, or making decisions almost every day?",Can you please explain this question so I am sure how to answer?,explain request
+A3f_recent,"(Past 2 weeks) Did you have difficulty concentrating, thinking, or making decisions almost every day?","I do not understand the question fully, please explain more.",explain request
+A3f_recent,"(Past 2 weeks) Did you have difficulty concentrating, thinking, or making decisions almost every day?",Could you give more details about what you mean?,explain request
+A3f_recent,"(Past 2 weeks) Did you have difficulty concentrating, thinking, or making decisions almost every day?","I am confused by this question, can you rephrase it?",explain request
+A3f_recent,"(Past 2 weeks) Did you have difficulty concentrating, thinking, or making decisions almost every day?",Please provide more information so I can respond accurately.,explain request
+A3f_past,"(Past episode) Did you have difficulty concentrating, thinking, or making decisions almost every day?","Yes, I have felt like that almost every day and it has been affecting my mood a lot",yes
+A3f_past,"(Past episode) Did you have difficulty concentrating, thinking, or making decisions almost every day?","Yes, that happens to me most days and it makes it hard to focus on anything",yes
+A3f_past,"(Past episode) Did you have difficulty concentrating, thinking, or making decisions almost every day?","Yes, I have been feeling exactly that way for the past two weeks",yes
+A3f_past,"(Past episode) Did you have difficulty concentrating, thinking, or making decisions almost every day?","Yes, nearly every day I feel this way and it does not seem to be getting better",yes
+A3f_past,"(Past episode) Did you have difficulty concentrating, thinking, or making decisions almost every day?","Yes, I have been experiencing this very often and it is exhausting",yes
+A3f_past,"(Past episode) Did you have difficulty concentrating, thinking, or making decisions almost every day?","Yes, this has been my experience almost every day recently",yes
+A3f_past,"(Past episode) Did you have difficulty concentrating, thinking, or making decisions almost every day?","Yes, it has been happening for a while and it is very difficult for me",yes
+A3f_past,"(Past episode) Did you have difficulty concentrating, thinking, or making decisions almost every day?","Yes, I notice it almost daily and it affects my ability to do things",yes
+A3f_past,"(Past episode) Did you have difficulty concentrating, thinking, or making decisions almost every day?","Yes, it has been consistent for the last couple of weeks and it is troubling",yes
+A3f_past,"(Past episode) Did you have difficulty concentrating, thinking, or making decisions almost every day?","Yes, exactly like that, it matches how I have been feeling",yes
+A3f_past,"(Past episode) Did you have difficulty concentrating, thinking, or making decisions almost every day?","No, I have not been feeling that way at all",no
+A3f_past,"(Past episode) Did you have difficulty concentrating, thinking, or making decisions almost every day?","No, I have not experienced that in the past two weeks",no
+A3f_past,"(Past episode) Did you have difficulty concentrating, thinking, or making decisions almost every day?","No, this has not been an issue for me",no
+A3f_past,"(Past episode) Did you have difficulty concentrating, thinking, or making decisions almost every day?","No, I have been feeling fine in that regard",no
+A3f_past,"(Past episode) Did you have difficulty concentrating, thinking, or making decisions almost every day?","No, I do not think that applies to me",no
+A3f_past,"(Past episode) Did you have difficulty concentrating, thinking, or making decisions almost every day?","No, that is not something I have noticed in myself",no
+A3f_past,"(Past episode) Did you have difficulty concentrating, thinking, or making decisions almost every day?","No, I have not gone through anything like that",no
+A3f_past,"(Past episode) Did you have difficulty concentrating, thinking, or making decisions almost every day?","No, I have been doing okay without those symptoms",no
+A3f_past,"(Past episode) Did you have difficulty concentrating, thinking, or making decisions almost every day?","No, I do not relate to that experience",no
+A3f_past,"(Past episode) Did you have difficulty concentrating, thinking, or making decisions almost every day?","No, I have not had that happen to me",no
+A3f_past,"(Past episode) Did you have difficulty concentrating, thinking, or making decisions almost every day?",Do you mean in the past two weeks or at any point in my life?,need more clarification
+A3f_past,"(Past episode) Did you have difficulty concentrating, thinking, or making decisions almost every day?","What exactly counts as most of the day, is it more than half the day or nearly all of it?",need more clarification
+A3f_past,"(Past episode) Did you have difficulty concentrating, thinking, or making decisions almost every day?",Could you explain more about what you mean by that?,need more clarification
+A3f_past,"(Past episode) Did you have difficulty concentrating, thinking, or making decisions almost every day?",I am not sure if you are asking about physical symptoms or emotional ones,need more clarification
+A3f_past,"(Past episode) Did you have difficulty concentrating, thinking, or making decisions almost every day?",Do you mean a change compared to how I usually feel?,need more clarification
+A3f_past,"(Past episode) Did you have difficulty concentrating, thinking, or making decisions almost every day?",Could you clarify what you mean by nearly every day?,need more clarification
+A3f_past,"(Past episode) Did you have difficulty concentrating, thinking, or making decisions almost every day?",Are you asking about just the recent weeks or also earlier times?,need more clarification
+A3f_past,"(Past episode) Did you have difficulty concentrating, thinking, or making decisions almost every day?",Do you mean symptoms that are noticeable to others or just to me?,need more clarification
+A3f_past,"(Past episode) Did you have difficulty concentrating, thinking, or making decisions almost every day?",I would need an example to know if this applies to me,need more clarification
+A3f_past,"(Past episode) Did you have difficulty concentrating, thinking, or making decisions almost every day?",Can you rephrase the question in a simpler way so I can answer more accurately?,need more clarification
+A3f_past,"(Past episode) Did you have difficulty concentrating, thinking, or making decisions almost every day?",Could you please explain what you mean by this question in more detail?,explain request
+A3f_past,"(Past episode) Did you have difficulty concentrating, thinking, or making decisions almost every day?","I am not sure I fully understand, can you give me an example?",explain request
+A3f_past,"(Past episode) Did you have difficulty concentrating, thinking, or making decisions almost every day?",Can you tell me more about what you want to know here?,explain request
+A3f_past,"(Past episode) Did you have difficulty concentrating, thinking, or making decisions almost every day?",I would like some explanation before I can answer properly.,explain request
+A3f_past,"(Past episode) Did you have difficulty concentrating, thinking, or making decisions almost every day?",Could you clarify what exactly you want me to think about?,explain request
+A3f_past,"(Past episode) Did you have difficulty concentrating, thinking, or making decisions almost every day?",Can you please explain this question so I am sure how to answer?,explain request
+A3f_past,"(Past episode) Did you have difficulty concentrating, thinking, or making decisions almost every day?","I do not understand the question fully, please explain more.",explain request
+A3f_past,"(Past episode) Did you have difficulty concentrating, thinking, or making decisions almost every day?",Could you give more details about what you mean?,explain request
+A3f_past,"(Past episode) Did you have difficulty concentrating, thinking, or making decisions almost every day?","I am confused by this question, can you rephrase it?",explain request
+A3f_past,"(Past episode) Did you have difficulty concentrating, thinking, or making decisions almost every day?",Please provide more information so I can respond accurately.,explain request
+A3g_recent,"(Past 2 weeks) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?","Yes, I have felt like that almost every day and it has been affecting my mood a lot",yes
+A3g_recent,"(Past 2 weeks) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?","Yes, that happens to me most days and it makes it hard to focus on anything",yes
+A3g_recent,"(Past 2 weeks) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?","Yes, I have been feeling exactly that way for the past two weeks",yes
+A3g_recent,"(Past 2 weeks) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?","Yes, nearly every day I feel this way and it does not seem to be getting better",yes
+A3g_recent,"(Past 2 weeks) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?","Yes, I have been experiencing this very often and it is exhausting",yes
+A3g_recent,"(Past 2 weeks) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?","Yes, this has been my experience almost every day recently",yes
+A3g_recent,"(Past 2 weeks) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?","Yes, it has been happening for a while and it is very difficult for me",yes
+A3g_recent,"(Past 2 weeks) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?","Yes, I notice it almost daily and it affects my ability to do things",yes
+A3g_recent,"(Past 2 weeks) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?","Yes, it has been consistent for the last couple of weeks and it is troubling",yes
+A3g_recent,"(Past 2 weeks) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?","Yes, exactly like that, it matches how I have been feeling",yes
+A3g_recent,"(Past 2 weeks) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?","No, I have not been feeling that way at all",no
+A3g_recent,"(Past 2 weeks) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?","No, I have not experienced that in the past two weeks",no
+A3g_recent,"(Past 2 weeks) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?","No, this has not been an issue for me",no
+A3g_recent,"(Past 2 weeks) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?","No, I have been feeling fine in that regard",no
+A3g_recent,"(Past 2 weeks) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?","No, I do not think that applies to me",no
+A3g_recent,"(Past 2 weeks) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?","No, that is not something I have noticed in myself",no
+A3g_recent,"(Past 2 weeks) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?","No, I have not gone through anything like that",no
+A3g_recent,"(Past 2 weeks) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?","No, I have been doing okay without those symptoms",no
+A3g_recent,"(Past 2 weeks) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?","No, I do not relate to that experience",no
+A3g_recent,"(Past 2 weeks) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?","No, I have not had that happen to me",no
+A3g_recent,"(Past 2 weeks) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?",Do you mean in the past two weeks or at any point in my life?,need more clarification
+A3g_recent,"(Past 2 weeks) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?","What exactly counts as most of the day, is it more than half the day or nearly all of it?",need more clarification
+A3g_recent,"(Past 2 weeks) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?",Could you explain more about what you mean by that?,need more clarification
+A3g_recent,"(Past 2 weeks) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?",I am not sure if you are asking about physical symptoms or emotional ones,need more clarification
+A3g_recent,"(Past 2 weeks) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?",Do you mean a change compared to how I usually feel?,need more clarification
+A3g_recent,"(Past 2 weeks) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?",Could you clarify what you mean by nearly every day?,need more clarification
+A3g_recent,"(Past 2 weeks) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?",Are you asking about just the recent weeks or also earlier times?,need more clarification
+A3g_recent,"(Past 2 weeks) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?",Do you mean symptoms that are noticeable to others or just to me?,need more clarification
+A3g_recent,"(Past 2 weeks) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?",I would need an example to know if this applies to me,need more clarification
+A3g_recent,"(Past 2 weeks) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?",Can you rephrase the question in a simpler way so I can answer more accurately?,need more clarification
+A3g_recent,"(Past 2 weeks) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?",Could you please explain what you mean by this question in more detail?,explain request
+A3g_recent,"(Past 2 weeks) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?","I am not sure I fully understand, can you give me an example?",explain request
+A3g_recent,"(Past 2 weeks) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?",Can you tell me more about what you want to know here?,explain request
+A3g_recent,"(Past 2 weeks) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?",I would like some explanation before I can answer properly.,explain request
+A3g_recent,"(Past 2 weeks) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?",Could you clarify what exactly you want me to think about?,explain request
+A3g_recent,"(Past 2 weeks) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?",Can you please explain this question so I am sure how to answer?,explain request
+A3g_recent,"(Past 2 weeks) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?","I do not understand the question fully, please explain more.",explain request
+A3g_recent,"(Past 2 weeks) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?",Could you give more details about what you mean?,explain request
+A3g_recent,"(Past 2 weeks) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?","I am confused by this question, can you rephrase it?",explain request
+A3g_recent,"(Past 2 weeks) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?",Please provide more information so I can respond accurately.,explain request
+A3g_past,"(Past episode) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?","Yes, I have felt like that almost every day and it has been affecting my mood a lot",yes
+A3g_past,"(Past episode) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?","Yes, that happens to me most days and it makes it hard to focus on anything",yes
+A3g_past,"(Past episode) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?","Yes, I have been feeling exactly that way for the past two weeks",yes
+A3g_past,"(Past episode) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?","Yes, nearly every day I feel this way and it does not seem to be getting better",yes
+A3g_past,"(Past episode) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?","Yes, I have been experiencing this very often and it is exhausting",yes
+A3g_past,"(Past episode) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?","Yes, this has been my experience almost every day recently",yes
+A3g_past,"(Past episode) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?","Yes, it has been happening for a while and it is very difficult for me",yes
+A3g_past,"(Past episode) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?","Yes, I notice it almost daily and it affects my ability to do things",yes
+A3g_past,"(Past episode) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?","Yes, it has been consistent for the last couple of weeks and it is troubling",yes
+A3g_past,"(Past episode) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?","Yes, exactly like that, it matches how I have been feeling",yes
+A3g_past,"(Past episode) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?","No, I have not been feeling that way at all",no
+A3g_past,"(Past episode) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?","No, I have not experienced that in the past two weeks",no
+A3g_past,"(Past episode) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?","No, this has not been an issue for me",no
+A3g_past,"(Past episode) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?","No, I have been feeling fine in that regard",no
+A3g_past,"(Past episode) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?","No, I do not think that applies to me",no
+A3g_past,"(Past episode) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?","No, that is not something I have noticed in myself",no
+A3g_past,"(Past episode) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?","No, I have not gone through anything like that",no
+A3g_past,"(Past episode) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?","No, I have been doing okay without those symptoms",no
+A3g_past,"(Past episode) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?","No, I do not relate to that experience",no
+A3g_past,"(Past episode) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?","No, I have not had that happen to me",no
+A3g_past,"(Past episode) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?",Do you mean in the past two weeks or at any point in my life?,need more clarification
+A3g_past,"(Past episode) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?","What exactly counts as most of the day, is it more than half the day or nearly all of it?",need more clarification
+A3g_past,"(Past episode) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?",Could you explain more about what you mean by that?,need more clarification
+A3g_past,"(Past episode) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?",I am not sure if you are asking about physical symptoms or emotional ones,need more clarification
+A3g_past,"(Past episode) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?",Do you mean a change compared to how I usually feel?,need more clarification
+A3g_past,"(Past episode) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?",Could you clarify what you mean by nearly every day?,need more clarification
+A3g_past,"(Past episode) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?",Are you asking about just the recent weeks or also earlier times?,need more clarification
+A3g_past,"(Past episode) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?",Do you mean symptoms that are noticeable to others or just to me?,need more clarification
+A3g_past,"(Past episode) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?",I would need an example to know if this applies to me,need more clarification
+A3g_past,"(Past episode) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?",Can you rephrase the question in a simpler way so I can answer more accurately?,need more clarification
+A3g_past,"(Past episode) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?",Could you please explain what you mean by this question in more detail?,explain request
+A3g_past,"(Past episode) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?","I am not sure I fully understand, can you give me an example?",explain request
+A3g_past,"(Past episode) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?",Can you tell me more about what you want to know here?,explain request
+A3g_past,"(Past episode) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?",I would like some explanation before I can answer properly.,explain request
+A3g_past,"(Past episode) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?",Could you clarify what exactly you want me to think about?,explain request
+A3g_past,"(Past episode) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?",Can you please explain this question so I am sure how to answer?,explain request
+A3g_past,"(Past episode) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?","I do not understand the question fully, please explain more.",explain request
+A3g_past,"(Past episode) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?",Could you give more details about what you mean?,explain request
+A3g_past,"(Past episode) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?","I am confused by this question, can you rephrase it?",explain request
+A3g_past,"(Past episode) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?",Please provide more information so I can respond accurately.,explain request
+A4_current,(Current episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,"Yes, I have felt like that almost every day and it has been affecting my mood a lot",yes
+A4_current,(Current episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,"Yes, that happens to me most days and it makes it hard to focus on anything",yes
+A4_current,(Current episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,"Yes, I have been feeling exactly that way for the past two weeks",yes
+A4_current,(Current episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,"Yes, nearly every day I feel this way and it does not seem to be getting better",yes
+A4_current,(Current episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,"Yes, I have been experiencing this very often and it is exhausting",yes
+A4_current,(Current episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,"Yes, this has been my experience almost every day recently",yes
+A4_current,(Current episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,"Yes, it has been happening for a while and it is very difficult for me",yes
+A4_current,(Current episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,"Yes, I notice it almost daily and it affects my ability to do things",yes
+A4_current,(Current episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,"Yes, it has been consistent for the last couple of weeks and it is troubling",yes
+A4_current,(Current episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,"Yes, exactly like that, it matches how I have been feeling",yes
+A4_current,(Current episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,"No, I have not been feeling that way at all",no
+A4_current,(Current episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,"No, I have not experienced that in the past two weeks",no
+A4_current,(Current episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,"No, this has not been an issue for me",no
+A4_current,(Current episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,"No, I have been feeling fine in that regard",no
+A4_current,(Current episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,"No, I do not think that applies to me",no
+A4_current,(Current episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,"No, that is not something I have noticed in myself",no
+A4_current,(Current episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,"No, I have not gone through anything like that",no
+A4_current,(Current episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,"No, I have been doing okay without those symptoms",no
+A4_current,(Current episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,"No, I do not relate to that experience",no
+A4_current,(Current episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,"No, I have not had that happen to me",no
+A4_current,(Current episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,Do you mean in the past two weeks or at any point in my life?,need more clarification
+A4_current,(Current episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,"What exactly counts as most of the day, is it more than half the day or nearly all of it?",need more clarification
+A4_current,(Current episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,Could you explain more about what you mean by that?,need more clarification
+A4_current,(Current episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,I am not sure if you are asking about physical symptoms or emotional ones,need more clarification
+A4_current,(Current episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,Do you mean a change compared to how I usually feel?,need more clarification
+A4_current,(Current episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,Could you clarify what you mean by nearly every day?,need more clarification
+A4_current,(Current episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,Are you asking about just the recent weeks or also earlier times?,need more clarification
+A4_current,(Current episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,Do you mean symptoms that are noticeable to others or just to me?,need more clarification
+A4_current,(Current episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,I would need an example to know if this applies to me,need more clarification
+A4_current,(Current episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,Can you rephrase the question in a simpler way so I can answer more accurately?,need more clarification
+A4_current,(Current episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,Could you please explain what you mean by this question in more detail?,explain request
+A4_current,(Current episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,"I am not sure I fully understand, can you give me an example?",explain request
+A4_current,(Current episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,Can you tell me more about what you want to know here?,explain request
+A4_current,(Current episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,I would like some explanation before I can answer properly.,explain request
+A4_current,(Current episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,Could you clarify what exactly you want me to think about?,explain request
+A4_current,(Current episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,Can you please explain this question so I am sure how to answer?,explain request
+A4_current,(Current episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,"I do not understand the question fully, please explain more.",explain request
+A4_current,(Current episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,Could you give more details about what you mean?,explain request
+A4_current,(Current episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,"I am confused by this question, can you rephrase it?",explain request
+A4_current,(Current episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,Please provide more information so I can respond accurately.,explain request
+A4_past,(Past episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,"Yes, I have felt like that almost every day and it has been affecting my mood a lot",yes
+A4_past,(Past episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,"Yes, that happens to me most days and it makes it hard to focus on anything",yes
+A4_past,(Past episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,"Yes, I have been feeling exactly that way for the past two weeks",yes
+A4_past,(Past episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,"Yes, nearly every day I feel this way and it does not seem to be getting better",yes
+A4_past,(Past episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,"Yes, I have been experiencing this very often and it is exhausting",yes
+A4_past,(Past episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,"Yes, this has been my experience almost every day recently",yes
+A4_past,(Past episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,"Yes, it has been happening for a while and it is very difficult for me",yes
+A4_past,(Past episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,"Yes, I notice it almost daily and it affects my ability to do things",yes
+A4_past,(Past episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,"Yes, it has been consistent for the last couple of weeks and it is troubling",yes
+A4_past,(Past episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,"Yes, exactly like that, it matches how I have been feeling",yes
+A4_past,(Past episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,"No, I have not been feeling that way at all",no
+A4_past,(Past episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,"No, I have not experienced that in the past two weeks",no
+A4_past,(Past episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,"No, this has not been an issue for me",no
+A4_past,(Past episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,"No, I have been feeling fine in that regard",no
+A4_past,(Past episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,"No, I do not think that applies to me",no
+A4_past,(Past episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,"No, that is not something I have noticed in myself",no
+A4_past,(Past episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,"No, I have not gone through anything like that",no
+A4_past,(Past episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,"No, I have been doing okay without those symptoms",no
+A4_past,(Past episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,"No, I do not relate to that experience",no
+A4_past,(Past episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,"No, I have not had that happen to me",no
+A4_past,(Past episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,Do you mean in the past two weeks or at any point in my life?,need more clarification
+A4_past,(Past episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,"What exactly counts as most of the day, is it more than half the day or nearly all of it?",need more clarification
+A4_past,(Past episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,Could you explain more about what you mean by that?,need more clarification
+A4_past,(Past episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,I am not sure if you are asking about physical symptoms or emotional ones,need more clarification
+A4_past,(Past episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,Do you mean a change compared to how I usually feel?,need more clarification
+A4_past,(Past episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,Could you clarify what you mean by nearly every day?,need more clarification
+A4_past,(Past episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,Are you asking about just the recent weeks or also earlier times?,need more clarification
+A4_past,(Past episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,Do you mean symptoms that are noticeable to others or just to me?,need more clarification
+A4_past,(Past episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,I would need an example to know if this applies to me,need more clarification
+A4_past,(Past episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,Can you rephrase the question in a simpler way so I can answer more accurately?,need more clarification
+A4_past,(Past episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,Could you please explain what you mean by this question in more detail?,explain request
+A4_past,(Past episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,"I am not sure I fully understand, can you give me an example?",explain request
+A4_past,(Past episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,Can you tell me more about what you want to know here?,explain request
+A4_past,(Past episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,I would like some explanation before I can answer properly.,explain request
+A4_past,(Past episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,Could you clarify what exactly you want me to think about?,explain request
+A4_past,(Past episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,Can you please explain this question so I am sure how to answer?,explain request
+A4_past,(Past episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,"I do not understand the question fully, please explain more.",explain request
+A4_past,(Past episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,Could you give more details about what you mean?,explain request
+A4_past,(Past episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,"I am confused by this question, can you rephrase it?",explain request
+A4_past,(Past episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,Please provide more information so I can respond accurately.,explain request
+A5,"Between depressive episodes, did you ever have an interval of ≥2 months without significant depression or loss of interest?","Yes, I have felt like that almost every day and it has been affecting my mood a lot",yes
+A5,"Between depressive episodes, did you ever have an interval of ≥2 months without significant depression or loss of interest?","Yes, that happens to me most days and it makes it hard to focus on anything",yes
+A5,"Between depressive episodes, did you ever have an interval of ≥2 months without significant depression or loss of interest?","Yes, I have been feeling exactly that way for the past two weeks",yes
+A5,"Between depressive episodes, did you ever have an interval of ≥2 months without significant depression or loss of interest?","Yes, nearly every day I feel this way and it does not seem to be getting better",yes
+A5,"Between depressive episodes, did you ever have an interval of ≥2 months without significant depression or loss of interest?","Yes, I have been experiencing this very often and it is exhausting",yes
+A5,"Between depressive episodes, did you ever have an interval of ≥2 months without significant depression or loss of interest?","Yes, this has been my experience almost every day recently",yes
+A5,"Between depressive episodes, did you ever have an interval of ≥2 months without significant depression or loss of interest?","Yes, it has been happening for a while and it is very difficult for me",yes
+A5,"Between depressive episodes, did you ever have an interval of ≥2 months without significant depression or loss of interest?","Yes, I notice it almost daily and it affects my ability to do things",yes
+A5,"Between depressive episodes, did you ever have an interval of ≥2 months without significant depression or loss of interest?","Yes, it has been consistent for the last couple of weeks and it is troubling",yes
+A5,"Between depressive episodes, did you ever have an interval of ≥2 months without significant depression or loss of interest?","Yes, exactly like that, it matches how I have been feeling",yes
+A5,"Between depressive episodes, did you ever have an interval of ≥2 months without significant depression or loss of interest?","No, I have not been feeling that way at all",no
+A5,"Between depressive episodes, did you ever have an interval of ≥2 months without significant depression or loss of interest?","No, I have not experienced that in the past two weeks",no
+A5,"Between depressive episodes, did you ever have an interval of ≥2 months without significant depression or loss of interest?","No, this has not been an issue for me",no
+A5,"Between depressive episodes, did you ever have an interval of ≥2 months without significant depression or loss of interest?","No, I have been feeling fine in that regard",no
+A5,"Between depressive episodes, did you ever have an interval of ≥2 months without significant depression or loss of interest?","No, I do not think that applies to me",no
+A5,"Between depressive episodes, did you ever have an interval of ≥2 months without significant depression or loss of interest?","No, that is not something I have noticed in myself",no
+A5,"Between depressive episodes, did you ever have an interval of ≥2 months without significant depression or loss of interest?","No, I have not gone through anything like that",no
+A5,"Between depressive episodes, did you ever have an interval of ≥2 months without significant depression or loss of interest?","No, I have been doing okay without those symptoms",no
+A5,"Between depressive episodes, did you ever have an interval of ≥2 months without significant depression or loss of interest?","No, I do not relate to that experience",no
+A5,"Between depressive episodes, did you ever have an interval of ≥2 months without significant depression or loss of interest?","No, I have not had that happen to me",no
+A5,"Between depressive episodes, did you ever have an interval of ≥2 months without significant depression or loss of interest?",Do you mean in the past two weeks or at any point in my life?,need more clarification
+A5,"Between depressive episodes, did you ever have an interval of ≥2 months without significant depression or loss of interest?","What exactly counts as most of the day, is it more than half the day or nearly all of it?",need more clarification
+A5,"Between depressive episodes, did you ever have an interval of ≥2 months without significant depression or loss of interest?",Could you explain more about what you mean by that?,need more clarification
+A5,"Between depressive episodes, did you ever have an interval of ≥2 months without significant depression or loss of interest?",I am not sure if you are asking about physical symptoms or emotional ones,need more clarification
+A5,"Between depressive episodes, did you ever have an interval of ≥2 months without significant depression or loss of interest?",Do you mean a change compared to how I usually feel?,need more clarification
+A5,"Between depressive episodes, did you ever have an interval of ≥2 months without significant depression or loss of interest?",Could you clarify what you mean by nearly every day?,need more clarification
+A5,"Between depressive episodes, did you ever have an interval of ≥2 months without significant depression or loss of interest?",Are you asking about just the recent weeks or also earlier times?,need more clarification
+A5,"Between depressive episodes, did you ever have an interval of ≥2 months without significant depression or loss of interest?",Do you mean symptoms that are noticeable to others or just to me?,need more clarification
+A5,"Between depressive episodes, did you ever have an interval of ≥2 months without significant depression or loss of interest?",I would need an example to know if this applies to me,need more clarification
+A5,"Between depressive episodes, did you ever have an interval of ≥2 months without significant depression or loss of interest?",Can you rephrase the question in a simpler way so I can answer more accurately?,need more clarification
+A5,"Between depressive episodes, did you ever have an interval of ≥2 months without significant depression or loss of interest?",Could you please explain what you mean by this question in more detail?,explain request
+A5,"Between depressive episodes, did you ever have an interval of ≥2 months without significant depression or loss of interest?","I am not sure I fully understand, can you give me an example?",explain request
+A5,"Between depressive episodes, did you ever have an interval of ≥2 months without significant depression or loss of interest?",Can you tell me more about what you want to know here?,explain request
+A5,"Between depressive episodes, did you ever have an interval of ≥2 months without significant depression or loss of interest?",I would like some explanation before I can answer properly.,explain request
+A5,"Between depressive episodes, did you ever have an interval of ≥2 months without significant depression or loss of interest?",Could you clarify what exactly you want me to think about?,explain request
+A5,"Between depressive episodes, did you ever have an interval of ≥2 months without significant depression or loss of interest?",Can you please explain this question so I am sure how to answer?,explain request
+A5,"Between depressive episodes, did you ever have an interval of ≥2 months without significant depression or loss of interest?","I do not understand the question fully, please explain more.",explain request
+A5,"Between depressive episodes, did you ever have an interval of ≥2 months without significant depression or loss of interest?",Could you give more details about what you mean?,explain request
+A5,"Between depressive episodes, did you ever have an interval of ≥2 months without significant depression or loss of interest?","I am confused by this question, can you rephrase it?",explain request
+A5,"Between depressive episodes, did you ever have an interval of ≥2 months without significant depression or loss of interest?",Please provide more information so I can respond accurately.,explain request
+A6a,How many episodes of depression have you had in your lifetime? (≥2 months between episodes required.),"Yes, I have felt like that almost every day and it has been affecting my mood a lot",yes
+A6a,How many episodes of depression have you had in your lifetime? (≥2 months between episodes required.),"Yes, that happens to me most days and it makes it hard to focus on anything",yes
+A6a,How many episodes of depression have you had in your lifetime? (≥2 months between episodes required.),"Yes, I have been feeling exactly that way for the past two weeks",yes
+A6a,How many episodes of depression have you had in your lifetime? (≥2 months between episodes required.),"Yes, nearly every day I feel this way and it does not seem to be getting better",yes
+A6a,How many episodes of depression have you had in your lifetime? (≥2 months between episodes required.),"Yes, I have been experiencing this very often and it is exhausting",yes
+A6a,How many episodes of depression have you had in your lifetime? (≥2 months between episodes required.),"Yes, this has been my experience almost every day recently",yes
+A6a,How many episodes of depression have you had in your lifetime? (≥2 months between episodes required.),"Yes, it has been happening for a while and it is very difficult for me",yes
+A6a,How many episodes of depression have you had in your lifetime? (≥2 months between episodes required.),"Yes, I notice it almost daily and it affects my ability to do things",yes
+A6a,How many episodes of depression have you had in your lifetime? (≥2 months between episodes required.),"Yes, it has been consistent for the last couple of weeks and it is troubling",yes
+A6a,How many episodes of depression have you had in your lifetime? (≥2 months between episodes required.),"Yes, exactly like that, it matches how I have been feeling",yes
+A6a,How many episodes of depression have you had in your lifetime? (≥2 months between episodes required.),"No, I have not been feeling that way at all",no
+A6a,How many episodes of depression have you had in your lifetime? (≥2 months between episodes required.),"No, I have not experienced that in the past two weeks",no
+A6a,How many episodes of depression have you had in your lifetime? (≥2 months between episodes required.),"No, this has not been an issue for me",no
+A6a,How many episodes of depression have you had in your lifetime? (≥2 months between episodes required.),"No, I have been feeling fine in that regard",no
+A6a,How many episodes of depression have you had in your lifetime? (≥2 months between episodes required.),"No, I do not think that applies to me",no
+A6a,How many episodes of depression have you had in your lifetime? (≥2 months between episodes required.),"No, that is not something I have noticed in myself",no
+A6a,How many episodes of depression have you had in your lifetime? (≥2 months between episodes required.),"No, I have not gone through anything like that",no
+A6a,How many episodes of depression have you had in your lifetime? (≥2 months between episodes required.),"No, I have been doing okay without those symptoms",no
+A6a,How many episodes of depression have you had in your lifetime? (≥2 months between episodes required.),"No, I do not relate to that experience",no
+A6a,How many episodes of depression have you had in your lifetime? (≥2 months between episodes required.),"No, I have not had that happen to me",no
+A6a,How many episodes of depression have you had in your lifetime? (≥2 months between episodes required.),Do you mean in the past two weeks or at any point in my life?,need more clarification
+A6a,How many episodes of depression have you had in your lifetime? (≥2 months between episodes required.),"What exactly counts as most of the day, is it more than half the day or nearly all of it?",need more clarification
+A6a,How many episodes of depression have you had in your lifetime? (≥2 months between episodes required.),Could you explain more about what you mean by that?,need more clarification
+A6a,How many episodes of depression have you had in your lifetime? (≥2 months between episodes required.),I am not sure if you are asking about physical symptoms or emotional ones,need more clarification
+A6a,How many episodes of depression have you had in your lifetime? (≥2 months between episodes required.),Do you mean a change compared to how I usually feel?,need more clarification
+A6a,How many episodes of depression have you had in your lifetime? (≥2 months between episodes required.),Could you clarify what you mean by nearly every day?,need more clarification
+A6a,How many episodes of depression have you had in your lifetime? (≥2 months between episodes required.),Are you asking about just the recent weeks or also earlier times?,need more clarification
+A6a,How many episodes of depression have you had in your lifetime? (≥2 months between episodes required.),Do you mean symptoms that are noticeable to others or just to me?,need more clarification
+A6a,How many episodes of depression have you had in your lifetime? (≥2 months between episodes required.),I would need an example to know if this applies to me,need more clarification
+A6a,How many episodes of depression have you had in your lifetime? (≥2 months between episodes required.),Can you rephrase the question in a simpler way so I can answer more accurately?,need more clarification
+A6a,How many episodes of depression have you had in your lifetime? (≥2 months between episodes required.),Could you please explain what you mean by this question in more detail?,explain request
+A6a,How many episodes of depression have you had in your lifetime? (≥2 months between episodes required.),"I am not sure I fully understand, can you give me an example?",explain request
+A6a,How many episodes of depression have you had in your lifetime? (≥2 months between episodes required.),Can you tell me more about what you want to know here?,explain request
+A6a,How many episodes of depression have you had in your lifetime? (≥2 months between episodes required.),I would like some explanation before I can answer properly.,explain request
+A6a,How many episodes of depression have you had in your lifetime? (≥2 months between episodes required.),Could you clarify what exactly you want me to think about?,explain request
+A6a,How many episodes of depression have you had in your lifetime? (≥2 months between episodes required.),Can you please explain this question so I am sure how to answer?,explain request
+A6a,How many episodes of depression have you had in your lifetime? (≥2 months between episodes required.),"I do not understand the question fully, please explain more.",explain request
+A6a,How many episodes of depression have you had in your lifetime? (≥2 months between episodes required.),Could you give more details about what you mean?,explain request
+A6a,How many episodes of depression have you had in your lifetime? (≥2 months between episodes required.),"I am confused by this question, can you rephrase it?",explain request
+A6a,How many episodes of depression have you had in your lifetime? (≥2 months between episodes required.),Please provide more information so I can respond accurately.,explain request
