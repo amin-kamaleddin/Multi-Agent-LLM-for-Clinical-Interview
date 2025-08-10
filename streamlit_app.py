@@ -21,6 +21,7 @@ from interview_agent.nodes import (
     selector,
     should_diagnose,
     diagnosis,
+    judge_node,
 )
 
 # This is a work in progress and is a poor implementation of a Streamlit app.
@@ -239,19 +240,49 @@ if not st.session_state.awaiting_answer:
     st.session_state.awaiting_answer = True
 
 st.markdown("---")
-st.subheader("Question")
-st.write(st.session_state.last_question)
+
+# Progress tracking
+if st.session_state.state:
+    current_question_num = len(st.session_state.state.question_path) + 1
+    current_qid = st.session_state.state.current_question_id
+    total_questions = len(st.session_state.state.module_loader.questions)
+    
+    col1, col2 = st.columns([2, 1])
+    with col1:
+        st.subheader(f"Question #{current_question_num}")
+    with col2:        
+        progress = min(current_question_num / total_questions, 1.0)
+        st.metric("Progress", f"{progress:.0%}")
+        
+    st.progress(progress, text=f"Questions asked: {current_question_num} (approx. progress)")
+        
+    st.caption(f"Question ID: {current_qid} | Module: {st.session_state.state.module_loader.module.name}")
+    
+    st.write(st.session_state.last_question)
+else:
+    st.subheader("Question")
+    st.write(st.session_state.last_question)
 
 if st.session_state.get("clear_answer"):
     st.session_state.answer_input = ""
     st.session_state.clear_answer = False
 
-user_input = st.text_area("Your answer", height=120, key="answer_input")
+# Quick response buttons
+st.markdown("**Quick responses:**")
 col1, col2 = st.columns([1, 1])
 
 with col1:
-    submit_clicked = st.button("Submit answer", use_container_width=True)
+    yes_clicked = st.button("Yes", use_container_width=True, type="secondary")
 with col2:
+    no_clicked = st.button("No", use_container_width=True, type="secondary")
+
+user_input = st.text_area("Your answer", height=120, key="answer_input")
+
+col3, col4 = st.columns([1, 1])
+
+with col3:
+    submit_clicked = st.button("Submit answer", use_container_width=True)
+with col4:
     cancel_clicked = st.button("Cancel / Reset", use_container_width=True)
 
 if cancel_clicked:
@@ -259,29 +290,26 @@ if cancel_clicked:
     st.session_state["clear_answer"] = True
     st.rerun()
 
-if submit_clicked:
+# Handle button clicks - Yes/No buttons or Submit button
+answer = ""
+if yes_clicked:
+    answer = "Yes"
+elif no_clicked:
+    answer = "No"
+elif submit_clicked:
     answer = st.session_state["answer_input"].strip()
     if not answer:
         st.warning("Please enter an answer before submitting.")
         st.stop()
 
+if answer:
     human_msg = HumanMessage(content=answer)
     state.messages = list(state.messages) + [human_msg]
 
-    last_question = state.module_loader.get_question(state.current_question_id)
-    prompt = JUDGE_SYSTEM_PROMPT.format(
-        last_question=last_question.prompt,
-        patient_last_answer=answer,
-    )
-    resp = structured_llm.invoke([HumanMessage(content=prompt)])
-
-    label = str(resp.classification)
-    if label not in ["yes", "no", "need more clarification", "N/A", "explain request"]:
-        label = "need more clarification"
-
-    reasoning_msg = AIMessage(content=str(resp.reasoning))
-    state.messages = list(state.messages) + [reasoning_msg]
-    state.judge_results = list(state.judge_results) + [label]
+    judge_result = judge_node(state)
+    
+    state.messages = list(state.messages) + judge_result["messages"]
+    state.judge_results = list(state.judge_results) + judge_result["judge_results"]
 
     if should_clarify(state) == "clarify":
         st.session_state.awaiting_answer = False
