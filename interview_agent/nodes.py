@@ -28,6 +28,9 @@ diagnosis_llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.1).with_structured
     DiagnosisResult
 )
 
+# ------------------------------ Global Vars ------------------------------ #
+AUTO_SET_YES_AFTER = 3  # after 3 consecutive clarifies, the 4th auto-yes
+
 
 # -------------------------------- Nodes ------------------------------------ #
 def interviewer_node(state: InterviewState) -> Dict[str, Any]:
@@ -71,6 +74,16 @@ def interviewer_node(state: InterviewState) -> Dict[str, Any]:
     return {"messages": [response, human_msg]}
 
 
+def _clarify_streak(judge_results: list[Any], last_result) -> bool:
+    clarify_label = "rephrase needed"
+    results = judge_results
+    results.append(last_result)
+    if len(judge_results) >= AUTO_SET_YES_AFTER and all(r == clarify_label for r in results[-AUTO_SET_YES_AFTER:]):
+        return True
+    else:
+        return False
+
+
 def judge_node(state: InterviewState) -> Dict[str, Any]:
     # assume the loop-driver put the user's message in state.messages[-1]
     print("enter judge")
@@ -78,7 +91,6 @@ def judge_node(state: InterviewState) -> Dict[str, Any]:
     patient_last_answer = state.messages[-1]
     
     response_text = patient_last_answer.content.strip().lower()
-    
     if response_text == "yes":
         print("Direct classification: YES (no LLM call needed)")
         label = "yes"
@@ -101,7 +113,12 @@ def judge_node(state: InterviewState) -> Dict[str, Any]:
         
         if label not in ["yes", "no", "rephrase needed", "N/A", "explain request"]:
             label = "rephrase needed"
-
+            
+    if _clarify_streak(judge_results=state.judge_results, last_result=label):
+        print("Direct classification after 3 round of clarification: YES")
+        label = "yes"
+        reasoning = f"Patient prompted a vague answer after three rounds of clarification :" \
+                    f" '{patient_last_answer.content}'"
     print("exit judge")
     # TODO search for best practices of adding pydantic class to 'Messages'
     return {"messages": [AIMessage(content=reasoning)], "judge_results": [label]}
