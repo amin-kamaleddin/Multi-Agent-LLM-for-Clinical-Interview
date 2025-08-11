@@ -63,7 +63,7 @@ def interviewer_node(state: InterviewState) -> Dict[str, Any]:
 
 
 def _clarify_streak(judge_results: list[Any], last_result) -> bool:
-    clarify_label = "need more clarification"
+    clarify_label = "rephrase needed"
     results = judge_results
     results.append(last_result)
     if len(judge_results) >= AUTO_SET_YES_AFTER and all(r == clarify_label for r in results[-AUTO_SET_YES_AFTER:]):
@@ -99,8 +99,8 @@ def judge_node(state: InterviewState) -> Dict[str, Any]:
         label = str(resp.classification)
         reasoning = str(resp.reasoning)
 
-        if label not in ["yes", "no", "need more clarification", "N/A", "explain request"]:
-            label = "need more clarification"
+        if label not in ["yes", "no", "rephrase needed", "N/A", "explain request"]:
+            label = "rephrase needed"
 
     if _clarify_streak(judge_results=state.judge_results, last_result=label):
         print("Direct classification after 3 round of clarification: YES")
