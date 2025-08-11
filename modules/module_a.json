@@ -168,11 +168,25 @@
       "prompt": "How many episodes of depression have you had in your lifetime? (≥2 months between episodes required.)",
       "responseType": "number",
       "next": { 
-        "yes": "DIAGNOSTIC",
-        "no": "DIAGNOSTIC",
-        "N/A": "DIAGNOSTIC",
-        "number": "DIAGNOSTIC"
+        "yes": "O1a",
+        "no": "O1a",
+        "N/A": "O1a",
+        "number": "O1a"
       }
+    },
+    {
+      "id": "O1a",
+      "prompt": "Were you taking any drugs or medicines or in withdrawal from any of these?",
+      "responseType": "choice",
+      "options": ["No", "Yes"],
+      "next": { "no": "O1b", "yes": "O1b"}
+    },
+    {
+      "id": "O1b",
+      "prompt": "Did you have any medical illness?",
+      "responseType": "choice",
+      "options": ["No", "Yes"],
+      "next": { "no": "DIAGNOSTIC", "yes": "DIAGNOSTIC"}
     }
   ],
   "diagnosticCriteria": {
@@ -181,9 +195,12 @@
         "At least 5 symptom groups (A3a–A3g) coded YES",
         "Core symptom: A1b=YES or A2b=YES",
         "Functional impairment: A4_current=YES or A4_past=YES",
-        "Organic cause ruled out"
+        "Organic cause ruled out",
+        "O1a = NO AND O1b = NO"
       ],
-      "recurrent": "A5 = YES"
+      "recurrent": ["A5 = YES",
+      "O1a = NO AND O1b = NO"
+      ]
     }
   }
 }
