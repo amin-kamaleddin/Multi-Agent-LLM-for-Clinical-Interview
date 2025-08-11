@@ -24,7 +24,7 @@
       "prompt": "Did you have any medical illness?",
       "responseType": "choice",
       "options": ["No", "Yes"],
-      "next": { "no": "O2", "yes": "O2"}
+      "next": { "no": "DIAGNOSTIC", "yes": "DIAGNOSTIC"}
     },
     {
       "id": "O2",
@@ -35,8 +35,8 @@
     }
   ],
   "diagnosticCriteria": {
-    "organicCauseRuledOut": {
-      "summary": "If O2 is YES, then O2 Summary is NO. If O2 is NO, then O2 Summary is YES."
+    "ruleOutMedical,OrganicOrDrugCausesForAllDisorders": {
+      "mustHave": ["O1a = YES or O1b = YES"]
     }
   }
 }
