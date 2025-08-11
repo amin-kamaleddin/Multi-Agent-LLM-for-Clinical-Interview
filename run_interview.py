@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-"""Simple script to run MINI interview agent."""
 
 import sys
 import os

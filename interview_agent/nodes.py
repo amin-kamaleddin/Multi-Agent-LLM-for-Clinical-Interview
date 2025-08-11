@@ -1,4 +1,5 @@
 import json, uuid, csv, time, os
+from datetime import datetime
 from typing import Any, Dict
 
 from dotenv import load_dotenv
@@ -52,6 +53,7 @@ def interviewer_node(state: InterviewState) -> Dict[str, Any]:
     user_input = input("You: ").strip()
     human_msg = HumanMessage(content=user_input)
     print(15* '--' + f" End of question {state.current_question_id}" + 15* '--' + '\n\n')
+    
     print("exit interviewer")
     # 4. Return both the LLM question and the new HumanMessage
     return {"messages": [response, human_msg]}
@@ -98,11 +100,17 @@ def should_clarify(state: InterviewState) -> str:
 
 
 def _log_entry(state: InterviewState) -> Dict[str, Any]:
+    # Determine if this is a clarification based on previous judge results
+    exchange_type = "clarification" if len(state.judge_results) > 1 and state.judge_results[-2] in ["need more clarification", "explain request"] else "initial"
+    
     return {
         "question_id": state.current_question_id,
+        "ai_question": state.messages[-3].content if len(state.messages) >= 3 else "",  # The AI question
         "patient_response": state.messages[-2].content,
         "classification": state.judge_results[-1],
         "reasoning": state.messages[-1].content,
+        "timestamp": datetime.now().isoformat(),
+        "exchange_type": exchange_type,
     }
 
 
