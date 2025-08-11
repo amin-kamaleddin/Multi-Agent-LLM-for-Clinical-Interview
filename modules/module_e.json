@@ -17,7 +17,7 @@
       "responseType": "yes_no",
       "next": {
         "yes": "E2",
-        "no": "DIAGNOSTIC"
+        "no": "O1a"
       }
     },
     {
@@ -26,7 +26,7 @@
       "responseType": "yes_no",
       "next": {
         "yes": "E3",
-        "no": "DIAGNOSTIC"
+        "no": "O1a"
       }
     },
     {
@@ -35,7 +35,7 @@
       "responseType": "yes_no",
       "next": {
         "yes": "E4",
-        "no": "DIAGNOSTIC"
+        "no": "O1a"
       }
     },
     {
@@ -44,7 +44,7 @@
       "responseType": "yes_no",
       "next": {
         "yes": "E5",
-        "no": "DIAGNOSTIC"
+        "no": "O1a"
       }
     },
     {
@@ -53,7 +53,7 @@
       "responseType": "yes_no",
       "next": {
         "yes": "E6",
-        "no": "DIAGNOSTIC"
+        "no": "O1a"
       }
     },
     {
@@ -61,9 +61,23 @@
       "prompt": "Did these symptoms cause significant distress or problems at home, at work, at school or in some other important way?",
       "responseType": "yes_no",
       "next": {
-        "yes": "DIAGNOSTIC",
-        "no": "DIAGNOSTIC"
+        "yes": "O1a",
+        "no": "O1a"
       }
+    },
+    {
+      "id": "O1a",
+      "prompt": "Were you taking any drugs or medicines or in withdrawal from any of these?",
+      "responseType": "choice",
+      "options": ["No", "Yes"],
+      "next": { "no": "O1b", "yes": "O1b"}
+    },
+    {
+      "id": "O1b",
+      "prompt": "Did you have any medical illness?",
+      "responseType": "choice",
+      "options": ["No", "Yes"],
+      "next": { "no": "DIAGNOSTIC", "yes": "DIAGNOSTIC"}
     }
   ],
   "diagnosticCriteria": {
