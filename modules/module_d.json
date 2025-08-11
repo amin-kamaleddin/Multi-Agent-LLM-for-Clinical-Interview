@@ -112,7 +112,7 @@
       "group": "D4",
       "prompt": "Did you fear that you were dying?",
       "responseType": "yes_no",
-      "next": { "yes": "D5", "no": "D5" }
+      "next": { "yes": "D6", "no": "D6" }
     },
     {
       "id": "D5",
@@ -124,13 +124,33 @@
       "id": "D6",
       "prompt": "In the past month did you have persistent concern about having another attack, or worry about the consequences of the attacks, or did you change your behavior in any way because of the attacks?",
       "responseType": "yes_no",
-      "next": { "yes": "DIAGNOSTIC", "no": "DIAGNOSTIC" }
+      "next": { "yes": "O1a", "no": "O1a" }
+    },
+    {
+      "id": "O1a",
+      "prompt": "Were you taking any drugs or medicines or in withdrawal from any of these?",
+      "responseType": "choice",
+      "options": ["No", "Yes"],
+      "next": { "no": "O1b", "yes": "O1b"}
+    },
+    {
+      "id": "O1b",
+      "prompt": "Did you have any medical illness?",
+      "responseType": "choice",
+      "options": ["No", "Yes"],
+      "next": { "no": "DIAGNOSTIC", "yes": "DIAGNOSTIC"}
     }
   ],
   "diagnosticCriteria": {
     "panicDisorder": {
-      "lifetime": "D5 == 'YES' AND O2 Summary == 'YES'",
-      "current": "D6 == 'YES' AND O2 Summary == 'YES'"
+      "lifetime": [
+        "D3 is YES",
+        "4 or more of (D4a,D4b,D4c,D4d,D4e,D4f,D4g,D4h,D4i,D4j,D4k,D4l,D4m) is YES",
+        "O1a = NO or O1b = NO"
+      ],
+      "current": ["D6 is 'YES'",
+      "O1a = NO or O1b = NO"
+      ]
     }
   }
 }
