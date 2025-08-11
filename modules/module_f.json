@@ -1,7 +1,7 @@
 {
   "module": {
     "id": "F",
-    "name": "Social Anxiety Disorder (Social Phobia)"
+    "name": "Social Anxiety Disorder"
   },
   "instructions": [
     "➨ means: go to the diagnostic box, circle NO, and move to the next module"
@@ -12,42 +12,57 @@
       "prompt": "In the past month, did you have persistent fear and significant anxiety at being watched, being the focus of attention, or of being humiliated or embarrassed or rejected? This includes things like speaking in public, eating in public or with others, writing while someone watches, performing in front of others or being in social situations",
       "responseType": "yes_no",
       "note": "Examples of such social situations typically include: initiating or maintaining a conversation, participating in small groups, dating, speaking to authority figures, attending parties, public speaking, eating in front of others, performing in front of others, urinating in a public washroom, etc.",
-      "next": { "yes": "F2", "no": "END_MODULE" }
+      "next": { "yes": "F2", "no": "O1a" }
     },
     {
       "id": "F2",
       "prompt": "Do these social situations almost always bring on fear or anxiety?",
       "responseType": "yes_no",
-      "next": { "yes": "F3", "no": "END_MODULE" }
+      "next": { "yes": "F3", "no": "O1a" }
     },
     {
       "id": "F3",
       "prompt": "Do you fear these social situations so much that you avoid them, or suffer through them, or need a companion to face them?",
       "responseType": "yes_no",
-      "next": { "yes": "F4", "no": "END_MODULE" }
+      "next": { "yes": "F4", "no": "O1a" }
     },
     {
       "id": "F4",
       "prompt": "Is this social fear or anxiety excessive or unreasonable in these social situations?",
       "responseType": "yes_no",
-      "next": { "yes": "F5", "no": "END_MODULE" }
+      "next": { "yes": "F5", "no": "O1a" }
     },
     {
       "id": "F5",
       "prompt": "Did this social avoidance, fear or anxiety persist for at least 6 months?",
       "responseType": "yes_no",
-      "next": { "yes": "F6", "no": "END_MODULE" }
+      "next": { "yes": "F6", "no": "O1a" }
     },
     {
       "id": "F6",
       "prompt": "Did these social fears cause significant distress or interfere with your ability to function at work, at school or socially or in your relationships or in some other important way?",
       "responseType": "yes_no",
-      "next": { "yes": "DIAGNOSTIC", "no": "END_MODULE" }
+      "next": { "yes": "DIAGNOSTIC", "no": "O1a" }
+    },
+    {
+      "id": "O1a",
+      "prompt": "Were you taking any drugs or medicines or in withdrawal from any of these?",
+      "responseType": "choice",
+      "options": ["No", "Yes"],
+      "next": { "no": "O1b", "yes": "O1b"}
+    },
+    {
+      "id": "O1b",
+      "prompt": "Did you have any medical illness?",
+      "responseType": "choice",
+      "options": ["No", "Yes"],
+      "next": { "no": "DIAGNOSTIC", "yes": "DIAGNOSTIC"}
     }
   ],
   "diagnosticCriteria": {
     "socialAnxietyDisorder": {
-      "current": "F6 == 'YES' AND O2 Summary == 'YES'",
+      "current": ["F6 == 'YES'",
+        "O1a = NO AND O1b = NO"],
       "note": "Note to clinician: Please specify if the subject's fears are restricted to speaking or restricted to performance performing in public - SAD ONLY"
     }
   }
