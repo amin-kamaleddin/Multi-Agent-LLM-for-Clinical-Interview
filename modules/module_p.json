@@ -104,7 +104,9 @@
   ],
   "diagnosticCriteria": {
     "antisocialPersonalityDisorder": {
-      "lifetime": "2+ P1 symptoms == 'YES' AND 3+ P2 symptoms == 'YES'",
+      "lifetime": ["more than 2 of (P1a, P1b, P1c, P1d, P1e, P1f) are YES",
+        "more than 3 of (P2a, P2b, P2c, P2d, P2e, P2f, P2g) are YES"
+      ],
       "note": "Do not code YES to behaviors if they are exclusively politically or religiously motivated"
     }
   }
