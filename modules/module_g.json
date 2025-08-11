@@ -48,12 +48,27 @@
       "id": "G4",
       "prompt": "In the past month, did these obsessive thoughts and/or compulsive behaviors cause significant distress, or interfere with your ability to function at home, at work, at school or socially or in your relationships or in some other important way or did they take more than one hour a day?",
       "responseType": "yes_no",
-      "next": { "yes": "DIAGNOSTIC", "no": "END_MODULE" }
+      "next": { "yes": "O1a", "no": "O1a" }
+    },
+    {
+      "id": "O1a",
+      "prompt": "Were you taking any drugs or medicines or in withdrawal from any of these?",
+      "responseType": "choice",
+      "options": ["No", "Yes"],
+      "next": { "no": "O1b", "yes": "O1b"}
+    },
+    {
+      "id": "O1b",
+      "prompt": "Did you have any medical illness?",
+      "responseType": "choice",
+      "options": ["No", "Yes"],
+      "next": { "no": "DIAGNOSTIC", "yes": "DIAGNOSTIC"}
     }
   ],
   "diagnosticCriteria": {
-    "obsessiveCompulsiveDisorder": {
-      "current": "G4 == 'YES' AND O2 Summary == 'YES'",
+    "obsessive-CompulsiveDisorder": {
+      "current": ["G4 == 'YES'",
+                  "O1a = NO AND O1b = NO"],
       "insight": {
         "goodOrFair": "Patient has good or fair insight",
         "poor": "Patient has poor insight", 
