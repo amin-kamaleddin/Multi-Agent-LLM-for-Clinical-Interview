@@ -9,7 +9,7 @@ from pydantic import ValidationError
 # Load environment variables from .env file
 load_dotenv()
 from langchain_core.messages import SystemMessage, HumanMessage, AIMessage
-from .prompts import INTERVIEWER_SYSTEM_PROMPT, JUDGE_SYSTEM_PROMPT, DIAGNOSIS_SYSTEM_PROMPT, EXPLAIN_PROMPT
+from .prompts import INTERVIEWER_SYSTEM_PROMPT, JUDGE_SYSTEM_PROMPT, DIAGNOSIS_SYSTEM_PROMPT, EXPLAIN_PROMPT, CLARIFICATION_PROMPT
 
 from .models import (
     InterviewState,
@@ -40,10 +40,22 @@ def interviewer_node(state: InterviewState) -> Dict[str, Any]:
     # 1. Build the system prompt + history
     current_question = state.module_loader.get_question(state.current_question_id)
     sys_msg = SystemMessage(content=INTERVIEWER_SYSTEM_PROMPT.format(question=current_question.prompt))
+    
     if len(state.judge_results) > 0:
         if state.judge_results[-1] == "explain request":
             patient_response = state.messages[-1].content
             sys_msg = SystemMessage(EXPLAIN_PROMPT.format(response=patient_response, current_question=current_question.prompt))
+        elif state.judge_results[-1] == "rephrase needed":
+            # Generate specific clarification using LLM based on patient's unclear response
+            patient_response = state.messages[-1].content
+            judge_reasoning = state.messages[-2].content if len(state.messages) >= 2 else "Response was unclear"
+            
+            clarification_prompt = CLARIFICATION_PROMPT.format(
+                question=current_question.prompt,
+                response=patient_response,
+                reasoning=judge_reasoning
+            )
+            sys_msg = SystemMessage(content=clarification_prompt)
 
     msgs = [sys_msg]
 
@@ -98,10 +110,10 @@ def judge_node(state: InterviewState) -> Dict[str, Any]:
 
         label = str(resp.classification)
         reasoning = str(resp.reasoning)
-
+        
         if label not in ["yes", "no", "rephrase needed", "N/A", "explain request"]:
             label = "rephrase needed"
-
+            
     if _clarify_streak(judge_results=state.judge_results, last_result=label):
         print("Direct classification after 3 round of clarification: YES")
         label = "yes"
@@ -113,12 +125,12 @@ def judge_node(state: InterviewState) -> Dict[str, Any]:
 
 
 def should_clarify(state: InterviewState) -> str:
-    return "clarify" if state.judge_results[-1] in ["need more clarification", "explain request"] else "continue"
+    return "clarify" if state.judge_results[-1] in ["rephrase needed", "explain request"] else "continue"
 
 
 def _log_entry(state: InterviewState) -> Dict[str, Any]:
     # Determine if this is a clarification based on previous judge results
-    exchange_type = "clarification" if len(state.judge_results) > 1 and state.judge_results[-2] in ["need more clarification", "explain request"] else "initial"
+    exchange_type = "clarification" if len(state.judge_results) > 1 and state.judge_results[-2] in ["rephrase needed", "explain request"] else "initial"
     
     return {
         "question_id": state.current_question_id,
