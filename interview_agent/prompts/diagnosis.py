@@ -34,9 +34,9 @@ You must assess whether each diagnostic criterion is met, based solely on the pa
 === Output Format ===
             Return ONLY a JSON object with these fields:
             
-            "diagnosis": true/false,
+            "reasoning": "<a concise explanation for the assessment>",
             "timeFrame": "past" | "recent" | "both" | null,
-            "reasoning": "<a concise explanation for the assessment>"
+            "diagnosis": true/false
             
-            DO NOT include any other text outside this JSON.
+            DO NOT include any other text outside this JSON. Your diagnosis must match with your reasoning.
 """
