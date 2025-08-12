@@ -67,7 +67,7 @@ def judge(question, answer):
     return label
 
 # Step 1: Read CSV
-df = pd.read_csv("./interview_agent/prompts/judge_dataset_test.csv")
+df = pd.read_csv("./interview_agent/prompts/judge_dataset_edge_cases_v2.csv")
 
 _load_key()
 
@@ -79,6 +79,6 @@ accuracy = (df["prediction"] == df["label"]).mean()
 print(f"Accuracy: {accuracy:.4f}")
 
 # Step 3: Save new dataframe with labels
-df.to_csv("./interview_agent/prompts/judge_dataset_test_with_labels.csv", index=False)
+df.to_csv("./interview_agent/prompts/judge_dataset_edge_cases_predictions_v2.csv", index=False)
 
 print("Done! New file saved with labels.")
