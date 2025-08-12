@@ -20,19 +20,25 @@
       "id": "A1a",
       "prompt": "Were you ever depressed or down, or felt sad, empty or hopeless most of the day, nearly every day, for two weeks?",
       "responseType": "yes_no",
-      "next": { "yes": "A1b", "no": "A2a" }
+      "next": { "yes": "A1b", "no": "A2a_2" }
     },
     {
       "id": "A1b",
       "prompt": "For the past two weeks, were you depressed or down, or felt sad, empty or hopeless most of the day, nearly every day?",
       "responseType": "yes_no",
-      "next": { "yes": "A2a", "no": "A2a" }
+      "next": { "yes": "A2a_1", "no": "A2a_1" }
     },
     {
-      "id": "A2a",
+      "id": "A2a_1",
       "prompt": "Were you ever much less interested in most things or much less able to enjoy the things you used to enjoy most of the time, for two weeks?",
       "responseType": "yes_no",
       "next": { "yes": "A2b", "no": "A3a_recent" }
+    },
+    {
+      "id": "A2a_2",
+      "prompt": "Were you ever much less interested in most things or much less able to enjoy the things you used to enjoy most of the time, for two weeks?",
+      "responseType": "yes_no",
+      "next": { "yes": "A2b", "no": "DIAGNOSTIC" }
     },
     {
       "id": "A2b",
@@ -193,9 +199,8 @@
     "majorDepressiveEpisode": {
       "mustHave": [
         "At least 5 symptom groups (A3a–A3g) coded YES",
-        "Core symptom: A1b=YES or A2b=YES",
+        "Core symptom: A1a=YES or A2a_1=YES or A2a_2=YES or A1b=YES or A2b=YES",
         "Functional impairment: A4_current=YES or A4_past=YES",
-        "Organic cause ruled out",
         "O1a = NO AND O1b = NO"
       ],
       "recurrent": ["A5 = YES",
