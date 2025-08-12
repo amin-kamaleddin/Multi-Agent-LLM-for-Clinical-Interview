@@ -49,63 +49,63 @@
     {
       "id": "A3a_recent",
       "group": "A3a",
-      "prompt": "(Past 2 weeks) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?",
+      "prompt": "In the past 2 weeks, was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?",
       "responseType": "yes_no",
       "next": { "yes": "A3a_past", "no": "A3a_past" }
     },
     {
       "id": "A3a_past",
       "group": "A3a",
-      "prompt": "(Past episode) Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?",
+      "prompt": "In a past episode, have you experienced a noticeable change in appetite almost every day, or an unintentional weight change of around 5%?",
       "responseType": "yes_no",
       "next": { "yes": "A3b_recent", "no": "A3b_recent" }
     },
     {
       "id": "A3b_recent",
       "group": "A3b",
-      "prompt": "(Past 2 weeks) Did you have trouble sleeping nearly every night (difficulty falling asleep, early waking, or sleeping excessively)?",
+      "prompt": "In the past 2 weeks, have you had trouble sleeping nearly every night (trouble falling asleep, waking early, or sleeping excessively)?",
       "responseType": "yes_no",
       "next": { "yes": "A3b_past", "no": "A3b_past" }
     },
     {
       "id": "A3b_past",
       "group": "A3b",
-      "prompt": "(Past episode) Did you have trouble sleeping nearly every night?",
+      "prompt": "In a past episode, did you have sleep problems nearly every night?",
       "responseType": "yes_no",
       "next": { "yes": "A3c_recent", "no": "A3c_recent" }
     },
     {
       "id": "A3c_recent",
       "group": "A3c",
-      "prompt": "(Past 2 weeks) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day? Did anyone notice?",
+      "prompt": "In the past 2 weeks, did you find yourself speaking or moving more slowly than usual, or feeling restless or fidgety nearly every day? Did anyone notice?",
       "responseType": "yes_no",
       "next": { "yes": "A3c_past", "no": "A3c_past" }
     },
     {
       "id": "A3c_past",
       "group": "A3c",
-      "prompt": "(Past episode) Did you talk or move more slowly than normal, or were you restless/fidgety almost every day?",
+      "prompt": "In a past episode, did you talk or move more slowly than normal, or were you restless/fidgety almost every day?",
       "responseType": "yes_no",
       "next": { "yes": "A3d_recent", "no": "A3d_recent" }
     },
     {
       "id": "A3d_recent",
       "group": "A3d",
-      "prompt": "(Past 2 weeks) Did you feel tired or without energy almost every day?",
+      "prompt": "In the past 2 weeks, have you felt tired or had very little energy almost every day?",
       "responseType": "yes_no",
       "next": { "yes": "A3d_past", "no": "A3d_past" }
     },
     {
       "id": "A3d_past",
       "group": "A3d",
-      "prompt": "(Past episode) Did you feel tired or without energy almost every day?",
+      "prompt": "In a past episode, did you feel the same lack of energy almost every day?",
       "responseType": "yes_no",
       "next": { "yes": "A3e_recent", "no": "A3e_recent" }
     },
     {
       "id": "A3e_recent",
       "group": "A3e",
-      "prompt": "(Past 2 weeks) Did you feel worthless or guilty almost every day?",
+      "prompt": "In the past 2 weeks, have you felt worthless or guilty almost every day?",
       "responseType": "yes_no",
       "followUp": "If YES, ask for examples of delusional guilt/worthlessness (failure, disease, death, etc.).",
       "next": { "yes": "A3e_past", "no": "A3e_past" }
@@ -113,7 +113,7 @@
     {
       "id": "A3e_past",
       "group": "A3e",
-      "prompt": "(Past episode) Did you feel worthless or guilty almost every day?",
+      "prompt": "In a past episode, did you feel the same way — worthless or guilty almost every day?",
       "responseType": "yes_no",
       "followUp": "If YES, ask for examples of delusional guilt/worthlessness.",
       "next": { "yes": "A3f_recent", "no": "A3f_recent" }
@@ -121,21 +121,21 @@
     {
       "id": "A3f_recent",
       "group": "A3f",
-      "prompt": "(Past 2 weeks) Did you have difficulty concentrating, thinking, or making decisions almost every day?",
+      "prompt": "In the past two weeks, have you had trouble concentrating, thinking clearly, or making decisions almost every day?",
       "responseType": "yes_no",
       "next": { "yes": "A3f_past", "no": "A3f_past" }
     },
     {
       "id": "A3f_past",
       "group": "A3f",
-      "prompt": "(Past episode) Did you have difficulty concentrating, thinking, or making decisions almost every day?",
+      "prompt": "In a past episode, did you have similar problems with concentration or decision-making almost every day?",
       "responseType": "yes_no",
       "next": { "yes": "A3g_recent", "no": "A3g_recent" }
     },
     {
       "id": "A3g_recent",
       "group": "A3g",
-      "prompt": "(Past 2 weeks) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?",
+      "prompt": "In the past 2 weeks, have you repeatedly thought about death, had thoughts or plans to harm yourself, or attempted suicide?",
       "responseType": "yes_no",
       "safetyFlag": true,
       "next": { "yes": "A3g_past", "no": "A3g_past" }
@@ -143,7 +143,7 @@
     {
       "id": "A3g_past",
       "group": "A3g",
-      "prompt": "(Past episode) Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?",
+      "prompt": "In a past episode, did you ever have similar thoughts or actions related to death or suicide?",
       "responseType": "yes_no",
       "safetyFlag": true,
       "next": { "yes": "A4_current", "no": "A4_current" }
@@ -151,27 +151,27 @@
     {
       "id": "A4_current",
       "group": "A4",
-      "prompt": "(Current episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?",
+      "prompt": "During the past 2 weeks, have these symptoms caused significant distress or problems and marked a change from your usual functioning?",
       "responseType": "yes_no",
       "next": { "yes": "A4_past", "no": "A4_past" }
     },
     {
       "id": "A4_past",
       "group": "A4",
-      "prompt": "(Past episode) Did these symptoms cause significant distress or problems and represent a change from your previous functioning?",
+      "prompt": "During a past episode, did these symptoms cause significant distress or problems and mark a change from your usual functioning?",
       "responseType": "yes_no",
       "next": { "yes": "A5", "no": "A5" }
     },
     {
       "id": "A5",
-      "prompt": "Between depressive episodes, did you ever have an interval of ≥2 months without significant depression or loss of interest?",
+      "prompt": "Between depressive episodes, did you ever have at least 2 months without significant depression or loss of interest?",
       "responseType": "choice",
       "options": ["N/A", "NO", "YES"],
       "next": { "yes": "A6a", "no": "A6a", "N/A": "A6a" }
     },
     {
       "id": "A6a",
-      "prompt": "How many episodes of depression have you had in your lifetime? (≥2 months between episodes required.)",
+      "prompt": "How many episodes of depression have you had in your lifetime? (Only count if at least 2 months passed between episodes.)",
       "responseType": "number",
       "next": { 
         "yes": "O1a",
