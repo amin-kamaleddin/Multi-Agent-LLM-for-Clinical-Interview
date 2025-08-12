@@ -51,16 +51,29 @@ def judge(question, answer):
     # assume the loop-driver put the user's message in state.messages[-1]
     print("enter judge")
 
-    prompt = JUDGE_SYSTEM_PROMPT.format(last_question= question, patient_last_answer= answer)
-    resp = structured_llm.invoke([HumanMessage(content=prompt)])
+    response_text = answer.strip().lower()
+    if response_text == "yes":
+        print("Direct classification: YES (no LLM call needed)")
+        label = "yes"
+        reasoning = f"Patient gave a clear affirmative response: '{answer}'"
+    elif response_text == "no":
+        print("Direct classification: NO (no LLM call needed)")
+        label = "no"
+        reasoning = f"Patient gave a clear negative response: '{answer}'"
+    else:        
+        print("MAKING AN LLM CALL TO JUDGE THE ANSWER")
+        prompt = JUDGE_SYSTEM_PROMPT.format(last_question= question, patient_last_answer= answer)
+        resp = structured_llm.invoke([HumanMessage(content=prompt)])
 
-    # Access Pydantic model attributes directly
-    print(f"reason behind the decision: {resp.reasoning}")
-    print(f"decision: {resp.classification}")
+        # Access Pydantic model attributes directly
+        print(f"reason behind the decision: {resp.reasoning}")
+        print(f"decision: {resp.classification}")
 
-    label = str(resp.classification)
-    if label not in ["yes", "no", "need more clarification", "N/A", "explain request"]:
-        label = "need more clarification"
+        label = str(resp.classification)
+        reasoning = str(resp.reasoning)
+        
+        if label not in ["yes", "no", "rephrase needed", "N/A", "explain request"]:
+            label = "rephrase needed"
 
     print("exit judge")
     # TODO search for best practices of adding pydantic class to 'Messages'
