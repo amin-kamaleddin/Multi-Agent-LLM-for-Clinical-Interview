@@ -68,6 +68,7 @@
   "diagnosticCriteria": {
     "obsessive-CompulsiveDisorder": {
       "current": ["G4 == 'YES'",
+                  "(G1a AND G1b AND G2) is YES OR (G3a AND G3b) is YES",
                   "O1a = NO AND O1b = NO"],
       "insight": {
         "goodOrFair": "Patient has good or fair insight",
