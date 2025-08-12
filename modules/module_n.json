@@ -16,19 +16,19 @@
       "prompt": "Were you excessively anxious or worried about several routine things, over the past 6 months?",
       "responseType": "yes_no",
       "note": "In English, if the patient is unclear about what you mean, probe by asking (Do others think that you are a worrier or a 'worry wart'?) and get examples",
-      "next": { "yes": "N1b", "no": "O1a" }
+      "next": { "yes": "N1b", "no": "DIAGNOSTIC" }
     },
     {
       "id": "N1b",
       "prompt": "Are these anxieties and worries present most days?",
       "responseType": "yes_no",
-      "next": { "yes": "N2", "no": "O1a" }
+      "next": { "yes": "N2", "no": "DIAGNOSTIC" }
     },
     {
       "id": "N2",
       "prompt": "Do you find it difficult to control the worries?",
       "responseType": "yes_no",
-      "next": { "yes": "N3a", "no": "O1a" }
+      "next": { "yes": "N3a", "no": "DIAGNOSTIC" }
     },
     {
       "id": "N3a",
