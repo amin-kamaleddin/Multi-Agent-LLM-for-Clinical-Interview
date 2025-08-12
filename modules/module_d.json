@@ -11,15 +11,24 @@
     "Diagnostic box: Is either D5 or D6 coded YES AND is 'Rule out organic cause (O2 Summary)' coded YES? If YES, specify LIFETIME and/or CURRENT."
   ],
   "questions": [
-    { "id": "D1a", "prompt": "Have you, on more than one occasion, had spells or attacks when you suddenly felt anxious, very frightened, uncomfortable or uneasy, even in situations where most people would not feel that way?", 
+    {
+      "id": "D1a",
+      "prompt": "Have you, on more than one occasion, had spells or attacks when you suddenly felt anxious, very frightened, uncomfortable or uneasy, even in situations where most people would not feel that way?",
     "responseType": "yes_no", 
-    "next": { "yes": "D1b", "no": "D1b" } },
-    { "id": "D1b", "prompt": "Did the spells surge to a peak within 10 minutes of starting?", 
+    "next": { "yes": "D1b", "no": "DIAGNOSTIC" }
+    },
+    {
+      "id": "D1b",
+      "prompt": "Did the spells surge to a peak within 10 minutes of starting?",
     "responseType": "yes_no", 
-    "next": { "yes": "D2", "no": "D2" } },
-    { "id": "D2",  "prompt": "At any time in the past, did any of those spells or attacks come on unexpectedly or occur in an unpredictable or unprovoked manner?", 
+    "next": { "yes": "D2", "no": "DIAGNOSTIC" }
+    },
+    {
+      "id": "D2",
+      "prompt": "At any time in the past, did any of those spells or attacks come on unexpectedly or occur in an unpredictable or unprovoked manner?",
     "responseType": "yes_no", 
-    "next": { "yes": "D3", "no": "D3" } },
+    "next": { "yes": "D3", "no": "DIAGNOSTIC" }
+    },
     { "id": "D3",  "prompt": "Have you ever had one such attack followed by a month or more of persistent concern about having another attack, or worries about the consequences of the attack, or did you make any significant change in your behavior because of the attacks?", 
     "responseType": "yes_no", 
     "next": { "yes": "D4a", "no": "D4a" } },
