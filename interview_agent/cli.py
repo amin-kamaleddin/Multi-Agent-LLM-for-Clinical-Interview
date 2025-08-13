@@ -14,7 +14,7 @@ def _load_key():
         raise RuntimeError("OPENAI_API_KEY not set (use .env or export)")
 
 
-def run():
+def run(patient_agent=False):
     parser = argparse.ArgumentParser(description="Run MINI interviewer")
     parser.add_argument("module_path", help="Path to MINI JSON file")
     parser.add_argument(
@@ -35,7 +35,7 @@ def run():
         module_loader=loader,
         current_question_id=start_qid,
         messages=[],
-        patient_agent=True
+        patient_agent=patient_agent
     )
 
     thread_id = f"session_{uuid.uuid4().hex[:8]}"
