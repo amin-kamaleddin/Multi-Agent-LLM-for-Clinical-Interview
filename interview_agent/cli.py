@@ -14,7 +14,7 @@ def _load_key():
         raise RuntimeError("OPENAI_API_KEY not set (use .env or export)")
 
 
-def run():
+def run(patient_agent=False):
     parser = argparse.ArgumentParser(description="Run MINI interviewer")
     parser.add_argument("module_path", help="Path to MINI JSON file")
     parser.add_argument(
@@ -35,10 +35,11 @@ def run():
         module_loader=loader,
         current_question_id=start_qid,
         messages=[],
+        patient_agent=patient_agent
     )
 
     thread_id = f"session_{uuid.uuid4().hex[:8]}"
-    result = app.invoke(state, config={"recursion_limit": 100})
+    result = app.invoke(state, config={"recursion_limit": 500})
     _save_log(result, thread_id, loader)
 
 
@@ -50,7 +51,7 @@ def _save_log(result, thread_id, module_loader):
             "module_name": module_loader.module.name,
             "timestamp": datetime.now().isoformat(),
         },
-        
+
         "conversation_log": [
             {
                 "question_id": entry["question_id"],
@@ -65,15 +66,15 @@ def _save_log(result, thread_id, module_loader):
             }
             for entry in result["conversation_log"]
         ],
-        
+
         "diagnostic_results": result.get("diagnosis_content", {}).model_dump() if hasattr(result.get("diagnosis_content", {}), 'model_dump') else result.get("diagnosis_content", {}),
     }
-    
+
     Path("reports").mkdir(exist_ok=True)
     path = Path("reports") / f"{thread_id}.json"
     with open(path, "w", encoding="utf-8") as f:
         json.dump(export_data, f, indent=2, ensure_ascii=False)
-    
+
     print(f"Conversation export saved to {path}")
 
 

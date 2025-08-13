@@ -1,0 +1,241 @@
+question_code,question,answer,label,prediction
+A1a,"Were you ever depressed or down, or felt sad, empty or hopeless most of the day, nearly every day, for two weeks?","I felt this way on and off, not constantly, but it still affected me a lot.",yes,rephrase needed
+A1a,"Were you ever depressed or down, or felt sad, empty or hopeless most of the day, nearly every day, for two weeks?","I had symptoms for about ten days, but they were intense.",yes,rephrase needed
+A1a,"Were you ever depressed or down, or felt sad, empty or hopeless most of the day, nearly every day, for two weeks?","I only experienced this after a major life event, but it felt significant.",yes,yes
+A1a,"Were you ever depressed or down, or felt sad, empty or hopeless most of the day, nearly every day, for two weeks?","I felt this way for two weeks, but not every single day.",yes,yes
+A1a,"Were you ever depressed or down, or felt sad, empty or hopeless most of the day, nearly every day, for two weeks?",I had mild symptoms most days and severe ones a few days.,yes,yes
+A1a,"Were you ever depressed or down, or felt sad, empty or hopeless most of the day, nearly every day, for two weeks?",I felt different than usual but could still function sometimes.,yes,rephrase needed
+A1a,"Were you ever depressed or down, or felt sad, empty or hopeless most of the day, nearly every day, for two weeks?","It happened more days than not, but not continuously.",yes,rephrase needed
+A1a,"Were you ever depressed or down, or felt sad, empty or hopeless most of the day, nearly every day, for two weeks?",I noticed it for a short period but it matched the description.,yes,yes
+A1a,"Were you ever depressed or down, or felt sad, empty or hopeless most of the day, nearly every day, for two weeks?",It was only in the evenings but lasted for weeks.,yes,rephrase needed
+A1a,"Were you ever depressed or down, or felt sad, empty or hopeless most of the day, nearly every day, for two weeks?",It was present most of the time but I had some better days.,yes,yes
+A1a,"Were you ever depressed or down, or felt sad, empty or hopeless most of the day, nearly every day, for two weeks?",I felt this way for a few days but it went away quickly.,no,no
+A1a,"Were you ever depressed or down, or felt sad, empty or hopeless most of the day, nearly every day, for two weeks?",I only experienced this once or twice in the past month.,no,no
+A1a,"Were you ever depressed or down, or felt sad, empty or hopeless most of the day, nearly every day, for two weeks?",It was just a temporary reaction to stress.,no,no
+A1a,"Were you ever depressed or down, or felt sad, empty or hopeless most of the day, nearly every day, for two weeks?",I had some bad days but most days were fine.,no,no
+A1a,"Were you ever depressed or down, or felt sad, empty or hopeless most of the day, nearly every day, for two weeks?",I felt this way for less than a week.,no,no
+A1a,"Were you ever depressed or down, or felt sad, empty or hopeless most of the day, nearly every day, for two weeks?",It happened rarely and did not affect my routine much.,no,no
+A1a,"Were you ever depressed or down, or felt sad, empty or hopeless most of the day, nearly every day, for two weeks?",I had similar feelings but they were fleeting.,no,rephrase needed
+A1a,"Were you ever depressed or down, or felt sad, empty or hopeless most of the day, nearly every day, for two weeks?",It only happened after a poor night of sleep.,no,no
+A1a,"Were you ever depressed or down, or felt sad, empty or hopeless most of the day, nearly every day, for two weeks?",It was not persistent or intense enough to be a problem.,no,no
+A1a,"Were you ever depressed or down, or felt sad, empty or hopeless most of the day, nearly every day, for two weeks?",I cannot say it was significant or long enough to count.,no,rephrase needed
+A1b,"For the past two weeks, were you depressed or down, or felt sad, empty or hopeless most of the day, nearly every day?","I felt this way on and off, not constantly, but it still affected me a lot.",yes,rephrase needed
+A1b,"For the past two weeks, were you depressed or down, or felt sad, empty or hopeless most of the day, nearly every day?","I had symptoms for about ten days, but they were intense.",yes,yes
+A1b,"For the past two weeks, were you depressed or down, or felt sad, empty or hopeless most of the day, nearly every day?","I only experienced this after a major life event, but it felt significant.",yes,yes
+A1b,"For the past two weeks, were you depressed or down, or felt sad, empty or hopeless most of the day, nearly every day?","I felt this way for two weeks, but not every single day.",yes,yes
+A1b,"For the past two weeks, were you depressed or down, or felt sad, empty or hopeless most of the day, nearly every day?",I had mild symptoms most days and severe ones a few days.,yes,yes
+A1b,"For the past two weeks, were you depressed or down, or felt sad, empty or hopeless most of the day, nearly every day?",I felt different than usual but could still function sometimes.,yes,rephrase needed
+A1b,"For the past two weeks, were you depressed or down, or felt sad, empty or hopeless most of the day, nearly every day?","It happened more days than not, but not continuously.",yes,yes
+A1b,"For the past two weeks, were you depressed or down, or felt sad, empty or hopeless most of the day, nearly every day?",I noticed it for a short period but it matched the description.,yes,yes
+A1b,"For the past two weeks, were you depressed or down, or felt sad, empty or hopeless most of the day, nearly every day?",It was only in the evenings but lasted for weeks.,yes,yes
+A1b,"For the past two weeks, were you depressed or down, or felt sad, empty or hopeless most of the day, nearly every day?",It was present most of the time but I had some better days.,yes,yes
+A1b,"For the past two weeks, were you depressed or down, or felt sad, empty or hopeless most of the day, nearly every day?",I felt this way for a few days but it went away quickly.,no,no
+A1b,"For the past two weeks, were you depressed or down, or felt sad, empty or hopeless most of the day, nearly every day?",I only experienced this once or twice in the past month.,no,no
+A1b,"For the past two weeks, were you depressed or down, or felt sad, empty or hopeless most of the day, nearly every day?",It was just a temporary reaction to stress.,no,no
+A1b,"For the past two weeks, were you depressed or down, or felt sad, empty or hopeless most of the day, nearly every day?",I had some bad days but most days were fine.,no,no
+A1b,"For the past two weeks, were you depressed or down, or felt sad, empty or hopeless most of the day, nearly every day?",I felt this way for less than a week.,no,no
+A1b,"For the past two weeks, were you depressed or down, or felt sad, empty or hopeless most of the day, nearly every day?",It happened rarely and did not affect my routine much.,no,no
+A1b,"For the past two weeks, were you depressed or down, or felt sad, empty or hopeless most of the day, nearly every day?",I had similar feelings but they were fleeting.,no,rephrase needed
+A1b,"For the past two weeks, were you depressed or down, or felt sad, empty or hopeless most of the day, nearly every day?",It only happened after a poor night of sleep.,no,no
+A1b,"For the past two weeks, were you depressed or down, or felt sad, empty or hopeless most of the day, nearly every day?",It was not persistent or intense enough to be a problem.,no,no
+A1b,"For the past two weeks, were you depressed or down, or felt sad, empty or hopeless most of the day, nearly every day?",I cannot say it was significant or long enough to count.,no,rephrase needed
+A2a,"Were you ever much less interested in most things or much less able to enjoy the things you used to enjoy most of the time, for two weeks?","I felt this way on and off, not constantly, but it still affected me a lot.",yes,yes
+A2a,"Were you ever much less interested in most things or much less able to enjoy the things you used to enjoy most of the time, for two weeks?","I had symptoms for about ten days, but they were intense.",yes,rephrase needed
+A2a,"Were you ever much less interested in most things or much less able to enjoy the things you used to enjoy most of the time, for two weeks?","I only experienced this after a major life event, but it felt significant.",yes,yes
+A2a,"Were you ever much less interested in most things or much less able to enjoy the things you used to enjoy most of the time, for two weeks?","I felt this way for two weeks, but not every single day.",yes,yes
+A2a,"Were you ever much less interested in most things or much less able to enjoy the things you used to enjoy most of the time, for two weeks?",I had mild symptoms most days and severe ones a few days.,yes,rephrase needed
+A2a,"Were you ever much less interested in most things or much less able to enjoy the things you used to enjoy most of the time, for two weeks?",I felt different than usual but could still function sometimes.,yes,yes
+A2a,"Were you ever much less interested in most things or much less able to enjoy the things you used to enjoy most of the time, for two weeks?","It happened more days than not, but not continuously.",yes,yes
+A2a,"Were you ever much less interested in most things or much less able to enjoy the things you used to enjoy most of the time, for two weeks?",I noticed it for a short period but it matched the description.,yes,yes
+A2a,"Were you ever much less interested in most things or much less able to enjoy the things you used to enjoy most of the time, for two weeks?",It was only in the evenings but lasted for weeks.,yes,yes
+A2a,"Were you ever much less interested in most things or much less able to enjoy the things you used to enjoy most of the time, for two weeks?",It was present most of the time but I had some better days.,yes,yes
+A2a,"Were you ever much less interested in most things or much less able to enjoy the things you used to enjoy most of the time, for two weeks?",I felt this way for a few days but it went away quickly.,no,no
+A2a,"Were you ever much less interested in most things or much less able to enjoy the things you used to enjoy most of the time, for two weeks?",I only experienced this once or twice in the past month.,no,rephrase needed
+A2a,"Were you ever much less interested in most things or much less able to enjoy the things you used to enjoy most of the time, for two weeks?",It was just a temporary reaction to stress.,no,no
+A2a,"Were you ever much less interested in most things or much less able to enjoy the things you used to enjoy most of the time, for two weeks?",I had some bad days but most days were fine.,no,no
+A2a,"Were you ever much less interested in most things or much less able to enjoy the things you used to enjoy most of the time, for two weeks?",I felt this way for less than a week.,no,no
+A2a,"Were you ever much less interested in most things or much less able to enjoy the things you used to enjoy most of the time, for two weeks?",It happened rarely and did not affect my routine much.,no,no
+A2a,"Were you ever much less interested in most things or much less able to enjoy the things you used to enjoy most of the time, for two weeks?",I had similar feelings but they were fleeting.,no,no
+A2a,"Were you ever much less interested in most things or much less able to enjoy the things you used to enjoy most of the time, for two weeks?",It only happened after a poor night of sleep.,no,no
+A2a,"Were you ever much less interested in most things or much less able to enjoy the things you used to enjoy most of the time, for two weeks?",It was not persistent or intense enough to be a problem.,no,no
+A2a,"Were you ever much less interested in most things or much less able to enjoy the things you used to enjoy most of the time, for two weeks?",I cannot say it was significant or long enough to count.,no,rephrase needed
+A2b,"In the past two weeks, were you much less interested in most things or much less able to enjoy the things you used to enjoy most of the time?","I felt this way on and off, not constantly, but it still affected me a lot.",yes,yes
+A2b,"In the past two weeks, were you much less interested in most things or much less able to enjoy the things you used to enjoy most of the time?","I had symptoms for about ten days, but they were intense.",yes,yes
+A2b,"In the past two weeks, were you much less interested in most things or much less able to enjoy the things you used to enjoy most of the time?","I only experienced this after a major life event, but it felt significant.",yes,yes
+A2b,"In the past two weeks, were you much less interested in most things or much less able to enjoy the things you used to enjoy most of the time?","I felt this way for two weeks, but not every single day.",yes,yes
+A2b,"In the past two weeks, were you much less interested in most things or much less able to enjoy the things you used to enjoy most of the time?",I had mild symptoms most days and severe ones a few days.,yes,rephrase needed
+A2b,"In the past two weeks, were you much less interested in most things or much less able to enjoy the things you used to enjoy most of the time?",I felt different than usual but could still function sometimes.,yes,rephrase needed
+A2b,"In the past two weeks, were you much less interested in most things or much less able to enjoy the things you used to enjoy most of the time?","It happened more days than not, but not continuously.",yes,yes
+A2b,"In the past two weeks, were you much less interested in most things or much less able to enjoy the things you used to enjoy most of the time?",I noticed it for a short period but it matched the description.,yes,yes
+A2b,"In the past two weeks, were you much less interested in most things or much less able to enjoy the things you used to enjoy most of the time?",It was only in the evenings but lasted for weeks.,yes,rephrase needed
+A2b,"In the past two weeks, were you much less interested in most things or much less able to enjoy the things you used to enjoy most of the time?",It was present most of the time but I had some better days.,yes,rephrase needed
+A2b,"In the past two weeks, were you much less interested in most things or much less able to enjoy the things you used to enjoy most of the time?",I felt this way for a few days but it went away quickly.,no,no
+A2b,"In the past two weeks, were you much less interested in most things or much less able to enjoy the things you used to enjoy most of the time?",I only experienced this once or twice in the past month.,no,no
+A2b,"In the past two weeks, were you much less interested in most things or much less able to enjoy the things you used to enjoy most of the time?",It was just a temporary reaction to stress.,no,no
+A2b,"In the past two weeks, were you much less interested in most things or much less able to enjoy the things you used to enjoy most of the time?",I had some bad days but most days were fine.,no,no
+A2b,"In the past two weeks, were you much less interested in most things or much less able to enjoy the things you used to enjoy most of the time?",I felt this way for less than a week.,no,no
+A2b,"In the past two weeks, were you much less interested in most things or much less able to enjoy the things you used to enjoy most of the time?",It happened rarely and did not affect my routine much.,no,rephrase needed
+A2b,"In the past two weeks, were you much less interested in most things or much less able to enjoy the things you used to enjoy most of the time?",I had similar feelings but they were fleeting.,no,rephrase needed
+A2b,"In the past two weeks, were you much less interested in most things or much less able to enjoy the things you used to enjoy most of the time?",It only happened after a poor night of sleep.,no,rephrase needed
+A2b,"In the past two weeks, were you much less interested in most things or much less able to enjoy the things you used to enjoy most of the time?",It was not persistent or intense enough to be a problem.,no,no
+A2b,"In the past two weeks, were you much less interested in most things or much less able to enjoy the things you used to enjoy most of the time?",I cannot say it was significant or long enough to count.,no,rephrase needed
+A3a,"Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?","I felt this way on and off, not constantly, but it still affected me a lot.",yes,rephrase needed
+A3a,"Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?","I had symptoms for about ten days, but they were intense.",yes,rephrase needed
+A3a,"Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?","I only experienced this after a major life event, but it felt significant.",yes,rephrase needed
+A3a,"Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?","I felt this way for two weeks, but not every single day.",yes,rephrase needed
+A3a,"Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?",I had mild symptoms most days and severe ones a few days.,yes,rephrase needed
+A3a,"Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?",I felt different than usual but could still function sometimes.,yes,rephrase needed
+A3a,"Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?","It happened more days than not, but not continuously.",yes,rephrase needed
+A3a,"Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?",I noticed it for a short period but it matched the description.,yes,rephrase needed
+A3a,"Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?",It was only in the evenings but lasted for weeks.,yes,rephrase needed
+A3a,"Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?",It was present most of the time but I had some better days.,yes,rephrase needed
+A3a,"Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?",I felt this way for a few days but it went away quickly.,no,no
+A3a,"Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?",I only experienced this once or twice in the past month.,no,no
+A3a,"Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?",It was just a temporary reaction to stress.,no,rephrase needed
+A3a,"Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?",I had some bad days but most days were fine.,no,rephrase needed
+A3a,"Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?",I felt this way for less than a week.,no,no
+A3a,"Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?",It happened rarely and did not affect my routine much.,no,no
+A3a,"Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?",I had similar feelings but they were fleeting.,no,rephrase needed
+A3a,"Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?",It only happened after a poor night of sleep.,no,no
+A3a,"Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?",It was not persistent or intense enough to be a problem.,no,no
+A3a,"Was your appetite decreased or increased nearly every day, or did your weight change by ±5% without trying?",I cannot say it was significant or long enough to count.,no,rephrase needed
+A3b,Did you have trouble sleeping nearly every night?,"I felt this way on and off, not constantly, but it still affected me a lot.",yes,yes
+A3b,Did you have trouble sleeping nearly every night?,"I had symptoms for about ten days, but they were intense.",yes,rephrase needed
+A3b,Did you have trouble sleeping nearly every night?,"I only experienced this after a major life event, but it felt significant.",yes,yes
+A3b,Did you have trouble sleeping nearly every night?,"I felt this way for two weeks, but not every single day.",yes,yes
+A3b,Did you have trouble sleeping nearly every night?,I had mild symptoms most days and severe ones a few days.,yes,rephrase needed
+A3b,Did you have trouble sleeping nearly every night?,I felt different than usual but could still function sometimes.,yes,yes
+A3b,Did you have trouble sleeping nearly every night?,"It happened more days than not, but not continuously.",yes,yes
+A3b,Did you have trouble sleeping nearly every night?,I noticed it for a short period but it matched the description.,yes,rephrase needed
+A3b,Did you have trouble sleeping nearly every night?,It was only in the evenings but lasted for weeks.,yes,rephrase needed
+A3b,Did you have trouble sleeping nearly every night?,It was present most of the time but I had some better days.,yes,yes
+A3b,Did you have trouble sleeping nearly every night?,I felt this way for a few days but it went away quickly.,no,no
+A3b,Did you have trouble sleeping nearly every night?,I only experienced this once or twice in the past month.,no,no
+A3b,Did you have trouble sleeping nearly every night?,It was just a temporary reaction to stress.,no,rephrase needed
+A3b,Did you have trouble sleeping nearly every night?,I had some bad days but most days were fine.,no,no
+A3b,Did you have trouble sleeping nearly every night?,I felt this way for less than a week.,no,no
+A3b,Did you have trouble sleeping nearly every night?,It happened rarely and did not affect my routine much.,no,no
+A3b,Did you have trouble sleeping nearly every night?,I had similar feelings but they were fleeting.,no,rephrase needed
+A3b,Did you have trouble sleeping nearly every night?,It only happened after a poor night of sleep.,no,no
+A3b,Did you have trouble sleeping nearly every night?,It was not persistent or intense enough to be a problem.,no,no
+A3b,Did you have trouble sleeping nearly every night?,I cannot say it was significant or long enough to count.,no,rephrase needed
+A3c,"Did you talk or move more slowly than normal, or were you restless/fidgety almost every day?","I felt this way on and off, not constantly, but it still affected me a lot.",yes,yes
+A3c,"Did you talk or move more slowly than normal, or were you restless/fidgety almost every day?","I had symptoms for about ten days, but they were intense.",yes,rephrase needed
+A3c,"Did you talk or move more slowly than normal, or were you restless/fidgety almost every day?","I only experienced this after a major life event, but it felt significant.",yes,rephrase needed
+A3c,"Did you talk or move more slowly than normal, or were you restless/fidgety almost every day?","I felt this way for two weeks, but not every single day.",yes,yes
+A3c,"Did you talk or move more slowly than normal, or were you restless/fidgety almost every day?",I had mild symptoms most days and severe ones a few days.,yes,rephrase needed
+A3c,"Did you talk or move more slowly than normal, or were you restless/fidgety almost every day?",I felt different than usual but could still function sometimes.,yes,rephrase needed
+A3c,"Did you talk or move more slowly than normal, or were you restless/fidgety almost every day?","It happened more days than not, but not continuously.",yes,yes
+A3c,"Did you talk or move more slowly than normal, or were you restless/fidgety almost every day?",I noticed it for a short period but it matched the description.,yes,yes
+A3c,"Did you talk or move more slowly than normal, or were you restless/fidgety almost every day?",It was only in the evenings but lasted for weeks.,yes,rephrase needed
+A3c,"Did you talk or move more slowly than normal, or were you restless/fidgety almost every day?",It was present most of the time but I had some better days.,yes,yes
+A3c,"Did you talk or move more slowly than normal, or were you restless/fidgety almost every day?",I felt this way for a few days but it went away quickly.,no,no
+A3c,"Did you talk or move more slowly than normal, or were you restless/fidgety almost every day?",I only experienced this once or twice in the past month.,no,no
+A3c,"Did you talk or move more slowly than normal, or were you restless/fidgety almost every day?",It was just a temporary reaction to stress.,no,no
+A3c,"Did you talk or move more slowly than normal, or were you restless/fidgety almost every day?",I had some bad days but most days were fine.,no,no
+A3c,"Did you talk or move more slowly than normal, or were you restless/fidgety almost every day?",I felt this way for less than a week.,no,no
+A3c,"Did you talk or move more slowly than normal, or were you restless/fidgety almost every day?",It happened rarely and did not affect my routine much.,no,no
+A3c,"Did you talk or move more slowly than normal, or were you restless/fidgety almost every day?",I had similar feelings but they were fleeting.,no,rephrase needed
+A3c,"Did you talk or move more slowly than normal, or were you restless/fidgety almost every day?",It only happened after a poor night of sleep.,no,no
+A3c,"Did you talk or move more slowly than normal, or were you restless/fidgety almost every day?",It was not persistent or intense enough to be a problem.,no,no
+A3c,"Did you talk or move more slowly than normal, or were you restless/fidgety almost every day?",I cannot say it was significant or long enough to count.,no,rephrase needed
+A3d,Did you feel tired or without energy almost every day?,"I felt this way on and off, not constantly, but it still affected me a lot.",yes,yes
+A3d,Did you feel tired or without energy almost every day?,"I had symptoms for about ten days, but they were intense.",yes,rephrase needed
+A3d,Did you feel tired or without energy almost every day?,"I only experienced this after a major life event, but it felt significant.",yes,yes
+A3d,Did you feel tired or without energy almost every day?,"I felt this way for two weeks, but not every single day.",yes,rephrase needed
+A3d,Did you feel tired or without energy almost every day?,I had mild symptoms most days and severe ones a few days.,yes,yes
+A3d,Did you feel tired or without energy almost every day?,I felt different than usual but could still function sometimes.,yes,rephrase needed
+A3d,Did you feel tired or without energy almost every day?,"It happened more days than not, but not continuously.",yes,yes
+A3d,Did you feel tired or without energy almost every day?,I noticed it for a short period but it matched the description.,yes,rephrase needed
+A3d,Did you feel tired or without energy almost every day?,It was only in the evenings but lasted for weeks.,yes,rephrase needed
+A3d,Did you feel tired or without energy almost every day?,It was present most of the time but I had some better days.,yes,yes
+A3d,Did you feel tired or without energy almost every day?,I felt this way for a few days but it went away quickly.,no,rephrase needed
+A3d,Did you feel tired or without energy almost every day?,I only experienced this once or twice in the past month.,no,no
+A3d,Did you feel tired or without energy almost every day?,It was just a temporary reaction to stress.,no,no
+A3d,Did you feel tired or without energy almost every day?,I had some bad days but most days were fine.,no,rephrase needed
+A3d,Did you feel tired or without energy almost every day?,I felt this way for less than a week.,no,no
+A3d,Did you feel tired or without energy almost every day?,It happened rarely and did not affect my routine much.,no,no
+A3d,Did you feel tired or without energy almost every day?,I had similar feelings but they were fleeting.,no,rephrase needed
+A3d,Did you feel tired or without energy almost every day?,It only happened after a poor night of sleep.,no,no
+A3d,Did you feel tired or without energy almost every day?,It was not persistent or intense enough to be a problem.,no,no
+A3d,Did you feel tired or without energy almost every day?,I cannot say it was significant or long enough to count.,no,rephrase needed
+A3e,Did you feel worthless or guilty almost every day?,"I felt this way on and off, not constantly, but it still affected me a lot.",yes,yes
+A3e,Did you feel worthless or guilty almost every day?,"I had symptoms for about ten days, but they were intense.",yes,rephrase needed
+A3e,Did you feel worthless or guilty almost every day?,"I only experienced this after a major life event, but it felt significant.",yes,yes
+A3e,Did you feel worthless or guilty almost every day?,"I felt this way for two weeks, but not every single day.",yes,yes
+A3e,Did you feel worthless or guilty almost every day?,I had mild symptoms most days and severe ones a few days.,yes,yes
+A3e,Did you feel worthless or guilty almost every day?,I felt different than usual but could still function sometimes.,yes,rephrase needed
+A3e,Did you feel worthless or guilty almost every day?,"It happened more days than not, but not continuously.",yes,yes
+A3e,Did you feel worthless or guilty almost every day?,I noticed it for a short period but it matched the description.,yes,yes
+A3e,Did you feel worthless or guilty almost every day?,It was only in the evenings but lasted for weeks.,yes,yes
+A3e,Did you feel worthless or guilty almost every day?,It was present most of the time but I had some better days.,yes,yes
+A3e,Did you feel worthless or guilty almost every day?,I felt this way for a few days but it went away quickly.,no,no
+A3e,Did you feel worthless or guilty almost every day?,I only experienced this once or twice in the past month.,no,no
+A3e,Did you feel worthless or guilty almost every day?,It was just a temporary reaction to stress.,no,no
+A3e,Did you feel worthless or guilty almost every day?,I had some bad days but most days were fine.,no,no
+A3e,Did you feel worthless or guilty almost every day?,I felt this way for less than a week.,no,no
+A3e,Did you feel worthless or guilty almost every day?,It happened rarely and did not affect my routine much.,no,no
+A3e,Did you feel worthless or guilty almost every day?,I had similar feelings but they were fleeting.,no,rephrase needed
+A3e,Did you feel worthless or guilty almost every day?,It only happened after a poor night of sleep.,no,rephrase needed
+A3e,Did you feel worthless or guilty almost every day?,It was not persistent or intense enough to be a problem.,no,no
+A3e,Did you feel worthless or guilty almost every day?,I cannot say it was significant or long enough to count.,no,rephrase needed
+A3f,"Did you have difficulty concentrating, thinking, or making decisions almost every day?","I felt this way on and off, not constantly, but it still affected me a lot.",yes,yes
+A3f,"Did you have difficulty concentrating, thinking, or making decisions almost every day?","I had symptoms for about ten days, but they were intense.",yes,rephrase needed
+A3f,"Did you have difficulty concentrating, thinking, or making decisions almost every day?","I only experienced this after a major life event, but it felt significant.",yes,yes
+A3f,"Did you have difficulty concentrating, thinking, or making decisions almost every day?","I felt this way for two weeks, but not every single day.",yes,yes
+A3f,"Did you have difficulty concentrating, thinking, or making decisions almost every day?",I had mild symptoms most days and severe ones a few days.,yes,rephrase needed
+A3f,"Did you have difficulty concentrating, thinking, or making decisions almost every day?",I felt different than usual but could still function sometimes.,yes,rephrase needed
+A3f,"Did you have difficulty concentrating, thinking, or making decisions almost every day?","It happened more days than not, but not continuously.",yes,yes
+A3f,"Did you have difficulty concentrating, thinking, or making decisions almost every day?",I noticed it for a short period but it matched the description.,yes,yes
+A3f,"Did you have difficulty concentrating, thinking, or making decisions almost every day?",It was only in the evenings but lasted for weeks.,yes,yes
+A3f,"Did you have difficulty concentrating, thinking, or making decisions almost every day?",It was present most of the time but I had some better days.,yes,yes
+A3f,"Did you have difficulty concentrating, thinking, or making decisions almost every day?",I felt this way for a few days but it went away quickly.,no,no
+A3f,"Did you have difficulty concentrating, thinking, or making decisions almost every day?",I only experienced this once or twice in the past month.,no,no
+A3f,"Did you have difficulty concentrating, thinking, or making decisions almost every day?",It was just a temporary reaction to stress.,no,no
+A3f,"Did you have difficulty concentrating, thinking, or making decisions almost every day?",I had some bad days but most days were fine.,no,no
+A3f,"Did you have difficulty concentrating, thinking, or making decisions almost every day?",I felt this way for less than a week.,no,no
+A3f,"Did you have difficulty concentrating, thinking, or making decisions almost every day?",It happened rarely and did not affect my routine much.,no,no
+A3f,"Did you have difficulty concentrating, thinking, or making decisions almost every day?",I had similar feelings but they were fleeting.,no,no
+A3f,"Did you have difficulty concentrating, thinking, or making decisions almost every day?",It only happened after a poor night of sleep.,no,no
+A3f,"Did you have difficulty concentrating, thinking, or making decisions almost every day?",It was not persistent or intense enough to be a problem.,no,no
+A3f,"Did you have difficulty concentrating, thinking, or making decisions almost every day?",I cannot say it was significant or long enough to count.,no,rephrase needed
+A3g,"Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?","I felt this way on and off, not constantly, but it still affected me a lot.",yes,rephrase needed
+A3g,"Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?","I had symptoms for about ten days, but they were intense.",yes,rephrase needed
+A3g,"Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?","I only experienced this after a major life event, but it felt significant.",yes,rephrase needed
+A3g,"Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?","I felt this way for two weeks, but not every single day.",yes,yes
+A3g,"Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?",I had mild symptoms most days and severe ones a few days.,yes,rephrase needed
+A3g,"Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?",I felt different than usual but could still function sometimes.,yes,rephrase needed
+A3g,"Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?","It happened more days than not, but not continuously.",yes,yes
+A3g,"Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?",I noticed it for a short period but it matched the description.,yes,rephrase needed
+A3g,"Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?",It was only in the evenings but lasted for weeks.,yes,rephrase needed
+A3g,"Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?",It was present most of the time but I had some better days.,yes,yes
+A3g,"Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?",I felt this way for a few days but it went away quickly.,no,yes
+A3g,"Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?",I only experienced this once or twice in the past month.,no,yes
+A3g,"Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?",It was just a temporary reaction to stress.,no,rephrase needed
+A3g,"Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?",I had some bad days but most days were fine.,no,no
+A3g,"Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?",I felt this way for less than a week.,no,rephrase needed
+A3g,"Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?",It happened rarely and did not affect my routine much.,no,no
+A3g,"Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?",I had similar feelings but they were fleeting.,no,yes
+A3g,"Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?",It only happened after a poor night of sleep.,no,rephrase needed
+A3g,"Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?",It was not persistent or intense enough to be a problem.,no,no
+A3g,"Did you repeatedly think about death, have thoughts or plans of killing yourself, or attempt suicide?",I cannot say it was significant or long enough to count.,no,rephrase needed
+A4,Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,"I felt this way on and off, not constantly, but it still affected me a lot.",yes,yes
+A4,Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,"I had symptoms for about ten days, but they were intense.",yes,rephrase needed
+A4,Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,"I only experienced this after a major life event, but it felt significant.",yes,rephrase needed
+A4,Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,"I felt this way for two weeks, but not every single day.",yes,rephrase needed
+A4,Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,I had mild symptoms most days and severe ones a few days.,yes,yes
+A4,Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,I felt different than usual but could still function sometimes.,yes,rephrase needed
+A4,Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,"It happened more days than not, but not continuously.",yes,yes
+A4,Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,I noticed it for a short period but it matched the description.,yes,rephrase needed
+A4,Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,It was only in the evenings but lasted for weeks.,yes,rephrase needed
+A4,Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,It was present most of the time but I had some better days.,yes,yes
+A4,Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,I felt this way for a few days but it went away quickly.,no,no
+A4,Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,I only experienced this once or twice in the past month.,no,rephrase needed
+A4,Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,It was just a temporary reaction to stress.,no,no
+A4,Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,I had some bad days but most days were fine.,no,no
+A4,Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,I felt this way for less than a week.,no,rephrase needed
+A4,Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,It happened rarely and did not affect my routine much.,no,no
+A4,Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,I had similar feelings but they were fleeting.,no,rephrase needed
+A4,Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,It only happened after a poor night of sleep.,no,rephrase needed
+A4,Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,It was not persistent or intense enough to be a problem.,no,no
+A4,Did these symptoms cause significant distress or problems and represent a change from your previous functioning?,I cannot say it was significant or long enough to count.,no,rephrase needed

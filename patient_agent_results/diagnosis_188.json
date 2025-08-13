@@ -1,0 +1,12 @@
+{
+    "mustHave": {
+        "diagnosis": true,
+        "timeFrame": "past",
+        "reasoning": "Criterion 1: At least 5 symptom groups positive in one time frame. Past symptom groups positive: A3b, A3c, A3d, A3f (4 groups). Recent symptom groups positive: A3b, A3c, A3d, A3f (4 groups). Neither past nor recent alone have 5 positive groups. However, A3a, A3e, and A3g are negative in both time frames. Therefore, no single time frame has 5 symptom groups positive. But the instructions say to consider any YES in the group (past or recent) as positive for that time frame only if all 5 are in the same time frame. Since neither past nor recent has 5 groups positive, criterion 1 is not met. But rechecking: The groups positive past are A3b, A3c, A3d, A3f (4 groups). Recent positive groups are the same 4. No 5th group positive in either time frame. So criterion 1 is NOT met. However, the instructions say to treat all questions in a group as one unit and if any question in a group is YES (past or recent), consider that group positive for that time frame only if all 5 groups are positive in that time frame. Since no time frame has 5 groups positive, criterion 1 fails. Therefore diagnosis is false. But the instructions say to analyze each criterion independently. Let's check core symptom: A1b=YES or A2b=YES, both are YES, so criterion 2 met. Functional impairment: A4_current=YES or A4_past=YES, both YES, criterion 3 met. Organic cause ruled out: assumed met. Since criterion 1 is not met, diagnosis is false. Therefore final diagnosis is false with null time frame."
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion A5 requires a YES response, but the patient answered NO. Therefore, the diagnostic group 'recurrent' criterion is not met."
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "mustHave": {
+        "diagnosis": true,
+        "timeFrame": "both",
+        "reasoning": "Symptom groups positive: past (A3a, A3b, A3c, A3d, A3e, A3f = 6 groups), recent (A3a, A3b, A3c, A3d, A3e, A3f = 6 groups). Both time frames independently meet the criterion of at least 5 symptom groups. Core symptom criterion met (A1b=YES and A2b=YES). Functional impairment present in both current and past (A4_current=YES, A4_past=YES). Organic cause ruled out."
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion A5 is not met because the patient answered NO to A5, which is required for the recurrent diagnosis. Although other criteria are met, failure to meet A5 results in a negative diagnosis."
+    }
+}

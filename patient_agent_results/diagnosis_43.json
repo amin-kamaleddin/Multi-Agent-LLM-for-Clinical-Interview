@@ -1,0 +1,12 @@
+{
+    "mustHave": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Symptom groups positive: Past - A3b, A3d, A3f (3 groups); Recent - A3d only (1 group). Neither past nor recent has at least 5 symptom groups positive. Core symptom criterion not met (A1b=NO, A2b=NO). Functional impairment criterion met (A4_current=YES, A4_past=YES). Organic cause ruled out. Overall, criteria 1 and 2 not met, so diagnosis is false."
+    },
+    "recurrent": {
+        "diagnosis": true,
+        "timeFrame": "past",
+        "reasoning": "A5 is YES, satisfying the recurrent criterion. Symptom groups with past YES responses are A3b_past, A3d_past, and A3f_past (3 groups). Recent symptom groups are only A3d_recent (1 group). Since the criterion requires only A5=YES, and it is met, diagnosis is true with time frame 'past' due to multiple past symptom groups positive."
+    }
+}

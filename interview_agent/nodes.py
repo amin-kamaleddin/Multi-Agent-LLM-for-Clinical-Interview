@@ -9,7 +9,8 @@ from pydantic import ValidationError
 # Load environment variables from .env file
 load_dotenv()
 from langchain_core.messages import SystemMessage, HumanMessage, AIMessage
-from .prompts import INTERVIEWER_SYSTEM_PROMPT, JUDGE_SYSTEM_PROMPT, DIAGNOSIS_SYSTEM_PROMPT, EXPLAIN_PROMPT, CLARIFICATION_PROMPT
+from .prompts import INTERVIEWER_SYSTEM_PROMPT, JUDGE_SYSTEM_PROMPT, DIAGNOSIS_SYSTEM_PROMPT, EXPLAIN_PROMPT, \
+    CLARIFICATION_PROMPT,PATIENT_SYSTEM_PROMPT, PATIENT_USER_PROMPT
 
 from .models import (
     InterviewState,
@@ -27,6 +28,7 @@ structured_llm = judge_llm.with_structured_output(ClassificationResult)
 diagnosis_llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.1).with_structured_output(
     DiagnosisResult
 )
+patient_llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.9)
 
 # ------------------------------ Global Vars ------------------------------ #
 AUTO_SET_YES_AFTER = 3  # after 3 consecutive clarifies, the 4th auto-yes
@@ -40,7 +42,7 @@ def interviewer_node(state: InterviewState) -> Dict[str, Any]:
     # 1. Build the system prompt + history
     current_question = state.module_loader.get_question(state.current_question_id)
     sys_msg = SystemMessage(content=INTERVIEWER_SYSTEM_PROMPT.format(question=current_question.prompt))
-    
+
     if len(state.judge_results) > 0:
         if state.judge_results[-1] == "explain request":
             patient_response = state.messages[-1].content
@@ -49,7 +51,7 @@ def interviewer_node(state: InterviewState) -> Dict[str, Any]:
             # Generate specific clarification using LLM based on patient's unclear response
             patient_response = state.messages[-1].content
             judge_reasoning = state.messages[-2].content if len(state.messages) >= 2 else "Response was unclear"
-            
+
             clarification_prompt = CLARIFICATION_PROMPT.format(
                 question=current_question.prompt,
                 response=patient_response,
@@ -65,13 +67,24 @@ def interviewer_node(state: InterviewState) -> Dict[str, Any]:
     print(response.content)  # show question to user
 
     # 3. Immediately read the user's answer
-    user_input = input("You: ").strip()
-    human_msg = HumanMessage(content=user_input)
-    print(15* '--' + f" End of question {state.current_question_id}" + 15* '--' + '\n\n')
-    
+
     print("exit interviewer")
     # 4. Return both the LLM question and the new HumanMessage
-    return {"messages": [response, human_msg]}
+    return {"messages": [response]}
+
+
+def patient_node(state: InterviewState):
+    print("enter patient node")
+    if not state.patient_agent:
+        result = input("You: ").strip()
+    else:
+        sys_msg = SystemMessage(content=PATIENT_SYSTEM_PROMPT)
+        patient_prompt = HumanMessage(content=PATIENT_USER_PROMPT.format(question=state.messages[-1].content))
+        result = patient_llm.invoke([sys_msg, patient_prompt])
+        print(f"agent response: {result.content}")
+
+    print(15 * '--' + f" End of question {state.current_question_id}" + 15 * '--' + '\n\n')
+    return {'messages': [result]}
 
 
 def _clarify_streak(judge_results: list[Any], last_result) -> bool:
@@ -89,7 +102,7 @@ def judge_node(state: InterviewState) -> Dict[str, Any]:
     print("enter judge")
     last_question = state.module_loader.get_question(state.current_question_id)
     patient_last_answer = state.messages[-1]
-    
+
     response_text = patient_last_answer.content.strip().lower()
     if response_text == "yes":
         print("Direct classification: YES (no LLM call needed)")
@@ -99,7 +112,7 @@ def judge_node(state: InterviewState) -> Dict[str, Any]:
         print("Direct classification: NO (no LLM call needed)")
         label = "no"
         reasoning = f"Patient gave a clear negative response: '{patient_last_answer.content}'"
-    else:        
+    else:
         print("MAKING AN LLM CALL TO JUDGE THE ANSWER")
         prompt = JUDGE_SYSTEM_PROMPT.format(last_question= last_question.prompt, patient_last_answer= patient_last_answer.content)
         resp = structured_llm.invoke([HumanMessage(content=prompt)])
@@ -110,10 +123,10 @@ def judge_node(state: InterviewState) -> Dict[str, Any]:
 
         label = str(resp.classification)
         reasoning = str(resp.reasoning)
-        
+
         if label not in ["yes", "no", "rephrase needed", "N/A", "explain request"]:
             label = "rephrase needed"
-            
+
     if _clarify_streak(judge_results=state.judge_results, last_result=label):
         print("Direct classification after 3 round of clarification: YES")
         label = "yes"
@@ -131,7 +144,7 @@ def should_clarify(state: InterviewState) -> str:
 def _log_entry(state: InterviewState) -> Dict[str, Any]:
     # Determine if this is a clarification based on previous judge results
     exchange_type = "clarification" if len(state.judge_results) > 1 and state.judge_results[-2] in ["rephrase needed", "explain request"] else "initial"
-    
+
     return {
         "question_id": state.current_question_id,
         "ai_question": state.messages[-3].content if len(state.messages) >= 3 else "",  # The AI question
@@ -213,7 +226,7 @@ def diagnosis(state: InterviewState):
         response = llm.invoke([HumanMessage(content=prompt)])
         content = response.content.strip()
 
-        # remove markdown code block formatting
+        # remove Markdown code block formatting
         if content.startswith("```json"):
             content = content.removeprefix("```json").removesuffix("```").strip()
 

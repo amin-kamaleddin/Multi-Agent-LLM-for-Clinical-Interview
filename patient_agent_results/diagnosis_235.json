@@ -1,0 +1,12 @@
+{
+    "mustHave": {
+        "diagnosis": true,
+        "timeFrame": "past",
+        "reasoning": "1) Symptom groups positive: Past - A3b, A3d, A3e, A3f, A3g (5 groups); Recent - A3b, A3d, A3f (3 groups). Only past meets the threshold of at least 5 symptom groups. 2) Core symptom: A1b=YES (core symptom met). 3) Functional impairment: A4_current=YES and A4_past=YES (criterion met). 4) Organic cause ruled out by assumption. Therefore, all criteria met for past time frame."
+    },
+    "recurrent": {
+        "diagnosis": true,
+        "timeFrame": "past",
+        "reasoning": "A5 is YES, satisfying the recurrent criterion. Symptom groups with time frames: A3b, A3d, A3e, A3f, A3g are positive in the past; recent symptom groups are fewer than 5. Therefore, the symptom threshold is met only in the past time frame."
+    }
+}
