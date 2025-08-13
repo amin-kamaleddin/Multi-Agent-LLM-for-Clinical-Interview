@@ -16,19 +16,19 @@
       "prompt": "Were you excessively anxious or worried about several routine things, over the past 6 months?",
       "responseType": "yes_no",
       "note": "In English, if the patient is unclear about what you mean, probe by asking (Do others think that you are a worrier or a 'worry wart'?) and get examples",
-      "next": { "yes": "N1b", "no": "END_MODULE" }
+      "next": { "yes": "N1b", "no": "DIAGNOSTIC" }
     },
     {
       "id": "N1b",
       "prompt": "Are these anxieties and worries present most days?",
       "responseType": "yes_no",
-      "next": { "yes": "N2", "no": "END_MODULE" }
+      "next": { "yes": "N2", "no": "DIAGNOSTIC" }
     },
     {
       "id": "N2",
       "prompt": "Do you find it difficult to control the worries?",
       "responseType": "yes_no",
-      "next": { "yes": "N3a", "no": "END_MODULE" }
+      "next": { "yes": "N3a", "no": "DIAGNOSTIC" }
     },
     {
       "id": "N3a",
@@ -76,12 +76,28 @@
       "id": "N4",
       "prompt": "Do these anxieties and worries significantly disrupt your ability to work, to function socially or in your relationships or in other important areas of your life or cause you significant distress?",
       "responseType": "yes_no",
-      "next": { "yes": "DIAGNOSTIC", "no": "END_MODULE" }
+      "next": { "yes": "O1a", "no": "O1a" }
+    },
+    {
+      "id": "O1a",
+      "prompt": "Were you taking any drugs or medicines or in withdrawal from any of these?",
+      "responseType": "choice",
+      "options": ["No", "Yes"],
+      "next": { "no": "O1b", "yes": "O1b"}
+    },
+    {
+      "id": "O1b",
+      "prompt": "Did you have any medical illness?",
+      "responseType": "choice",
+      "options": ["No", "Yes"],
+      "next": { "no": "DIAGNOSTIC", "yes": "DIAGNOSTIC"}
     }
   ],
   "diagnosticCriteria": {
     "generalizedAnxietyDisorder": {
-      "current": "N4 == 'YES' AND O2 Summary == 'YES' AND 3+ N3 symptoms == 'YES'"
+      "current": ["N4 == 'YES'",
+        " more than 3 of (N3a,N3b,N3c,N3d,N3e,N3f) are YES",
+      "O1a = NO AND O1b = NO"]
     }
   }
 }

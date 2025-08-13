@@ -1,4 +1,5 @@
 import json, uuid, csv, time, os
+from datetime import datetime
 from typing import Any, Dict
 
 from dotenv import load_dotenv
@@ -10,6 +11,7 @@ load_dotenv()
 from langchain_core.messages import SystemMessage, HumanMessage, AIMessage
 from .prompts import INTERVIEWER_SYSTEM_PROMPT, JUDGE_SYSTEM_PROMPT, DIAGNOSIS_SYSTEM_PROMPT, EXPLAIN_PROMPT, \
     PATIENT_SYSTEM_PROMPT, PATIENT_USER_PROMPT
+from .prompts import INTERVIEWER_SYSTEM_PROMPT, JUDGE_SYSTEM_PROMPT, DIAGNOSIS_SYSTEM_PROMPT, EXPLAIN_PROMPT, CLARIFICATION_PROMPT
 
 from .models import (
     InterviewState,
@@ -29,6 +31,9 @@ diagnosis_llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.1).with_structured
 )
 patient_llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.9)
 
+# ------------------------------ Global Vars ------------------------------ #
+AUTO_SET_YES_AFTER = 3  # after 3 consecutive clarifies, the 4th auto-yes
+
 
 # -------------------------------- Nodes ------------------------------------ #
 def interviewer_node(state: InterviewState) -> Dict[str, Any]:
@@ -38,10 +43,22 @@ def interviewer_node(state: InterviewState) -> Dict[str, Any]:
     # 1. Build the system prompt + history
     current_question = state.module_loader.get_question(state.current_question_id)
     sys_msg = SystemMessage(content=INTERVIEWER_SYSTEM_PROMPT.format(question=current_question.prompt))
+
     if len(state.judge_results) > 0:
         if state.judge_results[-1] == "explain request":
             patient_response = state.messages[-1].content
             sys_msg = SystemMessage(EXPLAIN_PROMPT.format(response=patient_response, current_question=current_question.prompt))
+        elif state.judge_results[-1] == "rephrase needed":
+            # Generate specific clarification using LLM based on patient's unclear response
+            patient_response = state.messages[-1].content
+            judge_reasoning = state.messages[-2].content if len(state.messages) >= 2 else "Response was unclear"
+
+            clarification_prompt = CLARIFICATION_PROMPT.format(
+                question=current_question.prompt,
+                response=patient_response,
+                reasoning=judge_reasoning
+            )
+            sys_msg = SystemMessage(content=clarification_prompt)
 
     msgs = [sys_msg]
 
@@ -71,38 +88,72 @@ def patient_node(state: InterviewState):
     return {'messages': [result]}
 
 
+def _clarify_streak(judge_results: list[Any], last_result) -> bool:
+    clarify_label = "rephrase needed"
+    results = judge_results
+    results.append(last_result)
+    if len(judge_results) >= AUTO_SET_YES_AFTER and all(r == clarify_label for r in results[-AUTO_SET_YES_AFTER:]):
+        return True
+    else:
+        return False
+
+
 def judge_node(state: InterviewState) -> Dict[str, Any]:
     # assume the loop-driver put the user's message in state.messages[-1]
     print("enter judge")
     last_question = state.module_loader.get_question(state.current_question_id)
     patient_last_answer = state.messages[-1]
 
-    prompt = JUDGE_SYSTEM_PROMPT.format(last_question= last_question.prompt, patient_last_answer= patient_last_answer.content)
-    resp = structured_llm.invoke([HumanMessage(content=prompt)])
+    response_text = patient_last_answer.content.strip().lower()
+    if response_text == "yes":
+        print("Direct classification: YES (no LLM call needed)")
+        label = "yes"
+        reasoning = f"Patient gave a clear affirmative response: '{patient_last_answer.content}'"
+    elif response_text == "no":
+        print("Direct classification: NO (no LLM call needed)")
+        label = "no"
+        reasoning = f"Patient gave a clear negative response: '{patient_last_answer.content}'"
+    else:
+        print("MAKING AN LLM CALL TO JUDGE THE ANSWER")
+        prompt = JUDGE_SYSTEM_PROMPT.format(last_question= last_question.prompt, patient_last_answer= patient_last_answer.content)
+        resp = structured_llm.invoke([HumanMessage(content=prompt)])
 
-    # Access Pydantic model attributes directly
-    print(f"reason behind the decision: {resp.reasoning}")
-    print(f"decision: {resp.classification}")
+        # Access Pydantic model attributes directly
+        print(f"reason behind the decision: {resp.reasoning}")
+        print(f"decision: {resp.classification}")
 
-    label = str(resp.classification)
-    if label not in ["yes", "no", "need more clarification", "N/A", "explain request"]:
-        label = "need more clarification"
+        label = str(resp.classification)
+        reasoning = str(resp.reasoning)
 
+        if label not in ["yes", "no", "rephrase needed", "N/A", "explain request"]:
+            label = "rephrase needed"
+
+    if _clarify_streak(judge_results=state.judge_results, last_result=label):
+        print("Direct classification after 3 round of clarification: YES")
+        label = "yes"
+        reasoning = f"Patient prompted a vague answer after three rounds of clarification :" \
+                    f" '{patient_last_answer.content}'"
     print("exit judge")
     # TODO search for best practices of adding pydantic class to 'Messages'
-    return {"messages": [AIMessage(content=str(resp.reasoning))], "judge_results": [label]}
+    return {"messages": [AIMessage(content=reasoning)], "judge_results": [label]}
 
 
 def should_clarify(state: InterviewState) -> str:
-    return "clarify" if state.judge_results[-1] in ["need more clarification", "explain request"] else "continue"
+    return "clarify" if state.judge_results[-1] in ["rephrase needed", "explain request"] else "continue"
 
 
 def _log_entry(state: InterviewState) -> Dict[str, Any]:
+    # Determine if this is a clarification based on previous judge results
+    exchange_type = "clarification" if len(state.judge_results) > 1 and state.judge_results[-2] in ["rephrase needed", "explain request"] else "initial"
+
     return {
         "question_id": state.current_question_id,
+        "ai_question": state.messages[-3].content if len(state.messages) >= 3 else "",  # The AI question
         "patient_response": state.messages[-2].content,
         "classification": state.judge_results[-1],
         "reasoning": state.messages[-1].content,
+        "timestamp": datetime.now().isoformat(),
+        "exchange_type": exchange_type,
     }
 
 
@@ -128,8 +179,6 @@ def selector(state: InterviewState) -> Dict[str, Any]:
 def should_diagnose(state: InterviewState) -> str:
     if state.ready_for_diagnosis:
         return "diagnose"
-    if state.module_completed:
-        return "end"
     return "continue"
 
 
