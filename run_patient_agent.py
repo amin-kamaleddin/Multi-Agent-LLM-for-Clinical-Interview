@@ -100,10 +100,10 @@ def run():
         patients_data = json.load(f)
 
     for entry in patients_data:
-        if "Patient Scenario Prompt" not in entry or "id" not in entry:
+        if "System Prompt" not in entry or "id" not in entry:
             continue  # skip if missing data
 
-        prompt = entry["Patient Scenario Prompt"]
+        prompt = entry["System Prompt"]
         run_id = entry["id"]  # this will be the save name
 
         print(f"\n--- Starting conversation for ID {run_id} ---\n")
