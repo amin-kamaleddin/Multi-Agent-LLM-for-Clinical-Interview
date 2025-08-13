@@ -1,12 +1,12 @@
 {
     "mustHave": {
-        "diagnosis": true,
-        "timeFrame": "past",
-        "reasoning": "1) Symptom groups positive past: A3b, A3c, A3d, A3e, A3f (5 groups); recent: only 4 groups positive (A3b, A3c, A3d, A3f). Thus, criterion met only for past. 2) Core symptom met: A1b=YES and A2b=YES. 3) Functional impairment met: A4_current=YES and A4_past=YES. 4) Organic cause ruled out by assumption."
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "1. Symptom groups: Past symptom groups positive: A3a, A3b, A3c, A3d, A3e, A3f, A3g (7 groups). Recent symptom groups positive: A3a, A3b, A3c, A3d, A3e, A3f (6 groups). Both past and recent have at least 5 symptom groups positive independently, so criterion met for both time frames. 2. Core symptom: A1a=YES, A1b=YES, A2a_1=YES, A2b=YES, so core symptom criterion met. 3. Functional impairment: A4_current=YES and A4_past=YES, so functional impairment criterion met. 4. Organic cause: O1a=NO and O1b=YES; criterion requires both NO, but O1b=YES, so organic cause criterion not met. Therefore, not all criteria are met, diagnosis is false."
     },
     "recurrent": {
-        "diagnosis": true,
-        "timeFrame": "past",
-        "reasoning": "A5 is YES, satisfying the recurrent criterion. At least 5 symptom groups are positive in the past time frame (A3b, A3c, A3d, A3e, A3f), meeting the symptom group threshold only in the past, not recent."
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 (A5=YES) is not met since A5=NO. Criterion 2 requires O1a=NO and O1b=NO; here O1a=NO but O1b=YES, so criterion 2 is not met. Therefore, the diagnostic criteria for 'recurrent' are not fulfilled."
     }
 }
