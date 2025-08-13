@@ -7,7 +7,7 @@ from sklearn.metrics import accuracy_score, confusion_matrix, precision_score, r
 # Paths
 patients_file = "./interview_agent/prompts/patients_with_system_prompts.json"
 results_dir = "./patient_agent_results"
-output_csv = "./predictions.csv"
+output_csv = "./patient_agent_results/predictions.csv"
 
 # Load patients data
 with open(patients_file, "r", encoding="utf-8") as f:
