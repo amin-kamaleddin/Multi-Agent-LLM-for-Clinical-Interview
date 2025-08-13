@@ -4,6 +4,8 @@ import sys
 import os
 from pathlib import Path
 
+PATIENT_AGENT = True
+
 
 def main():
     module_file = None
@@ -38,7 +40,7 @@ def main():
     try:
         from interview_agent.cli import run
         sys.argv = ["run_interview.py", module_file]
-        run()
+        run(patient_agent=PATIENT_AGENT)
     except KeyboardInterrupt:
         print("\n\nInterview interrupted by user.")
     except Exception as e:

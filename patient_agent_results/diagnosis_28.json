@@ -1,0 +1,12 @@
+{
+    "mustHave": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 not met: only 1 symptom group positive in past (A3f_past=YES), none recent; need at least 5 symptom groups positive in a single time frame. Criterion 2 met: A2b=YES. Criterion 3 met: A4_past=YES. Organic cause ruled out. Overall diagnosis is false due to insufficient symptom groups."
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion A5 requires a YES response, but the patient answered NO. Therefore, the diagnostic criterion for recurrent is not met."
+    }
+}

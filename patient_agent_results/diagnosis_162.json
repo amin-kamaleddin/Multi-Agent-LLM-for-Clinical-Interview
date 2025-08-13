@@ -1,0 +1,12 @@
+{
+    "mustHave": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 not met: no symptom groups (A3a\u2013A3g) are positive in either past or recent time frames. Criterion 2 not met: core symptom (A1b or A2b) is not YES. Criterion 3 met: functional impairment present (A4_current and A4_past YES). Organic cause ruled out. Overall, not all criteria met."
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion A5 requires a 'YES' answer, but the patient answered 'NO' for A5, so the criterion is not met."
+    }
+}

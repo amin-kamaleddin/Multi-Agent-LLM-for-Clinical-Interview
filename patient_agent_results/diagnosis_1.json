@@ -1,0 +1,12 @@
+{
+    "mustHave": {
+        "diagnosis": true,
+        "timeFrame": "both",
+        "reasoning": "1. Symptom groups: All seven groups (A3a\u2013A3g) are positive in both past and recent time frames, satisfying the requirement of at least 5 symptom groups in either time frame independently. 2. Core symptom: A1b=YES and A2b=YES, so core symptom criterion is met. 3. Functional impairment: A4_past=YES and A4_recent=YES, so functional impairment criterion is met. 4. Organic cause is ruled out by assumption. Therefore, all criteria are met for both past and recent time frames."
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion A5 is NO, but the recurrent diagnostic group requires A5 = YES, so the criterion is not met. Other criteria are not specified for this group. Therefore, diagnosis is false and time frame is null."
+    }
+}
