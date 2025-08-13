@@ -146,10 +146,10 @@
       "prompt": "In a past episode, did you ever have similar thoughts or actions related to death or suicide?",
       "responseType": "yes_no",
       "safetyFlag": true,
-      "next": { "yes": "A4_current", "no": "A4_current" }
+      "next": { "yes": "A4_recent", "no": "A4_recent" }
     },
     {
-      "id": "A4_current",
+      "id": "A4_recent",
       "group": "A4",
       "prompt": "During the past 2 weeks, have these symptoms caused significant distress or problems and marked a change from your usual functioning?",
       "responseType": "yes_no",
@@ -200,7 +200,7 @@
       "mustHave": [
         "At least 5 symptom groups (A3a–A3g) coded YES",
         "Core symptom: A1a=YES or A2a_1=YES or A2a_2=YES or A1b=YES or A2b=YES",
-        "Functional impairment: A4_current=YES or A4_past=YES",
+        "Functional impairment: A4_recent=YES or A4_past=YES",
         "O1a = NO AND O1b = NO"
       ],
       "recurrent": ["A5 = YES",

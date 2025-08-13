@@ -1,0 +1,75 @@
+import json
+import csv
+import os
+import re
+from sklearn.metrics import accuracy_score, confusion_matrix, precision_score, recall_score, f1_score
+
+# Paths
+patients_file = "./interview_agent/prompts/patients_with_system_prompts.json"
+results_dir = "./patient_agent_results"
+output_csv = "./predictions.csv"
+
+# Load patients data
+with open(patients_file, "r", encoding="utf-8") as f:
+    patients_data = json.load(f)
+
+# Map id → label ("true"/"false")
+id_to_label = {
+    int(item["id"]): "true" if item["Expected Symptom Direction"] == "Positive Symptom Presentation" else "false"
+    for item in patients_data
+}
+
+# Regex pattern for valid files
+pattern = re.compile(r"^diagnosis_(\d+)\.json$")
+diagnosis_files = sorted(
+    (f for f in os.listdir(results_dir) if pattern.match(f)),
+    key=lambda x: int(pattern.match(x).group(1))
+)
+
+# Lists for evaluation
+y_true, y_pred, wrong_ids = [], [], []
+
+# Write CSV
+with open(output_csv, "w", newline="", encoding="utf-8") as csvfile:
+    writer = csv.writer(csvfile)
+    writer.writerow(["id", "label", "prediction"])
+
+    for file_name in diagnosis_files:
+        file_id = int(pattern.match(file_name).group(1))
+        file_path = os.path.join(results_dir, file_name)
+
+        with open(file_path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+
+        prediction_bool = data.get("mustHave", {}).get("diagnosis", None)
+        prediction = "true" if prediction_bool is True else "false"
+        label = id_to_label.get(file_id, "")
+
+        writer.writerow([file_id, label, prediction])
+
+        if label in ["true", "false"] and prediction in ["true", "false"]:
+            truth = label == "true"
+            pred = prediction == "true"
+            y_true.append(truth)
+            y_pred.append(pred)
+            if truth != pred:
+                wrong_ids.append(file_id)
+
+# Metrics
+acc = accuracy_score(y_true, y_pred)
+prec = precision_score(y_true, y_pred)
+rec = recall_score(y_true, y_pred)
+f1 = f1_score(y_true, y_pred)
+tn, fp, fn, tp = confusion_matrix(y_true, y_pred).ravel()
+
+# Output results
+print(f"CSV file created at {output_csv}")
+print(f"Accuracy : {acc:.4f}")
+print(f"Precision: {prec:.4f}")
+print(f"Recall   : {rec:.4f}")
+print(f"F1-score : {f1:.4f}")
+print("Confusion Matrix (rows=true label, cols=predicted label):")
+print(f"            Predicted False   Predicted True")
+print(f"Actual False     {tn:5d}           {fp:5d}")
+print(f"Actual True      {fn:5d}           {tp:5d}")
+print(f"Wrong predictions IDs: {wrong_ids}")

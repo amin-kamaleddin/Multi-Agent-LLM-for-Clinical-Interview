@@ -2,11 +2,11 @@
     "mustHave": {
         "diagnosis": false,
         "timeFrame": null,
-        "reasoning": "Only one symptom group (A3b) is positive in the past; fewer than the required five symptom groups are positive in either past or recent time frames. Core symptom (A1b or A2b) is not met. Functional impairment criterion is met (A4_past=YES). Organic cause is ruled out. Overall, not all criteria are satisfied."
+        "reasoning": "Core symptom criterion is not met because A1a=NO and A2a_2=NO, and no other core symptom items are provided as YES. Symptom groups (A3a\u2013A3g) and functional impairment (A4_current or A4_past) cannot be evaluated due to lack of data. Organic cause criteria are met (O1a=NO and O1b=NO). Since the core symptom criterion is not met, the overall diagnosis is false."
     },
     "recurrent": {
         "diagnosis": false,
         "timeFrame": null,
-        "reasoning": "Criterion A5 requires a 'YES' answer, but the patient answered 'NO' for A5."
+        "reasoning": "Criterion 1 (A5 = YES) is not met because there is no information indicating A5 is YES. Criterion 2 (O1a = NO AND O1b = NO) cannot be evaluated due to lack of data, but since criterion 1 is not met, the overall diagnosis is false."
     }
 }

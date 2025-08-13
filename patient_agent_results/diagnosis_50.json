@@ -1,12 +1,12 @@
 {
     "mustHave": {
-        "diagnosis": false,
-        "timeFrame": null,
-        "reasoning": "Criterion 1 (at least 5 symptom groups) not met in a single time frame: past symptom groups positive are A3b, A3f (2 groups); recent symptom groups positive are A3d, A3f (2 groups). Neither past nor recent has 5 positive symptom groups. Criterion 2 (core symptom) not met as A1b=NO and A2b not provided (assumed NO). Criterion 3 (functional impairment) met (A4_current=YES and A4_past=YES). Organic cause ruled out. Overall, criteria 1 and 2 not met, so diagnosis is false."
+        "diagnosis": true,
+        "timeFrame": "past",
+        "reasoning": "1. Symptom groups: Past symptom groups positive: A3b, A3c, A3d, A3e, A3f (5 groups). Recent symptom groups positive: A3b, A3c, A3d, A3f (4 groups). Thus, only past meets the threshold of at least 5 symptom groups.\n2. Core symptom: A1a=YES, A2a_1=YES, A2b=YES, so core symptom criterion met.\n3. Functional impairment: A4_current=YES and A4_past=YES, so functional impairment criterion met.\n4. Organic cause: O1a=NO and O1b=NO, criterion met.\nAll criteria met with symptom groups positive in the past time frame only."
     },
     "recurrent": {
         "diagnosis": true,
-        "timeFrame": "recent",
-        "reasoning": "Criterion A5 is YES, satisfying the recurrent diagnostic group requirement. Symptom groups positive in the recent time frame are A3d_recent (YES) and A3f_recent (YES), totaling 2 symptom groups. Although only 2 symptom groups are positive recently, the instructions do not specify a minimum number of symptom groups for the recurrent group beyond A5=YES. Since A5=YES is the sole criterion for the recurrent group and it is met, the diagnosis is true with the recent time frame indicated by the positive recent symptom groups."
+        "timeFrame": "both",
+        "reasoning": "Criterion 1 (A5=YES) is met as A5 is YES. Criterion 2 (O1a=NO and O1b=NO) is met since both are NO. The symptom groups (A3a to A3g) show at least 5 positive groups in the past time frame (A3b, A3c, A3d, A3e, A3f are YES past) and at least 5 positive groups in the recent time frame (A3b, A3c, A3d, A3f, A4_current are YES recent). Therefore, symptom criteria are met for both past and recent independently. Hence, diagnosis is true with time frame 'both'."
     }
 }

@@ -2,11 +2,11 @@
     "mustHave": {
         "diagnosis": false,
         "timeFrame": null,
-        "reasoning": "Criterion 1 not met: No time frame has at least 5 positive symptom groups. Past positive groups: A3b, A3d, A3f (3 groups). Recent positive groups: A3b, A3c, A3d, A3f (4 groups). Criterion 2 not met: Core symptom (A1b=NO, A2b=NO). Criterion 3 met: Functional impairment present (A4_current=YES, A4_past=YES). Organic cause ruled out. Overall, criteria 1 and 2 fail, so diagnosis is false."
+        "reasoning": "1. At least 5 symptom groups: Past symptom groups positive: A3a, A3b, A3c, A3d, A3e, A3f, A3g (7 groups). Recent symptom groups positive: A3a, A3b, A3c, A3d, A3f, A3g (6 groups). Both past and recent independently meet the threshold of at least 5 symptom groups.\n2. Core symptom: A1a=YES, A1b=YES, A2a_1=YES, A2b=YES, so core symptom criterion is met.\n3. Functional impairment: A4_current=YES and A4_past=YES, so functional impairment criterion is met.\n4. Organic cause: O1a=NO and O1b=YES. Since O1b=YES, the criterion O1a=NO AND O1b=NO is NOT met.\nBecause the organic cause criterion is not met, the overall diagnosis is false despite other criteria being met."
     },
     "recurrent": {
         "diagnosis": false,
         "timeFrame": null,
-        "reasoning": "Criterion A5 requires a YES, but the patient answered NO for A5."
+        "reasoning": "Criterion 1 (A5 = YES) is not met since A5 = NO. Criterion 2 (O1a = NO AND O1b = NO) is not met because O1b = YES. Therefore, neither criterion for the recurrent diagnostic group is satisfied."
     }
 }
