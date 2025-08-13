@@ -11,15 +11,24 @@
     "Diagnostic box: Is either D5 or D6 coded YES AND is 'Rule out organic cause (O2 Summary)' coded YES? If YES, specify LIFETIME and/or CURRENT."
   ],
   "questions": [
-    { "id": "D1a", "prompt": "Have you, on more than one occasion, had spells or attacks when you suddenly felt anxious, very frightened, uncomfortable or uneasy, even in situations where most people would not feel that way?", 
+    {
+      "id": "D1a",
+      "prompt": "Have you, on more than one occasion, had spells or attacks when you suddenly felt anxious, very frightened, uncomfortable or uneasy, even in situations where most people would not feel that way?",
     "responseType": "yes_no", 
-    "next": { "yes": "D1b", "no": "D1b" } },
-    { "id": "D1b", "prompt": "Did the spells surge to a peak within 10 minutes of starting?", 
+    "next": { "yes": "D1b", "no": "DIAGNOSTIC" }
+    },
+    {
+      "id": "D1b",
+      "prompt": "Did the spells surge to a peak within 10 minutes of starting?",
     "responseType": "yes_no", 
-    "next": { "yes": "D2", "no": "D2" } },
-    { "id": "D2",  "prompt": "At any time in the past, did any of those spells or attacks come on unexpectedly or occur in an unpredictable or unprovoked manner?", 
+    "next": { "yes": "D2", "no": "DIAGNOSTIC" }
+    },
+    {
+      "id": "D2",
+      "prompt": "At any time in the past, did any of those spells or attacks come on unexpectedly or occur in an unpredictable or unprovoked manner?",
     "responseType": "yes_no", 
-    "next": { "yes": "D3", "no": "D3" } },
+    "next": { "yes": "D3", "no": "DIAGNOSTIC" }
+    },
     { "id": "D3",  "prompt": "Have you ever had one such attack followed by a month or more of persistent concern about having another attack, or worries about the consequences of the attack, or did you make any significant change in your behavior because of the attacks?", 
     "responseType": "yes_no", 
     "next": { "yes": "D4a", "no": "D4a" } },
@@ -112,7 +121,7 @@
       "group": "D4",
       "prompt": "Did you fear that you were dying?",
       "responseType": "yes_no",
-      "next": { "yes": "D5", "no": "D5" }
+      "next": { "yes": "D6", "no": "D6" }
     },
     {
       "id": "D5",
@@ -124,13 +133,33 @@
       "id": "D6",
       "prompt": "In the past month did you have persistent concern about having another attack, or worry about the consequences of the attacks, or did you change your behavior in any way because of the attacks?",
       "responseType": "yes_no",
-      "next": { "yes": "DIAGNOSTIC", "no": "DIAGNOSTIC" }
+      "next": { "yes": "O1a", "no": "O1a" }
+    },
+    {
+      "id": "O1a",
+      "prompt": "Were you taking any drugs or medicines or in withdrawal from any of these?",
+      "responseType": "choice",
+      "options": ["No", "Yes"],
+      "next": { "no": "O1b", "yes": "O1b"}
+    },
+    {
+      "id": "O1b",
+      "prompt": "Did you have any medical illness?",
+      "responseType": "choice",
+      "options": ["No", "Yes"],
+      "next": { "no": "DIAGNOSTIC", "yes": "DIAGNOSTIC"}
     }
   ],
   "diagnosticCriteria": {
     "panicDisorder": {
-      "lifetime": "D5 == 'YES' AND O2 Summary == 'YES'",
-      "current": "D6 == 'YES' AND O2 Summary == 'YES'"
+      "lifetime": [
+        "D3 is YES",
+        "4 or more of (D4a,D4b,D4c,D4d,D4e,D4f,D4g,D4h,D4i,D4j,D4k,D4l,D4m) is YES",
+        "O1a = NO AND O1b = NO"
+      ],
+      "current": ["D6 is 'YES'",
+      "O1a = NO AND O1b = NO"
+      ]
     }
   }
 }

@@ -1,4 +1,6 @@
-import argparse, uuid, csv, os
+from datetime import datetime
+import json
+import argparse, uuid, os
 from pathlib import Path
 from dotenv import load_dotenv
 
@@ -38,17 +40,42 @@ def run():
 
     thread_id = f"session_{uuid.uuid4().hex[:8]}"
     result = app.invoke(state, config={"recursion_limit": 500})
-    _save_log(result["conversation_log"], thread_id)
+    _save_log(result, thread_id, loader)
 
 
-def _save_log(log, thread_id):
+def _save_log(result, thread_id, module_loader):
+    export_data = {
+        "session_metadata": {
+            "session_id": thread_id,
+            "module_id": module_loader.module.id,
+            "module_name": module_loader.module.name,
+            "timestamp": datetime.now().isoformat(),
+        },
+
+        "conversation_log": [
+            {
+                "question_id": entry["question_id"],
+                "original_question_text": module_loader.get_question(entry["question_id"]).prompt,
+                "ai_question": entry.get("ai_question", ""),
+                "follow_up": getattr(module_loader.get_question(entry["question_id"]), 'followUp', None),
+                "patient_response": entry["patient_response"],
+                "ai_classification": entry["classification"],
+                "ai_reasoning": entry["reasoning"],
+                "timestamp": entry.get("timestamp", ""),
+                "exchange_type": entry.get("exchange_type", "initial"),
+            }
+            for entry in result["conversation_log"]
+        ],
+
+        "diagnostic_results": result.get("diagnosis_content", {}).model_dump() if hasattr(result.get("diagnosis_content", {}), 'model_dump') else result.get("diagnosis_content", {}),
+    }
+
     Path("reports").mkdir(exist_ok=True)
-    path = Path("reports") / f"{thread_id}.csv"
-    with open(path, "w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=log[0].keys())
-        writer.writeheader()
-        writer.writerows(log)
-    print(f"Conversation log saved to {path}")
+    path = Path("reports") / f"{thread_id}.json"
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(export_data, f, indent=2, ensure_ascii=False)
+
+    print(f"Conversation export saved to {path}")
 
 
 if __name__ == "__main__":
