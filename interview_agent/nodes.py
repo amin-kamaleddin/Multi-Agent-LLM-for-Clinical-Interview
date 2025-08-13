@@ -10,8 +10,7 @@ from pydantic import ValidationError
 load_dotenv()
 from langchain_core.messages import SystemMessage, HumanMessage, AIMessage
 from .prompts import INTERVIEWER_SYSTEM_PROMPT, JUDGE_SYSTEM_PROMPT, DIAGNOSIS_SYSTEM_PROMPT, EXPLAIN_PROMPT, \
-    PATIENT_SYSTEM_PROMPT, PATIENT_USER_PROMPT
-from .prompts import INTERVIEWER_SYSTEM_PROMPT, JUDGE_SYSTEM_PROMPT, DIAGNOSIS_SYSTEM_PROMPT, EXPLAIN_PROMPT, CLARIFICATION_PROMPT
+    CLARIFICATION_PROMPT,PATIENT_SYSTEM_PROMPT, PATIENT_USER_PROMPT
 
 from .models import (
     InterviewState,
@@ -227,7 +226,7 @@ def diagnosis(state: InterviewState):
         response = llm.invoke([HumanMessage(content=prompt)])
         content = response.content.strip()
 
-        # remove markdown code block formatting
+        # remove Markdown code block formatting
         if content.startswith("```json"):
             content = content.removeprefix("```json").removesuffix("```").strip()
 
