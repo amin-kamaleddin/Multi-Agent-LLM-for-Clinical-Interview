@@ -1,131 +1,130 @@
+
 # 🧠 MINI Interview Agent
 
-An AI-powered agent system for conducting MINI (Mini International Neuropsychiatric Interview) assessments with intelligent response analysis and dynamic conversation flow.
+AI agent for conducting MINI (Mini International Neuropsychiatric Interview) assessments with dynamic conversation flow, clinical tone, and intelligent follow-ups powered by LLMs.
 
-## Features
+---
 
-- **🔄 LangGraph-powered workflow** with conditional branching logic
-- **🤖 LLM-based response analysis** (yes/no/unclear classification) 
-- **🎯 Intelligent clarification** when patient responses are ambiguous
-- **📋 JSON-based modules** with branching questionnaire logic
-- **💬 Natural conversation flow** with professional clinical tone
-- **📊 Comprehensive logging** of all interactions and classifications
+## ✨ Features
 
-## Quick Start
+- 🧭 **LangGraph workflow:** Conditional branching that mirrors MINI logic
+- 🧠 **LLM judgment:** Yes / No / Unclear classification 
+- 🔍 **Smart clarifications:** Targeted follow-ups for ambiguous replies
+- 🗂️ **JSON modules:** Questionnaire logic with explicit branching paths
+- 🗣️ **Clinical tone:** Natural, professional conversation style
+- 🧾 **Full logging:** Trace every prompt, response, and decision
+- 🧪 **Patient Agent mode:** Simulate patient behavior for testing and demos
+
+---
+
+## 🚀 Quick Start
 
 ### Prerequisites
+- Python 3.8+
+- Install dependencies:
+  ```bash
+  pip install -r requirements.txt
+
+
+* Add your OpenAI key to a `.env` file:
+
+  ```
+  OPENAI_API_KEY=sk-proj-your-api-key-here
+  ```
+
+### Run an interview
 
 ```bash
-pip install -r requirements.txt
+python run_interview.py
 ```
 
-Create a `.env` file with your OpenAI API key:
-```
-OPENAI_API_KEY=sk-proj-your-api-key-here
-```
+* Choose a MINI module by entering a letter: `a, d, e, f, g, n, o, p`.
+* The agent guides you through the module’s clinical questions.
 
-### Simple Usage
+### 🤖 Patient Agent mode
 
-**Option 1: Default module (Module A - Major Depression)**
+Simulate patient responses for automated testing or demos:
+
 ```bash
-python3 run_interview.py
+python run_interview.py --patient_agent true
 ```
 
-**Option 2: Specify module by letter**
-```bash
-python3 run_interview.py a    # Module A (Major Depression)
-python3 run_interview.py e    # Module E (Agoraphobia)
-```
+---
 
-**Option 3: Advanced usage with CLI**
-```bash
-python3 -c "from interview_agent.cli import run; run()" modules/working/module_a.json
-```
+## 🔄 Workflow
 
-## 📁 Project Structure
+The system is a directed graph of coordinated nodes that share a single `InterviewState`.
+
+### Graph
+
+![Graph overview](./graph_visualization.png)
+
+### Walkthrough
+
+1. **Interviewer Node**
+
+   * Presents the next MINI question with an LLM.
+   * If the previous reply was ambiguous, generates a focused clarification prompt.
+   * If the previous reply was request for more explanation, generates a detailed explanation for question and add 
+     an example if applicable.
+
+2. **Patient Node**
+
+   * Receives the interviewer’s question.
+   * Either simulates a patient reply via LLM (automated mode) or accepts user input (manual mode).
+
+3. **Judge Node**
+
+   * Reviews the patient’s response.
+   * If the answer is clearly yes or no without extra context, classifies locally without an LLM call.
+   * Otherwise calls an LLM to return one of: `yes`, `no`, `rephrase needed`, `explain request`.
+   * Optional failsafe: after three consecutive ambiguities, classify as `yes` to break loops. This threshold is configurable.
+
+4. **Clarification Handling**
+
+   * If the judge requests clarification, route back to the interviewer to ask a clearer question.
+   * Otherwise continue to selection.
+
+5. **Selector Node**
+
+   * Logs question, response, and classification.
+   * Advances to the next question using module branching logic.
+   * Flags completion or readiness for diagnosis.
+
+6. **Diagnosis Node**
+
+   * Compiles all responses and criteria.
+   * Uses an LLM to produce a structured diagnostic summary.
+
+7. **End**
+
+   * Saves diagnostic results and the full conversation log for review.
+
+**Input modes**
+
+* 🧪 **Patient Agent:** Automated simulation via LLM and a system prompt.
+* ⌨️ **Manual:** Interactive CLI input from the user.
+
+---
+
+## 📦 Project Structure
 
 ```
-mini-agenti-ai/
-├── interview_agent/          # Core Python package
-│   ├── models.py             # Data models and state management
+mini-agent/
+├── interview_agent/          # Core package
+│   ├── models.py             # Data models and InterviewState
 │   ├── nodes.py              # LangGraph nodes (interviewer, judge, etc.)
-│   ├── graph.py              # Graph construction and workflow
+│   ├── graph.py              # Workflow construction
 │   └── cli.py                # Command-line interface
-├── modules/working/          # MINI questionnaire modules
+├── modules/                  # MINI questionnaire modules
 │   ├── module_a.json         # Major Depressive Episode
-│   └── module_e.json         # Agoraphobia
-├── notebooks/                # Jupyter notebooks for development
-├── run_interview.py          # Simple script to run interviews
-└── requirements.txt          # Python dependencies
+│   ├── module_d.json         # ... other modules
+├── run_interview.py          # Entry script
+└── requirements.txt          # Dependencies
 ```
 
-## 🔄 How It Works
+### 🧩 Module JSON schema (example)
 
-### 1. **Interviewer Node**
-- Presents MINI questions using natural language
-- Collects patient responses through console input
-- Maintains conversation history and context
-
-### 2. **Judge Node** 
-- Analyzes patient responses using GPT-4o-mini
-- Classifies responses as: `yes`, `no`, or `need more clarification`
-- Uses confidence thresholds (>70%) for reliable classification
-
-### 3. **Conditional Flow**
-- **Clear responses** → Move to next question based on JSON branching logic
-- **Unclear responses** → Return to interviewer for clarification
-- **Module completion** → Generate diagnostic summary
-
-### 4. **Response Analysis**
-```python
-# Example LLM prompt for response analysis
-"""
-Question: "Do you feel sad most days?"
-Patient Response: "Sometimes, I guess"
-Classification: need more clarification
-Reasoning: Response is ambiguous with uncertainty markers
-"""
-```
-
-## Example Session
-
-```
-Starting interview with modules/working/module_a.json
-==================================================
-
------------------------------- Start of question A1a------------------------------
-Were you ever depressed or down, or felt sad, empty or hopeless most of the day, 
-nearly every day, for two weeks? Please answer yes or no. If you're uncertain, 
-feel free to explain.
-You: I don't know, maybe sometimes
-
-enter judge
-reason behind the decision: Response is ambiguous with uncertainty markers
-decision: need more clarification
-exit judge
-
-enter interviewer
------------------------------- Start of question A1a------------------------------
-Could you help me understand better - have you experienced periods where you felt 
-sad or hopeless most of the day, nearly every day, for at least two weeks? 
-Please answer yes or no.
-You: yes
-
-enter judge  
-reason behind the decision: Clear affirmative response
-decision: yes
-exit judge
-
-Moving to next question based on 'yes' response...
-```
-
-## 🛠️ Configuration
-
-### Environment Variables
-- `OPENAI_API_KEY`: Your OpenAI API key (required)
-
-### Module Structure
-Each JSON module contains:
 ```json
 {
   "module": {
@@ -144,3 +143,15 @@ Each JSON module contains:
   ]
 }
 ```
+
+---
+
+## ⚙️ Configuration
+
+Environment variables:
+
+* `OPENAI_API_KEY` (required): OpenAI API key
+
+---
+
+
