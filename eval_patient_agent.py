@@ -5,7 +5,7 @@ import re
 from sklearn.metrics import accuracy_score, confusion_matrix, precision_score, recall_score, f1_score
 
 # Paths
-patients_file = "./interview_agent/prompts/patients_with_system_prompts.json"
+patients_file = "./interview_agent/prompts/patients_with_system_prompts_small.json"
 results_dir = "./patient_agent_results"
 output_csv = "./patient_agent_results/predictions.csv"
 
@@ -38,10 +38,24 @@ with open(output_csv, "w", newline="", encoding="utf-8") as csvfile:
         file_id = int(pattern.match(file_name).group(1))
         file_path = os.path.join(results_dir, file_name)
 
+        # Find the patient entry for this file_id
+        patient_entry = next((p for p in patients_data if int(p["id"]) == file_id), None)
+        if not patient_entry:
+            continue  # skip if not found
+
+        # Determine key based on first letter of Module
+        module_letter = patient_entry["Module"].split()[0]  # e.g., "A"
+        if module_letter in ["A", "O"]:
+            key = "mustHave"
+        elif module_letter == "P":
+            key = "lifetime"
+        else:
+            key = "current"
+
         with open(file_path, "r", encoding="utf-8") as f:
             data = json.load(f)
 
-        prediction_bool = data.get("mustHave", {}).get("diagnosis", None)
+        prediction_bool = data.get(key, {}).get("diagnosis", None)
         prediction = "true" if prediction_bool is True else "false"
         label = id_to_label.get(file_id, "")
 

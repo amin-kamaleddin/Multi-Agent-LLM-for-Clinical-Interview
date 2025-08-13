@@ -92,21 +92,27 @@ import json
 
 def run():
     _load_key()
-    loader = ModuleLoader.from_file("./modules/module_a.json")
-    app = build_graph(loader)
 
     # Load patient data from JSON
-    with open("./interview_agent/prompts/patients_with_system_prompts.json", "r", encoding="utf-8") as f:
+    with open("./interview_agent/prompts/patients_with_system_prompts_small.json", "r", encoding="utf-8") as f:
         patients_data = json.load(f)
 
     for entry in patients_data:
-        if "System Prompt" not in entry or "id" not in entry:
+        if "System Prompt" not in entry or "id" not in entry or "Module" not in entry:
             continue  # skip if missing data
 
-        prompt = entry["System Prompt"]
-        run_id = entry["id"]  # this will be the save name
+        # Convert module name into a file-friendly format
+        module_name = entry["Module"].split(" - ")[0].lower()  # e.g., "F" from "F - Social Anxiety Disorder"
+        module_filename = f"./modules/module_{module_name}.json"
 
-        print(f"\n--- Starting conversation for ID {run_id} ---\n")
+        # Load module dynamically
+        loader = ModuleLoader.from_file(module_filename)
+        app = build_graph(loader)
+
+        prompt = entry["System Prompt"]
+        run_id = entry["id"]
+
+        print(f"\n--- Starting conversation for ID {run_id} | Module: {entry['Module']} ---\n")
 
         start_qid = loader.get_first_question_id()
 
@@ -120,18 +126,14 @@ def run():
 
         result = app.invoke(state, config={"recursion_limit": 500})
 
-        # Save conversation log with this ID
+        # Save conversation log
         _save_log(result["conversation_log"], run_id)
 
-        
-        # To get the root dict of CriteriaGroupResult instances:
+        # Extract and save diagnosis content
         diagnosis_dict = result["diagnosis_content"].root
-
-        # If you want a plain dict with the inner objects as dicts:
         diagnosis_output = {k: v.model_dump() for k, v in diagnosis_dict.items()}
-
-        # Save JSON diagnosis content
         _save_diagnosis(diagnosis_output, run_id)
+
 
 
 def _save_log(log, run_id):
