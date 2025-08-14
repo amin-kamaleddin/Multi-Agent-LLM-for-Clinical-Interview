@@ -1,12 +1,12 @@
 {
-    "mustHave": {
+    "lifetime": {
         "diagnosis": false,
         "timeFrame": null,
-        "reasoning": "1. Symptom groups: Past symptom groups positive: A3a, A3b, A3c, A3d, A3e, A3f, A3g (7 groups). Recent symptom groups positive: A3a, A3b, A3c, A3d, A3f, A3g (6 groups). Both past and recent have at least 5 symptom groups positive independently, so criterion met for both time frames. 2. Core symptom: A1a=YES, A1b=YES, A2a_1=YES, A2b=YES, so core symptom criterion met. 3. Functional impairment: A4_current=YES and A4_past=YES, so functional impairment criterion met. 4. O1a=YES and O1b=YES, but criterion requires O1a=NO AND O1b=NO, so this criterion is NOT met. Since the organic cause/rule-out criterion is not met, the overall diagnosis is false."
+        "reasoning": "Criterion 1: Among P1a to P1f, P1a and P1b are YES, totaling 2 YES answers, which is not more than 2, so criterion 1 is not met. Criterion 2: Among P2a to P2g, P2a, P2b, P2c, P2e, and P2f are YES, totaling 5 YES answers, which is more than 3, so criterion 2 is met. Since criterion 1 is not met, the overall diagnosis is false. No time frame applies as criterion 1 is not satisfied."
     },
-    "recurrent": {
+    "note": {
         "diagnosis": false,
         "timeFrame": null,
-        "reasoning": "Criterion 1 (A5 = YES) is not met since A5 = NO. Criterion 2 (O1a = NO AND O1b = NO) is not met since both O1a and O1b are YES. Therefore, neither diagnostic criterion is satisfied."
+        "reasoning": "Symptom groups P1 and P2 each have multiple 'YES' answers. P1 has YES for P1a and P1b, indicating the P1 symptom group is positive. P2 has YES for P2a, P2b, P2c, P2e, and P2f, indicating the P2 symptom group is positive. However, no time frames are specified for these answers, so we cannot determine if these symptom groups are positive in only one time frame (past or recent). Without time frame information, we cannot confirm that the required number of symptom groups are positive within a single time frame. Therefore, the diagnostic criteria are not fully met."
     }
 }

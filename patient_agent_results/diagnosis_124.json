@@ -1,12 +1,22 @@
 {
-    "mustHave": {
+    "current": {
         "diagnosis": false,
         "timeFrame": null,
-        "reasoning": "1. At least 5 symptom groups (A3a\u2013A3g) coded YES: Cannot determine from given data; no symptom groups provided, so criterion not met. 2. Core symptom: A1a=NO and A2a_2=NO; no information on A2a_1, A1b, or A2b, so cannot confirm core symptom presence. 3. Functional impairment (A4_current or A4_past): no data provided, cannot confirm. 4. O1a=NO and O1b=NO: assumed met. Overall, insufficient data to meet criteria, especially core symptom and symptom groups."
+        "reasoning": "Criterion 1 (G4 == 'YES') is not met because G4 is NO. Criterion 2 ((G1a AND G1b AND G2) OR (G3a AND G3b)) is met because G3a and G3b are both YES. Criterion 3 (O1a = NO AND O1b = NO) is met as both are NO. However, since Criterion 1 is not met, the overall diagnosis is false."
     },
-    "recurrent": {
+    "insight": {
         "diagnosis": false,
         "timeFrame": null,
-        "reasoning": "Criterion 1 (A5 = YES) is not met because there is no information indicating A5 is YES. Criterion 2 (O1a = NO AND O1b = NO) cannot be evaluated due to lack of data, but since criterion 1 is not met, the overall diagnosis is false."
+        "reasoning": "Invalid criteria format."
+    },
+    "ticRelated": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "The patient answered YES to G3a and G3b, indicating the tic-related symptom group G3 is positive. No other symptom groups (G1, G4) are positive. Since only one symptom group is positive, the criterion of multiple symptom groups is not met. Organic causes are ruled out. Therefore, the tic-related diagnosis criteria are not fully met."
+    },
+    "note": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "No obsessive compulsive symptom groups are positive since O1a and O1b are both NO. Therefore, there are no obsessive compulsive symptoms starting within 3 weeks of an infection."
     }
 }

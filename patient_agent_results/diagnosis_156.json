@@ -1,12 +1,7 @@
 {
-    "mustHave": {
+    "current": {
         "diagnosis": false,
         "timeFrame": null,
-        "reasoning": "Criterion 1: Cannot assess symptom groups A3a\u2013A3g as no data provided; thus cannot confirm at least 5 symptom groups positive in one time frame. Criterion 2: Core symptom not met since A1a=NO and A2a_2=NO, and no data on A2a_1, A1b, or A2b; assuming these are NO or unavailable, core symptom criterion not met. Criterion 3: Functional impairment (A4_current or A4_past) not provided, cannot confirm. Criterion 4: O1a=NO and O1b=NO assumed as per instruction. Overall, insufficient data to meet criteria, core symptom criterion definitely not met, so diagnosis is false."
-    },
-    "recurrent": {
-        "diagnosis": false,
-        "timeFrame": null,
-        "reasoning": "Criterion 1 (A5 = YES) is not met because there is no information indicating A5 is YES. Criterion 2 (O1a = NO AND O1b = NO) is met as both are NO. Since not all criteria are met, diagnosis is false."
+        "reasoning": "Criterion 1 (N4 == 'YES') is not met because N4 answer is not provided as 'YES'. Criterion 2 requires more than 3 of (N3a,N3b,N3c,N3d,N3e,N3f) to be 'YES', but no answers for these are given, so cannot be met. Criterion 3 requires O1a = NO and O1b = NO; no answers provided, so cannot confirm. Therefore, not all criteria are met."
     }
 }

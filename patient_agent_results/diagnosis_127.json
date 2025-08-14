@@ -1,12 +1,22 @@
 {
-    "mustHave": {
+    "current": {
         "diagnosis": false,
         "timeFrame": null,
-        "reasoning": "1. Symptom groups: Past symptom groups positive: A3b, A3c, A3d, A3e, A3f (5 groups). Recent symptom groups positive: A3b, A3c, A3d, A3f (4 groups). Thus, only past meets the threshold of at least 5 symptom groups. 2. Core symptom: A1a=YES, A1b=YES, A2a_1=YES, A2b=YES, so core symptom criterion met. 3. Functional impairment: A4_current=YES and A4_past=YES, so functional impairment criterion met. 4. Organic cause: O1a=NO and O1b=YES, but criterion requires both O1a=NO and O1b=NO; here O1b=YES, so organic cause criterion not met. Therefore, not all criteria are met, diagnosis is false."
+        "reasoning": "Criterion 1 (G4 == 'YES') is met since G4 is YES. Criterion 2 requires either (G1a AND G1b AND G2) or (G3a AND G3b) to be YES. Both (G1a AND G1b AND G2) and (G3a AND G3b) are YES, so criterion 2 is met. Criterion 3 requires O1a = NO AND O1b = NO; here O1a = NO but O1b = YES, so criterion 3 is not met. Therefore, not all criteria are met. Time frame cannot be determined as symptom groups are not explicitly time-framed and criterion 3 fails."
     },
-    "recurrent": {
+    "insight": {
         "diagnosis": false,
         "timeFrame": null,
-        "reasoning": "Criterion 1 (A5=YES) is not met since A5=NO. Criterion 2 requires O1a=NO and O1b=NO; here O1a=NO but O1b=YES, so criterion 2 is not met. Therefore, not all criteria for the recurrent diagnosis are met."
+        "reasoning": "Invalid criteria format."
+    },
+    "ticRelated": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "All general criteria (G1a, G1b, G2, G3a, G3b, G4) are marked YES, indicating tic-related symptoms are present. Organic cause is ruled out (O1a NO, O1b YES). Since all required criteria are met without any time frame conflict and no time frame suffixes are given, the diagnosis is true. Time frame cannot be determined from the data, so it is null."
+    },
+    "note": {
+        "diagnosis": true,
+        "timeFrame": "recent",
+        "reasoning": "All general criteria (G1a, G1b, G2, G3a, G3b, G4) are marked YES, indicating presence of obsessive-compulsive symptoms. The criterion to check for symptoms starting within 3 weeks of infection is supported by O1b (YES), indicating recent onset after infection. O1a is NO, but O1b suffices for recent onset. Since all symptom groups are positive and relate to recent onset, the diagnosis is true with a recent time frame."
     }
 }

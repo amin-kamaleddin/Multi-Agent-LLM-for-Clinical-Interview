@@ -2,7 +2,7 @@
     "mustHave": {
         "diagnosis": false,
         "timeFrame": null,
-        "reasoning": "1. Symptom groups: Only A3d_past=YES; all other symptom groups are NO for both past and recent. Thus, only 1 symptom group positive in past, 0 in recent, which is less than required 5. 2. Core symptom: A2a_2=YES and A2b=YES, so core symptom criterion is met. 3. Functional impairment: A4_current=NO and A4_past=NO, so functional impairment criterion is not met. 4. Organic cause: O1a=NO and O1b=NO, criterion met. Overall, not all criteria met due to insufficient symptom groups and no functional impairment."
+        "reasoning": "1. Symptom groups (A3a\u2013A3g): Only A3d_past=YES, so 1 symptom group positive in past, 0 in recent; criterion of at least 5 symptom groups not met. 2. Core symptom: A2a_2=YES and A2b=YES, so core symptom criterion met. 3. Functional impairment: A4_past=NO and A4_recent=NO, so functional impairment criterion not met. 4. O1a=NO and O1b=NO, so organic cause criterion met. Overall, not all criteria met due to insufficient symptom groups and no functional impairment."
     },
     "recurrent": {
         "diagnosis": false,

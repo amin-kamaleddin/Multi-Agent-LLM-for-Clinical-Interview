@@ -1,12 +1,22 @@
 {
-    "mustHave": {
+    "current": {
         "diagnosis": false,
         "timeFrame": null,
-        "reasoning": "1. Symptom groups A3a to A3g positive by time frame: Past - A3a, A3b, A3c, A3d, A3e, A3f, A3g (7 groups); Recent - A3b, A3c, A3d, A3e, A3f (5 groups). Both past and recent have at least 5 symptom groups positive independently. 2. Core symptom: A1a=YES, A1b=YES, A2a_1=YES, A2b=YES, so criterion met. 3. Functional impairment: A4_current=YES and A4_past=YES, criterion met. 4. O1a=NO and O1b=YES, but criterion requires both NO; thus criterion not met. Since criterion 4 is not met, diagnosis is false."
+        "reasoning": "Criterion 1 (G4 == 'YES') is met as G4 is YES. Criterion 2 requires either (G1a AND G1b AND G2) or (G3a AND G3b) to be YES. Both (G1a AND G1b AND G2) and (G3a AND G3b) are YES, so criterion 2 is met. Criterion 3 requires O1a = NO AND O1b = NO; however, O1b is YES, so criterion 3 is not met. Therefore, not all criteria are met, resulting in a negative diagnosis. Time frame cannot be determined as diagnosis is false."
     },
-    "recurrent": {
+    "insight": {
         "diagnosis": false,
         "timeFrame": null,
-        "reasoning": "Criterion 1 (A5 = YES) is not met since A5 = NO. Criterion 2 requires O1a = NO and O1b = NO; here O1a = NO but O1b = YES, so criterion 2 is not met. Therefore, not all criteria for the recurrent diagnosis are met."
+        "reasoning": "Invalid criteria format."
+    },
+    "ticRelated": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "All general criteria (G1a, G1b, G2, G3a, G3b, G4) are marked YES, indicating tic-related symptoms are present. Organic causes are ruled out (O1a NO, O1b YES). Since all required criteria are met without any time frame conflict, the diagnosis is true. Time frame cannot be specifically assigned as the questions do not specify past or recent, so timeFrame is null."
+    },
+    "note": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "All general criteria (G1a, G1b, G2, G3a, G3b, G4) are met with YES answers. For the obsessive-compulsive symptom group (O1a: NO, O1b: YES), at least one symptom is present. Since no time frames are specified in the data, and all required criteria are met, the diagnosis is positive. The time frame cannot be determined from the given data, so it is null."
     }
 }

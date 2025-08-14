@@ -94,7 +94,7 @@ def run():
     _load_key()
 
     # Load patient data from JSON
-    with open("./interview_agent/prompts/patients_with_system_prompts_small.json", "r", encoding="utf-8") as f:
+    with open("./interview_agent/prompts/patients_with_system_prompts.json", "r", encoding="utf-8") as f:
         patients_data = json.load(f)
 
     for entry in patients_data:

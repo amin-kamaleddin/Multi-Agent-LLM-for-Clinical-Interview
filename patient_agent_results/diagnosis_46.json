@@ -1,12 +1,12 @@
 {
-    "mustHave": {
+    "lifetime": {
         "diagnosis": false,
         "timeFrame": null,
-        "reasoning": "Criterion 1 (at least 5 symptom groups positive in one time frame) cannot be evaluated as no symptom group data is provided. Criterion 2 (core symptom) is not met because A1a=NO and A2a_2=NO, and no other core symptom items are provided as YES. Criterion 3 (functional impairment) and Criterion 4 (O1a=NO and O1b=NO) cannot be evaluated due to missing data. Since core symptom criterion is not met, overall diagnosis is false."
+        "reasoning": "Criterion 1 (D3 is YES) is not met because D3 is NO. Criterion 2 requires 4 or more YES answers among D4a to D4m; only D4f and D4m are YES (2 total), so criterion 2 is not met. Criterion 3 requires O1a = NO and O1b = NO, which is met. Since not all criteria are met, diagnosis is false."
     },
-    "recurrent": {
+    "current": {
         "diagnosis": false,
         "timeFrame": null,
-        "reasoning": "Criterion 1 (A5=YES) is not met because there is no information indicating A5=YES. Criterion 2 (O1a=NO AND O1b=NO) is met as both are NO. Since not all criteria are met, diagnosis is false."
+        "reasoning": "Criterion 1 (D6 is 'YES') is not met because D6 is 'NO'. Criterion 2 (O1a = NO AND O1b = NO) is met since both are 'NO'. However, since all criteria must be met and criterion 1 is not, the overall diagnosis is false. No time frame applies."
     }
 }

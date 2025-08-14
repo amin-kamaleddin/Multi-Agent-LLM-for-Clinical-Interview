@@ -1,12 +1,7 @@
 {
-    "mustHave": {
-        "diagnosis": false,
+    "current": {
+        "diagnosis": true,
         "timeFrame": null,
-        "reasoning": "1. Symptom groups (A3a\u2013A3g): Past symptom groups positive: A3a, A3b, A3c, A3d, A3e, A3f, A3g (7 groups). Recent symptom groups positive: A3b, A3c, A3d, A3e, A3f (5 groups). Both past and recent independently meet the threshold of at least 5 symptom groups.\n2. Core symptom: A1a=YES, A1b=YES, A2a_1=YES, A2b=YES, so core symptom criterion is met.\n3. Functional impairment: A4_current=YES and A4_past=YES, so functional impairment criterion is met.\n4. Organic cause rule-out: O1a=NO and O1b=YES. Since O1b=YES, the criterion O1a=NO AND O1b=NO is NOT met.\nBecause the organic cause criterion is not met, the overall diagnosis is false despite other criteria being met."
-    },
-    "recurrent": {
-        "diagnosis": false,
-        "timeFrame": null,
-        "reasoning": "Criterion 1 requires A5 = YES, but patient answered NO, so criterion 1 is not met. Criterion 2 requires O1a = NO and O1b = NO; patient has O1a = NO but O1b = YES, so criterion 2 is not met. Therefore, not all criteria for the 'recurrent' diagnostic group are met."
+        "reasoning": "Criterion E6 is met because the patient's answer to E6 is 'YES'. No other criteria need evaluation as only E6 is required for this diagnostic group."
     }
 }

@@ -1,12 +1,12 @@
 {
-    "mustHave": {
+    "lifetime": {
         "diagnosis": false,
         "timeFrame": null,
-        "reasoning": "1. At least 5 symptom groups (A3a\u2013A3g) coded YES: Cannot evaluate as no symptom group answers provided. 2. Core symptom: A1a=NO and A2a_2=NO; no other core symptom answers given, so core symptom criterion not met. 3. Functional impairment: No data provided for A4_current or A4_past, so cannot confirm functional impairment. 4. O1a=NO and O1b=NO assumed as per instructions. Overall, core symptom criterion not met and insufficient data on symptom groups and functional impairment, so diagnosis criteria not met."
+        "reasoning": "Criterion 1: Among (P1a, P1b, P1c, P1d, P1e, P1f), P1a=YES, P1c=YES, others NO, total 2 YES, which is not more than 2, so criterion 1 not met. Criterion 2: Among (P2a, P2b, P2c, P2d, P2e, P2f, P2g), P2a=YES, P2c=YES, P2d=YES, P2e=YES, total 4 YES, which is more than 3, so criterion 2 met. Since criterion 1 is not met, overall diagnosis is false. No time frame applies as criteria are not both met."
     },
-    "recurrent": {
+    "note": {
         "diagnosis": false,
         "timeFrame": null,
-        "reasoning": "Criterion 1 (A5=YES) is not met because there is no information indicating A5=YES. Criterion 2 (O1a=NO AND O1b=NO) is met as both are NO. Since not all criteria are met, diagnosis is false."
+        "reasoning": "Symptom groups P1 and P2 each have multiple 'YES' answers indicating positive symptom groups. Since no time frames are specified, all positive symptom groups are considered together without mixing past and recent. At least 5 symptom groups are not explicitly listed, but given the data, P1 and P2 represent two symptom groups with multiple positive items. Without additional symptom groups or time frames, the threshold of 5 symptom groups is not met. Therefore, the diagnostic criteria are not fully satisfied."
     }
 }
