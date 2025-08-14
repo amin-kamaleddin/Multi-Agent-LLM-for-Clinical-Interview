@@ -88,8 +88,6 @@ def build_graph(loader: ModuleLoader, visualize: bool = True):
 
     return compiled_sg
 
-import json
-
 def run():
     _load_key()
 
