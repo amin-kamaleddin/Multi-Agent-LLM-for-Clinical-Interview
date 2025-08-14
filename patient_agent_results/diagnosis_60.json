@@ -1,12 +1,12 @@
 {
-    "mustHave": {
-        "diagnosis": false,
+    "lifetime": {
+        "diagnosis": true,
         "timeFrame": null,
-        "reasoning": "1. At least 5 symptom groups (A3a\u2013A3g) coded YES: Cannot evaluate as no symptom group answers provided. 2. Core symptom: A1a=NO and A2a_2=NO; no other core symptom data given, so core symptom criterion not met. 3. Functional impairment (A4_current or A4_past): no data provided, cannot confirm. 4. O1a=NO and O1b=NO assumed as per instructions. Overall, core symptom criterion not met and insufficient data on symptom groups and functional impairment, so diagnosis criteria not met."
+        "reasoning": "Criterion 1 (D3) is met because D3 is YES. Criterion 2 requires 4 or more YES answers among D4a to D4m. The patient has 10 YES responses (D4a,b,c,d,e,f,h,j,l,m) and 3 NOs (D4g,i,k), so criterion 2 is met. Criterion 3 requires O1a and O1b both NO, which is true. Since all criteria are met and no time frame is specified for these items, the diagnosis is true with no specific time frame."
     },
-    "recurrent": {
-        "diagnosis": false,
+    "current": {
+        "diagnosis": true,
         "timeFrame": null,
-        "reasoning": "Criterion 1 (A5 = YES) cannot be evaluated as no information about A5 is provided. Criterion 2 (O1a = NO AND O1b = NO) cannot be evaluated as no information about O1a or O1b is provided. Based on the available answers (A1a: NO, A2a_2: NO), neither criterion is met."
+        "reasoning": "Criterion 1 (D6 is 'YES') is met as D6 = YES. Criterion 2 (O1a = NO AND O1b = NO) is met since both O1a and O1b are NO. Symptom groups are not explicitly defined here, but since D6 and O1a/O1b are the only criteria, and both are satisfied, diagnosis criteria are met. No time frame specified for symptom groups, so timeFrame is null."
     }
 }

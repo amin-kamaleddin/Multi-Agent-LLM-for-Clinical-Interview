@@ -1,12 +1,12 @@
 {
-    "mustHave": {
-        "diagnosis": false,
+    "lifetime": {
+        "diagnosis": true,
         "timeFrame": null,
-        "reasoning": "1. Symptom groups: Past symptom groups positive: A3a, A3b, A3c, A3d, A3e, A3f, A3g (all YES in past except A3c_recent=NO). Recent symptom groups positive: A3b, A3d, A3e, A3f, A3g (5 groups). Thus, at least 5 symptom groups positive in both past (7 groups) and recent (5 groups). 2. Core symptom: A1a=YES, A1b=YES, A2a_1=YES, A2b=YES, so core symptom criterion met. 3. Functional impairment: A4_current=YES and A4_past=YES, so functional impairment criterion met. 4. Organic cause: O1a=NO and O1b=YES, but criterion requires O1a=NO AND O1b=NO; since O1b=YES, this criterion is not met. Therefore, despite meeting symptom, core, and impairment criteria, the organic cause rule-out criterion is not met, so diagnosis is false."
+        "reasoning": "Criterion 1: Among P1a to P1f, P1a, P1b, P1c, and P1d are YES (4 YES), which is more than 2, so criterion 1 is met. Criterion 2: Among P2a to P2g, P2a, P2b, P2c, P2d, P2e, and P2f are YES (6 YES), which is more than 3, so criterion 2 is met. Both criteria are met based on the patient's answers. Since no time frame is specified for these items, time frame is not applicable."
     },
-    "recurrent": {
-        "diagnosis": false,
+    "note": {
+        "diagnosis": true,
         "timeFrame": null,
-        "reasoning": "Criterion 1 (A5=YES) is not met because A5=NO. Criterion 2 requires O1a=NO and O1b=NO; here O1a=NO but O1b=YES, so criterion 2 is not met. Therefore, not all criteria for the recurrent diagnosis are satisfied."
+        "reasoning": "All symptom groups (P1 and P2) have at least one 'YES' answer, indicating all symptom groups are positive. P1a-d are 'YES' (4 positive in P1), P2a-f are 'YES' (6 positive in P2). Since no time frame suffixes are provided, all answers are treated as non-time-frame-specific and thus valid. There is no indication that behaviors are exclusively politically or religiously motivated. Therefore, all criteria are met. Because no time frame is specified, timeFrame is null."
     }
 }

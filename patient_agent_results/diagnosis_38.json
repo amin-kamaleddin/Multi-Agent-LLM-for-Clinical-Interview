@@ -1,12 +1,12 @@
 {
-    "mustHave": {
+    "lifetime": {
         "diagnosis": true,
         "timeFrame": "past",
-        "reasoning": "1. Symptom groups positive (any YES in group): A3a: none (past NO, recent NO), A3b: past YES, recent YES, A3c: past YES, recent NO, A3d: past YES, recent YES, A3e: past YES, recent NO, A3f: past YES, recent YES, A3g: none (past NO, recent NO). \nPast positive groups: A3b, A3c, A3d, A3e, A3f = 5 groups.\nRecent positive groups: A3b, A3d, A3f = 3 groups.\nOnly past meets the threshold of at least 5 symptom groups.\n\n2. Core symptom: A1a=YES, A2a_1=YES, A2b=YES (all YES), so core symptom criterion met.\n\n3. Functional impairment: A4_current=YES, A4_past=YES, so functional impairment criterion met.\n\n4. Organic cause rule-out: O1a=NO and O1b=NO, criterion met.\n\nAll criteria met with symptom groups positive in the past only."
+        "reasoning": "Criterion 1 (D3) is YES, so met. For Criterion 2, counting YES answers among D4a to D4m: D4a(YES), D4b(YES), D4c(YES), D4d(YES), D4e(YES), D4f(YES), D4h(YES), D4j(YES), D4k(YES), D4l(YES), D4m(YES) are YES, totaling 11 YES responses, which is more than 4, so Criterion 2 is met. Criterion 3 requires O1a=NO and O1b=NO, both are NO, so met. Since all criteria are met and no time frame suffixes are given, the diagnosis applies to lifetime (past)."
     },
-    "recurrent": {
+    "current": {
         "diagnosis": true,
         "timeFrame": null,
-        "reasoning": "Criterion 1 (A5=YES) is met as A5=YES. Criterion 2 (O1a=NO and O1b=NO) is met since both are NO. The diagnostic group 'recurrent' requires these two criteria only, which are both satisfied. No symptom group count or time frame is specified for this diagnostic group, so time frame is not applicable."
+        "reasoning": "Criterion 1 (D6) is met as D6 is 'YES'. Criterion 2 (O1a = NO and O1b = NO) is met since both O1a and O1b are 'NO'. No symptom group time frame analysis is required here as only these two criteria are specified. Therefore, all criteria are met."
     }
 }

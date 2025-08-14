@@ -1,12 +1,22 @@
 {
-    "mustHave": {
-        "diagnosis": false,
+    "current": {
+        "diagnosis": true,
         "timeFrame": null,
-        "reasoning": "1. At least 5 symptom groups (A3a\u2013A3g) coded YES: Cannot assess as no symptom group answers provided. 2. Core symptom: A1a=NO and A2a_2=NO; no other core symptom answers given, so core symptom criterion not met. 3. Functional impairment: No data provided for A4_current or A4_past, so cannot confirm functional impairment. 4. O1a=NO and O1b=NO assumed as per instructions. Since core symptom criterion is not met and symptom groups cannot be confirmed, overall diagnosis criteria are not met."
+        "reasoning": "Criterion 1 (G4 == 'YES') is met as G4 is YES. Criterion 2 requires either (G1a AND G1b AND G2) or (G3a AND G3b) to be YES. Both (G1a AND G1b AND G2) and (G3a AND G3b) are YES, so criterion 2 is met. Criterion 3 requires O1a = NO AND O1b = NO, which is true. All criteria are met. Since no time frame suffixes are provided, and all items are non-time-frame-specific, time frame cannot be determined and is set to null."
     },
-    "recurrent": {
+    "insight": {
         "diagnosis": false,
         "timeFrame": null,
-        "reasoning": "Criterion 1 (A5 = YES) cannot be evaluated as no information about A5 is provided. Criterion 2 (O1a = NO AND O1b = NO) cannot be evaluated as no information about O1a or O1b is provided. Therefore, neither criterion can be confirmed as met based on the patient's answers."
+        "reasoning": "Invalid criteria format."
+    },
+    "ticRelated": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "All general criteria (G1a, G1b, G2, G3a, G3b, G4) are marked YES, indicating the presence of tic-related symptoms. Organic causes (O1a, O1b) are marked NO, ruling out organic causes. Since no time frame suffixes are provided, the symptom groups are considered positive regardless of time frame. Therefore, the tic-related criteria are met."
+    },
+    "note": {
+        "diagnosis": true,
+        "timeFrame": "recent",
+        "reasoning": "The patient answered YES to all G1a, G1b, G2, G3a, G3b, and G4, indicating multiple positive symptom groups. Since these items do not specify time frames, they are considered positive regardless of time frame. The O1a and O1b (organic cause criteria) are NO, indicating organic causes are ruled out. The criteria require obsessive compulsive symptoms starting within 3 weeks of an infection, which corresponds to recent symptoms. Given the positive symptom groups and no organic cause, the diagnosis is true with a recent time frame."
     }
 }

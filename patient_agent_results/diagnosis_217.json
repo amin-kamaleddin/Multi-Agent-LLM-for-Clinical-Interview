@@ -1,12 +1,12 @@
 {
-    "mustHave": {
-        "diagnosis": false,
-        "timeFrame": null,
-        "reasoning": "1. Symptom groups: Past symptom groups positive: A3b, A3c, A3d, A3e, A3f, A3g (6 groups). Recent symptom groups positive: A3b, A3c, A3d, A3e, A3f, A3g (6 groups). Both past and recent independently meet the criterion of at least 5 symptom groups. 2. Core symptom: A1a=YES and A1b=YES and A2a_1=YES, so core symptom criterion met. 3. Functional impairment: A4_current=YES and A4_past=YES, so functional impairment criterion met. 4. Organic cause: O1a=NO and O1b=YES, but criterion requires O1a=NO AND O1b=NO; since O1b=YES, this criterion is not met. Therefore, despite meeting symptom, core, and functional impairment criteria, the organic cause criterion is not met, so diagnosis is false."
+    "lifetime": {
+        "diagnosis": true,
+        "timeFrame": "both",
+        "reasoning": "Criterion 1: Among P1a to P1f, five are YES (P1a, P1b, P1c, P1d, P1e), which is more than 2, so criterion 1 is met. Criterion 2: Among P2a to P2g, all seven are YES, which is more than 3, so criterion 2 is met. Since no time frame distinction is given and all items are lifetime, the time frame is considered 'both'."
     },
-    "recurrent": {
-        "diagnosis": false,
-        "timeFrame": null,
-        "reasoning": "Criterion 1 (A5=YES) is not met since A5=NO. Criterion 2 requires O1a=NO and O1b=NO; here O1a=NO but O1b=YES, so criterion 2 is not met. Therefore, not all criteria for the recurrent diagnosis are met."
+    "note": {
+        "diagnosis": true,
+        "timeFrame": "recent",
+        "reasoning": "All symptom groups are positive in the recent time frame (P1a-e and P2a-g are mostly YES except P1f NO). Since all positive symptom groups come from the recent time frame only, the symptom group criterion is met for recent. No indication that behaviors are exclusively politically or religiously motivated. Therefore, the diagnosis criteria are met with recent symptoms."
     }
 }

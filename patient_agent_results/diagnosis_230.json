@@ -1,12 +1,12 @@
 {
-    "mustHave": {
+    "lifetime": {
         "diagnosis": false,
         "timeFrame": null,
-        "reasoning": "1. Symptom groups: Past symptom groups positive: A3a, A3b, A3c, A3d, A3e, A3f, A3g (all YES in past) = 7 groups; Recent symptom groups positive: A3b, A3c, A3d, A3f (4 groups) which is less than 5. Therefore, only past meets the criterion of at least 5 symptom groups.\n2. Core symptom: A1a=YES, A1b=YES, A2a_1=YES, A2b=YES, so core symptom criterion is met.\n3. Functional impairment: A4_current=YES and A4_past=YES, so functional impairment criterion is met.\n4. Organic cause: O1a=NO and O1b=YES, but criterion requires O1a=NO AND O1b=NO; since O1b=YES, this criterion is NOT met.\nSince all criteria except the organic cause rule-out are met, the diagnosis is false."
+        "reasoning": "Criterion 1: Among P1a to P1f, P1a and P1b are YES, totaling 2 YES answers, which is not more than 2, so criterion 1 is not met. Criterion 2: Among P2a to P2g, P2a, P2b, P2c, P2e, P2f, and P2g are YES, totaling 6 YES answers, which is more than 3, so criterion 2 is met. Since criterion 1 is not met, the overall diagnosis is false. No time frame applies as criterion 1 is not satisfied."
     },
-    "recurrent": {
-        "diagnosis": false,
+    "note": {
+        "diagnosis": true,
         "timeFrame": null,
-        "reasoning": "Criterion 1 (A5 = YES) is not met because A5 = NO. Criterion 2 (O1a = NO AND O1b = NO) is not met because O1b = YES. Therefore, neither criterion for the 'recurrent' diagnostic group is satisfied."
+        "reasoning": "Symptom groups P1 and P2 both have multiple YES answers. P1 has YES for P1a and P1b, indicating this symptom group is positive. P2 has YES for P2a, P2b, P2c, P2e, P2f, and P2g, indicating this symptom group is positive. Since no time frames are specified in the data, and all YES answers are considered regardless of time frame, both symptom groups are positive. At least 2 symptom groups are positive, satisfying the symptom group criterion. No exclusion criteria or rule-outs are indicated. Therefore, the diagnosis is true. Because no specific time frame is given, timeFrame is null."
     }
 }

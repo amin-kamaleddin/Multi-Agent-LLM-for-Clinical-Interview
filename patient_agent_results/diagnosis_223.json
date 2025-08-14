@@ -1,12 +1,12 @@
 {
-    "mustHave": {
+    "lifetime": {
         "diagnosis": false,
         "timeFrame": null,
-        "reasoning": "1. At least 5 symptom groups: Past symptom groups positive: A3a, A3b, A3c, A3d, A3f, A3g (6 groups). Recent symptom groups positive: A3b, A3c, A3d, A3f, A3g (5 groups). Both past and recent independently meet the threshold. 2. Core symptom: A1a=YES and A1b=YES and A2a_1=YES, so core symptom criterion met. 3. Functional impairment: A4_current=YES and A4_past=YES, so functional impairment criterion met. 4. O1a=NO and O1b=YES, but criterion requires both NO; thus, this criterion is NOT met. Since the organic cause/rule-out criterion is not met, overall diagnosis is false."
+        "reasoning": "Criterion 1: Among P1a to P1f, P1a and P1b are YES, totaling 2, which is not more than 2, so criterion 1 is not met. Criterion 2: Among P2a to P2g, P2a, P2b, P2c, P2e, P2f, and P2g are YES, totaling 6, which is more than 3, so criterion 2 is met. Since criterion 1 is not met, the overall diagnosis is false. No time frame applies as criterion 1 is not satisfied."
     },
-    "recurrent": {
+    "note": {
         "diagnosis": false,
         "timeFrame": null,
-        "reasoning": "Criterion 1 (A5=YES) is not met since A5=NO. Criterion 2 requires O1a=NO and O1b=NO; here O1a=NO but O1b=YES, so criterion 2 is not met. Therefore, not all criteria for the recurrent diagnostic group are met."
+        "reasoning": "Symptom groups P1 and P2 are both positive since multiple items in each group are marked YES. P1a and P1b are YES, so P1 is positive. P2a, P2b, P2c, P2e, P2f, and P2g are YES, so P2 is positive. However, no time frames are specified for these items, so we cannot determine if these symptom groups belong to past or recent time frames exclusively. Since the criteria require at least 5 symptom groups from only one time frame (past or recent), and we have only two symptom groups without time frame specification, the symptom group criterion is not met. Therefore, the diagnosis is false and time frame is null."
     }
 }

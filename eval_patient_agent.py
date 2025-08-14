@@ -5,7 +5,7 @@ import re
 from sklearn.metrics import accuracy_score, confusion_matrix, precision_score, recall_score, f1_score
 
 # Paths
-patients_file = "./interview_agent/prompts/patients_with_system_prompts_small.json"
+patients_file = "./interview_agent/prompts/patients_with_system_prompts.json"
 results_dir = "./patient_agent_results"
 output_csv = "./patient_agent_results/predictions.csv"
 

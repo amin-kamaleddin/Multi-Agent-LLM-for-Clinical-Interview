@@ -1,12 +1,22 @@
 {
-    "mustHave": {
+    "current": {
         "diagnosis": false,
         "timeFrame": null,
-        "reasoning": "Criterion 1 (at least 5 symptom groups A3a\u2013A3g coded YES) cannot be evaluated as no symptom group data is provided. Criterion 2 (core symptom) is not met because A1a=NO and A2a_2=NO, and no other core symptom items are given as YES. Criterion 3 (functional impairment) cannot be evaluated due to lack of data. Criterion 4 (O1a=NO and O1b=NO) is met by inference. Overall, core symptom criterion is not met, so diagnosis is false."
+        "reasoning": "Criterion 1 (G4 == 'YES') is not met because G4 is NO. Criterion 2 ((G1a AND G1b AND G2) OR (G3a AND G3b)) is met because G3a and G3b are both YES. Criterion 3 (O1a = NO AND O1b = NO) is met as both are NO. Since criterion 1 is not met, the overall diagnosis is false."
     },
-    "recurrent": {
+    "insight": {
         "diagnosis": false,
         "timeFrame": null,
-        "reasoning": "Criterion 1 (A5 = YES) cannot be evaluated as A5 is not provided. Criterion 2 requires O1a = NO and O1b = NO, but neither O1a nor O1b are provided. Based solely on the given answers (A1a: NO, A2a_2: NO), neither criterion is met."
+        "reasoning": "Invalid criteria format."
+    },
+    "ticRelated": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "The patient answered YES to G3a and G3b, indicating the tic-related symptom group G3 is positive. No other symptom groups (G1, G4, O1) are positive. Since only one symptom group is positive, the criterion for tic-related diagnosis (which typically requires multiple symptom groups) is not met. No time frame distinction is possible as only one group is positive."
+    },
+    "note": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "No obsessive compulsive symptom groups are positive since O1a and O1b are both NO. Therefore, no obsessive compulsive symptoms starting within 3 weeks of an infection are present."
     }
 }

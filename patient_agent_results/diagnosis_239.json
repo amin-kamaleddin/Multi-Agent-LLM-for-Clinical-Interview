@@ -1,12 +1,12 @@
 {
-    "mustHave": {
+    "lifetime": {
         "diagnosis": false,
         "timeFrame": null,
-        "reasoning": "Criterion 1: Cannot be evaluated because no information on symptom groups (A3a\u2013A3g) is provided, so cannot confirm at least 5 symptom groups coded YES in one time frame. Criterion 2: Core symptom is not met because A1a=NO and A2a_2=NO, and no other core symptom items provided as YES. Criterion 3: Functional impairment (A4_current or A4_past) not provided, so cannot confirm. Criterion 4: O1a=NO and O1b=NO, so organic causes ruled out. Overall, insufficient data to meet criteria 1, 2, and 3; therefore, diagnosis is false with no time frame."
+        "reasoning": "Criterion 1: Among P1a to P1f, only P1c is YES (1 out of 6), which is not more than 2, so criterion 1 is not met. Criterion 2: Among P2a to P2g, P2a, P2c, P2d, and P2e are YES (4 out of 7), which is more than 3, so criterion 2 is met. Since no time frame distinction is provided, the diagnosis is based on lifetime criteria and the symptom count is sufficient for criterion 2 only."
     },
-    "recurrent": {
+    "note": {
         "diagnosis": false,
         "timeFrame": null,
-        "reasoning": "Criterion 1 (A5 = YES) is not met because there is no information indicating A5 is YES. Criterion 2 (O1a = NO AND O1b = NO) cannot be evaluated as O1a and O1b are not provided. Therefore, not all criteria are met."
+        "reasoning": "Symptom group P1 has only one 'YES' (P1c: YES), so it is positive. Symptom group P2 has multiple 'YES' answers (P2a, P2c, P2d, P2e), so it is positive. Both groups are positive but no time frames are specified, so time frame cannot be determined. Since the criteria require at least 5 symptom groups positive from one time frame and only 2 groups are positive, the diagnostic threshold is not met."
     }
 }

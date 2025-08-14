@@ -1,12 +1,7 @@
 {
-    "mustHave": {
+    "current": {
         "diagnosis": false,
         "timeFrame": null,
-        "reasoning": "Criterion 1 (at least 5 symptom groups positive in one time frame): Cannot be assessed as no symptom group data provided. Criterion 2 (core symptom): Not met since A1a=NO and A2a_2=NO, and no other core symptoms provided. Criterion 3 (functional impairment): No data provided. Criterion 4 (organic causes): ruled out. Overall, core symptom criterion not met, so diagnosis is false."
-    },
-    "recurrent": {
-        "diagnosis": false,
-        "timeFrame": null,
-        "reasoning": "Criterion 1 (A5 = YES) is not met because there is no information indicating A5 is YES. Criterion 2 (O1a = NO AND O1b = NO) cannot be confirmed as there is no data on O1a or O1b. Therefore, not all criteria are met."
+        "reasoning": "Criterion E6 requires the answer to be 'YES', but the patient's only provided answer (E1) is 'NO'. No information indicates E6 is 'YES'. Therefore, the criterion E6 is not met."
     }
 }

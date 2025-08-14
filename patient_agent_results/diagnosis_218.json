@@ -1,12 +1,12 @@
 {
-    "mustHave": {
-        "diagnosis": false,
-        "timeFrame": "past",
-        "reasoning": "1. Symptom groups: Past symptom groups positive: A3a, A3b, A3c, A3d, A3e, A3f, A3g (all YES in past) = 7 groups; Recent symptom groups positive: A3b, A3c, A3d, A3f (YES recent), total 4 groups. Only past meets the threshold of at least 5 symptom groups. 2. Core symptom: A1a=YES, A1b=YES, A2a_1=YES, A2b=YES, so core symptom criterion met. 3. Functional impairment: A4_current=YES and A4_past=YES, so functional impairment criterion met. 4. Organic cause: O1a=NO and O1b=YES; criterion requires both NO, so this criterion is NOT met. Since the organic cause criterion is not met, diagnosis is false despite other criteria being met. Time frame is past because only past symptom groups meet threshold."
-    },
-    "recurrent": {
+    "lifetime": {
         "diagnosis": false,
         "timeFrame": null,
-        "reasoning": "Criterion 1 (A5=YES) is not met since A5=NO. Criterion 2 requires O1a=NO and O1b=NO; here O1a=NO but O1b=YES, so criterion 2 is not met. Therefore, the diagnostic group criteria are not satisfied."
+        "reasoning": "Criterion 1: Among P1a to P1f, P1a and P1b are YES, totaling 2 YES answers, which is not more than 2, so criterion 1 is not met. Criterion 2: Among P2a to P2g, P2a, P2b, P2c, P2e, P2f, and P2g are YES, totaling 6 YES answers, which is more than 3, so criterion 2 is met. Since criterion 1 is not met, the overall diagnosis is false. No time frame can be assigned as criterion 1 is not satisfied."
+    },
+    "note": {
+        "diagnosis": true,
+        "timeFrame": "recent",
+        "reasoning": "Symptom groups are considered positive if any question in the group is 'YES'. P1a and P1b are 'YES', indicating at least one symptom group positive in the past (assuming P1 series corresponds to past). P2a, P2b, P2c, P2e, P2f, and P2g are 'YES', indicating multiple symptom groups positive in the recent time frame. Since more symptom groups are positive in the recent time frame and the past time frame has fewer, the symptom threshold is met in the recent time frame only. No indication that behaviors are exclusively politically or religiously motivated. Therefore, diagnosis is true with recent time frame."
     }
 }

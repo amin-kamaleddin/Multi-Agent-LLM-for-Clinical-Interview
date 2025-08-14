@@ -1,12 +1,12 @@
 {
-    "mustHave": {
+    "lifetime": {
         "diagnosis": false,
         "timeFrame": null,
-        "reasoning": "Criterion 1 (at least 5 symptom groups A3a\u2013A3g coded YES) cannot be evaluated as no symptom group data is provided. Criterion 2 (core symptom) is not met because A1a=NO and A2a_2=NO, and no other core symptom items are given as YES. Criterion 3 (functional impairment) cannot be evaluated due to lack of data. Criterion 4 (O1a=NO and O1b=NO) is met by inference. Since core symptom criterion is not met, overall diagnosis is false."
+        "reasoning": "Criterion 1: Among P1a to P1f, only P1b is YES (1 YES), which is not more than 2, so criterion 1 is not met. Criterion 2: Among P2a to P2g, P2a, P2b, P2e, and P2f are YES (4 YES), which is more than 3, so criterion 2 is met. Since criterion 1 is not met, the overall diagnosis is false. No time frame applies as criterion 1 is not met."
     },
-    "recurrent": {
+    "note": {
         "diagnosis": false,
         "timeFrame": null,
-        "reasoning": "Criterion 1 (A5 = YES) is not met because there is no information indicating A5 is YES. Criterion 2 (O1a = NO AND O1b = NO) cannot be evaluated due to lack of data on O1a and O1b. Therefore, not all criteria are met."
+        "reasoning": "Symptom groups are considered positive if any question in the group is 'YES'. P1b is YES, so the first symptom group (P1) is positive. P2a, P2b, P2e, and P2f are YES, so the second symptom group (P2) is positive. There is no indication of time frames (past or recent) in the data, so time frame cannot be determined. Since at least two symptom groups are positive, but the criteria for number of symptom groups required is not specified, and no time frame is indicated, the diagnosis cannot be confirmed as true. Also, no information suggests the symptoms are exclusively politically or religiously motivated, so no exclusion applies. Given the limited data and no time frame, diagnosis is false."
     }
 }

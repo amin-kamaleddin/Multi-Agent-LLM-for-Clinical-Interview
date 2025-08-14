@@ -1,12 +1,12 @@
 {
-    "mustHave": {
+    "lifetime": {
         "diagnosis": false,
         "timeFrame": null,
-        "reasoning": "1. At least 5 symptom groups (A3a\u2013A3g) coded YES: Cannot assess due to lack of data on symptom groups; no symptom groups are indicated as YES. 2. Core symptom: A1a=NO and A2a_2=NO; no other core symptom data provided, so core symptom criterion not met. 3. Functional impairment (A4_current or A4_past): no data provided, assumed NO. 4. O1a=NO and O1b=NO: organic causes ruled out. Overall, core symptom and symptom group criteria are not met, so diagnosis is false."
+        "reasoning": "Criterion 1 (D3 is YES) is not met because D3 is not provided as YES. Criterion 2 requires 4 or more of the listed symptom groups (D4a-D4m) to be YES, but no symptom group data is provided, so cannot confirm. Criterion 3 requires O1a = NO and O1b = NO; no data provided, but organic causes are assumed ruled out. Since D3 is not YES, the overall criteria are not met."
     },
-    "recurrent": {
+    "current": {
         "diagnosis": false,
         "timeFrame": null,
-        "reasoning": "Criterion 1 (A5 = YES) cannot be evaluated as A5 is not provided. Criterion 2 (O1a = NO AND O1b = NO) cannot be evaluated as O1a and O1b are not provided. Based solely on the provided answers (A1a: NO, A2a_2: NO), neither criterion is met."
+        "reasoning": "Criterion 1 (D6 is 'YES') is not met because D6 is not provided as 'YES'. Criterion 2 requires O1a = NO and O1b = NO; since these are not provided, cannot confirm, but at least one criterion is unmet. Therefore, overall criteria are not met."
     }
 }

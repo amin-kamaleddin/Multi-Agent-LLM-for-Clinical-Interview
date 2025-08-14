@@ -1,12 +1,12 @@
 {
-    "mustHave": {
+    "lifetime": {
         "diagnosis": false,
         "timeFrame": null,
-        "reasoning": "1. Symptom groups positive: Past - A3a, A3b, A3c, A3d, A3e, A3f (6 groups); Recent - A3b, A3d, A3f (3 groups). Only past meets the threshold of at least 5 symptom groups. 2. Core symptom: A1a=YES, A1b=YES, A2a_1=YES, A2b=YES, so criterion met. 3. Functional impairment: A4_current=YES and A4_past=YES, criterion met. 4. O1a=NO and O1b=YES, so criterion 4 is NOT met (requires both NO). Therefore, diagnosis is false due to criterion 4 failure."
+        "reasoning": "Criterion 1 (D3) is met because D3 is YES. Criterion 2 requires 4 or more YES answers among D4a to D4m. There are 11 YES responses (D4a,b,c,d,e,f,h,j,k,l,m) and 2 NO (D4g,i), so criterion 2 is met. Criterion 3 requires O1a = NO and O1b = NO; here O1a = NO but O1b = YES, so criterion 3 is not met. Therefore, the diagnosis is false. Time frame cannot be determined as diagnosis is false."
     },
-    "recurrent": {
+    "current": {
         "diagnosis": false,
         "timeFrame": null,
-        "reasoning": "Criterion 1 (A5 = YES) is not met because A5 = NO. Criterion 2 (O1a = NO AND O1b = NO) is not met because O1b = YES. Therefore, neither diagnostic criterion is satisfied."
+        "reasoning": "Criterion 1 (D6) is met as D6 = YES. Criterion 2 requires O1a = NO and O1b = NO; here O1a = NO but O1b = YES, so criterion 2 is not met. Since all criteria are not met, diagnosis is false. Time frame is null as diagnosis is negative."
     }
 }

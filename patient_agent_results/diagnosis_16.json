@@ -2,11 +2,11 @@
     "mustHave": {
         "diagnosis": false,
         "timeFrame": null,
-        "reasoning": "1. Symptom groups (A3a\u2013A3g): Only A3d_past=YES, so 1 symptom group positive in past, 0 in recent; does not meet the requirement of at least 5 symptom groups in one time frame. 2. Core symptom: A2a_2=YES, so core symptom criterion met. 3. Functional impairment: A4_current=NO and A4_past=NO, so functional impairment criterion not met. 4. O1a=NO and O1b=NO, so organic cause ruled out. Since symptom group and functional impairment criteria are not met, overall diagnosis is false."
+        "reasoning": "Criterion 1 (at least 5 symptom groups) cannot be evaluated due to lack of data on symptom groups A3a\u2013A3g; no symptom groups are marked YES. Criterion 2 (core symptom) is not met since A1a=NO and A2a_2=NO, and no other core symptoms are provided. Criterion 3 (functional impairment) cannot be evaluated due to missing data. Criterion 4 (O1a=NO and O1b=NO) is assumed met as per instructions. Overall, not all criteria are met."
     },
     "recurrent": {
         "diagnosis": false,
         "timeFrame": null,
-        "reasoning": "Criterion 1 (A5 = YES) is not met because A5 = NO. Criterion 2 (O1a = NO AND O1b = NO) is met since both are NO. Since not all criteria are met, diagnosis is false."
+        "reasoning": "Criterion 1 (A5 = YES) cannot be met because there is no information indicating A5 is YES. Criterion 2 (O1a = NO AND O1b = NO) cannot be confirmed as there is no data on O1a or O1b. Therefore, not all criteria are met."
     }
 }
