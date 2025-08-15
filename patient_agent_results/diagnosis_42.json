@@ -2,11 +2,11 @@
     "lifetime": {
         "diagnosis": false,
         "timeFrame": null,
-        "reasoning": "Criterion 1 (D3 is YES) is not met because D3 = NO. Criterion 2 requires 4 or more YES among D4a-D4m; there are 5 YES (D4a, D4b, D4f, D4m, plus D1a and D1b but those are not part of this criterion), so criterion 2 is met. Criterion 3 requires O1a = NO and O1b = NO, which is met. However, since criterion 1 is not met, the overall diagnosis is false. Time frame cannot be determined as criterion 1 fails."
+        "reasoning": "Criterion 1 (D3 is YES) is not met because D3 is NO. Criterion 2 requires 4 or more YES answers among D4a to D4m; there are 5 YES (D4a, D4b, D4f, D4m, and D1a/D1b/D2 are outside this set). Thus, criterion 2 is met. Criterion 3 requires O1a=NO and O1b=NO, which is met. However, since criterion 1 is not met, the overall diagnosis is false. Time frame is null as the symptom group criterion is met but the mandatory D3 criterion is not."
     },
     "current": {
         "diagnosis": false,
         "timeFrame": null,
-        "reasoning": "Criterion 1 (D6 is 'YES') is not met because D6 = NO. Criterion 2 (O1a = NO AND O1b = NO) is met since both are NO. However, since all criteria must be met and criterion 1 is not, the overall diagnosis is false. No symptom group or time frame analysis is needed as the key criterion D6 is negative."
+        "reasoning": "Criterion 1 (D6 is 'YES') is not met because D6 = NO. Criterion 2 (O1a = NO AND O1b = NO) is met as both are NO. Since not all criteria are met, the diagnosis is false. Time frame is null as no diagnosis is made."
     }
 }

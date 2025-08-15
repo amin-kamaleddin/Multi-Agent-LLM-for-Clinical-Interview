@@ -2,7 +2,7 @@
     "current": {
         "diagnosis": false,
         "timeFrame": null,
-        "reasoning": "Criterion 1 (G4 == 'YES') is not met because G4 is NO. Criterion 2 ((G1a AND G1b AND G2) OR (G3a AND G3b)) is met because G3a and G3b are both YES. Criterion 3 (O1a = NO AND O1b = NO) is met as both are NO. However, since Criterion 1 is not met, the overall diagnosis is false."
+        "reasoning": "Criterion 1 (G4 == 'YES') is not met because G4 is NO. Criterion 2 ((G1a AND G1b AND G2) OR (G3a AND G3b)) is met since G3a and G3b are both YES. Criterion 3 (O1a = NO AND O1b = NO) is met as both are NO. However, since Criterion 1 is not met, the overall diagnosis is false."
     },
     "insight": {
         "diagnosis": false,
@@ -10,13 +10,13 @@
         "reasoning": "Invalid criteria format."
     },
     "ticRelated": {
-        "diagnosis": false,
-        "timeFrame": null,
-        "reasoning": "The patient answered YES to G3a and G3b, indicating the tic-related symptom group G3 is positive. No other symptom groups are positive (G1a and G4 are NO). Since only one symptom group is positive, the criterion for tic-related diagnosis (which typically requires multiple symptom groups) is not met. Organic causes are ruled out, but insufficient symptom groups are present to confirm tic-related diagnosis."
+        "diagnosis": true,
+        "timeFrame": "recent",
+        "reasoning": "Symptom groups G3a and G3b are positive (YES), indicating at least one symptom group is positive. G1a and G4 are negative. Since both positive symptom groups are from the same time frame (no time frame specified, treated as one unit), the symptom group criterion is met. Organic causes are ruled out. Non-time-frame items O1a and O1b are negative but not required for tic-related diagnosis. Therefore, criteria for tic-related diagnosis are met with the positive symptom groups G3a and G3b."
     },
     "note": {
         "diagnosis": false,
         "timeFrame": null,
-        "reasoning": "No obsessive compulsive symptom groups are positive since O1a and O1b are both NO. Therefore, no obsessive compulsive symptoms starting within 3 weeks of an infection are present."
+        "reasoning": "No obsessive compulsive symptom groups are positive since O1a and O1b are both NO. Therefore, the criterion of any obsessive compulsive symptoms starting within 3 weeks of an infection is not met."
     }
 }

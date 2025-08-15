@@ -2,6 +2,6 @@
     "current": {
         "diagnosis": false,
         "timeFrame": null,
-        "reasoning": "Criterion 1 (N4 == 'YES') is not met because N4 is not provided as YES. Criterion 2 requires more than 3 of (N3a,N3b,N3c,N3d,N3e,N3f) to be YES in the same time frame, but no answers for these are given, so cannot be met. Criterion 3 requires O1a = NO and O1b = NO; these are not provided, so cannot confirm. Therefore, not all criteria are met."
+        "reasoning": "Criterion 1 (N4 == 'YES') is not met because N4 is not provided as 'YES'. Criterion 2 requires at least 3 symptom groups (N3a\u2013N3f) coded YES in the same time frame, but no symptom group data is provided to confirm this. Criterion 3 requires O1a = NO and O1b = NO, but these values are not provided. Based solely on the available data (N1a = NO) and no evidence for other criteria, none of the criteria are met."
     }
 }

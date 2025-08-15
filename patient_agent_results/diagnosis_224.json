@@ -2,11 +2,11 @@
     "lifetime": {
         "diagnosis": true,
         "timeFrame": null,
-        "reasoning": "Criterion 1: Among (P1a, P1b, P1c, P1d, P1e, P1f), four are YES (P1a, P1b, P1c, P1d), which is more than 2, so criterion 1 is met. Criterion 2: Among (P2a, P2b, P2c, P2d, P2e, P2f, P2g), all seven are YES, which is more than 3, so criterion 2 is met. Since these items are not time-frame specific, time frame is not applicable."
+        "reasoning": "Criterion 1: Among (P1a, P1b, P1c, P1d, P1e, P1f), P1a, P1b, and P1c are YES, totaling 3 YES answers, which is more than 2, so criterion 1 is met. Criterion 2: Among (P2a, P2b, P2c, P2d, P2e, P2f, P2g), all 7 are YES, which is more than 3, so criterion 2 is met. Since no time frame is specified for these items, and all are positive, the diagnosis is true. Time frame cannot be determined from the data, so it is null."
     },
     "note": {
         "diagnosis": true,
-        "timeFrame": null,
-        "reasoning": "All symptom groups P1a-d and P2a-g are marked YES, indicating multiple positive symptom groups. Since all P1a-d are YES and P2a-g are YES, and no time frame distinction is given, we consider these as positive symptom groups without mixing time frames. The criteria for symptom groups are met. No indication that behaviors are exclusively politically or religiously motivated. Therefore, the diagnostic criteria are met."
+        "timeFrame": "both",
+        "reasoning": "P1a, P1b, and P1c are YES, indicating positive symptom groups in the past. P1d, P1e, and P1f are NO, so no additional past symptom groups. P2a through P2g are all YES, indicating multiple positive symptom groups in the recent time frame. Since both past and recent symptom groups meet the criteria independently (past: at least 3 positive; recent: at least 5 positive), the diagnosis is true with both time frames positive. No indication that behaviors are exclusively politically or religiously motivated."
     }
 }

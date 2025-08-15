@@ -1,12 +1,12 @@
 {
     "lifetime": {
         "diagnosis": true,
-        "timeFrame": "both",
-        "reasoning": "Criterion 1: Among P1a to P1f, five are YES (P1a, P1b, P1c, P1d, P1e), which is more than 2, so criterion 1 is met. Criterion 2: Among P2a to P2g, six are YES (P2a, P2b, P2c, P2d, P2e, P2f), which is more than 3, so criterion 2 is met. Since no time frame distinction is provided and all items are lifetime, the time frame is considered 'both'."
+        "timeFrame": null,
+        "reasoning": "Criterion 1: Among P1a to P1f, five are YES (P1a, P1b, P1c, P1d, P1e), which is more than 2, so criterion 1 is met. Criterion 2: Among P2a to P2g, all seven are YES, which is more than 3, so criterion 2 is met. Since no time frame is specified for these items, and all are positive, the diagnosis is true. Time frame cannot be determined from the given data, so it is null."
     },
     "note": {
         "diagnosis": true,
-        "timeFrame": "recent",
-        "reasoning": "All symptom groups are positive in the recent time frame (P1a-e and P2a-f are YES, P1f and P2g are NO). Since at least 5 symptom groups are positive recently and no indication that behaviors are exclusively politically or religiously motivated, the diagnostic criteria are met for the recent time frame."
+        "timeFrame": null,
+        "reasoning": "All symptom groups are positive based on the patient's 'YES' answers. Since all answers are given without time frame suffixes, they are considered valid regardless of time frame. The patient meets all criteria with no indication that behaviors are exclusively politically or religiously motivated. Therefore, the diagnosis is true. Time frame cannot be determined specifically as past or recent due to lack of time frame data, so it is null."
     }
 }

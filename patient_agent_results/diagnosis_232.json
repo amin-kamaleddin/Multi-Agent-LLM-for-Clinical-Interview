@@ -1,12 +1,12 @@
 {
     "lifetime": {
         "diagnosis": true,
-        "timeFrame": "both",
-        "reasoning": "Criterion 1: Among P1a to P1f, P1a, P1b, and P1c are YES, totaling 3 YES answers, which is more than 2, so criterion 1 is met. Criterion 2: Among P2a to P2g, P2a, P2c, P2d, P2e, P2f, and P2g are YES, totaling 6 YES answers, which is more than 3, so criterion 2 is met. Since no time frame distinction is given and all items are lifetime, the time frame is considered 'both' by default."
+        "timeFrame": null,
+        "reasoning": "Criterion 1: Among P1a to P1f, P1a, P1b, and P1c are YES (3 out of 6), so criterion 1 is met. Criterion 2: Among P2a to P2g, P2a, P2c, P2d, P2e, P2f, and P2g are YES (6 out of 7), so criterion 2 is met. Since no time frame is specified for these items, and both criteria are met based on lifetime answers, diagnosis is true. Time frame cannot be determined from the data, so null."
     },
     "note": {
         "diagnosis": true,
-        "timeFrame": "recent",
-        "reasoning": "Symptom groups P1a, P1b, P1c are positive (YES) indicating at least 3 symptom groups in the past. Symptom groups P2a, P2c, P2d, P2e, P2f, P2g are positive (YES) indicating at least 5 symptom groups in the recent time frame. Since the requirement is at least 5 symptom groups from only one time frame, the recent time frame meets this criterion. No indication that behaviors are exclusively politically or religiously motivated. Therefore, the diagnostic criteria are met for the recent time frame."
+        "timeFrame": "both",
+        "reasoning": "Symptom groups P1a, P1b, P1c are positive (YES), indicating at least one symptom group positive in the past. Symptom groups P2a, P2c, P2d, P2e, P2f, P2g are positive (YES), indicating multiple symptom groups positive in the recent time frame. Since the symptom groups are positive in both past and recent time frames independently, the symptom group criterion is met for both time frames. No exclusion criteria or rule-outs apply. Therefore, the diagnosis is true with both time frames positive."
     }
 }

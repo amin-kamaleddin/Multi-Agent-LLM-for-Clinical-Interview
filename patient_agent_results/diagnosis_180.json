@@ -2,6 +2,6 @@
     "current": {
         "diagnosis": false,
         "timeFrame": null,
-        "reasoning": "Criterion 1 (N4 == 'YES') is met since N4 is YES. Criterion 2 requires more than 3 of N3a-f to be YES; only N3a and N3b are YES (2 total), so this criterion is not met. Criterion 3 requires O1a and O1b both to be NO, which they are. Since criterion 2 is not met, the overall diagnosis is false."
+        "reasoning": "Criterion 1 (N4 == 'YES') is met since N4 is YES. For criterion 2, symptom groups N3a\u2013N3f have only one YES (N3b), so only 1 symptom group is positive, which is less than the required 3. Criterion 3 (O1a = NO and O1b = NO) is met. Since criterion 2 is not met, the overall diagnosis is false."
     }
 }

@@ -2,11 +2,11 @@
     "lifetime": {
         "diagnosis": true,
         "timeFrame": null,
-        "reasoning": "Criterion 1: Among P1a to P1f, P1a, P1b, P1c, and P1d are YES (4 YES), which is more than 2, so criterion 1 is met. Criterion 2: Among P2a to P2g, P2a, P2b, P2c, P2d, P2e, and P2f are YES (6 YES), which is more than 3, so criterion 2 is met. Since no time frame is specified for these items, and both criteria are met, diagnosis is true. Time frame cannot be determined from the data, so null."
+        "reasoning": "Criterion 1: Among (P1a, P1b, P1c, P1d, P1e, P1f), four are YES (P1a, P1b, P1c, P1d), which is more than 2, so criterion 1 is met. Criterion 2: Among (P2a, P2b, P2c, P2d, P2e, P2f, P2g), all seven are YES, which is more than 3, so criterion 2 is met. Since these items are not time-frame specific, and no conflicting time frame information is given, the diagnosis is true with no specific time frame."
     },
     "note": {
         "diagnosis": true,
-        "timeFrame": "both",
-        "reasoning": "All symptom groups P1a-d and P2a-f are positive. P1a-d are presumably from one time frame (likely past), and P2a-f from another (likely recent). Since P1e-f and P2g are NO, they do not affect positivity. There are at least 5 positive symptom groups in both time frames independently (P1a-d = 4 groups, P2a-f = 6 groups). No indication that behaviors are exclusively politically or religiously motivated. Therefore, criteria are met for both past and recent time frames."
+        "timeFrame": "recent",
+        "reasoning": "All symptom groups P1a-d and P2a-g are positive. P1a-d (4 groups) are positive and presumably represent one time frame (likely past), while P2a-g (7 groups) are positive and presumably represent another time frame (likely recent). Since at least 5 symptom groups are required and P2a-g alone satisfy this threshold, the criterion is met for the recent time frame. No indication that behaviors are exclusively politically or religiously motivated. Therefore, diagnosis is true with recent time frame."
     }
 }
