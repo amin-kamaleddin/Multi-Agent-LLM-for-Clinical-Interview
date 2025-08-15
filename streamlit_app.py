@@ -36,29 +36,8 @@ MODULES_DIR = Path("modules")
 
 
 def ensure_api_key():
-    # Try to get API key from Streamlit secrets first (for HF Spaces)
-    api_key = None
-    
-    if hasattr(st, 'secrets') and 'OPENAI_API_KEY' in st.secrets:
-        api_key = st.secrets['OPENAI_API_KEY']
-        os.environ['OPENAI_API_KEY'] = api_key
-    elif "OPENAI_API_KEY" in os.environ:
-        api_key = os.environ["OPENAI_API_KEY"]
-    
-    if not api_key:
-        st.error("""
-        🔑 **OpenAI API Key Required**
-        
-        To use this app, you need to provide an OpenAI API key. 
-        
-        **For Hugging Face Spaces:**
-        1. Go to your Space settings
-        2. Navigate to "Repository secrets" 
-        3. Add a secret with key `OPENAI_API_KEY` and your API key as the value
-        
-        **For local development:**
-        Add `OPENAI_API_KEY=your-key-here` to your `.env` file or environment variables.
-        """)
+    if "OPENAI_API_KEY" not in os.environ:
+        st.error("OPENAI_API_KEY not set. Add it to your environment or .env file.")
         st.stop()
 
 
@@ -343,12 +322,7 @@ if st.session_state.latest_judge_result:
     
     # Show Next Question button
     if st.button("Next Question", use_container_width=True, type="primary"):
-        # Process selector logic to move to next question
-        if should_clarify(state) == "continue":
-            updates = selector(state)
-            state = apply_selector_updates(state, updates)
-        
-        # Clear feedback and continue
+        # Clear feedback and continue (selector logic already ran after judge)
         st.session_state.latest_judge_result = None
         st.session_state.awaiting_answer = False
         st.session_state.clear_answer = True
@@ -408,8 +382,16 @@ if answer:
     state.messages = list(state.messages) + judge_result["messages"]
     state.judge_results = list(state.judge_results) + judge_result["judge_results"]
 
+    # Run selector to determine next step (this sets ready_for_diagnosis if needed)
+    if should_clarify(state) == "continue":
+        updates = selector(state)
+        state = apply_selector_updates(state, updates)
+    
+    # Update session state with the modified state
+    st.session_state.state = state
+
     # Always rerun to show the feedback
-    st.rerun()
+    # st.rerun()
 
     branch = should_diagnose(state)
     if branch == "diagnose":
