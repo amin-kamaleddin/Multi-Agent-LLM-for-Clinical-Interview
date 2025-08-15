@@ -1,4 +1,5 @@
 import os
+import sys
 import uuid
 from pathlib import Path
 from io import StringIO
@@ -229,6 +230,11 @@ if os.getenv("SPACE_ID"):  # Hugging Face Spaces environment
         st.sidebar.success("✅ OpenAI API Key configured")
     else:
         st.sidebar.warning("⚠️ OpenAI API Key not configured")
+    
+    # Add health check info for debugging
+    st.sidebar.caption(f"Health: App loaded successfully ✅")
+    st.sidebar.caption(f"Modules dir exists: {MODULES_DIR.exists()}")
+    st.sidebar.caption(f"Python version: {sys.version.split()[0]}")
 
 ensure_api_key()
 
