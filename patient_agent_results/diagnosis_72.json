@@ -2,6 +2,6 @@
     "current": {
         "diagnosis": false,
         "timeFrame": null,
-        "reasoning": "Criterion E6 requires the answer to be 'YES', but the patient answered 'NO' to E1 and no information about E6 is provided. Therefore, E6 cannot be considered met."
+        "reasoning": "Criterion E6 requires the answer to be 'YES', but the patient answered 'NO' to E1 and no information about E6 is provided. Therefore, E6 cannot be confirmed as met."
     }
 }

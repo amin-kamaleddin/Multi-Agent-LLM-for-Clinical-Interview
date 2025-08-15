@@ -182,14 +182,14 @@
     },
     {
       "id": "O1a",
-      "prompt": "Were you taking any drugs or medicines or in withdrawal from any of these?",
+      "prompt": "Were you taking any drugs or medicines or in withdrawal from any of these? I am trying to understand if the symptoms you have described could be caused by other organic factors.",
       "responseType": "choice",
       "options": ["No", "Yes"],
       "next": { "no": "O1b", "yes": "O1b"}
     },
     {
       "id": "O1b",
-      "prompt": "Did you have any medical illness?",
+      "prompt": "Did you have any other medical illness unrelated to the one we discussed today? I am trying to understand if the symptoms you have described could be caused by other organic factors.",
       "responseType": "choice",
       "options": ["No", "Yes"],
       "next": { "no": "DIAGNOSTIC", "yes": "DIAGNOSTIC"}

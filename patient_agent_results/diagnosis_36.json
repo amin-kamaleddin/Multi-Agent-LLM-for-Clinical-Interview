@@ -2,11 +2,11 @@
     "lifetime": {
         "diagnosis": false,
         "timeFrame": null,
-        "reasoning": "Criterion 1 (D3 is YES) is not met because D3 is NO. Criterion 2 requires 4 or more YES answers among D4a to D4m; the patient has 5 YES (D4a, D4d, D4f, D4m, plus D1a and D1b but those are not part of this criterion), so criterion 2 is met. Criterion 3 requires O1a=NO and O1b=NO, which is met. However, since criterion 1 is not met, the overall diagnosis is false."
+        "reasoning": "Criterion 1 (D3 is YES) is not met because D3 is NO. Criterion 2 requires 4 or more YES answers among D4a to D4m; the patient has 3 YES (D4a, D4f, D4m), so this is not met. Criterion 3 (O1a=NO and O1b=NO) is met. Since not all criteria are met, diagnosis is false."
     },
     "current": {
         "diagnosis": false,
         "timeFrame": null,
-        "reasoning": "Criterion 1 (D6 is 'YES') is not met because D6 = NO. Criterion 2 (O1a = NO AND O1b = NO) is met since both O1a and O1b are NO. However, since all criteria must be met and criterion 1 is not, the overall diagnosis is false. Time frame is null as no symptom group threshold is evaluated here."
+        "reasoning": "Criterion 1 (D6 is 'YES') is not met because D6 is 'NO'. Criterion 2 (O1a = NO AND O1b = NO) is met as both are 'NO'. Since not all criteria are met, the diagnosis is false."
     }
 }

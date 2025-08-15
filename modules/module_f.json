@@ -53,7 +53,7 @@
     },
     {
       "id": "O1b",
-      "prompt": "Did you have any medical illness?",
+      "prompt": "Did you have any other medical illness unrelated to the one we discussed today? I am trying to understand if the symptoms you have described could be caused by other organic factors.",
       "responseType": "choice",
       "options": ["No", "Yes"],
       "next": { "no": "DIAGNOSTIC", "yes": "DIAGNOSTIC"}

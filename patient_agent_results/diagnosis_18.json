@@ -2,11 +2,11 @@
     "mustHave": {
         "diagnosis": false,
         "timeFrame": null,
-        "reasoning": "Core symptom criterion is not met because A1a and A2a_2 are both NO, and no other core symptom items are provided as YES. Symptom group criterion cannot be evaluated due to lack of data. Functional impairment and organic cause criteria cannot be confirmed as met. Therefore, overall criteria are not satisfied."
+        "reasoning": "Core symptom criterion is not met because A1a=NO and A2a_2=NO, and no other core symptom items are provided as YES. Symptom group criterion cannot be evaluated due to lack of data, but core symptom absence alone rules out diagnosis."
     },
     "recurrent": {
         "diagnosis": false,
         "timeFrame": null,
-        "reasoning": "Criterion 1 (A5 = YES) is not met because there is no information indicating A5 is YES. Criterion 2 (O1a = NO AND O1b = NO) cannot be evaluated as O1a and O1b are not provided. Therefore, not all criteria are met."
+        "reasoning": "Criterion 1 (A5 = YES) is not met because there is no information indicating A5 is YES. Criterion 2 (O1a = NO AND O1b = NO) cannot be confirmed as there is no data provided for O1a or O1b. Therefore, not all criteria are met."
     }
 }

@@ -2,6 +2,6 @@
     "current": {
         "diagnosis": true,
         "timeFrame": null,
-        "reasoning": "Criterion E6 requires E6 to be 'YES'. The patient's answer to E6 is 'YES', so the criterion is met."
+        "reasoning": "Criterion E6 is met because the patient's answer to E6 is 'YES'."
     }
 }

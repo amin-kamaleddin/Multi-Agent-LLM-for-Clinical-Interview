@@ -1,12 +1,12 @@
 {
     "lifetime": {
         "diagnosis": true,
-        "timeFrame": null,
-        "reasoning": "Criterion 1 (D3) is met because D3 is YES. Criterion 2 requires 4 or more YES answers among D4a to D4m. The patient has 11 YES answers (D4a,b,c,d,e,f,h,j,k,l,m) and 2 NOs (D4g,i), so criterion 2 is met. Criterion 3 requires O1a = NO and O1b = NO, which is true. Since all criteria are met and no time frame is specified for these items, the diagnosis is true with no specific time frame."
+        "timeFrame": "past",
+        "reasoning": "Criterion 1 (D3) is met because D3 is YES. Criterion 2 requires 4 or more YES answers among D4a to D4m. There are 12 YES answers out of 13 items (only D4g and D4i are NO), so criterion 2 is met. Since no time frame suffixes are present, all answers are considered lifetime and thus from one time frame. Criterion 3 requires O1a = NO and O1b = NO, which is true. Therefore, all criteria are met with a single time frame (lifetime)."
     },
     "current": {
         "diagnosis": true,
         "timeFrame": null,
-        "reasoning": "Criterion D6 is 'YES', so it is met. Both O1a and O1b are 'NO', satisfying the second criterion. Therefore, all criteria are met. Since no symptom group time frame information is provided or required here, time frame is not applicable."
+        "reasoning": "Criterion 1 (D6) is met as D6 = YES. Criterion 2 (O1a = NO and O1b = NO) is met since both O1a and O1b are NO. No symptom group count or time frame criteria are specified beyond these two, so diagnosis depends solely on these two criteria, both satisfied. Time frame is not applicable as no symptom group threshold is given."
     }
 }

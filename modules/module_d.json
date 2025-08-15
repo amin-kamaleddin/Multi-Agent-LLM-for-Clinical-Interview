@@ -154,7 +154,7 @@
     "panicDisorder": {
       "lifetime": [
         "D3 is YES",
-        "At least 4 symptom groups (D4a–D4m) coded YES",
+        "4 or more of (D4a,D4b,D4c,D4d,D4e,D4f,D4g,D4h,D4i,D4j,D4k,D4l,D4m) is YES",
         "O1a = NO AND O1b = NO"
       ],
       "current": ["D6 is 'YES'",

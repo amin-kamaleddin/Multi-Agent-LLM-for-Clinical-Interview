@@ -12,11 +12,11 @@
     "ticRelated": {
         "diagnosis": false,
         "timeFrame": null,
-        "reasoning": "The patient answered YES to G3a and G3b, indicating the tic-related symptom group G3 is positive. No other symptom groups (G1, G4) are positive. Since only one symptom group is positive, the criterion of multiple symptom groups is not met. Organic causes are ruled out. Therefore, the tic-related diagnosis criteria are not fully met."
+        "reasoning": "The patient answered YES to G3a and G3b, indicating at least one positive symptom group related to tics. No other symptom groups are positive. Since only one symptom group is positive and the criterion requires more (typically at least 2 or more symptom groups for tic-related diagnosis), the criteria are not fully met. No time frame distinction is possible as only one group is positive. Organic causes are ruled out."
     },
     "note": {
         "diagnosis": false,
         "timeFrame": null,
-        "reasoning": "No obsessive compulsive symptom groups are positive since O1a and O1b are both NO. Therefore, there are no obsessive compulsive symptoms starting within 3 weeks of an infection."
+        "reasoning": "No obsessive compulsive symptom groups are positive since O1a and O1b are both NO. Therefore, the criterion of obsessive compulsive symptoms starting within 3 weeks of an infection is not met."
     }
 }

@@ -2,6 +2,6 @@
     "current": {
         "diagnosis": true,
         "timeFrame": null,
-        "reasoning": "Criterion E6 is met because the patient's answer to E6 is 'YES'. No other criteria are specified for evaluation."
+        "reasoning": "Criterion E6 is met because the patient's answer to E6 is 'YES'. There are no additional symptom group or time frame requirements specified for E6, so the diagnosis is true based solely on this response."
     }
 }

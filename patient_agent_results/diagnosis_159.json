@@ -1,7 +1,7 @@
 {
     "current": {
         "diagnosis": true,
-        "timeFrame": null,
-        "reasoning": "Criterion 1 (N4 == 'YES') is met since N4 is YES. Criterion 2 requires more than 3 of N3a-f to be YES; all six (N3a, N3b, N3c, N3d, N3e, N3f) are YES, so this criterion is met. Criterion 3 requires O1a = NO and O1b = NO; both are NO, so this criterion is met. All criteria are satisfied. Since no time frame is specified for these items, time frame is not applicable."
+        "timeFrame": "both",
+        "reasoning": "Criterion 1 (N4 == 'YES') is met as N4 is YES. Criterion 2 requires at least 3 symptom groups (N3a\u2013N3f) coded YES within the same time frame. All N3a to N3f are YES, but no time frame suffixes are provided, so they are considered positive regardless of time frame, satisfying the criterion. Criterion 3 requires O1a = NO and O1b = NO, both are NO, so this is met. Since symptom groups are positive without time frame distinction, the time frame is considered 'both'."
     }
 }

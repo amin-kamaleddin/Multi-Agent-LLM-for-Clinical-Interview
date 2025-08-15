@@ -1,7 +1,7 @@
 {
     "mustHave": {
-        "diagnosis": true,
+        "diagnosis": false,
         "timeFrame": null,
-        "reasoning": "Criterion requires O1a = YES or O1b = YES. Patient has O1a = NO and O1b = YES, so criterion is met."
+        "reasoning": "Both O1a and O1b are NO, so the mustHave criterion (O1a = YES or O1b = YES) is not met."
     }
 }

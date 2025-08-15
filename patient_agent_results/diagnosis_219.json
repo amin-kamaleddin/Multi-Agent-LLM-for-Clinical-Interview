@@ -6,7 +6,7 @@
     },
     "note": {
         "diagnosis": true,
-        "timeFrame": null,
-        "reasoning": "Symptom groups P1 and P2 are both positive since multiple items in each group are marked YES. P1a and P1b are YES, so P1 is positive. P2a, P2b, P2c, P2e, P2f, and P2g are YES, so P2 is positive. There is no indication that these behaviors are exclusively politically or religiously motivated. Since no time frames are specified, and all positive responses are considered together, the symptom groups are positive without a specified time frame. Therefore, the criteria for diagnosis are met. Because no time frame distinction is given, timeFrame is null."
+        "timeFrame": "recent",
+        "reasoning": "P1a and P1b are YES, indicating two symptom groups positive in the past. P1c to P1f are NO, so no additional past symptom groups. P2a, P2b, P2c, P2e, P2f, and P2g are YES, indicating six symptom groups positive recently. P2d is NO. Thus, at least 5 symptom groups are positive in the recent time frame, satisfying the symptom group criterion for recent symptoms. Since the symptom groups are positive only in the recent time frame (not past), the time frame is recent. No exclusion criteria apply."
     }
 }

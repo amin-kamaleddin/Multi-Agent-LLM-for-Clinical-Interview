@@ -2,7 +2,7 @@
     "current": {
         "diagnosis": false,
         "timeFrame": null,
-        "reasoning": "Criterion 1 (G4 == 'YES') is not met because G4 is NO. Criterion 2 ((G1a AND G1b AND G2) OR (G3a AND G3b)) is met because G3a and G3b are both YES. Criterion 3 (O1a = NO AND O1b = NO) is met as both are NO. However, since Criterion 1 is not met, the overall diagnosis is false."
+        "reasoning": "Criterion 1 (G4 == 'YES') is not met because G4 is NO. Criterion 2 ((G1a AND G1b AND G2) OR (G3a AND G3b)) is met because G3a and G3b are both YES. Criterion 3 (O1a = NO AND O1b = NO) is met as both are NO. Since criterion 1 is not met, the overall diagnosis is false."
     },
     "insight": {
         "diagnosis": false,
@@ -12,11 +12,11 @@
     "ticRelated": {
         "diagnosis": false,
         "timeFrame": null,
-        "reasoning": "The patient answered YES to G3a and G3b, indicating at least one positive symptom group related to tics. No other symptom groups are positive. Since only one symptom group is positive and the criterion requires more, the tic-related diagnosis criteria are not fully met."
+        "reasoning": "The patient answered YES to G3a and G3b, indicating at least one positive symptom group related to tics. No other symptom groups are positive. Since only one symptom group is positive and the criterion requires more (typically at least 2 or more symptom groups for tic-related diagnosis), the criteria are not fully met. Organic causes are ruled out, but insufficient symptom groups are positive to confirm tic-related diagnosis."
     },
     "note": {
         "diagnosis": false,
         "timeFrame": null,
-        "reasoning": "No obsessive compulsive symptom groups are positive since O1a and O1b are both NO. Therefore, no obsessive compulsive symptoms starting within 3 weeks of an infection are present."
+        "reasoning": "No obsessive compulsive symptom groups are positive since O1a and O1b are both NO. Therefore, the criterion of any obsessive compulsive symptoms starting within 3 weeks of an infection is not met."
     }
 }

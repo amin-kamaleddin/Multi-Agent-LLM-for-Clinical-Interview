@@ -27,7 +27,8 @@ diagnosis_files = sorted(
 )
 
 # Lists for evaluation
-y_true, y_pred, wrong_ids = [], [], []
+y_true, y_pred = [], []
+wrong_ids = {}  # store wrong IDs by module
 
 # Write CSV
 with open(output_csv, "w", newline="", encoding="utf-8") as csvfile:
@@ -47,7 +48,7 @@ with open(output_csv, "w", newline="", encoding="utf-8") as csvfile:
         module_letter = patient_entry["Module"].split()[0]  # e.g., "A"
         if module_letter in ["A", "O"]:
             key = "mustHave"
-        elif module_letter == "P":
+        elif module_letter in ["P", "D"]:
             key = "lifetime"
         else:
             key = "current"
@@ -67,7 +68,8 @@ with open(output_csv, "w", newline="", encoding="utf-8") as csvfile:
             y_true.append(truth)
             y_pred.append(pred)
             if truth != pred:
-                wrong_ids.append(file_id)
+                # Add wrong ID to the list for this module
+                wrong_ids.setdefault(module_letter, []).append(file_id)
 
 # Metrics
 acc = accuracy_score(y_true, y_pred)
@@ -86,4 +88,7 @@ print("Confusion Matrix (rows=true label, cols=predicted label):")
 print(f"            Predicted False   Predicted True")
 print(f"Actual False     {tn:5d}           {fp:5d}")
 print(f"Actual True      {fn:5d}           {tp:5d}")
-print(f"Wrong predictions IDs: {wrong_ids}")
+
+# Print results per module
+for module, ids in wrong_ids.items():
+    print(f"Module {module} wrong IDs: {ids}")
