@@ -37,8 +37,19 @@ MODULES_DIR = Path("modules")
 
 def ensure_api_key():
     if "OPENAI_API_KEY" not in os.environ:
-        st.error("OPENAI_API_KEY not set. Add it to your environment or .env file.")
-        st.stop()
+        st.warning("⚠️ OPENAI_API_KEY not found in environment variables.")
+        st.info("For Hugging Face Spaces: Add your OpenAI API key in the Spaces settings under 'Repository secrets'.")
+        st.info("For local development: Add your API key to a .env file or export it as an environment variable.")
+        
+        # Allow users to input API key directly in the interface
+        api_key = st.text_input("Enter your OpenAI API key:", type="password", help="Your API key will be used for this session only")
+        
+        if api_key:
+            os.environ["OPENAI_API_KEY"] = api_key
+            st.success("✅ API key set successfully!")
+            st.rerun()
+        else:
+            st.stop()
 
 
 def list_available_modules():
@@ -211,11 +222,32 @@ if "app_state" not in st.session_state:
 st.set_page_config(page_title="MINI Interview", page_icon="🗣️", layout="centered")
 st.title("MINI Interview")
 
+# Debug information for deployment
+if os.getenv("SPACE_ID"):  # Hugging Face Spaces environment
+    st.sidebar.info(f"🚀 Running on Hugging Face Spaces")
+    if "OPENAI_API_KEY" in os.environ:
+        st.sidebar.success("✅ OpenAI API Key configured")
+    else:
+        st.sidebar.warning("⚠️ OpenAI API Key not configured")
+
 ensure_api_key()
 
 modules = list_available_modules()
 if not modules:
-    st.error("No modules found in the `modules/` directory.")
+    st.error("❌ No modules found in the `modules/` directory.")
+    st.info("Expected module files like `module_a.json`, `module_d.json`, etc.")
+    st.info("Please check that the modules directory exists and contains valid module files.")
+    
+    # Show what files we did find in the modules directory
+    if MODULES_DIR.exists():
+        files_found = list(MODULES_DIR.glob("*"))
+        if files_found:
+            st.write("Files found in modules directory:")
+            for f in files_found[:10]:  # Show first 10 files
+                st.write(f"- {f.name}")
+    else:
+        st.write(f"Modules directory does not exist: {MODULES_DIR}")
+    
     st.stop()
 
 with st.sidebar:
