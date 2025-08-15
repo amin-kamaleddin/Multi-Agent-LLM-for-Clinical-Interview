@@ -1,7 +1,7 @@
-langchain==0.2.16
-langchain-openai==0.1.23
-langgraph==0.2.28
-pydantic==2.8.2
-python-dotenv==1.0.1
-tiktoken==0.7.0
-streamlit==1.38.0
+langchain
+langchain-openai
+langgraph
+pydantic
+python-dotenv
+tiktoken
+streamlit
