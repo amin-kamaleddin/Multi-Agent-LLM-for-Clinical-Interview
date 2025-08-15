@@ -13,6 +13,7 @@ from interview_agent.prompts import (
     INTERVIEWER_SYSTEM_PROMPT,
     JUDGE_SYSTEM_PROMPT,
     EXPLAIN_PROMPT,
+    CLARIFICATION_PROMPT,
 )
 from interview_agent.nodes import (
     llm,
@@ -75,11 +76,22 @@ def generate_interviewer_question(state: InterviewState) -> AIMessage:
     current_question = state.module_loader.get_question(state.current_question_id)
     sys_msg = SystemMessage(content=INTERVIEWER_SYSTEM_PROMPT.format(question=current_question.prompt))
 
-    if len(state.judge_results) > 0 and state.judge_results[-1] == "needs_clarification":
-        patient_response = state.messages[-1].content if state.messages else ""
-        sys_msg = SystemMessage(
-            content=EXPLAIN_PROMPT.format(response=patient_response, current_question=current_question.prompt)
-        )
+    if len(state.judge_results) > 0:
+        if state.judge_results[-1] == "explain request":
+            patient_response = state.messages[-1].content if state.messages else ""
+            sys_msg = SystemMessage(
+                content=EXPLAIN_PROMPT.format(response=patient_response, current_question=current_question.prompt)
+            )
+        elif state.judge_results[-1] == "rephrase needed":
+            patient_response = state.messages[-1].content if state.messages else ""
+            judge_reasoning = state.messages[-2].content if len(state.messages) >= 2 else "Response was unclear"
+            sys_msg = SystemMessage(
+                content=CLARIFICATION_PROMPT.format(
+                    question=current_question.prompt,
+                    response=patient_response,
+                    reasoning=judge_reasoning
+                )
+            )
 
     response = llm.invoke([sys_msg])
     if not isinstance(response, AIMessage):
