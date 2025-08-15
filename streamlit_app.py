@@ -453,7 +453,77 @@
 #         st.rerun() 
 
 
-import os, streamlit as st
-st.title("Hello from Streamlit on Spaces 👋")
+# Let's test imports incrementally to find what's causing the hang
+import os
+import sys
+import streamlit as st
+
+st.title("MINI Interview Agent - Debugging")
 st.write("PORT env:", os.environ.get("PORT"))
-st.success("If you can see this, the health check is happy.")
+
+# Test 1: Basic imports
+try:
+    import uuid
+    from pathlib import Path
+    from io import StringIO
+    st.success("✅ Basic Python imports work")
+except Exception as e:
+    st.error(f"❌ Basic imports failed: {e}")
+
+# Test 2: dotenv
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+    st.success("✅ dotenv import and load works")
+except Exception as e:
+    st.error(f"❌ dotenv failed: {e}")
+
+# Test 3: LangChain core (this is likely the culprit)
+try:
+    from langchain_core.messages import SystemMessage, HumanMessage, AIMessage
+    st.success("✅ LangChain core imports work")
+except Exception as e:
+    st.error(f"❌ LangChain core imports failed: {e}")
+
+# Test 4: Interview agent imports (this is very likely the culprit)
+try:
+    from interview_agent.models import ModuleLoader, InterviewState
+    st.success("✅ Interview agent models import work")
+except Exception as e:
+    st.error(f"❌ Interview agent models failed: {e}")
+
+try:
+    from interview_agent.prompts import (
+        INTERVIEWER_SYSTEM_PROMPT,    
+        EXPLAIN_PROMPT,
+        CLARIFICATION_PROMPT,
+    )
+    st.success("✅ Interview agent prompts import work")
+except Exception as e:
+    st.error(f"❌ Interview agent prompts failed: {e}")
+
+# Test 5: The most likely culprit - nodes.py (which had LLM initialization)
+try:
+    from interview_agent.nodes import (
+        get_llm,  # Now using lazy loading functions
+        should_clarify,
+        selector,
+        should_diagnose,
+        diagnosis,
+        judge_node,
+    )
+    st.success("✅ Interview agent nodes import work")
+    
+    # Test that we can access the LLM getter without hanging
+    if st.button("Test LLM initialization (needs API key)"):
+        try:
+            llm_instance = get_llm()
+            st.success("✅ LLM initialization successful!")
+        except Exception as e:
+            st.error(f"❌ LLM initialization failed: {e}")
+            
+except Exception as e:
+    st.error(f"❌ Interview agent nodes failed: {e}")
+    st.write("If this fails, there's still an import-time issue!")
+
+st.info("If you can see this, all imports work and the health check is happy!")

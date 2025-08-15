@@ -1,4 +1,4 @@
-import json, uuid, csv, time, os
+import json, os
 from datetime import datetime
 from typing import Any, Dict
 
@@ -14,21 +14,64 @@ from .prompts import INTERVIEWER_SYSTEM_PROMPT, JUDGE_SYSTEM_PROMPT, DIAGNOSIS_S
 
 from .models import (
     InterviewState,
-    ModuleLoader,
     ClassificationResult,
     DiagnosisResult,
     DiagnosisEvaluationOutput,
     CriteriaGroupResult,
 )
 
-# ------------------------------ LLM instances ------------------------------ #
-llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.1)
-judge_llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.1)
-structured_llm = judge_llm.with_structured_output(ClassificationResult)
-diagnosis_llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.1).with_structured_output(
-    DiagnosisResult
-)
-patient_llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.9)
+# ------------------------------ LLM instances (lazy loading) ------------------------------ #
+_llm = None
+_judge_llm = None
+_structured_llm = None
+_diagnosis_llm = None
+_patient_llm = None
+
+def get_llm():
+    global _llm
+    if _llm is None:
+        _llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.1)
+    return _llm
+
+def get_judge_llm():
+    global _judge_llm
+    if _judge_llm is None:
+        _judge_llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.1)
+    return _judge_llm
+
+def get_structured_llm():
+    global _structured_llm
+    if _structured_llm is None:
+        _structured_llm = get_judge_llm().with_structured_output(ClassificationResult)
+    return _structured_llm
+
+def get_diagnosis_llm():
+    global _diagnosis_llm
+    if _diagnosis_llm is None:
+        _diagnosis_llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.1).with_structured_output(DiagnosisResult)
+    return _diagnosis_llm
+
+def get_patient_llm():
+    global _patient_llm
+    if _patient_llm is None:
+        _patient_llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.9)
+    return _patient_llm
+
+# Module-level lazy loading - these will call the getter functions
+def _get_module_llm():
+    return get_llm()
+
+def _get_module_judge_llm():
+    return get_judge_llm()
+
+def _get_module_structured_llm():
+    return get_structured_llm()
+
+def _get_module_diagnosis_llm():
+    return get_diagnosis_llm()
+
+def _get_module_patient_llm():
+    return get_patient_llm()
 
 # ------------------------------ Global Vars ------------------------------ #
 AUTO_SET_YES_AFTER = 3  # after 3 consecutive clarifies, the 4th auto-yes
@@ -62,7 +105,7 @@ def interviewer_node(state: InterviewState) -> Dict[str, Any]:
     msgs = [sys_msg]
 
     # 2. Invoke LLM to get the next question
-    response = llm.invoke(msgs)
+    response = get_llm().invoke(msgs)
     print('\n\n' + 15* '--' + f" Start of question {state.current_question_id}" + 15* '--')
     print(response.content)  # show question to user
 
@@ -80,7 +123,7 @@ def patient_node(state: InterviewState):
     else:
         sys_msg = SystemMessage(content=PATIENT_SYSTEM_PROMPT)
         patient_prompt = HumanMessage(content=PATIENT_USER_PROMPT.format(question=state.messages[-1].content))
-        result = patient_llm.invoke([sys_msg, patient_prompt])
+        result = get_patient_llm().invoke([sys_msg, patient_prompt])
         print(f"agent response: {result.content}")
 
     print(15 * '--' + f" End of question {state.current_question_id}" + 15 * '--' + '\n\n')
@@ -115,7 +158,7 @@ def judge_node(state: InterviewState) -> Dict[str, Any]:
     else:
         print("MAKING AN LLM CALL TO JUDGE THE ANSWER")
         prompt = JUDGE_SYSTEM_PROMPT.format(last_question= last_question.prompt, patient_last_answer= patient_last_answer.content)
-        resp = structured_llm.invoke([HumanMessage(content=prompt)])
+        resp = get_structured_llm().invoke([HumanMessage(content=prompt)])
 
         # Access Pydantic model attributes directly
         print(f"reason behind the decision: {resp.reasoning}")
@@ -223,7 +266,7 @@ def diagnosis(state: InterviewState):
             continue
         prompt = DIAGNOSIS_SYSTEM_PROMPT.format(summary=summary, group_name=group_name, criteria_formatted=criteria_formatted)
 
-        response = llm.invoke([HumanMessage(content=prompt)])
+        response = get_llm().invoke([HumanMessage(content=prompt)])
         content = response.content.strip()
 
         # remove Markdown code block formatting
