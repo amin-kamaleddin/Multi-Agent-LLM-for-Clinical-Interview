@@ -13,6 +13,7 @@ from interview_agent.prompts import (
     INTERVIEWER_SYSTEM_PROMPT,
     JUDGE_SYSTEM_PROMPT,
     EXPLAIN_PROMPT,
+    CLARIFICATION_PROMPT,
 )
 from interview_agent.nodes import (
     llm,
@@ -75,16 +76,30 @@ def generate_interviewer_question(state: InterviewState) -> AIMessage:
     current_question = state.module_loader.get_question(state.current_question_id)
     sys_msg = SystemMessage(content=INTERVIEWER_SYSTEM_PROMPT.format(question=current_question.prompt))
 
-    if len(state.judge_results) > 0 and state.judge_results[-1] == "explain request":
-        patient_response = state.messages[-1].content if state.messages else ""
-        sys_msg = SystemMessage(
-            content=EXPLAIN_PROMPT.format(response=patient_response, current_question=current_question.prompt)
-        )
+    if len(state.judge_results) > 0:
+        if state.judge_results[-1] == "explain request":
+            patient_response = state.messages[-1].content if state.messages else ""
+            sys_msg = SystemMessage(
+                content=EXPLAIN_PROMPT.format(response=patient_response, current_question=current_question.prompt)
+            )
+        elif state.judge_results[-1] == "rephrase needed":
+            patient_response = state.messages[-1].content if state.messages else ""
+            judge_reasoning = state.messages[-2].content if len(state.messages) >= 2 else "Response was unclear"
+            sys_msg = SystemMessage(
+                content=CLARIFICATION_PROMPT.format(
+                    question=current_question.prompt,
+                    response=patient_response,
+                    reasoning=judge_reasoning
+                )
+            )
 
     response = llm.invoke([sys_msg])
     if not isinstance(response, AIMessage):
         response = AIMessage(content=response.content)
     return response
+
+
+
 
 
 def apply_selector_updates(state: InterviewState, updates: dict) -> InterviewState:
@@ -133,6 +148,34 @@ def _prettify_group_title(name: str) -> str:
     return pretty[:1].upper() + pretty[1:]
 
 
+def display_judge_feedback(judge_result: dict, user_answer: str):
+    if not judge_result:
+        return
+    
+    # Extract the classification and reasoning
+    classification = judge_result.get("judge_results", [""])[0] if judge_result.get("judge_results") else ""
+    reasoning_msg = judge_result.get("messages", [None])[0]
+    reasoning = reasoning_msg.content if reasoning_msg else "No reasoning provided"
+    
+    if classification == "yes":
+        st.success(f"✅ **Judge Decision: YES** - Answer accepted")
+    elif classification == "no":
+        st.success(f"❌ **Judge Decision: NO** - Answer accepted")
+    elif classification == "explain request":
+        st.info("❓ **Judge Decision: EXPLAIN REQUEST** - Patient needs explanation")
+    elif classification == "rephrase needed":
+        st.warning("🤔 **Judge Decision: NEEDS CLARIFICATION** - Response unclear")
+    else:
+        st.info(f"ℹ️ **Judge Decision: {classification.upper()}**")
+    
+    # Show user's answer and judge reasoning
+    with st.expander("📝 See judge analysis", expanded=False):
+        st.write(f"**Your answer:** \"{user_answer}\"")
+        st.write(f"**Judge reasoning:** {reasoning}")
+        
+    st.markdown("---")
+
+
 # --------------------------------- UI State ---------------------------------- #
 if "thread_id" not in st.session_state:
     st.session_state.thread_id = make_thread_id()
@@ -161,6 +204,10 @@ if "answer_input" not in st.session_state:
 if "clear_answer" not in st.session_state:
     st.session_state.clear_answer = False
 
+# App state: "asking_question" or "showing_feedback"
+if "app_state" not in st.session_state:
+    st.session_state.app_state = "asking_question"
+
 
 # ----------------------------------- UI -------------------------------------- #
 st.set_page_config(page_title="MINI Interview", page_icon="🗣️", layout="centered")
@@ -188,6 +235,7 @@ with st.sidebar:
         st.session_state.last_question = ""
         st.session_state.finished = False
         st.session_state.diagnosis_result = None
+        st.session_state.latest_judge_result = None  # Clear judge results
         st.session_state.thread_id = make_thread_id()
         st.session_state["answer_input"] = ""
         st.session_state["clear_answer"] = True
@@ -267,6 +315,29 @@ if st.session_state.get("clear_answer"):
     st.session_state.answer_input = ""
     st.session_state.clear_answer = False
 
+# Display judge results from the previous answer
+if st.session_state.latest_judge_result:
+    display_judge_feedback(
+        st.session_state.latest_judge_result["judge_data"], 
+        st.session_state.latest_judge_result["user_answer"]
+    )
+    
+    # Show Next Question button
+    if st.button("Next Question", use_container_width=True, type="primary"):
+        # Process selector logic to move to next question
+        if should_clarify(state) == "continue":
+            updates = selector(state)
+            state = apply_selector_updates(state, updates)
+        
+        # Clear feedback and continue
+        st.session_state.latest_judge_result = None
+        st.session_state.awaiting_answer = False
+        st.session_state.clear_answer = True
+        st.rerun()
+    
+    # Hide the input buttons when showing feedback
+    st.stop()
+
 # Quick response buttons
 st.markdown("**Quick responses:**")
 col1, col2 = st.columns([1, 1])
@@ -301,6 +372,7 @@ elif submit_clicked:
     if not answer:
         st.warning("Please enter an answer before submitting.")
         st.stop()
+    
 
 if answer:
     human_msg = HumanMessage(content=answer)
@@ -308,16 +380,17 @@ if answer:
 
     judge_result = judge_node(state)
     
+    # Store judge results for display
+    st.session_state.latest_judge_result = {
+        "judge_data": judge_result,
+        "user_answer": answer
+    }
+    
     state.messages = list(state.messages) + judge_result["messages"]
     state.judge_results = list(state.judge_results) + judge_result["judge_results"]
 
-    if should_clarify(state) == "clarify":
-        st.session_state.awaiting_answer = False
-        st.session_state["clear_answer"] = True
-        st.rerun()
-
-    updates = selector(state)
-    state = apply_selector_updates(state, updates)
+    # Always rerun to show the feedback
+    st.rerun()
 
     branch = should_diagnose(state)
     if branch == "diagnose":
