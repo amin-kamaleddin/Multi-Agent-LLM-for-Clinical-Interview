@@ -222,19 +222,6 @@ if "app_state" not in st.session_state:
 st.set_page_config(page_title="MINI Interview", page_icon="🗣️", layout="centered")
 st.title("MINI Interview")
 
-# Debug information for deployment
-if os.getenv("SPACE_ID"):  # Hugging Face Spaces environment
-    st.sidebar.info("🚀 Running on Hugging Face Spaces")
-    if "OPENAI_API_KEY" in os.environ:
-        st.sidebar.success("✅ OpenAI API Key configured")
-    else:
-        st.sidebar.warning("⚠️ OpenAI API Key not configured")
-    
-    # Add health check info for debugging
-    st.sidebar.caption("Health: App loaded successfully ✅")
-    st.sidebar.caption(f"Modules dir exists: {MODULES_DIR.exists()}")
-    st.sidebar.caption(f"Python version: {sys.version.split()[0]}")
-
 ensure_api_key()
 
 modules = list_available_modules()
