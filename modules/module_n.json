@@ -87,7 +87,7 @@
     },
     {
       "id": "O1b",
-      "prompt": "Did you have any medical illness?",
+      "prompt": "Did you have any other medical illness unrelated to the one we discussed today? I am trying to understand if the symptoms you have described could be caused by other organic factors.",
       "responseType": "choice",
       "options": ["No", "Yes"],
       "next": { "no": "DIAGNOSTIC", "yes": "DIAGNOSTIC"}
@@ -96,7 +96,7 @@
   "diagnosticCriteria": {
     "generalizedAnxietyDisorder": {
       "current": ["N4 == 'YES'",
-        " more than 3 of (N3a,N3b,N3c,N3d,N3e,N3f) are YES",
+        "At least 3 symptom groups (N3a–N3f) coded YES",
       "O1a = NO AND O1b = NO"]
     }
   }
