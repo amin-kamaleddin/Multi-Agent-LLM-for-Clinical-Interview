@@ -1,21 +1,22 @@
-FROM python:3.9-slim
+FROM python:3.11-slim
 
 WORKDIR /app
 
-RUN apt-get update && apt-get install -y \
-    build-essential \
-    curl \
-    software-properties-common \
-    git \
-    && rm -rf /var/lib/apt/lists/*
+# (Only keep packages you truly need)
+RUN apt-get update && apt-get install -y curl && rm -rf /var/lib/apt/lists/*
 
-COPY requirements.txt ./
-COPY src/ ./src/
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
 
-RUN pip3 install -r requirements.txt
+# Copy your code (includes src/ and streamlit_app.py if it's at root)
+COPY . .
 
-EXPOSE 8501
+# HF expects your app to listen on this port
+ENV PORT=7860
+EXPOSE 7860
 
-HEALTHCHECK CMD curl --fail http://localhost:8501/_stcore/health
+# Streamlit's health endpoint
+HEALTHCHECK CMD curl --fail http://localhost:${PORT}/_stcore/health || exit 1
 
-ENTRYPOINT ["streamlit", "run", "streamlit_app.py", "--server.port=8501", "--server.address=0.0.0.0"]
+# If your file is under src/, keep this; otherwise change to "streamlit_app.py"
+CMD ["streamlit", "run", "streamlit_app.py", "--server.port=${PORT}", "--server.address=0.0.0.0"]
