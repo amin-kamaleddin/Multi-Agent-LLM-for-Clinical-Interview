@@ -1,4 +1,16 @@
 
+---
+title: MINI Interview Agent
+emoji: 🧠
+colorFrom: blue
+colorTo: green
+sdk: streamlit
+sdk_version: 1.38.0
+app_file: streamlit_app.py
+pinned: false
+license: mit
+---
+
 # 🧠 MINI Interview Agent
 
 AI agent for conducting MINI (Mini International Neuropsychiatric Interview) assessments with dynamic conversation flow, clinical tone, and intelligent follow-ups powered by LLMs.
@@ -19,32 +31,42 @@ AI agent for conducting MINI (Mini International Neuropsychiatric Interview) ass
 
 ## 🚀 Quick Start
 
-### Prerequisites
+### 🌐 Use Online (Hugging Face Spaces)
+
+Visit the [live demo](https://huggingface.co/spaces/areezvisram/MINI-Interview-Agent) - no setup required!
+
+### 💻 Local Development
+
+**Prerequisites:**
 - Python 3.8+
-- Install dependencies:
-  ```bash
-  pip install -r requirements.txt
+- OpenAI API key
 
+**Setup:**
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/mini-agent.git
+cd mini-agent
 
-* Add your OpenAI key to a `.env` file:
+# Install dependencies
+pip install -r requirements.txt
 
-  ```
-  OPENAI_API_KEY=sk-proj-your-api-key-here
-  ```
+# Add your OpenAI key to a .env file
+echo "OPENAI_API_KEY=sk-proj-your-api-key-here" > .env
+```
 
-### Run an interview
+**Run Options:**
 
+**Streamlit Web App:**
+```bash
+streamlit run streamlit_app.py
+```
+
+**Command Line Interface:**
 ```bash
 python run_interview.py
 ```
 
-* Choose a MINI module by entering a letter: `a, d, e, f, g, n, o, p`.
-* The agent guides you through the module’s clinical questions.
-
-### 🤖 Patient Agent mode
-
-Simulate patient responses for automated testing or demos:
-
+**Patient Agent Mode (for testing):**
 ```bash
 python run_interview.py --patient_agent true
 ```

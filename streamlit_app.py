@@ -10,14 +10,12 @@ from langchain_core.messages import SystemMessage, HumanMessage, AIMessage
 
 from interview_agent.models import ModuleLoader, InterviewState
 from interview_agent.prompts import (
-    INTERVIEWER_SYSTEM_PROMPT,
-    JUDGE_SYSTEM_PROMPT,
+    INTERVIEWER_SYSTEM_PROMPT,    
     EXPLAIN_PROMPT,
     CLARIFICATION_PROMPT,
 )
 from interview_agent.nodes import (
     llm,
-    structured_llm,
     should_clarify,
     selector,
     should_diagnose,
@@ -38,8 +36,29 @@ MODULES_DIR = Path("modules")
 
 
 def ensure_api_key():
-    if "OPENAI_API_KEY" not in os.environ:
-        st.error("OPENAI_API_KEY not set. Add it to your environment or .env file.")
+    # Try to get API key from Streamlit secrets first (for HF Spaces)
+    api_key = None
+    
+    if hasattr(st, 'secrets') and 'OPENAI_API_KEY' in st.secrets:
+        api_key = st.secrets['OPENAI_API_KEY']
+        os.environ['OPENAI_API_KEY'] = api_key
+    elif "OPENAI_API_KEY" in os.environ:
+        api_key = os.environ["OPENAI_API_KEY"]
+    
+    if not api_key:
+        st.error("""
+        🔑 **OpenAI API Key Required**
+        
+        To use this app, you need to provide an OpenAI API key. 
+        
+        **For Hugging Face Spaces:**
+        1. Go to your Space settings
+        2. Navigate to "Repository secrets" 
+        3. Add a secret with key `OPENAI_API_KEY` and your API key as the value
+        
+        **For local development:**
+        Add `OPENAI_API_KEY=your-key-here` to your `.env` file or environment variables.
+        """)
         st.stop()
 
 
