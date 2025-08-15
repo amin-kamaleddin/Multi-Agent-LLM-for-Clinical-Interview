@@ -9,6 +9,7 @@ sdk_version: 1.38.0
 app_file: streamlit_app.py
 pinned: false
 license: mit
+startup_duration_timeout: 1h
 ---
 
 # 🧠 MINI Interview Agent
