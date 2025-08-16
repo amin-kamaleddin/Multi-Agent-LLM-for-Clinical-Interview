@@ -17,7 +17,8 @@
       "responseType": "yes_no",
       "next": {
         "yes": "E2",
-        "no": "DIAGNOSTIC"
+        "no": "DIAGNOSTIC",
+        "red_flag": "END_MODULE"
       }
     },
     {
@@ -26,7 +27,8 @@
       "responseType": "yes_no",
       "next": {
         "yes": "E3",
-        "no": "DIAGNOSTIC"
+        "no": "DIAGNOSTIC",
+        "red_flag": "END_MODULE"
       }
     },
     {
@@ -35,7 +37,8 @@
       "responseType": "yes_no",
       "next": {
         "yes": "E4",
-        "no": "DIAGNOSTIC"
+        "no": "DIAGNOSTIC",
+        "red_flag": "END_MODULE"
       }
     },
     {
@@ -44,7 +47,8 @@
       "responseType": "yes_no",
       "next": {
         "yes": "E5",
-        "no": "DIAGNOSTIC"
+        "no": "DIAGNOSTIC",
+        "red_flag": "END_MODULE"
       }
     },
     {
@@ -53,7 +57,8 @@
       "responseType": "yes_no",
       "next": {
         "yes": "E6",
-        "no": "DIAGNOSTIC"
+        "no": "DIAGNOSTIC",
+        "red_flag": "END_MODULE"
       }
     },
     {
@@ -62,7 +67,8 @@
       "responseType": "yes_no",
       "next": {
         "yes": "DIAGNOSTIC",
-        "no": "DIAGNOSTIC"
+        "no": "DIAGNOSTIC",
+        "red_flag": "END_MODULE"
       }
     }
   ],

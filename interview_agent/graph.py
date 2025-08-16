@@ -31,7 +31,7 @@ def build_graph(loader: ModuleLoader, visualize: bool = True):
                              {"clarify": "interviewer", "continue": "selector"})
 
     sg.add_conditional_edges("selector", should_diagnose,
-                             {"continue": "interviewer", "diagnose": "diagnosis"})
+                             {"continue": "interviewer", "diagnose": "diagnosis", "end": END})
 
     sg.add_edge("diagnosis", END)
 

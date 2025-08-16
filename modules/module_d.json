@@ -15,139 +15,139 @@
       "id": "D1a",
       "prompt": "Have you, on more than one occasion, had spells or attacks when you suddenly felt anxious, very frightened, uncomfortable or uneasy, even in situations where most people would not feel that way?",
     "responseType": "yes_no", 
-    "next": { "yes": "D1b", "no": "DIAGNOSTIC" }
+    "next": { "yes": "D1b", "no": "DIAGNOSTIC", "red_flag": "END_MODULE" }
     },
     {
       "id": "D1b",
       "prompt": "Did the spells surge to a peak within 10 minutes of starting?",
     "responseType": "yes_no", 
-    "next": { "yes": "D2", "no": "DIAGNOSTIC" }
+    "next": { "yes": "D2", "no": "DIAGNOSTIC", "red_flag": "END_MODULE" }
     },
     {
       "id": "D2",
       "prompt": "At any time in the past, did any of those spells or attacks come on unexpectedly or occur in an unpredictable or unprovoked manner?",
     "responseType": "yes_no", 
-    "next": { "yes": "D3", "no": "DIAGNOSTIC" }
+    "next": { "yes": "D3", "no": "DIAGNOSTIC", "red_flag": "END_MODULE" }
     },
     { "id": "D3",  "prompt": "Have you ever had one such attack followed by a month or more of persistent concern about having another attack, or worries about the consequences of the attack, or did you make any significant change in your behavior because of the attacks?", 
     "responseType": "yes_no", 
-    "next": { "yes": "D4a", "no": "D4a" } },
+    "next": { "yes": "D4a", "no": "D4a", "red_flag": "END_MODULE" } },
     {
       "id": "D4a",
       "group": "D4",
       "prompt": "During the worst attack that you can remember: Did you have skipping, racing or pounding of your heart?",
       "responseType": "yes_no",
-      "next": { "yes": "D4b", "no": "D4b" }
+      "next": { "yes": "D4b", "no": "D4b", "red_flag": "END_MODULE" }
     },
     {
       "id": "D4b",
       "group": "D4",
       "prompt": "Did you have sweating or clammy hands?",
       "responseType": "yes_no",
-      "next": { "yes": "D4c", "no": "D4c" }
+      "next": { "yes": "D4c", "no": "D4c", "red_flag": "END_MODULE" }
     },
     {
       "id": "D4c",
       "group": "D4",
       "prompt": "Were you trembling or shaking?",
       "responseType": "yes_no",
-      "next": { "yes": "D4d", "no": "D4d" }
+      "next": { "yes": "D4d", "no": "D4d", "red_flag": "END_MODULE" }
     },
     {
       "id": "D4d",
       "group": "D4",
       "prompt": "Did you have shortness of breath or difficulty breathing or a smothering sensation?",
       "responseType": "yes_no",
-      "next": { "yes": "D4e", "no": "D4e" }
+      "next": { "yes": "D4e", "no": "D4e", "red_flag": "END_MODULE" }
     },
     {
       "id": "D4e",
       "group": "D4",
       "prompt": "Did you have a choking sensation or a lump in your throat?",
       "responseType": "yes_no",
-      "next": { "yes": "D4f", "no": "D4f" }
+      "next": { "yes": "D4f", "no": "D4f", "red_flag": "END_MODULE" }
     },
     {
       "id": "D4f",
       "group": "D4",
       "prompt": "Did you have chest pain, pressure or discomfort?",
       "responseType": "yes_no",
-      "next": { "yes": "D4g", "no": "D4g" }
+      "next": { "yes": "D4g", "no": "D4g", "red_flag": "END_MODULE" }
     },
     {
       "id": "D4g",
       "group": "D4",
       "prompt": "Did you have nausea, stomach problems or sudden diarrhea?",
       "responseType": "yes_no",
-      "next": { "yes": "D4h", "no": "D4h" }
+      "next": { "yes": "D4h", "no": "D4h", "red_flag": "END_MODULE" }
     },
     {
       "id": "D4h",
       "group": "D4",
       "prompt": "Did you feel dizzy, unsteady, lightheaded or faint?",
       "responseType": "yes_no",
-      "next": { "yes": "D4i", "no": "D4i" }
+      "next": { "yes": "D4i", "no": "D4i", "red_flag": "END_MODULE" }
     },
     {
       "id": "D4i",
       "group": "D4",
       "prompt": "Did you have hot flushes or chills?",
       "responseType": "yes_no",
-      "next": { "yes": "D4j", "no": "D4j" }
+      "next": { "yes": "D4j", "no": "D4j", "red_flag": "END_MODULE" }
     },
     {
       "id": "D4j",
       "group": "D4",
       "prompt": "Did you have tingling or numbness in parts of your body?",
       "responseType": "yes_no",
-      "next": { "yes": "D4k", "no": "D4k" }
+      "next": { "yes": "D4k", "no": "D4k", "red_flag": "END_MODULE" }
     },
     {
       "id": "D4k",
       "group": "D4",
       "prompt": "Did things feel strange, unreal, detached or unfamiliar, or did you feel outside of or detached from part or all of your body?",
       "responseType": "yes_no",
-      "next": { "yes": "D4l", "no": "D4l" }
+      "next": { "yes": "D4l", "no": "D4l", "red_flag": "END_MODULE" }
     },
     {
       "id": "D4l",
       "group": "D4",
       "prompt": "Did you fear that you were losing control or going crazy?",
       "responseType": "yes_no",
-      "next": { "yes": "D4m", "no": "D4m" }
+      "next": { "yes": "D4m", "no": "D4m", "red_flag": "END_MODULE" }
     },
     {
       "id": "D4m",
       "group": "D4",
       "prompt": "Did you fear that you were dying?",
       "responseType": "yes_no",
-      "next": { "yes": "D6", "no": "D6" }
+      "next": { "yes": "D6", "no": "D6", "red_flag": "END_MODULE" }
     },
     {
       "id": "D5",
       "prompt": "Are both D3, and 4 or more D4 answers, coded YES?",
       "responseType": "yes_no",
-      "next": { "yes": "D6", "no": "D6" }
+      "next": { "yes": "D6", "no": "D6", "red_flag": "END_MODULE" }
     },
     {
       "id": "D6",
       "prompt": "In the past month did you have persistent concern about having another attack, or worry about the consequences of the attacks, or did you change your behavior in any way because of the attacks?",
       "responseType": "yes_no",
-      "next": { "yes": "O1a", "no": "O1a" }
+      "next": { "yes": "O1a", "no": "O1a", "red_flag": "END_MODULE" }
     },
     {
       "id": "O1a",
       "prompt": "Were you taking any drugs or medicines or in withdrawal from any of these? I am trying to understand if the symptoms you have described could be caused by other organic factors.",
       "responseType": "choice",
-      "options": ["No", "Yes"],
-      "next": { "no": "O1b", "yes": "O1b"}
+      "options": "yes_no",
+      "next": { "no": "O1b", "yes": "O1b", "red_flag": "END_MODULE"}
     },
     {
       "id": "O1b",
       "prompt": "Did you have any other medical illness unrelated to the one we discussed today? I am trying to understand if the symptoms you have described could be caused by other organic factors.",
       "responseType": "choice",
-      "options": ["No", "Yes"],
-      "next": { "no": "DIAGNOSTIC", "yes": "DIAGNOSTIC"}
+      "options": "yes_no",
+      "next": { "no": "DIAGNOSTIC", "yes": "DIAGNOSTIC", "red_flag": "END_MODULE"}
     }
   ],
   "diagnosticCriteria": {

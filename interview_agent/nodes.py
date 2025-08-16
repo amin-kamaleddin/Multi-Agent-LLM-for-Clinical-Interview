@@ -1,4 +1,4 @@
-import json, os
+import json, os, sys
 from datetime import datetime
 from typing import Any, Dict
 
@@ -19,6 +19,8 @@ from .models import (
     DiagnosisEvaluationOutput,
     CriteriaGroupResult,
 )
+
+from utils.red_flag import detect_red_flag
 
 # ------------------------------ LLM instances (lazy loading) ------------------------------ #
 _llm = None
@@ -147,7 +149,11 @@ def judge_node(state: InterviewState) -> Dict[str, Any]:
     patient_last_answer = state.messages[-1]
 
     response_text = patient_last_answer.content.strip().lower()
-    if response_text == "yes":
+    if detect_red_flag(response_text) == True:
+        print("Direct classification: RED FLAG")
+        label = "red_flag"
+        reasoning = f"Red flag detected: '{patient_last_answer.content}'"
+    elif response_text == "yes":
         print("Direct classification: YES (no LLM call needed)")
         label = "yes"
         reasoning = f"Patient gave a clear affirmative response: '{patient_last_answer.content}'"
@@ -221,7 +227,10 @@ def selector(state: InterviewState) -> Dict[str, Any]:
 def should_diagnose(state: InterviewState) -> str:
     if state.ready_for_diagnosis:
         return "diagnose"
-    return "continue"
+    if state.module_completed:
+        return "end"
+    else:
+        return "continue"
 
 
 def diagnosis(state: InterviewState):

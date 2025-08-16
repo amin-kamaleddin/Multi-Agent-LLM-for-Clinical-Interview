@@ -16,53 +16,53 @@
       "id": "G1a",
       "prompt": "In the past month, have you been bothered by recurrent thoughts, impulses, or images that were unwanted, distasteful, inappropriate, intrusive, or distressing? (For example, the idea that you were dirty, contaminated or had germs, or fear of contaminating others, or fear of harming someone even though it disturbs or distresses you, or fear you would act on some impulse, or fear or superstitions that you would be responsible for things going wrong, or obsessions with sexual thoughts, images or impulses, or religious obsessions.)",
       "responseType": "yes_no",
-      "next": { "yes": "G1b", "no": "G3a" }
+      "next": { "yes": "G1b", "no": "G3a", "red_flag": "END_MODULE" }
     },
     {
       "id": "G1b",
       "prompt": "In the past month, did you try to suppress these thoughts, impulses, or images or to neutralize or to reduce them with some other thought or action?",
       "responseType": "yes_no",
-      "next": { "yes": "G2", "no": "G3a" }
+      "next": { "yes": "G2", "no": "G3a", "red_flag": "END_MODULE" }
     },
     {
       "id": "G2",
       "prompt": "Did they keep coming back into your mind even when you tried to ignore or get rid of them?",
       "responseType": "yes_no",
       "group": "obsessions",
-      "next": { "yes": "G3a", "no": "G3a" }
+      "next": { "yes": "G3a", "no": "G3a", "red_flag": "END_MODULE" }
     },
     {
       "id": "G3a",
       "prompt": "In the past month, did you feel driven to do something repeatedly in response to an obsession or in response to a rigid rule, like washing or cleaning excessively, counting or checking things over and over, or repeating or arranging things, or other superstitious rituals?",
       "responseType": "yes_no",
-      "next": { "yes": "G3b", "no": "G4" }
+      "next": { "yes": "G3b", "no": "G4", "red_flag": "END_MODULE" }
     },
     {
       "id": "G3b",
       "prompt": "Are these rituals done to prevent or reduce anxiety or distress or to prevent something bad from happening and are they excessive or unreasonable?",
       "responseType": "yes_no",
       "group": "compulsions",
-      "next": { "yes": "G4", "no": "G4" }
+      "next": { "yes": "G4", "no": "G4", "red_flag": "END_MODULE" }
     },
     {
       "id": "G4",
       "prompt": "In the past month, did these obsessive thoughts and/or compulsive behaviors cause significant distress, or interfere with your ability to function at home, at work, at school or socially or in your relationships or in some other important way or did they take more than one hour a day?",
       "responseType": "yes_no",
-      "next": { "yes": "O1a", "no": "O1a" }
+      "next": { "yes": "O1a", "no": "O1a", "red_flag": "END_MODULE" }
     },
     {
       "id": "O1a",
       "prompt": "Were you taking any drugs or medicines or in withdrawal from any of these?",
       "responseType": "choice",
       "options": ["No", "Yes"],
-      "next": { "no": "O1b", "yes": "O1b"}
+      "next": { "no": "O1b", "yes": "O1b", "red_flag": "END_MODULE"}
     },
     {
       "id": "O1b",
       "prompt": "Did you have any other medical illness unrelated to the one we discussed today? I am trying to understand if the symptoms you have described could be caused by other organic factors.",
       "responseType": "choice",
       "options": ["No", "Yes"],
-      "next": { "no": "DIAGNOSTIC", "yes": "DIAGNOSTIC"}
+      "next": { "no": "DIAGNOSTIC", "yes": "DIAGNOSTIC", "red_flag": "END_MODULE"}
     }
   ],
   "diagnosticCriteria": {
