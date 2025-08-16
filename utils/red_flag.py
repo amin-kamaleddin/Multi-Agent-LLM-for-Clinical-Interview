@@ -1,12 +1,7 @@
 from langchain_openai import ChatOpenAI
 from langchain_core.messages import SystemMessage, HumanMessage
-import sys
-import os
 
-# Add project root to sys.path
-sys.path.append(os.path.dirname(os.path.dirname(__file__)))
-
-from interview_agent.cli import _load_key
+# from interview_agent.cli import _load_key # import this when run this file
 
 # Load your model (make sure OPENAI_API_KEY is set in env)
 llm = ChatOpenAI(model="gpt-4o-mini", temperature=0)
