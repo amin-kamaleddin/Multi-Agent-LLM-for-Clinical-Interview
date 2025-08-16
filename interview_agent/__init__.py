@@ -1,4 +1,4 @@
 __all__ = ["run"]
 __version__ = "0.1.0"
 
-from .cli import run
+from .cli import run, _load_key

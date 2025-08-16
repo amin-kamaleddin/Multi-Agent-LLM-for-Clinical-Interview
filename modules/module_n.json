@@ -16,81 +16,81 @@
       "prompt": "Were you excessively anxious or worried about several routine things, over the past 6 months?",
       "responseType": "yes_no",
       "note": "In English, if the patient is unclear about what you mean, probe by asking (Do others think that you are a worrier or a 'worry wart'?) and get examples",
-      "next": { "yes": "N1b", "no": "DIAGNOSTIC" }
+      "next": { "yes": "N1b", "no": "DIAGNOSTIC", "red_flag": "END_MODULE" }
     },
     {
       "id": "N1b",
       "prompt": "Are these anxieties and worries present most days?",
       "responseType": "yes_no",
-      "next": { "yes": "N2", "no": "DIAGNOSTIC" }
+      "next": { "yes": "N2", "no": "DIAGNOSTIC", "red_flag": "END_MODULE" }
     },
     {
       "id": "N2",
       "prompt": "Do you find it difficult to control the worries?",
       "responseType": "yes_no",
-      "next": { "yes": "N3a", "no": "DIAGNOSTIC" }
+      "next": { "yes": "N3a", "no": "DIAGNOSTIC", "red_flag": "END_MODULE" }
     },
     {
       "id": "N3a",
       "group": "N3",
       "prompt": "When you were anxious over the past 6 months, did you, most of the time: Feel restless, keyed up or on edge?",
       "responseType": "yes_no",
-      "next": { "yes": "N3b", "no": "N3b" }
+      "next": { "yes": "N3b", "no": "N3b", "red_flag": "END_MODULE" }
     },
     {
       "id": "N3b",
       "group": "N3",
       "prompt": "Have muscle tension?",
       "responseType": "yes_no",
-      "next": { "yes": "N3c", "no": "N3c" }
+      "next": { "yes": "N3c", "no": "N3c", "red_flag": "END_MODULE" }
     },
     {
       "id": "N3c",
       "group": "N3",
       "prompt": "Feel tired, weak or exhausted easily?",
       "responseType": "yes_no",
-      "next": { "yes": "N3d", "no": "N3d" }
+      "next": { "yes": "N3d", "no": "N3d", "red_flag": "END_MODULE" }
     },
     {
       "id": "N3d",
       "group": "N3",
       "prompt": "Have difficulty concentrating or find your mind going blank?",
       "responseType": "yes_no",
-      "next": { "yes": "N3e", "no": "N3e" }
+      "next": { "yes": "N3e", "no": "N3e", "red_flag": "END_MODULE" }
     },
     {
       "id": "N3e",
       "group": "N3",
       "prompt": "Feel irritable?",
       "responseType": "yes_no",
-      "next": { "yes": "N3f", "no": "N3f" }
+      "next": { "yes": "N3f", "no": "N3f", "red_flag": "END_MODULE" }
     },
     {
       "id": "N3f",
       "group": "N3",
       "prompt": "Have difficulty sleeping (difficulty falling asleep, waking up in the middle of the night, early morning wakening or sleeping excessively)?",
       "responseType": "yes_no",
-      "next": { "yes": "N4", "no": "N4" }
+      "next": { "yes": "N4", "no": "N4", "red_flag": "END_MODULE" }
     },
     {
       "id": "N4",
       "prompt": "Do these anxieties and worries significantly disrupt your ability to work, to function socially or in your relationships or in other important areas of your life or cause you significant distress?",
       "responseType": "yes_no",
-      "next": { "yes": "O1a", "no": "O1a" }
+      "next": { "yes": "O1a", "no": "O1a", "red_flag": "END_MODULE" }
     },
     {
       "id": "O1a",
       "prompt": "Were you taking any drugs or medicines or in withdrawal from any of these?",
       "responseType": "choice",
       "options": ["No", "Yes"],
-      "next": { "no": "O1b", "yes": "O1b"}
+      "next": { "no": "O1b", "yes": "O1b", "red_flag": "END_MODULE"}
     },
     {
       "id": "O1b",
       "prompt": "Did you have any other medical illness unrelated to the one we discussed today? I am trying to understand if the symptoms you have described could be caused by other organic factors.",
       "responseType": "choice",
       "options": ["No", "Yes"],
-      "next": { "no": "DIAGNOSTIC", "yes": "DIAGNOSTIC"}
+      "next": { "no": "DIAGNOSTIC", "yes": "DIAGNOSTIC", "red_flag": "END_MODULE"}
     }
   ],
   "diagnosticCriteria": {

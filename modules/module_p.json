@@ -15,91 +15,91 @@
       "group": "P1",
       "prompt": "Before you were 15 years old, did you: repeatedly skip school or run away from home overnight or stayed out at night against your parent's rules?",
       "responseType": "yes_no",
-      "next": { "yes": "P1b", "no": "P1b" }
+      "next": { "yes": "P1b", "no": "P1b", "red_flag": "END_MODULE" }
     },
     {
       "id": "P1b",
       "group": "P1",
       "prompt": "repeatedly lie, cheat, 'con' others, or steal or break into someone's house or car?",
       "responseType": "yes_no",
-      "next": { "yes": "P1c", "no": "P1c" }
+      "next": { "yes": "P1c", "no": "P1c", "red_flag": "END_MODULE" }
     },
     {
       "id": "P1c",
       "group": "P1",
       "prompt": "start fights or bully, threaten, or intimidate others?",
       "responseType": "yes_no",
-      "next": { "yes": "P1d", "no": "P1d" }
+      "next": { "yes": "P1d", "no": "P1d", "red_flag": "END_MODULE" }
     },
     {
       "id": "P1d",
       "group": "P1",
       "prompt": "deliberately destroy things or start fires?",
       "responseType": "yes_no",
-      "next": { "yes": "P1e", "no": "P1e" }
+      "next": { "yes": "P1e", "no": "P1e", "red_flag": "END_MODULE" }
     },
     {
       "id": "P1e",
       "group": "P1",
       "prompt": "deliberately hurt animals or people?",
       "responseType": "yes_no",
-      "next": { "yes": "P1f", "no": "P1f" }
+      "next": { "yes": "P1f", "no": "P1f", "red_flag": "END_MODULE" }
     },
     {
       "id": "P1f",
       "group": "P1",
       "prompt": "force someone into sexual activity?",
       "responseType": "yes_no",
-      "next": { "yes": "P2a", "no": "P2a" }
+      "next": { "yes": "P2a", "no": "P2a", "red_flag": "END_MODULE" }
     },
     {
       "id": "P2a",
       "group": "P2",
       "prompt": "Since you were 15 years old, have you: done things that are illegal or would be grounds to get arrested, even if you didn't get caught (for example destroying property, shoplifting, stealing, selling drugs, or committing a felony)?",
       "responseType": "yes_no",
-      "next": { "yes": "P2b", "no": "P2b" }
+      "next": { "yes": "P2b", "no": "P2b", "red_flag": "END_MODULE" }
     },
     {
       "id": "P2b",
       "group": "P2",
       "prompt": "often lied or 'conned' other people to get money or pleasure, or lied just for fun?",
       "responseType": "yes_no",
-      "next": { "yes": "P2c", "no": "P2c" }
+      "next": { "yes": "P2c", "no": "P2c", "red_flag": "END_MODULE" }
     },
     {
       "id": "P2c",
       "group": "P2",
       "prompt": "been impulsive and didn't care about planning ahead?",
       "responseType": "yes_no",
-      "next": { "yes": "P2d", "no": "P2d" }
+      "next": { "yes": "P2d", "no": "P2d", "red_flag": "END_MODULE" }
     },
     {
       "id": "P2d",
       "group": "P2",
       "prompt": "been in physical fights repeatedly or assaulted others (including physical fights with your spouse or children)?",
       "responseType": "yes_no",
-      "next": { "yes": "P2e", "no": "P2e" }
+      "next": { "yes": "P2e", "no": "P2e", "red_flag": "END_MODULE" }
     },
     {
       "id": "P2e",
       "group": "P2",
       "prompt": "exposed others or yourself to danger without caring?",
       "responseType": "yes_no",
-      "next": { "yes": "P2f", "no": "P2f" }
+      "next": { "yes": "P2f", "no": "P2f", "red_flag": "END_MODULE" }
     },
     {
       "id": "P2f",
       "group": "P2",
       "prompt": "repeatedly behaved in a way that others would consider irresponsible, like failing to pay for things you owed, deliberately being impulsive or deliberately not working to support yourself?",
       "responseType": "yes_no",
-      "next": { "yes": "P2g", "no": "P2g" }
+      "next": { "yes": "P2g", "no": "P2g", "red_flag": "END_MODULE" }
     },
     {
       "id": "P2g",
       "group": "P2",
       "prompt": "felt no guilt after hurting, mistreating, lying to, or stealing from others, or after damaging property?",
       "responseType": "yes_no",
-      "next": { "yes": "DIAGNOSTIC", "no": "DIAGNOSTIC" }
+      "next": { "yes": "DIAGNOSTIC", "no": "DIAGNOSTIC", "red_flag": "END_MODULE" }
     }
   ],
   "diagnosticCriteria": {
