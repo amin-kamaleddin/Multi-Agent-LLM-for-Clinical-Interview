@@ -149,7 +149,7 @@ def judge_node(state: InterviewState) -> Dict[str, Any]:
     patient_last_answer = state.messages[-1]
 
     response_text = patient_last_answer.content.strip().lower()
-    if detect_red_flag(response_text) == True:
+    if detect_red_flag(response_text) == True and state.patient_agent == False:
         print("Direct classification: RED FLAG")
         label = "red_flag"
         reasoning = f"Red flag detected: '{patient_last_answer.content}'"
