@@ -28,7 +28,7 @@ Respond as the patient described in your system prompt. Answer each question cle
 """
 
 patient_llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.9)
-
+FILE_NAME = "patients_with_system_prompts_e"
 
 class InterviewState(BaseModel):
     messages: Annotated[Sequence, add_messages] = Field(default_factory=list)
@@ -92,7 +92,7 @@ def run():
     _load_key()
 
     # Load patient data from JSON
-    with open("./interview_agent/prompts/patients_with_system_prompts.json", "r", encoding="utf-8") as f:
+    with open("./interview_agent/prompts/" + FILE_NAME + ".json", "r", encoding="utf-8") as f:
         patients_data = json.load(f)
 
     for entry in patients_data:
@@ -133,22 +133,39 @@ def run():
         _save_diagnosis(diagnosis_output, run_id)
 
 
-
 def _save_log(log, run_id):
-    Path("patient_agent_results").mkdir(exist_ok=True)
-    path = Path("patient_agent_results") / f"{run_id}.csv"
+    # Create main directory
+    base_dir = Path("patient_agent_results")
+    base_dir.mkdir(exist_ok=True)
+
+    # Create subdirectory
+    sub_dir = base_dir / FILE_NAME
+    sub_dir.mkdir(exist_ok=True)
+
+    # Save file in subdirectory
+    path = sub_dir / f"{run_id}.csv"
     with open(path, "w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=log[0].keys())
         writer.writeheader()
         writer.writerows(log)
+
     print(f"Conversation log saved to {path}")
 
 
 def _save_diagnosis(diagnosis_content, run_id):
-    Path("patient_agent_results").mkdir(exist_ok=True)
-    path = Path("patient_agent_results") / f"diagnosis_{run_id}.json"
+    # Create main directory
+    base_dir = Path("patient_agent_results")
+    base_dir.mkdir(exist_ok=True)
+
+    # Create subdirectory
+    sub_dir = base_dir / FILE_NAME
+    sub_dir.mkdir(exist_ok=True)
+
+    # Save file in subdirectory
+    path = sub_dir / f"diagnosis_{run_id}.json"
     with open(path, "w", encoding="utf-8") as f:
         json.dump(diagnosis_content, f, indent=4)
+
     print(diagnosis_content)
     print(f"Diagnosis saved to {path}")
 
