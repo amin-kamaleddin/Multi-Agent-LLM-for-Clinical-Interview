@@ -213,6 +213,9 @@ if "answer_input" not in st.session_state:
 if "clear_answer" not in st.session_state:
     st.session_state.clear_answer = False
 
+if "red_flag_detected" not in st.session_state:
+    st.session_state.red_flag_detected = False
+
 # App state: "asking_question" or "showing_feedback"
 if "app_state" not in st.session_state:
     st.session_state.app_state = "asking_question"
@@ -258,6 +261,7 @@ with st.sidebar:
         st.session_state.finished = False
         st.session_state.diagnosis_result = None
         st.session_state.latest_judge_result = None  # Clear judge results
+        st.session_state.red_flag_detected = False  # Reset red flag state
         st.session_state.thread_id = make_thread_id()
         st.session_state["answer_input"] = ""
         st.session_state["clear_answer"] = True
@@ -270,9 +274,18 @@ if st.session_state.loader is None or st.session_state.state is None:
 state: InterviewState = st.session_state.state
 
 if st.session_state.finished:
-    st.success("Interview completed.")
+    if st.session_state.red_flag_detected:
+        st.error("🚨 **CRISIS ALERT** 🚨")
+        st.markdown("It looks like you may be going through a very difficult time.")
+        st.markdown("If you feel you are in immediate danger, please call 911 or your local emergency services:")
+        st.markdown("- **Emergency Services**: 911")
+        st.markdown("- **National Suicide Prevention Lifeline**: 988")        
+        st.markdown("---")
+        st.info("The interview has been stopped for your safety. Please seek immediate professional help.")
+    else:
+        st.success("Interview completed.")
 
-    if st.session_state.diagnosis_result is not None:
+    if st.session_state.diagnosis_result is not None and not st.session_state.red_flag_detected:
         st.subheader("Diagnosis")
         diag_data = st.session_state.diagnosis_result.model_dump()
         total = len(diag_data)
@@ -293,7 +306,7 @@ if st.session_state.finished:
             st.markdown("- **Reasoning**:")
             st.write(group_result.get("reasoning", ""))
             st.markdown("---")
-
+    
     csv_data = csv_string_from_log(state.conversation_log)
     st.download_button(
         "Download conversation log (CSV)",
@@ -405,6 +418,10 @@ if answer:
     
     state.messages = list(state.messages) + judge_result["messages"]
     state.judge_results = list(state.judge_results) + judge_result["judge_results"]
+
+    # Check if the latest judge result is a red flag
+    if judge_result["judge_results"] and judge_result["judge_results"][0].lower() == "red_flag":
+        st.session_state.red_flag_detected = True
 
     # Run selector to determine next step (this sets ready_for_diagnosis if needed)
     if should_clarify(state) == "continue":
