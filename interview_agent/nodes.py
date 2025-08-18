@@ -83,6 +83,7 @@ AUTO_SET_YES_AFTER = 3  # after 3 consecutive clarifies, the 4th auto-yes
 def interviewer_node(state: InterviewState) -> Dict[str, Any]:
     """Interviewer node that presents questions, then collects user reply."""
     print("enter interviewer")
+    updates: Dict[str, Any] = {}
 
     # 1. Build the system prompt + history
     current_question = state.module_loader.get_question(state.current_question_id)
@@ -90,9 +91,11 @@ def interviewer_node(state: InterviewState) -> Dict[str, Any]:
 
     if len(state.judge_results) > 0:
         if state.judge_results[-1] == "explain request":
+            updates["conversation_log"] = [_log_entry(state)]
             patient_response = state.messages[-1].content
             sys_msg = SystemMessage(EXPLAIN_PROMPT.format(response=patient_response, current_question=current_question.prompt))
         elif state.judge_results[-1] == "rephrase needed":
+            updates["conversation_log"] = [_log_entry(state)]
             # Generate specific clarification using LLM based on patient's unclear response
             patient_response = state.messages[-1].content
             judge_reasoning = state.messages[-2].content if len(state.messages) >= 2 else "Response was unclear"
@@ -112,10 +115,10 @@ def interviewer_node(state: InterviewState) -> Dict[str, Any]:
     print(response.content)  # show question to user
 
     # 3. Immediately read the user's answer
-
+    updates['messages'] = [response]
     print("exit interviewer")
     # 4. Return both the LLM question and the new HumanMessage
-    return {"messages": [response]}
+    return updates
 
 
 def patient_node(state: InterviewState):
@@ -145,11 +148,12 @@ def _clarify_streak(judge_results: list[Any], last_result) -> bool:
 def judge_node(state: InterviewState) -> Dict[str, Any]:
     # assume the loop-driver put the user's message in state.messages[-1]
     print("enter judge")
+    updates: Dict[str, Any] = {}
     last_question = state.module_loader.get_question(state.current_question_id)
     patient_last_answer = state.messages[-1]
 
     response_text = patient_last_answer.content.strip().lower()
-    if detect_red_flag(response_text) == True and state.patient_agent == False:
+    if not state.patient_agent and detect_red_flag(response_text):
         print("Direct classification: RED FLAG")
         label = "red_flag"
         reasoning = f"Red flag detected: '{patient_last_answer.content}'"
@@ -182,8 +186,11 @@ def judge_node(state: InterviewState) -> Dict[str, Any]:
         reasoning = f"Patient prompted a vague answer after three rounds of clarification :" \
                     f" '{patient_last_answer.content}'"
     print("exit judge")
-    # TODO search for best practices of adding pydantic class to 'Messages'
-    return {"messages": [AIMessage(content=reasoning)], "judge_results": [label]}
+
+    updates['messages'] = [AIMessage(content=reasoning)]
+    updates["judge_results"] = [label]
+
+    return updates
 
 
 def should_clarify(state: InterviewState) -> str:
