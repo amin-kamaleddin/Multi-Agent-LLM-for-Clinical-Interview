@@ -84,7 +84,7 @@ The system is a directed graph of coordinated nodes that share a single `Intervi
 
 ### Walkthrough
 
-1. **Interviewer Node**
+1. **questioner Node**
 
    * Presents the next MINI question with an LLM.
    * If the previous reply was ambiguous, generates a focused clarification prompt.
@@ -93,10 +93,10 @@ The system is a directed graph of coordinated nodes that share a single `Intervi
 
 2. **Patient Node**
 
-   * Receives the interviewer’s question.
+   * Receives the questioner’s question.
    * Either simulates a patient reply via LLM (automated mode) or accepts user input (manual mode).
 
-3. **Judge Node**
+3. **evaluator Node**
 
    * Reviews the patient’s response.
    * If the answer is clearly yes or no without extra context, classifies locally without an LLM call.
@@ -105,10 +105,10 @@ The system is a directed graph of coordinated nodes that share a single `Intervi
 
 4. **Clarification Handling**
 
-   * If the judge requests clarification, route back to the interviewer to ask a clearer question.
+   * If the evaluator requests clarification, route back to the questioner to ask a clearer question.
    * Otherwise continue to selection.
 
-5. **Selector Node**
+5. **navigator Node**
 
    * Logs question, response, and classification.
    * Advances to the next question using module branching logic.
@@ -136,7 +136,7 @@ The system is a directed graph of coordinated nodes that share a single `Intervi
 mini-agent/
 ├── interview_agent/          # Core package
 │   ├── models.py             # Data models and InterviewState
-│   ├── nodes.py              # LangGraph nodes (interviewer, judge, etc.)
+│   ├── nodes.py              # LangGraph nodes (questioner, evaluator, etc.)
 │   ├── graph.py              # Workflow construction
 │   └── cli.py                # Command-line interface
 ├── modules/                  # MINI questionnaire modules

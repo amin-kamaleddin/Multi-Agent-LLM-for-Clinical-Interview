@@ -64,7 +64,7 @@ class InterviewState(BaseModel):
     module_loader: Any
     current_question_id: Optional[str] = None
     question_path: List[str] = Field(default_factory=list)
-    judge_results: Annotated[List[Any], operator.add] = Field(default_factory=list)
+    evaluator_results: Annotated[List[Any], operator.add] = Field(default_factory=list)
     patient_agent: bool = False
     module_completed: bool = False
     ready_for_diagnosis: bool = False

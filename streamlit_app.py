@@ -11,17 +11,17 @@ from langchain_core.messages import SystemMessage, HumanMessage, AIMessage
 
 from interview_agent.models import ModuleLoader, InterviewState
 from interview_agent.prompts import (
-    INTERVIEWER_SYSTEM_PROMPT,    
+    QUESTIONER_SYSTEM_PROMPT,    
     EXPLAIN_PROMPT,
     CLARIFICATION_PROMPT,
 )
 from interview_agent.nodes import (
     get_llm,  # Using lazy loading instead of direct llm import
     should_clarify,
-    selector,
+    navigator_node,
     should_diagnose,
-    diagnosis,
-    judge_node,
+    diagnoser_node,
+    evaluator_node,
 )
 
 # This is a work in progress and is a poor implementation of a Streamlit app.
@@ -74,7 +74,7 @@ def create_initial_state(loader: ModuleLoader, start_qid: str) -> InterviewState
         current_question_id=start_qid,
         messages=[],
         question_path=[],
-        judge_results=[],
+        evaluator_results=[],
         conversation_log=[],
         module_completed=False,
         ready_for_diagnosis=False,
@@ -82,24 +82,24 @@ def create_initial_state(loader: ModuleLoader, start_qid: str) -> InterviewState
     )
 
 
-def generate_interviewer_question(state: InterviewState) -> AIMessage:
+def generate_questioner_question(state: InterviewState) -> AIMessage:
     current_question = state.module_loader.get_question(state.current_question_id)
-    sys_msg = SystemMessage(content=INTERVIEWER_SYSTEM_PROMPT.format(question=current_question.prompt))
+    sys_msg = SystemMessage(content=QUESTIONER_SYSTEM_PROMPT.format(question=current_question.prompt))
 
-    if len(state.judge_results) > 0:
-        if state.judge_results[-1] == "explain request":
+    if len(state.evaluator_results) > 0:
+        if state.evaluator_results[-1] == "explain request":
             patient_response = state.messages[-1].content if state.messages else ""
             sys_msg = SystemMessage(
                 content=EXPLAIN_PROMPT.format(response=patient_response, current_question=current_question.prompt)
             )
-        elif state.judge_results[-1] == "rephrase needed":
+        elif state.evaluator_results[-1] == "rephrase needed":
             patient_response = state.messages[-1].content if state.messages else ""
-            judge_reasoning = state.messages[-2].content if len(state.messages) >= 2 else "Response was unclear"
+            evaluator_reasoning = state.messages[-2].content if len(state.messages) >= 2 else "Response was unclear"
             sys_msg = SystemMessage(
                 content=CLARIFICATION_PROMPT.format(
                     question=current_question.prompt,
                     response=patient_response,
-                    reasoning=judge_reasoning
+                    reasoning=evaluator_reasoning
                 )
             )
 
@@ -111,7 +111,7 @@ def generate_interviewer_question(state: InterviewState) -> AIMessage:
 
 
 
-def apply_selector_updates(state: InterviewState, updates: dict) -> InterviewState:
+def apply_navigator_updates(state: InterviewState, updates: dict) -> InterviewState:
     if "conversation_log" in updates:
         state.conversation_log += updates["conversation_log"]
     if "module_completed" in updates:
@@ -157,30 +157,30 @@ def _prettify_group_title(name: str) -> str:
     return pretty[:1].upper() + pretty[1:]
 
 
-def display_judge_feedback(judge_result: dict, user_answer: str):
-    if not judge_result:
+def display_evaluator_feedback(evaluator_result: dict, user_answer: str):
+    if not evaluator_result:
         return
     
     # Extract the classification and reasoning
-    classification = judge_result.get("judge_results", [""])[0] if judge_result.get("judge_results") else ""
-    reasoning_msg = judge_result.get("messages", [None])[0]
+    classification = evaluator_result.get("evaluator_results", [""])[0] if evaluator_result.get("evaluator_results") else ""
+    reasoning_msg = evaluator_result.get("messages", [None])[0]
     reasoning = reasoning_msg.content if reasoning_msg else "No reasoning provided"
     
     if classification == "yes":
-        st.success("✅ **Judge Decision: YES** - Answer accepted")
+        st.success("✅ **evaluator Decision: YES** - Answer accepted")
     elif classification == "no":
-        st.success("❌ **Judge Decision: NO** - Answer accepted")
+        st.success("❌ **evaluator Decision: NO** - Answer accepted")
     elif classification == "explain request":
-        st.info("❓ **Judge Decision: EXPLAIN REQUEST** - Patient needs explanation")
+        st.info("❓ **evaluator Decision: EXPLAIN REQUEST** - Patient needs explanation")
     elif classification == "rephrase needed":
-        st.warning("🤔 **Judge Decision: NEEDS CLARIFICATION** - Response unclear")
+        st.warning("🤔 **evaluator Decision: NEEDS CLARIFICATION** - Response unclear")
     else:
-        st.info(f"ℹ️ **Judge Decision: {classification.upper()}**")
+        st.info(f"ℹ️ **evaluator Decision: {classification.upper()}**")
     
-    # Show user's answer and judge reasoning
-    with st.expander("📝 See judge analysis", expanded=False):
+    # Show user's answer and evaluator reasoning
+    with st.expander("📝 See evaluator analysis", expanded=False):
         st.write(f"**Your answer:** \"{user_answer}\"")
-        st.write(f"**Judge reasoning:** {reasoning}")
+        st.write(f"**evaluator reasoning:** {reasoning}")
         
     st.markdown("---")
 
@@ -260,7 +260,7 @@ with st.sidebar:
         st.session_state.last_question = ""
         st.session_state.finished = False
         st.session_state.diagnosis_result = None
-        st.session_state.latest_judge_result = None  # Clear judge results
+        st.session_state.latest_evaluator_result = None  # Clear evaluator results
         st.session_state.red_flag_detected = False  # Reset red flag state
         st.session_state.thread_id = make_thread_id()
         st.session_state["answer_input"] = ""
@@ -317,7 +317,7 @@ if st.session_state.finished:
     st.stop()
 
 if not st.session_state.awaiting_answer:
-    question_msg = generate_interviewer_question(state)
+    question_msg = generate_questioner_question(state)
     state.messages = list(state.messages) + [question_msg]
     st.session_state.last_question = question_msg.content
     st.session_state.awaiting_answer = True
@@ -350,17 +350,17 @@ if st.session_state.get("clear_answer"):
     st.session_state.answer_input = ""
     st.session_state.clear_answer = False
 
-# Display judge results from the previous answer
-if st.session_state.get("latest_judge_result"):
-    display_judge_feedback(
-        st.session_state.latest_judge_result["judge_data"], 
-        st.session_state.latest_judge_result["user_answer"]
+# Display evaluator results from the previous answer
+if st.session_state.get("latest_evaluator_result"):
+    display_evaluator_feedback(
+        st.session_state.latest_evaluator_result["evaluator_data"], 
+        st.session_state.latest_evaluator_result["user_answer"]
     )
     
     # Show Next Question button
     if st.button("Next Question", use_container_width=True, type="primary"):
-        # Clear feedback and continue (selector logic already ran after judge)
-        st.session_state.latest_judge_result = None
+        # Clear feedback and continue (navigator logic already ran after evaluator)
+        st.session_state.latest_evaluator_result = None
         st.session_state.awaiting_answer = False
         st.session_state.clear_answer = True
         st.rerun()
@@ -408,25 +408,25 @@ if answer:
     human_msg = HumanMessage(content=answer)
     state.messages = list(state.messages) + [human_msg]
 
-    judge_result = judge_node(state)
+    evaluator_result = evaluator_node(state)
     
-    # Store judge results for display
-    st.session_state.latest_judge_result = {
-        "judge_data": judge_result,
+    # Store evaluator results for display
+    st.session_state.latest_evaluator_result = {
+        "evaluator_data": evaluator_result,
         "user_answer": answer
     }
     
-    state.messages = list(state.messages) + judge_result["messages"]
-    state.judge_results = list(state.judge_results) + judge_result["judge_results"]
+    state.messages = list(state.messages) + evaluator_result["messages"]
+    state.evaluator_results = list(state.evaluator_results) + evaluator_result["evaluator_results"]
 
-    # Check if the latest judge result is a red flag
-    if judge_result["judge_results"] and judge_result["judge_results"][0].lower() == "red_flag":
+    # Check if the latest evaluator result is a red flag
+    if evaluator_result["evaluator_results"] and evaluator_result["evaluator_results"][0].lower() == "red_flag":
         st.session_state.red_flag_detected = True
 
-    # Run selector to determine next step (this sets ready_for_diagnosis if needed)
+    # Run navigator to determine next step (this sets ready_for_diagnosis if needed)
     if should_clarify(state) == "continue":
-        updates = selector(state)
-        state = apply_selector_updates(state, updates)
+        updates = navigator_node(state)
+        state = apply_navigator_updates(state, updates)
     
     # Update session state with the modified state
     st.session_state.state = state
@@ -436,7 +436,7 @@ if answer:
 
     branch = should_diagnose(state)
     if branch == "diagnose":
-        diag = diagnosis(state)
+        diag = diagnoser_node(state)
         state.diagnosis_content = diag.get("diagnosis_content")
         st.session_state.diagnosis_result = state.diagnosis_content
         save_conversation_log(state.conversation_log, st.session_state.thread_id)
