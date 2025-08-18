@@ -1,4 +1,4 @@
-DIAGNOSIS_SYSTEM_PROMPT="""
+DIAGNOSER_SYSTEM_PROMPT="""
 You are a psychiatric diagnostic evaluator.
 === Patient Summary ===
 The patient's answers to yes/no questions are listed below:

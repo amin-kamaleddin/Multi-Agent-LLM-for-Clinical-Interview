@@ -11,18 +11,18 @@ import operator
 from langgraph.graph.message import add_messages
 from pydantic import BaseModel, Field
 from interview_agent.nodes import (
-    judge_node,
-    interviewer_node,
+    evaluator_node,
+    questioner_node,
     should_clarify,
-    selector,
+    navigator_node,
     should_diagnose,
-    diagnosis,
+    diagnoser_node,
 )
 
 from langchain_openai import ChatOpenAI
 
 PATIENT_USER_PROMPT = """
-The interviewer asks: {question}
+The questioner asks: {question}
 
 Respond as the patient described in your system prompt. Answer each question clearly with either "yes" or "no." If necessary, add one short sentence of clarification at the end.
 """
@@ -36,7 +36,7 @@ class InterviewState(BaseModel):
     module_loader: Any
     current_question_id: Optional[str] = None
     question_path: List[str] = Field(default_factory=list)
-    judge_results: Annotated[List[Any], operator.add] = Field(default_factory=list)
+    evaluator_results: Annotated[List[Any], operator.add] = Field(default_factory=list)
     patient_agent: bool = False
     module_completed: bool = False
     ready_for_diagnosis: bool = False
@@ -66,21 +66,21 @@ def patient_node(state: InterviewState):
 def build_graph(loader: ModuleLoader, visualize: bool = True):
     sg = StateGraph(InterviewState)
 
-    sg.add_node("interviewer", interviewer_node)
+    sg.add_node("questioner", questioner_node)
     sg.add_node("patient", patient_node)
-    sg.add_node("judge", judge_node)
-    sg.add_node("selector", selector)
-    sg.add_node("diagnosis", diagnosis)
+    sg.add_node("evaluator", evaluator_node)
+    sg.add_node("navigator", navigator_node)
+    sg.add_node("diagnosis", diagnoser_node)
 
-    sg.add_edge(START, "interviewer")
-    sg.add_edge("interviewer", "patient")
-    sg.add_edge("patient", "judge")
+    sg.add_edge(START, "questioner")
+    sg.add_edge("questioner", "patient")
+    sg.add_edge("patient", "evaluator")
 
-    sg.add_conditional_edges("judge", should_clarify,
-                             {"clarify": "interviewer", "continue": "selector"})
+    sg.add_conditional_edges("evaluator", should_clarify,
+                             {"clarify": "questioner", "continue": "navigator"})
 
-    sg.add_conditional_edges("selector", should_diagnose,
-                             {"continue": "interviewer", "diagnose": "diagnosis", "end": END})
+    sg.add_conditional_edges("navigator", should_diagnose,
+                             {"continue": "questioner", "diagnose": "diagnoser", "end": END})
 
     sg.add_edge("diagnosis", END)
 

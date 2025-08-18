@@ -8,14 +8,14 @@ from typing import Any, Dict
 
 from interview_agent.cli import _load_key
 
-JUDGE_SYSTEM_PROMPT = """
-You are a clinical psychological assessment agent. Analyze the patient's response and provide guidance to the interviewer.
+evaluator_SYSTEM_PROMPT = """
+You are a clinical psychological assessment agent. Analyze the patient's response and provide guidance to the questioner.
 
 CLASSIFICATION RULES:
 - "yes" - Response indicates affirmation, agreement, or provides specific information that answers the question (interpret generously)
 - "no" - Response indicates negation, disagreement, or clearly answers "no" to the question
-- "rephrase needed" - Response is vague, unclear, or deflects, but shows engagement with the topic. Interviewer should rephrase the same question differently
-- "explain request" - Patient asks for clarification about the question itself. Interviewer should explain the question
+- "rephrase needed" - Response is vague, unclear, or deflects, but shows engagement with the topic. questioner should rephrase the same question differently
+- "explain request" - Patient asks for clarification about the question itself. questioner should explain the question
 
 ANALYSIS PROCESS:
 1. Try to interpret the response generously - can you reasonably infer a yes/no answer?
@@ -38,18 +38,18 @@ Question: "How many episodes have you had?"
 - "I'm not sure" → rephrase needed
 - "What counts as an episode?" → explain request
 
-When classification is "rephrase needed", the interviewer should ask the same question using different words or approach, not repeat exactly.
+When classification is "rephrase needed", the questioner should ask the same question using different words or approach, not repeat exactly.
 
 Question: {last_question}
 Patient Response: {patient_last_answer}
 """
 
-judge_llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.1)
-structured_llm = judge_llm.with_structured_output(ClassificationResult)
+evaluator_llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.1)
+structured_llm = evaluator_llm.with_structured_output(ClassificationResult)
 
-def judge(question, answer):
+def evaluator(question, answer):
     # assume the loop-driver put the user's message in state.messages[-1]
-    print("enter judge")
+    print("enter evaluator")
 
     response_text = answer.strip().lower()
     if response_text == "yes":
@@ -61,8 +61,8 @@ def judge(question, answer):
         label = "no"
         reasoning = f"Patient gave a clear negative response: '{answer}'"
     else:        
-        print("MAKING AN LLM CALL TO JUDGE THE ANSWER")
-        prompt = JUDGE_SYSTEM_PROMPT.format(last_question= question, patient_last_answer= answer)
+        print("MAKING AN LLM CALL TO EVALUATE THE ANSWER")
+        prompt = evaluator_SYSTEM_PROMPT.format(last_question= question, patient_last_answer= answer)
         resp = structured_llm.invoke([HumanMessage(content=prompt)])
 
         # Access Pydantic model attributes directly
@@ -75,23 +75,23 @@ def judge(question, answer):
         if label not in ["yes", "no", "rephrase needed", "N/A", "explain request"]:
             label = "rephrase needed"
 
-    print("exit judge")
+    print("exit evaluator")
     # TODO search for best practices of adding pydantic class to 'Messages'
     return label
 
 # Step 1: Read CSV
-df = pd.read_csv("./interview_agent/prompts/judge_dataset_edge_cases_v2.csv")
+df = pd.read_csv("./interview_agent/prompts/evaluator_dataset_edge_cases_v2.csv")
 
 _load_key()
 
-# Step 2: Apply judge to each row
-df["prediction"] = df.apply(lambda row: judge(row["question"], row["answer"]), axis=1)
+# Step 2: Apply evaluator to each row
+df["prediction"] = df.apply(lambda row: evaluator(row["question"], row["answer"]), axis=1)
 
 accuracy = (df["prediction"] == df["label"]).mean()
 
 print(f"Accuracy: {accuracy:.4f}")
 
 # Step 3: Save new dataframe with labels
-df.to_csv("./interview_agent/prompts/judge_dataset_edge_cases_predictions_v2.csv", index=False)
+df.to_csv("./interview_agent/prompts/evaluator_dataset_edge_cases_predictions_v2.csv", index=False)
 
 print("Done! New file saved with labels.")
