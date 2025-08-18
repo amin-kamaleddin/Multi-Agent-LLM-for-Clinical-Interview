@@ -82,7 +82,7 @@ def build_graph(loader: ModuleLoader, visualize: bool = True):
     sg.add_conditional_edges("navigator", should_diagnose,
                              {"continue": "questioner", "diagnose": "diagnoser", "end": END})
 
-    sg.add_edge("diagnosis", END)
+    sg.add_edge("diagnoser", END)
 
     compiled_sg = sg.compile()
 
