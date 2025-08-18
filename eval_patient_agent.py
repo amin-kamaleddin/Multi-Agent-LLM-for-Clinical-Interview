@@ -5,9 +5,10 @@ import re
 from sklearn.metrics import accuracy_score, confusion_matrix, precision_score, recall_score, f1_score
 
 # Paths
-patients_file = "./interview_agent/prompts/patients_with_system_prompts.json"
-results_dir = "./patient_agent_results"
-output_csv = "./patient_agent_results/predictions.csv"
+MODULE_FILE_NAME = "patients_with_system_prompts_e"
+patients_file = "./interview_agent/prompts/" + MODULE_FILE_NAME + ".json"
+results_dir = "./patient_agent_results/" + MODULE_FILE_NAME
+output_csv = results_dir + "/predictions.csv"
 
 # Load patients data
 with open(patients_file, "r", encoding="utf-8") as f:
