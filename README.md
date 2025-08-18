@@ -84,7 +84,7 @@ The system is a directed graph of coordinated nodes that share a single `Intervi
 
 ### Walkthrough
 
-1. **questioner Node**
+1. **Questioner Node**
 
    * Presents the next MINI question with an LLM.
    * If the previous reply was ambiguous, generates a focused clarification prompt.
@@ -96,7 +96,7 @@ The system is a directed graph of coordinated nodes that share a single `Intervi
    * Receives the questioner’s question.
    * Either simulates a patient reply via LLM (automated mode) or accepts user input (manual mode).
 
-3. **evaluator Node**
+3. **Evaluator Node**
 
    * Reviews the patient’s response.
    * If the answer is clearly yes or no without extra context, classifies locally without an LLM call.
@@ -108,13 +108,13 @@ The system is a directed graph of coordinated nodes that share a single `Intervi
    * If the evaluator requests clarification, route back to the questioner to ask a clearer question.
    * Otherwise continue to selection.
 
-5. **navigator Node**
+5. **Navigator Node**
 
    * Logs question, response, and classification.
    * Advances to the next question using module branching logic.
    * Flags completion or readiness for diagnosis.
 
-6. **Diagnosis Node**
+6. **Diagnoser Node**
 
    * Compiles all responses and criteria.
    * Uses an LLM to produce a structured diagnostic summary.
