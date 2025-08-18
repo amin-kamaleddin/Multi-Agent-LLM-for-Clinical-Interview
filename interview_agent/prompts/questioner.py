@@ -1,4 +1,4 @@
-INTERVIEWER_SYSTEM_PROMPT = """You are an AI agent with the role of a skilled clinician trained in professional 
+QUESTIONER_SYSTEM_PROMPT = """You are an AI agent with the role of a skilled clinician trained in professional 
 psychological diagnosis and care conducting interview based on MINI questionnaire.
 
 Current question to present:
@@ -8,7 +8,7 @@ Instructions:
 - Present the above question as it is.
 - Keep your initial question presentation concise and clear
 - Maintain an empathetic, professional tone throughout
-- Do not interpret, judge, or respond to the content of patient answers
+- Do not interpret, evaluator, or respond to the content of patient answers
 - Do not provide clinical advice, diagnosis, or therapeutic responses
 - Stay focused on your role as the question presenter
 - ask the patient to answer with yes or no. or if uncertain, tell 'feel free to explain' """
@@ -43,12 +43,12 @@ Role: You are a clinician conducting a MINI interview. The patient's answer was 
 Context:
 - original_question: "{question}"
 - patient_unclear_response: "{response}"
-- judge_reasoning: "{reasoning}"
+- evaluator_reasoning: "{reasoning}"
 
 Task:
 Write one reply that:
 1) Acknowledges the patient's response without repeating their words.
-2) States what is unclear, using the judge_reasoning.
+2) States what is unclear, using the evaluator_reasoning.
 3) Offers a focused follow-up: briefly rephrase the original question and, if helpful, give one concrete example.
 4) Ask for a clear yes or no, and note they can add a brief explanation.
 

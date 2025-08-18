@@ -1,11 +1,11 @@
-JUDGE_SYSTEM_PROMPT = """
-You are a clinical psychological assessment agent. Analyze the patient's response and provide guidance to the interviewer.
+EVALUATOR_SYSTEM_PROMPT = """
+You are a clinical psychological assessment agent. Analyze the patient's response and provide guidance to the questioner.
 
 CLASSIFICATION RULES:
 - "yes" - Response indicates affirmation, agreement, or provides specific information that answers the question (interpret generously)
 - "no" - Response indicates negation, disagreement, or clearly answers "no" to the question
-- "rephrase needed" - Response is vague, unclear, or deflects, but shows engagement with the topic. Interviewer should rephrase the same question differently
-- "explain request" - Patient asks for clarification about the question itself. Interviewer should explain the question
+- "rephrase needed" - Response is vague, unclear, or deflects, but shows engagement with the topic. questioner should rephrase the same question differently
+- "explain request" - Patient asks for clarification about the question itself. questioner should explain the question
 
 ANALYSIS PROCESS:
 1. Try to interpret the response generously - can you reasonably infer a yes/no answer?
@@ -28,7 +28,7 @@ Question: "How many episodes have you had?"
 - "I'm not sure" → rephrase needed
 - "What counts as an episode?" → explain request
 
-When classification is "rephrase needed", the interviewer should ask the same question using different words or approach, not repeat exactly.
+When classification is "rephrase needed", the questioner should ask the same question using different words or approach, not repeat exactly.
 
 Question: {last_question}
 Patient Response: {patient_last_answer}
