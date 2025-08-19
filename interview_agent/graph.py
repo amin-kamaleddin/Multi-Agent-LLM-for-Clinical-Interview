@@ -4,10 +4,10 @@ from langgraph.graph import StateGraph
 
 from .models import InterviewState, ModuleLoader
 from .nodes import (
-    interviewer_node,
-    judge_node,
-    selector,
-    diagnosis,
+    questioner_node,
+    evaluator_node,
+    navigator_node,
+    diagnoser_node,
     should_clarify,
     should_diagnose,
     patient_node,
@@ -17,23 +17,23 @@ from .nodes import (
 def build_graph(loader: ModuleLoader, visualize: bool = True):
     sg = StateGraph(InterviewState)
 
-    sg.add_node("interviewer", interviewer_node)
+    sg.add_node("questioner", questioner_node)
     sg.add_node("patient", patient_node)
-    sg.add_node("judge", judge_node)
-    sg.add_node("selector", selector)
-    sg.add_node("diagnosis", diagnosis)
+    sg.add_node("evaluator", evaluator_node)
+    sg.add_node("navigator", navigator_node)
+    sg.add_node("diagnoser", diagnoser_node)
 
-    sg.add_edge(START, "interviewer")
-    sg.add_edge("interviewer", "patient")
-    sg.add_edge("patient", "judge")
+    sg.add_edge(START, "questioner")
+    sg.add_edge("questioner", "patient")
+    sg.add_edge("patient", "evaluator")
 
-    sg.add_conditional_edges("judge", should_clarify,
-                             {"clarify": "interviewer", "continue": "selector"})
+    sg.add_conditional_edges("evaluator", should_clarify,
+                             {"clarify": "questioner", "continue": "navigator"})
 
-    sg.add_conditional_edges("selector", should_diagnose,
-                             {"continue": "interviewer", "diagnose": "diagnosis", "end": END})
+    sg.add_conditional_edges("navigator", should_diagnose,
+                             {"continue": "questioner", "diagnose": "diagnoser", "end": END})
 
-    sg.add_edge("diagnosis", END)
+    sg.add_edge("diagnoser", END)
 
     compiled_sg = sg.compile()
 
