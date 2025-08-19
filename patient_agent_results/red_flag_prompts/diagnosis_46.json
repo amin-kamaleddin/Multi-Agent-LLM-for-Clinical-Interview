@@ -2,6 +2,6 @@
     "current": {
         "diagnosis": true,
         "timeFrame": null,
-        "reasoning": "Criterion 1 is met because F6 is 'YES'. Criterion 2 is also met as both O1a and O1b are 'NO'. Therefore, all criteria are satisfied."
+        "reasoning": "Criterion 1 is met because F6 is 'YES'. Criterion 2 is also met since both O1a and O1b are 'NO'. Therefore, all criteria are satisfied."
     }
 }

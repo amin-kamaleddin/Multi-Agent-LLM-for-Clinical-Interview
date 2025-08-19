@@ -2,6 +2,6 @@
     "mustHave": {
         "diagnosis": true,
         "timeFrame": null,
-        "reasoning": "The diagnostic criterion is met because O1a is marked 'YES'. Therefore, the requirement of having at least one positive response is satisfied."
+        "reasoning": "The criterion is met because O1a is marked 'YES'. Therefore, the diagnostic group criteria are satisfied."
     }
 }
