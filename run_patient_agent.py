@@ -70,7 +70,7 @@ def build_graph(loader: ModuleLoader, visualize: bool = True):
     sg.add_node("patient", patient_node)
     sg.add_node("evaluator", evaluator_node)
     sg.add_node("navigator", navigator_node)
-    sg.add_node("diagnosis", diagnoser_node)
+    sg.add_node("diagnoser", diagnoser_node)
 
     sg.add_edge(START, "questioner")
     sg.add_edge("questioner", "patient")
