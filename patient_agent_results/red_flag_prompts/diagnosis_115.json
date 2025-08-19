@@ -1,0 +1,12 @@
+{
+    "lifetime": {
+        "diagnosis": true,
+        "timeFrame": "both",
+        "reasoning": "Criterion 1 is met as all six items (P1a-P1f) are coded YES, satisfying the requirement of at least 2 positive responses. Criterion 2 is also met as all seven items (P2a-P2g) are coded YES, exceeding the requirement of at least 3 positive responses. Therefore, both criteria are satisfied, leading to a diagnosis of 'True'. The time frame is 'both' since the criteria do not specify a time frame and all items are marked YES."
+    },
+    "note": {
+        "diagnosis": true,
+        "timeFrame": "recent",
+        "reasoning": "All symptom groups are marked 'YES', indicating that the criteria for diagnosis are met. Since there is no indication of a mix of time frames, the assessment is based on the recent time frame. Therefore, the diagnosis is true for the recent time frame."
+    }
+}

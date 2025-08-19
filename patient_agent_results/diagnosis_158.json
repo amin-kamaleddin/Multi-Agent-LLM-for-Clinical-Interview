@@ -1,7 +1,0 @@
-{
-    "current": {
-        "diagnosis": true,
-        "timeFrame": "recent",
-        "reasoning": "Criterion 1 (N4 == 'YES') is met as N4 is YES. Criterion 2 requires at least 3 symptom groups (N3a\u2013N3f) coded YES within the same time frame. All N3a to N3f are YES, indicating at least 6 symptom groups positive. Since no time frame suffixes are provided, these are considered current and thus count as recent. Criterion 3 requires O1a = NO and O1b = NO, both are NO, so criterion 3 is met. Therefore, all criteria are met with symptom groups positive in the recent time frame."
-    }
-}

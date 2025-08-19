@@ -1,7 +1,0 @@
-{
-    "current": {
-        "diagnosis": true,
-        "timeFrame": null,
-        "reasoning": "Criterion E6 requires E6 to be 'YES'. The patient answered 'YES' to E6, so the criterion is met."
-    }
-}

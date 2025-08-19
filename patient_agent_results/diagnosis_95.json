@@ -1,7 +1,0 @@
-{
-    "current": {
-        "diagnosis": false,
-        "timeFrame": null,
-        "reasoning": "Criterion 1 (F6 == 'YES') is not met because there is no information indicating F6 is 'YES'. Criterion 2 (O1a = NO AND O1b = NO) cannot be evaluated due to lack of data on O1a and O1b. Therefore, not all criteria are met."
-    }
-}

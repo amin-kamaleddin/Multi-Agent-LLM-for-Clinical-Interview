@@ -1,0 +1,2 @@
+question_id,ai_question,patient_response,classification,reasoning,timestamp,exchange_type
+D1a,"Have you, on more than one occasion, had spells or attacks when you suddenly felt anxious, very frightened, uncomfortable or uneasy, even in situations where most people would not feel that way? Please answer with yes or no. If you're uncertain, feel free to explain.","Yes. It happens often, even when I’m just resting.",red_flag,"Red flag detected: 'Yes. It happens often, even when I’m just resting.'",2025-08-19T06:56:48.515764,initial

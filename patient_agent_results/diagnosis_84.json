@@ -1,7 +1,0 @@
-{
-    "current": {
-        "diagnosis": false,
-        "timeFrame": null,
-        "reasoning": "Criterion E6 is not met because the patient's answer to E6 is not provided and cannot be inferred from E1: YES and E2: NO. Without E6 being 'YES', the criterion is not satisfied."
-    }
-}

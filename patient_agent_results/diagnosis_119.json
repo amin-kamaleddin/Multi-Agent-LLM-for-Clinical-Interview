@@ -1,7 +1,0 @@
-{
-    "current": {
-        "diagnosis": false,
-        "timeFrame": null,
-        "reasoning": "F6 is not provided, so cannot confirm it is 'YES'. O1a and O1b are not provided, so cannot confirm both are 'NO'. Therefore, criteria 1 and 2 are not met."
-    }
-}

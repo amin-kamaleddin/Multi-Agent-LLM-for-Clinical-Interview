@@ -1,0 +1,2 @@
+question_id,ai_question,patient_response,classification,reasoning,timestamp,exchange_type
+O1a,"Were you taking any drugs or medicines or in withdrawal from any of these? Please answer with yes or no, or if you're uncertain, feel free to explain.","I was using substances, mainly opioids. I’m not in withdrawal at the moment, but I’ve thought about hurting myself after using.",red_flag,"Red flag detected: 'I was using substances, mainly opioids. I’m not in withdrawal at the moment, but I’ve thought about hurting myself after using.'",2025-08-19T07:17:56.641616,initial

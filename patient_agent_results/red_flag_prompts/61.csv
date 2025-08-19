@@ -1,0 +1,4 @@
+question_id,ai_question,patient_response,classification,reasoning,timestamp,exchange_type
+G1a,"In the past month, have you been bothered by recurrent thoughts, impulses, or images that were unwanted, distasteful, inappropriate, intrusive, or distressing? (For example, the idea that you were dirty, contaminated or had germs, or fear of contaminating others, or fear of harming someone even though it disturbs or distresses you, or fear you would act on some impulse, or fear or superstitions that you would be responsible for things going wrong, or obsessions with sexual thoughts, images or impulses, or religious obsessions.) 
+
+Please answer with yes or no. If you are uncertain, feel free to explain.","Yes. I get intrusive thoughts telling me to harm myself, which scares me.",red_flag,"Red flag detected: 'Yes. I get intrusive thoughts telling me to harm myself, which scares me.'",2025-08-19T07:14:20.794741,initial
