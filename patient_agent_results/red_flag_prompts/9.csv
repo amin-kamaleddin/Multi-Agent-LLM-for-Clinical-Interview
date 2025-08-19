@@ -1,0 +1,2 @@
+question_id,ai_question,patient_response,classification,reasoning,timestamp,exchange_type
+A1a,"Were you ever depressed or down, or felt sad, empty or hopeless most of the day, nearly every day, for two weeks? Please answer with yes or no. If you're uncertain, feel free to explain.","Yes, I've felt really hopeless and empty every day. It's like there's this weight that just won't lift.",red_flag,"Red flag detected: 'Yes, I've felt really hopeless and empty every day. It's like there's this weight that just won't lift.'",2025-08-19T06:56:31.564316,initial

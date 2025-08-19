@@ -1,7 +1,0 @@
-{
-    "current": {
-        "diagnosis": false,
-        "timeFrame": null,
-        "reasoning": "Criterion 1 (N4 == 'YES') cannot be evaluated because N4 is not provided. Criterion 2 requires at least 3 symptom groups (N3a\u2013N3f) coded YES, but no symptom group data is given. Criterion 3 requires O1a = NO and O1b = NO, but these are not provided. Based solely on the available data (N1a: YES, N1b: YES, N2: NO), none of the criteria can be confirmed as met."
-    }
-}

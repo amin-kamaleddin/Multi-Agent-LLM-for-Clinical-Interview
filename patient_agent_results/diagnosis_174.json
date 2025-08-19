@@ -1,7 +1,0 @@
-{
-    "current": {
-        "diagnosis": false,
-        "timeFrame": null,
-        "reasoning": "Criterion 1 (N4 == 'YES') is met since N4 is YES. Criterion 2 requires at least 3 symptom groups (N3a\u2013N3f) coded YES from the same time frame. All N3a\u2013N3f are NO, so no symptom groups are positive. Criterion 3 (O1a = NO AND O1b = NO) is met. Overall, not all criteria are met due to lack of positive symptom groups."
-    }
-}

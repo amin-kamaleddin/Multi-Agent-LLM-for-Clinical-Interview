@@ -1,7 +1,0 @@
-{
-    "current": {
-        "diagnosis": false,
-        "timeFrame": null,
-        "reasoning": "Criterion 1 (F6 == 'YES') is met since F6 is YES. Criterion 2 (O1a = NO AND O1b = NO) is not met because O1b is YES. Therefore, not all criteria are satisfied."
-    }
-}

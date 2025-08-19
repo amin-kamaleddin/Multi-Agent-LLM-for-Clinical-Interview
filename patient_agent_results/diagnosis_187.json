@@ -1,7 +1,0 @@
-{
-    "mustHave": {
-        "diagnosis": false,
-        "timeFrame": null,
-        "reasoning": "Both O1a and O1b are NO, so the mustHave criterion (O1a = YES or O1b = YES) is not met."
-    }
-}

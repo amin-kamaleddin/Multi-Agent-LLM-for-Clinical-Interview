@@ -1,7 +1,0 @@
-{
-    "current": {
-        "diagnosis": false,
-        "timeFrame": null,
-        "reasoning": "Criterion E6 requires a 'YES' answer, but the only provided answer is E1: NO. No information indicates E6 is 'YES', so the criterion is not met."
-    }
-}
