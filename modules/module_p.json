@@ -20,35 +20,35 @@
     {
       "id": "P1b",
       "group": "P1",
-      "prompt": "repeatedly lie, cheat, 'con' others, or steal or break into someone's house or car?",
+      "prompt": "Before you were 15 years old, did you repeatedly lie, cheat, 'con' others, or steal or break into someone's house or car?",
       "responseType": "yes_no",
       "next": { "yes": "P1c", "no": "P1c", "red_flag": "END_MODULE" }
     },
     {
       "id": "P1c",
       "group": "P1",
-      "prompt": "start fights or bully, threaten, or intimidate others?",
+      "prompt": "Before you were 15 years old, did you start fights or bully, threaten, or intimidate others?",
       "responseType": "yes_no",
       "next": { "yes": "P1d", "no": "P1d", "red_flag": "END_MODULE" }
     },
     {
       "id": "P1d",
       "group": "P1",
-      "prompt": "deliberately destroy things or start fires?",
+      "prompt": "Before you were 15 years old, did you deliberately destroy things or start fires?",
       "responseType": "yes_no",
       "next": { "yes": "P1e", "no": "P1e", "red_flag": "END_MODULE" }
     },
     {
       "id": "P1e",
       "group": "P1",
-      "prompt": "deliberately hurt animals or people?",
+      "prompt": "Before you were 15 years old, did you deliberately hurt animals or people?",
       "responseType": "yes_no",
       "next": { "yes": "P1f", "no": "P1f", "red_flag": "END_MODULE" }
     },
     {
       "id": "P1f",
       "group": "P1",
-      "prompt": "force someone into sexual activity?",
+      "prompt": "Before you were 15 years old, did you force someone into sexual activity?",
       "responseType": "yes_no",
       "next": { "yes": "P2a", "no": "P2a", "red_flag": "END_MODULE" }
     },
@@ -62,50 +62,50 @@
     {
       "id": "P2b",
       "group": "P2",
-      "prompt": "often lied or 'conned' other people to get money or pleasure, or lied just for fun?",
+      "prompt": "Since you were 15 years old, have you often lied or 'conned' other people to get money or pleasure, or lied just for fun?",
       "responseType": "yes_no",
       "next": { "yes": "P2c", "no": "P2c", "red_flag": "END_MODULE" }
     },
     {
       "id": "P2c",
       "group": "P2",
-      "prompt": "been impulsive and didn't care about planning ahead?",
+      "prompt": "Since you were 15 years old, have you been impulsive and didn't care about planning ahead?",
       "responseType": "yes_no",
       "next": { "yes": "P2d", "no": "P2d", "red_flag": "END_MODULE" }
     },
     {
       "id": "P2d",
       "group": "P2",
-      "prompt": "been in physical fights repeatedly or assaulted others (including physical fights with your spouse or children)?",
+      "prompt": "Since you were 15 years old, have you been in physical fights repeatedly or assaulted others (including physical fights with your spouse or children)?",
       "responseType": "yes_no",
       "next": { "yes": "P2e", "no": "P2e", "red_flag": "END_MODULE" }
     },
     {
       "id": "P2e",
       "group": "P2",
-      "prompt": "exposed others or yourself to danger without caring?",
+      "prompt": "Since you were 15 years old, have you exposed others or yourself to danger without caring?",
       "responseType": "yes_no",
       "next": { "yes": "P2f", "no": "P2f", "red_flag": "END_MODULE" }
     },
     {
       "id": "P2f",
       "group": "P2",
-      "prompt": "repeatedly behaved in a way that others would consider irresponsible, like failing to pay for things you owed, deliberately being impulsive or deliberately not working to support yourself?",
+      "prompt": "Since you were 15 years old, have you repeatedly behaved in a way that others would consider irresponsible, like failing to pay for things you owed, deliberately being impulsive or deliberately not working to support yourself?",
       "responseType": "yes_no",
       "next": { "yes": "P2g", "no": "P2g", "red_flag": "END_MODULE" }
     },
     {
       "id": "P2g",
       "group": "P2",
-      "prompt": "felt no guilt after hurting, mistreating, lying to, or stealing from others, or after damaging property?",
+      "prompt": "Since you were 15 years old, have you felt no guilt after hurting, mistreating, lying to, or stealing from others, or after damaging property?",
       "responseType": "yes_no",
       "next": { "yes": "DIAGNOSTIC", "no": "DIAGNOSTIC", "red_flag": "END_MODULE" }
     }
   ],
   "diagnosticCriteria": {
     "antisocialPersonalityDisorder": {
-      "lifetime": ["more than 2 of (P1a, P1b, P1c, P1d, P1e, P1f) are YES",
-        "more than 3 of (P2a, P2b, P2c, P2d, P2e, P2f, P2g) are YES"
+      "lifetime": ["At least 2 of (P1a-P1f) coded YES",
+        "At least 3 of (P2a-P2g) coded YES"
       ],
       "note": "Do not code YES to behaviors if they are exclusively politically or religiously motivated"
     }
