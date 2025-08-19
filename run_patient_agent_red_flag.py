@@ -291,9 +291,6 @@ def calculate_red_flag_accuracy():
 
     # Save results CSV (file_name + prediction only)
     pred_df = pd.DataFrame(results)
-    out_path = base_dir / "red_flag_predictions.csv"
-    pred_df.to_csv(out_path, index=False)
-    print(f"Predictions saved to {out_path}")
 
     # === JOIN WITH PROMPTS JSON ===
     with open(f"./interview_agent/prompts/{FILE_NAME}.json", "r", encoding="utf-8") as f:
