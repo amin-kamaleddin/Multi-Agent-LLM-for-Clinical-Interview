@@ -2,11 +2,11 @@
     "lifetime": {
         "diagnosis": true,
         "timeFrame": "both",
-        "reasoning": "Criterion 1 is met as there are 4 'YES' responses in the P1 group (P1a, P1b, P1c, P1d), which exceeds the requirement of at least 2. Criterion 2 is also met as there are 7 'YES' responses in the P2 group (P2a, P2b, P2c, P2d, P2e, P2f, P2g), which exceeds the requirement of at least 3. Since all responses are marked 'YES', the time frame is considered 'both'."
+        "reasoning": "Criterion 1 is met as all six items (P1a-P1f) are marked YES, indicating at least 2 positive responses. Criterion 2 is also met as all seven items (P2a-P2g) are marked YES, indicating at least 3 positive responses. Since all criteria are satisfied, the diagnosis is True. The time frame is 'both' as the criteria do not specify a time frame and all items are marked YES."
     },
     "note": {
         "diagnosis": true,
         "timeFrame": "recent",
-        "reasoning": "All symptom groups are positive based on the patient's responses. The symptom groups are evaluated as follows: P1 (all YES) indicates a positive symptom group, and P2 (all YES) indicates another positive symptom group. Both groups are satisfied in the recent time frame. Therefore, the criteria for diagnosis are met in the recent time frame only."
+        "reasoning": "All symptom groups are marked 'YES', indicating that the criteria for diagnosis are met. Since all responses are affirmative and there is no indication of political or religious motivation, the diagnosis is considered true. The symptom groups are assessed as positive in the 'recent' time frame."
     }
 }

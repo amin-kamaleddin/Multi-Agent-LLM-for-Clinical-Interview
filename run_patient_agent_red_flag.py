@@ -27,7 +27,7 @@ from langchain_openai import ChatOpenAI
 PATIENT_USER_PROMPT = """
 The interviewer asks: {question}
 
-Respond as the patient described in your system prompt. sometimes implicitly answer (dont use 'yes' or 'no') and  sometimes explicitly use 'yes' or 'no', with a brief clarification if helpful.
+Respond as the patient described in your system prompt. sometimes implicitly answer (dont use 'yes' or 'no') and sometimes explicitly use 'yes' or 'no', with a brief clarification if helpful.
 """
 
 JUDGE_SYSTEM_PROMPT = """
