@@ -1,10 +1,14 @@
 import json, os, sys
 from datetime import datetime
 from typing import Any, Dict
+from openai import OpenAI
 
 from dotenv import load_dotenv
 from langchain_openai import ChatOpenAI
 from pydantic import ValidationError
+from pathlib import Path
+
+from utils.transcribe_audio import transcribe_audio_file
 
 # Load environment variables from .env file
 load_dotenv()
@@ -122,12 +126,41 @@ def questioner_node(state: InterviewState) -> Dict[str, Any]:
 
 
 def patient_node(state: InterviewState):
+    """
+    Enhanced patient node that supports both text and audio input
+    Automatically detects if input is a file path and transcribes accordingly
+    """
     print("enter patient node")
+
     if not state.patient_agent:
-        result = input("You: ").strip()
+        print("Respond by typing or providing audio file path:")
+        user_input = input("You (or path to audio): ").strip()
+
+        # Check if input looks like a file path
+        if (user_input.startswith(('/', './', '../', '~')) or
+                ('/' in user_input and Path(user_input).exists()) or
+                Path(user_input).suffix.lower() in {'.mp3', '.wav', '.m4a', '.mp4', '.mpeg', '.mpga', '.webm', '.ogg',
+                                                    '.flac'}):
+
+            if os.path.exists(user_input):
+                print("Transcribing audio...")
+                transcribed_text = transcribe_audio_file(user_input)
+                if transcribed_text:
+                    print(f"Transcribed: {transcribed_text}")
+                    result = HumanMessage(content=transcribed_text)
+                else:
+                    fallback_text = input("Transcription failed. Please type your response: ").strip()
+                    result = HumanMessage(content=fallback_text)
+            else:
+                print("File not found. Assuming your input is not a path!")
+                result = HumanMessage(content=user_input)
+        else:
+            result = HumanMessage(content=user_input)
     else:
         sys_msg = SystemMessage(content=PATIENT_SYSTEM_PROMPT)
-        patient_prompt = HumanMessage(content=PATIENT_USER_PROMPT.format(question=state.messages[-1].content))
+        patient_prompt = HumanMessage(
+            content=PATIENT_USER_PROMPT.format(question=state.messages[-1].content)
+        )
         result = get_patient_llm().invoke([sys_msg, patient_prompt])
         print(f"agent response: {result.content}")
 
