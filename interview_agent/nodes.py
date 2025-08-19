@@ -9,8 +9,8 @@ from pydantic import ValidationError
 # Load environment variables from .env file
 load_dotenv()
 from langchain_core.messages import SystemMessage, HumanMessage, AIMessage
-from .prompts import INTERVIEWER_SYSTEM_PROMPT, JUDGE_SYSTEM_PROMPT, DIAGNOSIS_SYSTEM_PROMPT, EXPLAIN_PROMPT, \
-    CLARIFICATION_PROMPT,PATIENT_SYSTEM_PROMPT, PATIENT_USER_PROMPT
+from .prompts import QUESTIONER_SYSTEM_PROMPT, EVALUATOR_SYSTEM_PROMPT, DIAGNOSER_SYSTEM_PROMPT, EXPLAIN_PROMPT, \
+    CLARIFICATION_PROMPT, PATIENT_SYSTEM_PROMPT, PATIENT_USER_PROMPT
 
 from .models import (
     InterviewState,
@@ -24,7 +24,7 @@ from utils.red_flag import detect_red_flag
 
 # ------------------------------ LLM instances (lazy loading) ------------------------------ #
 _llm = None
-_judge_llm = None
+_evaluator_llm = None
 _structured_llm = None
 _diagnosis_llm = None
 _patient_llm = None
@@ -35,16 +35,16 @@ def get_llm():
         _llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.1)
     return _llm
 
-def get_judge_llm():
-    global _judge_llm
-    if _judge_llm is None:
-        _judge_llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.1)
-    return _judge_llm
+def get_evaluator_llm():
+    global _evaluator_llm
+    if _evaluator_llm is None:
+        _evaluator_llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.1)
+    return _evaluator_llm
 
 def get_structured_llm():
     global _structured_llm
     if _structured_llm is None:
-        _structured_llm = get_judge_llm().with_structured_output(ClassificationResult)
+        _structured_llm = get_evaluator_llm().with_structured_output(ClassificationResult)
     return _structured_llm
 
 def get_diagnosis_llm():
@@ -63,8 +63,8 @@ def get_patient_llm():
 def _get_module_llm():
     return get_llm()
 
-def _get_module_judge_llm():
-    return get_judge_llm()
+def _get_module_evaluator_llm():
+    return get_evaluator_llm()
 
 def _get_module_structured_llm():
     return get_structured_llm()
@@ -80,30 +80,30 @@ AUTO_SET_YES_AFTER = 3  # after 3 consecutive clarifies, the 4th auto-yes
 
 
 # -------------------------------- Nodes ------------------------------------ #
-def interviewer_node(state: InterviewState) -> Dict[str, Any]:
-    """Interviewer node that presents questions, then collects user reply."""
-    print("enter interviewer")
+def questioner_node(state: InterviewState) -> Dict[str, Any]:
+    """questioner node that presents questions, then collects user reply."""
+    print("enter questioner")
     updates: Dict[str, Any] = {}
 
     # 1. Build the system prompt + history
     current_question = state.module_loader.get_question(state.current_question_id)
-    sys_msg = SystemMessage(content=INTERVIEWER_SYSTEM_PROMPT.format(question=current_question.prompt))
+    sys_msg = SystemMessage(content=QUESTIONER_SYSTEM_PROMPT.format(question=current_question.prompt))
 
-    if len(state.judge_results) > 0:
-        if state.judge_results[-1] == "explain request":
+    if len(state.evaluator_results) > 0:
+        if state.evaluator_results[-1] == "explain request":
             updates["conversation_log"] = [_log_entry(state)]
             patient_response = state.messages[-1].content
             sys_msg = SystemMessage(EXPLAIN_PROMPT.format(response=patient_response, current_question=current_question.prompt))
-        elif state.judge_results[-1] == "rephrase needed":
+        elif state.evaluator_results[-1] == "rephrase needed":
             updates["conversation_log"] = [_log_entry(state)]
             # Generate specific clarification using LLM based on patient's unclear response
             patient_response = state.messages[-1].content
-            judge_reasoning = state.messages[-2].content if len(state.messages) >= 2 else "Response was unclear"
+            evaluator_reasoning = state.messages[-2].content if len(state.messages) >= 2 else "Response was unclear"
 
             clarification_prompt = CLARIFICATION_PROMPT.format(
                 question=current_question.prompt,
                 response=patient_response,
-                reasoning=judge_reasoning
+                reasoning=evaluator_reasoning
             )
             sys_msg = SystemMessage(content=clarification_prompt)
 
@@ -116,7 +116,7 @@ def interviewer_node(state: InterviewState) -> Dict[str, Any]:
 
     # 3. Immediately read the user's answer
     updates['messages'] = [response]
-    print("exit interviewer")
+    print("exit questioner")
     # 4. Return both the LLM question and the new HumanMessage
     return updates
 
@@ -135,19 +135,19 @@ def patient_node(state: InterviewState):
     return {'messages': [result]}
 
 
-def _clarify_streak(judge_results: list[Any], last_result) -> bool:
+def _clarify_streak(evaluator_results: list[Any], last_result) -> bool:
     clarify_label = "rephrase needed"
-    results = judge_results
+    results = evaluator_results
     results.append(last_result)
-    if len(judge_results) >= AUTO_SET_YES_AFTER and all(r == clarify_label for r in results[-AUTO_SET_YES_AFTER:]):
+    if len(evaluator_results) >= AUTO_SET_YES_AFTER and all(r == clarify_label for r in results[-AUTO_SET_YES_AFTER:]):
         return True
     else:
         return False
 
 
-def judge_node(state: InterviewState) -> Dict[str, Any]:
+def evaluator_node(state: InterviewState) -> Dict[str, Any]:
     # assume the loop-driver put the user's message in state.messages[-1]
-    print("enter judge")
+    print("enter evaluator")
     updates: Dict[str, Any] = {}
     last_question = state.module_loader.get_question(state.current_question_id)
     patient_last_answer = state.messages[-1]
@@ -166,8 +166,8 @@ def judge_node(state: InterviewState) -> Dict[str, Any]:
         label = "no"
         reasoning = f"Patient gave a clear negative response: '{patient_last_answer.content}'"
     else:
-        print("MAKING AN LLM CALL TO JUDGE THE ANSWER")
-        prompt = JUDGE_SYSTEM_PROMPT.format(last_question= last_question.prompt, patient_last_answer= patient_last_answer.content)
+        print("MAKING AN LLM CALL TO EVALUATE THE ANSWER")
+        prompt = EVALUATOR_SYSTEM_PROMPT.format(last_question= last_question.prompt, patient_last_answer= patient_last_answer.content)
         resp = get_structured_llm().invoke([HumanMessage(content=prompt)])
 
         # Access Pydantic model attributes directly
@@ -180,44 +180,44 @@ def judge_node(state: InterviewState) -> Dict[str, Any]:
         if label not in ["yes", "no", "rephrase needed", "N/A", "explain request"]:
             label = "rephrase needed"
 
-    if _clarify_streak(judge_results=state.judge_results, last_result=label):
+    if _clarify_streak(evaluator_results=state.evaluator_results, last_result=label):
         print("Direct classification after 3 round of clarification: YES")
         label = "yes"
         reasoning = f"Patient prompted a vague answer after three rounds of clarification :" \
                     f" '{patient_last_answer.content}'"
-    print("exit judge")
+    print("exit evaluator")
 
     updates['messages'] = [AIMessage(content=reasoning)]
-    updates["judge_results"] = [label]
+    updates["evaluator_results"] = [label]
 
     return updates
 
 
 def should_clarify(state: InterviewState) -> str:
-    return "clarify" if state.judge_results[-1] in ["rephrase needed", "explain request"] else "continue"
+    return "clarify" if state.evaluator_results[-1] in ["rephrase needed", "explain request"] else "continue"
 
 
 def _log_entry(state: InterviewState) -> Dict[str, Any]:
-    # Determine if this is a clarification based on previous judge results
-    exchange_type = "clarification" if len(state.judge_results) > 1 and state.judge_results[-2] in ["rephrase needed", "explain request"] else "initial"
+    # Determine if this is a clarification based on previous evaluator results
+    exchange_type = "clarification" if len(state.evaluator_results) > 1 and state.evaluator_results[-2] in ["rephrase needed", "explain request"] else "initial"
 
     return {
         "question_id": state.current_question_id,
         "ai_question": state.messages[-3].content if len(state.messages) >= 3 else "",  # The AI question
         "patient_response": state.messages[-2].content,
-        "classification": state.judge_results[-1],
+        "classification": state.evaluator_results[-1],
         "reasoning": state.messages[-1].content,
         "timestamp": datetime.now().isoformat(),
         "exchange_type": exchange_type,
     }
 
 
-def selector(state: InterviewState) -> Dict[str, Any]:
+def navigator_node(state: InterviewState) -> Dict[str, Any]:
     updates: Dict[str, Any] = {"conversation_log": [_log_entry(state)]}
 
     qid = state.current_question_id
     branches = state.module_loader.get_question(qid).next
-    label = state.judge_results[-1].lower()
+    label = state.evaluator_results[-1].lower()
     next_qid = branches.get(label, branches.get("default"))
 
     if next_qid == "END_MODULE":
@@ -240,7 +240,7 @@ def should_diagnose(state: InterviewState) -> str:
         return "continue"
 
 
-def diagnosis(state: InterviewState):
+def diagnoser_node(state: InterviewState):
     """analyses the conversation log and gives a diagnosis based on the criteria"""
     print("enter diagnose node")
     criteria = state.module_loader.diagnostic_criteria
@@ -280,7 +280,7 @@ def diagnosis(state: InterviewState):
         else:
             result[group_name] = {"diagnosis": False, "timeFrame": None, "reasoning": "Invalid criteria format."}
             continue
-        prompt = DIAGNOSIS_SYSTEM_PROMPT.format(summary=summary, group_name=group_name, criteria_formatted=criteria_formatted)
+        prompt = DIAGNOSER_SYSTEM_PROMPT.format(summary=summary, group_name=group_name, criteria_formatted=criteria_formatted)
 
         response = get_llm().invoke([HumanMessage(content=prompt)])
         content = response.content.strip()
