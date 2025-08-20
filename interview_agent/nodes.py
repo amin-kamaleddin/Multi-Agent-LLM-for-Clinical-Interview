@@ -279,7 +279,7 @@ def diagnoser_node(state: InterviewState):
     criteria = state.module_loader.diagnostic_criteria
 
     module_name = state.module_loader.module.name
-
+    module_id = state.module_loader.module.id
 
     patient_responses = {}
     for entry in state.conversation_log:
@@ -313,7 +313,12 @@ def diagnoser_node(state: InterviewState):
         else:
             result[group_name] = {"diagnosis": False, "timeFrame": None, "reasoning": "Invalid criteria format."}
             continue
-        prompt = DIAGNOSER_SYSTEM_PROMPT.format(summary=summary, group_name=group_name, criteria_formatted=criteria_formatted)
+        prompt = DIAGNOSER_SYSTEM_PROMPT.format(
+            summary=summary, 
+            group_name=group_name, 
+            criteria_formatted=criteria_formatted,
+            module_id=module_id
+        )
 
         response = get_llm().invoke([HumanMessage(content=prompt)])
         content = response.content.strip()
