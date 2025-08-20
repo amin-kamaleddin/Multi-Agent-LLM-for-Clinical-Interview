@@ -1,7 +1,0 @@
-{
-    "current": {
-        "diagnosis": true,
-        "timeFrame": "recent",
-        "reasoning": "All criteria are met as E6 is 'YES', indicating that the necessary condition for the current diagnostic group is satisfied. Since all symptom groups are positive and there is no indication of a mix of time frames, the diagnosis is confirmed as true."
-    }
-}

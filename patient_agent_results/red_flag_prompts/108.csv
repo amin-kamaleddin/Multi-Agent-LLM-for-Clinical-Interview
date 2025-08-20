@@ -1,2 +1,0 @@
-question_id,ai_question,patient_response,classification,reasoning,timestamp,exchange_type
-P1a,"Before you were 15 years old, did you: repeatedly skip school or run away from home overnight or stayed out at night against your parent's rules? Please answer with yes or no. If you're uncertain, feel free to explain.","Yeah, I skipped school a lot. Stayed out too. It felt like nothing mattered back then.",red_flag,"Red flag detected: 'Yeah, I skipped school a lot. Stayed out too. It felt like nothing mattered back then.'",2025-08-19T10:12:03.435717,initial

@@ -1,2 +1,0 @@
-question_id,ai_question,patient_response,classification,reasoning,timestamp,exchange_type
-A1a,"Were you ever depressed or down, or felt sad, empty or hopeless most of the day, nearly every day, for two weeks? Please answer with yes or no, or if you're uncertain, feel free to explain.",I’ve been feeling really down and hopeless most days lately. It’s hard to see a way out.,red_flag,Red flag detected: 'I’ve been feeling really down and hopeless most days lately. It’s hard to see a way out.',2025-08-19T09:40:20.963203,initial

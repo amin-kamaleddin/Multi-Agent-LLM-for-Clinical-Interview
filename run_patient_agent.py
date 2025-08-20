@@ -24,11 +24,17 @@ from langchain_openai import ChatOpenAI
 PATIENT_USER_PROMPT = """
 The questioner asks: {question}
 
-Respond as the patient described in your system prompt. Answer each question clearly with either "yes" or "no." If necessary, add one short sentence of clarification at the end.
+Respond as the patient described in your system prompt. sometimes implicitly answer (dont use 'yes' or 'no') and 
+sometimes 
+explicitly 
+use 
+'yes' or 'no', 
+with a brief 
+clarification if helpful.
 """
 
 patient_llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.9)
-FILE_NAME = "patients_with_system_prompts_e"
+FILE_NAME = "patients_with_system_prompts_without_O"
 
 class InterviewState(BaseModel):
     messages: Annotated[Sequence, add_messages] = Field(default_factory=list)
