@@ -1,0 +1,12 @@
+{
+    "lifetime": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 is met because D3 is YES. Criterion 2 is met because all items from D4 (D4a to D4m) are YES, satisfying the requirement of 4 or more. Criterion 3 is met as both O1a and O1b are NO. Therefore, all criteria are satisfied."
+    },
+    "current": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 is met as D6 is 'YES'. Criterion 2 is met as both O1a and O1b are 'NO'. Therefore, all criteria are satisfied."
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "current": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 is not met because G4 is 'NO'. Criterion 2 is not met because neither (G1a AND G1b AND G2) nor (G3a AND G3b) is 'YES'. Criterion 3 is not met because O1a is 'NO' but O1b is 'YES'. Since not all criteria are met, the diagnosis is 'False'."
+    },
+    "insight": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Invalid criteria format."
+    },
+    "ticRelated": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "The patient has answered 'YES' only to O1b, which is the only item in the symptom group related to tic disorders. Since there are no other positive responses in the tic-related symptom groups, the required number of positive symptom groups is not met. Therefore, the criteria for a tic-related diagnosis are not satisfied."
+    },
+    "note": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "The patient has only one symptom group (O1b) marked 'YES', which indicates obsessive compulsive symptoms. However, the other symptom groups are marked 'NO', meaning the required number of positive symptom groups is not met. Therefore, the criteria for a diagnosis are not satisfied."
+    }
+}

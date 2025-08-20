@@ -1,0 +1,12 @@
+{
+    "mustHave": {
+        "diagnosis": true,
+        "timeFrame": "recent",
+        "reasoning": "The patient meets the criteria for diagnosis. There are 8 symptom groups (A3a\u2013A3g) coded YES in the recent time frame. The core symptoms (A1a and A2a_1) are also marked YES, and there is functional impairment (A4_recent). Additionally, both O1a and O1b are NO. Therefore, all diagnostic criteria are satisfied in the recent time frame."
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 is not met because A5 is NO. Criterion 2 is met as both O1a and O1b are NO. Since not all criteria are satisfied, the overall diagnosis is false."
+    }
+}

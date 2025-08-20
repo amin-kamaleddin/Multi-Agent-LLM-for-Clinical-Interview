@@ -1,0 +1,2 @@
+question_id,ai_question,patient_response,classification,reasoning,timestamp,exchange_type
+N1a,"Were you excessively anxious or worried about several routine things over the past 6 months? Please answer with yes or no. If you're uncertain, feel free to explain.",No. I don’t feel anxious about routine things.,no,"The patient's response clearly indicates a negation of the question, stating they do not feel anxious about routine things. This aligns with the classification of 'no' as it directly answers the question with a definitive statement.",2025-08-19T12:41:54.769291,initial

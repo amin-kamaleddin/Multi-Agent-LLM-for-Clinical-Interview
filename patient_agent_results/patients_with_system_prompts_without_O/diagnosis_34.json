@@ -1,0 +1,12 @@
+{
+    "lifetime": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 is not met because D3 is not provided. Criterion 2 cannot be evaluated as there are no responses for D4a to D4m. Criterion 3 is met since both O1a and O1b are NO. Therefore, not all criteria are satisfied."
+    },
+    "current": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 is not met because D6 is not provided in the patient's answers. Criterion 2 is also not met because both O1a and O1b are marked 'NO'. Therefore, not all criteria are satisfied."
+    }
+}

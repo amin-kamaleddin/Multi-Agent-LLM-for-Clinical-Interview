@@ -1,0 +1,22 @@
+{
+    "current": {
+        "diagnosis": true,
+        "timeFrame": "recent",
+        "reasoning": "Criterion 1 is met because G4 is 'YES'. Criterion 2 is met because both G1a, G1b, and G2 are 'YES', satisfying the requirement for the symptom group. Criterion 3 is met as both O1a and O1b are 'NO'. Therefore, all criteria are satisfied."
+    },
+    "insight": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Invalid criteria format."
+    },
+    "ticRelated": {
+        "diagnosis": true,
+        "timeFrame": "recent",
+        "reasoning": "All symptom groups (G1, G2, G3, G4) are positive based on the patient's answers, indicating the presence of tic-related symptoms. Since all responses are marked 'YES', the criteria are satisfied in the recent time frame. Non-time-frame-specific items (O1a, O1b) do not affect the diagnosis as they are marked 'NO'. Therefore, the diagnosis is true for the recent time frame."
+    },
+    "note": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "The patient has answered 'YES' to all symptom group questions (G1a, G1b, G2, G3a, G3b, G4), indicating that all symptom groups are positive. However, since the organic causes are ruled out and there are no recent symptoms indicated (O1a and O1b are 'NO'), the criteria for a diagnosis of obsessive-compulsive symptoms starting within 3 weeks of an infection are not fully met. Therefore, the diagnosis is 'False'."
+    }
+}
