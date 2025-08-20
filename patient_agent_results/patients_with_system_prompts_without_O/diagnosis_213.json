@@ -1,0 +1,12 @@
+{
+    "lifetime": {
+        "diagnosis": true,
+        "timeFrame": "both",
+        "reasoning": "Criterion 1 is met as all six items (P1a-P1f) are marked YES, satisfying the requirement of at least 2 positive responses. Criterion 2 is also met as all seven items (P2a-P2g) are marked YES, satisfying the requirement of at least 3 positive responses. Since all items are marked YES, the time frame is considered 'both'."
+    },
+    "note": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "All symptom groups are positive based on the patient's responses, indicating that the criteria are met. Since all responses are marked 'YES', the diagnosis is considered true. However, there is no indication of a specific time frame as the responses do not differentiate between past and recent. Therefore, the time frame is null."
+    }
+}

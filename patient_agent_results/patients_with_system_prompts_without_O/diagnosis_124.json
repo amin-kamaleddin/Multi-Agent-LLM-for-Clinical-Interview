@@ -1,0 +1,22 @@
+{
+    "current": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 is not met because G4 is 'NO'. Criterion 2 is not met because both (G1a AND G1b AND G2) and (G3a AND G3b) are 'NO'. Criterion 3 is met as O1a = NO and O1b = NO. Since not all criteria are met, the diagnosis is 'False'."
+    },
+    "insight": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Invalid criteria format."
+    },
+    "ticRelated": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "All symptom group criteria are not met as there are no positive responses in any of the symptom groups. Therefore, the diagnosis cannot be confirmed."
+    },
+    "note": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "All symptom group questions (G1a, G3a, G4, O1a, O1b) were answered 'NO', indicating that there are no obsessive-compulsive symptoms present. Therefore, the criteria for diagnosis are not met."
+    }
+}

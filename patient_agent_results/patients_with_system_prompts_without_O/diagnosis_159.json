@@ -1,0 +1,7 @@
+{
+    "current": {
+        "diagnosis": true,
+        "timeFrame": "recent",
+        "reasoning": "Criterion 1 is met because N4 is 'YES'. Criterion 2 is met as there are 6 positive symptom groups (N3a, N3b, N3c, N3d, N3e, N3f) coded 'YES', all from the recent time frame. Criterion 3 is met since both O1a and O1b are 'NO'. Therefore, all criteria are satisfied."
+    }
+}

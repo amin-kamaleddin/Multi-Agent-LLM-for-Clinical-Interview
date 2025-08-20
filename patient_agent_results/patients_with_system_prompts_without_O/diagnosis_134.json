@@ -1,0 +1,22 @@
+{
+    "current": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 is met because G4 is 'YES'. Criterion 2 is met because both G1a, G1b, and G2 are 'YES', satisfying the requirement for the symptom group. Criterion 3 is not met because O1a is 'YES' and O1b is 'NO', which does not satisfy the requirement of both being 'NO'. Therefore, not all criteria are met."
+    },
+    "insight": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Invalid criteria format."
+    },
+    "ticRelated": {
+        "diagnosis": true,
+        "timeFrame": "recent",
+        "reasoning": "The patient has answered 'YES' to all symptom group criteria (G1a, G1b, G2, G3a, G3b, G4), indicating that all symptom groups are positive. Since all responses are marked 'YES', they are considered to be from the same time frame, which is 'recent'. Therefore, the criteria for a tic-related diagnosis are met."
+    },
+    "note": {
+        "diagnosis": true,
+        "timeFrame": "recent",
+        "reasoning": "The patient has answered 'YES' to all questions in the symptom groups, indicating the presence of obsessive-compulsive symptoms. Since these symptoms are assessed as recent and there are no conflicting answers, the criteria for a positive diagnosis are met. The time frame is 'recent' as all symptom group questions are marked 'YES' without any indication of past symptoms."
+    }
+}

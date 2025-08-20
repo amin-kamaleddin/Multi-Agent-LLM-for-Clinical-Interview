@@ -1,0 +1,12 @@
+{
+    "mustHave": {
+        "diagnosis": true,
+        "timeFrame": "recent",
+        "reasoning": "The patient meets the criteria for at least 5 symptom groups (A3a, A3b, A3c, A3d, A3e, A3f, A3g) marked YES in both past and recent, but only the recent time frame can be used for the diagnosis as it is the only one that meets the requirement of not mixing time frames. The core symptoms (A1a and A1b) are both marked YES, and there is functional impairment (A4_recent=YES). The organic cause is ruled out. Therefore, all criteria are met for a diagnosis of true in the recent time frame."
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 is not met because A5 is NO. Criterion 2 is not met because O1a and O1b are both YES. Therefore, not all criteria are satisfied."
+    }
+}
