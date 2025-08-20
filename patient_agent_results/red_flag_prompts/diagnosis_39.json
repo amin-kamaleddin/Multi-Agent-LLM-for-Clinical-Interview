@@ -1,7 +1,0 @@
-{
-    "current": {
-        "diagnosis": true,
-        "timeFrame": "recent",
-        "reasoning": "All criteria are met as E6 is 'YES'. Since all symptom groups are considered positive due to the affirmative responses, the diagnosis is 'True'. The time frame is 'recent' as all responses are affirmative and do not indicate a mix of past and recent symptoms."
-    }
-}

@@ -1,4 +1,0 @@
-question_id,ai_question,patient_response,classification,reasoning,timestamp,exchange_type
-E1,"Do you feel anxious or uneasy in places or situations where help might not be available or escape difficult if you had a panic-like or embarrassing symptom, such as being in a crowd or queue, in an open space or crossing a bridge, in an enclosed space, when alone away from home, when alone at home, or traveling in a bus, train, car, or using public transportation? 
-
-Please answer with yes or no. If you are uncertain, feel free to explain.",Yes. It's hard to be in those situations. I feel trapped.,red_flag,Red flag detected: 'Yes. It's hard to be in those situations. I feel trapped.',2025-08-19T09:49:39.476414,initial

@@ -1,2 +1,0 @@
-question_id,ai_question,patient_response,classification,reasoning,timestamp,exchange_type
-A1a,"Were you ever depressed or down, or felt sad, empty or hopeless most of the day, nearly every day, for two weeks? Please answer with yes or no, or if you're uncertain, feel free to explain.",Yes. I feel empty and hopeless most days.,red_flag,Red flag detected: 'Yes. I feel empty and hopeless most days.',2025-08-19T09:40:17.670043,initial

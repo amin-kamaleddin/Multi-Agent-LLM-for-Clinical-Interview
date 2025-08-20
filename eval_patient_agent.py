@@ -5,7 +5,7 @@ import re
 from sklearn.metrics import accuracy_score, confusion_matrix, precision_score, recall_score, f1_score
 
 # Paths
-MODULE_FILE_NAME = "patients_with_system_prompts_e"
+MODULE_FILE_NAME = "patients_with_system_prompts_without_O"
 patients_file = "./interview_agent/prompts/" + MODULE_FILE_NAME + ".json"
 results_dir = "./patient_agent_results/" + MODULE_FILE_NAME
 output_csv = results_dir + "/predictions.csv"

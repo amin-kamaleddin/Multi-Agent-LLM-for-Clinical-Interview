@@ -1,7 +1,0 @@
-{
-    "mustHave": {
-        "diagnosis": true,
-        "timeFrame": null,
-        "reasoning": "The criterion is met because O1a is marked 'YES'. Therefore, at least one of the required conditions is satisfied."
-    }
-}

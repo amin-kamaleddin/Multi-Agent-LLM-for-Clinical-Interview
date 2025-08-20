@@ -1,2 +1,0 @@
-question_id,ai_question,patient_response,classification,reasoning,timestamp,exchange_type
-O1a,"Were you taking any drugs or medicines or in withdrawal from any of these? Please answer with yes or no, or if you're uncertain, feel free to explain.","I was using some drugs, specifically opioids. I’ve been feeling really low since I started using them. It’s hard to cope.",red_flag,"Red flag detected: 'I was using some drugs, specifically opioids. I’ve been feeling really low since I started using them. It’s hard to cope.'",2025-08-19T10:09:39.545469,initial
