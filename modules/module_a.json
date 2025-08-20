@@ -198,7 +198,7 @@
   ],
   "diagnosticCriteria": {
     "majorDepressiveEpisode": {
-      "mustHave": [
+      "present": [
         "At least 5 symptom groups (A3a–A3g) coded YES",
         "Core symptom: A1a=YES or A2a_1=YES or A2a_2=YES or A1b=YES or A2b=YES",
         "Functional impairment: A4_recent=YES or A4_past=YES",
