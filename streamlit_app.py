@@ -1,5 +1,4 @@
 import os
-import sys
 import uuid
 from pathlib import Path
 from io import StringIO
@@ -23,10 +22,7 @@ from interview_agent.nodes import (
     diagnoser_node,
     evaluator_node,
 )
-
-# This is a work in progress and is a poor implementation of a Streamlit app.
-# There are lots of improvements that need to be made, but the goal was to have a simple UI working
-# for the demo on August 8th, 2025.
+from utils.styling import apply_custom_styling
 
 # ----------------------------- Setup / Utilities ----------------------------- #
 load_dotenv()
@@ -54,13 +50,31 @@ def ensure_api_key():
 
 
 def list_available_modules():
+    import json
     if not MODULES_DIR.exists():
         return []
     files = sorted(MODULES_DIR.glob("module_*.json"))
     items = []
+        
+    excluded_files = ["module_o.json"]
+    
     for f in files:
-        letter = f.stem.split("_")[-1]
-        items.append((letter, str(f)))
+        if f.name in excluded_files:
+            continue
+            
+        try:
+            with open(f, 'r', encoding='utf-8') as file:
+                data = json.load(file)
+                module_id = data.get("module", {}).get("id", "")
+                module_name = data.get("module", {}).get("name", "")
+                
+                if module_id and module_name:
+                    display_text = f"{module_id} - {module_name}"
+                    items.append((display_text, str(f)))
+        except (json.JSONDecodeError, KeyError, FileNotFoundError):
+            letter = f.stem.split("_")[-1]
+            items.append((letter.upper(), str(f)))
+    
     return items
 
 
@@ -223,7 +237,16 @@ if "app_state" not in st.session_state:
 
 # ----------------------------------- UI -------------------------------------- #
 st.set_page_config(page_title="MINI Interview", page_icon="🗣️", layout="centered")
+
+apply_custom_styling()
+
 st.title("MINI Interview")
+
+# Show subtitle only when interview hasn't started
+if st.session_state.loader is None or st.session_state.state is None:
+    st.markdown("The MINI (Mini International Neuropsychiatric Interview) is a structured diagnostic interview traditionally administered by clinicians. With this platform, we are automating the MINI using an agentic AI system. The goal is to make the assessment process faster, more scalable, and easier to use, while maintaining clinical rigor and reliability.")
+    st.markdown("⚠️ This is currently a proof of concept and should not be considered a replacement for diagnosis or evaluation by a qualified human clinician.")
+    st.markdown("We strongly encourage users not to share personal or sensitive information on this platform.")
 
 ensure_api_key()
 
@@ -247,9 +270,9 @@ if not modules:
 
 with st.sidebar:
     st.header("Setup")
-    letters = [m[0] for m in modules]
-    selected_letter = st.selectbox("Select module letter", letters, index=0)
-    selected_path = dict(modules)[selected_letter]    
+    module_options = [m[0] for m in modules]
+    selected_module = st.selectbox("Select module", module_options, index=0)
+    selected_path = dict(modules)[selected_module]    
 
     if st.button("Start / Reset Interview", type="primary"):
         loader = ModuleLoader.from_file(selected_path)
@@ -266,6 +289,15 @@ with st.sidebar:
         st.session_state["answer_input"] = ""
         st.session_state["clear_answer"] = True
         st.rerun()
+    
+    # Add spacer to push content to bottom
+    st.markdown("<br>" * 20, unsafe_allow_html=True)
+    
+    # Add content at the bottom of the sidebar
+    st.markdown("---")
+    st.markdown(
+        "Give feedback: [Feedback Form](https://docs.google.com/forms/d/1kwnEcoh_XnVidUVthPu66d3Wr2w8beN3ywQ8NvkLmMQ/edit)"
+    )
 
 if st.session_state.loader is None or st.session_state.state is None:
     st.info("Select a module in the sidebar and click 'Start / Reset Interview'.")
@@ -282,6 +314,13 @@ if st.session_state.finished:
         st.markdown("- **National Suicide Prevention Lifeline**: 988")        
         st.markdown("---")
         st.info("The interview has been stopped for your safety. Please seek immediate professional help.")
+        
+        # Add feedback section even for red flag cases
+        st.markdown("---")
+        st.markdown("### Help Us Improve")
+        st.markdown("Your feedback helps us make this tool better for everyone.")
+        if st.button("📝 Share Your Feedback", type="secondary", use_container_width=True, key="red_flag_feedback"):
+            st.markdown("Please visit: [https://forms.google.com/feedback](https://forms.google.com/feedback)")
     else:
         st.success("Interview completed.")
 
@@ -314,6 +353,14 @@ if st.session_state.finished:
         file_name=f"{st.session_state.thread_id}.csv",
         mime="text/csv",
     )
+    
+    # Additional feedback section on completion page
+    st.markdown("---")
+    st.markdown("### Help Us Improve")
+    st.markdown("Your feedback helps us make this tool better for everyone.")
+    if st.button("📝 Share Your Feedback", type="secondary", use_container_width=True):
+        st.markdown("Please visit: [https://forms.google.com/feedback](https://forms.google.com/feedback)")
+    
     st.stop()
 
 if not st.session_state.awaiting_answer:
@@ -453,4 +500,4 @@ if answer:
     else:
         st.session_state.awaiting_answer = False
         st.session_state["clear_answer"] = True
-        st.rerun() 
+        st.rerun()
