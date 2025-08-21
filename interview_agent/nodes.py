@@ -267,8 +267,6 @@ def navigator_node(state: InterviewState) -> Dict[str, Any]:
 def should_diagnose(state: InterviewState) -> str:
     if state.ready_for_diagnosis:
         return "diagnose"
-    if state.module_completed:
-        return "end"
     else:
         return "continue"
 
