@@ -87,6 +87,8 @@ class CriteriaGroupResult(BaseModel):
     diagnosis: bool
     timeFrame: Optional[Literal['past', 'recent', 'both']] = None
     reasoning: str
+    insight: Optional[Literal['goodOrFair', 'poor', 'absent', 'delusional']] = None
+    ticRelated: Optional[bool] = None
 
 
 class DiagnosisEvaluationOutput(RootModel[Dict[str, CriteriaGroupResult]]):

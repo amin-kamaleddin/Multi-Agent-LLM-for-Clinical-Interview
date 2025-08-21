@@ -9,7 +9,7 @@ class PIIRedactor:
             'ssn': r'\b(?:\d{3}[-.\s]?\d{2}[-.\s]?\d{4})\b',
             'date': r'\b(?:0?[1-9]|1[0-2])[-/.](?:0?[1-9]|[12]\d|3[01])[-/.](?:19|20)?\d{2}\b',
             'address': r'\b\d+\s+[A-Za-z0-9\s,.-]+(?:Street|St|Avenue|Ave|Road|Rd|Drive|Dr|Lane|Ln|Boulevard|Blvd|Court|Ct)\b',
-            'name_patterns': r'\b(?:my name is|i am|i\'m|call me)\s+([A-Za-z]+(?:\s+[A-Za-z]+)*)\b',
+            'name_patterns': r'\b(?:my name is|i am|i\'m|call me)\s+([A-Za-z]+(?:\s+[A-Za-z]+)*?)(?:\s+and|\s*$|\s*[.!?])',
             'age_over_89': r'\b(?:i am|i\'m|age)\s*(?:is\s*)?(\d{2,3})\s*(?:years?\s*old)?\b',
         }
 
@@ -31,7 +31,7 @@ class PIIRedactor:
         censored = re.sub(self.patterns['address'], '[ADDRESS_REDACTED]', censored)
 
         censored = re.sub(self.patterns['name_patterns'], 
-                          lambda m: f"{m.group(0).split()[0]} [NAME_REDACTED]", censored)
+                          lambda m: f"{m.group(0).split()[0]} [NAME_REDACTED]", censored, flags=re.IGNORECASE)
         
         def age_replacer(match):
             try:
@@ -42,7 +42,7 @@ class PIIRedactor:
             except ValueError:
                 return match.group(0)  # Return unchanged if not a valid number
         
-        censored = re.sub(self.patterns['age_over_89'], age_replacer, censored)
+        censored = re.sub(self.patterns['age_over_89'], age_replacer, censored, flags=re.IGNORECASE)
 
         for pattern_name, pattern in self.medical_patterns.items():
             censored = re.sub(pattern, f'[{pattern_name.upper()}_REDACTED]', censored, flags=re.IGNORECASE)

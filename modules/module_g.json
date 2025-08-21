@@ -67,7 +67,7 @@
   ],
   "diagnosticCriteria": {
     "obsessive-CompulsiveDisorder": {
-      "current": ["G4 == 'YES'",
+      "positive": ["G4 == 'YES'",
                   "(G1a AND G1b AND G2) is YES OR (G3a AND G3b) is YES",
                   "O1a = NO AND O1b = NO"],
       "insight": {
@@ -76,8 +76,7 @@
         "absent": "Patient has absent insight",
         "delusional": "Patient has delusional beliefs"
       },
-      "ticRelated": "Specify if the episode is tic-related",
-      "note": "Check for any obsessive compulsive symptoms starting within 3 weeks of an infection"
+      "ticRelated": "Specify if the episode is tic-related"
     }
   }
 }
