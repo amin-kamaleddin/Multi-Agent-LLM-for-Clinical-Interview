@@ -8,6 +8,7 @@ from langchain_openai import ChatOpenAI
 from pydantic import ValidationError
 from pathlib import Path
 
+from utils.redact_sensitive import sanitize_for_llm
 from utils.transcribe_audio import transcribe_audio_file
 
 # Load environment variables from .env file
@@ -15,6 +16,7 @@ load_dotenv()
 from langchain_core.messages import SystemMessage, HumanMessage, AIMessage
 from .prompts import QUESTIONER_SYSTEM_PROMPT, EVALUATOR_SYSTEM_PROMPT, DIAGNOSER_SYSTEM_PROMPT, EXPLAIN_PROMPT, \
     CLARIFICATION_PROMPT, PATIENT_SYSTEM_PROMPT, PATIENT_USER_PROMPT
+from .prompts.diagnoser import MODULE_G_DIAGNOSER_PROMPT
 
 from .models import (
     InterviewState,
@@ -96,13 +98,13 @@ def questioner_node(state: InterviewState) -> Dict[str, Any]:
     if len(state.evaluator_results) > 0:
         if state.evaluator_results[-1] == "explain request":
             updates["conversation_log"] = [_log_entry(state)]
-            patient_response = state.messages[-1].content
+            patient_response = sanitize_for_llm(state.messages[-1].content)
             sys_msg = SystemMessage(EXPLAIN_PROMPT.format(response=patient_response, current_question=current_question.prompt))
         elif state.evaluator_results[-1] == "rephrase needed":
             updates["conversation_log"] = [_log_entry(state)]
             # Generate specific clarification using LLM based on patient's unclear response
-            patient_response = state.messages[-1].content
-            evaluator_reasoning = state.messages[-2].content if len(state.messages) >= 2 else "Response was unclear"
+            patient_response = sanitize_for_llm(state.messages[-1].content)
+            evaluator_reasoning = sanitize_for_llm(state.messages[-2].content) if len(state.messages) >= 2 else "Response was unclear"
 
             clarification_prompt = CLARIFICATION_PROMPT.format(
                 question=current_question.prompt,
@@ -161,6 +163,7 @@ def patient_node(state: InterviewState):
         patient_prompt = HumanMessage(
             content=PATIENT_USER_PROMPT.format(question=state.messages[-1].content)
         )
+
         result = get_patient_llm().invoke([sys_msg, patient_prompt])
         print(f"agent response: {result.content}")
 
@@ -186,21 +189,28 @@ def evaluator_node(state: InterviewState) -> Dict[str, Any]:
     patient_last_answer = state.messages[-1]
 
     response_text = patient_last_answer.content.strip().lower()
+    
+    # Create sanitized version for LLM and output, but keep original for logic
+    sanitized_response = sanitize_for_llm(patient_last_answer.content)
+
+    print(f"original response: {response_text}")
+    print(f"sanitized response: {sanitized_response}")
+
     if not state.patient_agent and detect_red_flag(response_text):
         print("Direct classification: RED FLAG")
         label = "red_flag"
-        reasoning = f"Red flag detected: '{patient_last_answer.content}'"
+        reasoning = f"Red flag detected: '{sanitized_response}'"
     elif response_text == "yes":
         print("Direct classification: YES (no LLM call needed)")
         label = "yes"
-        reasoning = f"Patient gave a clear affirmative response: '{patient_last_answer.content}'"
+        reasoning = f"Patient gave a clear affirmative response: '{sanitized_response}'"
     elif response_text == "no":
         print("Direct classification: NO (no LLM call needed)")
         label = "no"
-        reasoning = f"Patient gave a clear negative response: '{patient_last_answer.content}'"
+        reasoning = f"Patient gave a clear negative response: '{sanitized_response}'"
     else:
         print("MAKING AN LLM CALL TO EVALUATE THE ANSWER")
-        prompt = EVALUATOR_SYSTEM_PROMPT.format(last_question= last_question.prompt, patient_last_answer= patient_last_answer.content)
+        prompt = EVALUATOR_SYSTEM_PROMPT.format(last_question= last_question.prompt, patient_last_answer= sanitized_response)
         resp = get_structured_llm().invoke([HumanMessage(content=prompt)])
 
         # Access Pydantic model attributes directly
@@ -217,7 +227,7 @@ def evaluator_node(state: InterviewState) -> Dict[str, Any]:
         print("Direct classification after 3 round of clarification: YES")
         label = "yes"
         reasoning = f"Patient prompted a vague answer after three rounds of clarification :" \
-                    f" '{patient_last_answer.content}'"
+                    f" '{sanitized_response}'"
     print("exit evaluator")
 
     updates['messages'] = [AIMessage(content=reasoning)]
@@ -311,12 +321,21 @@ def diagnoser_node(state: InterviewState):
         else:
             result[group_name] = {"diagnosis": False, "timeFrame": None, "reasoning": "Invalid criteria format."}
             continue
-        prompt = DIAGNOSER_SYSTEM_PROMPT.format(
-            summary=summary, 
-            group_name=group_name, 
-            criteria_formatted=criteria_formatted,
-            module_id=module_id
-        )
+        
+        # Use special Module G prompt if this is Module G
+        if module_id == "G":
+            prompt = MODULE_G_DIAGNOSER_PROMPT.format(
+                summary=summary,
+                group_name=group_name,
+                criteria_formatted=criteria_formatted
+            )
+        else:
+            prompt = DIAGNOSER_SYSTEM_PROMPT.format(
+                summary=summary, 
+                group_name=group_name, 
+                criteria_formatted=criteria_formatted,
+                module_id=module_id
+            )
 
         response = get_llm().invoke([HumanMessage(content=prompt)])
         content = response.content.strip()
