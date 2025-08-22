@@ -49,6 +49,7 @@ def _save_log(result, thread_id, module_loader):
             "session_id": thread_id,
             "module_id": module_loader.module.id,
             "module_name": module_loader.module.name,
+            
             "timestamp": datetime.now().isoformat(),
         },
 

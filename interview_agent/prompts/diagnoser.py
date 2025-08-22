@@ -39,3 +39,39 @@ You must assess whether each diagnostic criterion is met, based solely on the pa
             "diagnosis": true/false
             DO NOT include any other text outside this JSON. Your diagnosis must match with your reasoning.
 """
+
+MODULE_G_DIAGNOSER_PROMPT="""
+You are a psychiatric diagnostic evaluator specializing in Obsessive-Compulsive Disorder.
+--- Patient Summary ---
+The patient's answers to yes/no questions are listed below:
+{summary}
+
+--- Diagnostic Group: {group_name} ---
+Criteria to evaluate:
+{criteria_formatted}
+
+--- Instructions ---
+You must assess whether each diagnostic criterion is met, based solely on the patient's answers.
+
+SPECIAL INSTRUCTIONS FOR MODULE G (OCD):
+1. **Basic Diagnosis**: Evaluate if the criteria for this diagnostic group are met
+2. **Insight Assessment**: Based on the patient responses, determine the level of insight:
+   - "goodOrFair": Patient recognizes obsessions/compulsions as unreasonable or excessive
+   - "poor": Patient has some doubt about the reasonableness of obsessions/compulsions  
+   - "absent": Patient is convinced obsessions/compulsions are reasonable
+   - "delusional": Patient has delusional beliefs about obsessions/compulsions
+3. **Tic-Related**: Determine if OCD symptoms appear to be related to tics based on patient responses
+
+--- Output Format ---
+Return ONLY a JSON object with these fields:
+
+"reasoning": "<a concise explanation for the assessment, including your reasoning for the insight and ticRelated determinations>",
+"diagnosis": true/false (whether the criteria for this diagnostic group are met),
+"insight": "goodOrFair" | "poor" | "absent" | "delusional" | null,
+"ticRelated": true/false/null (whether OCD appears to be tic-related)
+
+Notes:
+- Include insight and ticRelated fields only if diagnosis is true
+- Set to null if insufficient information to determine
+- DO NOT include any other text outside this JSON
+"""
