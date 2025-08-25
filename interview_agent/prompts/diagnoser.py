@@ -26,7 +26,7 @@ You must assess whether each diagnostic criterion is met, based solely on the pa
 5. Diagnosis Summary:
    - After assessing all criteria, provide a final diagnosis summary.
    - If **all** criteria are met, the diagnosis is 'True'. Otherwise, it is 'False'.
-   - If {module_id} == "A" and diagnosis is true, also determine the **time frame**:
+   - If the module is "A" and diagnosis is true, also determine the **time frame**:
         - Choose from: **past**, **recent**, or **both**.
         - This refers to the time frame in which the symptom group criteria were satisfied.
         - Do not use 'both' unless both past and recent **independently** meet the symptom threshold.
@@ -35,7 +35,7 @@ You must assess whether each diagnostic criterion is met, based solely on the pa
             Return ONLY a JSON object with these fields:
             
             "reasoning": "<a concise explanation for the assessment>",
-            if {module_id} == "A": "timeFrame": "past" | "recent" | "both" | null. Else: Do not include "timeFrame" field.
+            if the module is "A": "timeFrame": "past" | "recent" | "both" | null. Else: Do not include "timeFrame" field.
             "diagnosis": true/false
             DO NOT include any other text outside this JSON. Your diagnosis must match with your reasoning.
 """
