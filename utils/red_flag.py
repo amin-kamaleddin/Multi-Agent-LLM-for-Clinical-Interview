@@ -1,5 +1,7 @@
 import os
 import pandas as pd
+import json
+from pydantic import BaseModel, Field, ValidationError
 from langchain_openai import ChatOpenAI
 from langchain_core.messages import SystemMessage, HumanMessage
 from dotenv import load_dotenv
@@ -12,19 +14,49 @@ load_dotenv()
 llm = ChatOpenAI(model="gpt-4o-mini", temperature=0)
 
 # ---- Red flag detector using ChatOpenAI ----
+
+# Define schema for LLM output
+class RedFlagResponse(BaseModel):
+    answer: str = Field(..., description="Either YES or NO")
+    explanation: str = Field(..., description="One short sentence justification (no private chain-of-thought)")
+
+# Global counter for row numbers
+row_counter = 0
+
 def detect_red_flag(user_input: str) -> bool:
+    global row_counter
+    row_counter += 1  # increment row number for each call
+
     system_prompt = """You are a classifier that determines if a message 
-    contains a mental health crisis red flag.
-    Red flags include: self-harm, suicidal thoughts, wanting to die, or severe hopelessness.
-    Respond ONLY with "YES" or "NO"."""  
+contains a mental health crisis red flag.
+Red flags include: self-harm, suicidal thoughts, wanting to die, or severe hopelessness.
+If the patient is only answering an interview question (e.g., 'Do you feel hopeless?'), 
+do NOT classify it as a red flag unless they describe severe crisis symptoms or explicit intent to harm themselves in their own words.
+Responses describing mild or temporary feelings, even if persistent, are NOT red flags.
+Respond in STRICT JSON only with exactly these keys:
+{"answer":"YES or NO","explanation":"one short sentence justification (max 20 words)"}"""
+
+
 
     response = llm.invoke([
         SystemMessage(content=system_prompt),
         HumanMessage(content=user_input)
     ])
 
-    answer = response.content.strip().upper()
-    return answer == "YES"
+    raw = getattr(response, "content", str(response))
+
+    try:
+        data = json.loads(raw)
+        parsed = RedFlagResponse(**data)
+    except (json.JSONDecodeError, ValidationError):
+        # Fallback if LLM output isn't valid JSON
+        parsed = RedFlagResponse(answer="NO", explanation="Invalid output from model, defaulting to NO.")
+
+    # Print reasoning with row number
+    print(f"[row {row_counter}] [red-flag] {parsed.explanation}")
+
+    # Return boolean classification
+    return parsed.answer.strip().upper() == "YES"
 
 
 # ---------------- RUNNER USING CSV ----------------
@@ -64,3 +96,5 @@ if __name__ == "__main__":
     output_path = "./utils/redflag_dataset_with_predictions.csv"
     df_with_preds = run_tests_with_csv(dataset_path, output_path)
     print(df_with_preds.head())
+
+    # print(detect_red_flag('Yes, I feel that way for about 2 weeks'))
