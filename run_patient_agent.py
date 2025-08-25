@@ -33,8 +33,12 @@ with a brief
 clarification if helpful.
 """
 
-patient_llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.9)
-FILE_NAME = "patients_with_system_prompts_without_O"
+patient_llm = ChatOpenAI(model="gpt-4o-mini", temperature=1)
+FILE_NAME = "patients_with_system_prompts"
+
+# NEW: Starting ID variable - set this to control which patient to start from
+STARTING_PATIENT_ID = 428
+
 
 class InterviewState(BaseModel):
     messages: Annotated[Sequence, add_messages] = Field(default_factory=list)
@@ -69,6 +73,7 @@ def patient_node(state: InterviewState):
     print(15 * '--' + f" End of question {state.current_question_id}" + 15 * '--' + '\n\n')
     return {'messages': [result]}
 
+
 def build_graph(loader: ModuleLoader, visualize: bool = True):
     sg = StateGraph(InterviewState)
 
@@ -94,6 +99,7 @@ def build_graph(loader: ModuleLoader, visualize: bool = True):
 
     return compiled_sg
 
+
 def run():
     _load_key()
 
@@ -101,7 +107,12 @@ def run():
     with open("./interview_agent/prompts/" + FILE_NAME + ".json", "r", encoding="utf-8") as f:
         patients_data = json.load(f)
 
-    for entry in patients_data:
+    # Filter patients starting from the specified ID
+    filtered_patients = [entry for entry in patients_data if entry.get("id", 0) >= STARTING_PATIENT_ID]
+
+    print(f"Processing {len(filtered_patients)} patients starting from ID {STARTING_PATIENT_ID}")
+
+    for entry in filtered_patients:
         if "System Prompt" not in entry or "id" not in entry or "Module" not in entry:
             continue  # skip if missing data
 

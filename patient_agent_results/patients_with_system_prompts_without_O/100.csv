@@ -1,4 +1,0 @@
-question_id,ai_question,patient_response,classification,reasoning,timestamp,exchange_type
-F1,"In the past month, did you have persistent fear and significant anxiety at being watched, being the focus of attention, or of being humiliated or embarrassed or rejected? This includes things like speaking in public, eating in public or with others, writing while someone watches, performing in front of others, or being in social situations. 
-
-Please answer with yes or no, or if you're uncertain, feel free to explain.",No. I don’t feel anxious in social situations or worry about being judged.,no,"The patient's response clearly indicates a negation of the feelings described in the question. They explicitly state 'No' and provide additional context that they do not feel anxious in social situations or worry about being judged, which supports a clear 'no' classification.",2025-08-19T12:11:00.371443,initial

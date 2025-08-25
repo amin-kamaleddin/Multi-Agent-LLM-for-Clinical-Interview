@@ -1,7 +1,0 @@
-{
-    "current": {
-        "diagnosis": true,
-        "timeFrame": null,
-        "reasoning": "All criteria are met as E6 is 'YES', indicating that the necessary condition for the diagnostic group is satisfied. Since all symptom group questions are marked 'YES', they are considered positive. However, without specific time frame information for the symptom groups, we cannot definitively assign a time frame. Therefore, the diagnosis is 'True'."
-    }
-}
