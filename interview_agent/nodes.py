@@ -57,7 +57,7 @@ def get_structured_llm():
 def get_diagnosis_llm():
     global _diagnosis_llm
     if _diagnosis_llm is None:
-        _diagnosis_llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.1).with_structured_output(DiagnosisResult)
+        _diagnosis_llm = ChatOpenAI(model="gpt-4.1-mini", temperature=0.1).with_structured_output(DiagnosisResult)
     return _diagnosis_llm
 
 def get_patient_llm():
