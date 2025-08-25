@@ -34,10 +34,10 @@ clarification if helpful.
 """
 
 patient_llm = ChatOpenAI(model="gpt-4o-mini", temperature=1)
-FILE_NAME = "patients_with_system_prompts"
+FILE_NAME = "patients_with_system_prompts_module_G"
 
 # NEW: Starting ID variable - set this to control which patient to start from
-STARTING_PATIENT_ID = 428
+STARTING_PATIENT_ID = 1
 
 
 class InterviewState(BaseModel):

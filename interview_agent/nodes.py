@@ -211,7 +211,7 @@ def evaluator_node(state: InterviewState) -> Dict[str, Any]:
     else:
         print("MAKING AN LLM CALL TO EVALUATE THE ANSWER")
         prompt = EVALUATOR_SYSTEM_PROMPT.format(last_question= last_question.prompt, patient_last_answer= sanitized_response)
-        resp = get_structured_llm().invoke([HumanMessage(content=prompt)])
+        resp = get_structured_llm().invoke([SystemMessage(content=prompt)])
 
         # Access Pydantic model attributes directly
         print(f"reason behind the decision: {resp.reasoning}")
