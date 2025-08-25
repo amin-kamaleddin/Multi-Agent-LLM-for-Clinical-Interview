@@ -1,7 +1,0 @@
-{
-    "current": {
-        "diagnosis": false,
-        "timeFrame": null,
-        "reasoning": "Criterion 1 is not met because N4 is not 'YES'. Criterion 2 is not met as there are no symptom groups coded 'YES'. Criterion 3 is met since both O1a and O1b are 'NO'. Since not all criteria are satisfied, the overall diagnosis is 'False'."
-    }
-}

@@ -1,2 +1,0 @@
-question_id,ai_question,patient_response,classification,reasoning,timestamp,exchange_type
-N1a,"Were you excessively anxious or worried about several routine things, over the past 6 months? Please answer with yes or no. If you're uncertain, feel free to explain.",No. I don't worry about routine things.,no,"The patient's response clearly indicates a negation of the question, stating they do not worry about routine things. This directly answers the question about excessive anxiety or worry.",2025-08-19T12:44:41.884717,initial
