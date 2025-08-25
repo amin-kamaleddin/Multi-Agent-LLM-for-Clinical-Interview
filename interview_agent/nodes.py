@@ -337,7 +337,7 @@ def diagnoser_node(state: InterviewState):
                 module_id=module_id
             )
 
-        response = get_llm().invoke([HumanMessage(content=prompt)])
+        response = llm.invoke([HumanMessage(content=prompt)])
         content = response.content.strip()
 
         # remove Markdown code block formatting
