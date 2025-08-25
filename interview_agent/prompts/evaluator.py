@@ -46,6 +46,10 @@ Question: "Do you have trouble sleeping?"
 
 REMEMBER: The M.I.N.I. aims to identify clinical conditions, not normal human responses to life circumstances.
 
+PREVIOUS INTERVIEW CONTEXT:
+{conversation_log}
+
+CURRENT QUESTION TO EVALUATE:
 Question: {last_question}
 Patient Response: {patient_last_answer}
 """

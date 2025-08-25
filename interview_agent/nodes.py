@@ -8,6 +8,7 @@ from langchain_openai import ChatOpenAI
 from pydantic import ValidationError
 from pathlib import Path
 
+from utils.extract_question_answer_pair import extract_question_answer_pair
 from utils.redact_sensitive import sanitize_for_llm
 from utils.transcribe_audio import transcribe_audio_file
 
@@ -166,7 +167,7 @@ def patient_node(state: InterviewState):
 
         result = get_patient_llm().invoke([sys_msg, patient_prompt])
         print(f"agent response: {result.content}")
-
+        result = HumanMessage(content=result.content)
     print(15 * '--' + f" End of question {state.current_question_id}" + 15 * '--' + '\n\n')
     return {'messages': [result]}
 
@@ -210,7 +211,9 @@ def evaluator_node(state: InterviewState) -> Dict[str, Any]:
         reasoning = f"Patient gave a clear negative response: '{sanitized_response}'"
     else:
         print("MAKING AN LLM CALL TO EVALUATE THE ANSWER")
-        prompt = EVALUATOR_SYSTEM_PROMPT.format(last_question= last_question.prompt, patient_last_answer= sanitized_response)
+        context_history = extract_question_answer_pair(log=state.conversation_log, max_pairs=5)
+        prompt = EVALUATOR_SYSTEM_PROMPT.format(conversation_log=context_history, last_question=last_question.prompt,
+                                                patient_last_answer=sanitized_response)
         resp = get_structured_llm().invoke([SystemMessage(content=prompt)])
 
         # Access Pydantic model attributes directly
