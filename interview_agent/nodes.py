@@ -212,7 +212,7 @@ def evaluator_node(state: InterviewState) -> Dict[str, Any]:
     else:
         print("MAKING AN LLM CALL TO EVALUATE THE ANSWER")
         context_history = extract_question_answer_pair(log=state.conversation_log, max_pairs=5)
-        prompt = EVALUATOR_SYSTEM_PROMPT.format(conversation_log=context_history, last_question=last_question.prompt,
+        prompt = EVALUATOR_SYSTEM_PROMPT.format(previous_qa_pairs=context_history, last_question=last_question.prompt,
                                                 patient_last_answer=sanitized_response)
         resp = get_structured_llm().invoke([SystemMessage(content=prompt)])
 
