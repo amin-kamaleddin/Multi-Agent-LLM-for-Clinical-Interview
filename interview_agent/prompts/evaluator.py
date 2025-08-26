@@ -8,21 +8,42 @@ CLASSIFICATION RULES:
 - "explain request" - Patient explicitly asks for clarification about what the question means
 
 CLINICAL ASSESSMENT PRINCIPLES:
-1. SITUATIONAL EXCLUSIONS: If patient attributes symptoms to specific life events (loss of family member, lay off from work, loss of pet, medical issues, substances), classify as "no" even if symptoms are present
-   - Example: Sadness due to death of loved one = "no" for depression screening
-   - Example: Sleep issues due to new medication = "no" for sleep disorder
 
-2. CLEAR SYMPTOM PRESENCE: Only classify as "yes" when patient describes symptoms that appear clinical/unexplained
+1. SYMPTOM DETECTION PRIORITY:
+    - Primary goal: Identify when patients describe symptoms
+    - Look for: frequency, persistence, functional impact, distress
+    - Classify as "yes" when symptoms are described
+
+2. SITUATIONAL EXCLUSIONS: Classify as "no" when patient DIRECTLY attributes symptoms to external life events or 
+medical causes
+   - EXCLUDE only for: Death/loss, job loss, relationship breakup, medical conditions, medications, substances
+   - INCLUDE everything else: Mental health symptoms, unexplained symptoms, symptoms during stress/anxiety/depression
+   - Key test: Did patient explicitly say "because of [external event]"?
+   - Example: "Sad because my mother died" = "no" (direct external cause)
+   - Example: "Can't sleep due to blood pressure medication" = "no" (direct medical cause)
+   - Example: "Tired when I'm anxious" = "yes" (symptom description, not external cause)
+   - Example: "Feel hopeless sometimes" = "yes" (symptom description)
+
+3. SYMPTOM FLUCTUATION vs DIRECT CAUSATION:
+  * "Always sad, worse when family fights" = "yes" (persistent symptoms with fluctuation)
+  * "Anxious often, especially during work stress" = "yes" (symptoms fluctuate with stress)
+  * "Only worried during exams, fine otherwise" = "no" (symptoms only during specific situation)
+  * "Sad because my mother died" = "no" (direct attribution - symptoms only due to event)
+    - Look for frequency indicators: "often", "always", "most days", "can't stop", "cloud hanging over me" = persistent symptoms (classify as "yes")
+
+4. CLEAR SYMPTOM PRESENCE: Only classify as "yes" when patient describes symptoms that appear clinical/unexplained
    - Look for: unexplained mood changes, persistent symptoms without clear cause
    - Avoid: normal reactions to life circumstances
 
-3. AMBIVALENCE HANDLING: When patients show uncertainty or minimize symptoms but don't provide situational causes, use "rephrase needed"
+5. AMBIVALENCE HANDLING: When patients show uncertainty or minimize symptoms but don't provide situational causes, 
+use "rephrase needed"
    - "I don't know" without explanation = rephrase needed
    - "Sometimes, but it's because of X" = no (situational)
 
-4. CONSERVATIVE APPROACH: When in doubt between "yes" and "no", lean toward "yes"
+6. CONSERVATIVE APPROACH: When in doubt between "yes" and "no", lean toward "yes"
 
-5. ORGANIC EXCLUSION QUESTIONS: For questions about drugs/medicines/withdrawal or other medical illnesses as potential causes:
+7. ORGANIC EXCLUSION QUESTIONS: For questions about drugs/medicines/withdrawal or other medical illnesses as 
+potential causes:
    - "yes" = Patient reports drugs, medicines, withdrawal, or medical conditions that COULD explain symptoms
    - "no" = Patient denies drugs, medicines, withdrawal, or medical conditions; attributes symptoms to mental health
    - LEAN TOWARD "no" when in doubt for these questions
@@ -44,10 +65,10 @@ Question: "Do you have trouble sleeping?"
 - "I'm not sure, maybe" → rephrase needed
 - "What counts as trouble sleeping?" → explain request
 
-REMEMBER: The M.I.N.I. aims to identify clinical conditions, not normal human responses to life circumstances.
-
 PREVIOUS INTERVIEW CONTEXT:
-{conversation_log}
+{previous_qa_pairs}
+
+REMEMBER: The M.I.N.I. aims to identify clinical conditions.
 
 CURRENT QUESTION TO EVALUATE:
 Question: {last_question}
