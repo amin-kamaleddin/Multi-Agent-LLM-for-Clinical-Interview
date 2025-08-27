@@ -1,5 +1,8 @@
 import re
 from typing import List, Dict
+import spacy
+
+nlp = spacy.load("en_core_web_sm")
 
 class PIIRedactor:
     def __init__(self):
@@ -9,7 +12,6 @@ class PIIRedactor:
             'ssn': r'\b(?:\d{3}[-.\s]?\d{2}[-.\s]?\d{4})\b',
             'date': r'\b(?:0?[1-9]|1[0-2])[-/.](?:0?[1-9]|[12]\d|3[01])[-/.](?:19|20)?\d{2}\b',
             'address': r'\b\d+\s+[A-Za-z0-9\s,.-]+(?:Street|St|Avenue|Ave|Road|Rd|Drive|Dr|Lane|Ln|Boulevard|Blvd|Court|Ct)\b',
-            'name_patterns': r'\b(?:my name is|i am|i\'m|call me)\s+([A-Za-z]+(?:\s+[A-Za-z]+)*?)(?:\s+and|\s*$|\s*[.!?])',
             'age_over_89': r'\b(?:i am|i\'m|age)\s*(?:is\s*)?(\d{2,3})\s*(?:years?\s*old)?\b',
         }
 
@@ -17,6 +19,24 @@ class PIIRedactor:
             'mrn': r'\b(?:MRN|medical record|patient id)[\s:#]*([A-Z0-9]{6,})\b',
             'medication': r'\b(?:taking|prescribed|medication|pills?)\s+([A-Z][a-z]+(?:\s+\d+\s*mg)?)\b',
         }
+
+    def redact_names_with_ner(self, text: str, token="[NAME_REDACTED]") -> str:
+        doc = nlp(text)
+        spans = [(ent.start_char, ent.end_char) for ent in doc.ents if ent.label_ == "PERSON"]
+        if not spans:
+            return text
+        spans.sort()
+        merged = []
+        for s, e in spans:
+            if merged and s <= merged[-1][1]:
+                merged[-1] = (merged[-1][0], max(merged[-1][1], e))
+            else:
+                merged.append((s, e))
+        out = list(text)
+        for s, e in reversed(merged):
+            out[s:e] = token
+        return "".join(out)
+        
 
     def redact_pii(self, text: str) -> str:
         if not text:
@@ -30,8 +50,7 @@ class PIIRedactor:
         censored = re.sub(self.patterns['date'], '[DATE_REDACTED]', censored)
         censored = re.sub(self.patterns['address'], '[ADDRESS_REDACTED]', censored)
 
-        censored = re.sub(self.patterns['name_patterns'], 
-                          lambda m: f"{m.group(0).split()[0]} [NAME_REDACTED]", censored, flags=re.IGNORECASE)
+        censored = self.redact_names_with_ner(censored, token="[NAME_REDACTED]")
         
         def age_replacer(match):
             try:
@@ -56,3 +75,7 @@ pii_filter = PIIRedactor()
 def sanitize_for_llm(text: str) -> str:
     """Sanitize text before sending to LLM"""
     return pii_filter.redact_pii(text)
+
+if __name__ == "__main__":
+    text = "I am going to the doctor tomorrow. I'm John Doe. My phone number is 123-456-7890. My email is john.doe@example.com. My SSN is 123-45-6789. My date of birth is 01/01/1990. My address is 123 Main St, Anytown, USA. I am 90 years old. I am taking 10mg of Xanax. My MRN is 1234567890."
+    print(sanitize_for_llm(text))
