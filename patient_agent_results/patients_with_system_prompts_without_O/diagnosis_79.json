@@ -1,7 +1,0 @@
-{
-    "current": {
-        "diagnosis": true,
-        "timeFrame": "recent",
-        "reasoning": "All criteria are met as E6 is 'YES', indicating the presence of the required symptom group. Since all questions are marked 'YES', the symptom group is positive. The time frame is not specified for the symptom groups, but since they are all affirmative, it indicates a current state. Therefore, the diagnosis is true for the recent time frame."
-    }
-}

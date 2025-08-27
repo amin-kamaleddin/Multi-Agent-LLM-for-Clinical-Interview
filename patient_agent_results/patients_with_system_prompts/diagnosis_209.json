@@ -1,0 +1,9 @@
+{
+    "current": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "The criterion E6 is not met as the patient's answer to E6 is not provided. Therefore, we cannot confirm the diagnosis.",
+        "insight": null,
+        "ticRelated": null
+    }
+}

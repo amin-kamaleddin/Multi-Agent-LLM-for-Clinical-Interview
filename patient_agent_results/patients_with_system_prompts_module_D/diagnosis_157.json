@@ -1,0 +1,16 @@
+{
+    "lifetime": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion 1: D3 is YES, so criterion 1 is met. Criterion 2: Among D4a to D4m, the YES responses are D4a, D4f, and D4m (3 total), which is fewer than the required 4, so criterion 2 is not met. Criterion 3: O1a and O1b are both NO, so criterion 3 is met. Since criterion 2 is not met, the overall diagnosis is false.",
+        "insight": null,
+        "ticRelated": null
+    },
+    "current": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 (D6) is met as D6 is YES. Criterion 2 (O1a = NO and O1b = NO) is met since both are NO.",
+        "insight": null,
+        "ticRelated": null
+    }
+}

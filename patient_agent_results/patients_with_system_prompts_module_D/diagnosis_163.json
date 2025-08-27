@@ -1,0 +1,16 @@
+{
+    "lifetime": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 (D3 is YES) cannot be evaluated because D3 is not provided. Criterion 2 requires 4 or more of the listed symptom groups (D4a to D4m) to be YES, but no answers for these are given. Criterion 3 requires O1a = NO and O1b = NO, but these are not provided. Based on available data (D1a=YES, D1b=NO) and missing required information, criteria cannot be met.",
+        "insight": null,
+        "ticRelated": null
+    },
+    "current": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 (D6 is 'YES') cannot be evaluated because D6 answer is not provided. Criterion 2 (O1a = NO AND O1b = NO) cannot be evaluated because O1a and O1b answers are not provided. Based solely on the provided answers (D1a: YES, D1b: NO), there is insufficient information to meet either criterion.",
+        "insight": null,
+        "ticRelated": null
+    }
+}

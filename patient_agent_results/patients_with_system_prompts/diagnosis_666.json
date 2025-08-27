@@ -1,0 +1,16 @@
+{
+    "lifetime": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Neither of the diagnostic criteria are met. For criterion 1, none of the items P1a-P1f are marked YES, so there are not at least 2 positive responses. For criterion 2, none of the items P2a-P2g are marked YES, so there are not at least 3 positive responses. Therefore, the overall diagnosis is false.",
+        "insight": null,
+        "ticRelated": null
+    },
+    "note": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "All responses to the yes/no questions are 'NO', indicating that none of the symptom groups are met. Therefore, the criteria for diagnosis are not satisfied.",
+        "insight": null,
+        "ticRelated": null
+    }
+}

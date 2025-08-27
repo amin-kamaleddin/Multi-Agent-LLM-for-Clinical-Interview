@@ -1,0 +1,16 @@
+{
+    "positive": {
+        "diagnosis": true,
+        "timeFrame": "recent",
+        "reasoning": "The patient meets the criteria for diagnosis. There are at least 5 positive symptom groups (A3a, A3b, A3c, A3d, A3e) all marked 'YES' in the recent time frame. The core symptoms A1a and A2a_1 are also marked 'YES'. Functional impairment is indicated by A4_recent being 'YES'. Additionally, O1a is 'YES' and O1b is 'NO', satisfying the organic cause rule-out criteria. Therefore, all diagnostic criteria are met.",
+        "insight": null,
+        "ticRelated": null
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion A5 is not met as it is marked 'NO'. Additionally, for the organic cause rule-out criteria, O1a is 'YES' and O1b is 'NO', which does not satisfy the requirement of both being 'NO'. Therefore, not all criteria for the diagnosis of recurrent are met.",
+        "insight": null,
+        "ticRelated": null
+    }
+}

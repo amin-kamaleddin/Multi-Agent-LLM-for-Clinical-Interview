@@ -1,0 +1,16 @@
+{
+    "positive": {
+        "diagnosis": true,
+        "timeFrame": "both",
+        "reasoning": "1. Symptom groups A3a to A3f are all positive for both past and recent time frames (6 groups each), satisfying the requirement of at least 5 symptom groups in one time frame. 2. Core symptom criterion is met since A1a=YES and A1b=YES and A2a_1=YES and A2b=YES. 3. Functional impairment is met as both A4_past=YES and A4_recent=YES. 4. Organic cause criteria are met since O1a=NO and O1b=NO. Therefore, all criteria are met. Both past and recent independently satisfy the symptom group threshold, so timeFrame is 'both'.",
+        "insight": null,
+        "ticRelated": null
+    },
+    "recurrent": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 (A5 = YES) is met as A5 is YES. Criterion 2 (O1a = NO AND O1b = NO) is met since both O1a and O1b are NO. Therefore, all criteria for the recurrent diagnostic group are met.",
+        "insight": null,
+        "ticRelated": null
+    }
+}

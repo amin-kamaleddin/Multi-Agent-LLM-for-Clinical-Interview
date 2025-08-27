@@ -1,7 +1,0 @@
-{
-    "current": {
-        "diagnosis": true,
-        "timeFrame": "recent",
-        "reasoning": "Criterion 1 is met because N4 is 'YES'. Criterion 2 is met because all symptom groups (N3a to N3f) are marked 'YES', which exceeds the requirement of at least 3 symptom groups. Criterion 3 is met as both O1a and O1b are 'NO'. Therefore, all criteria are satisfied."
-    }
-}

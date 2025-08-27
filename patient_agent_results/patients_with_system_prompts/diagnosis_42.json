@@ -1,0 +1,16 @@
+{
+    "positive": {
+        "diagnosis": true,
+        "timeFrame": "past",
+        "reasoning": "The patient meets the criteria for diagnosis. There are at least 5 symptom groups coded YES: A3a (past), A3b (past), A3c (past), A3d (past), and A3e (past). The core symptom A1a is YES, and there is functional impairment as A4_recent is YES. Additionally, O1a is NO and O1b is NO, fulfilling the organic cause rule-out criteria. All symptom groups are from the past time frame.",
+        "insight": null,
+        "ticRelated": null
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 is not met because A5 is NO. Criterion 2 is not met because O1a is NO but O1b is YES. Therefore, not all criteria are satisfied.",
+        "insight": null,
+        "ticRelated": null
+    }
+}

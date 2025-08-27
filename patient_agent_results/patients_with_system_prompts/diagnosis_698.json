@@ -1,0 +1,16 @@
+{
+    "lifetime": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 is met as there are 2 'YES' responses in the P1 group (P1c and P1e). Criterion 2 is not met as there are no 'YES' responses in the P2 group. Therefore, not all criteria are satisfied.",
+        "insight": null,
+        "ticRelated": null
+    },
+    "note": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "The patient has answered 'YES' to two items (P1c and P1e) which belong to different symptom groups. However, since they are from different time frames (one recent and one past), the criteria for having at least 5 symptom groups from a single time frame are not met. Therefore, the diagnosis is false.",
+        "insight": null,
+        "ticRelated": null
+    }
+}

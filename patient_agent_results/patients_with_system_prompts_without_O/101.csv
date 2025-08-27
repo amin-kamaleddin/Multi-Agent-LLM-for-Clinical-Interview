@@ -1,4 +1,0 @@
-question_id,ai_question,patient_response,classification,reasoning,timestamp,exchange_type
-F1,"In the past month, did you have persistent fear and significant anxiety at being watched, being the focus of attention, or of being humiliated or embarrassed or rejected? This includes things like speaking in public, eating in public or with others, writing while someone watches, performing in front of others, or being in social situations. 
-
-Please answer with yes or no, or if you're uncertain, feel free to explain.","No, I haven't experienced that kind of fear or anxiety in the past month.",no,"The patient's response clearly indicates a negation of the experiences described in the question. They explicitly state that they have not experienced fear or anxiety related to being watched or humiliated in the past month, which aligns with a clear 'no' answer.",2025-08-19T12:11:06.925133,initial

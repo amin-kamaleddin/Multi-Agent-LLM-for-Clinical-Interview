@@ -1,0 +1,16 @@
+{
+    "positive": {
+        "diagnosis": true,
+        "timeFrame": "past",
+        "reasoning": "1. Symptom groups: Past positive groups are A3a, A3b, A3c, A3d, A3e, A3f (6 groups). Recent positive groups are A3a, A3d, A3e, A3f (4 groups). Only past meets the threshold of at least 5 symptom groups. 2. Core symptom: A2a_2=YES and A2b=YES, so core symptom criterion met. 3. Functional impairment: A4_past=YES and A4_recent=YES, so functional impairment criterion met. 4. Organic cause: O1a=NO and O1b=NO, criterion met. Since all criteria are met and symptom threshold is met only in past, time frame is past.",
+        "insight": null,
+        "ticRelated": null
+    },
+    "recurrent": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 (A5=YES) is met as A5 is YES. Criterion 2 (O1a=NO and O1b=NO) is met since both O1a and O1b are NO. Therefore, all criteria for the recurrent diagnostic group are satisfied.",
+        "insight": null,
+        "ticRelated": null
+    }
+}

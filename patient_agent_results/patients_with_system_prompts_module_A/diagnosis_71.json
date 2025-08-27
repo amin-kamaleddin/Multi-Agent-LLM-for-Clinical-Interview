@@ -1,0 +1,16 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 (at least 5 symptom groups A3a\u2013A3g coded YES) cannot be evaluated because no symptom group data is provided. Criterion 2 (core symptom) is not met since A1a=NO and A2a_2=NO, and no other core symptom items are given as YES. Criterion 3 (functional impairment) cannot be evaluated due to lack of data. Criterion 4 (O1a=NO and O1b=NO) is met as stated. Overall, not all criteria are met due to missing core symptom and insufficient symptom groups.",
+        "insight": null,
+        "ticRelated": null
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 (A5=YES) is not met because there is no information indicating A5=YES. Criterion 2 (O1a=NO AND O1b=NO) is met as both are NO. Since not all criteria are met, diagnosis is false.",
+        "insight": null,
+        "ticRelated": null
+    }
+}

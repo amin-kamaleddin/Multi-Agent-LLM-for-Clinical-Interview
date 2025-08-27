@@ -5,7 +5,7 @@ import re
 from sklearn.metrics import accuracy_score, confusion_matrix, precision_score, recall_score, f1_score
 
 # Paths
-MODULE_FILE_NAME = "patients_with_system_prompts_without_O"
+MODULE_FILE_NAME = "patients_with_system_prompts"
 patients_file = "./interview_agent/prompts/" + MODULE_FILE_NAME + ".json"
 results_dir = "./patient_agent_results/" + MODULE_FILE_NAME
 output_csv = results_dir + "/predictions.csv"
@@ -48,7 +48,7 @@ with open(output_csv, "w", newline="", encoding="utf-8") as csvfile:
         # Determine key based on first letter of Module
         module_letter = patient_entry["Module"].split()[0]  # e.g., "A"
         if module_letter in ["A", "O"]:
-            key = "mustHave"
+            key = "positive"
         elif module_letter in ["P", "D"]:
             key = "lifetime"
         else:

@@ -1,0 +1,9 @@
+{
+    "current": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "The patient answered 'NO' to E6, which is a required criterion for the current diagnostic group. Therefore, the criterion is not met.",
+        "insight": null,
+        "ticRelated": null
+    }
+}

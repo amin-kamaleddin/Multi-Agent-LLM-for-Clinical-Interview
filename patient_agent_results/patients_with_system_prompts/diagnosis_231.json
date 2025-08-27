@@ -1,0 +1,9 @@
+{
+    "current": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "The patient's answer to E6 is not provided, which is necessary to determine if the diagnostic criterion is met. Therefore, we cannot conclude that all criteria are satisfied.",
+        "insight": null,
+        "ticRelated": null
+    }
+}

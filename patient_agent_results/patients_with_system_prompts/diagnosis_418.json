@@ -1,0 +1,23 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "The patient meets criterion G4 as they answered 'YES'. For the second criterion, both G1a, G1b, and G2 are 'YES', fulfilling the requirement. However, O1a and O1b are both 'YES', which does not meet the third criterion. Therefore, the overall diagnostic criteria are not met. Insight cannot be assessed as the diagnosis is false. There is no information to determine if the OCD symptoms are tic-related.",
+        "insight": null,
+        "ticRelated": null
+    },
+    "insight": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Invalid criteria format.",
+        "insight": null,
+        "ticRelated": null
+    },
+    "ticRelated": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "The patient has answered 'YES' to all questions in the G module, indicating the presence of obsessions and compulsions that are recognized as excessive or unreasonable. This suggests a good level of insight. Additionally, there is no specific information provided that indicates the OCD symptoms are related to tics, so tic-related status cannot be confirmed.",
+        "insight": "goodOrFair",
+        "ticRelated": null
+    }
+}
