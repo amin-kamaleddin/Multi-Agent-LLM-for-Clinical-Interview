@@ -1,0 +1,9 @@
+{
+    "current": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 (F6 == 'YES') is not met because F6 is not provided as 'YES'. Criterion 2 (O1a = NO AND O1b = NO) cannot be fully evaluated due to missing data, but assuming organic causes are ruled out, this criterion is met. Since not all criteria are met, the diagnosis is false.",
+        "insight": null,
+        "ticRelated": null
+    }
+}

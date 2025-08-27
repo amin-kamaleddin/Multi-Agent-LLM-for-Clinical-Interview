@@ -1,0 +1,16 @@
+{
+    "lifetime": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 is met as there are 4 'YES' responses in the P1 group (P1a, P1b, P1c, P1d). Criterion 2 is also met with 6 'YES' responses in the P2 group (P2a, P2b, P2c, P2d, P2e, P2f). Therefore, all criteria are satisfied.",
+        "insight": null,
+        "ticRelated": null
+    },
+    "note": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "The patient has positive responses for all items in the symptom groups, indicating significant symptoms. The symptom groups are: P1 (4 positive responses) and P2 (6 positive responses). Since all responses in P1 are marked 'YES', this group is considered positive. For P2, all responses are also 'YES', making this group positive as well. However, the criteria require that the positive symptom groups must come from only one time frame. Since P1 has 4 positive responses and P2 has 6 positive responses, but they are not from the same time frame, the criteria are not fully met. Therefore, the diagnosis is 'False'.",
+        "insight": null,
+        "ticRelated": null
+    }
+}

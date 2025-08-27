@@ -1,0 +1,16 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "The patient has 5 positive symptom groups (A3b_recent, A3d_recent, A3e_past, A3f_past, A2a_2) from the recent time frame. The core symptom criterion is met (A2a_2=YES). There is no functional impairment reported (A4_recent=NO and A4_past=NO), which does not satisfy the functional impairment criterion. Therefore, not all criteria are met.",
+        "insight": null,
+        "ticRelated": null
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 (A5 = YES) is met. Criterion 2 (O1a = NO AND O1b = NO) is not met, as both O1a and O1b are marked YES. Therefore, not all criteria are satisfied.",
+        "insight": null,
+        "ticRelated": null
+    }
+}

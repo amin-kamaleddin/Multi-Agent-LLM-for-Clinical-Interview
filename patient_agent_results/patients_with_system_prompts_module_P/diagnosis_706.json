@@ -1,0 +1,16 @@
+{
+    "lifetime": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 requires at least 2 of P1a-P1f coded YES. Patient has P1a, P1b, P1c, P1d, and P1e as YES (5 total), so criterion 1 is met. Criterion 2 requires at least 3 of P2a-P2g coded YES. Patient has P2a, P2b, P2c, P2d, P2e, and P2f as YES (6 total), so criterion 2 is met.",
+        "insight": null,
+        "ticRelated": null
+    },
+    "note": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "All questions P1a through P1e are YES, indicating the first symptom group is positive in the past. P1f is NO, so no recent positivity from that group. All questions P2a through P2f are YES, indicating the second symptom group is positive in the recent time frame; P2g is NO. Thus, there are positive symptom groups in both past and recent time frames, but not five symptom groups in either time frame alone. Since the criteria require all symptom groups to be from one time frame and at least five groups, and only two groups are present, the diagnostic threshold is not met.",
+        "insight": null,
+        "ticRelated": null
+    }
+}

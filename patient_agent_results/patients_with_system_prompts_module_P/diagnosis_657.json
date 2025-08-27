@@ -1,0 +1,16 @@
+{
+    "lifetime": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 requires at least 2 of P1a-P1f to be YES. Patient has P1a, P1b, P1c, and P1e as YES (4 total), so criterion 1 is met. Criterion 2 requires at least 3 of P2a-P2g to be YES. Patient has all P2a through P2g as YES (7 total), so criterion 2 is met. Both criteria are satisfied based on the patient's answers.",
+        "insight": null,
+        "ticRelated": null
+    },
+    "note": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "All questions P1a, P1b, P1c, P1e (from P1 group) and all P2 questions (P2a through P2g) are answered YES except P1d and P1f. Assuming P1 and P2 represent different symptom groups, both groups are positive. Since all P2 questions are YES, P2 symptom group is positive in one time frame (likely recent or past, but time frame not explicitly given). P1 group has mostly YES answers, so it is also positive. Given that all symptom groups are positive in the same time frame (no mixing indicated), the criteria for symptom groups are met. No indication that behaviors are exclusively politically or religiously motivated. Organic causes are ruled out. Therefore, diagnosis is true. Without explicit time frame suffixes, and given all answers are YES without time frame distinction, time frame is set to null.",
+        "insight": null,
+        "ticRelated": null
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "lifetime": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 requires at least 2 YES answers from P1a-P1f. The patient has YES for P1b, P1c, P1e, and P1f (4 YES). Criterion 1 is met. Criterion 2 requires at least 3 YES answers from P2a-P2g. The patient has YES for P2a, P2b, P2c, P2e, P2f, and P2g (6 YES). Criterion 2 is met.",
+        "insight": null,
+        "ticRelated": null
+    },
+    "note": {
+        "diagnosis": true,
+        "timeFrame": "recent",
+        "reasoning": "All non-time-frame-specific items (P1b, P1c, P1e, P1f, P2a, P2b, P2c, P2e, P2f, P2g) are positive. Symptom groups are positive in the recent time frame (P1b, P1c, P1e, P1f, P2a, P2b, P2c, P2e, P2f, P2g) but not in the past (P1a, P1d, P2d are NO). At least 5 symptom groups are positive in the recent time frame only. No indication that behaviors are exclusively politically or religiously motivated. Therefore, all criteria are met with symptoms in the recent time frame.",
+        "insight": null,
+        "ticRelated": null
+    }
+}

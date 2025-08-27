@@ -1,0 +1,16 @@
+{
+    "lifetime": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "Criterion 1: Among P1a-P1f, P1b, P1c are YES (2 YES), so criterion 1 is met. Criterion 2: Among P2a-P2g, P2a, P2c, P2e, P2f, P2g are YES (5 YES), so criterion 2 is met. Both criteria are met, so diagnosis is true. No time frame specified for this module, so timeFrame is null.",
+        "insight": null,
+        "ticRelated": null
+    },
+    "note": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Symptom groups P1 and P2 are considered separately. P1 has YES answers for P1b and P1c only, indicating 2 positive symptom groups (P1b and P1c belong to the same group P1, so P1 is positive). P2 has YES answers for P2a, P2c, P2e, P2f, and P2g, indicating P2 is positive. Since P1 and P2 are separate symptom groups, and both have YES answers, there are 2 positive symptom groups. However, the criteria require at least 5 symptom groups positive from the same time frame, which is not met here. No indication that any answers are exclusively politically or religiously motivated, so no exclusions apply. Therefore, the diagnostic criteria are not met.",
+        "insight": null,
+        "ticRelated": null
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "lifetime": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 is met with P1a (YES) and P1d (YES), totaling 2 YES responses. Criterion 2 is met with P2c (YES) and P2f (YES), totaling 2 YES responses, but does not meet the requirement of at least 3 YES responses. Therefore, not all criteria are satisfied.",
+        "insight": null,
+        "ticRelated": null
+    },
+    "note": {
+        "diagnosis": true,
+        "timeFrame": "recent",
+        "reasoning": "The patient has positive responses in the following symptom groups: P1 (P1a and P1d are YES) and P2 (P2c and P2f are YES). Both symptom groups are satisfied in the recent time frame. Therefore, the criteria are met for a diagnosis.",
+        "insight": null,
+        "ticRelated": null
+    }
+}

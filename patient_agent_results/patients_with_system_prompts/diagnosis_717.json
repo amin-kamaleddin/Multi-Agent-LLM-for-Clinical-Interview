@@ -1,0 +1,16 @@
+{
+    "lifetime": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 is not met as only 1 of (P1a-P1f) is coded YES (P1f). Criterion 2 is met as 3 of (P2a-P2g) are coded YES (P2a, P2e). Since not all criteria are met, the overall diagnosis is false.",
+        "insight": null,
+        "ticRelated": null
+    },
+    "note": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "The patient has positive responses in the symptom groups related to P2a (YES) and P2e (YES), which indicates the presence of symptoms. However, there are no positive responses in the symptom groups from P1, which means the required number of positive symptom groups is not met. Therefore, the diagnosis is false.",
+        "insight": null,
+        "ticRelated": null
+    }
+}

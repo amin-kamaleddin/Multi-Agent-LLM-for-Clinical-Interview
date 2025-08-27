@@ -1,0 +1,16 @@
+{
+    "lifetime": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Neither of the diagnostic criteria are met. For criterion 1, there are no 'YES' responses in the P1 group, which requires at least 2 'YES' responses. For criterion 2, there are also no 'YES' responses in the P2 group, which requires at least 3 'YES' responses.",
+        "insight": null,
+        "ticRelated": null
+    },
+    "note": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "All answers provided by the patient are 'NO', indicating that none of the diagnostic criteria are met. Therefore, the diagnosis is 'False'.",
+        "insight": null,
+        "ticRelated": null
+    }
+}

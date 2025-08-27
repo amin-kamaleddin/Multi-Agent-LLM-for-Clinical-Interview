@@ -1,0 +1,16 @@
+{
+    "lifetime": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 is met as there are 2 'YES' responses in the P1 group (P1e and P1f). Criterion 2 is not met as there are no 'YES' responses in the P2 group. Therefore, not all criteria are satisfied.",
+        "insight": null,
+        "ticRelated": null
+    },
+    "note": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "The patient has answered 'YES' to two items (P1e and P1f), which belong to the same symptom group. However, all other symptom groups are negative. Therefore, only one symptom group is positive, which does not meet the required threshold of at least five positive symptom groups. As a result, the criteria for diagnosis are not fully met.",
+        "insight": null,
+        "ticRelated": null
+    }
+}

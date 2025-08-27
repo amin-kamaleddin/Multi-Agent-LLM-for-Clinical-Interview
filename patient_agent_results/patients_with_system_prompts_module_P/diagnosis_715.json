@@ -1,0 +1,16 @@
+{
+    "lifetime": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "Criterion 1: Among P1a-P1f, P1a, P1c, and P1e are YES, so at least 2 are YES - criterion met. Criterion 2: All P2a through P2g are YES, so at least 3 are YES - criterion met. Both criteria are satisfied based on the patient's answers.",
+        "insight": null,
+        "ticRelated": null
+    },
+    "note": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "Symptom groups P1 and P2 are both positive since multiple questions in each group are answered YES. P1 has YES answers for P1a, P1c, and P1e; P2 has all YES answers (P2a through P2g). Since no time frames are specified, and all positive symptom groups come from the same context, the symptom group criterion is met. There is no indication that any YES answers are exclusively politically or religiously motivated. Therefore, all criteria are met.",
+        "insight": null,
+        "ticRelated": null
+    }
+}

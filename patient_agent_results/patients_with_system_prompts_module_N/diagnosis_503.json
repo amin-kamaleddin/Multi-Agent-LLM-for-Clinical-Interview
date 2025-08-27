@@ -1,0 +1,9 @@
+{
+    "current": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "N4 is not provided, so criterion 1 cannot be confirmed as met. No symptom groups (N3a\u2013N3f) are indicated as YES, so criterion 2 is not met. O1a and O1b are not provided, but criterion 3 requires both to be NO, which cannot be confirmed. Therefore, not all criteria are met.",
+        "insight": null,
+        "ticRelated": null
+    }
+}
