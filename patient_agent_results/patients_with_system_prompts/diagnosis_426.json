@@ -1,0 +1,23 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "The patient answered 'NO' to all relevant questions. Therefore, G4 is not met, and the criteria for diagnosis are not satisfied. Since the diagnosis is false, insight and tic-related assessments are not applicable.",
+        "insight": null,
+        "ticRelated": null
+    },
+    "insight": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Invalid criteria format.",
+        "insight": null,
+        "ticRelated": null
+    },
+    "ticRelated": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "The patient answered 'NO' to all questions related to obsessions and compulsions, indicating that they do not experience symptoms consistent with OCD. Therefore, the diagnostic criteria for this group are not met. As a result, there is no basis for assessing insight or determining tic-relatedness.",
+        "insight": null,
+        "ticRelated": null
+    }
+}

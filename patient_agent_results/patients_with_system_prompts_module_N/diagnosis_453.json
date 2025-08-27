@@ -1,0 +1,9 @@
+{
+    "current": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 (N4 == 'YES') is met as N4 is YES. For criterion 2, symptom groups N3a, N3d, and N3f are YES, totaling 3 positive symptom groups. Since no time frames are specified, these are considered from the same time frame. Criterion 3 is met as both O1a and O1b are NO. Therefore, all criteria are met.",
+        "insight": null,
+        "ticRelated": null
+    }
+}

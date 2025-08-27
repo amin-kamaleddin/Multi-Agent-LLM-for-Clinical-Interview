@@ -5,17 +5,17 @@ from langchain_core.messages import SystemMessage, HumanMessage
 from langchain_openai import ChatOpenAI
 from interview_agent.cli import _load_key
 
-DIAGNOSIS_SYSTEM_PROMPT="""
+DIAGNOSER_SYSTEM_PROMPT="""
 You are a psychiatric diagnostic evaluator.
-=== Patient Summary ===
+--- Patient Summary ---
 The patient's answers to yes/no questions are listed below:
 {summary}
 
-=== Diagnostic Group: {group_name} ===
+--- Diagnostic Group: {group_name} ---
 Criteria to evaluate:
 {criteria_formatted}
 
-=== Instructions ===
+--- Instructions ---
 You must assess whether each diagnostic criterion is met, based solely on the patient's answers.
 1. General Rules:
     - Analyze each criterion independently.
@@ -33,19 +33,54 @@ You must assess whether each diagnostic criterion is met, based solely on the pa
 5. Diagnosis Summary:
    - After assessing all criteria, provide a final diagnosis summary.
    - If **all** criteria are met, the diagnosis is 'True'. Otherwise, it is 'False'.
-   - For a positive diagnosis, also determine the **time frame**:
+   - If {module_id} == "A" and diagnosis is true, also determine the **time frame**:
         - Choose from: **past**, **recent**, or **both**.
         - This refers to the time frame in which the symptom group criteria were satisfied.
         - Do not use 'both' unless both past and recent **independently** meet the symptom threshold.
         
-=== Output Format ===
+--- Output Format ---
             Return ONLY a JSON object with these fields:
             
             "reasoning": "<a concise explanation for the assessment>",
-            "timeFrame": "past" | "recent" | "both" | null,
+            if {module_id} == "A": "timeFrame": "past" | "recent" | "both" | null. Else: Do not include "timeFrame" field.
             "diagnosis": true/false
-            
             DO NOT include any other text outside this JSON. Your diagnosis must match with your reasoning.
+"""
+
+MODULE_G_DIAGNOSER_PROMPT="""
+You are a psychiatric diagnostic evaluator specializing in Obsessive-Compulsive Disorder.
+--- Patient Summary ---
+The patient's answers to yes/no questions are listed below:
+{summary}
+
+--- Diagnostic Group: {group_name} ---
+Criteria to evaluate:
+{criteria_formatted}
+
+--- Instructions ---
+You must assess whether each diagnostic criterion is met, based solely on the patient's answers.
+
+SPECIAL INSTRUCTIONS FOR MODULE G (OCD):
+1. **Basic Diagnosis**: Evaluate if the criteria for this diagnostic group are met
+2. **Insight Assessment**: Based on the patient responses, determine the level of insight:
+   - "goodOrFair": Patient recognizes obsessions/compulsions as unreasonable or excessive
+   - "poor": Patient has some doubt about the reasonableness of obsessions/compulsions  
+   - "absent": Patient is convinced obsessions/compulsions are reasonable
+   - "delusional": Patient has delusional beliefs about obsessions/compulsions
+3. **Tic-Related**: Determine if OCD symptoms appear to be related to tics based on patient responses
+
+--- Output Format ---
+Return ONLY a JSON object with these fields:
+
+"reasoning": "<a concise explanation for the assessment, including your reasoning for the insight and ticRelated determinations>",
+"diagnosis": true/false (whether the criteria for this diagnostic group are met),
+"insight": "goodOrFair" | "poor" | "absent" | "delusional" | null,
+"ticRelated": true/false/null (whether OCD appears to be tic-related)
+
+Notes:
+- Include insight and ticRelated fields only if diagnosis is true
+- Set to null if insufficient information to determine
+- DO NOT include any other text outside this JSON
 """
 
 CRITERIA = {
@@ -107,12 +142,26 @@ def evaluate_diagnosis_from_log(conversation_log, criteria_rules, module_name, v
         else:
             result[group_name] = {"diagnosis": False, "timeFrame": None, "reasoning": "Invalid criteria format."}
             continue
-        prompt = DIAGNOSIS_SYSTEM_PROMPT.format(summary=summary, group_name=group_name, criteria_formatted=criteria_formatted)
+        
+        # Use special Module G prompt if this is Module G
+        if module_key == "g":
+            prompt = MODULE_G_DIAGNOSER_PROMPT.format(
+                summary=summary,
+                group_name=group_name,
+                criteria_formatted=criteria_formatted
+            )
+        else:
+            prompt = DIAGNOSER_SYSTEM_PROMPT.format(
+                summary=summary, 
+                group_name=group_name, 
+                criteria_formatted=criteria_formatted,
+                module_id=module_key
+            )
 
         response = llm.invoke([HumanMessage(content=prompt)])
         content = response.content.strip()
 
-        # remove markdown code block formatting
+        # remove Markdown code block formatting
         if content.startswith("```json"):
             content = content.removeprefix("```json").removesuffix("```").strip()
 

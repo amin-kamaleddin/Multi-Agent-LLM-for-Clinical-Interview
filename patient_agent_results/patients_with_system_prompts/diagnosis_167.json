@@ -1,0 +1,16 @@
+{
+    "lifetime": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 is met because D3 is YES. Criterion 2 is met because all of D4a through D4m are YES, which exceeds the requirement of 4 positive responses. Criterion 3 is not met because O1a is YES and O1b is YES, which means both must be NO for the criterion to be satisfied. Therefore, not all criteria are met.",
+        "insight": null,
+        "ticRelated": null
+    },
+    "current": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 is met as D6 is 'YES'. However, Criterion 2 is not met because both O1a and O1b are 'YES', which does not satisfy the requirement of being 'NO'. Therefore, not all criteria are met.",
+        "insight": null,
+        "ticRelated": null
+    }
+}

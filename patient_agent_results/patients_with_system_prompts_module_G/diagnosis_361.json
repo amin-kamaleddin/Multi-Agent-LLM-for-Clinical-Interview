@@ -1,0 +1,23 @@
+{
+    "positive": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "All three diagnostic criteria are met: G4 is YES; both (G1a AND G1b AND G2) and (G3a AND G3b) are YES; O1a and O1b are NO. There is no information provided to assess insight or tic-relatedness, so these are set to null.",
+        "insight": null,
+        "ticRelated": null
+    },
+    "insight": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Invalid criteria format.",
+        "insight": null,
+        "ticRelated": null
+    },
+    "ticRelated": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "The patient answered YES to all core OCD diagnostic questions (G1a, G1b, G2, G3a, G3b, G4), indicating the presence of obsessions and compulsions meeting diagnostic criteria. The patient answered NO to both tic-related questions (O1a, O1b), suggesting no history of tics or tic disorders. Insight level cannot be definitively determined from the provided data as no direct questions about insight were answered.",
+        "insight": null,
+        "ticRelated": false
+    }
+}

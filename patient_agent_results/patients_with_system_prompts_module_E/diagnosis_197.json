@@ -1,0 +1,9 @@
+{
+    "current": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion E6 requires the answer to be 'YES', but the patient's answer is 'NO'. Therefore, the criterion is not met.",
+        "insight": null,
+        "ticRelated": null
+    }
+}

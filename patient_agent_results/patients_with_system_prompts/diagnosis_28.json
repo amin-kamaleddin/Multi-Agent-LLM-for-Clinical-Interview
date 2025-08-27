@@ -1,0 +1,16 @@
+{
+    "positive": {
+        "diagnosis": true,
+        "timeFrame": "recent",
+        "reasoning": "The patient meets all diagnostic criteria: 1) At least 5 symptom groups (A3a, A3b, A3c, A3d, A3e, A3f, A3g) are coded YES in the recent time frame. 2) Core symptoms are present (A1a=YES). 3) Functional impairment is indicated (A4_recent=YES). 4) O1a and O1b are both NO. Therefore, the diagnosis is true.",
+        "insight": null,
+        "ticRelated": null
+    },
+    "recurrent": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "Criterion A5 is met as the patient answered YES. Criterion O1a is NOT met as the patient answered NO, and O1b is also NOT met as the patient answered NO. Therefore, both criteria for the recurrent diagnostic group are satisfied.",
+        "insight": null,
+        "ticRelated": null
+    }
+}

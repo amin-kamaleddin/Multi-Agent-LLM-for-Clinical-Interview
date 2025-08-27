@@ -1,0 +1,16 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "The patient has only 2 symptom groups coded YES (A2a_2 and A2b), which does not meet the requirement of at least 5 symptom groups. Additionally, while the core symptom criterion is met (A2a_2=YES), there is no functional impairment indicated (A4_recent=NO and A4_past=NO). Therefore, not all diagnostic criteria are satisfied.",
+        "insight": null,
+        "ticRelated": null
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 is met because A5 is YES. Criterion 2 is not met because O1a is YES and O1b is YES, which does not satisfy the requirement of both being NO. Therefore, not all criteria are met.",
+        "insight": null,
+        "ticRelated": null
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "lifetime": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 is met as there are 2 'YES' responses in the P1 group (P1a and P1b). Criterion 2 is also met with 4 'YES' responses in the P2 group (P2a, P2c, P2e, and P2g). Therefore, all criteria are satisfied.",
+        "insight": null,
+        "ticRelated": null
+    },
+    "note": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "The patient has positive responses in the symptom groups related to P2 (P2a, P2c, P2e, P2g) indicating recent symptoms. However, there are no positive responses in the P1 symptom group, which is required to meet the criteria for a diagnosis. Therefore, not all criteria are met.",
+        "insight": null,
+        "ticRelated": null
+    }
+}

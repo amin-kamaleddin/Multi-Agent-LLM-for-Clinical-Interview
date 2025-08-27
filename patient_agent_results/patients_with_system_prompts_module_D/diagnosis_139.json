@@ -1,0 +1,16 @@
+{
+    "lifetime": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 (D3) is YES, so met. For Criterion 2, counting YES answers among D4a to D4m: D4b, D4d, D4f, and D4k are YES, totaling 4 YES responses, so criterion met. Criterion 3 requires O1a=NO and O1b=NO, both are NO, so criterion met. All criteria are met. No time frame specified for symptom groups, so timeFrame is null.",
+        "insight": null,
+        "ticRelated": null
+    },
+    "current": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 (D6) is met because D6 is 'YES'. Criterion 2 (O1a = NO AND O1b = NO) is met since both O1a and O1b are 'NO'. Therefore, all criteria are satisfied.",
+        "insight": null,
+        "ticRelated": null
+    }
+}

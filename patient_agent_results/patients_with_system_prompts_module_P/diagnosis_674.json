@@ -1,0 +1,16 @@
+{
+    "lifetime": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 requires at least 2 of P1a-P1f to be YES; all six (P1a-P1f) are YES, so criterion 1 is met. Criterion 2 requires at least 3 of P2a-P2g to be YES; all seven (P2a-P2g) are YES, so criterion 2 is met. Both criteria are satisfied based on the patient's answers.",
+        "insight": null,
+        "ticRelated": null
+    },
+    "note": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "All questions P1a through P1f and P2a through P2g are answered YES. Assuming P1a-f and P2a-g represent distinct symptom groups, all symptom groups are positive. Since no time frames are specified, and no indication that these are politically or religiously motivated, all criteria are met. Therefore, diagnosis is true. Without explicit time frame data, timeFrame is null.",
+        "insight": null,
+        "ticRelated": null
+    }
+}

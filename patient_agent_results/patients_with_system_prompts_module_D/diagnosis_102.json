@@ -1,0 +1,16 @@
+{
+    "lifetime": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "D3 is not provided, so cannot confirm it is YES. Only D1a is known and is NO. Without information on D3 and the symptom groups (D4a-D4m), and O1a and O1b, criteria cannot be met.",
+        "insight": null,
+        "ticRelated": null
+    },
+    "current": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 (D6 is 'YES') is not met because there is no information indicating D6 is 'YES'. Criterion 2 (O1a = NO AND O1b = NO) cannot be evaluated due to lack of data, but since criterion 1 is not met, overall criteria are not met.",
+        "insight": null,
+        "ticRelated": null
+    }
+}
