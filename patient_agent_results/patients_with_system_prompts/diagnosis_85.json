@@ -1,0 +1,16 @@
+{
+    "positive": {
+        "diagnosis": true,
+        "timeFrame": "past",
+        "reasoning": "The patient meets all diagnostic criteria: 1) At least 5 symptom groups are positive in the past (A3a, A3b, A3c, A3d, A3e, A3f) and 1 in the recent (A3a, A3b, A3c, A3d, A3e, A3f), but only the past time frame is considered for the count. 2) Core symptoms are present (A1a=YES). 3) Functional impairment is indicated (A4_recent=YES). 4) O1a is NO and O1b is YES, which satisfies the organic cause criteria. Therefore, all criteria are met.",
+        "insight": null,
+        "ticRelated": null
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion A5 is met as the patient answered YES. For the symptom group criteria, A1a, A1b, A2a_1, A2b, A3a_past, A3a_recent, A3b_past, A3b_recent, A3c_past, A3c_recent, A3d_past, A3d_recent, A3e_past, A3e_recent, A3f_past, A3f_recent, A4_past, and A4_recent are all YES, indicating multiple positive symptom groups. However, the requirement for symptom groups to come from only one time frame is not satisfied as there are positives from both past and recent. Therefore, the symptom group criteria are not met. O1a is NO and O1b is YES, which does not satisfy the organic cause criteria. Overall, not all criteria are met, leading to a false diagnosis.",
+        "insight": null,
+        "ticRelated": null
+    }
+}

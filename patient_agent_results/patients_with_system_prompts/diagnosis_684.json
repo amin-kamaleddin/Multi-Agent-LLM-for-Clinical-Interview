@@ -1,0 +1,16 @@
+{
+    "lifetime": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 is not met as only 1 of (P1a-P1f) is coded YES (P1e). Criterion 2 is also not met as only 2 of (P2a-P2g) are coded YES (P2c). Therefore, not all criteria are satisfied.",
+        "insight": null,
+        "ticRelated": null
+    },
+    "note": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "The patient has answered 'YES' to P1e and P2c, which indicates positive responses in two symptom groups. However, these responses come from different time frames (P1e is recent and P2c is past), which does not satisfy the requirement of having all positive symptom groups from the same time frame. Therefore, not all criteria are met.",
+        "insight": null,
+        "ticRelated": null
+    }
+}

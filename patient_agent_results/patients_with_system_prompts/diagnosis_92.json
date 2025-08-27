@@ -1,0 +1,16 @@
+{
+    "lifetime": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 is met because D3 is YES. Criterion 2 is met as there are 10 YES responses from the symptom group (D4a, D4b, D4c, D4d, D4e, D4f, D4h, D4i, D4j, D4k, D4l, D4m), which exceeds the required 4. Criterion 3 is met since both O1a and O1b are NO. Therefore, all criteria are satisfied.",
+        "insight": null,
+        "ticRelated": null
+    },
+    "current": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 is met as D6 is 'YES'. Criterion 2 is met as both O1a and O1b are 'NO'. Therefore, all diagnostic criteria are satisfied.",
+        "insight": null,
+        "ticRelated": null
+    }
+}

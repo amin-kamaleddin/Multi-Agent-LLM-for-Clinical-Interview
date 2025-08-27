@@ -1,0 +1,16 @@
+{
+    "lifetime": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 is met as there are 5 'YES' responses in the P1 group (P1a, P1b, P1c, P1d, P1e). Criterion 2 is also met with 5 'YES' responses in the P2 group (P2a, P2b, P2c, P2d, P2e). Therefore, all criteria are satisfied.",
+        "insight": null,
+        "ticRelated": null
+    },
+    "note": {
+        "diagnosis": true,
+        "timeFrame": "recent",
+        "reasoning": "The patient has answered 'YES' to all items in symptom groups P1 and P2, indicating that all criteria for these groups are met. However, the criteria must be evaluated based on the time frame. Since all items in P1 are marked 'YES', this group is positive for the recent time frame. For P2, all items are also marked 'YES', making this group positive for the recent time frame as well. Therefore, both symptom groups are satisfied in the recent time frame, but not in the past. Since the criteria require that all positive symptom groups come from the same time frame, the overall assessment is that the criteria are met for the recent time frame only.",
+        "insight": null,
+        "ticRelated": null
+    }
+}

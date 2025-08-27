@@ -1,0 +1,16 @@
+{
+    "lifetime": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 requires at least 2 of P1a-P1f to be YES. Patient has P1a, P1b, P1c, and P1d as YES (4 total), so criterion 1 is met. Criterion 2 requires at least 3 of P2a-P2g to be YES. Patient has all P2a through P2g as YES (7 total), so criterion 2 is met. Both criteria are satisfied based on the patient's answers.",
+        "insight": null,
+        "ticRelated": null
+    },
+    "note": {
+        "diagnosis": true,
+        "timeFrame": "both",
+        "reasoning": "All items P1a to P1d are YES, indicating the first symptom group is positive in the past. All items P2a to P2g are YES, indicating the second symptom group is positive in the recent time frame. Since the criteria require symptom groups to be positive in only one time frame, and both past and recent symptom groups are positive independently, the diagnosis is true with both time frames met.",
+        "insight": null,
+        "ticRelated": null
+    }
+}

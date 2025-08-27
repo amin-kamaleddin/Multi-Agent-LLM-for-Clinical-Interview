@@ -1,0 +1,16 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "The patient has only one symptom group (A2b) coded YES, which does not meet the requirement of at least 5 symptom groups. The core symptom criterion is met (A2a_2=YES), but functional impairment is not present (A4_recent=NO and A4_past=NO). Additionally, O1a=YES and O1b=NO, which does not satisfy the organic cause rule-out criteria. Therefore, not all diagnostic criteria are met.",
+        "insight": null,
+        "ticRelated": null
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 is met because A5 is YES. Criterion 2 is not met because O1a is YES, which contradicts the requirement that both O1a and O1b must be NO. Therefore, not all criteria are satisfied.",
+        "insight": null,
+        "ticRelated": null
+    }
+}

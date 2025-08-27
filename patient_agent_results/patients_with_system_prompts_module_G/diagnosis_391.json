@@ -1,0 +1,23 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 (G4 == 'YES') is not met since G4 is NO. Although criterion 2 is met because both (G1a AND G1b AND G2) and (G3a AND G3b) are YES, criterion 3 is also met (O1a and O1b are NO). However, all criteria must be met for diagnosis, so diagnosis is false. Insight and ticRelated cannot be determined without diagnosis.",
+        "insight": null,
+        "ticRelated": null
+    },
+    "insight": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Invalid criteria format.",
+        "insight": null,
+        "ticRelated": null
+    },
+    "ticRelated": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "The patient answered YES to G1a, G1b, G2, G3a, and G3b, indicating the presence of obsessions and compulsions consistent with OCD diagnostic criteria. The NO answers to G4, O1a, and O1b suggest the patient does not have poor or absent insight or delusional beliefs, supporting good or fair insight. The NO answers to O1a and O1b indicate no tic history or tic-related symptoms, so the OCD is not tic-related.",
+        "insight": "goodOrFair",
+        "ticRelated": false
+    }
+}

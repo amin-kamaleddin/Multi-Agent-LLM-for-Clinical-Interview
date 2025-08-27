@@ -1,0 +1,9 @@
+{
+    "current": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 is met (N4 == 'YES'). Criterion 2 is met as there are 6 positive symptom groups (N3a, N3b, N3c, N3d, N3e, N3f) all coded 'YES' in the recent time frame. Criterion 3 is not met because O1a is 'NO' but O1b is 'YES'. Therefore, not all criteria are satisfied.",
+        "insight": null,
+        "ticRelated": null
+    }
+}
