@@ -1,0 +1,16 @@
+{
+    "lifetime": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "D3 is not provided, so cannot confirm it is YES. Only D1a is NO, no information on other items. Without D3=YES and no data on symptom groups or O1a/O1b, criteria cannot be met.",
+        "insight": null,
+        "ticRelated": null
+    },
+    "current": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "D6 is not provided, so cannot confirm it is 'YES'. O1a and O1b are not provided, so cannot confirm both are 'NO'. Therefore, criteria 1 and 2 cannot be confirmed as met.",
+        "insight": null,
+        "ticRelated": null
+    }
+}

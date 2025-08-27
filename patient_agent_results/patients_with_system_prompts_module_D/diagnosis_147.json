@@ -1,0 +1,16 @@
+{
+    "lifetime": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 (D3) is YES. Criterion 2 requires 4 or more YES answers among D4a to D4m. The patient has YES for D4a, D4b, D4c, D4d, D4e, D4k, D4l, and D4m, totaling 8 YES responses, which meets the requirement. Criterion 3 requires O1a = NO and O1b = NO, both are NO as given. Therefore, all criteria are met.",
+        "insight": null,
+        "ticRelated": null
+    },
+    "current": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 (D6 is 'YES') is met as D6 = YES. Criterion 2 (O1a = NO AND O1b = NO) is met since both O1a and O1b are NO. Therefore, all criteria for the diagnostic group are satisfied.",
+        "insight": null,
+        "ticRelated": null
+    }
+}
