@@ -1,0 +1,23 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "The patient meets the first criterion (G4 == 'YES'). The second criterion is not met as both (G1a AND G1b AND G2) and (G3a AND G3b) are false. The third criterion is met (O1a = NO AND O1b = NO). Therefore, the overall diagnostic criteria are not fully met. Since the patient does not have obsessions or compulsions that they recognize as unreasonable or excessive, insight is assessed as 'absent'. There is no indication of tic-related symptoms based on the provided responses.",
+        "insight": null,
+        "ticRelated": null
+    },
+    "insight": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Invalid criteria format.",
+        "insight": null,
+        "ticRelated": null
+    },
+    "ticRelated": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "The patient answered 'YES' to G4, indicating the presence of obsessions or compulsions. However, they answered 'NO' to all other questions in Module G, suggesting that there are no significant compulsions or obsessions that are excessive or unreasonable. Therefore, the criteria for a diagnosis of OCD are not fully met. The insight assessment cannot be determined as the patient did not provide enough information to indicate their level of insight regarding any obsessions or compulsions. Additionally, there is no indication from the responses that the OCD symptoms are tic-related.",
+        "insight": null,
+        "ticRelated": false
+    }
+}

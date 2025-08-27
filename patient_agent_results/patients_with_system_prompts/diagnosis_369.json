@@ -1,0 +1,23 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "The patient meets the criteria for the diagnostic group as G4 is 'YES', and both G1a, G1b, and G2 are 'YES', fulfilling the requirement of either (G1a AND G1b AND G2) or (G3a AND G3b). O1a is 'NO' and O1b is 'YES', which does not meet the requirement for O1a and O1b. Therefore, the criteria are not fully met. The insight is assessed as 'goodOrFair' since the patient has answered 'YES' to multiple questions indicating some recognition of the nature of their symptoms. There is no information provided to suggest tic-related symptoms.",
+        "insight": "goodOrFair",
+        "ticRelated": null
+    },
+    "insight": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Invalid criteria format.",
+        "insight": null,
+        "ticRelated": null
+    },
+    "ticRelated": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "The patient has indicated 'YES' to multiple questions related to obsessions and compulsions, suggesting the presence of OCD symptoms. The patient recognizes their obsessions and compulsions as excessive or unreasonable, indicating 'goodOrFair' insight. However, there is no information provided that directly links the OCD symptoms to tics, so ticRelated is set to null.",
+        "insight": "goodOrFair",
+        "ticRelated": null
+    }
+}

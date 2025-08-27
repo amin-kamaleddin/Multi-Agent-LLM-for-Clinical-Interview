@@ -1,0 +1,16 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "The patient did not meet the criteria for a positive diagnosis. Specifically, there are no symptom groups coded YES, as A1a and A2a_2 are both NO. Therefore, the requirement of at least 5 symptom groups is not satisfied, and the core symptom criterion is also not met. Additionally, there is no functional impairment indicated. As a result, the diagnosis is false.",
+        "insight": null,
+        "ticRelated": null
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 is not met because A5 is not provided in the patient's answers. Criterion 2 is met as both O1a and O1b are marked 'NO'. Since not all criteria are satisfied, the overall diagnosis is 'False'.",
+        "insight": null,
+        "ticRelated": null
+    }
+}

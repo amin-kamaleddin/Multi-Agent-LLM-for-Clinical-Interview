@@ -1,0 +1,16 @@
+{
+    "positive": {
+        "diagnosis": true,
+        "timeFrame": "recent",
+        "reasoning": "The patient meets the criteria for diagnosis. There are 10 symptom groups (A3a\u2013A3g) coded YES, satisfying the requirement of at least 5 symptom groups. The core symptoms are met with A1a=YES and A1b=YES. Functional impairment is indicated by A4_recent=YES. The organic cause criteria are satisfied as O1a=NO and O1b=YES. Therefore, all criteria are met.",
+        "insight": null,
+        "ticRelated": null
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion A5 is not met as the patient answered 'NO'. For the symptom group criteria, A1a, A1b, A2a_1, A2b, A3a_past, A3a_recent, A3b_past, A3b_recent, A3c_past, A3c_recent, A3d_past, A3d_recent, A3e_past, A3e_recent, A3f_past, and A3f_recent are all marked 'YES', indicating multiple positive symptom groups. However, the requirement for the symptom groups to come from only one time frame is not satisfied as there are positives from both past and recent. Therefore, the criteria are not fully met for a diagnosis of recurrent disorder.",
+        "insight": null,
+        "ticRelated": null
+    }
+}

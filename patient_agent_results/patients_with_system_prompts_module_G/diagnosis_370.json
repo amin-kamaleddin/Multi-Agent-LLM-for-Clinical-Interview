@@ -1,0 +1,23 @@
+{
+    "positive": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "All diagnostic criteria are met: G4 is YES; (G1a AND G1b AND G2) is YES; O1a and O1b are both NO. Insight is assessed as goodOrFair because the patient denies O1a and O1b, indicating recognition that obsessions/compulsions are unreasonable or excessive. There is no information provided about tics, so ticRelated is set to null.",
+        "insight": "goodOrFair",
+        "ticRelated": null
+    },
+    "insight": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Invalid criteria format.",
+        "insight": null,
+        "ticRelated": null
+    },
+    "ticRelated": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "The patient answered YES to all core OCD diagnostic questions (G1a, G1b, G2, G3a, G3b, G4), indicating the presence of obsessions and compulsions meeting diagnostic criteria. The patient answered NO to both tic-related questions (O1a, O1b), suggesting no tic history or tic-related symptoms. Insight level cannot be precisely determined from the provided data, so it is set to null. Since there is no indication of tics, ticRelated is false.",
+        "insight": null,
+        "ticRelated": false
+    }
+}

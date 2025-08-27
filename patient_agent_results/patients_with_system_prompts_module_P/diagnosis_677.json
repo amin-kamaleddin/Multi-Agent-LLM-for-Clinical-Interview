@@ -1,0 +1,16 @@
+{
+    "lifetime": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 requires at least 2 of P1a-P1f coded YES; all are NO, so criterion 1 is not met. Criterion 2 requires at least 3 of P2a-P2g coded YES; only P2c is YES, so criterion 2 is not met.",
+        "insight": null,
+        "ticRelated": null
+    },
+    "note": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "All P1a to P2g questions except P2c are answered NO. Only one symptom group (containing P2c) is positive. Since the criterion requires multiple symptom groups to be positive and only one is positive, the diagnostic criteria are not met.",
+        "insight": null,
+        "ticRelated": null
+    }
+}

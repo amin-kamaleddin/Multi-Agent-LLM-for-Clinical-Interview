@@ -1,0 +1,16 @@
+{
+    "lifetime": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 is not met as there are no 'YES' responses in the P1 group (P1a-P1f). Criterion 2 is met because there is 1 'YES' response in the P2 group (P2g), but at least 3 are required. Therefore, since not all criteria are satisfied, the diagnosis is false.",
+        "insight": null,
+        "ticRelated": null
+    },
+    "note": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "The patient answered 'NO' to all symptom group questions except for P2g, which is the only positive response. However, since P2g is the only positive response and does not meet the required number of symptom groups for a diagnosis, the criteria are not satisfied. Therefore, the diagnosis is false.",
+        "insight": null,
+        "ticRelated": null
+    }
+}

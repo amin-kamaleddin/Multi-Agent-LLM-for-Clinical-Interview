@@ -1,0 +1,16 @@
+{
+    "lifetime": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 is not met because D3 is not provided in the summary. Criterion 2 is not met because there are no symptom groups listed as positive, as D4a to D4m are not provided. Criterion 3 is met since O1a and O1b are both NO. Since not all criteria are met, the diagnosis is false.",
+        "insight": null,
+        "ticRelated": null
+    },
+    "current": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 is not met because D6 is not provided in the patient's answers. Criterion 2 is also not met as both O1a and O1b are not provided. Therefore, not all criteria are satisfied.",
+        "insight": null,
+        "ticRelated": null
+    }
+}

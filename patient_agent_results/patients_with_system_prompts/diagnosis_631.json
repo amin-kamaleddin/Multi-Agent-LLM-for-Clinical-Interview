@@ -1,0 +1,16 @@
+{
+    "lifetime": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 is met as there are 6 'YES' responses in the P1 group, satisfying the requirement of at least 2. Criterion 2 is also met with 7 'YES' responses in the P2 group, exceeding the requirement of at least 3. Therefore, all criteria are satisfied.",
+        "insight": null,
+        "ticRelated": null
+    },
+    "note": {
+        "diagnosis": true,
+        "timeFrame": "recent",
+        "reasoning": "All symptom groups are marked 'YES', indicating that the criteria for at least 5 symptom groups are met. Since all responses are affirmative, the diagnosis is considered true. The time frame is 'recent' as all responses pertain to recent symptoms.",
+        "insight": null,
+        "ticRelated": null
+    }
+}

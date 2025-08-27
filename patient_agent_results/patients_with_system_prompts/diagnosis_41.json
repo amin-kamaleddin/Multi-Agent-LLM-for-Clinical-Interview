@@ -1,0 +1,16 @@
+{
+    "positive": {
+        "diagnosis": true,
+        "timeFrame": "past",
+        "reasoning": "The patient meets the criteria for diagnosis. There are 6 positive symptom groups (A3a_past, A3b_past, A3c_past, A3d_past, A3e_past, A3f_past) in the past time frame, satisfying the requirement of at least 5 symptom groups. The core symptoms are met with A1a=YES and A1b=YES. Functional impairment is indicated by A4_recent=YES. The organic cause criteria are inferred to be ruled out as per instructions. Therefore, all criteria are satisfied.",
+        "insight": null,
+        "ticRelated": null
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 is not met because A5 = NO. Criterion 2 is not met because O1a = YES and O1b = YES. Therefore, not all criteria for the recurrent diagnostic group are satisfied.",
+        "insight": null,
+        "ticRelated": null
+    }
+}

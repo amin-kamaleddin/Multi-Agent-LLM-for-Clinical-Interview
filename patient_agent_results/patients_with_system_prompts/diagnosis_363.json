@@ -1,0 +1,23 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "The patient meets the criteria for the diagnostic group as G4 is 'YES' and (G1a AND G1b AND G2) is 'YES'. However, O1a is 'NO' and O1b is 'YES', which does not meet the requirement for O1a = NO AND O1b = NO. Therefore, the overall diagnosis is false. Insight cannot be assessed as the diagnosis is false, and tic-related symptoms cannot be determined.",
+        "insight": null,
+        "ticRelated": null
+    },
+    "insight": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Invalid criteria format.",
+        "insight": null,
+        "ticRelated": null
+    },
+    "ticRelated": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "The patient has indicated 'YES' to multiple questions related to obsessions and compulsions, suggesting that they experience intrusive thoughts and engage in compulsive behaviors. The responses indicate that the patient recognizes these obsessions and compulsions as excessive, which aligns with 'goodOrFair' insight. However, there is no indication that these symptoms are tic-related based on the provided answers, particularly since the patient answered 'NO' to O1a, which typically assesses for tic-related symptoms.",
+        "insight": "goodOrFair",
+        "ticRelated": false
+    }
+}
