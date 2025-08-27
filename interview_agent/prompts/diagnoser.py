@@ -21,9 +21,7 @@ You must assess whether each diagnostic criterion is met, based solely on the pa
 3. Non-Time-Frame-Specific Items (e.g., A1a, A1b, A2):
    - For items that do **not** include a time frame suffix (like _past or _recent), evaluate them as TRUE or FALSE regardless of time frame.
    - These items are valid if marked 'YES' in any context.
-4. Organic Cause / Rule-Out Criteria:
-   - For now, infer that organic causes are ruled out.
-5. Diagnosis Summary:
+4. Diagnosis Summary:
    - After assessing all criteria, provide a final diagnosis summary.
    - If **all** criteria are met, the diagnosis is 'True'. Otherwise, it is 'False'.
    - If the module is "A" and diagnosis is true, also determine the **time frame**:
