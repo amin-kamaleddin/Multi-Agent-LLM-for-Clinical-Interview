@@ -1,0 +1,23 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 (G4 == 'YES') is not met since G4 is NO. Criterion 2 requires either (G1a AND G1b AND G2) or (G3a AND G3b) to be YES; G1a and G3a are NO, so this is not met. Criterion 3 requires O1a and O1b to be NO, which is true. However, since criteria 1 and 2 are not met, the overall diagnostic criteria are not fulfilled. Insight and tic-related status cannot be determined without a positive diagnosis.",
+        "insight": null,
+        "ticRelated": null
+    },
+    "insight": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Invalid criteria format.",
+        "insight": null,
+        "ticRelated": null
+    },
+    "ticRelated": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "All relevant questions (G1a, G3a, G4, O1a, O1b) were answered NO, indicating no evidence of OCD symptoms or related tics. Without presence of OCD symptoms, insight and tic-related status cannot be assessed.",
+        "insight": null,
+        "ticRelated": null
+    }
+}

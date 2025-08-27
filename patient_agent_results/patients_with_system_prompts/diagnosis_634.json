@@ -1,0 +1,16 @@
+{
+    "lifetime": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 is met as there are 6 'YES' responses in the P1 group (P1a-P1f), which exceeds the requirement of at least 2. Criterion 2 is also met as there are 7 'YES' responses in the P2 group (P2a-P2g), which exceeds the requirement of at least 3. Therefore, all criteria are satisfied.",
+        "insight": null,
+        "ticRelated": null
+    },
+    "note": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "All symptom groups are marked 'YES', indicating that the criteria for positive symptom groups are met. Since all responses are affirmative, the diagnosis is considered true. There is no indication of political or religious motivation affecting the responses.",
+        "insight": null,
+        "ticRelated": null
+    }
+}

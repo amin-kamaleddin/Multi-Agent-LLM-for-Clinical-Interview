@@ -1,0 +1,16 @@
+{
+    "lifetime": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 is not met as there are no 'YES' responses in the P1 group. Criterion 2 is also not met as only one 'YES' response is present in the P2 group. Therefore, the overall diagnosis is false.",
+        "insight": null,
+        "ticRelated": null
+    },
+    "note": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "The patient answered 'NO' to all symptom group criteria except for P2f, which is the only positive response. Since this is the only positive response and it does not meet the required number of positive symptom groups (at least 5), the criteria are not satisfied. Therefore, the diagnosis is false.",
+        "insight": null,
+        "ticRelated": null
+    }
+}

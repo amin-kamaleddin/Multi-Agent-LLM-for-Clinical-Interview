@@ -1,0 +1,16 @@
+{
+    "positive": {
+        "diagnosis": true,
+        "timeFrame": "recent",
+        "reasoning": "The patient meets all diagnostic criteria: 1) At least 5 symptom groups (A3a, A3b, A3c, A3d, A3e, A3f, A3g) are coded YES in the recent time frame. 2) Core symptoms are met with A1a and A1b both coded YES. 3) Functional impairment is indicated by A4_recent being YES. 4) O1a is NO and O1b is YES, satisfying the organic cause rule-out. Therefore, all criteria are met.",
+        "insight": null,
+        "ticRelated": null
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 (A5 = YES) is met. For the symptom group criteria, all symptom groups (A3a, A3b, A3c, A3d, A3e, A3f, A3g, A4) are positive for both past and recent. However, they cannot be mixed; thus, we need to check if any time frame independently meets the requirement of at least 5 symptom groups. In the recent time frame, A3a, A3b, A3c, A3d, A3e, A3f, and A3g are all positive, totaling 7 groups. Therefore, the recent time frame criterion is satisfied. Criterion 2 (O1a = NO AND O1b = NO) is not met because O1b is YES. Since not all criteria are met, the diagnosis is false.",
+        "insight": null,
+        "ticRelated": null
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "The diagnostic criteria are not met because G4 is 'NO', which is a requirement for a positive diagnosis. Although G3a and G3b are both 'YES', the failure of G4 means the overall criteria are not satisfied. Therefore, no insight or tic-related assessment is necessary.",
+        "insight": null,
+        "ticRelated": null
+    },
+    "insight": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Invalid criteria format.",
+        "insight": null,
+        "ticRelated": null
+    },
+    "ticRelated": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "The patient has reported obsessions (G3a and G3b) but denies compulsions (G1a) and has no significant distress or impairment related to these obsessions (G4). The presence of obsessions without compulsions suggests that the criteria for OCD are not fully met. However, the patient recognizes some of their thoughts as excessive (O1b), indicating at least a fair level of insight. The responses do not indicate any tic-related symptoms, as there is no mention of tics or related behaviors.",
+        "insight": null,
+        "ticRelated": null
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "current": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 (N4 == 'YES') is not met as N4 is 'NO'. Criterion 2 is not met as only 3 symptom groups (N3c, N3d) are coded 'YES', but they are from both recent and past, which does not satisfy the requirement of being from only one time frame. Criterion 3 is met as both O1a and O1b are 'NO'. Since not all criteria are met, the diagnosis is 'False'.",
+        "insight": null,
+        "ticRelated": null
+    }
+}

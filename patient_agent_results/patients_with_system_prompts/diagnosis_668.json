@@ -1,0 +1,16 @@
+{
+    "lifetime": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 is met as all six items (P1a-P1f) are coded YES, satisfying the requirement of at least 2 positive responses. Criterion 2 is also met as six items (P2a-P2f) are coded YES, and only one item (P2g) is coded NO, which exceeds the requirement of at least 3 positive responses. Therefore, both criteria are satisfied.",
+        "insight": null,
+        "ticRelated": null
+    },
+    "note": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "All symptom groups are marked 'YES', indicating that the criteria for at least 5 symptom groups are met. Since all responses are affirmative, the diagnosis is considered true. The time frame is not specified for the symptom groups, so it is inferred that they are valid regardless of time frame.",
+        "insight": null,
+        "ticRelated": null
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "current": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 is met because F6 is 'YES'. Criterion 2 is also met because both O1a and O1b are 'NO'. Therefore, all criteria are satisfied.",
+        "insight": null,
+        "ticRelated": null
+    }
+}

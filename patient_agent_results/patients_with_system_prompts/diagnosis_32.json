@@ -1,0 +1,16 @@
+{
+    "positive": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "The patient has met the criteria for diagnosis. There are 5 positive symptom groups: A3d_recent, A3f_past, A3a_recent, A3b_recent, and A3c_recent. The core symptom is satisfied with A1a=YES. There is no functional impairment as A4_recent=NO and A4_past=NO. O1a and O1b are both NO, ruling out organic causes. Therefore, the diagnosis is true.",
+        "insight": null,
+        "ticRelated": null
+    },
+    "recurrent": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 is met because A5 is YES. Criterion 2 is met because both O1a and O1b are NO. The symptom group criteria are not applicable as there are no relevant symptom groups to evaluate based on the provided answers. Therefore, all criteria are satisfied.",
+        "insight": null,
+        "ticRelated": null
+    }
+}
