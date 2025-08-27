@@ -1,0 +1,16 @@
+{
+    "lifetime": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 (D3 is YES) cannot be evaluated because D3 is not provided. Criterion 2 requires 4 or more of the listed items (D4a-D4m) to be YES, but none are provided. Criterion 3 requires O1a and O1b to be NO, but these are not provided. Based solely on the given data (D1a: YES, D1b: NO), none of the criteria can be confirmed as met.",
+        "insight": null,
+        "ticRelated": null
+    },
+    "current": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 (D6 is 'YES') cannot be confirmed because D6 answer is not provided. Criterion 2 (O1a = NO AND O1b = NO) cannot be confirmed because O1a and O1b answers are not provided. Therefore, not all criteria are met.",
+        "insight": null,
+        "ticRelated": null
+    }
+}
