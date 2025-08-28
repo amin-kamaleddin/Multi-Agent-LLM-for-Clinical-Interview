@@ -197,7 +197,7 @@ def evaluator_node(state: InterviewState) -> Dict[str, Any]:
     print(f"original response: {response_text}")
     print(f"sanitized response: {sanitized_response}")
 
-    if not state.patient_agent and detect_red_flag(response_text):
+    if not state.patient_agent and detect_red_flag(response_text)[0]:
         print("Direct classification: RED FLAG")
         label = "red_flag"
         reasoning = f"Red flag detected: '{sanitized_response}'"
