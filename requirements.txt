@@ -5,3 +5,4 @@ langgraph
 pydantic
 python-dotenv
 tiktoken
+spacy
