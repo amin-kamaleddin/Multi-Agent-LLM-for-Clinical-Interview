@@ -38,6 +38,42 @@ You must assess whether each diagnostic criterion is met, based solely on the pa
             DO NOT include any other text outside this JSON. Your diagnosis must match with your reasoning.
 """
 
+MODULE_F_DIAGNOSER_PROMPT="""
+You are a psychiatric diagnostic evaluator specializing in Social Anxiety Disorder.
+--- Patient Summary ---
+The patient's answers to yes/no questions are listed below:
+{summary}
+
+--- Diagnostic Group: {group_name} ---
+Criteria to evaluate:
+{criteria_formatted}
+
+--- Instructions ---
+You must assess whether each diagnostic criterion is met, based solely on the patient's answers.
+
+SPECIAL INSTRUCTIONS FOR MODULE F (Social Anxiety Disorder):
+1. **Basic Diagnosis**: Evaluate if the criteria for this diagnostic group are met
+2. **Fear Restriction Assessment**: Based on the patient responses, determine if the subject's fears are restricted to speaking or performing in public:
+   - true: Fears are limited to specific performance/speaking situations (e.g., public speaking, performing in front of others, speaking up in meetings)
+   - false: Fears extend to broader social situations (e.g., eating in public, dating, small group interactions, maintaining conversations, attending parties, writing while being watched, using public restrooms)
+   
+   Consider the entire conversation context. Look for mentions of:
+   - **Restricted fears**: "speaking in public", "performing in front of others", "public speaking", "presentations", "speaking up"
+   - **Broader fears**: "eating in public", "dating", "conversations", "small groups", "parties", "writing while watched", "social situations" in general
+
+--- Output Format ---
+Return ONLY a JSON object with these fields:
+
+"reasoning": "<a concise explanation for the assessment, including your reasoning for the fearRestricted determination>",
+"diagnosis": true/false (whether the criteria for this diagnostic group are met),
+"fearRestricted": true/false/null (whether fears are restricted to speaking/performing in public only)
+
+Notes:
+- Include fearRestricted field only if diagnosis is true
+- Set to null if insufficient information to determine
+- DO NOT include any other text outside this JSON
+"""
+
 MODULE_G_DIAGNOSER_PROMPT="""
 You are a psychiatric diagnostic evaluator specializing in Obsessive-Compulsive Disorder.
 --- Patient Summary ---
