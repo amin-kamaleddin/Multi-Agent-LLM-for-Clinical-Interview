@@ -23,7 +23,7 @@ class RedFlagResponse(BaseModel):
 # Global counter for row numbers
 row_counter = 0
 
-def detect_red_flag(user_input: str) -> tuple[bool, str]:
+def detect_red_flag(user_input: str, numbering: bool = False) -> tuple[bool, str]:
     global row_counter
     row_counter += 1  # increment row number for each call
 
@@ -49,7 +49,8 @@ Respond in STRICT JSON only with exactly these keys:
     except (json.JSONDecodeError, ValidationError):
         parsed = RedFlagResponse(answer="NO", explanation="Invalid output from model, defaulting to NO.")
 
-    print(f"[row {row_counter}] [red-flag] {parsed.explanation}")
+    if numbering == True:
+        print(f"[row {row_counter}] [red-flag] {parsed.explanation}")
 
     is_red_flag = parsed.answer.strip().upper() == "YES"
     return is_red_flag, parsed.explanation
@@ -69,7 +70,7 @@ def run_tests_with_csv(csv_path: str, save_path: str = None):
     explanations = []
 
     for text in df["data"]:
-        result, reason = detect_red_flag(text)
+        result, reason = detect_red_flag(text, numbering=True)
         predictions.append(int(result))  # 1 for YES, 0 for NO
         explanations.append(reason)
 
