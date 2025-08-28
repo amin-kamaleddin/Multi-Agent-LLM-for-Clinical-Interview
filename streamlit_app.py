@@ -5,6 +5,7 @@ from io import StringIO
 
 import streamlit as st
 from dotenv import load_dotenv
+from utils.red_flag import detect_red_flag
 
 from langchain_core.messages import SystemMessage, HumanMessage, AIMessage
 
@@ -178,7 +179,10 @@ def display_evaluator_feedback(evaluator_result: dict, user_answer: str):
     # Extract the classification and reasoning
     classification = evaluator_result.get("evaluator_results", [""])[0] if evaluator_result.get("evaluator_results") else ""
     reasoning_msg = evaluator_result.get("messages", [None])[0]
-    reasoning = reasoning_msg.content if reasoning_msg else "No reasoning provided"
+    if classification == "red_flag":
+        reasoning = st.session_state.red_flag_message
+    else:
+        reasoning = reasoning_msg.content if reasoning_msg else "No reasoning provided"
     
     if classification == "yes":
         st.success("✅ **evaluator Decision: YES** - Answer accepted")
@@ -285,6 +289,7 @@ with st.sidebar:
         st.session_state.diagnosis_result = None
         st.session_state.latest_evaluator_result = None  # Clear evaluator results
         st.session_state.red_flag_detected = False  # Reset red flag state
+        st.session_state.red_flag_message = ""
         st.session_state.thread_id = make_thread_id()
         st.session_state["answer_input"] = ""
         st.session_state["clear_answer"] = True
@@ -469,6 +474,7 @@ if answer:
     # Check if the latest evaluator result is a red flag
     if evaluator_result["evaluator_results"] and evaluator_result["evaluator_results"][0].lower() == "red_flag":
         st.session_state.red_flag_detected = True
+        st.session_state.red_flag_message = detect_red_flag(answer)[1]
 
     # Run navigator to determine next step (this sets ready_for_diagnosis if needed)
     if should_clarify(state) == "continue":
