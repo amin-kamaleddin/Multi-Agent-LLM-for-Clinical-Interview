@@ -429,13 +429,14 @@ if st.session_state.get("latest_evaluator_result"):
         st.session_state.latest_evaluator_result["user_answer"]
     )
     
-    # Show Next Question button
-    if st.button("Next Question", use_container_width=True, type="primary"):
-        # Clear feedback and continue (navigator logic already ran after evaluator)
-        st.session_state.latest_evaluator_result = None
-        st.session_state.awaiting_answer = False
-        st.session_state.clear_answer = True
-        st.rerun()
+    # Show Next Question button only if no red flag is detected
+    if not st.session_state.red_flag_detected:
+        if st.button("Next Question", use_container_width=True, type="primary"):
+            # Clear feedback and continue (navigator logic already ran after evaluator)
+            st.session_state.latest_evaluator_result = None
+            st.session_state.awaiting_answer = False
+            st.session_state.clear_answer = True
+            st.rerun()
     
     # Hide the input buttons when showing feedback
     st.stop()
@@ -495,6 +496,10 @@ if answer:
     if evaluator_result["evaluator_results"] and evaluator_result["evaluator_results"][0].lower() == "red_flag":
         st.session_state.red_flag_detected = True
         st.session_state.red_flag_message = detect_red_flag(answer)[1]
+        st.session_state.finished = True  # Mark interview as finished when red flag is detected
+        save_conversation_log(state.conversation_log, st.session_state.thread_id)
+        st.session_state.state = state
+        st.rerun()
 
     # Run navigator to determine next step (this sets ready_for_diagnosis if needed)
     if should_clarify(state) == "continue":
