@@ -185,15 +185,15 @@ def display_evaluator_feedback(evaluator_result: dict, user_answer: str):
         reasoning = reasoning_msg.content if reasoning_msg else "No reasoning provided"
     
     if classification == "yes":
-        st.success("✅ **evaluator Decision: YES** - Answer accepted")
+        st.success("✅ **Evaluator Decision: YES** - Answer accepted")
     elif classification == "no":
-        st.success("❌ **evaluator Decision: NO** - Answer accepted")
+        st.success("❌ **Evaluator Decision: NO** - Answer accepted")
     elif classification == "explain request":
-        st.info("❓ **evaluator Decision: EXPLAIN REQUEST** - Patient needs explanation")
+        st.info("❓ **Evaluator Decision: EXPLAIN REQUEST** - Patient needs explanation")
     elif classification == "rephrase needed":
-        st.warning("🤔 **evaluator Decision: NEEDS CLARIFICATION** - Response unclear")
+        st.warning("🤔 **Evaluator Decision: NEEDS CLARIFICATION** - Response unclear")
     else:
-        st.info(f"ℹ️ **evaluator Decision: {classification.upper()}**")
+        st.info(f"ℹ️ **Evaluator Decision: {classification.upper()}**")
     
     # Show user's answer and evaluator reasoning
     with st.expander("📝 See evaluator analysis", expanded=False):
@@ -345,8 +345,28 @@ if st.session_state.finished:
             title = _prettify_group_title(group_name)
             st.markdown(f"### {title}")
             st.markdown(f"- **Result**: {'Met' if group_result.get('diagnosis') else 'Not met'}")
-            timeframe = group_result.get("timeFrame") or "—"
-            st.markdown(f"- **Time frame**: {timeframe}")
+            
+            # Show timeFrame if present
+            timeframe = group_result.get("timeFrame")
+            if timeframe:
+                st.markdown(f"- **Time frame**: {timeframe}")
+            
+            # Show Module F specific field: fearRestricted
+            fear_restricted = group_result.get("fearRestricted")
+            if fear_restricted is not None:
+                restriction_text = "Yes - Limited to speaking/performing in public" if fear_restricted else "No - Broader social situations"
+                st.markdown(f"- **Fear restriction**: {restriction_text}")
+            
+            # Show Module G specific fields: insight and ticRelated
+            insight = group_result.get("insight")
+            if insight:
+                st.markdown(f"- **Insight level**: {insight}")
+            
+            tic_related = group_result.get("ticRelated")
+            if tic_related is not None:
+                tic_text = "Yes" if tic_related else "No"
+                st.markdown(f"- **Tic-related**: {tic_text}")
+            
             st.markdown("- **Reasoning**:")
             st.write(group_result.get("reasoning", ""))
             st.markdown("---")
