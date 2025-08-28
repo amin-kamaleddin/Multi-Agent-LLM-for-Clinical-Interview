@@ -17,7 +17,7 @@ load_dotenv()
 from langchain_core.messages import SystemMessage, HumanMessage, AIMessage
 from .prompts import QUESTIONER_SYSTEM_PROMPT, EVALUATOR_SYSTEM_PROMPT, DIAGNOSER_SYSTEM_PROMPT, EXPLAIN_PROMPT, \
     CLARIFICATION_PROMPT, PATIENT_SYSTEM_PROMPT, PATIENT_USER_PROMPT
-from .prompts.diagnoser import MODULE_G_DIAGNOSER_PROMPT
+from .prompts.diagnoser import MODULE_G_DIAGNOSER_PROMPT, MODULE_F_DIAGNOSER_PROMPT
 
 from .models import (
     InterviewState,
@@ -325,9 +325,15 @@ def diagnoser_node(state: InterviewState):
             result[group_name] = {"diagnosis": False, "timeFrame": None, "reasoning": "Invalid criteria format."}
             continue
         
-        # Use special Module G prompt if this is Module G
+        # Use special prompts for specific modules
         if module_id == "G":
             prompt = MODULE_G_DIAGNOSER_PROMPT.format(
+                summary=summary,
+                group_name=group_name,
+                criteria_formatted=criteria_formatted
+            )
+        elif module_id == "F":
+            prompt = MODULE_F_DIAGNOSER_PROMPT.format(
                 summary=summary,
                 group_name=group_name,
                 criteria_formatted=criteria_formatted
