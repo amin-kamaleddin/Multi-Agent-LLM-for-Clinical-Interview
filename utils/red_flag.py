@@ -23,7 +23,7 @@ class RedFlagResponse(BaseModel):
 # Global counter for row numbers
 row_counter = 0
 
-def detect_red_flag(user_input: str) -> bool:
+def detect_red_flag(user_input: str) -> tuple[bool, str]:
     global row_counter
     row_counter += 1  # increment row number for each call
 
@@ -36,8 +36,6 @@ Responses describing mild or temporary feelings, even if persistent, are NOT red
 Respond in STRICT JSON only with exactly these keys:
 {"answer":"YES or NO","explanation":"one short sentence justification (max 20 words)"}"""
 
-
-
     response = llm.invoke([
         SystemMessage(content=system_prompt),
         HumanMessage(content=user_input)
@@ -49,14 +47,12 @@ Respond in STRICT JSON only with exactly these keys:
         data = json.loads(raw)
         parsed = RedFlagResponse(**data)
     except (json.JSONDecodeError, ValidationError):
-        # Fallback if LLM output isn't valid JSON
         parsed = RedFlagResponse(answer="NO", explanation="Invalid output from model, defaulting to NO.")
 
-    # Print reasoning with row number
     print(f"[row {row_counter}] [red-flag] {parsed.explanation}")
 
-    # Return boolean classification
-    return parsed.answer.strip().upper() == "YES"
+    is_red_flag = parsed.answer.strip().upper() == "YES"
+    return is_red_flag, parsed.explanation
 
 
 # ---------------- RUNNER USING CSV ----------------
@@ -70,12 +66,15 @@ def run_tests_with_csv(csv_path: str, save_path: str = None):
     df = pd.read_csv(csv_path)
 
     predictions = []
-    for text in df["data"]:
-        result = detect_red_flag(text)
-        predictions.append(int(result))  # 1 for YES, 0 for NO
+    explanations = []
 
-    # Add predictions to dataframe
+    for text in df["data"]:
+        result, reason = detect_red_flag(text)
+        predictions.append(int(result))  # 1 for YES, 0 for NO
+        explanations.append(reason)
+
     df["prediction"] = predictions
+    df["explanation"] = explanations  # Optional but useful for audit/debugging
 
     # Calculate accuracy
     correct = (df["label"] == df["prediction"]).sum()
