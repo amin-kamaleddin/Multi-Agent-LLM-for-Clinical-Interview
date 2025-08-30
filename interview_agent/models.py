@@ -74,7 +74,7 @@ class InterviewState(BaseModel):
 # ---------------------------- LLM output schemas ---------------------------- #
 class ClassificationResult(BaseModel):
     reasoning: str
-    classification: Union[Literal["yes", "no", "need more clarification", "N/A", "explain request"], int]
+    classification: Union[Literal["yes", "no", "explain request", "need more clarification"]]
 
 
 class DiagnosisResult(BaseModel):
