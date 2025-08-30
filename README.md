@@ -27,6 +27,7 @@ AI agent for conducting MINI (Mini International Neuropsychiatric Interview) ass
 - 🗣️ **Clinical tone:** Natural, professional conversation style
 - 🧾 **Full logging:** Trace every prompt, response, and decision
 - 🧪 **Patient Agent mode:** Simulate patient behavior for testing and demos
+- 🚨 Red flag detection: Identify potential self-harm risk based on responses
 
 ---
 
