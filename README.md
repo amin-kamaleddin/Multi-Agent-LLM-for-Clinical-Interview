@@ -99,8 +99,10 @@ The system is a directed graph of coordinated nodes that share a single `Intervi
 3. **Evaluator Node**
 
    * Reviews the patient’s response.
+   * Anonymize PII/PHI to protect privacy.
+   * Raise a red flag for potential self-harm risk.
    * If the answer is clearly yes or no without extra context, classifies locally without an LLM call.
-   * Otherwise calls an LLM to return one of: `yes`, `no`, `rephrase needed`, `explain request`.
+   * Otherwise calls an LLM to return one of: `yes`, `no`, `rephrase needed`, `explain request`, `red flag`.
    * Optional failsafe: after three consecutive ambiguities, classify as `yes` to break loops. This threshold is configurable.
 
 4. **Clarification Handling**
