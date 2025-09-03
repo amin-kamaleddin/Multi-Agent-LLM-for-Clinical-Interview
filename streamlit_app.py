@@ -184,7 +184,9 @@ def display_evaluator_feedback(evaluator_result: dict, user_answer: str):
     else:
         reasoning = reasoning_msg.content if reasoning_msg else "No reasoning provided"
     
-    if classification == "yes":
+    if classification == "red_flag":
+        st.markdown('<p style="color: red; font-weight: bold;">🚨 <strong>Evaluator Decision: RED_FLAG</strong> - Crisis detected</p>', unsafe_allow_html=True)
+    elif classification == "yes":
         st.success("✅ **Evaluator Decision: YES** - Answer accepted")
     elif classification == "no":
         st.success("❌ **Evaluator Decision: NO** - Answer accepted")
@@ -325,7 +327,7 @@ if st.session_state.finished:
         st.markdown("### Help Us Improve")
         st.markdown("Your feedback helps us make this tool better for everyone.")
         if st.button("📝 Share Your Feedback", type="secondary", use_container_width=True, key="red_flag_feedback"):
-            st.markdown("Please visit: [https://forms.google.com/feedback](https://forms.google.com/feedback)")
+            st.markdown("Please visit: [https://docs.google.com/forms/d/1kwnEcoh_XnVidUVthPu66d3Wr2w8beN3ywQ8NvkLmMQ/edit](https://docs.google.com/forms/d/1kwnEcoh_XnVidUVthPu66d3Wr2w8beN3ywQ8NvkLmMQ/edit)")
     else:
         st.success("Interview completed.")
 
@@ -384,7 +386,7 @@ if st.session_state.finished:
     st.markdown("### Help Us Improve")
     st.markdown("Your feedback helps us make this tool better for everyone.")
     if st.button("📝 Share Your Feedback", type="secondary", use_container_width=True):
-        st.markdown("Please visit: [https://forms.google.com/feedback](https://forms.google.com/feedback)")
+        st.markdown("Please visit: [https://docs.google.com/forms/d/1kwnEcoh_XnVidUVthPu66d3Wr2w8beN3ywQ8NvkLmMQ/edit](https://docs.google.com/forms/d/1kwnEcoh_XnVidUVthPu66d3Wr2w8beN3ywQ8NvkLmMQ/edit)")
     
     st.stop()
 
@@ -439,11 +441,39 @@ if st.session_state.get("latest_evaluator_result"):
             st.rerun()
     else:
         if st.button("Next Question", use_container_width=True, type="primary"):
-            # Clear feedback and continue (navigator logic already ran after evaluator)
-            st.session_state.latest_evaluator_result = None
-            st.session_state.awaiting_answer = False
-            st.session_state.clear_answer = True
-            st.rerun()
+            # Run navigator to determine next step (this sets ready_for_diagnosis if needed)
+            if should_clarify(state) == "continue":
+                updates = navigator_node(state)
+                state = apply_navigator_updates(state, updates)
+            
+            # Update session state with the modified state
+            st.session_state.state = state
+
+            # Check if we should diagnose or end the interview
+            branch = should_diagnose(state)
+            if branch == "diagnose":
+                diag = diagnoser_node(state)
+                state.diagnosis_content = diag.get("diagnosis_content")
+                st.session_state.diagnosis_result = state.diagnosis_content
+                save_conversation_log(state.conversation_log, st.session_state.thread_id)
+                st.session_state.finished = True
+                st.session_state["clear_answer"] = True
+                st.session_state.latest_evaluator_result = None
+                st.rerun()
+
+            elif branch == "end":
+                save_conversation_log(state.conversation_log, st.session_state.thread_id)
+                st.session_state.finished = True
+                st.session_state["clear_answer"] = True
+                st.session_state.latest_evaluator_result = None
+                st.rerun()
+
+            else:
+                # Clear feedback and continue to next question
+                st.session_state.latest_evaluator_result = None
+                st.session_state.awaiting_answer = False
+                st.session_state.clear_answer = True
+                st.rerun()
     
     # Hide the input buttons when showing feedback
     st.stop()
@@ -506,34 +536,8 @@ if answer:
         # Don't immediately finish - let the evaluator feedback show first
         # The interview will be marked as finished when user sees the feedback
 
-    # Run navigator to determine next step (this sets ready_for_diagnosis if needed)
-    if should_clarify(state) == "continue":
-        updates = navigator_node(state)
-        state = apply_navigator_updates(state, updates)
-    
-    # Update session state with the modified state
+    # Update session state with the modified state (but don't run navigator yet)
     st.session_state.state = state
 
     # Always rerun to show the feedback
-    # st.rerun()
-
-    branch = should_diagnose(state)
-    if branch == "diagnose":
-        diag = diagnoser_node(state)
-        state.diagnosis_content = diag.get("diagnosis_content")
-        st.session_state.diagnosis_result = state.diagnosis_content
-        save_conversation_log(state.conversation_log, st.session_state.thread_id)
-        st.session_state.finished = True
-        st.session_state["clear_answer"] = True
-        st.rerun()
-
-    elif branch == "end":
-        save_conversation_log(state.conversation_log, st.session_state.thread_id)
-        st.session_state.finished = True
-        st.session_state["clear_answer"] = True
-        st.rerun()
-
-    else:
-        st.session_state.awaiting_answer = False
-        st.session_state["clear_answer"] = True
-        st.rerun()
+    st.rerun()
