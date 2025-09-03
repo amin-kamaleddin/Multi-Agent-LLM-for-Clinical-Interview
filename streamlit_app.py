@@ -420,12 +420,13 @@ if st.session_state.finished:
         mime="text/csv",
     )
     
-    # Additional feedback section on completion page
-    st.markdown("---")
-    st.markdown("### Help Us Improve")
-    st.markdown("Your feedback helps us make this tool better for everyone.")
-    if st.button("📝 Share Your Feedback", type="secondary", use_container_width=True):
-        st.markdown("Please visit: [https://docs.google.com/forms/d/1kwnEcoh_XnVidUVthPu66d3Wr2w8beN3ywQ8NvkLmMQ/edit](https://docs.google.com/forms/d/1kwnEcoh_XnVidUVthPu66d3Wr2w8beN3ywQ8NvkLmMQ/edit)")
+    # Additional feedback section on completion page (only for non-red-flag cases)
+    if not st.session_state.red_flag_detected:
+        st.markdown("---")
+        st.markdown("### Help Us Improve")
+        st.markdown("Your feedback helps us make this tool better for everyone.")
+        if st.button("📝 Share Your Feedback", type="secondary", use_container_width=True):
+            st.markdown("Please visit: [https://docs.google.com/forms/d/1kwnEcoh_XnVidUVthPu66d3Wr2w8beN3ywQ8NvkLmMQ/edit](https://docs.google.com/forms/d/1kwnEcoh_XnVidUVthPu66d3Wr2w8beN3ywQ8NvkLmMQ/edit)")
     
     st.stop()
 
