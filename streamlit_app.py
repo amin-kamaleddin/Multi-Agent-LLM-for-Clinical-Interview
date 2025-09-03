@@ -33,6 +33,41 @@ REPORTS_DIR.mkdir(exist_ok=True)
 MODULES_DIR = Path("modules")
 
 
+def check_password():    
+    if st.session_state.get("password_correct", False):
+        return True
+    
+    st.title("🗣️ MINI Interview - Access Required")
+    st.markdown("This application requires a password to access.")
+    
+    if not os.getenv("APP_PASSWORD"):
+        st.error("❌ **Configuration Error**: APP_PASSWORD not set in environment variables.")
+        st.info("For administrators: Please set the APP_PASSWORD environment variable.")
+        st.stop()
+    
+    password_input = st.text_input(
+        "Password", 
+        type="password", 
+        key="password",
+        help="Enter the application password to continue"
+    )
+    
+    if st.button("Access Application", type="primary", use_container_width=True):
+        if password_input == os.getenv("APP_PASSWORD", ""):
+            st.session_state["password_correct"] = True
+            st.rerun()
+        else:
+            st.session_state["password_correct"] = False
+    
+    if st.session_state.get("password_correct") is False:
+        st.error("❌ Password incorrect. Please try again.")
+    
+    st.markdown("---")
+    st.markdown("*Contact the administrator if you need access to this application.*")
+    
+    return False
+
+
 def ensure_api_key():
     if "OPENAI_API_KEY" not in os.environ:
         st.warning("⚠️ OPENAI_API_KEY not found in environment variables.")
@@ -245,6 +280,10 @@ if "app_state" not in st.session_state:
 st.set_page_config(page_title="MINI Interview", page_icon="🗣️", layout="centered")
 
 apply_custom_styling()
+
+# Password protection - check before showing main app
+if not check_password():
+    st.stop()
 
 st.title("MINI Interview")
 
