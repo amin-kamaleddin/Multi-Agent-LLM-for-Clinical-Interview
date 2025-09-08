@@ -33,6 +33,41 @@ REPORTS_DIR.mkdir(exist_ok=True)
 MODULES_DIR = Path("modules")
 
 
+def check_password():    
+    if st.session_state.get("password_correct", False):
+        return True
+    
+    st.title("🗣️ MINI Interview - Access Required")
+    st.markdown("This application requires a password to access.")
+    
+    if not os.getenv("APP_PASSWORD"):
+        st.error("❌ **Configuration Error**: APP_PASSWORD not set in environment variables.")
+        st.info("For administrators: Please set the APP_PASSWORD environment variable.")
+        st.stop()
+    
+    password_input = st.text_input(
+        "Password", 
+        type="password", 
+        key="password",
+        help="Enter the application password to continue"
+    )
+    
+    if st.button("Access Application", type="primary", use_container_width=True):
+        if password_input == os.getenv("APP_PASSWORD", ""):
+            st.session_state["password_correct"] = True
+            st.rerun()
+        else:
+            st.session_state["password_correct"] = False
+    
+    if st.session_state.get("password_correct") is False:
+        st.error("❌ Password incorrect. Please try again.")
+    
+    st.markdown("---")
+    st.markdown("*Contact the administrator if you need access to this application.*")
+    
+    return False
+
+
 def ensure_api_key():
     if "OPENAI_API_KEY" not in os.environ:
         st.warning("⚠️ OPENAI_API_KEY not found in environment variables.")
@@ -184,7 +219,9 @@ def display_evaluator_feedback(evaluator_result: dict, user_answer: str):
     else:
         reasoning = reasoning_msg.content if reasoning_msg else "No reasoning provided"
     
-    if classification == "yes":
+    if classification == "red_flag":
+        st.markdown('<p style="color: red; font-weight: bold;">🚨 <strong>Evaluator Decision: RED_FLAG</strong> - Crisis detected</p>', unsafe_allow_html=True)
+    elif classification == "yes":
         st.success("✅ **Evaluator Decision: YES** - Answer accepted")
     elif classification == "no":
         st.success("❌ **Evaluator Decision: NO** - Answer accepted")
@@ -243,6 +280,10 @@ if "app_state" not in st.session_state:
 st.set_page_config(page_title="MINI Interview", page_icon="🗣️", layout="centered")
 
 apply_custom_styling()
+
+# Password protection - check before showing main app
+if not check_password():
+    st.stop()
 
 st.title("MINI Interview")
 
@@ -325,7 +366,7 @@ if st.session_state.finished:
         st.markdown("### Help Us Improve")
         st.markdown("Your feedback helps us make this tool better for everyone.")
         if st.button("📝 Share Your Feedback", type="secondary", use_container_width=True, key="red_flag_feedback"):
-            st.markdown("Please visit: [https://forms.google.com/feedback](https://forms.google.com/feedback)")
+            st.markdown("Please visit: [https://docs.google.com/forms/d/1kwnEcoh_XnVidUVthPu66d3Wr2w8beN3ywQ8NvkLmMQ/edit](https://docs.google.com/forms/d/1kwnEcoh_XnVidUVthPu66d3Wr2w8beN3ywQ8NvkLmMQ/edit)")
     else:
         st.success("Interview completed.")
 
@@ -379,12 +420,13 @@ if st.session_state.finished:
         mime="text/csv",
     )
     
-    # Additional feedback section on completion page
-    st.markdown("---")
-    st.markdown("### Help Us Improve")
-    st.markdown("Your feedback helps us make this tool better for everyone.")
-    if st.button("📝 Share Your Feedback", type="secondary", use_container_width=True):
-        st.markdown("Please visit: [https://forms.google.com/feedback](https://forms.google.com/feedback)")
+    # Additional feedback section on completion page (only for non-red-flag cases)
+    if not st.session_state.red_flag_detected:
+        st.markdown("---")
+        st.markdown("### Help Us Improve")
+        st.markdown("Your feedback helps us make this tool better for everyone.")
+        if st.button("📝 Share Your Feedback", type="secondary", use_container_width=True):
+            st.markdown("Please visit: [https://docs.google.com/forms/d/1kwnEcoh_XnVidUVthPu66d3Wr2w8beN3ywQ8NvkLmMQ/edit](https://docs.google.com/forms/d/1kwnEcoh_XnVidUVthPu66d3Wr2w8beN3ywQ8NvkLmMQ/edit)")
     
     st.stop()
 
@@ -429,14 +471,49 @@ if st.session_state.get("latest_evaluator_result"):
         st.session_state.latest_evaluator_result["user_answer"]
     )
     
-    # Show Next Question button only if no red flag is detected
-    if not st.session_state.red_flag_detected:
-        if st.button("Next Question", use_container_width=True, type="primary"):
-            # Clear feedback and continue (navigator logic already ran after evaluator)
+    # Show appropriate button based on red flag detection
+    if st.session_state.red_flag_detected:
+        if st.button("Continue to Crisis Resources", use_container_width=True, type="primary"):
+            # Red flag detected - finish interview and show crisis alert
+            st.session_state.finished = True
+            save_conversation_log(state.conversation_log, st.session_state.thread_id)
             st.session_state.latest_evaluator_result = None
-            st.session_state.awaiting_answer = False
-            st.session_state.clear_answer = True
             st.rerun()
+    else:
+        if st.button("Next Question", use_container_width=True, type="primary"):
+            # Run navigator to determine next step (this sets ready_for_diagnosis if needed)
+            if should_clarify(state) == "continue":
+                updates = navigator_node(state)
+                state = apply_navigator_updates(state, updates)
+            
+            # Update session state with the modified state
+            st.session_state.state = state
+
+            # Check if we should diagnose or end the interview
+            branch = should_diagnose(state)
+            if branch == "diagnose":
+                diag = diagnoser_node(state)
+                state.diagnosis_content = diag.get("diagnosis_content")
+                st.session_state.diagnosis_result = state.diagnosis_content
+                save_conversation_log(state.conversation_log, st.session_state.thread_id)
+                st.session_state.finished = True
+                st.session_state["clear_answer"] = True
+                st.session_state.latest_evaluator_result = None
+                st.rerun()
+
+            elif branch == "end":
+                save_conversation_log(state.conversation_log, st.session_state.thread_id)
+                st.session_state.finished = True
+                st.session_state["clear_answer"] = True
+                st.session_state.latest_evaluator_result = None
+                st.rerun()
+
+            else:
+                # Clear feedback and continue to next question
+                st.session_state.latest_evaluator_result = None
+                st.session_state.awaiting_answer = False
+                st.session_state.clear_answer = True
+                st.rerun()
     
     # Hide the input buttons when showing feedback
     st.stop()
@@ -496,39 +573,11 @@ if answer:
     if evaluator_result["evaluator_results"] and evaluator_result["evaluator_results"][0].lower() == "red_flag":
         st.session_state.red_flag_detected = True
         st.session_state.red_flag_message = detect_red_flag(answer)[1]
-        st.session_state.finished = True  # Mark interview as finished when red flag is detected
-        save_conversation_log(state.conversation_log, st.session_state.thread_id)
-        st.session_state.state = state
-        st.rerun()
+        # Don't immediately finish - let the evaluator feedback show first
+        # The interview will be marked as finished when user sees the feedback
 
-    # Run navigator to determine next step (this sets ready_for_diagnosis if needed)
-    if should_clarify(state) == "continue":
-        updates = navigator_node(state)
-        state = apply_navigator_updates(state, updates)
-    
-    # Update session state with the modified state
+    # Update session state with the modified state (but don't run navigator yet)
     st.session_state.state = state
 
     # Always rerun to show the feedback
-    # st.rerun()
-
-    branch = should_diagnose(state)
-    if branch == "diagnose":
-        diag = diagnoser_node(state)
-        state.diagnosis_content = diag.get("diagnosis_content")
-        st.session_state.diagnosis_result = state.diagnosis_content
-        save_conversation_log(state.conversation_log, st.session_state.thread_id)
-        st.session_state.finished = True
-        st.session_state["clear_answer"] = True
-        st.rerun()
-
-    elif branch == "end":
-        save_conversation_log(state.conversation_log, st.session_state.thread_id)
-        st.session_state.finished = True
-        st.session_state["clear_answer"] = True
-        st.rerun()
-
-    else:
-        st.session_state.awaiting_answer = False
-        st.session_state["clear_answer"] = True
-        st.rerun()
+    st.rerun()
