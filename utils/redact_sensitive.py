@@ -2,7 +2,7 @@ import re
 from typing import List, Dict
 import spacy
 
-nlp = spacy.load("en_core_web_trf")
+nlp = spacy.load("en_core_web_sm")
 
 class PIIRedactor:
     def __init__(self):
@@ -78,5 +78,5 @@ def sanitize_for_llm(text: str) -> str:
 
 if __name__ == "__main__":
     # text = "I am going to the doctor tomorrow. I'm John Doe. My phone number is 123-456-7890. My email is john.doe@example.com. My SSN is 123-45-6789. My date of birth is 01/01/1990. My address is 123 Main St, Anytown, USA. I am 90 years old. I am taking 10mg of Xanax. My MRN is 1234567890."
-    text = "i'm reza"
+    text = "i'm nghia"
     print(sanitize_for_llm(text))
