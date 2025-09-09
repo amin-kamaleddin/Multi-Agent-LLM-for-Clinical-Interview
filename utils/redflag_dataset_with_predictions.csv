@@ -1,101 +1,201 @@
-data,label,prediction
-I don’t want to live anymore.,1,1
-I wish I could just disappear forever.,1,1
-Sometimes I think about ending my life.,1,1
-There’s no point in going on.,1,1
-I feel like life is not worth living.,1,1
-I’m planning to take my life soon.,1,1
-I’ve written a goodbye letter to my family.,1,1
-I can’t see a future for myself.,1,1
-I want to overdose and never wake up.,1,1
-I think about jumping off a bridge.,1,1
-I want to die and never wake up again.,1,1
-The only way out is to end my life.,1,1
-I’m tired of being alive.,1,1
-I feel like suicide is my only option.,1,1
-No one would care if I was gone.,1,1
-I want to cut myself tonight.,1,1
-Sometimes I hurt myself to feel something.,1,1
-I can’t stop scratching my arms until they bleed.,1,1
-I burned my skin on purpose yesterday.,1,1
-I have scars from where I used to hurt myself.,1,1
-I’m thinking about self-harming again.,1,1
-I punch myself when I feel overwhelmed.,1,1
-The only relief I get is when I see my own blood.,1,1
-I need to harm myself to cope with the pain.,1,1
-I’ve been hiding cuts on my body from everyone.,1,1
-I punish myself by hurting my body.,1,1
-I think about bleeding just to feel real.,1,1
-Hurting myself feels like the only escape.,1,1
-I cut myself last night and I want to do it again.,1,1
-The pain inside is worse than the cuts I make.,1,1
-That movie is about suicide prevention.,0,0
-The training covered how to help people with depression.,0,0
-I read an article about self-harm awareness.,0,0
-He researches suicide rates for his job.,0,0
-I saw a documentary on people recovering from self harm.,0,0
-My cousin volunteers at a crisis hotline.,0,0
-The book discusses the psychology of suicidal thoughts.,0,0
-Our school had a seminar about suicide prevention.,0,0
-The therapist explained self harm as a coping mechanism.,0,0
-I’m studying mental health and learning about suicide statistics.,0,0
-I feel a little down today but I’ll be okay.,0,0
-"Work stress is really getting to me, but I’ll manage.",0,0
-I’m exhausted from school and just need rest.,0,0
-I’m anxious about my exams tomorrow.,0,0
-"I feel sad sometimes, but talking helps.",0,0
-"I want to disappear for a while, like on vacation.",0,0
-I said I wanted to die laughing at that joke.,0,0
-"This video game is killing me, it’s so hard!",0,0
-I could just jump off a cliff in this game level.,0,0
-I feel like I’m drowning in work deadlines.,0,0
-That movie killed me with laughter.,0,0
-I’m dying to see the new season of that show.,0,0
-I’m buried under emails today.,0,0
-I nearly had a heart attack when I saw the bill.,0,0
-That rollercoaster scared me to death.,0,0
-I cut the meeting short to make another call.,0,0
-I scratched my arm on a tree branch.,0,0
-I punched a pillow when I got angry.,0,0
-I burned my dinner last night.,0,0
-I just need a break from everything for a day or two.,0,0
-I feel like I'm a burden to everyone.,1,0
-I've been looking up ways to end it all.,1,1
-I just want the pain to stop forever.,1,1
-I've planned out my suicide.,1,1
-I can't go on anymore.,1,1
-The world would be better off without me.,1,1
-I'm just a waste of space.,1,1
-I'm thinking of hurting myself.,1,1
-I feel like I'm trapped with no way out.,1,0
-I'm done with everything.,1,1
-I'm going to jump.,1,1
-I'm hurting myself to feel alive.,1,1
-I can't take this pain anymore.,1,1
-I don't want to be here anymore.,1,1
-I want to disappear.,1,1
-I'm going to take a bunch of pills.,1,1
-I've been cutting myself again.,1,1
-I'm planning to hang myself.,1,1
-My family would be better off if I were dead.,1,1
-"I can't handle the emotional pain, so I turn to physical pain.",1,1
-"I'm so exhausted from work, I could just die.",0,1
-My boss is killing me with these deadlines.,0,0
-I need a vacation from this crazy life.,0,0
-I'm tired of studying for this exam.,0,0
-"My dog passed away, and I'm really sad.",0,0
-"I'm so bored, I'm dying.",0,0
-I'm feeling really stressed about my finals.,0,0
-My heart is broken because of the breakup.,0,0
-"That joke was so funny, I'm dead.",0,0
-I'm dealing with a lot of anxiety right now.,0,0
-I feel drained after a long day at the office.,0,0
-I'm overwhelmed with joy right now.,0,0
-My favorite sports team is killing it this season.,0,0
-"I had a bad day, but a good night's sleep will help.",0,0
-I'm dying to go to that concert.,0,0
-I'm just exhausted and need some rest.,0,0
-"I'm so mad, I could just scream.",0,0
-I'm buried under a mountain of homework.,0,0
-I nearly died laughing at that comedy show.,0,0
-I'm trying to stay positive even when things are tough.,0,0
+data,label,prediction,explanation
+I constantly prefer a way out for the reason that I feel trapped with no escape.,1,1,"The statement suggests feelings of being trapped and a desire for escape, indicating severe hopelessness."
+I deeply imagine a final silence since I cannot handle this pain anymore.,1,1,The statement indicates severe hopelessness and a desire for an end to pain.
+I truly contemplate relief for the reason that I cannot see a future for myself.,1,1,The statement indicates severe hopelessness and contemplation of relief.
+I often want to end my life because I carry unbearable guilt and sadness.,1,1,The message expresses a desire to end life due to intense emotional pain.
+I sometimes imagine disappearing forever for the reason that I am overwhelmed by constant despair.,1,1,Imagining disappearing forever indicates severe hopelessness and potential suicidal thoughts.
+I truly prefer oblivion since I feel trapped with no escape.,1,1,The statement indicates severe hopelessness and a desire for oblivion.
+I constantly desire a way out for the reason that I feel hopeless every single day.,1,1,The statement indicates severe hopelessness and a desire to escape.
+I desire relief for the reason that I feel hopeless every single day.,1,1,The expression of feeling hopeless every single day indicates a severe emotional crisis.
+I secretly seek my life as I carry unbearable guilt and sadness.,1,1,The message indicates severe hopelessness and a desire to end life.
+I sometimes desire oblivion since life has lost all meaning to me.,1,1,Desiring oblivion and feeling life has lost meaning indicates severe hopelessness.
+I truly imagine an escape from everything because I believe nothing will ever improve.,1,1,The statement indicates severe hopelessness and a desire to escape.
+I constantly prefer a way out because I feel hopeless every single day.,1,1,The statement indicates severe hopelessness and a desire for escape.
+I consider nothingness for the reason that I cannot see a future for myself.,1,1,The statement indicates severe hopelessness and contemplation of nothingness.
+I quietly seek a way out since I carry unbearable guilt and sadness.,1,1,The expression of unbearable guilt and sadness suggests severe hopelessness.
+I quietly prefer suicide because the suffering never seems to end.,1,1,The statement expresses a preference for suicide and indicates severe hopelessness.
+I contemplate a final silence as I carry unbearable guilt and sadness.,1,1,The mention of 'final silence' suggests suicidal thoughts and severe hopelessness.
+I secretly seek disappearing forever since life has lost all meaning to me.,1,1,The statement expresses a desire to disappear and indicates severe hopelessness.
+I truly desire an escape from everything for the reason that I carry unbearable guilt and sadness.,1,1,The desire to escape indicates severe hopelessness and potential self-harm.
+I quietly plan to commit oblivion since the suffering never seems to end.,1,1,The message expresses intent to escape suffering through self-harm.
+I desire oblivion because life has lost all meaning to me.,1,1,The statement expresses a desire for oblivion and indicates severe hopelessness.
+I often contemplate nothingness as I cannot see a future for myself.,1,1,Contemplating nothingness and not seeing a future indicates severe hopelessness.
+I often seek a way out since I am overwhelmed by constant despair.,1,1,The statement indicates severe hopelessness and a desire to escape overwhelming feelings.
+I secretly contemplate a way out as the suffering never seems to end.,1,1,The statement indicates severe hopelessness and contemplation of escape from suffering.
+I secretly imagine suicide as I cannot see a future for myself.,1,1,The message expresses suicidal thoughts and a lack of hope for the future.
+I sometimes prefer oblivion for the reason that I feel hopeless every single day.,1,1,The statement indicates severe hopelessness and a preference for oblivion.
+I really cannot stop thinking about oblivion as the suffering never seems to end.,1,1,The mention of oblivion and persistent suffering indicates severe hopelessness.
+I often seek my life because I carry unbearable guilt and sadness.,1,1,The statement indicates severe hopelessness and a desire to end life.
+I secretly want to end oblivion because the suffering never seems to end.,1,1,"The statement expresses a desire to end suffering, indicating suicidal thoughts."
+I really consider my life because the suffering never seems to end.,1,1,The statement indicates severe hopelessness and contemplation of life.
+I often consider a final silence for the reason that I believe nothing will ever improve.,1,1,The statement indicates suicidal thoughts and severe hopelessness.
+I sometimes seek my life as the suffering never seems to end.,1,1,The statement indicates a desire to end life due to ongoing suffering.
+I constantly seek nothingness for the reason that I cannot handle this pain anymore.,1,1,The statement indicates severe hopelessness and a desire to escape pain.
+I secretly plan to commit an escape from everything as I feel trapped with no escape.,1,1,"The statement indicates feelings of entrapment and a desire to escape, suggesting a mental health crisis."
+I sometimes desire nothingness for the reason that everything seems empty and pointless.,1,0,The statement expresses feelings of emptiness but does not indicate intent to self-harm.
+I sometimes contemplate my life since I cannot handle this pain anymore.,1,1,"The statement indicates contemplation of life and inability to handle pain, suggesting a crisis."
+I plan to commit nothingness for the reason that life has lost all meaning to me.,1,1,The statement expresses intent to harm oneself and severe hopelessness.
+I quietly want to end relief as life has lost all meaning to me.,1,1,The statement expresses a desire to end life and severe hopelessness.
+I want to end a way out as the suffering never seems to end.,1,1,"The statement expresses a desire to end suffering, indicating suicidal thoughts."
+I sometimes plan to commit suicide because everything seems empty and pointless.,1,1,The message expresses planning to commit suicide and feelings of emptiness.
+I truly consider my life as I carry unbearable guilt and sadness.,1,1,The expression of unbearable guilt and sadness indicates severe hopelessness.
+I sometimes struggle with thoughts of relief because I feel trapped with no escape.,1,1,The mention of thoughts of relief and feeling trapped suggests severe hopelessness.
+I often want to end relief because life has lost all meaning to me.,1,1,The statement expresses a desire to end life and severe hopelessness.
+I deeply desire disappearing forever because I am overwhelmed by constant despair.,1,1,"The statement expresses a desire to disappear, indicating severe hopelessness."
+I really struggle with thoughts of a way out for the reason that the suffering never seems to end.,1,1,The statement indicates severe hopelessness and thoughts of escape from suffering.
+I sometimes contemplate ending all this pain for the reason that I feel hopeless every single day.,1,1,The statement expresses contemplation of ending pain and severe hopelessness.
+I deeply desire relief since I carry unbearable guilt and sadness.,1,1,The expression of unbearable guilt and sadness suggests a potential mental health crisis.
+I sometimes imagine nothingness since the suffering never seems to end.,1,1,Imagining nothingness suggests severe hopelessness and potential suicidal thoughts.
+I really cannot stop thinking about disappearing forever because I feel trapped with no escape.,1,1,"The message expresses thoughts of disappearing and feeling trapped, indicating severe hopelessness."
+I deeply struggle with thoughts of nothingness as I cannot handle this pain anymore.,1,1,The message indicates severe hopelessness and thoughts of not being able to handle pain.
+I deeply prefer my life for the reason that the suffering never seems to end.,1,0,The statement expresses suffering but does not indicate intent to self-harm or suicidal thoughts.
+I quietly desire disappearing forever as I believe nothing will ever improve.,1,1,The statement expresses a desire to disappear and hopelessness about improvement.
+I sometimes seek nothingness since I feel hopeless every single day.,1,1,The statement indicates persistent feelings of hopelessness and a desire for nothingness.
+I constantly plan to commit suicide as I believe nothing will ever improve.,1,1,The message expresses explicit intent to commit suicide and severe hopelessness.
+I secretly prefer my life as the suffering never seems to end.,1,1,The statement suggests severe hopelessness and a preference for suffering.
+I cannot stop thinking about ending all this pain since I cannot see a future for myself.,1,1,"The message expresses thoughts of ending pain and a lack of future, indicating a crisis."
+I secretly desire a final silence because I feel trapped with no escape.,1,1,The desire for final silence indicates severe hopelessness and potential suicidal thoughts.
+I really struggle with thoughts of oblivion since I cannot see a future for myself.,1,1,The mention of thoughts of oblivion indicates severe hopelessness and potential suicidal ideation.
+I constantly consider nothingness because I feel trapped with no escape.,1,1,The statement indicates severe hopelessness and contemplation of nothingness.
+I really imagine oblivion for the reason that I cannot see a future for myself.,1,1,The statement indicates severe hopelessness and a desire for oblivion.
+I constantly struggle with thoughts of an escape from everything for the reason that I feel trapped with no escape.,1,1,The statement indicates severe hopelessness and thoughts of escape.
+I desire disappearing forever as I cannot handle this pain anymore.,1,1,"The statement expresses a desire to escape pain, indicating potential suicidal thoughts."
+I quietly desire a way out because I believe nothing will ever improve.,1,1,The statement indicates severe hopelessness and a desire to escape.
+I truly contemplate oblivion for the reason that I feel hopeless every single day.,1,1,The statement expresses severe hopelessness and contemplation of oblivion.
+I sometimes plan to commit a final silence for the reason that I feel hopeless every single day.,1,1,The message indicates planning to commit self-harm due to severe hopelessness.
+I secretly prefer a way out as I believe nothing will ever improve.,1,1,The statement indicates a desire for escape and belief in hopelessness.
+I often plan to commit disappearing forever because the suffering never seems to end.,1,1,The statement indicates a desire to escape and suggests severe hopelessness.
+I imagine disappearing forever since I cannot handle this pain anymore.,1,1,"The statement expresses a desire to escape pain, indicating potential suicidal thoughts."
+I constantly contemplate ending all this pain as life has lost all meaning to me.,1,1,The message expresses suicidal thoughts and severe hopelessness.
+I deeply imagine relief as the suffering never seems to end.,1,0,The statement expresses a feeling but does not indicate intent to harm.
+I deeply desire oblivion as I cannot see a future for myself.,1,1,The statement expresses a desire for oblivion and a lack of hope for the future.
+I quietly plan to commit relief for the reason that I carry unbearable guilt and sadness.,1,1,The message indicates a plan to commit self-harm due to overwhelming emotions.
+I often desire my life for the reason that I feel trapped with no escape.,1,1,Desiring life while feeling trapped indicates severe hopelessness and potential suicidal thoughts.
+I secretly contemplate nothingness for the reason that everything seems empty and pointless.,1,1,The statement indicates severe hopelessness and contemplation of nothingness.
+I sometimes consider disappearing forever as I believe nothing will ever improve.,1,1,The statement indicates severe hopelessness and thoughts of disappearing.
+I quietly consider relief for the reason that I cannot handle this pain anymore.,1,1,The statement indicates severe hopelessness and consideration of self-harm.
+I really desire my life for the reason that everything seems empty and pointless.,1,1,The statement indicates severe hopelessness and a desire for life to feel meaningful.
+I quietly contemplate ending all this pain as I am overwhelmed by constant despair.,1,1,"The message expresses contemplation of ending pain, indicating suicidal thoughts."
+I constantly consider disappearing forever because life has lost all meaning to me.,1,1,The statement expresses a desire to disappear and indicates severe hopelessness.
+I truly contemplate relief for the reason that everything seems empty and pointless.,1,1,The message indicates severe hopelessness and contemplation of relief.
+I secretly desire an escape from everything because I feel trapped with no escape.,1,1,The desire for escape suggests severe hopelessness and potential suicidal thoughts.
+I quietly seek my life as life has lost all meaning to me.,1,1,The statement indicates severe hopelessness and a search for meaning in life.
+I often struggle with thoughts of suicide for the reason that everything seems empty and pointless.,1,1,The message expresses persistent suicidal thoughts and feelings of emptiness.
+I sometimes struggle with thoughts of an escape from everything as life has lost all meaning to me.,1,1,The statement indicates severe hopelessness and thoughts of escape from life.
+I consider ending all this pain as the suffering never seems to end.,1,1,"The statement expresses a desire to end suffering, indicating suicidal thoughts."
+I sometimes contemplate my life since everything seems empty and pointless.,1,0,The statement reflects contemplation but does not express intent to harm or severe hopelessness.
+I really cannot stop thinking about disappearing forever for the reason that I carry unbearable guilt and sadness.,1,1,"The message expresses thoughts of disappearing and unbearable guilt, indicating a mental health crisis."
+I truly cannot stop thinking about nothingness for the reason that life has lost all meaning to me.,1,1,The statement indicates severe hopelessness and a loss of meaning in life.
+I constantly contemplate an escape from everything for the reason that I cannot handle this pain anymore.,1,1,The message indicates severe hopelessness and contemplation of escape from pain.
+I truly prefer disappearing forever for the reason that I feel trapped with no escape.,1,1,"The statement expresses a desire to disappear, indicating severe hopelessness."
+I deeply imagine a way out because I carry unbearable guilt and sadness.,1,1,The mention of unbearable guilt and sadness suggests severe hopelessness.
+I sometimes contemplate an escape from everything as life has lost all meaning to me.,1,1,The statement indicates severe hopelessness and contemplation of escape from life.
+I desire relief for the reason that I believe nothing will ever improve.,1,1,The statement indicates severe hopelessness and a desire for relief.
+I secretly cannot stop thinking about a way out since I feel hopeless every single day.,1,1,The statement indicates severe hopelessness and thoughts of wanting a way out.
+I quietly cannot stop thinking about ending all this pain because I feel trapped with no escape.,1,1,"The message expresses thoughts of ending pain and feeling trapped, indicating a mental health crisis."
+I really imagine nothingness as I cannot see a future for myself.,1,1,Describing nothingness and inability to see a future indicates severe hopelessness.
+I often seek my life for the reason that I believe nothing will ever improve.,1,1,The statement indicates severe hopelessness and a desire to end life.
+I often want to end an escape from everything for the reason that I cannot handle this pain anymore.,1,1,"The message indicates a desire to escape pain, suggesting suicidal thoughts."
+I truly desire relief as I cannot see a future for myself.,1,1,The statement indicates severe hopelessness and a desire for relief from suffering.
+I truly seek an escape from everything since everything seems empty and pointless.,1,1,The statement indicates severe hopelessness and a desire to escape from life.
+I deeply desire relief since life has lost all meaning to me.,1,1,The statement indicates severe hopelessness and a desire for relief from suffering.
+The article explains treatment access so that students understand different recovery strategies.,0,0,The message does not indicate any mental health crisis symptoms.
+The training features protective factors with the goal that participants can support people in crisis situations.,0,0,"The message discusses training and support, not a crisis situation."
+The lecture presents mental health resources with the goal that society reduces stigma around mental illness.,0,0,"The message discusses resources and stigma, not personal feelings or crisis symptoms."
+The video highlights hotline services because young people learn healthy coping mechanisms.,0,0,The message promotes healthy coping mechanisms without indicating any crisis symptoms.
+She outlines protective factors with the goal that families know how to offer assistance.,0,0,"The message focuses on support and protective factors, not on crisis symptoms."
+The book researches depression support because professionals can provide more effective help.,0,0,The message does not indicate any self-harm or suicidal thoughts.
+The campaign summarizes education programs because volunteers are prepared to give proper guidance.,0,0,The message does not indicate any mental health crisis symptoms.
+The training highlights community outreach so that students understand different recovery strategies.,0,0,"The message discusses training and outreach, not mental health crisis symptoms."
+The project presents peer counseling with the goal that communities become aware of available resources.,0,0,The message does not indicate any mental health crisis symptoms.
+The campaign summarizes recovery stories with the goal that participants can support people in crisis situations.,0,0,"The message focuses on support and recovery, not on crisis symptoms."
+The class highlights education programs in order that professionals can provide more effective help.,0,0,The message does not indicate any mental health crisis symptoms.
+The event shares suicide prevention in order that young people learn healthy coping mechanisms.,0,0,"The message discusses prevention and coping, not expressing suicidal thoughts or self-harm."
+The podcast examines mental health resources in order that families know how to offer assistance.,0,0,"The message discusses resources and assistance, not a crisis or self-harm."
+My cousin explains peer counseling so that the audience learns how to recognize warning signs.,0,0,The message does not indicate any personal crisis or self-harm.
+The course studies education programs in order that participants can support people in crisis situations.,0,0,"The message discusses education programs, not personal feelings or crisis symptoms."
+The therapist supports suicide prevention in order that young people learn healthy coping mechanisms.,0,0,"The message discusses prevention, not expressing suicidal thoughts or self-harm."
+The program analyzes risk factors in order that the audience learns how to recognize warning signs.,0,0,"The message discusses analysis and education, not personal feelings or crisis symptoms."
+The department addresses mental health stigma with the goal that volunteers are prepared to give proper guidance.,0,0,The message does not indicate any personal mental health crisis or red flags.
+They outlines early intervention in order that students understand different recovery strategies.,0,0,The message discusses recovery strategies without indicating any crisis symptoms.
+The class analyzes education programs because the audience learns how to recognize warning signs.,0,0,"The message discusses education programs, not personal feelings or crisis symptoms."
+The project outlines self-harm awareness so that participants can support people in crisis situations.,0,0,"The message discusses awareness, not personal feelings or intentions of self-harm."
+The therapist describes hotline services in order that volunteers are prepared to give proper guidance.,0,0,The message does not indicate any crisis symptoms or intent to harm.
+She covers psychological first aid so that students understand different recovery strategies.,0,0,"The message discusses recovery strategies, not any crisis symptoms or intent to harm."
+The NGO summarizes protective factors so that students understand different recovery strategies.,0,0,"The message discusses recovery strategies, not any crisis symptoms or intent to harm."
+The NGO promotes self-harm awareness with the goal that families know how to offer assistance.,0,0,"The message discusses awareness, not personal feelings or intent to self-harm."
+He supports community outreach with the goal that readers gain knowledge about mental health challenges.,0,0,"The message focuses on community support, not on personal mental health crisis."
+The book features emotional resilience so that society reduces stigma around mental illness.,0,0,"The message discusses resilience and stigma, not personal crisis or self-harm."
+The event summarizes coping strategies in order that the audience learns how to recognize warning signs.,0,0,"The message discusses coping strategies, not personal feelings or crisis symptoms."
+The website features crisis support in order that young people learn healthy coping mechanisms.,0,0,"The message discusses support and coping mechanisms, not a crisis situation."
+The project analyzes early intervention in order that readers gain knowledge about mental health challenges.,0,0,The message discusses a project and does not indicate any personal crisis or red flags.
+That movie introduces support groups in order that the audience learns how to recognize warning signs.,0,0,The message does not indicate any personal crisis or self-harm.
+The department explains supportive communication in order that the audience learns how to recognize warning signs.,0,0,The message does not indicate any personal crisis or self-harm.
+My cousin researches warning signs so that volunteers are prepared to give proper guidance.,0,0,"The message discusses research and guidance, not personal feelings or crisis symptoms."
+The charity highlights community outreach with the goal that families know how to offer assistance.,0,0,The message does not indicate any mental health crisis symptoms.
+The program explains risk factors in order that students understand different recovery strategies.,0,0,The message does not indicate any mental health crisis symptoms.
+The therapist shares community outreach because young people learn healthy coping mechanisms.,0,0,"The message discusses outreach and coping, not a mental health crisis."
+The teacher examines mental health stigma in order that young people learn healthy coping mechanisms.,0,0,"The message discusses mental health stigma and coping, not a crisis or self-harm."
+The podcast outlines therapy options so that readers gain knowledge about mental health challenges.,0,0,The message discusses therapy options without indicating any personal crisis or red flags.
+They summarizes supportive communication because families know how to offer assistance.,0,0,The message does not indicate any mental health crisis symptoms.
+Our school supports support groups so that families know how to offer assistance.,0,0,The message discusses support groups and does not indicate any crisis symptoms.
+The class analyzes hotline services so that communities become aware of available resources.,0,0,The message discusses resources and does not indicate any mental health crisis.
+The researcher shares warning signs because participants can support people in crisis situations.,0,0,"The message discusses warning signs, not expressing personal crisis feelings."
+The campaign discusses hotline services in order that students understand different recovery strategies.,0,0,"The message focuses on recovery strategies and hotline services, not on crisis symptoms."
+The program studies community outreach so that readers gain knowledge about mental health challenges.,0,0,The message discusses a program and does not indicate any personal crisis or red flags.
+The report reviews warning signs because volunteers are prepared to give proper guidance.,0,0,The message does not indicate any personal feelings or crisis symptoms.
+The website discusses coping strategies so that communities become aware of available resources.,0,0,"The message focuses on coping strategies and resources, not on crisis symptoms."
+The program promotes support groups in order that families know how to offer assistance.,0,0,The message does not indicate any mental health crisis symptoms.
+The teacher teaches therapy options with the goal that professionals can provide more effective help.,0,0,The message does not indicate any mental health crisis symptoms.
+The campaign outlines education programs in order that volunteers are prepared to give proper guidance.,0,0,The message does not indicate any mental health crisis symptoms.
+The book introduces treatment access so that communities become aware of available resources.,0,0,The message does not indicate any mental health crisis symptoms.
+The clinic features early intervention in order that the audience learns how to recognize warning signs.,0,0,"The message discusses intervention and warning signs, not personal feelings or crises."
+The researcher examines depression support because communities become aware of available resources.,0,0,"The message discusses support resources, not personal feelings of hopelessness or self-harm."
+Our school discusses suicide prevention with the goal that families know how to offer assistance.,0,0,"The message discusses prevention, not personal feelings or intentions."
+The seminar introduces peer counseling so that communities become aware of available resources.,0,0,The message does not indicate any mental health crisis symptoms.
+The clinic features mental health resources with the goal that volunteers are prepared to give proper guidance.,0,0,The message does not indicate any personal mental health crisis symptoms.
+The community shares emotional resilience with the goal that families know how to offer assistance.,0,0,"The message discusses community support and resilience, not individual crisis symptoms."
+The project researches recovery stories because the audience learns how to recognize warning signs.,0,0,The message discusses research and does not indicate any personal crisis or self-harm.
+The report explains early intervention so that the audience learns how to recognize warning signs.,0,0,"The message discusses intervention and warning signs, not personal feelings or crises."
+The team analyzes peer counseling so that readers gain knowledge about mental health challenges.,0,0,"The message discusses peer counseling, not personal feelings or crisis symptoms."
+They features hotline services so that young people learn healthy coping mechanisms.,0,0,The message promotes healthy coping mechanisms without indicating any crisis symptoms.
+That movie teaches peer counseling with the goal that readers gain knowledge about mental health challenges.,0,0,The message does not indicate any mental health crisis symptoms.
+The seminar highlights warning signs with the goal that young people learn healthy coping mechanisms.,0,0,"The message discusses coping mechanisms, not personal feelings or crisis symptoms."
+The team covers support groups because communities become aware of available resources.,0,0,The message does not indicate any mental health crisis symptoms.
+Our school summarizes peer counseling with the goal that young people learn healthy coping mechanisms.,0,0,The message discusses healthy coping mechanisms without indicating any crisis symptoms.
+The hotline promotes education programs with the goal that professionals can provide more effective help.,0,0,The message does not indicate any mental health crisis symptoms.
+The event promotes awareness campaigns so that families know how to offer assistance.,0,0,"The message focuses on awareness and assistance, not on personal mental health issues."
+The seminar addresses early intervention so that students understand different recovery strategies.,0,0,"The message discusses recovery strategies, not any mental health crisis symptoms."
+My cousin highlights mental health resources so that families know how to offer assistance.,0,0,"The message discusses resources and assistance, not personal crisis symptoms."
+The website introduces suicide prevention in order that families know how to offer assistance.,0,0,"The message discusses prevention, not personal feelings or intentions."
+They introduces protective factors so that society reduces stigma around mental illness.,0,0,"The message discusses stigma reduction, not personal feelings or crisis symptoms."
+The campaign introduces coping strategies so that society reduces stigma around mental illness.,0,0,"The message focuses on coping strategies and stigma, not on self-harm or suicidal thoughts."
+My cousin shares support groups so that communities become aware of available resources.,0,0,"The message discusses support groups and resources, not personal mental health crisis symptoms."
+The researcher addresses help-seeking behavior in order that the audience learns how to recognize warning signs.,0,0,"The message discusses help-seeking behavior, not personal feelings or crisis symptoms."
+The workshop features education programs so that young people learn healthy coping mechanisms.,0,0,"The message discusses education and coping mechanisms, not crisis symptoms."
+The hotline highlights peer counseling in order that students understand different recovery strategies.,0,0,The message discusses recovery strategies without indicating any crisis symptoms.
+The workshop summarizes therapy options so that volunteers are prepared to give proper guidance.,0,0,The message does not indicate any mental health crisis symptoms.
+The website teaches mental health stigma so that families know how to offer assistance.,0,0,The message does not indicate any mental health crisis symptoms.
+She introduces support groups in order that families know how to offer assistance.,0,0,The message discusses support groups and does not indicate any crisis symptoms.
+The program describes crisis support so that volunteers are prepared to give proper guidance.,0,0,The message does not indicate any personal crisis or self-harm.
+The team analyzes recovery stories so that readers gain knowledge about mental health challenges.,0,0,The message discusses recovery stories and does not indicate any crisis symptoms.
+The seminar supports coping strategies so that professionals can provide more effective help.,0,0,"The message discusses support strategies, not personal feelings or crises."
+The workshop supports community outreach with the goal that the audience learns how to recognize warning signs.,0,0,"The message discusses outreach and education, not personal feelings or crisis symptoms."
+The hotline reviews warning signs with the goal that the audience learns how to recognize warning signs.,0,0,The message discusses warning signs without indicating personal crisis symptoms.
+The session researches supportive communication because families know how to offer assistance.,0,0,The message does not indicate any mental health crisis symptoms.
+The team covers supportive communication because professionals can provide more effective help.,0,0,The message does not indicate any mental health crisis symptoms.
+The project shares education programs with the goal that young people learn healthy coping mechanisms.,0,0,"The message discusses education and coping mechanisms, not a mental health crisis."
+The campaign addresses awareness campaigns because families know how to offer assistance.,0,0,The message does not indicate any mental health crisis symptoms.
+The charity highlights treatment access so that society reduces stigma around mental illness.,0,0,"The message discusses treatment access and stigma, not personal mental health crisis symptoms."
+The website highlights support groups with the goal that families know how to offer assistance.,0,0,The message does not indicate any mental health crisis symptoms.
+The event presents community outreach with the goal that society reduces stigma around mental illness.,0,0,"The message focuses on community outreach and stigma reduction, not on personal mental health crisis."
+The lecture highlights treatment access because readers gain knowledge about mental health challenges.,0,0,The message does not indicate any mental health crisis symptoms.
+They describes psychological first aid because communities become aware of available resources.,0,0,The message does not indicate any self-harm or suicidal thoughts.
+The clinic introduces help-seeking behavior because communities become aware of available resources.,0,0,The message does not indicate any mental health crisis symptoms.
+The therapist summarizes recovery stories because students understand different recovery strategies.,0,0,The message does not indicate any mental health crisis symptoms.
+Our school examines suicide prevention with the goal that young people learn healthy coping mechanisms.,0,0,"The message discusses prevention and coping, not personal feelings or intentions."
+The course introduces mental health stigma with the goal that professionals can provide more effective help.,0,0,The message does not indicate any mental health crisis symptoms.
+The project summarizes peer counseling in order that the audience learns how to recognize warning signs.,0,0,The message discusses a project and does not indicate any personal crisis symptoms.
+The video outlines support groups because the audience learns how to recognize warning signs.,0,0,"The message discusses support groups and warning signs, not personal feelings or crises."
+The clinic summarizes support groups so that young people learn healthy coping mechanisms.,0,0,"The message discusses support groups and coping mechanisms, not a mental health crisis."
+The book shares awareness campaigns so that participants can support people in crisis situations.,0,0,"The message discusses support, not personal crisis or red flags."
