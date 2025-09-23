@@ -66,6 +66,7 @@ class InterviewState(BaseModel):
     question_path: List[str] = Field(default_factory=list)
     evaluator_results: Annotated[List[Any], operator.add] = Field(default_factory=list)
     patient_agent: bool = False
+    red_flag: bool = True
     module_completed: bool = False
     ready_for_diagnosis: bool = False
     diagnosis_content: Optional[Any] = Field(default_factory=dict)
@@ -74,7 +75,11 @@ class InterviewState(BaseModel):
 # ---------------------------- LLM output schemas ---------------------------- #
 class ClassificationResult(BaseModel):
     reasoning: str
-    classification: Union[Literal["yes", "no", "explain request", "need more clarification"]]
+    classification: Union[
+        Literal["yes", "no", "explain request", "need more clarification"],  # for yes_no
+        Literal["valid_quantity", "explain request", "need more clarification"]  # for quantity
+    ]
+    extracted_quantity: Optional[str] = None  # Store the actual quantity/frequency mentioned
 
 
 class DiagnosisResult(BaseModel):

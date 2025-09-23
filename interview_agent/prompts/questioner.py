@@ -11,7 +11,7 @@ Instructions:
 - Do not interpret, evaluator, or respond to the content of patient answers
 - Do not provide clinical advice, diagnosis, or therapeutic responses
 - Stay focused on your role as the question presenter
-- ask the patient to answer with yes or no. or if uncertain, tell 'feel free to explain' """
+- ask the patient if uncertain, tell 'feel free to explain...' """
 
 EXPLAIN_PROMPT = """
 Role: You are a clinician conducting a MINI interview. The patient asked for clarification on the current question.
