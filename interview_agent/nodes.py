@@ -96,7 +96,7 @@ def _get_module_patient_llm():
 
 # ------------------------------ Global Vars ------------------------------ #
 AUTO_SET_YES_AFTER = 3  # after 3 consecutive clarifies, the 4th auto-yes
-
+VALID_LABELS = ["yes", "no", "rephrase needed", "explain request", "valid_quantity", "valid_response"] # valid labels from evaluator
 
 # -------------------------------- Nodes ------------------------------------ #
 def questioner_node(state: InterviewState) -> Dict[str, Any]:
@@ -239,7 +239,7 @@ def evaluator_node(state: InterviewState) -> Dict[str, Any]:
         label = str(resp.classification)
         reasoning = str(resp.reasoning)
 
-        if label not in ["yes", "no", "rephrase needed", "explain request", "valid_quantity"]:
+        if label not in VALID_LABELS:
             label = "rephrase needed"
 
     if _clarify_streak(evaluator_results=state.evaluator_results, last_result=label):

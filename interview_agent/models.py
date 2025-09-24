@@ -77,7 +77,8 @@ class ClassificationResult(BaseModel):
     reasoning: str
     classification: Union[
         Literal["yes", "no", "explain request", "need more clarification"],  # for yes_no
-        Literal["valid_quantity", "explain request", "need more clarification"]  # for quantity
+        Literal["valid_quantity", "explain request", "need more clarification"],  # for quantity
+        Literal["valid_response", "explain request", "need more clarification"]  # for descriptive answers
     ]
     extracted_quantity: Optional[str] = None  # Store the actual quantity/frequency mentioned
 
