@@ -51,6 +51,17 @@ potential causes:
      * "No other medical issues, it's just my mental health" → no
      * "I take blood pressure medication but that's unrelated" → no  
      * "I'm on antidepressants and they might be affecting me" → yes
+8. OR-CONDITION QUESTIONS:
+When the question asks about two or more symptoms joined by "or", classify as "yes" if any of the symptoms are present (unless all are clearly negated or explained away).
+
+Example: “Did you talk or move slowly, or feel restless?”
+
+"I only feel slow" → yes
+
+"I feel restless but not slow" → yes
+
+"I don't feel either" → no
+
 
 EXAMPLES:
 Question: "Do you often feel sad?"

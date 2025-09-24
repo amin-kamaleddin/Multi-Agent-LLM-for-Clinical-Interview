@@ -94,6 +94,23 @@ def questioner_node(state: InterviewState) -> Dict[str, Any]:
 
     # 1. Build the system prompt + history
     current_question = state.module_loader.get_question(state.current_question_id)
+    # Special handling for "info"-type questions (e.g. definitions or intros)
+    if getattr(current_question, "responseType", "").lower() == "info":
+        # show text in the console
+        print("\n" + "-" * 30)
+        print(current_question.prompt)
+        print("-" * 30 + "\n")
+
+        # put an AI message in history so logging/diagnosis stay consistent
+        updates["messages"] = [AIMessage(content=current_question.prompt)]
+
+        # seed a label so navigator can take branches.get("default")
+        updates["evaluator_results"] = ["default"]
+
+        return updates
+
+
+    # Otherwise proceed as usual
     sys_msg = SystemMessage(content=QUESTIONER_SYSTEM_PROMPT.format(question=current_question.prompt))
 
     if len(state.evaluator_results) > 0:
@@ -181,26 +198,31 @@ def _clarify_streak(evaluator_results: list[Any], last_result) -> bool:
     else:
         return False
 
+def should_collect_input(state: InterviewState) -> str:
+    q = state.module_loader.get_question(state.current_question_id)
+    return "patient" if getattr(q, "responseType", "").lower() != "info" else "navigator"
+
+import re
 
 def evaluator_node(state: InterviewState) -> Dict[str, Any]:
-    # assume the loop-driver put the user's message in state.messages[-1]
     print("enter evaluator")
     updates: Dict[str, Any] = {}
     last_question = state.module_loader.get_question(state.current_question_id)
     patient_last_answer = state.messages[-1]
 
     response_text = patient_last_answer.content.strip().lower()
-    
-    # Create sanitized version for LLM and output, but keep original for logic
     sanitized_response = sanitize_for_llm(patient_last_answer.content)
 
     print(f"original response: {response_text}")
     print(f"sanitized response: {sanitized_response}")
 
+    # Detect red flag (first priority)
     if not state.patient_agent and detect_red_flag(response_text)[0]:
         print("Direct classification: RED FLAG")
         label = "red_flag"
         reasoning = f"Red flag detected: '{sanitized_response}'"
+
+    # Handle yes/no responses
     elif response_text == "yes":
         print("Direct classification: YES (no LLM call needed)")
         label = "yes"
@@ -209,34 +231,45 @@ def evaluator_node(state: InterviewState) -> Dict[str, Any]:
         print("Direct classification: NO (no LLM call needed)")
         label = "no"
         reasoning = f"Patient gave a clear negative response: '{sanitized_response}'"
+
+    # Handle numeric responses for number questions
+    elif last_question.responseType == "number" and re.match(r"^\d+$", response_text):
+        print("Direct classification: NUMBER (valid count)")
+        label = "number"
+        reasoning = f"Patient provided numeric response: {response_text}"
+
+    # Otherwise, fallback to LLM
     else:
         print("MAKING AN LLM CALL TO EVALUATE THE ANSWER")
         context_history = extract_question_answer_pair(log=state.conversation_log, max_pairs=5)
-        prompt = EVALUATOR_SYSTEM_PROMPT.format(previous_qa_pairs=context_history, last_question=last_question.prompt,
-                                                patient_last_answer=sanitized_response)
+        prompt = EVALUATOR_SYSTEM_PROMPT.format(
+            previous_qa_pairs=context_history,
+            last_question=last_question.prompt,
+            patient_last_answer=sanitized_response
+        )
         resp = get_structured_llm().invoke([SystemMessage(content=prompt)])
 
-        # Access Pydantic model attributes directly
         print(f"reason behind the decision: {resp.reasoning}")
         print(f"decision: {resp.classification}")
 
         label = str(resp.classification)
         reasoning = str(resp.reasoning)
 
-        if label not in ["yes", "no", "rephrase needed", "N/A", "explain request"]:
+        if label not in ["yes", "no", "rephrase needed", "N/A", "explain request", "number"]:
             label = "rephrase needed"
 
+    # Handle repeated clarify loops
     if _clarify_streak(evaluator_results=state.evaluator_results, last_result=label):
         print("Direct classification after 3 round of clarification: YES")
         label = "yes"
-        reasoning = f"Patient prompted a vague answer after three rounds of clarification :" \
-                    f" '{sanitized_response}'"
+        reasoning = f"Patient prompted a vague answer after three rounds of clarification: '{sanitized_response}'"
+
     print("exit evaluator")
 
     updates['messages'] = [AIMessage(content=reasoning)]
     updates["evaluator_results"] = [label]
-
     return updates
+
 
 
 def should_clarify(state: InterviewState) -> str:

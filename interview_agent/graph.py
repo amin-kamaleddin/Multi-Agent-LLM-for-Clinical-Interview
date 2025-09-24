@@ -11,6 +11,7 @@ from .nodes import (
     should_clarify,
     should_diagnose,
     patient_node,
+    should_collect_input
 )
 
 
@@ -24,7 +25,11 @@ def build_graph(loader: ModuleLoader, visualize: bool = True):
     sg.add_node("diagnoser", diagnoser_node)
 
     sg.add_edge(START, "questioner")
-    sg.add_edge("questioner", "patient")
+    sg.add_conditional_edges(
+        "questioner",
+        should_collect_input,
+        {"patient": "patient", "navigator": "navigator"}
+    )
     sg.add_edge("patient", "evaluator")
 
     sg.add_conditional_edges("evaluator", should_clarify,
