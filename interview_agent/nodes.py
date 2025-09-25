@@ -204,7 +204,7 @@ def evaluator_node(state: InterviewState) -> Dict[str, Any]:
     patient_last_answer = state.messages[-1]
 
     response_text = patient_last_answer.content.strip().lower()
-
+    response_type = state.module_loader.get_question(state.current_question_id).responseType
     # Create sanitized version for LLM and output, but keep original for logic
     sanitized_response = sanitize_for_llm(patient_last_answer.content)
 
@@ -215,18 +215,18 @@ def evaluator_node(state: InterviewState) -> Dict[str, Any]:
         print("Direct classification: RED FLAG")
         label = "red_flag"
         reasoning = f"Red flag detected: '{sanitized_response}'"
-    elif response_text == "yes":
+    elif response_text == "yes" and response_type == "yes_no":
         print("Direct classification: YES (no LLM call needed)")
         label = "yes"
         reasoning = f"Patient gave a clear affirmative response: '{sanitized_response}'"
-    elif response_text == "no":
+    elif response_text == "no" and response_type == "yes_no":
         print("Direct classification: NO (no LLM call needed)")
         label = "no"
         reasoning = f"Patient gave a clear negative response: '{sanitized_response}'"
     else:
         print("MAKING AN LLM CALL TO EVALUATE THE ANSWER")
         context_history = extract_question_answer_pair(log=state.conversation_log, max_pairs=5)
-        response_type = state.module_loader.get_question(state.current_question_id).responseType
+
         prompt = EVALUATOR_SYSTEM_PROMPT.format(previous_qa_pairs=context_history, response_type=response_type
                                                 , last_question=last_question.prompt,
                                                 patient_last_answer=sanitized_response)
