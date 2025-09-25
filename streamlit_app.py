@@ -136,23 +136,27 @@ def generate_questioner_question(state: InterviewState) -> AIMessage:
     """
     Render the next question (or info screen) for Streamlit and return an AIMessage.
     - For responseType == "info": show text, log it, seed "default", navigate, and skip input UI.
-    - For responseType == "text": show question, store message, skip classification, wait for free text input.
-    - For others: build the system prompt and ask the LLM.
+    - For other types: build the system prompt and ask the LLM as before.
     """
     q = state.module_loader.get_question(state.current_question_id)
     rtype = (getattr(q, "responseType", "") or "").lower()
 
-    # Save responseType to session so UI knows how to render input
-    st.session_state.current_response_type = rtype
-
     # ---------- Info-only items (e.g., A_PAST_INTRO) ----------
     if rtype == "info":
+        # 1) Show in UI (use st.info(...) if you prefer a callout style)
         st.markdown(q.prompt)
-        info_msg = AIMessage(content=q.prompt)
-        state.messages.append(info_msg)
-        state.evaluator_results.append("default")
 
+        # 2) Persist in conversation history (so it remains visible)
+        info_msg = AIMessage(content=q.prompt)
+        state.messages = list(state.messages) + [info_msg]
+
+        # 3) Seed evaluator label so navigator can follow "next": {"default": ...}
+        state.evaluator_results = list(state.evaluator_results) + ["default"]
+
+        # 4) Advance immediately via the existing navigator
         nav_updates = navigator_node(state)
+
+        # Apply navigator updates (inline, no external helper needed)
         if nav_updates.get("module_completed"):
             state.module_completed = True
         if nav_updates.get("ready_for_diagnosis"):
@@ -160,30 +164,21 @@ def generate_questioner_question(state: InterviewState) -> AIMessage:
         if "current_question_id" in nav_updates:
             next_qid = nav_updates["current_question_id"]
             state.current_question_id = next_qid
-            state.question_path.append(next_qid)
+            state.question_path = list(state.question_path) + [next_qid]
 
+        # 5) Persist state and tell the caller to skip the input box on this rerun
         st.session_state.state = state
         st.session_state.skip_input = True
 
         return info_msg
-
-    # ---------- Free-text (non-evaluated) questions ----------
-    if rtype == "text":
-        # Just return the prompt directly as an AI message
-        ai_msg = AIMessage(content=q.prompt)
-        state.messages.append(ai_msg)
-
-        # Don’t advance or classify yet — wait for user input
-        st.session_state.state = state
-        st.session_state.skip_input = False  # still expect user input
-        return ai_msg
 
     # ---------- Normal questions (yes/no, choice, number, etc.) ----------
     sys_msg = SystemMessage(
         content=QUESTIONER_SYSTEM_PROMPT.format(question=q.prompt)
     )
 
-    if state.evaluator_results:
+    # If last turn required explanation or rephrase, adjust the system prompt
+    if len(state.evaluator_results) > 0:
         last_label = state.evaluator_results[-1]
         if last_label == "explain request":
             patient_response = state.messages[-1].content if state.messages else ""
@@ -200,7 +195,10 @@ def generate_questioner_question(state: InterviewState) -> AIMessage:
                 reasoning=evaluator_reasoning
             ))
 
+    # Ask the LLM to phrase/ask the question
     response = get_llm().invoke([sys_msg])
+
+    # Ensure we always return an AIMessage
     if not isinstance(response, AIMessage):
         response = AIMessage(content=getattr(response, "content", str(response)))
 
@@ -498,7 +496,6 @@ if not st.session_state.awaiting_answer:
         st.session_state.awaiting_answer = True  # show input widget
 
 
-
 st.markdown("---")
 
 # Progress tracking
@@ -582,93 +579,53 @@ if st.session_state.get("latest_evaluator_result"):
     st.stop()
 
 # Quick response buttons
-current_question = state.module_loader.get_question(state.current_question_id)
+st.markdown("**Quick responses:**")
+col1, col2 = st.columns([1, 1])
 
-if current_question.responseType == "number":
-    user_input = st.number_input("Enter a number (e.g. 1, 2, 3...)", min_value=0, step=1)
+with col1:
+    yes_clicked = st.button("Yes", use_container_width=True, type="secondary")
+with col2:
+    no_clicked = st.button("No", use_container_width=True, type="secondary")
+
+user_input = st.text_area("Your answer", height=120, key="answer_input")
+
+col3, col4 = st.columns([1, 1])
+
+with col3:
     submit_clicked = st.button("Submit answer", use_container_width=True)
+with col4:
+    cancel_clicked = st.button("Cancel / Reset", use_container_width=True)
 
-else:
-    # Show quick buttons and text input
-    if st.session_state.current_response_type not in ["text"]:
-        st.markdown("**Quick responses:**")
-        col1, col2 = st.columns([1, 1])
-        with col1:
-            yes_clicked = st.button("Yes", use_container_width=True, type="secondary")
-        with col2:
-            no_clicked = st.button("No", use_container_width=True, type="secondary")
-    else:
-        yes_clicked = no_clicked = False
-
-
-    user_input = st.text_area("Your answer", height=120, key="answer_input")
-
-    col3, col4 = st.columns([1, 1])
-    with col3:
-        submit_clicked = st.button("Submit answer", use_container_width=True)
-    with col4:
-        cancel_clicked = st.button("Cancel / Reset", use_container_width=True)
-
-    if cancel_clicked:
-        st.session_state.awaiting_answer = False
-        st.session_state["clear_answer"] = True
-        st.rerun()
-
+if cancel_clicked:
+    st.session_state.awaiting_answer = False
+    st.session_state["clear_answer"] = True
+    st.rerun()
 
 # Handle button clicks - Yes/No buttons or Submit button
 answer = ""
-if current_question.responseType == "number":
-    if submit_clicked:
-        answer = str(user_input)  # Convert number to string for uniform handling
-else:
-    if yes_clicked:
-        answer = "Yes"
-    elif no_clicked:
-        answer = "No"
-    elif submit_clicked:
-        answer = st.session_state["answer_input"].strip()
-        if not answer:
-            st.warning("Please enter an answer before submitting.")
-            st.stop()
-
+if yes_clicked:
+    answer = "Yes"
+elif no_clicked:
+    answer = "No"
+elif submit_clicked:
+    answer = st.session_state["answer_input"].strip()
+    if not answer:
+        st.warning("Please enter an answer before submitting.")
+        st.stop()
     
 
 if answer:
     human_msg = HumanMessage(content=answer)
     state.messages = list(state.messages) + [human_msg]
 
-    # For 'text' inputs, skip evaluator and proceed directly
-    if st.session_state.current_response_type == "text":
-        # Log the free-text answer manually
-        state.conversation_log.append({
-            "question_id": state.current_question_id,
-            "question": state.module_loader.get_question(state.current_question_id).prompt,
-            "answer": answer,
-            "classification": "text"
-        })
-
-        # Skip evaluator, but manually move to next question
-        updates = navigator_node(state)
-        state = apply_navigator_updates(state, updates)
-
-        # Update session state and rerun
-        st.session_state.state = state
-        st.session_state.latest_evaluator_result = None
-        st.session_state.awaiting_answer = False
-        st.session_state.clear_answer = True
-        st.rerun()
-        st.stop()  # Prevents the evaluator from being run for 'text' input
-
-
-    # (Only reaches here if not a 'text' response)
     evaluator_result = evaluator_node(state)
-
+    
     # Store evaluator results for display
     st.session_state.latest_evaluator_result = {
         "evaluator_data": evaluator_result,
         "user_answer": answer
     }
-
+    
     state.messages = list(state.messages) + evaluator_result["messages"]
     state.evaluator_results = list(state.evaluator_results) + evaluator_result["evaluator_results"]
 

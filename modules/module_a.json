@@ -125,9 +125,9 @@
       "id": "A3e_delusional_recent",
       "group": "A3e",
       "prompt": "Can you describe the kind of guilt or worthlessness you felt? For example, did you feel you deserved punishment, caused disasters, or had a disease or illness you didn’t?",
-      "responseType": "text",
+      "responseType": "descriptive",
       "next": {
-        "default": "A3f_past"
+        "valid_response": "A3f_past"
       }
     },
     {
@@ -220,9 +220,9 @@
       "id": "A3e_delusional_past",
       "group": "A3e",
       "prompt": "Can you describe the kind of guilt or worthlessness you felt? For example, did you feel you deserved punishment, caused disasters, or had a disease or illness you didn’t?",
-      "responseType": "text",
+      "responseType": "descriptive",
       "next": {
-        "default": "A3f_past"
+        "valid_response": "A3f_past"
       }
     },
     {
@@ -286,15 +286,15 @@
         "red_flag": "END_MODULE"
       }
     },
-    {
-      "id": "A6a",
-      "prompt": "How many episodes of depression have you had in your lifetime? (Only count if at least 2 months passed between episodes.)",
-      "responseType": "number",
-      "next": {
-        "number": "O1a",
-        "red_flag": "END_MODULE"
-      }
-    },
+  {
+    "id": "A6a",
+    "prompt": "How many episodes of depression have you had in your lifetime? (Only count if at least 2 months passed between episodes.)",
+    "responseType": "quantity", 
+    "next": {
+      "valid_quantity": "O1a", 
+      "red_flag": "END_MODULE"
+    }
+  },
     {
       "id": "O1a",
       "prompt": "Were you taking any drugs or medicines or in withdrawal from any of these? I am trying to understand if the symptoms you have described could be caused by other organic factors.",

@@ -1,12 +1,12 @@
-import json, os, sys
+import json
+import os
 from datetime import datetime
+from pathlib import Path
 from typing import Any, Dict
-from openai import OpenAI
 
 from dotenv import load_dotenv
 from langchain_openai import ChatOpenAI
 from pydantic import ValidationError
-from pathlib import Path
 
 from utils.extract_question_answer_pair import extract_question_answer_pair
 from utils.redact_sensitive import sanitize_for_llm
@@ -36,17 +36,20 @@ _structured_llm = None
 _diagnosis_llm = None
 _patient_llm = None
 
+
 def get_llm():
     global _llm
     if _llm is None:
         _llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.1)
     return _llm
 
+
 def get_evaluator_llm():
     global _evaluator_llm
     if _evaluator_llm is None:
-        _evaluator_llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.1)
+        _evaluator_llm = ChatOpenAI(model="gpt-5-mini", reasoning_effort="low")
     return _evaluator_llm
+
 
 def get_structured_llm():
     global _structured_llm
@@ -54,11 +57,14 @@ def get_structured_llm():
         _structured_llm = get_evaluator_llm().with_structured_output(ClassificationResult)
     return _structured_llm
 
+
 def get_diagnosis_llm():
     global _diagnosis_llm
     if _diagnosis_llm is None:
-        _diagnosis_llm = ChatOpenAI(model="gpt-4.1-mini", temperature=0.1).with_structured_output(DiagnosisResult)
+        _diagnosis_llm = ChatOpenAI(model="gpt-5-mini", reasoning_effort="medium").with_structured_output(
+            DiagnosisResult)
     return _diagnosis_llm
+
 
 def get_patient_llm():
     global _patient_llm
@@ -66,25 +72,31 @@ def get_patient_llm():
         _patient_llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.9)
     return _patient_llm
 
+
 # Module-level lazy loading - these will call the getter functions
 def _get_module_llm():
     return get_llm()
 
+
 def _get_module_evaluator_llm():
     return get_evaluator_llm()
+
 
 def _get_module_structured_llm():
     return get_structured_llm()
 
+
 def _get_module_diagnosis_llm():
     return get_diagnosis_llm()
+
 
 def _get_module_patient_llm():
     return get_patient_llm()
 
+
 # ------------------------------ Global Vars ------------------------------ #
 AUTO_SET_YES_AFTER = 3  # after 3 consecutive clarifies, the 4th auto-yes
-
+VALID_LABELS = ["yes", "no", "rephrase needed", "explain request", "valid_quantity", "valid_response"] # valid labels from evaluator
 
 # -------------------------------- Nodes ------------------------------------ #
 def questioner_node(state: InterviewState) -> Dict[str, Any]:
@@ -117,12 +129,14 @@ def questioner_node(state: InterviewState) -> Dict[str, Any]:
         if state.evaluator_results[-1] == "explain request":
             updates["conversation_log"] = [_log_entry(state)]
             patient_response = sanitize_for_llm(state.messages[-1].content)
-            sys_msg = SystemMessage(EXPLAIN_PROMPT.format(response=patient_response, current_question=current_question.prompt))
+            sys_msg = SystemMessage(
+                EXPLAIN_PROMPT.format(response=patient_response, current_question=current_question.prompt))
         elif state.evaluator_results[-1] == "rephrase needed":
             updates["conversation_log"] = [_log_entry(state)]
             # Generate specific clarification using LLM based on patient's unclear response
             patient_response = sanitize_for_llm(state.messages[-1].content)
-            evaluator_reasoning = sanitize_for_llm(state.messages[-2].content) if len(state.messages) >= 2 else "Response was unclear"
+            evaluator_reasoning = sanitize_for_llm(state.messages[-2].content) if len(
+                state.messages) >= 2 else "Response was unclear"
 
             clarification_prompt = CLARIFICATION_PROMPT.format(
                 question=current_question.prompt,
@@ -135,7 +149,7 @@ def questioner_node(state: InterviewState) -> Dict[str, Any]:
 
     # 2. Invoke LLM to get the next question
     response = get_llm().invoke(msgs)
-    print('\n\n' + 15* '--' + f" Start of question {state.current_question_id}" + 15* '--')
+    print('\n\n' + 15 * '--' + f" Start of question {state.current_question_id}" + 15 * '--')
     print(response.content)  # show question to user
 
     # 3. Immediately read the user's answer
@@ -202,27 +216,25 @@ def should_collect_input(state: InterviewState) -> str:
     q = state.module_loader.get_question(state.current_question_id)
     return "patient" if getattr(q, "responseType", "").lower() != "info" else "navigator"
 
-import re
-
 def evaluator_node(state: InterviewState) -> Dict[str, Any]:
+    # assume the loop-driver put the user's message in state.messages[-1]
     print("enter evaluator")
     updates: Dict[str, Any] = {}
     last_question = state.module_loader.get_question(state.current_question_id)
     patient_last_answer = state.messages[-1]
 
     response_text = patient_last_answer.content.strip().lower()
+
+    # Create sanitized version for LLM and output, but keep original for logic
     sanitized_response = sanitize_for_llm(patient_last_answer.content)
 
     print(f"original response: {response_text}")
     print(f"sanitized response: {sanitized_response}")
 
-    # Detect red flag (first priority)
-    if not state.patient_agent and detect_red_flag(response_text)[0]:
+    if not state.patient_agent and (state.red_flag and detect_red_flag(response_text)[0]):
         print("Direct classification: RED FLAG")
         label = "red_flag"
         reasoning = f"Red flag detected: '{sanitized_response}'"
-
-    # Handle yes/no responses
     elif response_text == "yes":
         print("Direct classification: YES (no LLM call needed)")
         label = "yes"
@@ -231,45 +243,36 @@ def evaluator_node(state: InterviewState) -> Dict[str, Any]:
         print("Direct classification: NO (no LLM call needed)")
         label = "no"
         reasoning = f"Patient gave a clear negative response: '{sanitized_response}'"
-
-    # Handle numeric responses for number questions
-    elif last_question.responseType == "number" and re.match(r"^\d+$", response_text):
-        print("Direct classification: NUMBER (valid count)")
-        label = "number"
-        reasoning = f"Patient provided numeric response: {response_text}"
-
-    # Otherwise, fallback to LLM
     else:
         print("MAKING AN LLM CALL TO EVALUATE THE ANSWER")
         context_history = extract_question_answer_pair(log=state.conversation_log, max_pairs=5)
-        prompt = EVALUATOR_SYSTEM_PROMPT.format(
-            previous_qa_pairs=context_history,
-            last_question=last_question.prompt,
-            patient_last_answer=sanitized_response
-        )
+        response_type = state.module_loader.get_question(state.current_question_id).responseType
+        prompt = EVALUATOR_SYSTEM_PROMPT.format(previous_qa_pairs=context_history, response_type=response_type
+                                                , last_question=last_question.prompt,
+                                                patient_last_answer=sanitized_response)
         resp = get_structured_llm().invoke([SystemMessage(content=prompt)])
 
+        # Access Pydantic model attributes directly
         print(f"reason behind the decision: {resp.reasoning}")
         print(f"decision: {resp.classification}")
 
         label = str(resp.classification)
         reasoning = str(resp.reasoning)
 
-        if label not in ["yes", "no", "rephrase needed", "N/A", "explain request", "number"]:
+        if label not in VALID_LABELS:
             label = "rephrase needed"
 
-    # Handle repeated clarify loops
     if _clarify_streak(evaluator_results=state.evaluator_results, last_result=label):
         print("Direct classification after 3 round of clarification: YES")
         label = "yes"
-        reasoning = f"Patient prompted a vague answer after three rounds of clarification: '{sanitized_response}'"
-
+        reasoning = f"Patient prompted a vague answer after three rounds of clarification :" \
+                    f" '{sanitized_response}'"
     print("exit evaluator")
 
     updates['messages'] = [AIMessage(content=reasoning)]
     updates["evaluator_results"] = [label]
-    return updates
 
+    return updates
 
 
 def should_clarify(state: InterviewState) -> str:
@@ -278,7 +281,8 @@ def should_clarify(state: InterviewState) -> str:
 
 def _log_entry(state: InterviewState) -> Dict[str, Any]:
     # Determine if this is a clarification based on previous evaluator results
-    exchange_type = "clarification" if len(state.evaluator_results) > 1 and state.evaluator_results[-2] in ["rephrase needed", "explain request"] else "initial"
+    exchange_type = "clarification" if len(state.evaluator_results) > 1 and state.evaluator_results[-2] in [
+        "rephrase needed", "explain request"] else "initial"
 
     return {
         "question_id": state.current_question_id,
@@ -351,13 +355,13 @@ def diagnoser_node(state: InterviewState):
             if not rule_list:
                 result[group_name] = {"diagnosis": False, "timeFrame": None, "reasoning": "No criteria provided."}
                 continue
-            criteria_formatted = "\n".join(f"{i+1}. {crit}" for i, crit in enumerate(rule_list))
+            criteria_formatted = "\n".join(f"{i + 1}. {crit}" for i, crit in enumerate(rule_list))
         elif isinstance(rule_list, str):
             criteria_formatted = rule_list.strip()
         else:
             result[group_name] = {"diagnosis": False, "timeFrame": None, "reasoning": "Invalid criteria format."}
             continue
-        
+
         # Use special prompts for specific modules
         if module_id == "G":
             prompt = MODULE_G_DIAGNOSER_PROMPT.format(
@@ -373,8 +377,8 @@ def diagnoser_node(state: InterviewState):
             )
         else:
             prompt = DIAGNOSER_SYSTEM_PROMPT.format(
-                summary=summary, 
-                group_name=group_name, 
+                summary=summary,
+                group_name=group_name,
                 criteria_formatted=criteria_formatted,
                 module_id=module_id
             )
@@ -386,7 +390,7 @@ def diagnoser_node(state: InterviewState):
         if content.startswith("```json"):
             content = content.removeprefix("```json").removesuffix("```").strip()
 
-        print(f"LLM JSON output for group '{group_name}':\n{content}\n{'-'*40}")
+        print(f"LLM JSON output for group '{group_name}':\n{content}\n{'-' * 40}")
 
         try:
             data = json.loads(content)
@@ -394,7 +398,7 @@ def diagnoser_node(state: InterviewState):
         except (json.JSONDecodeError, ValidationError) as e:
             # Ensure the errors directory exists
             os.makedirs("errors", exist_ok=True)
-            
+
             # Save the raw LLM output
             error_path = f"errors/group_{group_name}_raw.txt"
             with open(error_path, "w", encoding="utf-8") as f:
