@@ -1,0 +1,220 @@
+{
+  "module": {
+    "id": "H",
+    "name": "Posttraumatic stress disorder"
+  },
+  "instructions": [
+  ],
+  "questions": [
+    {
+      "id": "H1",
+      "prompt": "Have you ever experienced or witnessed or had to deal with an extremely traumatic event that included actual or threatened death or serious injury or sexual violence to you or someone else?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "H2",
+        "no": "DIAGNOSTIC"
+      }
+    },
+    {
+      "id": "H2",
+      "prompt": "Starting after the traumatic event, did you repeatedly re-experience the event in an unwanted mentally distressing way, (such as in recurrent dreams related to the event, intense recollections or memories, or flashbacks or as if the event was recurring) or did you have intense physical or psychological reactions when you were reminded about the event or exposed to a similar event?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "H3a",
+        "no": "DIAGNOSTIC"
+      }
+    },
+    {
+      "id": "H3a",
+      "prompt": "In the past month, did you persistently try to avoid thinking about or remembering distressing details or feelings related to the event?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "H3b",
+        "no": "H3b"
+      }
+    },
+    {
+      "id": "H3b",
+      "prompt": "In the past month, did you persistently try to avoid people, conversations, places, situations, activities or things that bring back distressing recollections of the event?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "H4a",
+        "no": "H4a"
+      }
+    },
+    {
+      "id": "H4a",
+      "prompt": "In the past month, did you have trouble recalling some important part of the trauma? (but not because of or related to head trauma, alcohol or drugs).",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "H4b",
+        "no": "H4b"
+      }
+    },
+    {
+      "id": "H4b",
+      "prompt": "In the past month, were you constantly and unreasonably negative about yourself or others or the world?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "H4c",
+        "no": "H4c"
+      }
+    },
+    {
+      "id": "H4c",
+      "prompt": "In the past month, did you constantly blame yourself or others in unreasonable ways for the trauma?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "H4d",
+        "no": "H4d"
+      }
+    },
+    {
+      "id": "H4d",
+      "prompt": "In the past month, were your feelings always negative (such as fear, horror, anger, guilt or shame)?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "H4e",
+        "no": "H4e"
+      }
+    },
+    {
+      "id": "H4e",
+      "prompt": "In the past month, have you become much less interested in participating in activities that were meaningful to you before?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "H4f",
+        "no": "H4f"
+      }
+    },
+    {
+      "id": "H4f",
+      "prompt": "In the past month, did you feel detached or estranged from others?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "H4g",
+        "no": "H4g"
+      }
+    },
+    {
+      "id": "H4g",
+      "prompt": "In the past month, were you unable to experience any good feelings (such as happiness, satisfaction or loving feelings)?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "H5a",
+        "no": "H5a"
+      }
+    },
+    {
+      "id": "H5a",
+      "prompt": "In the past month, Were you especially irritable or did you have outbursts of anger with little or no provocation?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "H5b",
+        "no": "H5b"
+      }
+    },
+    {
+      "id": "H5b",
+      "prompt": "In the past month, were you more reckless or more self-destructive?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "H5c",
+        "no": "H5c"
+      }
+    },
+    {
+      "id": "H5c",
+      "prompt": "In the past month, were you more nervous or constantly on your guard?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "H5d",
+        "no": "H5d"
+      }
+    },
+    {
+      "id": "H5d",
+      "prompt": "In the past month, were you more easily startled?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "H5e",
+        "no": "H5e"
+      }
+    },
+    {
+      "id": "H5e",
+      "prompt": "In the past month, did you have more difficulty concentrating?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "H5f",
+        "no": "H5f"
+      }
+    },
+    {
+      "id": "H5f",
+      "prompt": "In the past month, did you have more difficulty sleeping?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "H6",
+        "no": "H6"
+      }
+    },
+    {
+      "id": "H6",
+      "prompt": "Did all these problems start after the traumatic event and last for more than one month?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "H7",
+        "no": "DIAGNOSTIC"
+      }
+    },
+    {
+      "id": "H7",
+      "prompt": "During the past month, did these problems cause significant distress, or interfere with your ability to function at home, at work, at school or socially or in your relationships or in some other important way?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "O1a",
+        "no": "DIAGNOSTIC"
+      }
+    },
+    {
+      "id": "O1a",
+      "prompt": "Were you taking any drugs or medicines or in withdrawal from any of these? I am trying to understand if the symptoms you have described could be caused by other organic factors.",
+      "responseType": "choice",
+      "options": "yes_no",
+      "next": {
+        "no": "O1b",
+        "yes": "O1b"
+      }
+    },
+    {
+      "id": "O1b",
+      "prompt": "Did you have any other medical illness unrelated to the one we discussed today? I am trying to understand if the symptoms you have described could be caused by other organic factors.",
+      "responseType": "choice",
+      "options": "yes_no",
+      "next": {
+        "no": "DIAGNOSTIC",
+        "yes": "DIAGNOSTIC"
+      }
+    }
+  ],
+  "diagnosticCriteria": {
+    "posttraumaticstressdisorder": {
+      "positive": [
+        "H7 coded YES",
+        "ARE 1 OR MORE H3a-b ANSWERS CODED YES?",
+        "ARE 2 OR MORE H4a-g ANSWERS CODED YES?",
+        "ARE 2 OR MORE H5a-f ANSWERS CODED YES?",
+        "O1a = NO AND O1b = NO"
+      ],
+      "depersonalization, derealization or with delayed expression": [
+        "H7 coded YES",
+        "SPECIFY IF THE CONDITION IS ASSOCIATED WITH DEPERSONALIZATION, DEREALIZATION OR WITH DELAYED EXPRESSION.",
+        "ARE 1 OR MORE H3a-b ANSWERS CODED YES?",
+        "ARE 2 OR MORE H4a-g ANSWERS CODED YES?",
+        "ARE 2 OR MORE H5a-f ANSWERS CODED YES?",
+        "O1a = NO AND O1b = NO"
+      ]
+    }
+  }
+}

@@ -10,6 +10,7 @@ from pydantic import ValidationError
 
 from utils.extract_question_answer_pair import extract_question_answer_pair
 from utils.redact_sensitive import sanitize_for_llm
+from utils.skip_logic_module_h import module_h_ready_to_diagnose
 from utils.transcribe_audio import transcribe_audio_file
 
 # Load environment variables from .env file
@@ -96,7 +97,9 @@ def _get_module_patient_llm():
 
 # ------------------------------ Global Vars ------------------------------ #
 AUTO_SET_YES_AFTER = 3  # after 3 consecutive clarifies, the 4th auto-yes
-VALID_LABELS = ["yes", "no", "rephrase needed", "explain request", "valid_quantity", "valid_response"] # valid labels from evaluator
+VALID_LABELS = ["yes", "no", "rephrase needed", "explain request", "valid_quantity",
+                "valid_response"]  # valid labels from evaluator
+
 
 # -------------------------------- Nodes ------------------------------------ #
 def questioner_node(state: InterviewState) -> Dict[str, Any]:
@@ -295,6 +298,8 @@ def navigator_node(state: InterviewState) -> Dict[str, Any]:
 
 
 def should_diagnose(state: InterviewState) -> str:
+    if state.current_question_id.startswith('H'):
+        return "diagnose" if module_h_ready_to_diagnose(state) else "continue"
     if state.ready_for_diagnosis:
         return "diagnose"
     else:
