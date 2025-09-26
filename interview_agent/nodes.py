@@ -106,10 +106,10 @@ def questioner_node(state: InterviewState) -> Dict[str, Any]:
     """questioner node that presents questions, then collects user reply."""
     print("enter questioner")
     updates: Dict[str, Any] = {}
-
+    q_a_pairs = extract_question_answer_pair(state.conversation_log, max_pairs=2)
     # 1. Build the system prompt + history
     current_question = state.module_loader.get_question(state.current_question_id)
-    sys_msg = SystemMessage(content=QUESTIONER_SYSTEM_PROMPT.format(question=current_question.prompt))
+    sys_msg = SystemMessage(content=QUESTIONER_SYSTEM_PROMPT.format(question=current_question.prompt, q_a_pairs=q_a_pairs))
 
     if len(state.evaluator_results) > 0:
         if state.evaluator_results[-1] == "explain request":
