@@ -1,6 +1,6 @@
 {
   "module": {
-    "id": "B",
+    "id": "C",
     "name": "Manic and hypomanic episodes"
   },
   "instructions": [
@@ -356,7 +356,7 @@
         "either C4C OR C5 OR C6 coded YES?",
         "is the episode past? (C1b = NO AND C2b = NO) OR (No answer to C1b and C2b)",
         "O1a = NO AND O1b = NO"
-      ],
+      ]
     }
   }
 }

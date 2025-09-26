@@ -31,3 +31,4 @@ build/
 
 # Reports
 reports/
+patient_agent_results/*

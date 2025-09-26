@@ -24,15 +24,14 @@ def main():
     PATIENT_AGENT = args.patient_agent.lower() == "true"
 
     module_file = None
-    available_modules = ["a", "d", "e", "f", "g", "h", "n", "o", "p", "b", "c", "x"]
+    available_modules = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "n", "o", "p", "x"]
 
     print(
         "\nWelcome to the MINI interview agent. I will guide you through a series of brief questions to assess your "
         "symptoms and help a clinician determine your next steps.\n")
     print(
         "Patient Agent mode is activated and will simulate the end user behaviour\n" if PATIENT_AGENT else "end user mode is activated\n")
-    print("Please enter the letter corresponding to the module you want to start with: (a, b, c, d, e, f, g, h, n, o, "
-          "p)")
+    print(f"Please enter the letter corresponding to the module you want to start with: {available_modules}")
     module_file = input()
 
     while True:
@@ -40,7 +39,7 @@ def main():
             module_file = f"modules/module_{module_file.lower()}.json"
             break
         else:
-            print("Invalid module letter. Please enter a valid letter: (a, b, c, d, e, f, g, h, n, o, p)")
+            print(f"Invalid module letter. Please enter a valid letter: {available_modules}")
             module_file = input().strip()
 
     # Check if file exists
