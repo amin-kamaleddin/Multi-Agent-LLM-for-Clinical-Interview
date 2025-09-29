@@ -24,7 +24,7 @@ def main():
     PATIENT_AGENT = args.patient_agent.lower() == "true"
 
     module_file = None
-    available_modules = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "n", "o", "p", "x"]
+    available_modules = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "l", "n", "o", "p", "x"]
 
     print(
         "\nWelcome to the MINI interview agent. I will guide you through a series of brief questions to assess your "

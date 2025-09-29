@@ -122,38 +122,16 @@
         "yes": "O1a",
         "no": "O1a"
       }
-    },
-
-    {
-      "id": "O1a",
-      "prompt": "Were you taking any drugs or medicines or in withdrawal from any of these? I am trying to understand if the symptoms you have described could be caused by other organic factors.",
-      "responseType": "choice",
-      "options": "yes_no",
-      "next": {
-        "no": "O1b",
-        "yes": "O1b"
-      }
-    },
-    {
-      "id": "O1b",
-      "prompt": "Did you have any other medical illness unrelated to the one we discussed today? I am trying to understand if the symptoms you have described could be caused by other organic factors.",
-      "responseType": "choice",
-      "options": "yes_no",
-      "next": {
-        "no": "DIAGNOSTIC",
-        "yes": "DIAGNOSTIC"
-      }
     }
   ],
   "diagnosticCriteria": {
     "alcoholusedisorder": {
       "positive": [
-        "ARE 2 OR MORE I2 ANSWERS FROM I2a THROUGH I2k CODED YES? (I2k1 AND I2k2 TOGETHER COUNT AS ONE AMONG THESE CHOICES)",
-        "O1a = NO AND O1b = NO"
+        "ARE 2 OR MORE I2 ANSWERS FROM I2a THROUGH I2k CODED YES? (I2k1 AND I2k2 TOGETHER COUNT AS ONE AMONG THESE CHOICES)"
       ],
       "severity": [
-        "MILD = 2-3 OF THE I2 SYMPTOMS\nMODERATE = 4-5 OF THE I2 SYMPTOMS\nSEVERE = 6 OR MORE OF THE I2 SYMPTOMS\nIN EARLY REMISSION = CRITERIA NOT MET FOR BETWEEN 3 & 12 MONTHS.\nIN SUSTAINED REMISSION = CRITERIA NOT MET FOR 12 MONTHS OR MORE.\n(BOTH WITH THE EXCEPTION OF CRITERION d- (CRAVING) ABOVE.)\nIN A CONTROLLED ENVIRONMENT = WHERE ALCOHOL ACCESS IS RESTRICTED.",
-        "O1a = NO AND O1b = NO"
+        "MILD = 2-3 OF THE I2 SYMPTOMS\nMODERATE = 4-5 OF THE I2 SYMPTOMS\nSEVERE = 6 OR MORE OF THE I2 SYMPTOMS\nIN EARLY REMISSION = CRITERIA NOT MET FOR BETWEEN 3 & 12 MONTHS.\nIN SUSTAINED REMISSION = CRITERIA NOT MET FOR 12 MONTHS OR MORE.\n(BOTH WITH THE EXCEPTION OF CRITERION d- (CRAVING) ABOVE.)\nIN A CONTROLLED ENVIRONMENT = WHERE ALCOHOL ACCESS IS RESTRICTED."
+
       ]
     }
   }

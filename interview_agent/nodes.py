@@ -8,6 +8,7 @@ from dotenv import load_dotenv
 from langchain_openai import ChatOpenAI
 from pydantic import ValidationError
 
+from utils.bmi import is_bmi_below_normal
 from utils.extract_question_answer_pair import extract_question_answer_pair
 from utils.redact_sensitive import sanitize_for_llm
 from utils.skip_logic_module_h import module_h_ready_to_diagnose
@@ -298,6 +299,8 @@ def navigator_node(state: InterviewState) -> Dict[str, Any]:
 
 
 def should_diagnose(state: InterviewState) -> str:
+    if state.current_question_id == "L2":
+        return "continue" if is_bmi_below_normal(state) else "diagnose"
     if state.current_question_id.startswith('H'):
         return "diagnose" if module_h_ready_to_diagnose(state) else "continue"
     if state.ready_for_diagnosis:
