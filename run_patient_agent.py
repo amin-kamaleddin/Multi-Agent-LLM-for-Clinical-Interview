@@ -34,10 +34,12 @@ clarification if helpful.
 """
 
 patient_llm = ChatOpenAI(model="gpt-4o-mini", temperature=1)
-FILE_NAME = "patients_with_system_prompts_module_G"
+FILE_NAME = "patients_with_system_prompts_module_A"
 
 # NEW: Starting ID variable - set this to control which patient to start from
-STARTING_PATIENT_ID = 1
+STARTING_PATIENT_ID = 78
+ENDING_PATIENT_ID = 90  # Set this to the last patient ID you want to process
+
 
 
 class InterviewState(BaseModel):
@@ -100,6 +102,7 @@ def build_graph(loader: ModuleLoader, visualize: bool = True):
     return compiled_sg
 
 
+
 def run():
     _load_key()
 
@@ -107,10 +110,13 @@ def run():
     with open("./interview_agent/prompts/" + FILE_NAME + ".json", "r", encoding="utf-8") as f:
         patients_data = json.load(f)
 
-    # Filter patients starting from the specified ID
-    filtered_patients = [entry for entry in patients_data if entry.get("id", 0) >= STARTING_PATIENT_ID]
+    # Filter patients within the specified range
+    filtered_patients = [
+        entry for entry in patients_data
+        if STARTING_PATIENT_ID <= entry.get("id", 0) <= ENDING_PATIENT_ID
+    ]
 
-    print(f"Processing {len(filtered_patients)} patients starting from ID {STARTING_PATIENT_ID}")
+    print(f"Processing {len(filtered_patients)} patients from ID {STARTING_PATIENT_ID} to {ENDING_PATIENT_ID}")
 
     for entry in filtered_patients:
         if "System Prompt" not in entry or "id" not in entry or "Module" not in entry:

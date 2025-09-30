@@ -14,7 +14,7 @@ from .nodes import (
 )
 
 
-def build_graph(loader: ModuleLoader, visualize: bool = True):
+def build_graph(loader: ModuleLoader, visualize: bool = False):
     sg = StateGraph(InterviewState)
 
     sg.add_node("questioner", questioner_node)

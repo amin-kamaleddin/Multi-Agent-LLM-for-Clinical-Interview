@@ -1,0 +1,169 @@
+{
+  "module": {
+    "id": "J",
+    "name": "Substance use disorder"
+  },
+  "instructions": [
+  ],
+  "questions": [
+    {
+      "id": "J1",
+      "prompt": "In the past 12 months, did you take any of these drugs more than once, to get high, to feel elated, to get “a buzz” or to change your mood?\nStimulants: amphetamines, \"speed\", crystal meth, “crank”, Dexedrine, Ritalin, diet pills.\nCocaine: snorting, IV, freebase, crack, \"speedball\".\nOpiates: heroin, morphine, Dilaudid, opium, Demerol, methadone, Darvon, codeine, Percodan, Vicodin, OxyContin.\nHallucinogens: LSD (\"acid\"), mescaline, peyote, psilocybin, STP, \"mushrooms\", “ecstasy”, MDA, MDMA.\nDissociative Drugs: PCP (Phencyclidine ,\"Angel Dust\", \"Peace Pill\", “Hog”), or ketamine (“Special K”).\nInhalants: \"glue\", ethyl chloride, “rush”, nitrous oxide (\"laughing gas\"), amyl or butyl nitrate (\"poppers\").\nCannabis: marijuana, hashish (\"hash\"), THC, \"pot\", \"grass\", \"weed\", \"reefer\".\nSedatives, Hypnotics or Anxiolytics: Quaalude, Seconal (\"reds\"), Valium, Xanax, Librium, Ativan, Dalmane, Halcion,\nbarbiturates, Miltown, GHB, Roofinol, “Roofies”.\nMiscellaneous: steroids, nonprescription sleep or diet pills. Cough Medicine? Any others?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "J1a",
+        "no": "DIAGNOSTIC",
+        "red_flag": "END_MODULE"
+      }
+    },
+    {
+      "id": "J1a",
+      "prompt": "SPECIFY THE MOST USED DRUG(S):",
+      "responseType": "descriptive",
+      "next": {
+        "valid_response": "J1b",
+        "red_flag": "END_MODULE"
+      }
+    },
+    {
+      "id": "J1b",
+      "prompt": "WHICH DRUG(S) CAUSE THE BIGGEST PROBLEMS?",
+      "responseType": "descriptive",
+      "next": {
+        "valid_response": "J2a",
+        "red_flag": "END_MODULE"
+      }
+    },
+    {
+      "id": "J2a",
+      "prompt": "During the times when you used the drug, did you end up using more (NAME OF DRUG) than you planned when you started?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "J2b",
+        "no": "J2b",
+        "red_flag": "END_MODULE"
+      }
+    },
+    {
+      "id": "J2b",
+      "prompt": "Did you repeatedly want to reduce or control your (NAME OF DRUG) use?\nOR\nDid you try to cut down or control your (NAME OF DRUG) use, but failed?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "J2c",
+        "no": "J2c",
+        "red_flag": "END_MODULE"
+      }
+    },
+    {
+      "id": "J2c",
+      "prompt": "On the days that you used more (NAME OF DRUG / DRUG CLASS SELECTED), did you spend substantial time obtaining (NAME OF DRUG / DRUG CLASS SELECTED), using it, or recovering from the its effects?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "J2d",
+        "no": "J2d",
+        "red_flag": "END_MODULE"
+      }
+    },
+    {
+      "id": "J2d",
+      "prompt": "Did you crave or have a strong desire or urge to use (NAME OF DRUG / DRUG CLASS SELECTED)?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "J2e",
+        "no": "J2e",
+        "red_flag": "END_MODULE"
+      }
+    },
+    {
+      "id": "J2e",
+      "prompt": "Did you spend less time meeting your responsibilities at work, at school, or at home, because of your repeated (NAME OF DRUG / DRUG CLASS SELECTED) use?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "J2f",
+        "no": "J2f",
+        "red_flag": "END_MODULE"
+      }
+    },
+    {
+      "id": "J2f",
+      "prompt": "If your (NAME OF DRUG / DRUG CLASS SELECTED) use caused problems with your family or other people, did you still keep on using it?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "J2g",
+        "no": "J2g",
+        "red_flag": "END_MODULE"
+      }
+    },
+    {
+      "id": "J2g",
+      "prompt": "Did you use the drug more than once in any situation where you or others were physically at risk, for example, driving a car, riding a motorbike, using machinery, boating, etc.?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "J2h",
+        "no": "J2h",
+        "red_flag": "END_MODULE"
+      }
+    },
+    {
+      "id": "J2h",
+      "prompt": "Did you continue to use (NAME OF DRUG / DRUG CLASS SELECTED), even though it was clear that the (NAME OF DRUG / DRUG CLASS SELECTED) had caused or worsened psychological or physical problems?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "J2i",
+        "no": "J2i",
+        "red_flag": "END_MODULE"
+      }
+    },
+    {
+      "id": "J2i",
+      "prompt": "Did you reduce or give up important work, social or recreational activities because of your (NAME OF DRUG / DRUG CLASS SELECTED) use?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "J2j",
+        "no": "J2j",
+        "red_flag": "END_MODULE"
+      }
+    },
+    {
+      "id": "J2j",
+      "prompt": "Did you need to use (NAME OF DRUG / DRUG CLASS SELECTED) a lot more in order to get the same effect that you got when you first started using it or did you get much less effect with continued use of the same amount?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "J2k1",
+        "no": "J2k1",
+        "red_flag": "END_MODULE"
+      }
+    },
+    {
+      "id": "J2k1",
+      "prompt": "When you cut down on heavy or prolonged use of the drug did you have any of the following withdrawal symptoms: 1. Increased sweating or increased heart rate\n2. Hand tremor or “the shakes”\n3. Trouble sleeping / difficulty sleeping / vivid or unpleasant dreams\n4. Nausea or vomiting\n5. Hearing or seeing things other people could not see or hear, or having sensations in your skin for no apparent reason\n6. Agitation\n7. Anxiety / nervousness\n8. Seizures\n9. Feeling depressed\n10. Muscle aches\n11. Runny nose or teary eyes\n12. Dilated pupils, goose bumps, hair standing on end, or sweating\n13. Diarrhea\n14. Yawning\n15. Hot flashes or chills\n16. Fatigue\n17. Increased appetite\n18. Feeling or looking physically or mentally slowed down\n19. Irritability, anger, or aggression \n20. Appetite or weight loss\n21. Restlessness\n22. Significant discomfort from stomach pain, tremors, sweating, hot flashes, chills, or headaches\n",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "J2k2",
+        "no": "J2k2",
+        "red_flag": "END_MODULE"
+      }
+    },
+    {
+      "id": "J2k2",
+      "prompt": "Did you use (NAME OF DRUG / DRUG CLASS SELECTED) to reduce or avoid withdrawal symptoms?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "DIAGNOSTIC",
+        "no": "DIAGNOSTIC",
+        "red_flag": "END_MODULE"
+      }
+    }
+
+  ],
+  "diagnosticCriteria": {
+    "substanceusedisorder": {
+      "positive": [
+        "ARE 2 OR MORE J2 ANSWERS FROM J2a THROUGH J2k CODED YES? (J2k1 AND J2k2 TOGETHER COUNT AS ONE AMONG THESE CHOICES.)"
+      ],
+      "severity": [
+        "MILD = 2-3 OF THE J2 SYMPTOMS\nMODERATE = 4-5 OF THE J2 SYMPTOMS\nSEVERE = 6 OR MORE OF THE J2 SYMPTOMS\nIN EARLY REMISSION = CRITERIA NOT MET FOR BETWEEN 3 & 12 MONTHS.\nIN SUSTAINED REMISSION = CRITERIA NOT MET FOR 12 MONTHS OR MORE.\n(BOTH WITH THE EXCEPTION OF CRITERION d- (CRAVING) ABOVE.)\nIN A CONTROLLED ENVIRONMENT = WHERE SUBSTANCE / DRUG ACCESS IS RESTRICTED."
+      ]
+    }
+  }
+}

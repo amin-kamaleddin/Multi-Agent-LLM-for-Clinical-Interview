@@ -1,0 +1,151 @@
+{
+  "module": {
+    "id": "I",
+    "name": "Alcohol use disorder"
+  },
+  "instructions": [
+  ],
+  "questions": [
+    {
+      "id": "I1",
+      "prompt": "In the past 12 months, have you had 3 or more alcoholic drinks, - within a 3 hour period, - on 3 or more occasions?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "I2a",
+        "no": "DIAGNOSTIC",
+        "red_flag": "END_MODULE"
+      }
+    },
+    {
+      "id": "I2a",
+      "prompt": "In the past 12 months, During the times when you drank alcohol, did you end up drinking more than you planned when you started?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "I2b",
+        "no": "I2b",
+        "red_flag": "END_MODULE"
+      }
+    },
+    {
+      "id": "I2b",
+      "prompt": "In the past 12 months, Did you repeatedly want to reduce or control your alcohol use? OR Did you try to cut down or control your alcohol use, but failed?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "I2c",
+        "no": "I2c",
+        "red_flag": "END_MODULE"
+      }
+    },
+    {
+      "id": "I2c",
+      "prompt": "In the past 12 months, On the days that you drank, did you spend substantial time obtaining alcohol, drinking, or recovering from the effects of alcohol?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "I2d",
+        "no": "I2d",
+        "red_flag": "END_MODULE"
+      }
+    },
+    {
+      "id": "I2d",
+      "prompt": "In the past 12 months, Did you crave or have a strong desire or urge to use alcohol?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "I2e",
+        "no": "I2e",
+        "red_flag": "END_MODULE"
+      }
+    },
+    {
+      "id": "I2e",
+      "prompt": "In the past 12 months, Did you spend less time meeting your responsibilities at work, at school, or at home, because of your repeated drinking?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "I2f",
+        "no": "I2f",
+        "red_flag": "END_MODULE"
+      }
+    },
+    {
+      "id": "I2f",
+      "prompt": "In the past 12 months, f your drinking caused problems with your family or other people, did you still keep on drinking?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "I2g",
+        "no": "I2g",
+        "red_flag": "END_MODULE"
+      }
+    },
+    {
+      "id": "I2g",
+      "prompt": "In the past 12 months, Were you intoxicated more than once in any situation where you or others were physically at risk, for example, driving a car, riding a motorbike, using machinery, boating, etc.?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "I2h",
+        "no": "I2h",
+        "red_flag": "END_MODULE"
+      }
+    },
+    {
+      "id": "I2h",
+      "prompt": "In the past 12 months, Did you continue to use alcohol, even though it was clear that the alcohol had caused or worsened psychological or physical problems?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "I2i",
+        "no": "I2i",
+        "red_flag": "END_MODULE"
+      }
+    },
+    {
+      "id": "I2i",
+      "prompt": "In the past 12 months, Did you reduce or give up important work, social or recreational activities because of your drinking?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "I2j",
+        "no": "I2j",
+        "red_flag": "END_MODULE"
+      }
+    },
+    {
+      "id": "I2j",
+      "prompt": "In the past 12 months, Did you need to drink a lot more in order to get the same effect that you got when you first started drinking or did you get much less effect with continued use of the same amount?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "I2k1",
+        "no": "I2k1",
+        "red_flag": "END_MODULE"
+      }
+    },
+    {
+      "id": "I2k1",
+      "prompt": "In the past 12 months, When you cut down on heavy or prolonged drinking did you have *two* or more of the following:\n1. increased sweating or increased heart rate\n2. hand tremor or “the shakes”\n3. trouble sleeping\n4. nausea or vomiting\n5. hearing or seeing things other people could not see or hear\nor having sensations in your skin for no apparent reason\n6. agitation\n7. anxiety\n8. seizures",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "I2k2",
+        "no": "I2k2",
+        "red_flag": "END_MODULE"
+      }
+    },
+    {
+      "id": "I2k2",
+      "prompt": "In the past 12 months, Did you drink alcohol to reduce or avoid withdrawal symptoms or to avoid being hung-over?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "DIAGNOSTIC",
+        "no": "DIAGNOSTIC",
+        "red_flag": "END_MODULE"
+      }
+    }
+  ],
+  "diagnosticCriteria": {
+    "alcoholusedisorder": {
+      "positive": [
+        "ARE 2 OR MORE I2 ANSWERS FROM I2a THROUGH I2k CODED YES? (I2k1 AND I2k2 TOGETHER COUNT AS ONE AMONG THESE CHOICES)"
+      ],
+      "severity": [
+        "MILD = 2-3 OF THE I2 SYMPTOMS\nMODERATE = 4-5 OF THE I2 SYMPTOMS\nSEVERE = 6 OR MORE OF THE I2 SYMPTOMS\nIN EARLY REMISSION = CRITERIA NOT MET FOR BETWEEN 3 & 12 MONTHS.\nIN SUSTAINED REMISSION = CRITERIA NOT MET FOR 12 MONTHS OR MORE.\n(BOTH WITH THE EXCEPTION OF CRITERION d- (CRAVING) ABOVE.)\nIN A CONTROLLED ENVIRONMENT = WHERE ALCOHOL ACCESS IS RESTRICTED."
+
+      ]
+    }
+  }
+}

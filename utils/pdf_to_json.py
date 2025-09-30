@@ -9,7 +9,7 @@ robust_mini_extract.py   →   auto_mini.json
 
 import re, json, sys, pathlib, pdfplumber
 
-PDF   = pathlib.Path(sys.argv[1] if len(sys.argv) > 1 else "MINI-Standard.pdf")
+PDF   = pathlib.Path(sys.argv[1] if len(sys.argv) > 1 else "./MINI-Standard.pdf")
 OUT   = PDF.with_name("auto_mini.json")
 
 # ---------- helpers ----------
