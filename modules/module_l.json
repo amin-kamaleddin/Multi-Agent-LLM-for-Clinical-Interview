@@ -11,7 +11,8 @@
       "prompt": "How tall are you?",
       "responseType": "quantity",
       "next": {
-        "valid_quantity": "L1b"
+        "valid_quantity": "L1b",
+        "red_flag": "END_MODULE"
       }
     },
     {
@@ -19,7 +20,8 @@
       "prompt": "What was your lowest weight in the past 3 months?",
       "responseType": "quantity",
       "next": {
-        "valid_quantity": "L2"
+        "valid_quantity": "L2",
+        "red_flag": "END_MODULE"
       }
     },
     {
@@ -28,7 +30,8 @@
       "responseType": "yes_no",
       "next": {
         "yes": "L3",
-        "no": "DIAGNOSTIC"
+        "no": "DIAGNOSTIC",
+        "red_flag": "END_MODULE"
       }
     },
     {
@@ -37,7 +40,8 @@
       "responseType": "yes_no",
       "next": {
         "yes": "L4a",
-        "no": "DIAGNOSTIC"
+        "no": "DIAGNOSTIC",
+        "red_flag": "END_MODULE"
       }
     },
     {
@@ -46,7 +50,8 @@
       "responseType": "yes_no",
       "next": {
         "yes": "L4b",
-        "no": "L4b"
+        "no": "L4b",
+        "red_flag": "END_MODULE"
       }
     },
     {
@@ -55,7 +60,8 @@
       "responseType": "yes_no",
       "next": {
         "yes": "L4c",
-        "no": "L4c"
+        "no": "L4c",
+        "red_flag": "END_MODULE"
       }
     },
     {
@@ -64,7 +70,8 @@
       "responseType": "yes_no",
       "next": {
         "yes": "DIAGNOSTIC",
-        "no": "DIAGNOSTIC"
+        "no": "DIAGNOSTIC",
+        "red_flag": "END_MODULE"
       }
     }
 
