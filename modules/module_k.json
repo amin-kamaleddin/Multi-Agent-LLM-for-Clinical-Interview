@@ -1,0 +1,209 @@
+{
+  "module": {
+    "id": "K",
+    "name": "Psychotic disorders and mood disorder with psychotic features"
+  },
+  "instructions": [
+  ],
+  "questions": [
+    {
+      "id": "K1",
+      "prompt": "Have you ever believed that people were spying on you, or that someone was plotting against you, or trying to hurt you?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "K1a",
+        "no": "K2"
+      }
+    },
+    {
+      "id": "K1a",
+      "prompt": "Please give an example of what you believed.",
+      "responseType": "descriptive",
+      "next": {
+        "valid_response": "K2"
+      }
+    },
+    {
+      "id": "K1b",
+      "prompt": "do you currently believe these things?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "K2",
+        "no": "K2"
+      }
+    },
+    {
+      "id": "K2",
+      "prompt": "Have you ever believed that someone was reading your mind or could hear\nyour thoughts, or that you could actually read someone’s mind or hear what\nanother person was thinking?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "K2a",
+        "no": "K3"
+      }
+    },
+    {
+      "id": "K2a",
+      "prompt": "Please give an example of what you believed.",
+      "responseType": "descriptive",
+      "next": {
+        "valid_response": "K2b"
+      }
+    },
+    {
+      "id": "K2b",
+      "prompt": "do you currently believe these things?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "K3",
+        "no": "K3"
+      }
+    },
+    {
+      "id": "K3",
+      "prompt": "Have you ever believed that someone or some force outside of yourself\nput thoughts in your mind that were not your own, or made you act in a\nway that was not your usual self? Have you ever felt that you were\npossessed?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "K3a",
+        "no": "K4"
+      }
+    },
+    {
+      "id": "K3a",
+      "prompt": "Please give an example of what you believed.",
+      "responseType": "descriptive",
+      "next": {
+        "valid_response": "K3b"
+      }
+    },
+    {
+      "id": "K3b",
+      "prompt": "Please give an example of what you believed.",
+      "responseType": "yes_no",
+        "next": {
+            "yes": "K4",
+            "no": "K4"
+        }
+    },
+    {
+      "id": "K4",
+      "prompt": "Have you ever believed that you were being sent special messages through\nthe TV, radio, internet, newspapers, books, or magazines or that a person\nyou did not personally know was particularly interested in you?",
+      "responseType": "yes_no",
+        "next": {
+            "yes": "K4a",
+            "no": "K5"
+        }
+    },
+    {
+      "id": "K4a",
+      "prompt": "Please give an example of what you believed.",
+      "responseType": "descriptive",
+      "next": {
+        "valid_response": "K4b"
+      }
+    },
+    {
+      "id": "K4b",
+      "prompt": "do you currently believe these things?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "K5",
+        "no": "K5"
+      }
+    },
+    {
+      "id": "K5",
+      "prompt": "Have your relatives or friends ever considered any of your beliefs odd or unusual?",
+      "responseType": "yes_no",
+        "next": {
+            "yes": "K5a",
+            "no": "K6a"
+        }
+    },
+    {
+      "id": "K5a",
+      "prompt": "Please give an example of what they considered odd or unusual.",
+      "responseType": "descriptive",
+      "next": {
+        "valid_response": "K5b"
+      }
+    },
+    {
+      "id": "K5b",
+      "prompt": "do your relatives or friends currently consider these beliefs odd or unusual?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "K6a",
+        "no": "K6a"
+      }
+    },
+    {
+      "id": "K6a",
+      "prompt": "Was the voice commenting on your thoughts or behavior or did you hear two or more voices talking to each other?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "K6b",
+        "no": "K6b"
+      }
+    },
+    {
+      "id": "K6b",
+      "prompt": "please give an example of what the voices said.",
+      "responseType": "descriptive",
+      "next": {
+        "valid_response": "K6c"
+      }
+    },
+    {
+      "id": "K6c",
+      "prompt": "have you heard sounds / voices in the past month?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "K6d",
+        "no": "K6d"
+      }
+    },
+    {
+      "id": "K6d",
+      "prompt": "In the past month, was the voice commenting on your thoughts or behavior or did you hear two or more voices talking to each other?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "K7",
+        "no": "K7"
+      }
+    },
+    {
+      "id": "K7",
+      "prompt": "Have you ever had visions when you were awake or have you ever seen things other people couldn't see?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "K7a",
+        "no": "DIAGNOSTIC"
+      }
+    },
+    {
+      "id": "K7a",
+      "prompt": "please give an example of what you saw.",
+      "responseType": "descriptive",
+      "next": {
+        "valid_response": "K7b"
+      }
+    },
+    {
+      "id": "K7b",
+      "prompt": "do you currently see these things?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "DIAGNOSTIC",
+        "no": "DIAGNOSTIC"
+      }
+    }
+
+  ],
+  "diagnosticCriteria": {
+    "psychoticdisordersandmooddisorderwithpsychoticfeatures": {
+      "positive": [
+        "Diagnosis for this module requires the expertise of human clinicians. return True in any case only for the purpose of flagging the case for further review."
+      ]
+    }
+  }
+}
