@@ -5,6 +5,8 @@ from io import StringIO
 
 import streamlit as st
 from dotenv import load_dotenv
+
+from utils.extract_question_answer_pair import extract_question_answer_pair
 from utils.red_flag import detect_red_flag
 
 from langchain_core.messages import SystemMessage, HumanMessage, AIMessage
@@ -99,7 +101,8 @@ def create_initial_state(loader: ModuleLoader, start_qid: str) -> InterviewState
 
 def generate_questioner_question(state: InterviewState) -> AIMessage:
     current_question = state.module_loader.get_question(state.current_question_id)
-    sys_msg = SystemMessage(content=QUESTIONER_SYSTEM_PROMPT.format(question=current_question.prompt))
+    q_a_pairs = extract_question_answer_pair(state.conversation_log, max_pairs=2)
+    sys_msg = SystemMessage(content=QUESTIONER_SYSTEM_PROMPT.format(question=current_question.prompt, q_a_pairs=q_a_pairs))
 
     if len(state.evaluator_results) > 0:
         if state.evaluator_results[-1] == "explain request":
