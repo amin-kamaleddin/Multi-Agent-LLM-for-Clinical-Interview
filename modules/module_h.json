@@ -12,7 +12,8 @@
       "responseType": "yes_no",
       "next": {
         "yes": "H2",
-        "no": "DIAGNOSTIC"
+        "no": "DIAGNOSTIC",
+        "red_flag": "END_MODULE"
       }
     },
     {
@@ -21,7 +22,8 @@
       "responseType": "yes_no",
       "next": {
         "yes": "H3a",
-        "no": "DIAGNOSTIC"
+        "no": "DIAGNOSTIC",
+        "red_flag": "END_MODULE"
       }
     },
     {
@@ -30,7 +32,8 @@
       "responseType": "yes_no",
       "next": {
         "yes": "H3b",
-        "no": "H3b"
+        "no": "H3b",
+        "red_flag": "END_MODULE"
       }
     },
     {
@@ -39,7 +42,8 @@
       "responseType": "yes_no",
       "next": {
         "yes": "H4a",
-        "no": "H4a"
+        "no": "H4a",
+        "red_flag": "END_MODULE"
       }
     },
     {
@@ -48,7 +52,8 @@
       "responseType": "yes_no",
       "next": {
         "yes": "H4b",
-        "no": "H4b"
+        "no": "H4b",
+        "red_flag": "END_MODULE"
       }
     },
     {
@@ -57,7 +62,8 @@
       "responseType": "yes_no",
       "next": {
         "yes": "H4c",
-        "no": "H4c"
+        "no": "H4c",
+        "red_flag": "END_MODULE"
       }
     },
     {
@@ -66,7 +72,8 @@
       "responseType": "yes_no",
       "next": {
         "yes": "H4d",
-        "no": "H4d"
+        "no": "H4d",
+        "red_flag": "END_MODULE"
       }
     },
     {
@@ -75,7 +82,8 @@
       "responseType": "yes_no",
       "next": {
         "yes": "H4e",
-        "no": "H4e"
+        "no": "H4e",
+        "red_flag": "END_MODULE"
       }
     },
     {
@@ -84,7 +92,8 @@
       "responseType": "yes_no",
       "next": {
         "yes": "H4f",
-        "no": "H4f"
+        "no": "H4f",
+        "red_flag": "END_MODULE"
       }
     },
     {
@@ -93,7 +102,8 @@
       "responseType": "yes_no",
       "next": {
         "yes": "H4g",
-        "no": "H4g"
+        "no": "H4g",
+        "red_flag": "END_MODULE"
       }
     },
     {
@@ -102,7 +112,8 @@
       "responseType": "yes_no",
       "next": {
         "yes": "H5a",
-        "no": "H5a"
+        "no": "H5a",
+        "red_flag": "END_MODULE"
       }
     },
     {
@@ -111,7 +122,8 @@
       "responseType": "yes_no",
       "next": {
         "yes": "H5b",
-        "no": "H5b"
+        "no": "H5b",
+        "red_flag": "END_MODULE"
       }
     },
     {
@@ -120,7 +132,8 @@
       "responseType": "yes_no",
       "next": {
         "yes": "H5c",
-        "no": "H5c"
+        "no": "H5c",
+        "red_flag": "END_MODULE"
       }
     },
     {
@@ -129,7 +142,8 @@
       "responseType": "yes_no",
       "next": {
         "yes": "H5d",
-        "no": "H5d"
+        "no": "H5d",
+        "red_flag": "END_MODULE"
       }
     },
     {
@@ -138,7 +152,8 @@
       "responseType": "yes_no",
       "next": {
         "yes": "H5e",
-        "no": "H5e"
+        "no": "H5e",
+        "red_flag": "END_MODULE"
       }
     },
     {
@@ -147,7 +162,8 @@
       "responseType": "yes_no",
       "next": {
         "yes": "H5f",
-        "no": "H5f"
+        "no": "H5f",
+        "red_flag": "END_MODULE"
       }
     },
     {
@@ -156,7 +172,8 @@
       "responseType": "yes_no",
       "next": {
         "yes": "H6",
-        "no": "H6"
+        "no": "H6",
+        "red_flag": "END_MODULE"
       }
     },
     {
@@ -165,7 +182,8 @@
       "responseType": "yes_no",
       "next": {
         "yes": "H7",
-        "no": "DIAGNOSTIC"
+        "no": "DIAGNOSTIC",
+        "red_flag": "END_MODULE"
       }
     },
     {
@@ -174,7 +192,8 @@
       "responseType": "yes_no",
       "next": {
         "yes": "O1a",
-        "no": "DIAGNOSTIC"
+        "no": "DIAGNOSTIC",
+        "red_flag": "END_MODULE"
       }
     },
     {

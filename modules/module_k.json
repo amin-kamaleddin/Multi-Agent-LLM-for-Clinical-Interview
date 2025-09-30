@@ -12,7 +12,8 @@
       "responseType": "yes_no",
       "next": {
         "yes": "K1a",
-        "no": "K2"
+        "no": "K2",
+        "red_flag": "END_MODULE"
       }
     },
     {
@@ -20,7 +21,8 @@
       "prompt": "Please give an example of what you believed.",
       "responseType": "descriptive",
       "next": {
-        "valid_response": "K2"
+        "valid_response": "K2",
+        "red_flag": "END_MODULE"
       }
     },
     {
@@ -29,7 +31,8 @@
       "responseType": "yes_no",
       "next": {
         "yes": "K2",
-        "no": "K2"
+        "no": "K2",
+        "red_flag": "END_MODULE"
       }
     },
     {
@@ -38,7 +41,8 @@
       "responseType": "yes_no",
       "next": {
         "yes": "K2a",
-        "no": "K3"
+        "no": "K3",
+        "red_flag": "END_MODULE"
       }
     },
     {
@@ -46,7 +50,8 @@
       "prompt": "Please give an example of what you believed.",
       "responseType": "descriptive",
       "next": {
-        "valid_response": "K2b"
+        "valid_response": "K2b",
+        "red_flag": "END_MODULE"
       }
     },
     {
@@ -55,7 +60,8 @@
       "responseType": "yes_no",
       "next": {
         "yes": "K3",
-        "no": "K3"
+        "no": "K3",
+        "red_flag": "END_MODULE"
       }
     },
     {
@@ -64,7 +70,8 @@
       "responseType": "yes_no",
       "next": {
         "yes": "K3a",
-        "no": "K4"
+        "no": "K4",
+        "red_flag": "END_MODULE"
       }
     },
     {
@@ -72,7 +79,8 @@
       "prompt": "Please give an example of what you believed.",
       "responseType": "descriptive",
       "next": {
-        "valid_response": "K3b"
+        "valid_response": "K3b",
+        "red_flag": "END_MODULE"
       }
     },
     {
@@ -81,7 +89,8 @@
       "responseType": "yes_no",
         "next": {
             "yes": "K4",
-            "no": "K4"
+            "no": "K4",
+          "red_flag": "END_MODULE"
         }
     },
     {
@@ -90,7 +99,8 @@
       "responseType": "yes_no",
         "next": {
             "yes": "K4a",
-            "no": "K5"
+            "no": "K5",
+          "red_flag": "END_MODULE"
         }
     },
     {
@@ -98,7 +108,8 @@
       "prompt": "Please give an example of what you believed.",
       "responseType": "descriptive",
       "next": {
-        "valid_response": "K4b"
+        "valid_response": "K4b",
+        "red_flag": "END_MODULE"
       }
     },
     {
@@ -107,7 +118,8 @@
       "responseType": "yes_no",
       "next": {
         "yes": "K5",
-        "no": "K5"
+        "no": "K5",
+        "red_flag": "END_MODULE"
       }
     },
     {
@@ -116,7 +128,8 @@
       "responseType": "yes_no",
         "next": {
             "yes": "K5a",
-            "no": "K6a"
+            "no": "K6a",
+          "red_flag": "END_MODULE"
         }
     },
     {
@@ -124,7 +137,8 @@
       "prompt": "Please give an example of what they considered odd or unusual.",
       "responseType": "descriptive",
       "next": {
-        "valid_response": "K5b"
+        "valid_response": "K5b",
+        "red_flag": "END_MODULE"
       }
     },
     {
@@ -133,7 +147,8 @@
       "responseType": "yes_no",
       "next": {
         "yes": "K6a",
-        "no": "K6a"
+        "no": "K6a",
+        "red_flag": "END_MODULE"
       }
     },
     {
@@ -142,7 +157,8 @@
       "responseType": "yes_no",
       "next": {
         "yes": "K6b",
-        "no": "K6b"
+        "no": "K6b",
+        "red_flag": "END_MODULE"
       }
     },
     {
@@ -150,7 +166,8 @@
       "prompt": "please give an example of what the voices said.",
       "responseType": "descriptive",
       "next": {
-        "valid_response": "K6c"
+        "valid_response": "K6c",
+        "red_flag": "END_MODULE"
       }
     },
     {
@@ -159,7 +176,8 @@
       "responseType": "yes_no",
       "next": {
         "yes": "K6d",
-        "no": "K6d"
+        "no": "K6d",
+        "red_flag": "END_MODULE"
       }
     },
     {
@@ -168,7 +186,8 @@
       "responseType": "yes_no",
       "next": {
         "yes": "K7",
-        "no": "K7"
+        "no": "K7",
+        "red_flag": "END_MODULE"
       }
     },
     {
@@ -177,7 +196,8 @@
       "responseType": "yes_no",
       "next": {
         "yes": "K7a",
-        "no": "DIAGNOSTIC"
+        "no": "DIAGNOSTIC",
+        "red_flag": "END_MODULE"
       }
     },
     {
@@ -185,7 +205,8 @@
       "prompt": "please give an example of what you saw.",
       "responseType": "descriptive",
       "next": {
-        "valid_response": "K7b"
+        "valid_response": "K7b",
+        "red_flag": "END_MODULE"
       }
     },
     {
@@ -194,7 +215,8 @@
       "responseType": "yes_no",
       "next": {
         "yes": "DIAGNOSTIC",
-        "no": "DIAGNOSTIC"
+        "no": "DIAGNOSTIC",
+        "red_flag": "END_MODULE"
       }
     }
 

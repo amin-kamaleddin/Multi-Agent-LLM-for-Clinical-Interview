@@ -12,7 +12,8 @@
       "responseType": "yes_no",
       "next": {
         "yes": "J1a",
-        "no": "DIAGNOSTIC"
+        "no": "DIAGNOSTIC",
+        "red_flag": "END_MODULE"
       }
     },
     {
@@ -20,7 +21,8 @@
       "prompt": "SPECIFY THE MOST USED DRUG(S):",
       "responseType": "descriptive",
       "next": {
-        "valid_response": "J1b"
+        "valid_response": "J1b",
+        "red_flag": "END_MODULE"
       }
     },
     {
@@ -28,7 +30,8 @@
       "prompt": "WHICH DRUG(S) CAUSE THE BIGGEST PROBLEMS?",
       "responseType": "descriptive",
       "next": {
-        "valid_response": "J2a"
+        "valid_response": "J2a",
+        "red_flag": "END_MODULE"
       }
     },
     {
@@ -37,7 +40,8 @@
       "responseType": "yes_no",
       "next": {
         "yes": "J2b",
-        "no": "J2b"
+        "no": "J2b",
+        "red_flag": "END_MODULE"
       }
     },
     {
@@ -46,7 +50,8 @@
       "responseType": "yes_no",
       "next": {
         "yes": "J2c",
-        "no": "J2c"
+        "no": "J2c",
+        "red_flag": "END_MODULE"
       }
     },
     {
@@ -55,7 +60,8 @@
       "responseType": "yes_no",
       "next": {
         "yes": "J2d",
-        "no": "J2d"
+        "no": "J2d",
+        "red_flag": "END_MODULE"
       }
     },
     {
@@ -64,7 +70,8 @@
       "responseType": "yes_no",
       "next": {
         "yes": "J2e",
-        "no": "J2e"
+        "no": "J2e",
+        "red_flag": "END_MODULE"
       }
     },
     {
@@ -73,7 +80,8 @@
       "responseType": "yes_no",
       "next": {
         "yes": "J2f",
-        "no": "J2f"
+        "no": "J2f",
+        "red_flag": "END_MODULE"
       }
     },
     {
@@ -82,7 +90,8 @@
       "responseType": "yes_no",
       "next": {
         "yes": "J2g",
-        "no": "J2g"
+        "no": "J2g",
+        "red_flag": "END_MODULE"
       }
     },
     {
@@ -91,7 +100,8 @@
       "responseType": "yes_no",
       "next": {
         "yes": "J2h",
-        "no": "J2h"
+        "no": "J2h",
+        "red_flag": "END_MODULE"
       }
     },
     {
@@ -100,7 +110,8 @@
       "responseType": "yes_no",
       "next": {
         "yes": "J2i",
-        "no": "J2i"
+        "no": "J2i",
+        "red_flag": "END_MODULE"
       }
     },
     {
@@ -109,7 +120,8 @@
       "responseType": "yes_no",
       "next": {
         "yes": "J2j",
-        "no": "J2j"
+        "no": "J2j",
+        "red_flag": "END_MODULE"
       }
     },
     {
@@ -118,7 +130,8 @@
       "responseType": "yes_no",
       "next": {
         "yes": "J2k1",
-        "no": "J2k1"
+        "no": "J2k1",
+        "red_flag": "END_MODULE"
       }
     },
     {
@@ -127,7 +140,8 @@
       "responseType": "yes_no",
       "next": {
         "yes": "J2k2",
-        "no": "J2k2"
+        "no": "J2k2",
+        "red_flag": "END_MODULE"
       }
     },
     {
@@ -136,7 +150,8 @@
       "responseType": "yes_no",
       "next": {
         "yes": "DIAGNOSTIC",
-        "no": "DIAGNOSTIC"
+        "no": "DIAGNOSTIC",
+        "red_flag": "END_MODULE"
       }
     }
 

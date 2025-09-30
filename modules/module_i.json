@@ -12,7 +12,8 @@
       "responseType": "yes_no",
       "next": {
         "yes": "I2a",
-        "no": "DIAGNOSTIC"
+        "no": "DIAGNOSTIC",
+        "red_flag": "END_MODULE"
       }
     },
     {
@@ -21,7 +22,8 @@
       "responseType": "yes_no",
       "next": {
         "yes": "I2b",
-        "no": "I2b"
+        "no": "I2b",
+        "red_flag": "END_MODULE"
       }
     },
     {
@@ -30,7 +32,8 @@
       "responseType": "yes_no",
       "next": {
         "yes": "I2c",
-        "no": "I2c"
+        "no": "I2c",
+        "red_flag": "END_MODULE"
       }
     },
     {
@@ -39,7 +42,8 @@
       "responseType": "yes_no",
       "next": {
         "yes": "I2d",
-        "no": "I2d"
+        "no": "I2d",
+        "red_flag": "END_MODULE"
       }
     },
     {
@@ -48,7 +52,8 @@
       "responseType": "yes_no",
       "next": {
         "yes": "I2e",
-        "no": "I2e"
+        "no": "I2e",
+        "red_flag": "END_MODULE"
       }
     },
     {
@@ -57,7 +62,8 @@
       "responseType": "yes_no",
       "next": {
         "yes": "I2f",
-        "no": "I2f"
+        "no": "I2f",
+        "red_flag": "END_MODULE"
       }
     },
     {
@@ -66,7 +72,8 @@
       "responseType": "yes_no",
       "next": {
         "yes": "I2g",
-        "no": "I2g"
+        "no": "I2g",
+        "red_flag": "END_MODULE"
       }
     },
     {
@@ -75,7 +82,8 @@
       "responseType": "yes_no",
       "next": {
         "yes": "I2h",
-        "no": "I2h"
+        "no": "I2h",
+        "red_flag": "END_MODULE"
       }
     },
     {
@@ -84,7 +92,8 @@
       "responseType": "yes_no",
       "next": {
         "yes": "I2i",
-        "no": "I2i"
+        "no": "I2i",
+        "red_flag": "END_MODULE"
       }
     },
     {
@@ -93,7 +102,8 @@
       "responseType": "yes_no",
       "next": {
         "yes": "I2j",
-        "no": "I2j"
+        "no": "I2j",
+        "red_flag": "END_MODULE"
       }
     },
     {
@@ -102,7 +112,8 @@
       "responseType": "yes_no",
       "next": {
         "yes": "I2k1",
-        "no": "I2k1"
+        "no": "I2k1",
+        "red_flag": "END_MODULE"
       }
     },
     {
@@ -111,7 +122,8 @@
       "responseType": "yes_no",
       "next": {
         "yes": "I2k2",
-        "no": "I2k2"
+        "no": "I2k2",
+        "red_flag": "END_MODULE"
       }
     },
     {
@@ -119,8 +131,9 @@
       "prompt": "In the past 12 months, Did you drink alcohol to reduce or avoid withdrawal symptoms or to avoid being hung-over?",
       "responseType": "yes_no",
       "next": {
-        "yes": "O1a",
-        "no": "O1a"
+        "yes": "DIAGNOSTIC",
+        "no": "DIAGNOSTIC",
+        "red_flag": "END_MODULE"
       }
     }
   ],
