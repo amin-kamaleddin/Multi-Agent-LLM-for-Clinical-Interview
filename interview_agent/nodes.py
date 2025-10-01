@@ -8,8 +8,10 @@ from dotenv import load_dotenv
 from langchain_openai import ChatOpenAI
 from pydantic import ValidationError
 
+from utils.bmi import is_bmi_below_normal
 from utils.extract_question_answer_pair import extract_question_answer_pair
 from utils.redact_sensitive import sanitize_for_llm
+from utils.skip_logic_module_h import module_h_ready_to_diagnose
 from utils.transcribe_audio import transcribe_audio_file
 
 # Load environment variables from .env file
@@ -96,14 +98,16 @@ def _get_module_patient_llm():
 
 # ------------------------------ Global Vars ------------------------------ #
 AUTO_SET_YES_AFTER = 3  # after 3 consecutive clarifies, the 4th auto-yes
-VALID_LABELS = ["yes", "no", "rephrase needed", "explain request", "valid_quantity", "valid_response"] # valid labels from evaluator
+VALID_LABELS = ["yes", "no", "rephrase needed", "explain request", "valid_quantity",
+                "valid_response"]  # valid labels from evaluator
+
 
 # -------------------------------- Nodes ------------------------------------ #
 def questioner_node(state: InterviewState) -> Dict[str, Any]:
     """questioner node that presents questions, then collects user reply."""
     print("enter questioner")
     updates: Dict[str, Any] = {}
-
+    q_a_pairs = extract_question_answer_pair(state.conversation_log, max_pairs=2)
     # 1. Build the system prompt + history
     current_question = state.module_loader.get_question(state.current_question_id)
     # Special handling for "info"-type questions (e.g. definitions or intros)
@@ -224,7 +228,7 @@ def evaluator_node(state: InterviewState) -> Dict[str, Any]:
     patient_last_answer = state.messages[-1]
 
     response_text = patient_last_answer.content.strip().lower()
-
+    response_type = state.module_loader.get_question(state.current_question_id).responseType
     # Create sanitized version for LLM and output, but keep original for logic
     sanitized_response = sanitize_for_llm(patient_last_answer.content)
 
@@ -235,18 +239,17 @@ def evaluator_node(state: InterviewState) -> Dict[str, Any]:
         print("Direct classification: RED FLAG")
         label = "red_flag"
         reasoning = f"Red flag detected: '{sanitized_response}'"
-    elif response_text == "yes":
+    elif response_text == "yes" and response_type == "yes_no":
         print("Direct classification: YES (no LLM call needed)")
         label = "yes"
         reasoning = f"Patient gave a clear affirmative response: '{sanitized_response}'"
-    elif response_text == "no":
+    elif response_text == "no" and response_type == "yes_no":
         print("Direct classification: NO (no LLM call needed)")
         label = "no"
         reasoning = f"Patient gave a clear negative response: '{sanitized_response}'"
     else:
         print("MAKING AN LLM CALL TO EVALUATE THE ANSWER")
         context_history = extract_question_answer_pair(log=state.conversation_log, max_pairs=5)
-        response_type = state.module_loader.get_question(state.current_question_id).responseType
         prompt = EVALUATOR_SYSTEM_PROMPT.format(previous_qa_pairs=context_history, response_type=response_type
                                                 , last_question=last_question.prompt,
                                                 patient_last_answer=sanitized_response)
@@ -315,6 +318,10 @@ def navigator_node(state: InterviewState) -> Dict[str, Any]:
 
 
 def should_diagnose(state: InterviewState) -> str:
+    if state.current_question_id == "L2":
+        return "continue" if is_bmi_below_normal(state) else "diagnose"
+    if state.current_question_id.startswith('H'):
+        return "diagnose" if module_h_ready_to_diagnose(state) else "continue"
     if state.ready_for_diagnosis:
         return "diagnose"
     else:

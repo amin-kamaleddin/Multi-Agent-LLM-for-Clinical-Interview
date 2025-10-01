@@ -1,0 +1,87 @@
+{
+  "module": {
+    "id": "L",
+    "name": "Anorexia nervosa"
+  },
+  "instructions": [
+  ],
+  "questions": [
+    {
+      "id": "L1a",
+      "prompt": "How tall are you?",
+      "responseType": "quantity",
+      "next": {
+        "valid_quantity": "L1b",
+        "red_flag": "END_MODULE"
+      }
+    },
+    {
+      "id": "L1b",
+      "prompt": "What was your lowest weight in the past 3 months?",
+      "responseType": "quantity",
+      "next": {
+        "valid_quantity": "L2",
+        "red_flag": "END_MODULE"
+      }
+    },
+    {
+      "id": "L2",
+      "prompt": "In spite of this low weight, have you tried not to gain weight or to restrict your food intake?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "L3",
+        "no": "DIAGNOSTIC",
+        "red_flag": "END_MODULE"
+      }
+    },
+    {
+      "id": "L3",
+      "prompt": "Have you intensely feared gaining weight or becoming fat, even though you were underweight?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "L4a",
+        "no": "DIAGNOSTIC",
+        "red_flag": "END_MODULE"
+      }
+    },
+    {
+      "id": "L4a",
+      "prompt": "Have you considered yourself too big / fat or that part of your body was too big / fat?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "L4b",
+        "no": "L4b",
+        "red_flag": "END_MODULE"
+      }
+    },
+    {
+      "id": "L4b",
+      "prompt": "Has your body weight or shape greatly influenced how you felt about yourself?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "L4c",
+        "no": "L4c",
+        "red_flag": "END_MODULE"
+      }
+    },
+    {
+      "id": "L4c",
+      "prompt": "Have you thought that your current low body weight was normal or excessive?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "DIAGNOSTIC",
+        "no": "DIAGNOSTIC",
+        "red_flag": "END_MODULE"
+      }
+    }
+
+
+  ],
+  "diagnosticCriteria": {
+    "anorexianervosa": {
+      "positive": [
+        "ARE 1 OR MORE ITEMS FROM L4 CODED YES?"
+      ]
+    }
+  }
+}

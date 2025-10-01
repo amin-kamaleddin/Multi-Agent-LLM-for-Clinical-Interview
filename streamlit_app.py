@@ -5,6 +5,8 @@ from io import StringIO
 
 import streamlit as st
 from dotenv import load_dotenv
+
+from utils.extract_question_answer_pair import extract_question_answer_pair
 from utils.red_flag import detect_red_flag
 
 from langchain_core.messages import SystemMessage, HumanMessage, AIMessage
@@ -141,43 +143,36 @@ def generate_questioner_question(state: InterviewState) -> AIMessage:
     q = state.module_loader.get_question(state.current_question_id)
     rtype = (getattr(q, "responseType", "") or "").lower()
 
-    # ---------- Info-only items (e.g., A_PAST_INTRO) ----------
-    if rtype == "info":
-        # 1) Show in UI (use st.info(...) if you prefer a callout style)
-        st.markdown(q.prompt)
+    # set current response type in session state for UI logic
+    st.session_state.current_response_type = rtype
 
-        # 2) Persist in conversation history (so it remains visible)
+    # extract previous Q&A pairs
+    q_a_pairs = extract_question_answer_pair(state.conversation_log, max_pairs=2)
+
+    # info-only
+    if rtype == "info":
+        st.markdown(q.prompt)
         info_msg = AIMessage(content=q.prompt)
         state.messages = list(state.messages) + [info_msg]
-
-        # 3) Seed evaluator label so navigator can follow "next": {"default": ...}
         state.evaluator_results = list(state.evaluator_results) + ["default"]
-
-        # 4) Advance immediately via the existing navigator
         nav_updates = navigator_node(state)
-
-        # Apply navigator updates (inline, no external helper needed)
         if nav_updates.get("module_completed"):
             state.module_completed = True
         if nav_updates.get("ready_for_diagnosis"):
             state.ready_for_diagnosis = True
         if "current_question_id" in nav_updates:
-            next_qid = nav_updates["current_question_id"]
-            state.current_question_id = next_qid
-            state.question_path = list(state.question_path) + [next_qid]
-
-        # 5) Persist state and tell the caller to skip the input box on this rerun
+            state.current_question_id = nav_updates["current_question_id"]
+            state.question_path = list(state.question_path) + [state.current_question_id]
         st.session_state.state = state
         st.session_state.skip_input = True
-
         return info_msg
 
-    # ---------- Normal questions (yes/no, choice, number, etc.) ----------
-    sys_msg = SystemMessage(
-        content=QUESTIONER_SYSTEM_PROMPT.format(question=q.prompt)
-    )
+    # normal questions
+    sys_msg = SystemMessage(content=QUESTIONER_SYSTEM_PROMPT.format(
+        question=q.prompt,
+        q_a_pairs=q_a_pairs
+    ))
 
-    # If last turn required explanation or rephrase, adjust the system prompt
     if len(state.evaluator_results) > 0:
         last_label = state.evaluator_results[-1]
         if last_label == "explain request":
@@ -195,14 +190,11 @@ def generate_questioner_question(state: InterviewState) -> AIMessage:
                 reasoning=evaluator_reasoning
             ))
 
-    # Ask the LLM to phrase/ask the question
     response = get_llm().invoke([sys_msg])
-
-    # Ensure we always return an AIMessage
     if not isinstance(response, AIMessage):
         response = AIMessage(content=getattr(response, "content", str(response)))
-
     return response
+
 
 
 
@@ -578,14 +570,19 @@ if st.session_state.get("latest_evaluator_result"):
     # Hide the input buttons when showing feedback
     st.stop()
 
-# Quick response buttons
-st.markdown("**Quick responses:**")
-col1, col2 = st.columns([1, 1])
+# Show quick Yes/No only for non-descriptive types
+if st.session_state.current_response_type not in ["descriptive", "quantity", "choice"]:
 
-with col1:
-    yes_clicked = st.button("Yes", use_container_width=True, type="secondary")
-with col2:
-    no_clicked = st.button("No", use_container_width=True, type="secondary")
+    st.markdown("**Quick responses:**")
+    col1, col2 = st.columns([1, 1])
+
+    with col1:
+        yes_clicked = st.button("Yes", use_container_width=True, type="secondary")
+    with col2:
+        no_clicked = st.button("No", use_container_width=True, type="secondary")
+else:
+    yes_clicked = no_clicked = False
+
 
 user_input = st.text_area("Your answer", height=120, key="answer_input")
 

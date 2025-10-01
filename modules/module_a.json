@@ -127,7 +127,7 @@
       "prompt": "Can you describe the kind of guilt or worthlessness you felt? For example, did you feel you deserved punishment, caused disasters, or had a disease or illness you didn’t?",
       "responseType": "descriptive",
       "next": {
-        "valid_response": "A3f_past"
+        "valid_response": "A3f_recent"
       }
     },
     {

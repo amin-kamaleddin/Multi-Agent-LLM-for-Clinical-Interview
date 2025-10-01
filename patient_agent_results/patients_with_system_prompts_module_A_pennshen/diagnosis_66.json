@@ -1,0 +1,18 @@
+{
+    "positive": {
+        "diagnosis": true,
+        "timeFrame": "both",
+        "reasoning": "1. Symptom groups: All seven symptom groups (A3a to A3g) have YES for both past and recent, so both time frames independently meet the criterion of at least 5 symptom groups. 2. Core symptom: A1a=YES, A1b=YES, A2a_1=YES, and A2b=YES, so core symptom criterion is met. 3. Functional impairment: A4_past=YES and A4_recent=YES, so functional impairment criterion is met. 4. O1a=NO and O1b=NO, so this criterion is met. Since all criteria are met and both past and recent independently satisfy the symptom group criterion, the diagnosis is true with time frame 'both'.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    },
+    "recurrent": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 (A5 = YES) is met as A5 is YES. Criterion 2 (O1a = NO AND O1b = NO) is met since both O1a and O1b are NO.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    }
+}
