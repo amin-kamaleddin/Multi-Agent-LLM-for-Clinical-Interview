@@ -135,31 +135,67 @@ def create_initial_state(loader: ModuleLoader, start_qid: str) -> InterviewState
 
 
 def generate_questioner_question(state: InterviewState) -> AIMessage:
-    current_question = state.module_loader.get_question(state.current_question_id)
+    """
+    Render the next question (or info screen) for Streamlit and return an AIMessage.
+    - For responseType == "info": show text, log it, seed "default", navigate, and skip input UI.
+    - For other types: build the system prompt and ask the LLM as before.
+    """
+    q = state.module_loader.get_question(state.current_question_id)
+    rtype = (getattr(q, "responseType", "") or "").lower()
+
+    # set current response type in session state for UI logic
+    st.session_state.current_response_type = rtype
+
+    # extract previous Q&A pairs
     q_a_pairs = extract_question_answer_pair(state.conversation_log, max_pairs=2)
-    sys_msg = SystemMessage(content=QUESTIONER_SYSTEM_PROMPT.format(question=current_question.prompt, q_a_pairs=q_a_pairs))
+
+    # info-only
+    if rtype == "info":
+        st.markdown(q.prompt)
+        info_msg = AIMessage(content=q.prompt)
+        state.messages = list(state.messages) + [info_msg]
+        state.evaluator_results = list(state.evaluator_results) + ["default"]
+        nav_updates = navigator_node(state)
+        if nav_updates.get("module_completed"):
+            state.module_completed = True
+        if nav_updates.get("ready_for_diagnosis"):
+            state.ready_for_diagnosis = True
+        if "current_question_id" in nav_updates:
+            state.current_question_id = nav_updates["current_question_id"]
+            state.question_path = list(state.question_path) + [state.current_question_id]
+        st.session_state.state = state
+        st.session_state.skip_input = True
+        return info_msg
+
+    # normal questions
+    sys_msg = SystemMessage(content=QUESTIONER_SYSTEM_PROMPT.format(
+        question=q.prompt,
+        q_a_pairs=q_a_pairs
+    ))
 
     if len(state.evaluator_results) > 0:
-        if state.evaluator_results[-1] == "explain request":
+        last_label = state.evaluator_results[-1]
+        if last_label == "explain request":
             patient_response = state.messages[-1].content if state.messages else ""
-            sys_msg = SystemMessage(
-                content=EXPLAIN_PROMPT.format(response=patient_response, current_question=current_question.prompt)
-            )
-        elif state.evaluator_results[-1] == "rephrase needed":
+            sys_msg = SystemMessage(content=EXPLAIN_PROMPT.format(
+                response=patient_response,
+                current_question=q.prompt
+            ))
+        elif last_label == "rephrase needed":
             patient_response = state.messages[-1].content if state.messages else ""
             evaluator_reasoning = state.messages[-2].content if len(state.messages) >= 2 else "Response was unclear"
-            sys_msg = SystemMessage(
-                content=CLARIFICATION_PROMPT.format(
-                    question=current_question.prompt,
-                    response=patient_response,
-                    reasoning=evaluator_reasoning
-                )
-            )
+            sys_msg = SystemMessage(content=CLARIFICATION_PROMPT.format(
+                question=q.prompt,
+                response=patient_response,
+                reasoning=evaluator_reasoning
+            ))
 
-    response = get_llm().invoke([sys_msg])  # Updated to use lazy loading
+    response = get_llm().invoke([sys_msg])
     if not isinstance(response, AIMessage):
-        response = AIMessage(content=response.content)
+        response = AIMessage(content=getattr(response, "content", str(response)))
     return response
+
+
 
 
 
@@ -435,9 +471,22 @@ if st.session_state.finished:
 
 if not st.session_state.awaiting_answer:
     question_msg = generate_questioner_question(state)
-    state.messages = list(state.messages) + [question_msg]
-    st.session_state.last_question = question_msg.content
-    st.session_state.awaiting_answer = True
+    st.session_state.last_question = question_msg.content  # stores for display/logging
+
+    # If it was an 'info' screen (like A_PAST_INTRO), auto-advance and skip input UI
+    if st.session_state.get("skip_input"):
+        # Show a "Continue" button instead of rerunning instantly
+        st.session_state.skip_input = False  # reset flag
+
+        if st.button("Continue"):
+            st.session_state.awaiting_answer = False
+            st.rerun()
+        else:
+            st.stop()  # Stop execution until the user clicks
+
+    else:
+        st.session_state.awaiting_answer = True  # show input widget
+
 
 st.markdown("---")
 
@@ -521,14 +570,19 @@ if st.session_state.get("latest_evaluator_result"):
     # Hide the input buttons when showing feedback
     st.stop()
 
-# Quick response buttons
-st.markdown("**Quick responses:**")
-col1, col2 = st.columns([1, 1])
+# Show quick Yes/No only for non-descriptive types
+if st.session_state.current_response_type not in ["descriptive", "quantity", "choice"]:
 
-with col1:
-    yes_clicked = st.button("Yes", use_container_width=True, type="secondary")
-with col2:
-    no_clicked = st.button("No", use_container_width=True, type="secondary")
+    st.markdown("**Quick responses:**")
+    col1, col2 = st.columns([1, 1])
+
+    with col1:
+        yes_clicked = st.button("Yes", use_container_width=True, type="secondary")
+    with col2:
+        no_clicked = st.button("No", use_container_width=True, type="secondary")
+else:
+    yes_clicked = no_clicked = False
+
 
 user_input = st.text_area("Your answer", height=120, key="answer_input")
 

@@ -110,7 +110,24 @@ def questioner_node(state: InterviewState) -> Dict[str, Any]:
     q_a_pairs = extract_question_answer_pair(state.conversation_log, max_pairs=2)
     # 1. Build the system prompt + history
     current_question = state.module_loader.get_question(state.current_question_id)
-    sys_msg = SystemMessage(content=QUESTIONER_SYSTEM_PROMPT.format(question=current_question.prompt, q_a_pairs=q_a_pairs))
+    # Special handling for "info"-type questions (e.g. definitions or intros)
+    if getattr(current_question, "responseType", "").lower() == "info":
+        # show text in the console
+        print("\n" + "-" * 30)
+        print(current_question.prompt)
+        print("-" * 30 + "\n")
+
+        # put an AI message in history so logging/diagnosis stay consistent
+        updates["messages"] = [AIMessage(content=current_question.prompt)]
+
+        # seed a label so navigator can take branches.get("default")
+        updates["evaluator_results"] = ["default"]
+
+        return updates
+
+
+    # Otherwise proceed as usual
+    sys_msg = SystemMessage(content=QUESTIONER_SYSTEM_PROMPT.format(question=current_question.prompt))
 
     if len(state.evaluator_results) > 0:
         if state.evaluator_results[-1] == "explain request":
@@ -199,6 +216,9 @@ def _clarify_streak(evaluator_results: list[Any], last_result) -> bool:
     else:
         return False
 
+def should_collect_input(state: InterviewState) -> str:
+    q = state.module_loader.get_question(state.current_question_id)
+    return "patient" if getattr(q, "responseType", "").lower() != "info" else "navigator"
 
 def evaluator_node(state: InterviewState) -> Dict[str, Any]:
     # assume the loop-driver put the user's message in state.messages[-1]
@@ -230,7 +250,6 @@ def evaluator_node(state: InterviewState) -> Dict[str, Any]:
     else:
         print("MAKING AN LLM CALL TO EVALUATE THE ANSWER")
         context_history = extract_question_answer_pair(log=state.conversation_log, max_pairs=5)
-
         prompt = EVALUATOR_SYSTEM_PROMPT.format(previous_qa_pairs=context_history, response_type=response_type
                                                 , last_question=last_question.prompt,
                                                 patient_last_answer=sanitized_response)
