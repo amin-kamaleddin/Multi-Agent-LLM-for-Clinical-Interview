@@ -42,14 +42,14 @@ _patient_llm = None
 def get_llm():
     global _llm
     if _llm is None:
-        _llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.1)
+        _llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.1, request_timeout=30, max_retries=3)
     return _llm
 
 
 def get_evaluator_llm():
     global _evaluator_llm
     if _evaluator_llm is None:
-        _evaluator_llm = ChatOpenAI(model="gpt-5-mini", reasoning_effort="low")
+        _evaluator_llm = ChatOpenAI(model="gpt-5-mini", reasoning_effort="low", request_timeout=30, max_retries=3)
     return _evaluator_llm
 
 
@@ -63,7 +63,7 @@ def get_structured_llm():
 def get_diagnosis_llm():
     global _diagnosis_llm
     if _diagnosis_llm is None:
-        _diagnosis_llm = ChatOpenAI(model="gpt-5-mini", reasoning_effort="medium").with_structured_output(
+        _diagnosis_llm = ChatOpenAI(model="gpt-5-mini", reasoning_effort="medium", request_timeout=30, max_retries=3).with_structured_output(
             DiagnosisResult)
     return _diagnosis_llm
 
@@ -71,7 +71,7 @@ def get_diagnosis_llm():
 def get_patient_llm():
     global _patient_llm
     if _patient_llm is None:
-        _patient_llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.9)
+        _patient_llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.9, request_timeout=30, max_retries=3)
     return _patient_llm
 
 
