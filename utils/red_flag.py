@@ -4,6 +4,7 @@ import json
 from pydantic import BaseModel, Field, ValidationError
 from langchain_openai import ChatOpenAI
 from langchain_core.messages import SystemMessage, HumanMessage
+from sklearn.metrics import precision_score, recall_score, f1_score, fbeta_score
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -62,8 +63,8 @@ def run_tests_with_csv(csv_path: str, save_path: str = None):
     """
     Runs test cases from a CSV file with columns: data, label
     Adds a 'prediction' column and optionally saves the updated CSV.
+    Also computes Accuracy, Precision, Recall, F1, and F2 scores.
     """
-    # _load_key()  # if you're using your own key loader
     df = pd.read_csv(csv_path)
 
     predictions = []
@@ -77,11 +78,23 @@ def run_tests_with_csv(csv_path: str, save_path: str = None):
     df["prediction"] = predictions
     df["explanation"] = explanations  # Optional but useful for audit/debugging
 
-    # Calculate accuracy
-    correct = (df["label"] == df["prediction"]).sum()
-    total = len(df)
-    accuracy = correct / total * 100
-    print(f"Final Accuracy: {accuracy:.2f}% ({correct}/{total})")
+    # Extract ground truth and predictions
+    y_true = df["label"]
+    y_pred = df["prediction"]
+
+    # Calculate metrics
+    accuracy = (y_true == y_pred).mean() * 100
+    precision = precision_score(y_true, y_pred, zero_division=0)
+    recall = recall_score(y_true, y_pred, zero_division=0)
+    f1 = f1_score(y_true, y_pred, zero_division=0)
+    f2 = fbeta_score(y_true, y_pred, beta=2, zero_division=0)  # F-beta with β=2
+
+    # Print results
+    print(f"Final Accuracy : {accuracy:.2f}%")
+    print(f"Precision      : {precision:.4f}")
+    print(f"Recall         : {recall:.4f}")
+    print(f"F1 Score       : {f1:.4f}")
+    print(f"F2 Score       : {f2:.4f}")
 
     # Save updated dataset with predictions if requested
     if save_path:
