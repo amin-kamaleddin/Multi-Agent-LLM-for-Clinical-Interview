@@ -32,6 +32,8 @@ from .models import (
 from utils.red_flag import detect_red_flag
 
 # ------------------------------ LLM instances (lazy loading) ------------------------------ #
+MAX_RETRIES = 5  # for LLM calls
+GPT_TIMEOUT = 30  # seconds
 _llm = None
 _evaluator_llm = None
 _structured_llm = None
@@ -42,14 +44,15 @@ _patient_llm = None
 def get_llm():
     global _llm
     if _llm is None:
-        _llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.1, request_timeout=30, max_retries=3)
+        _llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.1, request_timeout=GPT_TIMEOUT, max_retries=MAX_RETRIES)
     return _llm
 
 
 def get_evaluator_llm():
     global _evaluator_llm
     if _evaluator_llm is None:
-        _evaluator_llm = ChatOpenAI(model="gpt-5-mini", reasoning_effort="low", request_timeout=30, max_retries=3)
+        _evaluator_llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.1, request_timeout=GPT_TIMEOUT,
+                                    max_retries=MAX_RETRIES)
     return _evaluator_llm
 
 
@@ -63,7 +66,8 @@ def get_structured_llm():
 def get_diagnosis_llm():
     global _diagnosis_llm
     if _diagnosis_llm is None:
-        _diagnosis_llm = ChatOpenAI(model="gpt-5-mini", reasoning_effort="medium", request_timeout=30, max_retries=3).with_structured_output(
+        _diagnosis_llm = ChatOpenAI(model="gpt-4.1-mini", temperature=0.1, request_timeout=GPT_TIMEOUT,
+                                    max_retries=MAX_RETRIES).with_structured_output(
             DiagnosisResult)
     return _diagnosis_llm
 
@@ -71,7 +75,8 @@ def get_diagnosis_llm():
 def get_patient_llm():
     global _patient_llm
     if _patient_llm is None:
-        _patient_llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.9, request_timeout=30, max_retries=3)
+        _patient_llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.9, request_timeout=GPT_TIMEOUT,
+                                  max_retries=MAX_RETRIES)
     return _patient_llm
 
 
@@ -110,7 +115,24 @@ def questioner_node(state: InterviewState) -> Dict[str, Any]:
     q_a_pairs = extract_question_answer_pair(state.conversation_log, max_pairs=2)
     # 1. Build the system prompt + history
     current_question = state.module_loader.get_question(state.current_question_id)
-    sys_msg = SystemMessage(content=QUESTIONER_SYSTEM_PROMPT.format(question=current_question.prompt, q_a_pairs=q_a_pairs))
+    # Special handling for "info"-type questions (e.g. definitions or intros)
+    if getattr(current_question, "responseType", "").lower() == "info":
+        # show text in the console
+        print("\n" + "-" * 30)
+        print(current_question.prompt)
+        print("-" * 30 + "\n")
+
+        # put an AI message in history so logging/diagnosis stay consistent
+        updates["messages"] = [AIMessage(content=current_question.prompt)]
+
+        # seed a label so navigator can take branches.get("default")
+        updates["evaluator_results"] = ["default"]
+
+        return updates
+
+    # Otherwise proceed as usual
+    sys_msg = SystemMessage(
+        content=QUESTIONER_SYSTEM_PROMPT.format(question=current_question.prompt, q_a_pairs=q_a_pairs))
 
     if len(state.evaluator_results) > 0:
         if state.evaluator_results[-1] == "explain request":
@@ -200,6 +222,11 @@ def _clarify_streak(evaluator_results: list[Any], last_result) -> bool:
         return False
 
 
+def should_collect_input(state: InterviewState) -> str:
+    q = state.module_loader.get_question(state.current_question_id)
+    return "patient" if getattr(q, "responseType", "").lower() != "info" else "navigator"
+
+
 def evaluator_node(state: InterviewState) -> Dict[str, Any]:
     # assume the loop-driver put the user's message in state.messages[-1]
     print("enter evaluator")
@@ -230,7 +257,6 @@ def evaluator_node(state: InterviewState) -> Dict[str, Any]:
     else:
         print("MAKING AN LLM CALL TO EVALUATE THE ANSWER")
         context_history = extract_question_answer_pair(log=state.conversation_log, max_pairs=5)
-
         prompt = EVALUATOR_SYSTEM_PROMPT.format(previous_qa_pairs=context_history, response_type=response_type
                                                 , last_question=last_question.prompt,
                                                 patient_last_answer=sanitized_response)
@@ -247,10 +273,17 @@ def evaluator_node(state: InterviewState) -> Dict[str, Any]:
             label = "rephrase needed"
 
     if _clarify_streak(evaluator_results=state.evaluator_results, last_result=label):
-        print("Direct classification after 3 round of clarification: YES")
-        label = "yes"
-        reasoning = f"Patient prompted a vague answer after three rounds of clarification :" \
-                    f" '{sanitized_response}'"
+        current_question = state.module_loader.get_question(state.current_question_id)
+        if current_question.responseType == "yes_no":
+            print("Direct classification after 3 round of clarification: YES")
+            label = "yes"
+            reasoning = f"Patient prompted a vague answer after three rounds of clarification :" \
+                        f" '{sanitized_response}'"
+        elif current_question.responseType in ["quantity", "descriptive"]:
+            print("Direct classification after 3 round of clarification: valid_response/valid_quantity")
+            label = "valid_response" if current_question.responseType == "descriptive" else "valid_quantity"
+            reasoning = f"Patient prompted a vague answer after three rounds of clarification :" \
+                        f" '{sanitized_response}'"
     print("exit evaluator")
 
     updates['messages'] = [AIMessage(content=reasoning)]

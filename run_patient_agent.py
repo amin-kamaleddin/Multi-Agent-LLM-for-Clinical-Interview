@@ -1,15 +1,19 @@
-import json, csv
-from pathlib import Path
-from langgraph.graph import StateGraph
-from interview_agent.models import ModuleLoader, _add_log
-from langchain_core.messages import SystemMessage, HumanMessage
-from interview_agent.cli import _load_key
-from typing import Any, Dict, List, Literal, Optional, Sequence, Union, Annotated
-from langgraph.constants import START, END
+import csv
+import json
 import operator
+import argparse
+from pathlib import Path
+from typing import Any, List, Optional, Sequence, Annotated
 
+from langchain_core.messages import SystemMessage, HumanMessage
+from langchain_openai import ChatOpenAI
+from langgraph.constants import START, END
+from langgraph.graph import StateGraph
 from langgraph.graph.message import add_messages
 from pydantic import BaseModel, Field
+
+from interview_agent.cli import _load_key
+from interview_agent.models import ModuleLoader, _add_log
 from interview_agent.nodes import (
     evaluator_node,
     questioner_node,
@@ -18,8 +22,6 @@ from interview_agent.nodes import (
     should_diagnose,
     diagnoser_node,
 )
-
-from langchain_openai import ChatOpenAI
 
 PATIENT_USER_PROMPT = """
 The questioner asks: {question}
@@ -32,14 +34,12 @@ use
 with a brief 
 clarification if helpful.
 """
+MAX_RETRIES = 5  # for LLM calls
+GPT_TIMEOUT = 30  # seconds
 
-patient_llm = ChatOpenAI(model="gpt-4o-mini", temperature=1)
-FILE_NAME = "patients_with_system_prompts_module_A"
+patient_llm = ChatOpenAI(model="gpt-4o-mini", temperature=1, max_retries=MAX_RETRIES, timeout=GPT_TIMEOUT)
 
-# NEW: Starting ID variable - set this to control which patient to start from
-STARTING_PATIENT_ID = 78
-ENDING_PATIENT_ID = 90  # Set this to the last patient ID you want to process
-
+FILE_NAME = "patients_with_system_prompts_module_B"
 
 
 class InterviewState(BaseModel):
@@ -53,14 +53,13 @@ class InterviewState(BaseModel):
     module_completed: bool = False
     ready_for_diagnosis: bool = False
     diagnosis_content: Optional[Any] = Field(default_factory=dict)
-
-    # NEW: store the system prompt for this conversation
+    red_flag: bool = False
     patient_system_prompt: Optional[str] = None
 
 
 def patient_node(state: InterviewState):
     print("enter patient node")
-    patient_system_prompt = state.patient_system_prompt  # now comes from state
+    patient_system_prompt = state.patient_system_prompt
 
     if not state.patient_agent:
         result = input("You: ").strip()
@@ -76,7 +75,7 @@ def patient_node(state: InterviewState):
     return {'messages': [result]}
 
 
-def build_graph(loader: ModuleLoader, visualize: bool = True):
+def build_graph(loader: ModuleLoader, visualize: bool = False):
     sg = StateGraph(InterviewState)
 
     sg.add_node("questioner", questioner_node)
@@ -102,28 +101,32 @@ def build_graph(loader: ModuleLoader, visualize: bool = True):
     return compiled_sg
 
 
-
-def run():
+def run(start_id=None, end_id=None):
     _load_key()
 
     # Load patient data from JSON
     with open("./interview_agent/prompts/" + FILE_NAME + ".json", "r", encoding="utf-8") as f:
         patients_data = json.load(f)
 
-    # Filter patients within the specified range
-    filtered_patients = [
-        entry for entry in patients_data
-        if STARTING_PATIENT_ID <= entry.get("id", 0) <= ENDING_PATIENT_ID
-    ]
+    # Filter patients based on range if provided
+    if start_id is not None and end_id is not None:
+        filtered_patients = [
+            entry for entry in patients_data
+            if start_id <= entry.get("id", 0) <= end_id
+        ]
+        print(f"Processing patients from ID {start_id} to {end_id}")
+    else:
+        filtered_patients = patients_data
+        print(f"Processing all patients")
 
-    print(f"Processing {len(filtered_patients)} patients from ID {STARTING_PATIENT_ID} to {ENDING_PATIENT_ID}")
+    print(f"Found {len(filtered_patients)} patients to process\n")
 
     for entry in filtered_patients:
         if "System Prompt" not in entry or "id" not in entry or "Module" not in entry:
             continue  # skip if missing data
 
         # Convert module name into a file-friendly format
-        module_name = entry["Module"].split(" - ")[0].lower()  # e.g., "F" from "F - Social Anxiety Disorder"
+        module_name = entry["Module"].split(" - ")[0].lower()
         module_filename = f"./modules/module_{module_name}.json"
 
         # Load module dynamically
@@ -154,6 +157,10 @@ def run():
         diagnosis_dict = result["diagnosis_content"].root
         diagnosis_output = {k: v.model_dump() for k, v in diagnosis_dict.items()}
         _save_diagnosis(diagnosis_output, run_id)
+
+    print(f"\n{'=' * 80}")
+    print(f"COMPLETED processing")
+    print(f"{'=' * 80}\n")
 
 
 def _save_log(log, run_id):
@@ -194,4 +201,9 @@ def _save_diagnosis(diagnosis_content, run_id):
 
 
 if __name__ == "__main__":
-    run()
+    parser = argparse.ArgumentParser(description="Process patient interviews")
+    parser.add_argument("--start", type=int, help="Starting patient ID")
+    parser.add_argument("--end", type=int, help="Ending patient ID")
+    args = parser.parse_args()
+
+    run(args.start, args.end)
