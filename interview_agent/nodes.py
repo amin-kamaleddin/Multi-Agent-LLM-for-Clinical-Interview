@@ -335,7 +335,7 @@ def should_diagnose(state: InterviewState) -> str:
     if state.current_question_id == "L2":
         return "continue" if is_bmi_below_normal(state) else "diagnose"
     if state.current_question_id.startswith('H'):
-        return "diagnose" if module_h_ready_to_diagnose(state) else "continue"
+        return "diagnose" if module_h_ready_to_diagnose(state) or state.ready_for_diagnosis else "continue"
     if state.ready_for_diagnosis:
         return "diagnose"
     else:

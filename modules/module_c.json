@@ -333,28 +333,12 @@
     }
   ],
   "diagnosticCriteria": {
-    "manicAndHypomanicEpisodes": {
+    "manicandhypomanicepisodes": {
       "positive": [
         "(IF C1b IS NO, ARE 4 OR MORE C3 ANSWERS INCLUDING C3f CODED YES?) OR (IF C1b IS YES, ARE 3 OR MORE C3 ANSWERS INCLUDING C3f CODED YES?)",
         "IS EITHER C4b OR C4C CODED YES?",
         "Is C7 coded YES?",
         "either C4C OR C5 OR C6 coded YES?",
-        "O1a = NO AND O1b = NO"
-      ],
-      "Current": [
-        "(IF C1b IS NO, ARE 4 OR MORE C3 ANSWERS INCLUDING C3f CODED YES?) OR (IF C1b IS YES, ARE 3 OR MORE C3 ANSWERS INCLUDING C3f CODED YES?)",
-        "IS EITHER C4b OR C4C CODED YES?",
-        "Is C7 coded YES?",
-        "either C4C OR C5 OR C6 coded YES?",
-        "is the episode current? (C1b = YES OR C2b = YES)",
-        "O1a = NO AND O1b = NO"
-      ],
-      "past": [
-        "(IF C1b IS NO, ARE 4 OR MORE C3 ANSWERS INCLUDING C3f CODED YES?) OR (IF C1b IS YES, ARE 3 OR MORE C3 ANSWERS INCLUDING C3f CODED YES?)",
-        "IS EITHER C4b OR C4C CODED YES?",
-        "Is C7 coded YES?",
-        "either C4C OR C5 OR C6 coded YES?",
-        "is the episode past? (C1b = NO AND C2b = NO) OR (No answer to C1b and C2b)",
         "O1a = NO AND O1b = NO"
       ]
     }

@@ -39,7 +39,7 @@ GPT_TIMEOUT = 30  # seconds
 
 patient_llm = ChatOpenAI(model="gpt-4o-mini", temperature=1, max_retries=MAX_RETRIES, timeout=GPT_TIMEOUT)
 
-FILE_NAME = "patients_with_system_prompts_module_B"
+FILE_NAME = "patients_with_system_prompts_module_MB"
 
 
 class InterviewState(BaseModel):
@@ -148,7 +148,7 @@ def run(start_id=None, end_id=None):
             patient_system_prompt=prompt
         )
 
-        result = app.invoke(state, config={"recursion_limit": 500})
+        result = app.invoke(state, config={"recursion_limit": 800})
 
         # Save conversation log
         _save_log(result["conversation_log"], run_id)

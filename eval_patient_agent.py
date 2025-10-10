@@ -6,10 +6,10 @@ from sklearn.metrics import accuracy_score, confusion_matrix, precision_score, r
 import pandas as pd
 
 # Paths
-MODULE_FILE_NAME = "patients_with_system_prompts_module_A"
+MODULE_FILE_NAME = "patients_with_system_prompts_module_P"
 patients_file = "./interview_agent/prompts/" + MODULE_FILE_NAME + ".json"
 results_dir = "./patient_agent_results/" + MODULE_FILE_NAME
-output_csv = results_dir + "/predictions_gpt-5-mini.csv"
+output_csv = results_dir + "/predictions_gpt-4o-mini.csv"
 
 # Load patients data
 with open(patients_file, "r", encoding="utf-8") as f:
@@ -80,7 +80,7 @@ else:
 
             # Determine key based on first letter of Module
             module_letter = patient_entry["Module"].split()[0]  # e.g., "A"
-            if module_letter in ["A", "O"]:
+            if module_letter in ["A", "O", "B", "C", "H", "I", "J", "L", "G"]:
                 key = "positive"
             elif module_letter in ["P", "D"]:
                 key = "lifetime"
