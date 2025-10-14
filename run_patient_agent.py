@@ -39,7 +39,7 @@ GPT_TIMEOUT = 30  # seconds
 
 patient_llm = ChatOpenAI(model="gpt-4o-mini", temperature=1, max_retries=MAX_RETRIES, timeout=GPT_TIMEOUT)
 
-FILE_NAME = "patients_with_system_prompts_module_MB"
+FILE_NAME = "patients_with_system_prompts_module_M"
 
 
 class InterviewState(BaseModel):

@@ -4,7 +4,7 @@ import glob
 import pandas as pd
 
 # Order matters for global id offsets (90 each)
-MODULES = ['A','B','C','D','E','F','G','H','I','J','L','M','MB','N','P']
+MODULES = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'L', 'M', 'MB', 'N', 'P']
 
 # Zero-based mapping for block offsets
 BLOCK_INDEX = {m: i for i, m in enumerate(MODULES)}
@@ -12,9 +12,10 @@ BLOCK_INDEX = {m: i for i, m in enumerate(MODULES)}
 # Paths
 JSON_TMPL = './interview_agent/prompts/patients_with_system_prompts_module_{mod}.json'
 PRED_DIR_TMPL = './patient_agent_results/patients_with_system_prompts_module_{mod}/'
-PRED_FILE_EXACT = None  # set to 'predictions_gpt-4o-mini.csv' to force a specific file
+PRED_FILE_EXACT = "predictions_gpt-4o-mini.csv"  # set to 'predictions_gpt-4o-mini.csv' to force a specific file
 
-OUTPUT_PATH = '../patient_agent_results/prediction_combined_all_modules.csv'
+OUTPUT_PATH = './patient_agent_results/prediction_combined_all_modules.csv'
+# OUTPUT_PATH = './prediction_combined_all_modules.csv'
 
 # Columns to carry from JSON
 META_COLS = [
@@ -28,7 +29,7 @@ META_COLS = [
 combined_parts = []
 
 for mod in MODULES:
-    base_offset = BLOCK_INDEX[mod] * 90  # A->0, B->90, ...
+    base_offset = BLOCK_INDEX[mod] * 90  # A->0 (starts at ID 1), B->90 (starts at ID 91), ...
 
     # Load meta JSON
     json_path = JSON_TMPL.format(mod=mod)
@@ -40,7 +41,7 @@ for mod in MODULES:
     meta_df = meta_df[META_COLS].copy()
 
     # Create a stable local position 1..len(meta) based on JSON order
-    # If you prefer by numeric sort of id within the JSON, use: meta_df.sort_values('id', kind="stable")
+    # _json_order is 0-based; _local_pos is 1-based.
     meta_df = meta_df.reset_index(drop=False).rename(columns={'index': '_json_order'})
     meta_df['_local_pos'] = meta_df['_json_order'] + 1
     meta_df = meta_df.drop(columns=['_json_order'])
@@ -64,18 +65,22 @@ for mod in MODULES:
     # Keep last prediction per id if duplicates exist
     pred_df = pred_df.drop_duplicates(subset=['id'], keep='last')
 
-    # Merge on original id, then compute global id using the local position
+    # Merge on original id
     merged = pd.merge(pred_df, meta_df, on='id', how='inner')
 
     if merged.empty:
         print(f'[WARN] No matching IDs for module {mod}. Skipping.')
         continue
 
+    # FIX 1: Rename the original ID before overwriting it with the global ID
+    merged = merged.rename(columns={'id': 'original_file_id'})
+
     # Debug ranges
-    print(f"[{mod}] original id range: {merged['id'].min()}..{merged['id'].max()}")
+    print(f"[{mod}] original id range: {merged['original_file_id'].min()}..{merged['original_file_id'].max()}")
     print(f"[{mod}] local positions present: {merged['_local_pos'].min()}..{merged['_local_pos'].max()}")
 
-    # Global id = base_offset + local position
+    # Global id = base_offset + local position (Correctly starts at 1 for the first element)
+    # e.g., for Module A: 0 + 1 = 1
     merged['id'] = merged['_local_pos'].astype(int) + base_offset
 
     # Drop helper column
@@ -88,15 +93,23 @@ for mod in MODULES:
 
     combined_parts.append(merged)
 
-# Combine all modules
+# ---
+# Combine all modules and save
+# ---
 if combined_parts:
     combined_df = pd.concat(combined_parts, ignore_index=True).sort_values('id').reset_index(drop=True)
     combined_df = combined_df[['id', 'label', 'prediction',
                                'Module', 'Tier of Symptom Disclosure',
                                'Expected Symptom Direction', 'Emotion/Tone Tier']]
-    os.makedirs(os.path.dirname(OUTPUT_PATH), exist_ok=True)
-    combined_df.to_csv(OUTPUT_PATH, index=False)
-    print(f'[OK] Combined CSV saved to: {OUTPUT_PATH}')
+
+    # FIX 2: Resolve the output path to an absolute path for robust saving
+    absolute_output_path = os.path.abspath(OUTPUT_PATH)
+    output_dir = os.path.dirname(absolute_output_path)
+
+    os.makedirs(output_dir, exist_ok=True)
+    combined_df.to_csv(absolute_output_path, index=False)
+
+    print(f'[OK] Combined CSV saved to: {absolute_output_path}')
     print(f'[INFO] Rows: {len(combined_df)}, ID range: {combined_df.id.min()}..{combined_df.id.max()}')
 else:
     print('[WARN] Nothing combined. No data generated.')

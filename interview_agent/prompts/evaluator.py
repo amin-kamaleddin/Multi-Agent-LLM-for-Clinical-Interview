@@ -83,7 +83,7 @@ CLINICAL ASSESSMENT PRINCIPLES:
 
 6. AMBIVALENCE HANDLING: When patients show uncertainty or minimize symptoms but don't provide situational causes, use "need more clarification"
    - "I don't know" without explanation = need more clarification
-   - "Sometimes, but it's because of X" = no (for yes_no, situational)
+   - "Sometimes, but it's because of X" = no (for yes_no, situational) [for module M accept these as yes]
 
 7. CONSERVATIVE APPROACH: 
    - For yes_no: When in doubt between "yes" and "no", lean toward "yes"

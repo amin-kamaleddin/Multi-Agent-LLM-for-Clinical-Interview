@@ -50,6 +50,7 @@ Criteria to evaluate:
 
 --- Instructions ---
 You must assess whether each diagnostic criterion is met, based solely on the patient's answers.
+consider VALID_QUANTITY and VALID_RESPONSE as YES in the criterion.
 
 SPECIAL INSTRUCTIONS FOR MODULE F (Social Anxiety Disorder):
 1. **Basic Diagnosis**: Evaluate if the criteria for this diagnostic group are met

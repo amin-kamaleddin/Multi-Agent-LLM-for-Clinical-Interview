@@ -6,7 +6,7 @@ from sklearn.metrics import accuracy_score, confusion_matrix, precision_score, r
 import pandas as pd
 
 # Paths
-MODULE_FILE_NAME = "patients_with_system_prompts_module_P"
+MODULE_FILE_NAME = "patients_with_system_prompts_module_M"
 patients_file = "./interview_agent/prompts/" + MODULE_FILE_NAME + ".json"
 results_dir = "./patient_agent_results/" + MODULE_FILE_NAME
 output_csv = results_dir + "/predictions_gpt-4o-mini.csv"
