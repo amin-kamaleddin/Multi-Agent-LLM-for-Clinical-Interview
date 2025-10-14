@@ -85,7 +85,7 @@
       "responseType": "yes_no",
       "prompt": "Do these binges occur only when you are under the bmi threshold? for example the threshold for 170 cm (5'7 ft) is 49 kg (109lbs)",
       "next": {
-        "yes": "M7",
+        "yes": "DIAGNOSTIC",
         "no": "DIAGNOSTIC",
         "red_flag": "END_MODULE"
       }
@@ -97,10 +97,10 @@
     "bulimianervosa": {
       "current": [
         "M5 coded YES",
-        "M7 coded NO"
+        "M7 coded YES"
       ],
       "current, Binge Eating Purging Type": [
-        "M7 coded YES"
+        "M7 coded NO"
       ],
       "severity": [
         "M4a quantity 1-3: Mild, 4-7: Moderate, 8-13: Severe, 14+: Extreme"
