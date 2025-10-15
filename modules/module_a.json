@@ -321,7 +321,7 @@
   "diagnosticCriteria": {
     "majorDepressiveEpisode": {
       "positive": [
-        "At least 5 symptom groups (A3a–A3g) coded YES",
+        "At least 5 symptom groups (A3a–A3g) coded YES/VALID_RESPONSE",
         "Core symptom: A1a=YES or A2a_1=YES or A2a_2=YES or A1b=YES or A2b=YES",
         "Functional impairment: A4_recent=YES or A4_past=YES",
         "O1a = NO AND O1b = NO"
