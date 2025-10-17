@@ -19,7 +19,7 @@ AI agent for conducting structured neuropyschiatric assessments with dynamic con
 
 ## ✨ Features
 
-- 🧭 **LangGraph workflow:** Conditional branching that mirrors MINI logic
+- 🧭 **LangGraph workflow:** Conditional branching logic to guide patients through required questions
 - 🧠 **LLM judgment:** Yes / No / Unclear classification 
 - 🔍 **Smart clarifications:** Targeted follow-ups for ambiguous replies
 - 🗂️ **JSON modules:** Questionnaire logic with explicit branching paths
