@@ -1,5 +1,5 @@
 ---
-title: MINI Interview Agent
+title: Structured Clinical Interview Agent
 emoji: 🧠
 colorFrom: blue
 colorTo: green
@@ -11,9 +11,9 @@ startup_duration_timeout: 1h
 python_version: 3.11
 ---
 
-# 🧠 MINI Interview Agent
+# 🧠 Structured Clinical Interview Agent
 
-AI agent for conducting MINI (Mini International Neuropsychiatric Interview) assessments with dynamic conversation flow, clinical tone, and intelligent follow-ups powered by LLMs.
+AI agent for conducting structured neuropyschiatric assessments with dynamic conversation flow, clinical tone, and intelligent follow-ups powered by LLMs.
 
 ---
 
@@ -86,7 +86,7 @@ The system is a directed graph of coordinated nodes that share a single `Intervi
 
 1. **Questioner Node**
 
-   * Presents the next MINI question with an LLM.
+   * Presents the next neuropyschiatric interview question with an LLM.
    * If the previous reply was ambiguous, generates a focused clarification prompt.
    * If the previous reply was request for more explanation, generates a detailed explanation for question and add 
      an example if applicable.
