@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+/* Apply Arial globally */
+html, body, #root {
+  font-family: Arial, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
