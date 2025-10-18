@@ -9,7 +9,7 @@ export default function ProgressHeader({ moduleName, questionId, progress }: Pro
     <div>
       <div className="flex items-center justify-between">
         <div>
-          <h1 className="text-xl font-semibold text-slate-900">MINI Interview</h1>
+          <h1 className="text-xl font-semibold text-slate-900">Structured Clinical Interview and Assessment</h1>
           <div className="text-sm text-slate-600">Module: {moduleName} • QID: {questionId}</div>
         </div>
         <div className="text-sm font-medium text-slate-900">{Math.round(progress * 100)}%</div>

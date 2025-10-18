@@ -15,7 +15,7 @@ export default function Login({ onSuccess }: { onSuccess: () => void }) {
     <Container>
       <div className="space-y-4">
         <div className="space-y-1">
-          <h1 className="text-2xl font-semibold tracking-tight text-slate-900">MINI Interview</h1>
+          <h1 className="text-2xl font-semibold tracking-tight text-slate-900">Structured Clinical Interview and Assessment</h1>
           <p className="text-sm text-slate-600">Enter the application password to continue.</p>
         </div>
 

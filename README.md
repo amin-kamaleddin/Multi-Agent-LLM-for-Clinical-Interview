@@ -1,12 +1,12 @@
-# 🧠 MINI Interview Agent
+# 🧠 Structured Clinical Interview and Assessment Agent
 
-AI agent for conducting MINI (Mini International Neuropsychiatric Interview) assessments with dynamic conversation flow, clinical tone, and intelligent follow-ups powered by LLMs.
+AI agent for conducting structured neuropyschiatric assessments with dynamic conversation flow, clinical tone, and intelligent follow-ups powered by LLMs.
 
 ---
 
 ## ✨ Features
 
-- 🧭 **LangGraph workflow:** Conditional branching that mirrors MINI logic
+- 🧭 **LangGraph workflow:** Conditional branching logic to guide patients through required questions
 - 🧠 **LLM judgment:** Yes / No / Unclear classification 
 - 🔍 **Smart clarifications:** Targeted follow-ups for ambiguous replies
 - 🗂️ **JSON modules:** Questionnaire logic with explicit branching paths
@@ -85,7 +85,7 @@ The system is a directed graph of coordinated nodes that share a single `Intervi
 
 1. **Questioner Node**
 
-   * Presents the next MINI question with an LLM.
+   * Presents the next question with an LLM.
    * If the previous reply was ambiguous, generates a focused clarification prompt.
    * If the previous reply was request for more explanation, generates a detailed explanation for question and add 
      an example if applicable.
@@ -140,7 +140,7 @@ mini-agent/
 │   ├── nodes.py              # LangGraph nodes (questioner, evaluator, etc.)
 │   ├── graph.py              # Workflow construction
 │   └── cli.py                # Command-line interface
-├── modules/                  # MINI questionnaire modules
+├── modules/                  # Interview questionnaire modules
 │   ├── module_a.json         # Major Depressive Episode
 │   ├── module_d.json         # ... other modules
 ├── run_interview.py          # Entry script

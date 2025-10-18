@@ -8,10 +8,9 @@ export default function LandingScreen() {
   return (
     <div className="space-y-6">
       <div className="space-y-2">
-        <h1 className="text-3xl font-semibold tracking-tight text-slate-900">MINI Interview</h1>
+        <h1 className="text-3xl font-semibold tracking-tight text-slate-900">Structured Clinical Interview and Assessment</h1>
         <p className="text-slate-700">
-          The MINI (Mini International Neuropsychiatric Interview) is a structured diagnostic interview traditionally
-          administered by clinicians. With this platform, we are automating the MINI using an agentic AI system. The
+        The structured clinical interview is traditionally administered by clinicians to assess patients and visitors to the clinic. With this platform, we are automating the interview and assessment process using an agentic AI system. The
           goal is to make the assessment process faster, more scalable, and easier to use, while maintaining clinical
           rigor and reliability.
         </p>

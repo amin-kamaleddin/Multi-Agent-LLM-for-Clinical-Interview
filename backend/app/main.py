@@ -9,7 +9,7 @@ from .routers import auth, modules, sessions, reports, health
 
 
 def create_app() -> FastAPI:
-    api_app = FastAPI(title="MINI Interview API", version="0.1.0")
+    api_app = FastAPI(title="Structured Clinical Interview and Assessment Interview API", version="0.1.0")
 
     frontend_origin = os.getenv("FRONTEND_ORIGIN", "*")
     api_app.add_middleware(
