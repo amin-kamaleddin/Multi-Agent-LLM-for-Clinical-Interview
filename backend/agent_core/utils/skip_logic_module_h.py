@@ -1,5 +1,5 @@
-from interview_agent.models import InterviewState
-from utils.extract_question_answer_pair import extract_question_classification_pairs
+from backend.agent_core.interview_agent.models import InterviewState
+from backend.agent_core.utils.extract_question_answer_pair import extract_question_classification_pairs
 
 
 def module_h_ready_to_diagnose(state: InterviewState) -> bool:

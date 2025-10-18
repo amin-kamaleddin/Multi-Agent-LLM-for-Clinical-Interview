@@ -1,17 +1,4 @@
----
-title: Structured Clinical Interview Agent
-emoji: 🧠
-colorFrom: blue
-colorTo: green
-sdk: streamlit
-app_file: streamlit_app.py
-pinned: false
-license: mit
-startup_duration_timeout: 1h
-python_version: 3.11
----
-
-# 🧠 Structured Clinical Interview Agent
+# 🧠 Structured Clinical Interview and Assessment Agent
 
 AI agent for conducting structured neuropyschiatric assessments with dynamic conversation flow, clinical tone, and intelligent follow-ups powered by LLMs.
 
@@ -32,14 +19,11 @@ AI agent for conducting structured neuropyschiatric assessments with dynamic con
 
 ## 🚀 Quick Start
 
-### 🌐 Use Online (Hugging Face Spaces)
-
-Visit the [live demo](https://huggingface.co/spaces/areezvisram/MINI-Interview-Agent) - no setup required!
-
 ### 💻 Local Development
 
 **Prerequisites:**
 - Python 3.8+
+- Node.js 18+ and npm
 - OpenAI API key
 
 **Setup:**
@@ -57,10 +41,25 @@ echo "OPENAI_API_KEY=sk-proj-your-api-key-here" > .env
 
 **Run Options:**
 
-**Streamlit Web App:**
+**Web App (FastAPI serves Vite build):**
 ```bash
-streamlit run streamlit_app.py
+# Build the frontend (generates frontend/dist)
+cd frontend
+npm install
+npm run build
+cd ..
+
+# Run only the backend (serves both API and the built frontend)
+uvicorn backend.app.main:app --host 0.0.0.0 --port 8000 --reload
+
+# Open the app
+# http://localhost:8000
 ```
+
+**Dev workflow (recommended):**
+- Run API: `uvicorn backend.app.main:app --reload`
+- Run frontend with hot reload: `cd frontend && npm run dev`
+  - Vite proxy (see `frontend/vite.config.ts`) forwards `/auth`, `/modules`, `/sessions`, `/healthz` to the API on `http://localhost:8000`.
 
 **Command Line Interface:**
 ```bash
@@ -86,7 +85,7 @@ The system is a directed graph of coordinated nodes that share a single `Intervi
 
 1. **Questioner Node**
 
-   * Presents the next neuropyschiatric interview question with an LLM.
+   * Presents the next question with an LLM.
    * If the previous reply was ambiguous, generates a focused clarification prompt.
    * If the previous reply was request for more explanation, generates a detailed explanation for question and add 
      an example if applicable.
@@ -141,7 +140,7 @@ mini-agent/
 │   ├── nodes.py              # LangGraph nodes (questioner, evaluator, etc.)
 │   ├── graph.py              # Workflow construction
 │   └── cli.py                # Command-line interface
-├── modules/                  # MINI questionnaire modules
+├── modules/                  # Interview questionnaire modules
 │   ├── module_a.json         # Major Depressive Episode
 │   ├── module_d.json         # ... other modules
 ├── run_interview.py          # Entry script

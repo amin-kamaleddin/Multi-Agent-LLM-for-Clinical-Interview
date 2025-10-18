@@ -15,8 +15,8 @@ def _load_key():
 
 
 def run(patient_agent=False):
-    parser = argparse.ArgumentParser(description="Run MINI questioner")
-    parser.add_argument("module_path", help="Path to MINI JSON file")
+    parser = argparse.ArgumentParser(description="Run Structured Clinical Interview and Assessment questioner")
+    parser.add_argument("module_path", help="Path to Structured Clinical Interview and Assessment JSON file")
     parser.add_argument(
         "--start_qid",
         help="First question ID",

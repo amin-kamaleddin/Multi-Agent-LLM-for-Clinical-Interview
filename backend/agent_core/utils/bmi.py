@@ -1,8 +1,8 @@
 from langchain_openai import ChatOpenAI
 from pydantic import BaseModel
 
-from interview_agent.models import InterviewState
-from utils.extract_question_answer_pair import extract_question_answer_pair_with_classification
+from backend.agent_core.interview_agent.models import InterviewState
+from backend.agent_core.utils.extract_question_answer_pair import extract_question_answer_pair_with_classification
 
 
 class BmiResult(BaseModel):

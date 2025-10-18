@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-# from interview_agent.cli import _load_key # uncomment if needed
+# from backend.agent_core.interview_agent.cli import _load_key # uncomment if needed
 
 # Load your model (make sure OPENAI_API_KEY is set in env)
 llm = ChatOpenAI(model="gpt-4o-mini", temperature=0)
