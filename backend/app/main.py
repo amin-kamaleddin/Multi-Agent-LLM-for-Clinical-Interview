@@ -5,7 +5,7 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
 from pathlib import Path
 
-from .routers import auth, modules, sessions, reports, health
+from .routers import auth, modules, sessions, reports, health, voice
 
 
 def create_app() -> FastAPI:
@@ -26,6 +26,7 @@ def create_app() -> FastAPI:
     api_app.include_router(modules.router, prefix="/modules", tags=["modules"])
     api_app.include_router(sessions.router, prefix="/sessions", tags=["sessions"])
     api_app.include_router(reports.router, prefix="/sessions", tags=["reports"])
+    api_app.include_router(voice.router, prefix="/api", tags=["voice"])  # exposes /api/voice/*
     # Serve built frontend (Vite) in production if available
     project_root = Path(__file__).resolve().parents[2]
     dist_dir = project_root / "frontend" / "dist"

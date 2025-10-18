@@ -9,6 +9,8 @@ import Skeleton from '../ui/Skeleton'
 import LoadingOverlay from '../ui/LoadingOverlay'
 import ProgressHeader from './ProgressHeader'
 import QuestionCard from './QuestionCard'
+// SpeakButton replaced by AudioPlayControl
+import AudioPlayControl from '../voice/AudioPlayControl'
 import LatestResult from './LatestResult'
 import AnswerForm from './AnswerForm'
 import FinishedView from './FinishedView'
@@ -24,6 +26,7 @@ export default function Interview({ modulePath }: { modulePath: string }) {
   const [submittedAnswer, setSubmittedAnswer] = useState('')
   const [finished, setFinished] = useState(false)
   const [diagnosis, setDiagnosis] = useState<Record<string, any> | null>(null)
+  const [uiLocked, setUiLocked] = useState(false)
 
   const createSession = useMutation({
     mutationFn: () => api.createSession({ modulePath }),
@@ -69,7 +72,7 @@ export default function Interview({ modulePath }: { modulePath: string }) {
     },
   })
 
-  const disabled = useMemo(() => submit.isPending || goNext.isPending || !threadId, [submit.isPending, goNext.isPending, threadId])
+  const disabled = useMemo(() => submit.isPending || goNext.isPending || !threadId || uiLocked, [submit.isPending, goNext.isPending, threadId, uiLocked])
   const busyLabel = submit.isPending
     ? 'Evaluating your answer...'
     : goNext.isPending
@@ -102,7 +105,12 @@ export default function Interview({ modulePath }: { modulePath: string }) {
     <Container>
       <ProgressHeader moduleName={moduleName} questionId={questionId} progress={progress} />
 
-      <QuestionCard question={question} loading={goNext.isPending} />
+      <div className="space-y-3">
+        <QuestionCard question={question} loading={goNext.isPending} />
+        {question && (
+          <AudioPlayControl text={question} uiLocked={uiLocked} onLock={() => setUiLocked(true)} onUnlock={() => setUiLocked(false)} label="Read question aloud" />
+        )}
+      </div>
 
       {latest ? (
         <div className="space-y-3">
@@ -122,6 +130,8 @@ export default function Interview({ modulePath }: { modulePath: string }) {
           disabled={disabled || !threadId}
           isSubmitPending={submit.isPending}
           onSubmit={(answer) => threadId && submit.mutate({ threadId, answer })}
+          onVoiceStart={() => setUiLocked(true)}
+          onVoiceEnd={() => setUiLocked(false)}
         />
       )}
 

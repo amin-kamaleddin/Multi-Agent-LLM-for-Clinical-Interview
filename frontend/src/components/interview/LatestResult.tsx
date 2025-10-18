@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import type { AnswerResponse } from '../../services/types'
 import Skeleton from '../ui/Skeleton'
+import SpeakButton from '../voice/SpeakButton'
+import AudioPlayControl from '../voice/AudioPlayControl'
 import Spinner from '../ui/Spinner'
 
 type LatestResultProps = {
@@ -11,9 +13,12 @@ type LatestResultProps = {
   isNextPending: boolean
   onNext: () => void
   onCrisisContinue: () => void
+  uiLocked?: boolean
+  onLock?: () => void
+  onUnlock?: () => void
 }
 
-export default function LatestResult({ latest, submittedAnswer, disabled, isSubmitPending, isNextPending, onNext, onCrisisContinue }: LatestResultProps) {
+export default function LatestResult({ latest, submittedAnswer, disabled, isSubmitPending, isNextPending, onNext, onCrisisContinue, uiLocked, onLock, onUnlock }: LatestResultProps) {
   const [analysisOpen, setAnalysisOpen] = useState(false)
   const [redactionOpen, setRedactionOpen] = useState(false)
 
@@ -54,6 +59,13 @@ export default function LatestResult({ latest, submittedAnswer, disabled, isSubm
           </span>
         </div>
       </div>
+
+      {/* Allow playing agent's reasoning via TTS */}
+      {latest.reasoning && (
+        <div className="mt-2">
+          <AudioPlayControl text={latest.reasoning} uiLocked={uiLocked} onLock={onLock} onUnlock={onUnlock} label="Hear evaluator reasoning" />
+        </div>
+      )}
 
       {latest.redacted && (
         <div className="rounded-md border border-amber-200 bg-amber-50/70 p-4 text-slate-900">
