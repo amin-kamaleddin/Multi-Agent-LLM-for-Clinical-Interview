@@ -175,6 +175,9 @@ mini-agent/
 Environment variables:
 
 * `OPENAI_API_KEY` (required): OpenAI API key
+* `APP_PASSWORD` (required): Determines the login password needed to access the app
+* `UPSTASH_REDIS_REST_URL` (required): Redis URL required to run app
+* `UPSTASH_REDIS_REST_TOKEN` (required): Redis token required to run app
 
 ---
 
