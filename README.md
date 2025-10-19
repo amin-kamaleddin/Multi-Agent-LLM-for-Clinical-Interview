@@ -178,6 +178,8 @@ Environment variables:
 * `APP_PASSWORD` (required): Determines the login password needed to access the app
 * `UPSTASH_REDIS_REST_URL` (required): Redis URL required to run app
 * `UPSTASH_REDIS_REST_TOKEN` (required): Redis token required to run app
+* `ELEVENLABS_API_KEY` (required): ElevenLabs API Key for audio support
+* `ELEVENLABS_VOICE_ID`: ID of ElevenLabs voice that audio will be read with
 
 ---
 
