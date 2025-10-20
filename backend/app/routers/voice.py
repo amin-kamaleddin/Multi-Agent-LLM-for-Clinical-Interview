@@ -83,7 +83,7 @@ async def transcribe(file: UploadFile = File(...)) -> dict:
 
 
 @router.get("/voice/tts")
-async def tts_get(text: str, voiceId: str | None = None) -> StreamingResponse:
+async def tts_get(text: str, voiceId: str) -> StreamingResponse:
     """GET variant for streaming TTS so the client can set audio.src directly."""
     text = (text or "").strip()
     if not text:
