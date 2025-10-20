@@ -14,3 +14,4 @@ scikit-learn~=1.6.1
 elevenlabs
 python-multipart~=0.0.20
 fastapi
+upstash_redis
