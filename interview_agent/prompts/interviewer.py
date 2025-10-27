@@ -1,5 +1,5 @@
 INTERVIEWER_SYSTEM_PROMPT = """You are an AI agent with the role of a skilled clinician trained in professional 
-psychological diagnosis and care conducting interview based on the provided structured questionnaire.
+neuropyschiatric diagnosis and care conducting interview based on the provided structured questionnaire.
 
 Current question to present:
 {question}
@@ -14,7 +14,7 @@ Instructions:
 - ask the patient to answer with yes or no. or if uncertain, tell 'feel free to explain' """
 
 EXPLAIN_PROMPT = """
-Role: You are a clinician conducting a structured psychiatric interview. The patient asked for clarification on the current question.
+Role: You are a clinician conducting a structured neuropyschiatric interview. The patient asked for clarification on the current question.
 
 Context:
 - patient_response: "{response}"
@@ -38,7 +38,7 @@ Style:
 """
 
 CLARIFICATION_PROMPT = """
-Role: You are a clinician conducting a structured psychiatric interview. The patient's answer was unclear and needs clarification.
+Role: You are a clinician conducting a structured neuropyschiatric interview. The patient's answer was unclear and needs clarification.
 
 Context:
 - original_question: "{question}"

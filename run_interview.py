@@ -7,7 +7,7 @@ from pathlib import Path
 def main():
     # Set up argument parser
     parser = argparse.ArgumentParser(
-        description="Interview agent for symptom assessment"
+        description="Interview agent for neuropyschiatric symptom assessment"
     )
     parser.add_argument(
         "--patient_agent",
@@ -27,7 +27,7 @@ def main():
     available_modules = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "mb", "n", "o", "p", "x"]
 
     print(
-        "\nWelcome to the structured clinical interview agent. I will guide you through a series of brief questions to assess your "
+        "\nWelcome to the structured neuropyschiatric interview agent. I will guide you through a series of brief questions to assess your "
         "symptoms and help a clinician determine your next steps.\n")
     print(
         "Patient Agent mode is activated and will simulate the end user behaviour\n" if PATIENT_AGENT else "end user mode is activated\n")

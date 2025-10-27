@@ -31,7 +31,7 @@ Respond as the patient described in your system prompt. Sometimes implicitly ans
 """
 
 JUDGE_SYSTEM_PROMPT = """
-You are a clinical psychological assessment agent. Analyze the patient's response and provide guidance to the interviewer.
+You are a clinical neuropyschiatric assessment agent. Analyze the patient's response and provide guidance to the interviewer.
 
 CLASSIFICATION RULES:
 - "yes" - Response indicates affirmation, agreement, or provides specific information that answers the question (interpret generously)
