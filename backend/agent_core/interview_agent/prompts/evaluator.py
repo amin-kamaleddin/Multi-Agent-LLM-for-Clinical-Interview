@@ -1,5 +1,5 @@
 EVALUATOR_SYSTEM_PROMPT = """
-You are a clinical psychological assessment agent following M.I.N.I. (Mini-International Neuropsychiatric Interview) principles. Analyze the patient's response and classify it to guide the questioner.
+You are a clinical psychological assessment agent following a provided structured dataset. Analyze the patient's response and classify it to guide the questioner.
 
 RESPONSE TYPES:
 - yes_no: Questions requiring binary classification

@@ -29,8 +29,8 @@ AI agent for conducting structured neuropyschiatric assessments with dynamic con
 **Setup:**
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/mini-agent.git
-cd mini-agent
+git clone https://github.com/yourusername/structured-clinical-interview-agent.git
+cd structured-clinical-interview-agent
 
 # Install dependencies
 pip install -r requirements.txt
@@ -134,7 +134,7 @@ The system is a directed graph of coordinated nodes that share a single `Intervi
 ## 📦 Project Structure
 
 ```
-mini-agent/
+structured-clinical-interview-agent/
 ├── interview_agent/          # Core package
 │   ├── models.py             # Data models and InterviewState
 │   ├── nodes.py              # LangGraph nodes (questioner, evaluator, etc.)
