@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import type { AnswerResponse } from '../../services/types'
 import Skeleton from '../ui/Skeleton'
-import SpeakButton from '../voice/SpeakButton'
 import AudioPlayControl from '../voice/AudioPlayControl'
 import Spinner from '../ui/Spinner'
 
