@@ -1,0 +1,26 @@
+{
+    "current": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 (MB1) is met as MB1 is YES. Criterion 2 (MB2) is met as MB2 is YES. Criterion 3 (MB3) is met as MB3 is YES. Criterion 4 (MB4) is met as MB4 is NO. Criterion 5 requires at least 3 of MB6a-MB6e to be YES; MB6a, MB6b, MB6c, MB6d, and MB6e are all YES, so this criterion is met. Criterion 6 (MB7) is met as MB7 is YES. All criteria are met based on the patient's answers.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    },
+    "severity": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "MB8a episodes are indicated as VALID_QUANTITY, but the exact number is not provided, so severity level cannot be determined. Without a specific number of episodes per week, none of the severity criteria (mild, moderate, severe, extreme) can be confirmed as met.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    },
+    "exclusions": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "The patient does not meet criteria for Anorexia Nervosa as MB4 is NO, which excludes Bulimia Nervosa. All exclusion criteria are met, so diagnosis is false.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    }
+}

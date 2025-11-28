@@ -31,7 +31,6 @@ build/
 
 # Reports
 reports/
-patient_agent_results/*
 
 .venv/
 env311/

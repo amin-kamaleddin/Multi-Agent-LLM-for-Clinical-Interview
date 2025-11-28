@@ -1,0 +1,10 @@
+{
+    "positive": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "At least one item from L4 (L4b) is coded YES, satisfying the criterion.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "current": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 requires MB1 coded YES, but MB1 is NO. Therefore, criterion 1 is not met, and the overall diagnosis is false.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    },
+    "severity": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "The only available data is MB1: NO, and there is no information about MB8a episodes frequency. Therefore, none of the severity criteria based on MB8a episodes frequency can be met.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    },
+    "exclusions": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "MB1 is NO, indicating the patient does not meet the criterion for Anorexia Nervosa. MB4 is NO, confirming the patient does not meet criteria for Bulimia Nervosa. Therefore, all exclusion criteria are met.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    }
+}

@@ -1,0 +1,14 @@
+question_id,ai_question,patient_response,classification,reasoning,timestamp,exchange_type
+J1,"In the past 12 months, did you take any of these drugs more than once, to get high, to feel elated, to get “a buzz” or to change your mood? 
+
+Stimulants: amphetamines, ""speed"", crystal meth, “crank”, Dexedrine, Ritalin, diet pills.  
+Cocaine: snorting, IV, freebase, crack, ""speedball"".  
+Opiates: heroin, morphine, Dilaudid, opium, Demerol, methadone, Darvon, codeine, Percodan, Vicodin, OxyContin.  
+Hallucinogens: LSD (""acid""), mescaline, peyote, psilocybin, STP, ""mushrooms"", “ecstasy”, MDA, MDMA.  
+Dissociative Drugs: PCP (Phencyclidine, ""Angel Dust"", ""Peace Pill"", “Hog”), or ketamine (“Special K”).  
+Inhalants: ""glue"", ethyl chloride, “rush”, nitrous oxide (""laughing gas""), amyl or butyl nitrate (""poppers"").  
+Cannabis: marijuana, hashish (""hash""), THC, ""pot"", ""grass"", ""weed"", ""reefer"".  
+Sedatives, Hypnotics or Anxiolytics: Quaalude, Seconal (""reds""), Valium, Xanax, Librium, Ativan, Dalmane, Halcion, barbiturates, Miltown, GHB, Roofinol, “Roofies”.  
+Miscellaneous: steroids, nonprescription sleep or diet pills. Cough Medicine? Any others?  
+
+Please respond with ""yes"" or ""no."" If you're uncertain, feel free to explain.","No, I do not use those substances for any purpose like getting high or changing my mood. My use of cannabis has been infrequent and not associated with any mood changes or responsibilities being impacted.",no,"The patient explicitly states 'No, I do not use those substances for any purpose like getting high or changing my mood.' This indicates that the patient does not engage in the use of the specified drugs for the purposes outlined in the question. Therefore, the response clearly negates the presence of the symptom/condition being assessed, which is the use of drugs to get high or change mood. Additionally, the patient attributes their infrequent cannabis use to not being associated with mood changes or responsibilities being impacted, which further supports the classification as 'no' due to the lack of symptom presence.",2025-10-08T13:59:11.166923,initial

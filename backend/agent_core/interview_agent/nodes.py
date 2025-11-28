@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 import json
 import os
 from datetime import datetime
@@ -139,7 +141,7 @@ def questioner_node(state: InterviewState) -> Dict[str, Any]:
 
 
     # Otherwise proceed as usual
-    sys_msg = SystemMessage(content=QUESTIONER_SYSTEM_PROMPT.format(question=current_question.prompt))
+    sys_msg = SystemMessage(content=QUESTIONER_SYSTEM_PROMPT.format(q_a_pairs=q_a_pairs ,question=current_question.prompt))
 
     if len(state.evaluator_results) > 0:
         if state.evaluator_results[-1] == "explain request":

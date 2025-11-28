@@ -1,0 +1,18 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion 1: H7 is YES, so met. Criterion 2: H3a and H3b are both YES, so at least one H3a-b is YES, met. Criterion 3: H4a, H4b, H4c, H4e, and H4f are YES (5 out of 7), so 2 or more H4a-g are YES, met. Criterion 4: H5a, H5b, H5c, H5d, and H5e are YES (5 out of 6), so 2 or more H5a-f are YES, met. Criterion 5: O1a and O1b are not provided, so cannot confirm they are NO; assuming missing data means not met. Since criterion 5 is not met, overall diagnosis is false.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    },
+    "depersonalization, derealization or with delayed expression": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion 1: H7 is YES, so criterion met. Criterion 2: The condition is associated with depersonalization, derealization, or delayed expression as per module context. Criterion 3: At least one of H3a or H3b is YES (both are YES), so criterion met. Criterion 4: At least two of H4a-g are YES. H4a, H4b, H4c, H4e, and H4f are YES (5 total), so criterion met. Criterion 5: At least two of H5a-f are YES. H5a, H5b, H5c, H5d, and H5e are YES (5 total), so criterion met. Criterion 6: O1a and O1b are not provided, so cannot confirm they are NO; assuming default NO is not met, criterion not met. Since criterion 6 is not met, overall diagnosis is false.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    }
+}

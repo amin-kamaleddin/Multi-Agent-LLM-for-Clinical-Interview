@@ -1,0 +1,18 @@
+{
+    "positive": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "Among J2a through J2k, the patient answered YES to J2a, J2b, J2c, J2d, J2e, J2g, J2h, J2i, J2j, and both J2k1 and J2k2. Since J2k1 and J2k2 together count as one, there are more than two YES answers in this range, meeting the criterion.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    },
+    "severity": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "The patient has answered YES to 11 J2 symptoms (J2a, J2b, J2c, J2d, J2e, J2g, J2h, J2i, J2j, J2k1, J2k2) and NO to only one (J2f). Since 6 or more J2 symptoms are required for SEVERE, the criterion for severity is met. There is no indication of different time frames, so the symptom count is considered as one unit. Therefore, the diagnosis is true. The time frame cannot be determined from the data provided.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    }
+}

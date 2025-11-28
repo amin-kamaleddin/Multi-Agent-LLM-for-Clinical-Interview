@@ -1,0 +1,14 @@
+question_id,ai_question,patient_response,classification,reasoning,timestamp,exchange_type
+J1,"In the past 12 months, did you take any of these drugs more than once, to get high, to feel elated, to get “a buzz” or to change your mood? 
+
+Stimulants: amphetamines, ""speed"", crystal meth, “crank”, Dexedrine, Ritalin, diet pills.  
+Cocaine: snorting, IV, freebase, crack, ""speedball"".  
+Opiates: heroin, morphine, Dilaudid, opium, Demerol, methadone, Darvon, codeine, Percodan, Vicodin, OxyContin.  
+Hallucinogens: LSD (""acid""), mescaline, peyote, psilocybin, STP, ""mushrooms"", “ecstasy”, MDA, MDMA.  
+Dissociative Drugs: PCP (Phencyclidine, ""Angel Dust"", ""Peace Pill"", “Hog”), or ketamine (“Special K”).  
+Inhalants: ""glue"", ethyl chloride, “rush”, nitrous oxide (""laughing gas""), amyl or butyl nitrate (""poppers"").  
+Cannabis: marijuana, hashish (""hash""), THC, ""pot"", ""grass"", ""weed"", ""reefer"".  
+Sedatives, Hypnotics or Anxiolytics: Quaalude, Seconal (""reds""), Valium, Xanax, Librium, Ativan, Dalmane, Halcion, barbiturates, Miltown, GHB, Roofinol, “Roofies”.  
+Miscellaneous: steroids, nonprescription sleep or diet pills. Cough Medicine? Any others?  
+
+Please feel free to explain if you are uncertain.","I really don’t use those substances. In the past year, I've had the occasional drink when hanging out with friends, but that’s about it. I find that it’s easy for me to enjoy life without needing any of that to feel good or cope. I feel completely in control of my choices, and honestly, I thrive on keeping things balanced. My friends might experiment sometimes, but I’m confident in how I manage my lifestyle. It's just not something I feel drawn to.",no,"The patient clearly states that they do not use the substances listed in the question and emphasizes their control over their choices and lifestyle. There is no indication of using any of the specified drugs to get high or change their mood, which aligns with the classification rule for yes_no questions where a direct denial of the symptom is present. Therefore, the response indicates that the symptom/condition is NOT present.",2025-10-08T14:02:38.868921,initial

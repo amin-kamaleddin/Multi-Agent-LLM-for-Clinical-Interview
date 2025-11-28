@@ -1,0 +1,10 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion 1: C1b is YES, so need 3 or more C3 symptom groups including C3f coded YES. All C3a to C3g current and past are YES, so both past and recent have 7 symptom groups positive including C3f. Criterion met for both time frames. Criterion 2: C4_current and C4_past are VALID_QUANTITY, so criterion met. Criterion 3: C7 is YES, criterion met. Criterion 4: C4C or C5 or C6 coded YES? C5 and C6 are NO, C4_current and C4_past are VALID_QUANTITY but no explicit YES for C4C, so criterion 4 not met. Criterion 5: O1a and O1b are NO, criterion met. Since criterion 4 is not met, overall diagnosis is false.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    }
+}

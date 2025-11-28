@@ -1,0 +1,18 @@
+{
+    "positive": {
+        "diagnosis": true,
+        "timeFrame": "both",
+        "reasoning": "1. Symptom groups (A3a\u2013A3g): All groups A3a, A3b, A3c, A3d, A3f, A3g are YES for both past and recent. A3e is NO past but YES recent. Thus, past positive groups = 6 (A3a, A3b, A3c, A3d, A3f, A3g), recent positive groups = 7 (all A3a\u2013A3g). Both past and recent independently meet the threshold of at least 5 symptom groups.\n2. Core symptom: A1a=YES and A1b=YES and A2a_1=YES and A2b=YES, so core symptom criterion is met.\n3. Functional impairment: A4_past=YES and A4_recent=YES, so functional impairment criterion is met.\n4. O1a=NO and O1b=NO, so this criterion is met.\nAll criteria are met. Since both past and recent independently meet symptom group threshold, time frame is 'both'.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 (A5 = YES) is not met because A5 = NO. Criterion 2 (O1a = NO AND O1b = NO) is met as both are NO. Since not all criteria are met, diagnosis is false.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    }
+}

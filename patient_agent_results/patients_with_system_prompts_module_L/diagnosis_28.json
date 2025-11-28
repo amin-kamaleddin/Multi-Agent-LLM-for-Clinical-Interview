@@ -1,0 +1,10 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "No information is provided about any items from L4 being coded YES, so the criterion 'ARE 1 OR MORE ITEMS FROM L4 CODED YES?' is not met.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 (H7 coded YES): Patient answered NO to H1; no data on H7, assumed NO. Criterion not met. Criterion 2 (1 or more H3a-b YES): No data, assumed NO. Criterion 3 (2 or more H4a-g YES): No data, assumed NO. Criterion 4 (2 or more H5a-f YES): No data, assumed NO. Criterion 5 (O1a=NO and O1b=NO): No data, assumed NO. Therefore, none of the criteria are met.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    },
+    "depersonalization, derealization or with delayed expression": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "H7 is not provided, so cannot confirm it is YES. H1 is NO, and no other answers are given for H3a-b, H4a-g, H5a-f, or O1a and O1b. Therefore, criteria 1, 3, 4, 5, and 6 cannot be met.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    }
+}

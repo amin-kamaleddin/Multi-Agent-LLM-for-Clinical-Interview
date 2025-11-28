@@ -1,0 +1,12 @@
+question_id,ai_question,patient_response,classification,reasoning,timestamp,exchange_type
+J1,"In the past 12 months, did you take any of these drugs more than once, to get high, to feel elated, to get “a buzz” or to change your mood? 
+
+Stimulants: amphetamines, ""speed"", crystal meth, “crank”, Dexedrine, Ritalin, diet pills.  
+Cocaine: snorting, IV, freebase, crack, ""speedball"".  
+Opiates: heroin, morphine, Dilaudid, opium, Demerol, methadone, Darvon, codeine, Percodan, Vicodin, OxyContin.  
+Hallucinogens: LSD (""acid""), mescaline, peyote, psilocybin, STP, ""mushrooms"", “ecstasy”, MDA, MDMA.  
+Dissociative Drugs: PCP (Phencyclidine, ""Angel Dust"", ""Peace Pill"", “Hog”), or ketamine (“Special K”).  
+Inhalants: ""glue"", ethyl chloride, “rush”, nitrous oxide (""laughing gas""), amyl or butyl nitrate (""poppers"").  
+Cannabis: marijuana, hashish (""hash""), THC, ""pot"", ""grass"", ""weed"", ""reefer"".  
+Sedatives, Hypnotics or Anxiolytics: Quaalude, Seconal (""reds""), Valium, Xanax, Librium, Ativan, Dalmane, Halcion, barbiturates, Miltown, GHB, Roofinol, “Roofies”.  
+Miscellaneous: steroids, nonprescription sleep or diet pills. Cough Medicine? Any others?","I appreciate your concern and can clarify that my use of substances over the past year has been quite occasional and typically associated with social events or celebrations. While I do engage with various substances like cannabis and alcohol, it’s never been in a way that I've felt has affected my life negatively or disrupted my relationships. In fact, I maintain a stable job and a supportive circle of friends who know how I unwind, and they haven't raised any concerns. I feel like I manage my life well, and this usage is just a part of my social interactions rather than a coping mechanism.",no,"The patient indicates that their substance use is occasional and associated with social events, suggesting that it is not a frequent or problematic behavior. They also emphasize that it has not negatively impacted their life or relationships. This response attributes their substance use to social situations rather than indicating a clinical symptom or condition. Therefore, it should be classified as 'no' since the patient attributes their substance use to external social events rather than an internal need or symptom.",2025-10-08T14:17:49.519496,initial

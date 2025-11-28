@@ -1,0 +1,16 @@
+question_id,ai_question,patient_response,classification,reasoning,timestamp,exchange_type
+J1,"In the past 12 months, did you take any of these drugs more than once, to get high, to feel elated, to get “a buzz” or to change your mood? 
+
+Stimulants: amphetamines, ""speed"", crystal meth, “crank”, Dexedrine, Ritalin, diet pills.  
+Cocaine: snorting, IV, freebase, crack, ""speedball"".  
+Opiates: heroin, morphine, Dilaudid, opium, Demerol, methadone, Darvon, codeine, Percodan, Vicodin, OxyContin.  
+Hallucinogens: LSD (""acid""), mescaline, peyote, psilocybin, STP, ""mushrooms"", “ecstasy”, MDA, MDMA.  
+Dissociative Drugs: PCP (Phencyclidine, ""Angel Dust"", ""Peace Pill"", “Hog”), or ketamine (“Special K”).  
+Inhalants: ""glue"", ethyl chloride, “rush”, nitrous oxide (""laughing gas""), amyl or butyl nitrate (""poppers"").  
+Cannabis: marijuana, hashish (""hash""), THC, ""pot"", ""grass"", ""weed"", ""reefer"".  
+Sedatives, Hypnotics or Anxiolytics: Quaalude, Seconal (""reds""), Valium, Xanax, Librium, Ativan, Dalmane, Halcion, barbiturates, Miltown, GHB, Roofinol, “Roofies”.  
+Miscellaneous: steroids, nonprescription sleep or diet pills. Cough Medicine? Any others?  
+
+Please feel free to explain if you are uncertain.","I can confidently say that in the past year, I haven't needed or wanted to use any of those substances more than once. I might have been at social gatherings where others were using, but I've always been able to enjoy myself without partaking. I find that my friends respect my choice and we often engage in other activities together—like playing games or watching movies. I’ve never really felt any triggers—I'm genuinely comfortable in my own skin, and for me, the thought of using anything like that is just not appealing. 
+
+To be honest, I feel proud of my ability to navigate those situations. It's not like I've been battling cravings or reflecting on past experiences; I see this very much as a choice rather than something I have to control. I understand how some can struggle, but I just view my relationship with substances as a non-issue. Even if there's pressure, I feel grounded enough to stick to what feels right for me.",no,"The patient clearly states that they have not needed or wanted to use any of the specified substances more than once in the past year. This indicates that they do not engage in substance use for the purpose of getting high or changing their mood. Therefore, the appropriate classification for this yes_no question is 'no', as the patient attributes their lack of substance use to personal choice rather than any external situational causes.",2025-10-08T14:19:47.069272,initial

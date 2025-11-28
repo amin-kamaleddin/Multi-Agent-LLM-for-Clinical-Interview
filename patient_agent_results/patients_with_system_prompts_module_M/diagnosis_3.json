@@ -1,0 +1,26 @@
+{
+    "current": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "Both criteria M5 and M7 are coded YES, thus both are met.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    },
+    "current, Binge Eating Purging Type": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion requires M7 to be NO, but patient answered YES, so criterion is not met.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    },
+    "severity": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "M4a quantity is within a valid range (assumed between 1-3, 4-7, 8-13, or 14+). Since M4a quantity is provided as VALID_QUANTITY, we assume it falls into one of these categories. Based on the instructions, the severity is determined by M4a quantity: 1-3 = Mild, 4-7 = Moderate, 8-13 = Severe, 14+ = Extreme. All other required items (M1, M2, M3, M4, M5, M7) are marked YES, indicating all criteria are met. No time frame information is provided, so timeFrame is null.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    }
+}

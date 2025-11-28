@@ -1,0 +1,14 @@
+question_id,ai_question,patient_response,classification,reasoning,timestamp,exchange_type
+J1,"In the past 12 months, did you take any of these drugs more than once, to get high, to feel elated, to get “a buzz” or to change your mood? 
+
+Stimulants: amphetamines, ""speed"", crystal meth, “crank”, Dexedrine, Ritalin, diet pills.  
+Cocaine: snorting, IV, freebase, crack, ""speedball"".  
+Opiates: heroin, morphine, Dilaudid, opium, Demerol, methadone, Darvon, codeine, Percodan, Vicodin, OxyContin.  
+Hallucinogens: LSD (""acid""), mescaline, peyote, psilocybin, STP, ""mushrooms"", “ecstasy”, MDA, MDMA.  
+Dissociative Drugs: PCP (Phencyclidine, ""Angel Dust"", ""Peace Pill"", “Hog”), or ketamine (“Special K”).  
+Inhalants: ""glue"", ethyl chloride, “rush”, nitrous oxide (""laughing gas""), amyl or butyl nitrate (""poppers"").  
+Cannabis: marijuana, hashish (""hash""), THC, ""pot"", ""grass"", ""weed"", ""reefer"".  
+Sedatives, Hypnotics or Anxiolytics: Quaalude, Seconal (""reds""), Valium, Xanax, Librium, Ativan, Dalmane, Halcion, barbiturates, Miltown, GHB, Roofinol, “Roofies”.  
+Miscellaneous: steroids, nonprescription sleep or diet pills. Cough Medicine? Any others?  
+
+Please feel free to explain if you are uncertain.","I occasionally use some substances from that list, but it’s never been to get high or change my mood. I find that it doesn’t interfere with my daily life or responsibilities, and I maintain strong relationships and good performance at work.",no,"The patient indicates that they occasionally use substances from the provided list but explicitly states that it is never to get high or change their mood. This suggests that the use is not for the purpose of mood alteration, which aligns with the situational exclusion rule. Additionally, the patient emphasizes that this behavior does not interfere with their daily life or responsibilities, further supporting the classification of 'no' for the presence of symptoms related to substance use. Therefore, the response indicates that the symptom/condition is not present, as it is attributed to their personal choice rather than a clinical issue.",2025-10-08T14:00:55.086289,initial

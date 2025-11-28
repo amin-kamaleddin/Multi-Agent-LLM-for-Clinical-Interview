@@ -1,0 +1,10 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "C1b is not provided, so cannot determine criterion 1; no information on C3 answers, so criterion 1 not met. C4b and C4c are not provided as valid quantities, so criterion 2 not met. C7 is not provided as YES, so criterion 3 not met. C4c, C5, and C6 are not provided as YES, so criterion 4 not met. O1a and O1b are not provided, but since both are required to be NO and no data is given, cannot confirm criterion 5. Overall, insufficient data and given NO answers do not meet any criteria.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    }
+}

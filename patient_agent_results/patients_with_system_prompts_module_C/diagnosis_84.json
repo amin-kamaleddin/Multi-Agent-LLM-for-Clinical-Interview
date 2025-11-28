@@ -1,0 +1,10 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "C1b is not provided, so cannot determine if condition 1 is met; no information on C3 answers including C3f, so condition 1 cannot be confirmed. Conditions 2, 3, and 4 require C4b, C4c, C5, C6, or C7 coded YES or valid quantity, but none are provided as YES or valid. Condition 5 requires O1a=NO and O1b=NO, but these are not provided. Given the lack of positive answers and missing data for key criteria, none of the criteria can be confirmed as met.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    }
+}

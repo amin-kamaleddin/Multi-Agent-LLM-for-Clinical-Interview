@@ -1,0 +1,18 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 (H7 coded YES) is not met because H7 answer is not provided but H1 is NO, implying no positive answers in this group. Criterion 2 (one or more H3a-b YES) cannot be met as no H3a-b answers are given as YES. Criterion 3 (two or more H4a-g YES) cannot be met due to lack of any YES answers. Criterion 4 (two or more H5a-f YES) also cannot be met for the same reason. Criterion 5 (O1a = NO and O1b = NO) cannot be evaluated as O1a and O1b answers are not provided, but since other criteria fail, overall diagnosis is false.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    },
+    "depersonalization, derealization or with delayed expression": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "H7 is not provided, so cannot confirm it is YES. H1 is NO, and no other answers are given for H3a-b, H4a-g, H5a-f, or O1a/b. Therefore, criteria 1, 3, 4, 5, and 6 cannot be met.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    }
+}

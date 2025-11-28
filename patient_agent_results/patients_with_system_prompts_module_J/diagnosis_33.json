@@ -1,0 +1,18 @@
+{
+    "positive": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "Among the J2 items from J2a through J2k, all are coded YES, including J2k1 and J2k2 which count as one. Therefore, there are more than two J2 answers coded YES, satisfying the criterion.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    },
+    "severity": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "The patient answered YES to all J2 symptoms (J2a through J2k2), totaling more than 6 symptom groups positive. Since all are positive and no time frame is specified, we consider them as one time frame (non-time-frame-specific). Therefore, the severity criterion for SEVERE (6 or more symptoms) is met. J1 is YES, confirming the presence of the disorder. No information on remission or controlled environment is provided, so those criteria do not apply.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    }
+}

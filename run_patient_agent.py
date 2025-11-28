@@ -12,9 +12,9 @@ from langgraph.graph import StateGraph
 from langgraph.graph.message import add_messages
 from pydantic import BaseModel, Field
 
-from interview_agent.cli import _load_key
-from interview_agent.models import ModuleLoader, _add_log
-from interview_agent.nodes import (
+from backend.agent_core.interview_agent.cli import _load_key
+from backend.agent_core.interview_agent.models import ModuleLoader, _add_log
+from backend.agent_core.interview_agent.nodes import (
     evaluator_node,
     questioner_node,
     should_clarify,
@@ -39,7 +39,7 @@ GPT_TIMEOUT = 30  # seconds
 
 patient_llm = ChatOpenAI(model="gpt-4o-mini", temperature=1, max_retries=MAX_RETRIES, timeout=GPT_TIMEOUT)
 
-FILE_NAME = "patients_with_system_prompts_module_L"
+FILE_NAME = "patients_with_system_prompts_module_A"
 
 
 class InterviewState(BaseModel):

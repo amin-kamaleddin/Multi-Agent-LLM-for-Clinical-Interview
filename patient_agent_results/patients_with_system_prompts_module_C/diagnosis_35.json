@@ -1,0 +1,10 @@
+{
+    "positive": {
+        "diagnosis": true,
+        "timeFrame": "both",
+        "reasoning": "Criterion 1: C1b is YES, so need 3 or more C3 answers including C3f coded YES. Current C3 positives: C3a, C3b, C3c, C3d, C3e, C3f (6 total including C3f). Past C3 positives: C3a, C3b, C3c, C3d, C3e, C3f, C3g (7 total including C3f). Both past and current meet criterion 1.\nCriterion 2: C4_current and C4_past are VALID_QUANTITY, so criterion 2 met.\nCriterion 3: C7 is YES, criterion 3 met.\nCriterion 4: C4C or C5 or C6 coded YES? C5_current and C5_past NO, C6_current and C6_past NO, C4C not explicitly given but C4_current and C4_past are VALID_QUANTITY (assumed C4b or C4c), so criterion 4 met.\nCriterion 5: O1a and O1b both NO, criterion 5 met.\nAll criteria met. Symptom groups threshold met independently for both past and recent time frames.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    }
+}
