@@ -1,0 +1,10 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "The criterion requires at least one item from L4 coded yes. Since no information about L4 items is provided, it cannot be determined that any L4 item is coded yes. Therefore, the criterion is not met.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    }
+}

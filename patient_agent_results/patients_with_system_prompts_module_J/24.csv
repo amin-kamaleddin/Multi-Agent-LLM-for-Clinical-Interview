@@ -1,0 +1,14 @@
+question_id,ai_question,patient_response,classification,reasoning,timestamp,exchange_type
+J1,"In the past 12 months, did you take any of these drugs more than once, to get high, to feel elated, to get “a buzz” or to change your mood? 
+
+Stimulants: amphetamines, ""speed"", crystal meth, “crank”, Dexedrine, Ritalin, diet pills.  
+Cocaine: snorting, IV, freebase, crack, ""speedball"".  
+Opiates: heroin, morphine, Dilaudid, opium, Demerol, methadone, Darvon, codeine, Percodan, Vicodin, OxyContin.  
+Hallucinogens: LSD (""acid""), mescaline, peyote, psilocybin, STP, ""mushrooms"", “ecstasy”, MDA, MDMA.  
+Dissociative Drugs: PCP (Phencyclidine, ""Angel Dust"", ""Peace Pill"", “Hog”), or ketamine (“Special K”).  
+Inhalants: ""glue"", ethyl chloride, “rush”, nitrous oxide (""laughing gas""), amyl or butyl nitrate (""poppers"").  
+Cannabis: marijuana, hashish (""hash""), THC, ""pot"", ""grass"", ""weed"", ""reefer"".  
+Sedatives, Hypnotics or Anxiolytics: Quaalude, Seconal (""reds""), Valium, Xanax, Librium, Ativan, Dalmane, Halcion, barbiturates, Miltown, GHB, Roofinol, “Roofies”.  
+Miscellaneous: steroids, nonprescription sleep or diet pills. Cough Medicine? Any others?  
+
+Please feel free to explain if you are uncertain.","I occasionally use cannabis and other substances socially with friends, but it's never been to get high or for mood elevation. My use is more about enjoying time together and enhancing social experiences rather than any reliance on substances. This pattern hasn’t impacted my relationships or work performance; in fact, I maintain stable connections and responsibilities. No concerns have been raised by those around me, and I view these situations as healthy forms of enjoyment without negative consequences.",no,"The patient indicates that they use cannabis and other substances socially, but they explicitly state that it is not for the purpose of getting high or changing their mood. They describe their use as a social activity that does not impact their relationships or work performance. This suggests that the use of substances is not for mood elevation or to get a buzz, which aligns with the classification rule that situational causes (in this case, social enjoyment) lead to a 'no' classification. Therefore, the response indicates that the symptom/condition is not present as it is attributed to a social context rather than a clinical one.",2025-10-08T14:01:04.282471,initial

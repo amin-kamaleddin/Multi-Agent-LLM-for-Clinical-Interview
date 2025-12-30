@@ -1,0 +1,18 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "The only provided answer is I1: NO. The criterion requires 2 or more I2 answers from I2a through I2k coded YES. Since no I2 answers are provided or marked YES, the criterion is not met.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    },
+    "severity": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Only one question (I1) was answered, and it was NO. No symptom groups from I2 are positive in any time frame, so the criteria for mild, moderate, or severe are not met.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "current": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 (M5 coded YES) is met as M5 is YES. Criterion 2 (M7 coded YES) is not met as M7 is NO. Therefore, not all criteria are met.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    },
+    "current, Binge Eating Purging Type": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "Criterion M7 is coded NO, which meets the requirement for the Binge Eating Purging Type diagnosis.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    },
+    "severity": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "M4a quantity falls within a valid range (not specified exactly but assumed valid), so severity criterion is met. All relevant items (M1, M2, M3, M4, M5) are YES, indicating presence of symptoms. M7 is NO but does not negate severity. Since M4a quantity determines severity level and is valid, the severity criterion is met.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    }
+}

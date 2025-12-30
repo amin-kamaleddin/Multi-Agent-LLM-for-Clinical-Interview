@@ -1,0 +1,26 @@
+{
+    "current": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "Both criteria M5 and M7 are coded YES, thus both diagnostic criteria are met.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    },
+    "current, Binge Eating Purging Type": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion requires M7 to be NO, but patient answered YES, so criterion is not met.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    },
+    "severity": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "M4a quantity is within the valid range and falls into the Moderate category (4-7). Since M4a is the only criterion related to severity and it is met at a Moderate level, the severity criterion is satisfied.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    }
+}

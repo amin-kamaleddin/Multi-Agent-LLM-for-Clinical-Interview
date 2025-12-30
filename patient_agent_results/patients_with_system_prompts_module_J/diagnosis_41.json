@@ -1,0 +1,18 @@
+{
+    "positive": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "Among the J2 items from J2a through J2k, all are coded YES, including J2k1 and J2k2 which count as one. Therefore, there are more than two J2 answers coded YES, satisfying the criterion.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    },
+    "severity": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "All J2 symptoms (J2a through J2k2) are marked YES, totaling more than 6 symptom groups positive. Since no time frame suffixes are provided, all are considered positive in the same (non-specified) time frame, satisfying the SEVERE criterion. J1 is also YES, confirming the presence of the disorder. Therefore, the diagnosis is true. Time frame cannot be determined from the data as no time frame-specific information is given.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    }
+}

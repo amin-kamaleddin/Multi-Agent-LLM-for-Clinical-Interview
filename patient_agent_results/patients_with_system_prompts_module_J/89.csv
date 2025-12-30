@@ -1,0 +1,14 @@
+question_id,ai_question,patient_response,classification,reasoning,timestamp,exchange_type
+J1,"In the past 12 months, did you take any of these drugs more than once, to get high, to feel elated, to get “a buzz” or to change your mood? 
+
+Stimulants: amphetamines, ""speed"", crystal meth, “crank”, Dexedrine, Ritalin, diet pills.  
+Cocaine: snorting, IV, freebase, crack, ""speedball"".  
+Opiates: heroin, morphine, Dilaudid, opium, Demerol, methadone, Darvon, codeine, Percodan, Vicodin, OxyContin.  
+Hallucinogens: LSD (""acid""), mescaline, peyote, psilocybin, STP, ""mushrooms"", “ecstasy”, MDA, MDMA.  
+Dissociative Drugs: PCP (Phencyclidine, ""Angel Dust"", ""Peace Pill"", “Hog”), or ketamine (“Special K”).  
+Inhalants: ""glue"", ethyl chloride, “rush”, nitrous oxide (""laughing gas""), amyl or butyl nitrate (""poppers"").  
+Cannabis: marijuana, hashish (""hash""), THC, ""pot"", ""grass"", ""weed"", ""reefer"".  
+Sedatives, Hypnotics or Anxiolytics: Quaalude, Seconal (""reds""), Valium, Xanax, Librium, Ativan, Dalmane, Halcion, barbiturates, Miltown, GHB, Roofinol, “Roofies”.  
+Miscellaneous: steroids, nonprescription sleep or diet pills. Cough Medicine? Any others?  
+
+Please feel free to explain if you are uncertain.","Honestly, I really can’t say I’ve felt the need to use any of those substances more than just occasionally. I might try a little cannabis here and there, but it’s rare and more about socializing than anything else. It’s just not something that affects my daily life or mood. I’m really confident in my ability to control my use, as it feels more like a choice than an addiction. I cope just fine with stress through other healthy outlets, like exercise and spending time with friends, so I find no reason to explore any deeper use.",no,"The patient indicates that they have not felt the need to use any of the substances more than occasionally and attributes their use of cannabis to socializing rather than a need to change their mood. They express confidence in their ability to control their use and state that it does not affect their daily life or mood. This suggests that they do not meet the criteria for substance use as described in the question, leading to a classification of 'no'.",2025-10-08T14:19:24.960364,initial

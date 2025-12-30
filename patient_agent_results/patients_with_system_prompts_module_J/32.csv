@@ -1,0 +1,61 @@
+question_id,ai_question,patient_response,classification,reasoning,timestamp,exchange_type
+J1,"In the past 12 months, did you take any of these drugs more than once, to get high, to feel elated, to get “a buzz” or to change your mood? 
+
+Stimulants: amphetamines, ""speed"", crystal meth, “crank”, Dexedrine, Ritalin, diet pills.  
+Cocaine: snorting, IV, freebase, crack, ""speedball"".  
+Opiates: heroin, morphine, Dilaudid, opium, Demerol, methadone, Darvon, codeine, Percodan, Vicodin, OxyContin.  
+Hallucinogens: LSD (""acid""), mescaline, peyote, psilocybin, STP, ""mushrooms"", “ecstasy”, MDA, MDMA.  
+Dissociative Drugs: PCP (Phencyclidine, ""Angel Dust"", ""Peace Pill"", “Hog”), or ketamine (“Special K”).  
+Inhalants: ""glue"", ethyl chloride, “rush”, nitrous oxide (""laughing gas""), amyl or butyl nitrate (""poppers"").  
+Cannabis: marijuana, hashish (""hash""), THC, ""pot"", ""grass"", ""weed"", ""reefer"".  
+Sedatives, Hypnotics or Anxiolytics: Quaalude, Seconal (""reds""), Valium, Xanax, Librium, Ativan, Dalmane, Halcion, barbiturates, Miltown, GHB, Roofinol, “Roofies”.  
+Miscellaneous: steroids, nonprescription sleep or diet pills. Cough Medicine? Any others?  
+
+Please feel free to explain if you're uncertain about any of the drugs mentioned.",Cannabis has been used regularly. Access is often planned around.,yes,"The patient's response indicates that they have used cannabis regularly, which suggests that they have taken it more than once to change their mood or feel elated. This aligns with the question's criteria for a 'yes' response, as it implies a pattern of use that fits the context of the question.",2025-10-08T13:27:59.163083,initial
+J1a,SPECIFY THE MOST USED DRUG(S):,"Cannabis is the most used substance. I use it regularly, more than I originally intended.",valid_response,"The patient's response specifies that cannabis is the most used substance and mentions using it regularly, which indicates a clear description of the substance and its usage pattern. This aligns with the criteria for a valid descriptive response, as it provides relevant information about the drug used without ambiguity.",2025-10-08T13:28:03.819625,initial
+J1b,Which drug(s) cause the biggest problems?,"Cannabis has caused significant issues for me. I find myself planning my day around it, which has affected my daily responsibilities. I often use it more than I initially intended.",valid_response,"The patient's response indicates that cannabis has caused significant issues, affecting their daily responsibilities and leading to increased usage beyond their initial intentions. This provides relevant descriptive information about the impact of cannabis on their life, thus classifying it as a valid response.",2025-10-08T13:28:09.401085,initial
+J2a,"During the times when you used the drug, did you end up using more cannabis than you planned when you started? Feel free to explain your answer if you're uncertain.","I often use more cannabis than I initially planned. My tolerance has increased, and my usage has become more routine.",yes,"The patient's response indicates that they often use more cannabis than they initially planned, which suggests a pattern of increased usage beyond their intentions. This aligns with the presence of a symptom related to substance use, indicating that the condition is present without attributing it to an external situation. Therefore, the classification is 'yes'.",2025-10-08T13:28:14.829096,initial
+J2b,"Did you repeatedly want to reduce or control your cannabis use?  
+OR  
+Did you try to cut down or control your cannabis use, but failed?  
+Feel free to explain your answer if you're uncertain.",There have been times I wanted to cut down my cannabis use. I’ve tried to control it but have not been successful.,yes,"The patient indicates a desire to cut down on cannabis use and acknowledges unsuccessful attempts to control it. This response suggests the presence of a desire to reduce use and an acknowledgment of failure, which aligns with the symptoms of substance use disorder. Therefore, the response indicates that the symptom is present without attributing it to an external situation.",2025-10-08T13:28:22.809734,initial
+J2c,"On the days that you used more cannabis, did you spend substantial time obtaining cannabis, using it, or recovering from its effects? Feel free to explain your answer if you're uncertain.",Substantial time was spent obtaining cannabis and using it. Planning around access to it was common.,yes,"The patient indicates that they spent substantial time obtaining and using cannabis, which suggests that the behavior is present and not attributed to an external situation. Therefore, the response indicates the presence of a symptom related to drug use.",2025-10-08T13:28:27.323159,initial
+J2d,Did you crave or have a strong desire or urge to use cannabis? Feel free to explain your answer if you're uncertain.,Cravings occur regularly. I often think about using it throughout the day.,yes,"The patient's response indicates that cravings for cannabis occur regularly and that they often think about using it throughout the day. This suggests a strong desire or urge to use the drug, which aligns with the symptom being assessed. Therefore, the classification for this yes_no question is 'yes' as the patient describes the presence of cravings without attributing them to any external situational causes.",2025-10-08T13:28:34.691322,initial
+J2e,"Did you spend less time meeting your responsibilities at work, at school, or at home, because of your repeated cannabis use? Feel free to explain your answer if you're uncertain.",Responsibilities are often put aside in favor of using cannabis. Daily tasks can feel less urgent. There are days when I prioritize access to cannabis over obligations.,yes,"The patient indicates that responsibilities are often neglected in favor of using cannabis, suggesting that cannabis use is impacting their ability to meet obligations. This response implies that the symptom (neglecting responsibilities) is present without attributing it to an external cause, thus classifying it as 'yes'.",2025-10-08T13:28:39.883484,initial
+J2f,"If your cannabis use caused problems with your family or other people, did you still keep on using it? Feel free to explain your answer if you're uncertain.","My family has expressed concerns about my cannabis use, but I continue to use it regardless of their feelings. It has become a part of my daily routine.",yes,"The patient's response indicates that they continue to use cannabis despite their family's concerns, which suggests that the use is problematic and persists regardless of external feedback. This aligns with the criteria for a 'yes' response, as it shows the presence of a symptom (continuing use despite problems).",2025-10-08T13:28:46.673429,initial
+J2g,"Did you use cannabis more than once in any situation where you or others were physically at risk, for example, driving a car, riding a motorbike, using machinery, boating, etc.? Feel free to explain your answer if you're uncertain.",I have used cannabis before driving a car. This has happened multiple times. I recognize that it put both me and others at risk.,yes,"The patient explicitly states that they have used cannabis before driving a car and acknowledges that this has occurred multiple times, indicating a clear presence of the behavior in question. This response does not attribute the behavior to any external situational causes, thus it meets the criteria for a 'yes' classification.",2025-10-08T13:28:52.205241,initial
+J2h,"Did you continue to use cannabis, even though it was clear that the cannabis had caused or worsened psychological or physical problems? Feel free to explain your answer if you're uncertain.","Yes, I continued to use cannabis despite experiencing increased anxiety and difficulty concentrating. I noticed these issues but still chose to use it regularly.",yes,"The patient clearly states that they continued to use cannabis despite experiencing increased anxiety and difficulty concentrating, which indicates the presence of symptoms related to the use of the drug. This aligns with the criteria for classifying the response as 'yes' since the patient describes symptoms that are worsened by the drug use without attributing them to an external situation or cause.",2025-10-08T13:28:58.467050,initial
+J2i,"Did you reduce or give up important work, social or recreational activities because of your cannabis use? Feel free to explain your answer if you're uncertain.",Important activities are often missed or postponed due to cannabis use. I find myself prioritizing it over social plans and work responsibilities.,yes,"The patient's response indicates that they often miss or postpone important activities due to cannabis use, which suggests that the symptom of reduced engagement in work, social, or recreational activities is present. This aligns with the criteria for classifying the response as 'yes' since it describes a symptom without attributing it to an external cause.",2025-10-08T13:29:03.928314,initial
+J2j,Did you need to use cannabis a lot more in order to get the same effect that you got when you first started using it or did you get much less effect with continued use of the same amount? Feel free to explain your answer if you're uncertain.,I noticed I need to use more cannabis now to feel the same effects as when I first started. It’s not the same anymore.,yes,"The patient indicates that they need to use more cannabis now to achieve the same effects as when they first started using it. This suggests a tolerance to the drug, which is a symptom of substance use disorder. The response clearly indicates the presence of a symptom without attributing it to an external situation, thus it classifies as 'yes'.",2025-10-08T13:29:09.754838,initial
+J2k1,"When you cut down on heavy or prolonged use of cannabis, did you have any of the following withdrawal symptoms: 
+
+1. Increased sweating or increased heart rate  
+2. Hand tremor or “the shakes”  
+3. Trouble sleeping / difficulty sleeping / vivid or unpleasant dreams  
+4. Nausea or vomiting  
+5. Hearing or seeing things other people could not see or hear, or having sensations in your skin for no apparent reason  
+6. Agitation  
+7. Anxiety / nervousness  
+8. Seizures  
+9. Feeling depressed  
+10. Muscle aches  
+11. Runny nose or teary eyes  
+12. Dilated pupils, goose bumps, hair standing on end, or sweating  
+13. Diarrhea  
+14. Yawning  
+15. Hot flashes or chills  
+16. Fatigue  
+17. Increased appetite  
+18. Feeling or looking physically or mentally slowed down  
+19. Irritability, anger, or aggression  
+20. Appetite or weight loss  
+21. Restlessness  
+22. Significant discomfort from stomach pain, tremors, sweating, hot flashes, chills, or headaches  
+
+Feel free to explain your answer if you're uncertain.","3. Trouble sleeping / difficulty sleeping / vivid or unpleasant dreams.  
+7. Anxiety / nervousness.  
+9. Feeling depressed.  
+19. Irritability, anger, or aggression.  
+21. Restlessness.  
+22. Significant discomfort from stomach pain, tremors, sweating, hot flashes, chills, or headaches.",yes,"The patient has listed multiple withdrawal symptoms, including trouble sleeping, anxiety, feeling depressed, irritability, restlessness, and significant discomfort. Since these symptoms are presented without any situational explanations, they indicate the presence of withdrawal symptoms. Therefore, the classification is 'yes' as the patient confirms experiencing these symptoms when cutting down on cannabis use.",2025-10-08T13:29:19.648728,initial
+J2k2,Did you use cannabis to reduce or avoid withdrawal symptoms?,I often find myself using cannabis to feel normal and avoid feeling off when I don't use it. It helps with those uncomfortable feelings.,yes,"The patient's response indicates that they use cannabis to alleviate uncomfortable feelings associated with withdrawal, which suggests that they are using it to manage symptoms rather than for recreational purposes. This aligns with the presence of a clinical condition related to substance use. Therefore, the response indicates that the patient is using cannabis to avoid withdrawal symptoms, which classifies as a 'yes' for the question asked.",2025-10-08T13:29:24.358444,initial

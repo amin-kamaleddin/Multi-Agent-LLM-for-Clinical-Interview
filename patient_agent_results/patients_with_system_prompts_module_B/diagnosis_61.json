@@ -1,0 +1,42 @@
+{
+    "positive": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "Criterion 1: At least one question except B1 is coded YES (e.g., B2, B3_2, B4b, B9, B10, B12, B13). Criterion 1 met. Criterion 2: Counting YES answers from B1-B19: B2, B3_2, B4b, B9, B10, B12, B13 are YES (7 total). 7 points fall into the Low suicidality score category (1-8 points). Criterion 2 met. Criterion 3: O1a = NO and O1b = NO, so criterion 3 met. All criteria met, diagnosis is true.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    },
+    "Current": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 is met because multiple questions other than B1 are coded YES (e.g., B2, B3_2, B9, B10, B12, B13, B4b). Criterion 2 (suicidality current) cannot be confirmed as no explicit suicidality indicator is present in the data. Criterion 3 is met since O1a = NO and O1b = NO. Because criterion 2 is not met, the overall diagnosis is false.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    },
+    "LIFETIME ATTEMPT": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "Criterion 1: At least one question except B1 is coded YES (e.g., B2, B3_2, B9, B10, B12, B13, B3_2). Criterion 2: Suicidality is lifetime (implied by presence of lifetime attempt questions). Criterion 3: O1a = NO and O1b = NO, both are NO as required. All criteria are met.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    },
+    "LIKELY IN NEAR FUTURE": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 is met because multiple questions other than B1 are coded YES (e.g., B2, B3_2, B9, B10, B12, B13, B4b). Criterion 2 (SUICIDALITY is LIKELY IN NEAR FUTURE) cannot be directly assessed from the given data as no explicit suicidality indicator is provided; however, given B10 (which often relates to suicidal ideation) is YES, but B10a and B10b are NO, this suggests no active suicidal plan or attempt, so suicidality likely not confirmed as 'LIKELY IN NEAR FUTURE'. Criterion 3 is met since O1a = NO and O1b = NO. Because criterion 2 is not clearly met, overall diagnosis is false.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    },
+    "SUICIDAL BEHAVIOR DISORDER": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 is not met because B18 is NO. Since B18 must be YES to proceed, the diagnosis cannot be true. Criteria 2, 3, and 4 cannot be evaluated further as the first criterion fails.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    }
+}

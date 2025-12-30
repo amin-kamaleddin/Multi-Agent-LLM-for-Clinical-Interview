@@ -1,0 +1,14 @@
+question_id,ai_question,patient_response,classification,reasoning,timestamp,exchange_type
+J1,"In the past 12 months, did you take any of these drugs more than once, to get high, to feel elated, to get “a buzz” or to change your mood? 
+
+Stimulants: amphetamines, ""speed"", crystal meth, “crank”, Dexedrine, Ritalin, diet pills.  
+Cocaine: snorting, IV, freebase, crack, ""speedball"".  
+Opiates: heroin, morphine, Dilaudid, opium, Demerol, methadone, Darvon, codeine, Percodan, Vicodin, OxyContin.  
+Hallucinogens: LSD (""acid""), mescaline, peyote, psilocybin, STP, ""mushrooms"", “ecstasy”, MDA, MDMA.  
+Dissociative Drugs: PCP (Phencyclidine, ""Angel Dust"", ""Peace Pill"", “Hog”), or ketamine (“Special K”).  
+Inhalants: ""glue"", ethyl chloride, “rush”, nitrous oxide (""laughing gas""), amyl or butyl nitrate (""poppers"").  
+Cannabis: marijuana, hashish (""hash""), THC, ""pot"", ""grass"", ""weed"", ""reefer"".  
+Sedatives, Hypnotics or Anxiolytics: Quaalude, Seconal (""reds""), Valium, Xanax, Librium, Ativan, Dalmane, Halcion, barbiturates, Miltown, GHB, Roofinol, “Roofies”.  
+Miscellaneous: steroids, nonprescription sleep or diet pills. Cough Medicine? Any others?  
+
+Please respond with ""yes"" or ""no."" If you're uncertain, feel free to explain.","No, I have not taken any of these substances more than once in the past 12 months for the purpose of getting high or changing my mood. My use of cannabis has been consistent, and it does not impact my emotional or physical state. I use it occasionally in social settings, primarily for relaxation after completing work and responsibilities. Usage is limited and intentional, and I do not feel compelled to use it outside of those contexts. There are no triggers prompting increased use, and I maintain my focus and manage obligations effectively without any associated medical or emotional effects.",no,"The patient clearly states that they have not taken any of the listed substances more than once in the past 12 months for the purpose of getting high or changing their mood. This indicates that the symptom/condition is not present. Additionally, the patient describes their cannabis use as consistent but limited and intentional, with no impact on their emotional or physical state, which further supports the classification of 'no'.",2025-10-08T14:00:34.745790,initial

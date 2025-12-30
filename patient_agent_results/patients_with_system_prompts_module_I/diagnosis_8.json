@@ -1,0 +1,18 @@
+{
+    "positive": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "Among I2a through I2k, all except I2k2 are YES. I2k1 and I2k2 together count as one item, and since I2k1 is YES, that item counts as YES. Therefore, there are more than two YES answers in the I2a-I2k range, satisfying the criterion.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    },
+    "severity": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "The patient answered YES to I2a through I2k1, totaling 10 positive I2 symptoms. This exceeds the threshold for SEVERE (6 or more symptoms). Since no time frame suffixes are provided, all symptoms are considered without time frame distinction, thus meeting the criteria for severity. No information indicates remission or controlled environment, so those criteria do not apply.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    }
+}

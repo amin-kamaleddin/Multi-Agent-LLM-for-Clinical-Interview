@@ -1,0 +1,42 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion 1: No questions except B1 are coded YES, so criterion 1 is not met. Criterion 2: No 'YES' answers among B1-B19, so total points = 0, which is Low and does not meet threshold. Criterion 3: O1a = NO and O1b = NO, criterion 3 is met. Since not all criteria are met, diagnosis is false.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    },
+    "Current": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "1. None of the questions except B1 are coded YES; all are NO or valid quantities, so criterion 1 is not met. 2. Suicidality is not current as O1a and O1b are both NO. 3. O1a and O1b are both NO, so criterion 3 is met. Since criterion 1 and 2 are not met, overall diagnosis is false.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    },
+    "LIFETIME ATTEMPT": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "No question except B1 is coded YES; all other questions including O1a and O1b are NO, so criteria 1 and 3 are not met. Suicidality lifetime status is not explicitly indicated as YES. Therefore, not all criteria for LIFETIME ATTEMPT are met.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    },
+    "LIKELY IN NEAR FUTURE": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion 1: No questions except B1 are coded YES, so criterion 1 is not met. Criterion 2: Suicidality is not indicated as likely in near future based on answers. Criterion 3: O1a and O1b are both NO, so criterion 3 is met. Since criterion 1 and 2 are not met, overall diagnosis is false.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    },
+    "SUICIDAL BEHAVIOR DISORDER": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 is not met because B18 is coded NO. Since B18 is required to be YES to proceed with the diagnosis, the other criteria are not applicable. O1a and O1b are both NO, which meets criterion 4, but criterion 1 failure is sufficient to rule out the diagnosis.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    }
+}

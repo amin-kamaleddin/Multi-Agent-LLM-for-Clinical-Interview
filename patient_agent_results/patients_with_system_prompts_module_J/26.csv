@@ -1,0 +1,14 @@
+question_id,ai_question,patient_response,classification,reasoning,timestamp,exchange_type
+J1,"In the past 12 months, did you take any of these drugs more than once, to get high, to feel elated, to get “a buzz” or to change your mood? 
+
+Stimulants: amphetamines, ""speed"", crystal meth, “crank”, Dexedrine, Ritalin, diet pills.  
+Cocaine: snorting, IV, freebase, crack, ""speedball"".  
+Opiates: heroin, morphine, Dilaudid, opium, Demerol, methadone, Darvon, codeine, Percodan, Vicodin, OxyContin.  
+Hallucinogens: LSD (""acid""), mescaline, peyote, psilocybin, STP, ""mushrooms"", “ecstasy”, MDA, MDMA.  
+Dissociative Drugs: PCP (Phencyclidine, ""Angel Dust"", ""Peace Pill"", “Hog”), or ketamine (“Special K”).  
+Inhalants: ""glue"", ethyl chloride, “rush”, nitrous oxide (""laughing gas""), amyl or butyl nitrate (""poppers"").  
+Cannabis: marijuana, hashish (""hash""), THC, ""pot"", ""grass"", ""weed"", ""reefer"".  
+Sedatives, Hypnotics or Anxiolytics: Quaalude, Seconal (""reds""), Valium, Xanax, Librium, Ativan, Dalmane, Halcion, barbiturates, Miltown, GHB, Roofinol, “Roofies”.  
+Miscellaneous: steroids, nonprescription sleep or diet pills. Cough Medicine? Any others?  
+
+Please feel free to explain if you are uncertain.","I really don’t think I’ve used those to get high or anything like that. It’s just not something I do regularly. Occasionally, I might have something socially, but it never feels like it's getting out of control. I feel completely fine with my choices. I can handle it. It's not like I'm ever craving more or anything intense. I just don’t see myself needing to change anything about how I use.",no,"The patient indicates that they do not use drugs to get high or change their mood, stating that it's not something they do regularly. They mention occasional social use but emphasize that it never feels out of control and that they feel fine with their choices. This suggests that they do not attribute any drug use to a desire to get high or change their mood, which aligns with the classification rules for situational exclusions. Therefore, the response indicates that the symptom/condition is not present, leading to a classification of 'no'.",2025-10-08T14:01:44.183705,initial

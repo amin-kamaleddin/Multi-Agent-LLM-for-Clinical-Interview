@@ -1,0 +1,98 @@
+question_id,ai_question,patient_response,classification,reasoning,timestamp,exchange_type
+J1,"In the past 12 months, did you take any of these drugs more than once, to get high, to feel elated, to get “a buzz” or to change your mood? 
+
+Stimulants: amphetamines, ""speed"", crystal meth, “crank”, Dexedrine, Ritalin, diet pills.  
+Cocaine: snorting, IV, freebase, crack, ""speedball"".  
+Opiates: heroin, morphine, Dilaudid, opium, Demerol, methadone, Darvon, codeine, Percodan, Vicodin, OxyContin.  
+Hallucinogens: LSD (""acid""), mescaline, peyote, psilocybin, STP, ""mushrooms"", “ecstasy”, MDA, MDMA.  
+Dissociative Drugs: PCP (Phencyclidine, ""Angel Dust"", ""Peace Pill"", “Hog”), or ketamine (“Special K”).  
+Inhalants: ""glue"", ethyl chloride, “rush”, nitrous oxide (""laughing gas""), amyl or butyl nitrate (""poppers"").  
+Cannabis: marijuana, hashish (""hash""), THC, ""pot"", ""grass"", ""weed"", ""reefer"".  
+Sedatives, Hypnotics or Anxiolytics: Quaalude, Seconal (""reds""), Valium, Xanax, Librium, Ativan, Dalmane, Halcion, barbiturates, Miltown, GHB, Roofinol, “Roofies”.  
+Miscellaneous: steroids, nonprescription sleep or diet pills. Cough Medicine? Any others?  
+
+Please respond with ""yes"" or ""no."" If you're uncertain, feel free to explain.","Yes, I’ve taken opioids more than once in the last year to feel that high or to change my mood. It really helps; the feeling is just… different now. I can’t shake the need for it sometimes. ",yes,"The patient clearly states that they have taken opioids more than once in the last year to feel high or to change their mood. This indicates the presence of substance use for mood alteration, which aligns with the question's criteria for a 'yes' response. There are no situational explanations provided that would negate the symptom presence.",2025-10-08T14:06:23.232321,initial
+J1a,SPECIFY THE MOST USED DRUG(S):,"Opioids are my main problem. I use them daily, and I’ve been needing more to get the same relief. It’s like a constant struggle.",valid_response,"The patient specifies that opioids are their main problem and mentions using them daily, indicating a clear frequency of use. The phrase 'I’ve been needing more to get the same relief' suggests an increase in quantity over time, which is relevant to the clinical context of substance use. Therefore, the response provides valid descriptive information about the drug used and its frequency, which aligns with the classification rules for descriptive questions.",2025-10-08T14:06:28.768572,initial
+J1b,WHICH DRUG(S) CAUSE THE BIGGEST PROBLEMS?,"Opioids definitely cause the biggest problems for me. It's gotten harder to feel the same effects. I feel uneasy without them, and I don't sleep well. My appetite is all over the place too. It's tough. ",valid_response,"The patient's response clearly identifies opioids as the drug causing the biggest problems, providing specific details about the effects and struggles associated with their use. This response is relevant and descriptive, indicating the impact of the drug on their life without ambiguity.",2025-10-08T14:06:35.108559,initial
+J2a,"During the times when you used opioids, did you end up using more than you planned when you started? Feel free to explain if you're uncertain.","It often feels like I lose track of how much I planned to use. I start thinking just a little will be enough, but then I find myself taking more. It’s like my body needs it, and I can’t seem to stop. So, I guess you could say that happens pretty frequently.",yes,"The patient's response indicates a pattern of using more opioids than planned, describing a frequent loss of control over their usage. This aligns with the symptoms of substance use disorder, where individuals often find themselves using more than intended. The phrase 'it often feels like I lose track' suggests a recurrent issue with managing their drug use, which supports a classification of 'yes' for the presence of the symptom.",2025-10-08T14:06:41.868064,initial
+J2b,"Did you repeatedly want to reduce or control your opioid use?  
+OR  
+Did you try to cut down or control your opioid use, but failed?  
+Feel free to explain if you're uncertain.","It's been tough. I've thought about cutting down... but when I try, it feels impossible. I just end up using more. It’s like I can’t control it anymore.",yes,"The patient indicates that they have thought about cutting down their opioid use but feel it is impossible to do so and end up using more. This suggests a desire to control their drug use and a failure to do so, which aligns with the symptoms being assessed. Therefore, the response indicates that the patient has experienced difficulty in controlling their drug use, which meets the criteria for a 'yes' classification.",2025-10-08T14:06:49.039598,initial
+J2c,"On the days that you used more opioids, did you spend substantial time obtaining opioids, using it, or recovering from its effects? Feel free to explain if you're uncertain.",I’ve definitely found myself spending a lot of time getting opioids—more than I’d like to admit. The searching and using can take up my whole day. It’s consuming. I think about it constantly. Sometimes it feels like I’m in a cycle I can't break.,yes,"The patient clearly indicates that they spend a lot of time obtaining and using opioids, describing it as consuming and taking up their whole day. This response indicates the presence of the symptom without attributing it to an external situation, thus classifying it as 'yes'.",2025-10-08T14:06:55.803377,initial
+J2d,Did you crave or have a strong desire or urge to use opioids? Feel free to explain if you're uncertain.,"There’s this overwhelming feeling that pops up, especially when I'm trying to take a break. It’s hard to shake off—I just can’t stop thinking about using again. It feels like all I want is that relief. It’s pretty intense at times, definitely not easy to ignore.",yes,"The patient's response indicates a strong desire or urge to use opioids, describing it as an overwhelming feeling that is hard to shake off, especially when trying to take a break. This aligns with the presence of cravings, which are a symptom of substance use disorder. Therefore, the response clearly indicates that the symptom is present without attributing it to any external situational causes.",2025-10-08T14:07:01.945111,initial
+J2e,"Did you spend less time meeting your responsibilities at work, at school, or at home, because of your repeated opioid use? Feel free to explain if you're uncertain.","Lately, my job has taken a backseat. Tasks pile up, and I find it hard to focus—just can’t seem to get things done like I used to. It’s really frustrating. When I think about it, I know I’m not the same at home either. Responsibilities slip away when I’m in this cycle. I feel the weight of it all. It’s overwhelming.",yes,"The patient describes a significant impact on their responsibilities at work and home due to their opioid use, indicating that the symptom is present. The response does not attribute the difficulties to an external situation but rather to the effects of drug use, which aligns with the criteria for a 'yes' classification.",2025-10-08T14:07:08.190367,initial
+J2f,"If your opioid use caused problems with your family or other people, did you still keep on using it? Feel free to explain if you're uncertain.","Things have definitely been strained with my family. I can see how my use affects them, but I still find myself reaching for it. I think about it a lot, especially when I feel that restlessness. I want to stop, but the urge pulls me back in, despite the chaos it causes. It's tough to break that cycle.",yes,"The patient acknowledges that their drug use has strained family relationships but does not attribute their continued use to a specific external cause. Instead, they express an internal struggle with the urge to use despite the negative impact on their family. This indicates the presence of a symptom related to substance use disorder, thus classifying the response as 'yes'.",2025-10-08T14:07:15.872009,initial
+J2g,"Did you use opioids more than once in any situation where you or others were physically at risk, for example, driving a car, riding a motorbike, using machinery, boating, etc.? Feel free to explain if you're uncertain.",There have been times when I've used opioids before driving. I often felt like I needed them to function. It's unsettling to think about the risks I put myself and others in. It wasn't always clear to me how dangerous it could be.,yes,"The patient indicates that they have used opioids before driving, which suggests a clear instance of using the drug in a situation where they or others were physically at risk. The response does not attribute this behavior to an external situation but rather reflects on their own actions and the associated risks. Therefore, this aligns with the criteria for classifying the response as 'yes'.",2025-10-08T14:07:22.834975,initial
+J2h,"Did you continue to use opioids, even though it was clear that the opioids had caused or worsened psychological or physical problems? Feel free to explain if you're uncertain.","It's hard to say that I've completely stopped. I keep going back, even when I notice that my mood dips or I feel more anxious. The physical discomfort is tough to ignore, too. I definitely feel like I’m in a cycle that I can't break. It’s frustrating to know that I’m making things worse, but the relief is just so tempting.",yes,"The patient indicates that they continue to use opioids despite recognizing that their use worsens their mood and anxiety, which suggests the presence of a symptom related to continued use despite negative consequences. This aligns with the criteria for a 'yes' response, as the patient describes ongoing use in the face of psychological problems without attributing it to an external situation. The response does not provide a situational cause that would lead to a 'no' classification.",2025-10-08T14:07:29.416006,initial
+J2i,"Did you reduce or give up important work, social or recreational activities because of your opioid use? Feel free to explain if you're uncertain.","I've definitely pulled back from some activities I used to enjoy. It's hard to focus on work when I’m thinking about opioids. I used to be really social, but now I often prefer to stay home. It feels like I've lost part of myself.",yes,"The patient indicates that they have reduced their participation in activities they used to enjoy and have pulled back from social interactions, which suggests a significant impact on their life due to opioid use. This response clearly describes a symptom of reduced engagement in important activities, which aligns with the criteria for classifying the response as 'yes'. There is no mention of external situational causes that would negate this symptom, thus it is classified as 'yes'.",2025-10-08T14:07:36.144977,initial
+J2j,Did you need to use opioids a lot more in order to get the same effect that you got when you first started using it or did you get much less effect with continued use of the same amount? Feel free to explain if you're uncertain.,"I’ve definitely noticed needing more opioids to feel the same effects. At first, just a little was enough, but now I find it takes a lot more to achieve that same feeling. It's frustrating. It’s like my body is asking for higher doses just to get by. Sometimes, it’s hard to accept that it’s changed so much.",yes,"The patient's response indicates a clear acknowledgment of needing more opioids to achieve the same effects, which directly addresses the question about increased tolerance. This suggests the presence of a symptom related to substance use disorder, specifically tolerance. Therefore, the response classifies as 'yes' since it indicates that the symptom is present without any situational explanation.",2025-10-08T14:07:41.884859,initial
+J2k1,"When you cut down on heavy or prolonged use of opioids, did you have any of the following withdrawal symptoms: 
+
+1. Increased sweating or increased heart rate  
+2. Hand tremor or “the shakes”  
+3. Trouble sleeping / difficulty sleeping / vivid or unpleasant dreams  
+4. Nausea or vomiting  
+5. Hearing or seeing things other people could not see or hear, or having sensations in your skin for no apparent reason  
+6. Agitation  
+7. Anxiety / nervousness  
+8. Seizures  
+9. Feeling depressed  
+10. Muscle aches  
+11. Runny nose or teary eyes  
+12. Dilated pupils, goose bumps, hair standing on end, or sweating  
+13. Diarrhea  
+14. Yawning  
+15. Hot flashes or chills  
+16. Fatigue  
+17. Increased appetite  
+18. Feeling or looking physically or mentally slowed down  
+19. Irritability, anger, or aggression  
+20. Appetite or weight loss  
+21. Restlessness  
+22. Significant discomfort from stomach pain, tremors, sweating, hot flashes, chills, or headaches  
+
+Feel free to explain if you're uncertain.","1. Increased sweating or increased heart rate: Yes, I feel like I sweat more sometimes, and my heart races a bit when I cut back. 
+
+2. Hand tremor or “the shakes”: No, I haven’t experienced that. 
+
+3. Trouble sleeping / difficulty sleeping / vivid or unpleasant dreams: Yes, sleep is really difficult. I toss and turn and sometimes have weird dreams. 
+
+4. Nausea or vomiting: No, thank goodness, I haven’t had that. 
+
+5. Hearing or seeing things other people could not see or hear: No, that's not something I've experienced. 
+
+6. Agitation: Yes, I often feel restless and on edge. 
+
+7. Anxiety / nervousness: Yes, I feel more anxious when I’m not using. 
+
+8. Seizures: No, I’ve not had any seizures. 
+
+9. Feeling depressed: Yes, it’s hard not to feel down when I’m in this state. 
+
+10. Muscle aches: Yes, I've had some uncomfortable muscle pains. 
+
+11. Runny nose or teary eyes: No, that’s not happening for me. 
+
+12. Dilated pupils, goose bumps, hair standing on end, or sweating: No, I haven't noticed that. 
+
+13. Diarrhea: No, I haven’t had that issue. 
+
+14. Yawning: Yes, I catch myself yawning a lot more. 
+
+15. Hot flashes or chills: Yes, I have felt chills. 
+
+16. Fatigue: Yes, I feel more tired than usual. 
+
+17. Increased appetite: No, my appetite has been unpredictable. 
+
+18. Feeling or looking physically or mentally slowed down: Yes, I feel like I’m moving in slow motion at times. 
+
+19. Irritability, anger, or aggression: Yes, I can be short-tempered when I'm not using. 
+
+20. Appetite or weight loss: Yes, my appetite has changed, and I might have lost a bit of weight. 
+
+21. Restlessness: Yes, I feel restless a lot, it’s hard to stay still. 
+
+22. Significant discomfort from stomach pain, tremors, sweating, hot flashes, chills, or headaches: Yes, I’m definitely feeling discomfort, especially in my stomach and with chills.",yes,"The patient's responses indicate the presence of several withdrawal symptoms when cutting down on opioid use. For each symptom listed, the patient provided clear 'yes' or 'no' answers, indicating the presence or absence of symptoms without attributing them to external situations. Therefore, for the yes_no question type, the classification is 'yes' for the symptoms reported and 'no' for those not experienced. Since the question is structured to assess the presence of withdrawal symptoms, the overall classification reflects that the patient has experienced withdrawal symptoms, leading to a classification of 'yes'.",2025-10-08T14:08:10.248356,initial
+J2k2,Did you use opioids to reduce or avoid withdrawal symptoms?,I find myself using opioids again when I start feeling uneasy or restless. It's hard to deal with those withdrawal symptoms when I stop. It's like the discomfort pushes me to use them to feel better. I want to feel normal again.,yes,"The patient indicates that they use opioids again when feeling uneasy or restless, which suggests that they are using opioids to manage withdrawal symptoms. This response implies that the patient is using opioids to alleviate discomfort associated with withdrawal, which aligns with the question asked. Therefore, the appropriate classification is 'yes' as the patient describes a clear symptom of using opioids to avoid withdrawal symptoms without attributing it to an external cause.",2025-10-08T14:08:17.693918,initial

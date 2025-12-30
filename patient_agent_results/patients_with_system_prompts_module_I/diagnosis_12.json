@@ -1,0 +1,18 @@
+{
+    "positive": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "All I2 items from I2a through I2k (counting I2k1 and I2k2 together as one) are coded YES, which is more than two. Therefore, the criterion of having 2 or more I2 answers coded YES is met.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    },
+    "severity": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "The patient answered YES to all I2 symptoms (I2a through I2k2), totaling more than 6 symptom groups positive. Since all are positive, the severity criterion is met at the SEVERE level. There is no indication of time frames (past or recent) provided, so we assume all are from the same time frame or non-time-frame-specific, satisfying the criterion. Therefore, diagnosis is true. Time frame cannot be determined from the data provided, so it is null.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    }
+}

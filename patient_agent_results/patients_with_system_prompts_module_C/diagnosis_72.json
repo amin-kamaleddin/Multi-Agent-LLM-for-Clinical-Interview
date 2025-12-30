@@ -1,0 +1,10 @@
+{
+    "positive": {
+        "diagnosis": true,
+        "timeFrame": "recent",
+        "reasoning": "Criterion 1: C1b is YES, so need 3 or more C3 answers including C3f coded YES. All C3a to C3g current are YES, so at least 7 current C3 answers including C3f are YES. Criterion met. Criterion 2: C4_current is VALID_QUANTITY, so criterion met. Criterion 3: C7_current is YES, criterion met. Criterion 4: C4_current (VALID_QUANTITY) or C5_current (NO) or C6_current (YES) - at least one YES, criterion met. Criterion 5: O1a and O1b are both NO, criterion met. All criteria met. Symptom groups positive in current (recent) time frame only. Therefore, diagnosis is true with time frame recent.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    }
+}

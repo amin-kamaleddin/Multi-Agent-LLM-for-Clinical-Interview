@@ -1,0 +1,14 @@
+question_id,ai_question,patient_response,classification,reasoning,timestamp,exchange_type
+J1,"In the past 12 months, did you take any of these drugs more than once, to get high, to feel elated, to get “a buzz” or to change your mood? 
+
+Stimulants: amphetamines, ""speed"", crystal meth, “crank”, Dexedrine, Ritalin, diet pills.  
+Cocaine: snorting, IV, freebase, crack, ""speedball"".  
+Opiates: heroin, morphine, Dilaudid, opium, Demerol, methadone, Darvon, codeine, Percodan, Vicodin, OxyContin.  
+Hallucinogens: LSD (""acid""), mescaline, peyote, psilocybin, STP, ""mushrooms"", “ecstasy”, MDA, MDMA.  
+Dissociative Drugs: PCP (Phencyclidine, ""Angel Dust"", ""Peace Pill"", “Hog”), or ketamine (“Special K”).  
+Inhalants: ""glue"", ethyl chloride, “rush”, nitrous oxide (""laughing gas""), amyl or butyl nitrate (""poppers"").  
+Cannabis: marijuana, hashish (""hash""), THC, ""pot"", ""grass"", ""weed"", ""reefer"".  
+Sedatives, Hypnotics or Anxiolytics: Quaalude, Seconal (""reds""), Valium, Xanax, Librium, Ativan, Dalmane, Halcion, barbiturates, Miltown, GHB, Roofinol, “Roofies”.  
+Miscellaneous: steroids, nonprescription sleep or diet pills. Cough Medicine? Any others?  
+
+Please feel free to explain if you are uncertain.","I occasionally use cannabis, typically on weekends, but it's never been more than a couple of times a month. I don’t feel it affects my relationships or work, and I prioritize my responsibilities. Overall, I see it as part of my lifestyle without any negative consequences.",no,"The patient indicates that they occasionally use cannabis, typically on weekends, but states it has never been more than a couple of times a month. This suggests a low frequency of use, which is relevant to the question about drug use. However, the response does not indicate that the use is for the purpose of getting high or changing mood in a problematic way, and they assert that it does not affect their relationships or work. Therefore, the response does not clearly indicate that the patient has taken drugs to get high or change their mood more than once in the past 12 months. Thus, the classification is 'no' as the patient attributes their use to a lifestyle choice without negative consequences.",2025-10-08T14:01:31.098801,initial

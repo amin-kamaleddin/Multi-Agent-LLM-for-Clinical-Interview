@@ -39,7 +39,7 @@ def check_password():
     if st.session_state.get("password_correct", False):
         return True
     
-    st.title("🗣️ MINI Interview - Access Required")
+    st.title("🗣️ Structured Clinical Interview - Access Required")
     st.markdown("This application requires a password to access.")
     
     if not os.getenv("APP_PASSWORD"):
@@ -316,7 +316,7 @@ if "app_state" not in st.session_state:
 
 
 # ----------------------------------- UI -------------------------------------- #
-st.set_page_config(page_title="MINI Interview", page_icon="🗣️", layout="centered")
+st.set_page_config(page_title="Structured Clinical Interview", page_icon="🗣️", layout="centered")
 
 apply_custom_styling()
 
@@ -324,11 +324,11 @@ apply_custom_styling()
 if not check_password():
     st.stop()
 
-st.title("MINI Interview")
+st.title("Structured Clinical Interview")
 
 # Show subtitle only when interview hasn't started
 if st.session_state.loader is None or st.session_state.state is None:
-    st.markdown("The MINI (Mini International Neuropsychiatric Interview) is a structured diagnostic interview traditionally administered by clinicians. With this platform, we are automating the MINI using an agentic AI system. The goal is to make the assessment process faster, more scalable, and easier to use, while maintaining clinical rigor and reliability.")
+    st.markdown("This is a structured diagnostic interview traditionally administered by clinicians. With this platform, we are automating the interview using an agentic AI system. The goal is to make the assessment process faster, more scalable, and easier to use, while maintaining clinical rigor and reliability.")
     st.markdown("⚠️ This is currently a proof of concept and should not be considered a replacement for diagnosis or evaluation by a qualified human clinician.")
     st.markdown("We strongly encourage users not to share personal or sensitive information on this platform.")
 

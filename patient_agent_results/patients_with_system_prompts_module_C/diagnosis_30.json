@@ -1,0 +1,10 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "C1b is not provided, so cannot determine if condition 1 is met; no information on C3 answers including C3f, so condition 1 cannot be confirmed. C4b and C4c are not provided as valid quantities, so condition 2 is not met. C7 is not provided as YES, so condition 3 is not met. C4c, C5, and C6 are not provided as YES, so condition 4 is not met. O1a and O1b are both NO, so condition 5 is met. Since multiple criteria are not met, overall diagnosis is false.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    }
+}

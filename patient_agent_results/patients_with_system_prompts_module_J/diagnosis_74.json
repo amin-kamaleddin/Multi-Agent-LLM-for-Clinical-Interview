@@ -1,0 +1,18 @@
+{
+    "positive": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "There are more than two J2 answers coded YES (J2a through J2k1 and J2k2 combined count as one). Specifically, all J2a through J2k questions are YES, satisfying the criterion requiring 2 or more YES responses among these items.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    },
+    "severity": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "All 11 J2 symptoms (J2a through J2k2) are marked YES, indicating 11 positive symptom groups. Since 6 or more J2 symptoms are required for SEVERE classification, the severity criterion is met. No time frame information is provided, so the diagnosis is based on the presence of symptoms regardless of time frame.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    }
+}
