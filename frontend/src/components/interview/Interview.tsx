@@ -108,7 +108,14 @@ export default function Interview({ modulePath }: { modulePath: string }) {
       <div className="space-y-3">
         <QuestionCard question={question} loading={goNext.isPending} />
         {question && (
-          <AudioPlayControl text={question} uiLocked={uiLocked} onLock={() => setUiLocked(true)} onUnlock={() => setUiLocked(false)} label="Read question aloud" />
+          <AudioPlayControl 
+            key={question} 
+            text={question} 
+            uiLocked={uiLocked} 
+            onLock={() => setUiLocked(true)} 
+            onUnlock={() => setUiLocked(false)} 
+            label="Read question aloud" 
+          />
         )}
       </div>
 

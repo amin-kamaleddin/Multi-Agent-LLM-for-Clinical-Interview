@@ -62,7 +62,7 @@ export default function LatestResult({ latest, submittedAnswer, disabled, isSubm
       {/* Allow playing agent's reasoning via TTS */}
       {latest.reasoning && (
         <div className="mt-2">
-          <AudioPlayControl text={latest.reasoning} uiLocked={uiLocked} onLock={onLock} onUnlock={onUnlock} label="Hear evaluator reasoning" />
+          <AudioPlayControl key={latest.reasoning} text={latest.reasoning} uiLocked={uiLocked} onLock={onLock} onUnlock={onUnlock} label="Hear evaluator reasoning" />
         </div>
       )}
 
