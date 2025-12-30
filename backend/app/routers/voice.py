@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 import os
-from typing import Iterator, Optional
+from typing import Iterator
 
 from fastapi import APIRouter, HTTPException, UploadFile, File
 from fastapi.responses import StreamingResponse
@@ -83,9 +83,9 @@ async def transcribe(file: UploadFile = File(...)) -> dict:
 
 
 @router.get("/voice/tts")
-async def tts_get(text: str, voiceId: Optional[str] = None) -> StreamingResponse:
+async def tts_get(text: str, voiceId: str | None = None) -> StreamingResponse:
     """GET variant for streaming TTS so the client can set audio.src directly."""
-    text = (text or "").strip()    
+    text = (text or "").strip()
     if not text:
         raise HTTPException(status_code=400, detail="text required")
     voice_id = (voiceId or _default_voice_id())
