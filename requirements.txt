@@ -11,5 +11,7 @@ datasets~=4.0.0
 pandas~=2.3.1
 openai~=1.98.0
 scikit-learn~=1.6.1
-elevenlabs~=0.3.2
+elevenlabs
 python-multipart~=0.0.20
+fastapi
+upstash_redis
