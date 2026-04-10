@@ -1,0 +1,6 @@
+subset,n,n_pos,n_neg,accuracy,precision,recall,specificity,f1,f2,fp,fn
+Overall,2000,1000,1000,93.9,0.9364,0.942,0.936,0.9392,0.9409,64,58
+expression_type=explicit,1000,500,500,98.4,0.969,1.0,0.968,0.9843,0.9936,16,0
+expression_type=implicit,1000,500,500,89.4,0.902,0.884,0.904,0.8929,0.8876,48,58
+ideation_type=active,1000,500,500,97.6,0.9958,0.956,0.996,0.9755,0.9637,2,22
+ideation_type=passive,1000,500,500,90.2,0.8821,0.928,0.876,0.9045,0.9184,62,36
