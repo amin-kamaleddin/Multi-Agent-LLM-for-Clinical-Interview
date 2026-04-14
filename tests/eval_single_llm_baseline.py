@@ -16,6 +16,7 @@ Outputs:
 import argparse
 import json
 import os
+from pathlib import Path
 
 import numpy as np
 import pandas as pd
@@ -142,20 +143,56 @@ def print_stratified_f2(merged: pd.DataFrame, col: str):
 # Main
 # ---------------------------------------------------------------------------
 
+COMBINED_CSV = "./baselines/predictions_single_llm_combined.csv"
+
+
+def append_to_combined(merged: pd.DataFrame, module_name: str) -> None:
+    """Append this module's baseline predictions to the combined CSV.
+
+    Matches the schema of patient_agent_results/prediction_combined.csv:
+        id, label, prediction, Module, Tier of Symptom Disclosure,
+        Expected Symptom Direction, Emotion/Tone Tier
+    """
+    out = pd.DataFrame({
+        "id":                        merged["id"],
+        "label":                     merged["label"].map({True: "TRUE", False: "FALSE"}),
+        "prediction":                merged["pred_baseline"].map({True: "TRUE", False: "FALSE"}),
+        "Module":                    module_name,
+        "Tier of Symptom Disclosure":   merged.get("Tier of Symptom Disclosure", pd.Series([""] * len(merged))),
+        "Expected Symptom Direction":   merged.get("Expected Symptom Direction", pd.Series([""] * len(merged))),
+        "Emotion/Tone Tier":            merged.get("Emotion/Tone Tier", pd.Series([""] * len(merged))),
+    })
+
+    write_header = not Path(COMBINED_CSV).exists()
+    out.to_csv(COMBINED_CSV, mode="a", index=False, header=write_header)
+
+
 def main():
     parser = argparse.ArgumentParser(description="Compare single-LLM baseline vs. multi-agent system.")
     parser.add_argument("--module", default="A", help="Module letter (default: A)")
+    parser.add_argument("--reset-combined", action="store_true",
+                        help="Delete the combined CSV before appending (use before first module in a batch)")
     args = parser.parse_args()
     letter = args.module.upper()
+
+    if args.reset_combined and Path(COMBINED_CSV).exists():
+        Path(COMBINED_CSV).unlink()
+        print(f"Deleted existing combined CSV: {COMBINED_CSV}")
 
     # Paths
     baseline_csv  = f"./baselines/module_{letter}/predictions_single_llm_gpt-4o-mini.csv"
     multiagent_csv = f"./patient_agent_results/patients_with_system_prompts_module_{letter}/predictions_gpt-4o-mini.csv"
     patients_json  = f"./backend/agent_core/interview_agent/prompts/patients_with_system_prompts_module_{letter}.json"
+    module_json    = f"./modules/module_{letter.lower()}.json"
 
-    for p, label in [(baseline_csv, "baseline predictions"), (multiagent_csv, "multi-agent predictions"), (patients_json, "patient metadata")]:
+    for p, label in [(baseline_csv, "baseline predictions"), (multiagent_csv, "multi-agent predictions"), (patients_json, "patient metadata"), (module_json, "module JSON")]:
         if not os.path.exists(p):
             raise FileNotFoundError(f"Cannot find {label}: {p}")
+
+    # Load module name for combined CSV
+    with open(module_json, "r", encoding="utf-8") as f:
+        module_def = json.load(f)
+    module_name = f"{letter} - {module_def['module']['name']}"
 
     # Load data
     df_base  = load_predictions(baseline_csv).rename(columns={"prediction": "pred_baseline"})
@@ -233,6 +270,12 @@ def main():
     else:
         print("  Systems are tied on F2.")
     print(f"  Statistical significance: {'YES (p={:.4f})'.format(p_val) if p_val < 0.05 else 'NO (p={:.4f})'.format(p_val)}")
+
+    # -----------------------------------------------------------------------
+    # 6. Append to combined baseline CSV
+    # -----------------------------------------------------------------------
+    append_to_combined(merged, module_name)
+    print(f"\n  Combined CSV updated: {COMBINED_CSV}")
 
 
 if __name__ == "__main__":
