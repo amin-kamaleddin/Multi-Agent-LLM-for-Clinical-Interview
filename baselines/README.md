@@ -252,7 +252,7 @@ The raw LLM response is normalised to match the canonical multi-agent field orde
 |--------|-----------|----------------|----------|
 | A | Major Depressive Episode | `positive` | 90 |
 | B | Manic/Hypomanic Episode | `positive` | 90 |
-| C | (see module JSON) | `positive` | 89 |
+| C | (see module JSON) | `positive` | 90 |
 | D | (see module JSON) | `lifetime` | 90 |
 | G | OCD | `positive` | 90 |
 | H | (see module JSON) | `positive` | 90 |
@@ -267,7 +267,7 @@ Module O is excluded from automated runs because no transcript directory exists 
 
 ## Evaluation Results
 
-All 90 patients per module (89 for Module C). F2 scores reported; δ = Multi-agent F2 − Single-LLM F2.
+All 90 patients per module. F2 scores reported; δ = Multi-agent F2 − Single-LLM F2.
 
 | Module | Multi-agent F2 | Single-LLM F2 | δF2 | Winner | McNemar p |
 |--------|---------------|---------------|------|--------|-----------|
