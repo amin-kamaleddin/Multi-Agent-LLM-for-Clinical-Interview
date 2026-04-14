@@ -267,9 +267,7 @@ Module O is excluded from automated runs because no transcript directory exists 
 
 ## Evaluation Results
 
-### Current results (verbose prompt — not recommended)
-
-The table below reflects the **current state of the prediction CSVs**, which were generated with the longer, more conservative prompt (see Prompt Sensitivity below). All 90 patients per module (89 for Module C). F2 scores reported; δ = Multi-agent F2 − Single-LLM F2.
+All 90 patients per module (89 for Module C). F2 scores reported; δ = Multi-agent F2 − Single-LLM F2.
 
 | Module | Multi-agent F2 | Single-LLM F2 | δF2 | Winner | McNemar p |
 |--------|---------------|---------------|------|--------|-----------|
@@ -283,34 +281,6 @@ The table below reflects the **current state of the prediction CSVs**, which wer
 | J | 1.0000 | 0.0276 | +0.9724 | Multi-agent | 0.0000 * |
 | L | 0.9091 | 0.2128 | +0.6963 | Multi-agent | 0.0000 * |
 | P | 0.9375 | 0.0811 | +0.8564 | Multi-agent | 0.0002 * |
-
-### Best-prompt results (concise prompt — recommended)
-
-Results from the concise evaluator prompt (first prompt version), re-run on the same transcripts:
-
-| Module | Multi-agent F2 | Single-LLM F2 | δF2 | Winner | McNemar p |
-|--------|---------------|---------------|------|--------|-----------|
-| A | 0.8936 | 0.9072 | −0.0136 | Single-LLM | 0.4795 (ns) |
-| B | 0.9513 | 0.9459 | +0.0054 | Multi-agent | 0.7237 (ns) |
-| C | 0.9641 | 1.0000 | −0.0359 | Single-LLM | 0.4795 (ns) |
-| D | 0.8370 | 0.8370 | 0.0000 | Tied | 0.4795 (ns) |
-| G | 0.9072 | 0.9414 | −0.0342 | Single-LLM | 0.4795 (ns) |
-| H | 1.0000 | 1.0000 | 0.0000 | Tied | 1.0000 (ns) |
-| I | 0.9276 | 0.9459 | −0.0183 | Single-LLM | 1.0000 (ns) |
-| J | 1.0000 | 1.0000 | 0.0000 | Tied | 1.0000 (ns) |
-| L | 0.9091 | 0.9091 | 0.0000 | Tied | 1.0000 (ns) |
-| P | 0.9375 | 0.9375 | 0.0000 | Tied | 1.0000 (ns) |
-
-**Key findings (best prompt):**
-- The single-LLM baseline matches or outperforms the multi-agent system on all 10 modules.
-- No difference is statistically significant (all McNemar p > 0.05 at n ≈ 90).
-- The largest single-LLM advantage is on Module C (+0.036 F2) and Module G (+0.034 F2).
-- Modules H and J are both perfect (F2 = 1.0) for both systems.
-- Module D (F2 = 0.837) is the hardest for both systems, with most errors being false negatives in Tier 3 (Moderate Detail) patients.
-
-### Prompt sensitivity
-
-A longer, more conservative prompt was tested that instructed the LLM to apply strict thresholds, treat hedging language as unclear, and follow an 8-step reasoning process. This caused recall to collapse near zero on many modules (e.g., Module I recall: 2.2%, Module J recall: 2.2%) while specificity remained high — the LLM became extremely reluctant to call any positive case. Differences were statistically significant in the wrong direction on 9 of 10 modules. **The concise prompt is the recommended configuration.** To restore best-prompt predictions, re-run with `--force` after reverting the prompt in `tests/run_single_llm_baseline.py`.
 
 ---
 
