@@ -1,0 +1,18 @@
+{
+    "current": {
+        "diagnosis": false,
+        "reasoning": ""
+    },
+    "lifetime": {
+        "diagnosis": false,
+        "reasoning": ""
+    },
+    "severity": {
+        "diagnosis": false,
+        "reasoning": ""
+    },
+    "exclusions": {
+        "diagnosis": false,
+        "reasoning": ""
+    }
+}

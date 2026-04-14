@@ -1,0 +1,10 @@
+{
+    "lifetime": {
+        "diagnosis": true,
+        "reasoning": "Criterion 1 (spells of anxiety): MET \u2014 patient stated 'It's been happening more often lately... I can\u2019t always pinpoint why.' Criterion 2 (4 or more symptoms): MET \u2014 patient reported heart racing, sweating, trembling, shortness of breath, chest discomfort, dizziness, and feelings of unreality, totaling 7 symptoms clearly met. Criterion 3 (no substance or medical issues): MET \u2014 patient confirmed no drug use or medical conditions affecting symptoms. Total: 7 of 9 symptoms met (threshold \u22654). Diagnosis: TRUE \u2014 full threshold met with no exclusion criteria."
+    },
+    "current": {
+        "diagnosis": true,
+        "reasoning": "Criterion 1 (current attacks): MET \u2014 patient described ongoing experiences of panic attacks and persistent worry about future attacks. Criterion 2 (no substance or medical issues): MET \u2014 patient confirmed no drug use or medical conditions affecting symptoms. Diagnosis: TRUE \u2014 current symptoms are present and meet diagnostic criteria."
+    }
+}

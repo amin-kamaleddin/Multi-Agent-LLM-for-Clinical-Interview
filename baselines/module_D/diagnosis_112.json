@@ -1,0 +1,10 @@
+{
+    "lifetime": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (recurrent panic attacks): MET \u2014 patient stated, 'Yes, there have been multiple instances where I felt anxious or frightened in situations that others might find ordinary.' Criterion 2 (4 or more symptoms): MET \u2014 patient endorsed racing heartbeat, sweating, trembling, shortness of breath, choking sensation, chest discomfort, nausea, dizziness, tingling, feelings of detachment, fear of losing control, and fear of dying, totaling 12 symptoms. Criterion 3 (no substance or medical condition): MET \u2014 patient confirmed, 'I am not currently taking any medication or drugs that could contribute to my symptoms.' Total: 12 symptoms clearly met. Duration: not explicitly stated, but the patient indicated these experiences are recurrent. Exclusions: not triggered. Diagnosis: TRUE \u2014 full threshold met with recurrent panic attacks and no exclusion criteria present."
+    },
+    "current": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (current panic attacks): MET \u2014 patient confirmed ongoing experiences with panic attacks. Criterion 2 (no substance or medical condition): MET \u2014 patient stated, 'I am not currently taking any medication or drugs that could contribute to my symptoms.' Total: symptoms are currently active. Duration: patient reported persistent concern about having another attack in the past month. Exclusions: not triggered. Diagnosis: TRUE \u2014 current symptoms are present and meet the diagnostic criteria."
+    }
+}

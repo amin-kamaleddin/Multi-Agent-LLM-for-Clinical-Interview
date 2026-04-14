@@ -1,0 +1,10 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "reasoning": "Criterion A1 (depressed mood): MET \u2014 patient stated 'I have been feeling down, more often than not, especially in the past couple of weeks.' Criterion A2 (anhedonia): MET \u2014 'I have been much less interested in things for the past couple of weeks.' Criterion A3 (weight/appetite): MET \u2014 'My appetite has decreased... I've lost a bit of weight without trying.' Criterion A4 (sleep): MET \u2014 'I've had trouble sleeping almost every night.' Criterion A5 (psychomotor agitation/retardation): MET \u2014 'I\u2019ve noticed that I\u2019m moving slower than I usually do.' Criterion A6 (fatigue): MET \u2014 'I have felt very tired most days lately.' Criterion A7 (worthlessness/guilt): MET \u2014 'I've felt worthless a lot over the past two weeks.' Criterion A8 (concentration): MET \u2014 'I have had trouble concentrating.' Criterion A9 (suicidal thoughts): NOT MET \u2014 patient explicitly stated 'I'm safe. I haven't had thoughts about harming myself.' Total: 8 of 9 criteria met (threshold \u22655). Duration: met (patient reports symptoms for 2 weeks). Functional impairment: met ('These symptoms have definitely caused problems for me... it\u2019s been affecting my work; I struggle to concentrate and keep up.'). Exclusions: not triggered (no substance use or medical conditions reported). Diagnosis: TRUE \u2014 full threshold met with significant functional impairment confirmed."
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "reasoning": "Criterion A5: NOT MET \u2014 patient indicated this is the first time experiencing symptoms for a longer period, stating 'I think this is the first time I\u2019m experiencing something like this for a longer period.' No evidence of a previous episode meeting full criteria with a 2-month gap. Diagnosis: FALSE \u2014 no recurrent episodes identified."
+    }
+}

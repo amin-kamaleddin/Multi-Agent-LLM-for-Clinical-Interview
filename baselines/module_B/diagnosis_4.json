@@ -1,0 +1,10 @@
+{
+    "current": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (thoughts of self-harm): MET \u2014 patient stated, 'I sometimes imagine what it would be like if I weren\u2019t here anymore.' Criterion 2 (intent to die): UNCLEAR \u2014 patient expressed indifference about existence but did not indicate a clear intent to die. Criterion 3 (wish to be dead): MET \u2014 'I have thought about the idea of being better off dead.' Criterion 4 (suicidal thoughts): MET \u2014 'There have been times in the last month when thoughts of not wanting to exist have crossed my mind.' Criterion 5 (frequency of thoughts): MET \u2014 'These thoughts occur daily.' Criterion 6 (intensity of thoughts): MET \u2014 'In the past month, thoughts of harming myself have surfaced frequently.' Criterion 7 (specific plan): UNCLEAR \u2014 patient mentioned fleeting thoughts of methods but no active plan. Criterion 8 (preparatory actions): NOT MET \u2014 patient denied taking any active steps towards a suicide attempt. Criterion 9 (self-injury): NOT MET \u2014 patient stated, 'I have not engaged in self-injury in the past month.' Total: Requires \u22651 of 8 criteria; found 6 clearly met, 2 unclear, 2 not met. Duration: met (symptoms present for the past month). Functional impairment: met (patient describes feelings of emptiness and detachment affecting daily life). Exclusions: not triggered (no substance use or medical conditions reported). Diagnosis: TRUE \u2014 significant suicidal thoughts and feelings of detachment are present, indicating current suicidality."
+    },
+    "lifetime": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (lifetime attempt): MET \u2014 patient indicated considering ways to escape feelings of emptiness about six months ago, though no actions were taken. Total: Requires \u22651 of 1 criteria; found 1 clearly met. Diagnosis: TRUE \u2014 patient has a history of suicidal thoughts indicating a lifetime attempt."
+    }
+}

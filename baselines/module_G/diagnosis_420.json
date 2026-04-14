@@ -1,0 +1,12 @@
+{
+    "positive": {
+        "diagnosis": true,
+        "reasoning": "Criterion 1 (recurrent intrusive thoughts): MET \u2014 patient stated, 'I keep having these intrusive thoughts about germs and contamination.' Criterion 2 (attempts to suppress thoughts): MET \u2014 patient reported, 'I\u2019ve definitely tried to push these thoughts away.' Criterion 3 (thoughts persist despite suppression): MET \u2014 patient confirmed, 'they often come back into my mind.' Criterion 4 (compulsive behaviors): MET \u2014 patient described feeling driven to check locks and wash hands more often. Criterion 5 (rituals to reduce anxiety): MET \u2014 patient stated, 'I believe these rituals are meant to reduce my anxiety.' Criterion 6 (significant distress or impairment): MET \u2014 patient noted, 'I find myself checking the locks... which makes me late for work,' indicating functional impairment. Total: 6 of 6 criteria met (threshold \u22654). Duration: met (symptoms reported for the past month). Functional impairment: met (interferes with work and relationships). Exclusions: not triggered (no substance use or medical conditions reported). Diagnosis: TRUE \u2014 full criteria met with significant functional impairment confirmed.",
+        "insight": "goodOrFair",
+        "ticRelated": false
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (recurrent intrusive thoughts): MET \u2014 patient stated, 'I keep having these intrusive thoughts about germs and contamination.' Criterion 2 (attempts to suppress thoughts): MET \u2014 patient reported, 'I\u2019ve definitely tried to push these thoughts away.' Criterion 3 (thoughts persist despite suppression): MET \u2014 patient confirmed, 'they often come back into my mind.' Criterion 4 (compulsive behaviors): MET \u2014 patient described feeling driven to check locks and wash hands more often. Criterion 5 (rituals to reduce anxiety): MET \u2014 patient stated, 'I believe these rituals are meant to reduce my anxiety.' Criterion 6 (significant distress or impairment): MET \u2014 patient noted, 'I find myself checking the locks... which makes me late for work,' indicating functional impairment. Total: 6 of 6 criteria met (threshold \u22654). Duration: met (symptoms reported for the past month). Functional impairment: met (interferes with work and relationships). Exclusions: not triggered (no substance use or medical conditions reported). Diagnosis: TRUE \u2014 full criteria met with significant functional impairment confirmed."
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "current": {
+        "diagnosis": true,
+        "reasoning": "The individual reports engaging in binge eating at least once a week and experiences feelings of lack of control during these episodes. They also report using laxatives multiple times a week as a compensatory behavior to prevent weight gain, which meets the criteria for bulimia nervosa."
+    },
+    "recurrent": {
+        "diagnosis": true,
+        "reasoning": "The individual has reported binge eating episodes occurring at least once a week over the past three months, which indicates a recurrent pattern of behavior."
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "current": {
+        "diagnosis": true,
+        "reasoning": "The individual reports having episodes of binge eating several times a week, feeling out of control during these episodes, and experiencing significant distress afterward. They do not engage in compensatory behaviors, which aligns with the criteria for Binge Eating Disorder."
+    },
+    "recurrent": {
+        "diagnosis": true,
+        "reasoning": "The individual has reported recurrent episodes of binge eating occurring several times a week, indicating a pattern consistent with the diagnosis."
+    }
+}

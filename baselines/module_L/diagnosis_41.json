@@ -1,0 +1,6 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "reasoning": "Criterion A1 (restriction of energy intake): MET \u2014 patient reports actively trying to restrict food intake and feeling the need to control weight. Criterion A2 (intense fear of gaining weight): MET \u2014 patient expresses overwhelming dread of gaining weight and feeling out of control if they eat properly. Criterion A3 (distorted body image): MET \u2014 patient describes seeing themselves as larger than they are and feeling ashamed of their body. Criterion A4 (self-esteem influenced by weight): MET \u2014 patient states their self-worth is heavily tied to their weight and body image. Criterion A5 (low body weight): MET \u2014 patient reports a current weight of 85 pounds at 5'4\", which is significantly below the expected weight for their height. Total: 5 of 5 criteria met (threshold \u2265 4). Duration: not explicitly stated, but symptoms appear to be ongoing based on the context of responses. Functional impairment: met \u2014 patient describes significant distress and exhaustion related to body image and eating behaviors. Exclusions: not triggered. Diagnosis: TRUE \u2014 full criteria met with significant functional impairment and distress confirmed."
+    }
+}

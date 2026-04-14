@@ -1,0 +1,10 @@
+{
+    "positive": {
+        "diagnosis": true,
+        "reasoning": "Criterion A1 (restriction of energy intake): MET \u2014 patient stated, 'I've definitely restricted my food intake in the past.' Criterion A2 (intense fear of gaining weight): MET \u2014 patient expressed, 'I've been really scared of gaining weight. It's overwhelming.' Criterion A3 (distorted body image): MET \u2014 patient reported, 'I often feel like I'm too big... I see someone larger than I am.' Criterion A4 (self-esteem influenced by weight): MET \u2014 patient indicated, 'I often feel that my mood depends heavily on how I perceive my body.' Total: 4 of 4 criteria met (threshold \u22651). Duration: not explicitly stated, but symptoms appear to be ongoing based on the context. Functional impairment: met \u2014 patient described significant distress and avoidance behaviors related to body image. Exclusions: not triggered. Diagnosis: TRUE \u2014 full criteria met with significant functional impairment and ongoing symptoms."
+    },
+    "recurrent": {
+        "diagnosis": true,
+        "reasoning": "Criterion A1 (restriction of energy intake): MET \u2014 patient stated, 'I've definitely restricted my food intake in the past.' Criterion A2 (intense fear of gaining weight): MET \u2014 patient expressed, 'I've been really scared of gaining weight. It's overwhelming.' Criterion A3 (distorted body image): MET \u2014 patient reported, 'I often feel like I'm too big... I see someone larger than I am.' Criterion A4 (self-esteem influenced by weight): MET \u2014 patient indicated, 'I often feel that my mood depends heavily on how I perceive my body.' Total: 4 of 4 criteria met (threshold \u22651). Duration: not explicitly stated, but symptoms appear to be ongoing based on the context. Functional impairment: met \u2014 patient described significant distress and avoidance behaviors related to body image. Exclusions: not triggered. Diagnosis: TRUE \u2014 full criteria met with significant functional impairment and ongoing symptoms."
+    }
+}

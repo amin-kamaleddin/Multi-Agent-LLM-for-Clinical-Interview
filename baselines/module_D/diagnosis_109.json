@@ -1,0 +1,14 @@
+{
+    "current": {
+        "diagnosis": false,
+        "reasoning": "Criterion C1 (panic attacks): MET \u2014 patient confirmed experiencing spells of anxiety unexpectedly. Criterion C2 (persistent concern): MET \u2014 patient reported ongoing worry about having another attack and changes in behavior due to this concern. Criterion C3 (exclusion criteria): MET \u2014 patient denied substance use or withdrawal and stated no other medical illnesses. Total: 2 of 2 criteria met. Functional impairment: MET \u2014 patient indicated avoidance of certain public places due to anxiety. Diagnosis: TRUE \u2014 full criteria for current panic disorder are met with significant functional impairment confirmed."
+    },
+    "lifetime": {
+        "diagnosis": false,
+        "reasoning": "Criterion A1 (panic attacks): MET \u2014 patient reported multiple episodes of panic attacks. Criterion A2 (peak within 10 minutes): MET \u2014 patient confirmed attacks peak within 10 minutes. Criterion A3 (unpredictable attacks): MET \u2014 patient stated attacks occur without clear triggers. Criterion A4 (persistent concern): MET \u2014 patient expressed ongoing worry about future attacks and behavioral changes. Criterion B (symptoms): MET \u2014 patient endorsed 8 symptoms: increased heart rate, sweating, trembling, shortness of breath, choking sensation, chest discomfort, dizziness, feelings of unreality. Total: 4 of 4 criteria met. Diagnosis: TRUE \u2014 full criteria for lifetime panic disorder are met."
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "reasoning": "Not applicable as the current module does not assess for recurrent episodes."
+    }
+}

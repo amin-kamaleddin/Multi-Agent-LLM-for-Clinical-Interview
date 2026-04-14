@@ -1,0 +1,6 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "reasoning": "Criterion A1 (restriction of energy intake): MET \u2014 patient states they monitor food intake closely and adjust meals based on appearance. Criterion A2 (intense fear of gaining weight): MET \u2014 patient describes the thought of gaining weight as overwhelming and distressing. Criterion A3 (body image disturbance): MET \u2014 patient reports feeling critical of their body, especially stomach and thighs, and equates thinness with control and safety. Criterion A4 (underweight): MET \u2014 patient reports a lowest weight below 100 pounds, which is concerning to them. Total: 4 of 4 criteria met (threshold \u22651). Duration: not explicitly stated, but symptoms appear chronic based on the context. Functional impairment: MET \u2014 patient describes significant anxiety and distress affecting social interactions and self-perception. Exclusions: not triggered. Diagnosis: TRUE \u2014 full criteria met with significant functional impairment confirmed."
+    }
+}

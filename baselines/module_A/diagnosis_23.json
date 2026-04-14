@@ -1,0 +1,11 @@
+{
+    "positive": {
+        "diagnosis": true,
+        "reasoning": "Criterion A1 (depressed mood): MET \u2014 patient stated 'I've definitely been feeling rather low and empty during most of the day lately.' Criterion A2 (anhedonia): MET \u2014 'I can say that I haven't felt much interest in things I used to enjoy.' Criterion A3 (weight/appetite): MET \u2014 'My appetite has decreased quite a bit over the past couple of weeks.' Criterion A4 (sleep): MET \u2014 'I've had trouble sleeping most nights lately.' Criterion A5 (psychomotor agitation/retardation): MET \u2014 'I think I\u2019ve been moving and speaking a bit slower than I usually do.' Criterion A6 (fatigue): MET \u2014 'I've been feeling quite tired most days.' Criterion A7 (worthlessness/guilt): MET \u2014 'I've been feeling pretty down lately... there's been this sense of hopelessness.' Criterion A8 (concentration): MET \u2014 'I\u2019ve definitely noticed that I\u2019m having trouble focusing and making decisions lately.' Criterion A9 (suicidal thoughts): NOT MET \u2014 patient explicitly stated, 'I haven't had thoughts about harming myself.' Total: 8 of 9 criteria met (threshold \u22655). Duration: met (patient reports symptoms for 2 weeks). Functional impairment: met ('it's been affecting my motivation and energy'). Exclusions: not triggered (no substance use or medical issues reported). Diagnosis: TRUE \u2014 full threshold met with significant functional impairment confirmed.",
+        "timeFrame": "recent"
+    },
+    "recurrent": {
+        "diagnosis": true,
+        "reasoning": "Criterion A5: YES \u2014 patient indicated having had multiple episodes of depression in the past. Exclusions: not triggered (no substance use or medical issues reported). Diagnosis: TRUE \u2014 patient confirmed more than one distinct episode lasting at least two months each."
+    }
+}

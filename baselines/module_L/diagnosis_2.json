@@ -1,0 +1,10 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "reasoning": "Criterion A1 (restricting food intake): MET \u2014 patient stated 'I've been consciously eating less and skipping meals.' Criterion A2 (intense fear of gaining weight): MET \u2014 'I think about gaining weight very often.' Criterion A3 (body image disturbance): NOT MET \u2014 patient does not consider themselves too big or fat, stating 'I prefer to focus on having more discipline.' Criterion A4 (self-esteem influenced by weight): MET \u2014 'Body weight and shape have impacted my self-esteem.' Criterion A5 (low body weight perception): NOT MET \u2014 patient feels their weight is appropriate for their goals. Total: 3 of 5 criteria met (threshold \u22653). Duration: unclear, as the timeframe for symptoms is not specified. Functional impairment: unclear, as the patient does not explicitly describe significant distress or impairment in functioning. Exclusions: not triggered. Diagnosis: FALSE \u2014 insufficient criteria met and unclear functional impairment."
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "reasoning": "Not applicable as the current group is assessed."
+    }
+}

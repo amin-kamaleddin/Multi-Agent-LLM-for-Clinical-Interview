@@ -1,0 +1,10 @@
+{
+    "current": {
+        "diagnosis": true,
+        "reasoning": "Criterion 1 (thoughts of death): MET \u2014 patient stated 'I think about it most days' and 'there are moments when I thought things might be easier if I weren't here.' Criterion 2 (suicidal ideation): MET \u2014 patient reported 'I have thought about it' and 'the thoughts are present.' Criterion 3 (frequency of thoughts): MET \u2014 patient indicated 'these thoughts occur daily' and 'I think about these things for hours each day.' Criterion 4 (intensity of thoughts): MET \u2014 patient described thoughts as significant and persistent. Criterion 5 (intent to act): NOT MET \u2014 patient denied having a specific plan or intent to act, stating 'I don\u2019t have any active plans.' Criterion 6 (impulsivity): NOT MET \u2014 patient indicated no strong urges or active planning. Criterion 7 (dreams of suicide): NOT MET \u2014 patient described fleeting thoughts rather than dreams. Criterion 8 (lifetime attempt): NOT MET \u2014 patient denied any past suicide attempts. Total: 4 of 8 criteria met (threshold \u22651). Duration: met (symptoms reported for the past month). Functional impairment: met (patient expressed feelings of detachment and lack of purpose). Exclusions: not triggered (no substance use or medical conditions reported). Diagnosis: TRUE \u2014 current suicidal ideation is present with significant functional impairment, despite lack of intent to act."
+    },
+    "lifetime": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (lifetime attempt): NOT MET \u2014 patient explicitly stated 'I have not made a suicide attempt.' Total: 0 of 1 criteria met (threshold \u22651). Diagnosis: FALSE \u2014 no lifetime suicide attempts reported."
+    }
+}

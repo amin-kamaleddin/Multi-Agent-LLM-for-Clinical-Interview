@@ -1,0 +1,18 @@
+{
+    "current": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (thoughts of being better off dead): NOT MET \u2014 patient stated 'No, I haven\u2019t had those thoughts in the past month.' Criterion 2 (thoughts of harming self): NOT MET \u2014 patient reported 'I haven't thought about harming myself at all in the past month.' Criterion 3 (suicidal dreams): NOT MET \u2014 patient said 'No, I haven\u2019t had any dreams with suicidal content in the past month.' Criterion 4 (suicide method in mind): NOT MET \u2014 patient stated 'I haven't had a specific method in mind.' Criterion 5 (suicide means in mind): NOT MET \u2014 patient reported 'I haven't had any means in mind at all.' Criterion 6 (place in mind for suicide): NOT MET \u2014 patient said 'I haven\u2019t had a specific place in mind for that.' Criterion 7 (date/timeframe for suicide): NOT MET \u2014 patient stated 'No, I haven't had any dates or timeframes in mind for that.' Criterion 8 (tasks related to suicide): NOT MET \u2014 patient reported 'I haven't thought about completing any tasks related to self-harm.' Criterion 9 (intention to act on thoughts): NOT MET \u2014 patient stated 'I haven't had any intention to act on those thoughts.' Criterion 10 (intention to die): NOT MET \u2014 patient said 'I have not had any intention to die in the past month.' Criterion 11 (need or impulse to kill self): NOT MET \u2014 patient reported 'No, I have not felt the need or impulse to kill myself in the past month.' Criterion 12 (active steps for suicide): NOT MET \u2014 patient stated 'I haven't taken any steps like that in the past month.' Criterion 13 (self-injury without intent to kill): NOT MET \u2014 patient reported 'I haven't injured myself on purpose in the past month.' Criterion 14 (suicide attempt): NOT MET \u2014 patient stated 'I have not attempted suicide in the past month.' Criterion 15 (time spent with suicidal thoughts): NOT MET \u2014 patient reported 'I don't spend any time with suicidal thoughts or impulses.' Criterion 16 (least time spent with suicidal thoughts): NOT MET \u2014 patient stated 'I don't experience any suicidal impulses or thoughts now.' Criterion 17 (most time spent with suicidal thoughts): NOT MET \u2014 patient reported 'I haven't spent any time with suicidal impulses or thoughts in a long while.' Total: 0 of 19 criteria met (threshold \u22651). Exclusions: not triggered as patient is not experiencing substance use or medical conditions affecting mood. Diagnosis: FALSE \u2014 no current suicidal thoughts or behaviors were endorsed."
+    },
+    "lifetime": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (lifetime suicide attempt): NOT MET \u2014 patient stated 'I never made a suicide attempt.' Total: 0 of 1 criteria met (threshold \u22651). Diagnosis: FALSE \u2014 patient has never attempted suicide in their lifetime."
+    },
+    "likely_in_near_future": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (likelihood of suicide in near future): NOT MET \u2014 patient rated likelihood as 0. Total: 0 of 1 criteria met (threshold \u22651). Diagnosis: FALSE \u2014 patient has no intention of harming themselves in the near future."
+    },
+    "suicidal_behavior_disorder": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (B18): NOT MET \u2014 patient has not attempted suicide. Total: 0 of 1 criteria met (threshold \u22651). Diagnosis: FALSE \u2014 no evidence of suicidal behavior disorder."
+    }
+}

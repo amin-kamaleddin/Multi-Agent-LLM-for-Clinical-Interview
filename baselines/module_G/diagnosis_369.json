@@ -1,0 +1,10 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (obsessions): MET \u2014 patient stated, 'There have been these thoughts that keep popping up, and they really mess with my mind.' Criterion 2 (compulsions): MET \u2014 patient described checking locks repeatedly, stating, 'I catch myself checking the locks multiple times before I can leave the house.' Criterion 3 (distress/impairment): MET \u2014 patient reported significant distress and interference with daily functioning, saying, 'They really seem to take over my day sometimes.' Insight: goodOrFair \u2014 patient appears to recognize the irrationality of their thoughts and behaviors but feels overwhelmed. Tic-related: null \u2014 no mention of tics. Total: 3 criteria met. Duration: met (symptoms reported in the past month). Functional impairment: met (significant distress and interference with daily life). Exclusions: not triggered (no substance use or medical condition reported). Diagnosis: TRUE \u2014 full criteria met with significant functional impairment confirmed."
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (obsessions): MET \u2014 same as above. Criterion 2 (compulsions): MET \u2014 same as above. Criterion 3 (distress/impairment): MET \u2014 same as above. Insight: goodOrFair \u2014 same as above. Tic-related: null \u2014 same as above. Total: 3 criteria met. Duration: met (symptoms reported in the past month). Functional impairment: met (significant distress and interference with daily life). Exclusions: not triggered (no substance use or medical condition reported). Diagnosis: TRUE \u2014 full criteria met with significant functional impairment confirmed."
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "reasoning": "Criterion A1 (depressed mood): NOT MET \u2014 patient described feeling overwhelmed but did not endorse feeling sad, empty, or hopeless most of the day, nearly every day. Criterion A2 (anhedonia): NOT MET \u2014 patient stated they still enjoy activities and do not have significant loss of interest. Total: 0 of 9 criteria met (threshold \u22655). Duration: not met (no symptoms reported for the required 2 weeks). Functional impairment: not met (no significant distress or impairment described). Exclusions: not triggered. Diagnosis: FALSE \u2014 no criteria met for a major depressive episode."
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "reasoning": "Criterion A5: NOT MET \u2014 patient did not report any previous episodes that meet full criteria for a major depressive episode. Exclusions: not triggered. Diagnosis: FALSE \u2014 no evidence of recurrent episodes."
+    }
+}

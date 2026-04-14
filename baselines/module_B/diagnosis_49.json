@@ -1,0 +1,18 @@
+{
+    "current": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1: NOT MET \u2014 patient stated, 'I have not thought about harming myself or considered suicide in the past month.' Criterion 2: NOT MET \u2014 patient did not express any current suicidal thoughts or impulses. Criterion 3: NOT MET \u2014 patient did not intend to act on any thoughts of self-harm. Criterion 4: NOT MET \u2014 patient did not feel the need or impulse to kill themselves. Criterion 5: NOT MET \u2014 patient did not take any active steps toward a suicide attempt. Criterion 6: NOT MET \u2014 patient did not injure themselves on purpose. Criterion 7: NOT MET \u2014 patient did not attempt suicide. Criterion 8: NOT MET \u2014 patient did not experience any suicidal impulses or thoughts daily. Total: 0 of 8 criteria met (threshold \u22651). Duration: met (assessed over the past month). Functional impairment: not applicable as no current suicidal thoughts or behaviors were reported. Exclusions: not triggered. Diagnosis: FALSE \u2014 no current suicidal thoughts or behaviors were endorsed, and all criteria were not met."
+    },
+    "lifetime": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1: MET \u2014 patient acknowledged experiencing fleeting thoughts of wanting to escape their situation during difficult times in the past. Criterion 2: NOT MET \u2014 patient never attempted suicide. Criterion 3: NOT MET \u2014 patient did not express any intent to die as a result of suicidal thoughts. Total: 1 of 3 criteria met (threshold \u22651). Duration: met (patient reported past experiences over several years). Functional impairment: not applicable as no current suicidal thoughts or behaviors were reported. Exclusions: not triggered. Diagnosis: FALSE \u2014 while there were past fleeting thoughts, the patient has never attempted suicide, and the criteria for a lifetime diagnosis are not fully met."
+    },
+    "likely_in_near_future": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1: NOT MET \u2014 patient rated the likelihood of attempting suicide within the next 3 months as 0. Criterion 2: NOT MET \u2014 no current suicidal thoughts or behaviors were reported. Total: 0 of 2 criteria met (threshold \u22651). Duration: not applicable as no current suicidal thoughts or behaviors were reported. Functional impairment: not applicable as no current suicidal thoughts or behaviors were reported. Exclusions: not triggered. Diagnosis: FALSE \u2014 the patient does not foresee any likelihood of attempting suicide in the near future."
+    },
+    "suicidal_behavior_disorder": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1: NOT MET \u2014 patient did not endorse any suicidal behavior. Criterion 2: NOT MET \u2014 no evidence of confusion or delirium during past experiences. Criterion 3: NOT MET \u2014 no evidence of political or religious purpose in any past thoughts. Total: 0 of 3 criteria met (threshold \u22651). Duration: not applicable as no current suicidal thoughts or behaviors were reported. Functional impairment: not applicable as no current suicidal thoughts or behaviors were reported. Exclusions: not triggered. Diagnosis: FALSE \u2014 no criteria for suicidal behavior disorder were met."
+    }
+}

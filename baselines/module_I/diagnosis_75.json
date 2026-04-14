@@ -1,0 +1,10 @@
+{
+    "positive": {
+        "diagnosis": true,
+        "reasoning": "The patient endorsed multiple criteria for alcohol use disorder. Specifically, they reported: 1) Drinking 3 or more alcoholic drinks within a 3-hour period on multiple occasions (Criterion a). 2) Drinking more than planned (Criterion b). 3) Wanting to cut down but failing (Criterion c). 4) Spending substantial time obtaining alcohol or recovering from its effects (Criterion e). 5) Craving alcohol (Criterion d). 6) Neglecting responsibilities due to drinking (Criterion g). 7) Continuing to drink despite problems caused by alcohol (Criterion h). 8) Reducing or giving up important activities due to drinking (Criterion i). 9) Needing to drink more to achieve the same effect (Criterion j). 10) Experiencing withdrawal symptoms when cutting down (Criterion k). 11) Drinking to avoid withdrawal symptoms (Criterion l). This totals 11 criteria met, indicating a severe alcohol use disorder. The patient expressed significant functional impairment, including missed work deadlines and social withdrawal. The threshold for a diagnosis of severe alcohol use disorder is met with 6 or more symptoms endorsed."
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "reasoning": "The patient did not explicitly mention recurrent legal problems related to alcohol use (Criterion f), which is a specific criterion that was not addressed in the interview. Therefore, this criterion is not met. However, all other criteria were met, and the absence of this specific criterion does not negate the overall diagnosis of severe alcohol use disorder."
+    }
+}

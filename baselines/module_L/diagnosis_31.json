@@ -1,0 +1,6 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "reasoning": "Criterion A1 (restricting food intake): MET \u2014 patient stated, 'I often find myself reducing food intake or trying to avoid weight gain.' Criterion A2 (intense fear of gaining weight): MET \u2014 patient expressed, 'I often think about my weight and feel anxious when I consider the possibility of gaining.' Criterion A3 (distorted body image): MET \u2014 patient reported, 'Sometimes I feel like my thighs are too large' and confirmed this is a constant thought. Criterion A4 (self-esteem influenced by weight): MET \u2014 patient indicated, 'It is hard to separate how I feel about myself from my body weight and shape.' Criterion A5 (weight below normal): MET \u2014 patient reported a lowest weight of 85 pounds at a height of 5'4\", which is below the normal range. Total: 5 of 5 criteria met (threshold \u2265 3). Duration: not explicitly stated, but symptoms appear to be ongoing based on the context. Functional impairment: not directly assessed, but the patient indicates significant distress regarding weight and body image. Exclusions: not triggered. Diagnosis: TRUE \u2014 full threshold met with evidence of significant concern about weight and body image."
+    }
+}

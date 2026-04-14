@@ -1,0 +1,10 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "reasoning": "Criterion A1 (exposure to trauma): NOT MET \u2014 patient explicitly stated, 'I don\u2019t think any of them would fit that definition' regarding traumatic events. Criterion A2 (intrusive memories): NOT MET \u2014 no endorsement of intrusive memories or flashbacks. Criterion A3 (avoidance): NOT MET \u2014 patient reports feeling like they have moved on and are functioning well, indicating no avoidance behaviors. Criterion A4 (negative alterations in cognition and mood): NOT MET \u2014 no symptoms of negative mood or cognitive alterations were reported. Criterion A5 (arousal symptoms): NOT MET \u2014 no hyperarousal symptoms were mentioned. Total: 0 of 5 criteria met (threshold \u22651). Duration: not applicable as no criteria were met. Functional impairment: not applicable as no symptoms were endorsed. Exclusions: not triggered. Diagnosis: FALSE \u2014 no evidence of trauma exposure or related symptoms."
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "reasoning": "Not applicable as the positive group criteria were not met."
+    }
+}

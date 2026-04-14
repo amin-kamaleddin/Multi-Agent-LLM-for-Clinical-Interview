@@ -1,0 +1,10 @@
+{
+    "current": {
+        "diagnosis": true,
+        "reasoning": "Criterion 1 (thoughts of being better off dead): MET \u2014 patient stated, 'I find myself wishing things could be different and feeling that I might be better off not being here.' Criterion 2 (thoughts of harming self): MET \u2014 patient reported, 'I have definitely had thoughts about ending my life, especially late at night.' Criterion 3 (frequency of thoughts): MET \u2014 patient indicated thoughts occur 'about three to four times a week.' Criterion 4 (intensity of thoughts): MET \u2014 patient rated intensity as 'around a 6 or 7.' Criterion 5 (difficulty resisting impulses): MET \u2014 patient described it as 'difficult to shake off' these thoughts. Criterion 6 (active steps towards suicide): NOT MET \u2014 patient stated, 'I haven't taken any active steps to prepare for a suicide attempt.' Criterion 7 (suicidal intent): NOT MET \u2014 patient clarified, 'I haven\u2019t made any plans or intended to act on those thoughts.' Criterion 8 (suicidal behavior): NOT MET \u2014 patient confirmed, 'I haven\u2019t attempted suicide.' Total: 5 of 8 criteria met (threshold \u22651). Duration: met (symptoms reported for the past month). Functional impairment: met (patient expressed feeling overwhelmed and weary). Exclusions: not triggered (no substance use or medical conditions reported). Diagnosis: TRUE \u2014 current suicidal thoughts and feelings are present with significant functional impairment."
+    },
+    "lifetime": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (lifetime suicide attempt): NOT MET \u2014 patient stated, 'I haven't made any attempts.' Total: 0 of 1 criteria met (threshold \u22651). Diagnosis: FALSE \u2014 no lifetime suicide attempts reported."
+    }
+}

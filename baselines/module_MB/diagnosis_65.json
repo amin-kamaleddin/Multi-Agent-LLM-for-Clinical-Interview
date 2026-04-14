@@ -1,0 +1,14 @@
+{
+    "current": {
+        "diagnosis": false,
+        "reasoning": ""
+    },
+    "severity": {
+        "diagnosis": false,
+        "reasoning": ""
+    },
+    "exclusions": {
+        "diagnosis": false,
+        "reasoning": ""
+    }
+}

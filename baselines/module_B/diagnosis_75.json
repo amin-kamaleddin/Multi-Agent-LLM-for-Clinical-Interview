@@ -1,0 +1,10 @@
+{
+    "current": {
+        "diagnosis": true,
+        "reasoning": "Criterion 1 (suicidal thoughts): MET \u2014 patient stated, 'I\u2019ve caught myself thinking that maybe it wouldn\u2019t be so bad if I just let things go a little too far.' Criterion 2 (suicidal intent): MET \u2014 patient expressed, 'I found myself thinking about how easy it would be for an accident to happen\u2014just a slip or a trip, really.' Criterion 3 (wish to be dead): MET \u2014 patient mentioned, 'I sometimes wonder if things would be easier for everyone if I weren\u2019t around.' Criterion 4 (suicidal plan): MET \u2014 patient indicated, 'I\u2019ve imagined ways to escape the pain.' Criterion 5 (suicidal behavior): NOT MET \u2014 patient did not report any actual attempts in the past month. Criterion 6 (frequency of thoughts): MET \u2014 patient reported thoughts occurring 'frequently' and 'some days feel heavier than others.' Criterion 7 (intensity of thoughts): MET \u2014 patient described thoughts as 'overwhelming' and 'haunting.' Criterion 8 (impulse to act): MET \u2014 patient stated, 'I sometimes wonder if it would be easier to just let it happen.' Total: 8 of 8 criteria met (threshold \u22651). Duration: met (patient reports symptoms in the past month). Functional impairment: met (patient described feelings of isolation and overwhelming sadness). Exclusions: not triggered. Diagnosis: TRUE \u2014 full criteria met with significant functional impairment and current suicidal ideation present."
+    },
+    "lifetime": {
+        "diagnosis": true,
+        "reasoning": "Criterion 1 (lifetime suicide attempts): MET \u2014 patient confirmed, 'I can think of a specific number, yes. It\u2019s been two times in my life when I felt completely overwhelmed.' Criterion 2 (lifetime suicidal thoughts): MET \u2014 patient stated, 'I\u2019ve faced that darkness more than once.' Total: 2 of 2 criteria met (threshold \u22651). Diagnosis: TRUE \u2014 patient has a history of multiple suicide attempts, confirming lifetime criteria."
+    }
+}

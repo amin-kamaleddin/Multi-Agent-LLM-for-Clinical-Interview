@@ -1,0 +1,10 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "reasoning": "Criterion I2a (drinking more than intended): UNCLEAR \u2014 patient mentioned enjoying drinks at social gatherings but stated it doesn't happen frequently enough to be a concern, which does not clearly indicate drinking more than intended. Criterion I2b (unsuccessful attempts to cut down): NOT MET \u2014 patient did not mention any attempts to cut down on drinking. Criterion I2c (spending a lot of time drinking): NOT MET \u2014 no evidence provided that the patient spends a lot of time drinking. Criterion I2d (craving): NOT MET \u2014 no mention of craving alcohol. Criterion I2e (failure to fulfill obligations): NOT MET \u2014 no indication of failure to meet responsibilities due to drinking. Criterion I2f (social/interpersonal problems): NOT MET \u2014 no evidence of social or interpersonal issues related to drinking. Criterion I2g (giving up activities): NOT MET \u2014 patient did not indicate giving up activities due to drinking. Criterion I2h (hazardous use): NOT MET \u2014 no mention of engaging in hazardous situations while drinking. Criterion I2i (tolerance): NOT MET \u2014 no evidence of needing more alcohol to achieve the same effect. Criterion I2j (withdrawal): NOT MET \u2014 no mention of withdrawal symptoms. Total: Requires \u22652 symptoms; found 0 clearly met, 1 unclear. Duration: not applicable as no symptoms were met. Functional impairment: not applicable as no symptoms were met. Exclusions: not triggered. Diagnosis: FALSE \u2014 no criteria met for alcohol use disorder."
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "reasoning": "Not applicable as the positive diagnosis is false."
+    }
+}

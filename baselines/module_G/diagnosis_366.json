@@ -1,0 +1,10 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (recurrent thoughts): MET \u2014 patient stated, 'I've definitely noticed some thoughts that seem to pop up a lot in my head recently. They tend to be pretty unsettling.' Criterion 2 (attempt to suppress): MET \u2014 'I think I've tried to push those thoughts away a bit.' Criterion 3 (thoughts persist): MET \u2014 'It feels like those thoughts just pop up again, no matter how hard I try to push them away.' Criterion 4 (compulsive behaviors): MET \u2014 'I have found myself doing some things repeatedly lately.' Criterion 5 (rituals to prevent distress): MET \u2014 'Sometimes it feels like I need to do these things to keep bad things from happening.' Criterion 6 (significant distress/functional impairment): MET \u2014 'It does take up a chunk of my time during the day, and often it affects how I feel in my relationships.' Total: 6 of 6 criteria met (threshold \u22654). Duration: met (symptoms reported for the past month). Functional impairment: met (significant impact on relationships and time). Exclusions: not triggered (no substance use or medical conditions reported). Diagnosis: TRUE \u2014 full criteria met with significant distress and functional impairment confirmed."
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (recurrent thoughts): MET \u2014 same as above. Criterion 2 (attempt to suppress): MET \u2014 same as above. Criterion 3 (thoughts persist): MET \u2014 same as above. Criterion 4 (compulsive behaviors): MET \u2014 same as above. Criterion 5 (rituals to prevent distress): MET \u2014 same as above. Criterion 6 (significant distress/functional impairment): MET \u2014 same as above. Total: 6 of 6 criteria met (threshold \u22654). Duration: met (symptoms reported for the past month). Functional impairment: met (significant impact on relationships and time). Exclusions: not triggered (no substance use or medical conditions reported). Diagnosis: TRUE \u2014 full criteria met with significant distress and functional impairment confirmed."
+    }
+}

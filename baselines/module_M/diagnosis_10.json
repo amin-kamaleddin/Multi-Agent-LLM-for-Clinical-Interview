@@ -1,0 +1,10 @@
+{
+    "current": {
+        "diagnosis": true,
+        "reasoning": "The individual reports engaging in binge eating episodes at least once a week, accompanied by a sense of loss of control and compensatory behaviors such as excessive exercise. This aligns with the diagnostic criteria for bulimia nervosa."
+    },
+    "recurrent": {
+        "diagnosis": true,
+        "reasoning": "The individual has a pattern of binge eating and compensatory behaviors occurring multiple times a week, indicating a recurrent cycle that meets the criteria for bulimia nervosa."
+    }
+}

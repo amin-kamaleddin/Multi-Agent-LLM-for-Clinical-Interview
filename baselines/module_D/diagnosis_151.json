@@ -1,0 +1,10 @@
+{
+    "lifetime": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (spells of anxiety): MET \u2014 patient stated, 'Absolutely, I have experienced those spells multiple times.' Criterion 2 (4 or more symptoms): MET \u2014 patient endorsed 10 symptoms: racing heart, sweating, trembling, shortness of breath, choking sensation, chest discomfort, nausea, dizziness, hot flushes, and feelings of detachment. Criterion 3 (no other disorders): MET \u2014 patient denied substance use or withdrawal and did not report any other medical conditions that could explain the symptoms. Total: 10 symptoms clearly met. Duration: met (patient reports ongoing experiences). Functional impairment: met ('I started declining invitations to hang out with friends because I feared similar situations might trigger another attack'). Exclusions: not triggered. Diagnosis: TRUE \u2014 full threshold met with significant impairment confirmed."
+    },
+    "current": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (spells of anxiety): MET \u2014 patient stated, 'Absolutely, I have experienced those spells multiple times.' Criterion 2 (4 or more symptoms): MET \u2014 patient endorsed 10 symptoms: racing heart, sweating, trembling, shortness of breath, choking sensation, chest discomfort, nausea, dizziness, hot flushes, and feelings of detachment. Criterion 3 (no other disorders): MET \u2014 patient denied substance use or withdrawal and did not report any other medical conditions that could explain the symptoms. Total: 10 symptoms clearly met. Duration: met (patient reports ongoing experiences). Functional impairment: met ('I started declining invitations to hang out with friends because I feared similar situations might trigger another attack'). Exclusions: not triggered. Diagnosis: TRUE \u2014 full threshold met with significant impairment confirmed."
+    }
+}

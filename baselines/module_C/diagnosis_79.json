@@ -1,0 +1,10 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1: NOT MET \u2014 patient denied ever feeling 'up' or 'high' or having excessive energy. Criterion 2: NOT MET \u2014 patient reported no periods of irritability or arguments. Criterion 3: NOT MET \u2014 no evidence of behavior changes noted by others. Total: 0 of 4 criteria met (threshold \u22653 if no family history). Duration: not applicable as no symptoms were endorsed. Functional impairment: not applicable as no symptoms were endorsed. Exclusions: not triggered. Diagnosis: FALSE \u2014 no criteria for manic or hypomanic episodes were met."
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "reasoning": "Not applicable as no manic or hypomanic episodes were endorsed. Diagnosis: FALSE."
+    }
+}

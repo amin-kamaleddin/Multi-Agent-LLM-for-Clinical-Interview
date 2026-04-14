@@ -1,0 +1,11 @@
+{
+    "positive": {
+        "diagnosis": true,
+        "reasoning": "Criterion A1 (depressed mood): MET \u2014 patient described feeling 'this emptiness' and 'a pervasive sense of monotony and detachment.' Criterion A2 (anhedonia): MET \u2014 patient stated 'I find it difficult to enjoy activities that once brought me happiness.' Criterion A3 (weight/appetite): MET \u2014 patient reported 'my appetite has been decreased for nearly every day' and 'weight loss\u2014estimated around 5%.' Criterion A4 (sleep): MET \u2014 patient noted 'sleep has been a challenge' and 'I find myself lying awake for a while.' Criterion A5 (psychomotor agitation/retardation): MET \u2014 patient mentioned feeling 'like my words come out less fluidly' and 'I can feel it\u2014like my body feels heavier.' Criterion A6 (fatigue): MET \u2014 patient stated 'there has been a consistent sense of fatigue that permeates my daily life.' Criterion A7 (worthlessness/guilt): NOT MET \u2014 patient denied significant feelings of worthlessness or guilt, stating 'I haven\u2019t really noticed those feelings standing out in my mind.' Criterion A8 (concentration): MET \u2014 patient described a 'persistent fog in my thoughts' and difficulty focusing. Criterion A9 (suicidal thoughts): UNCLEAR \u2014 patient mentioned fleeting thoughts about death but did not express intent to harm themselves. Total: 8 of 9 criteria met (threshold \u22655). Duration: met (patient reports symptoms for 2 weeks). Functional impairment: met ('I find it increasingly hard to interact with others'). Exclusions: not triggered. Diagnosis: TRUE \u2014 full threshold met with significant functional impairment confirmed.",
+        "timeFrame": "recent"
+    },
+    "recurrent": {
+        "diagnosis": true,
+        "reasoning": "Criterion A5: YES \u2014 patient reported at least two distinct episodes in the past that lasted for significant periods. Exclusions: not triggered. Diagnosis: TRUE \u2014 recurrent episodes confirmed with sufficient duration and symptomatology."
+    }
+}

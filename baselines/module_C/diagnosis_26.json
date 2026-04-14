@@ -1,0 +1,10 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "reasoning": "Criterion C1 (family history): NOT MET \u2014 patient stated there is no family history of manic-depressive illness or bipolar disorder. Criterion C2 (period of elevated mood): NOT MET \u2014 patient explicitly denied ever feeling 'up' or 'high' or having unusual energy levels that led to trouble. Criterion C3 (irritability): NOT MET \u2014 patient acknowledged moments of frustration but denied persistent irritability or significant arguments. Total: 0 of 4 criteria met (threshold \u22653 if C1b is YES, or \u22654 if C1b is NO). Duration: not applicable as no symptoms were endorsed. Functional impairment: not applicable as no symptoms were endorsed. Exclusions: not triggered. Diagnosis: FALSE \u2014 no criteria met for a manic or hypomanic episode."
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "reasoning": "Criterion C1 (family history): NOT MET \u2014 patient stated there is no family history of manic-depressive illness or bipolar disorder. Criterion C2 (period of elevated mood): NOT MET \u2014 patient explicitly denied ever feeling 'up' or 'high' or having unusual energy levels that led to trouble. Criterion C3 (irritability): NOT MET \u2014 patient acknowledged moments of frustration but denied persistent irritability or significant arguments. Total: 0 of 4 criteria met (threshold \u22653 if C1b is YES, or \u22654 if C1b is NO). Duration: not applicable as no symptoms were endorsed. Functional impairment: not applicable as no symptoms were endorsed. Exclusions: not triggered. Diagnosis: FALSE \u2014 no criteria met for a recurrent manic or hypomanic episode."
+    }
+}

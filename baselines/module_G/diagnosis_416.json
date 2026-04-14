@@ -1,0 +1,12 @@
+{
+    "positive": {
+        "diagnosis": true,
+        "reasoning": "Criterion 1 (presence of obsessions): MET \u2014 patient stated 'Yes, I\u2019ve been having all kinds of unwanted thoughts lately... I often think about germs and feel like I\u2019ve touched something dirty.' Criterion 2 (attempts to suppress): MET \u2014 patient reported 'Yes, I have tried to suppress these thoughts... I try to distract myself or think about something else.' Criterion 3 (thoughts persist despite suppression): MET \u2014 patient confirmed 'Yes, they kept coming back... It was hard to focus on anything else.' Criterion 4 (compulsive behaviors): MET \u2014 patient indicated 'I\u2019ve been checking the locks on my doors multiple times before I leave the house.' Criterion 5 (rituals to prevent anxiety): MET \u2014 patient stated 'I would say that those rituals are done to prevent something bad from happening... They do take a lot of time and seem excessive.' Criterion 6 (distress and functional impairment): MET \u2014 patient noted 'Yes, they have caused distress... It takes time, more than an hour each day, and it makes it hard to focus on work.' Total: 6 of 6 criteria met (threshold \u22654). Duration: met (symptoms reported in the past month). Functional impairment: met (difficulty focusing on work). Exclusions: not triggered (no substance use or medical conditions reported). Diagnosis: TRUE \u2014 full criteria met with significant distress and functional impairment confirmed.",
+        "insight": "goodOrFair",
+        "ticRelated": false
+    },
+    "recurrent": {
+        "diagnosis": true,
+        "reasoning": "Criterion 1 (presence of obsessions): MET \u2014 same as above. Criterion 2 (attempts to suppress): MET \u2014 same as above. Criterion 3 (thoughts persist despite suppression): MET \u2014 same as above. Criterion 4 (compulsive behaviors): MET \u2014 same as above. Criterion 5 (rituals to prevent anxiety): MET \u2014 same as above. Criterion 6 (distress and functional impairment): MET \u2014 same as above. Total: 6 of 6 criteria met (threshold \u22654). Duration: met (symptoms reported in the past month). Functional impairment: met (difficulty focusing on work). Exclusions: not triggered (no substance use or medical conditions reported). Diagnosis: TRUE \u2014 full criteria met with significant distress and functional impairment confirmed."
+    }
+}

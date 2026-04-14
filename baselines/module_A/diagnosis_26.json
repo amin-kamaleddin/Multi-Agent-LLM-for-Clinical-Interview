@@ -1,0 +1,11 @@
+{
+    "positive": {
+        "diagnosis": true,
+        "reasoning": "Criterion A1 (depressed mood): MET \u2014 patient stated 'I've definitely been feeling low lately, like a heavy weight on my chest.' Criterion A2 (anhedonia): MET \u2014 'I just don\u2019t feel like doing things I used to enjoy.' Criterion A3 (weight/appetite): MET \u2014 'I've definitely noticed my appetite is lower lately.' Criterion A4 (sleep): MET \u2014 'I've definitely been having trouble sleeping lately.' Criterion A5 (psychomotor agitation/retardation): MET \u2014 'I've definitely felt like things are moving slower for me lately.' Criterion A6 (fatigue): MET \u2014 'I\u2019ve really been feeling drained.' Criterion A7 (worthlessness/guilt): MET \u2014 'I've really been feeling low lately, like I just can't do anything right.' Criterion A8 (concentration): MET \u2014 'Lately, it's been really hard to focus on anything.' Criterion A9 (suicidal thoughts): NOT MET \u2014 patient explicitly stated, 'I haven\u2019t been having those kinds of thoughts.' Total: 8 of 9 criteria met (threshold \u22655). Duration: met (patient reports symptoms for more than 2 weeks). Functional impairment: met ('It's been really tough lately. I feel like I'm not myself anymore.'). Exclusions: not triggered (no substance use or medical issues reported). Diagnosis: TRUE \u2014 full threshold met with significant functional impairment confirmed.",
+        "timeFrame": "recent"
+    },
+    "recurrent": {
+        "diagnosis": true,
+        "reasoning": "Criterion A5: YES \u2014 patient reported having had a few tough times in life, indicating recurrent episodes. Exclusions: not triggered (no substance use or medical issues reported). Diagnosis: TRUE \u2014 recurrent episodes confirmed with significant distress and functional impairment."
+    }
+}

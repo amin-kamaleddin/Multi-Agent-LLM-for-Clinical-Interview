@@ -1,0 +1,12 @@
+{
+    "positive": {
+        "diagnosis": true,
+        "reasoning": "Criterion 1 (recurrent thoughts): MET \u2014 patient described intrusive thoughts about safety and security regarding family. Criterion 2 (suppression): MET \u2014 patient indicated attempts to ignore these thoughts but feels compelled to check the door. Criterion 3 (persistent thoughts): MET \u2014 patient confirmed that thoughts about checking the door persist despite attempts to ignore them. Criterion 4 (compulsive behavior): MET \u2014 patient reported feeling driven to check the door multiple times. Criterion 5 (excessive rituals): MET \u2014 patient acknowledged that the checking behavior is excessive and intended to prevent anxiety. Criterion 6 (functional impairment): MET \u2014 patient stated that the checking takes over an hour daily and interferes with work and social interactions. Total: 6 of 6 criteria met (threshold \u22654). Duration: met (symptoms reported in the past month). Functional impairment: met (significant time spent and impact on daily activities). Exclusions: not triggered (no substance use or medical conditions reported). Diagnosis: TRUE \u2014 full criteria met with significant functional impairment confirmed.",
+        "insight": "goodOrFair",
+        "ticRelated": false
+    },
+    "recurrent": {
+        "diagnosis": true,
+        "reasoning": "Criterion 1 (recurrent thoughts): MET \u2014 patient described intrusive thoughts about safety and security regarding family. Criterion 2 (suppression): MET \u2014 patient indicated attempts to ignore these thoughts but feels compelled to check the door. Criterion 3 (persistent thoughts): MET \u2014 patient confirmed that thoughts about checking the door persist despite attempts to ignore them. Criterion 4 (compulsive behavior): MET \u2014 patient reported feeling driven to check the door multiple times. Criterion 5 (excessive rituals): MET \u2014 patient acknowledged that the checking behavior is excessive and intended to prevent anxiety. Criterion 6 (functional impairment): MET \u2014 patient stated that the checking takes over an hour daily and interferes with work and social interactions. Total: 6 of 6 criteria met (threshold \u22654). Duration: met (symptoms reported in the past month). Functional impairment: met (significant time spent and impact on daily activities). Exclusions: not triggered (no substance use or medical conditions reported). Diagnosis: TRUE \u2014 full criteria met with significant functional impairment confirmed."
+    }
+}

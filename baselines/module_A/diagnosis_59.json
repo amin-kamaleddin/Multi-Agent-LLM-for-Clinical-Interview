@@ -1,0 +1,11 @@
+{
+    "positive": {
+        "diagnosis": true,
+        "reasoning": "Criterion A1 (depressed mood): MET \u2014 patient stated 'I have felt down and sad most days for the past few weeks.' Criterion A2 (anhedonia): MET \u2014 'I find it hard to feel good about things I used to enjoy.' Criterion A3 (weight/appetite): MET \u2014 'my appetite has decreased... I\u2019ve lost a few pounds without really trying.' Criterion A4 (sleep): MET \u2014 'I\u2019ve had trouble sleeping nearly every night.' Criterion A5 (psychomotor agitation/retardation): MET \u2014 'I've definitely felt like I've been moving slower than usual.' Criterion A6 (fatigue): MET \u2014 'I have felt tired and low on energy almost every day.' Criterion A7 (worthlessness/guilt): MET \u2014 'I've definitely felt a sense of worthlessness lately.' Criterion A8 (concentration): MET \u2014 'I\u2019ve definitely struggled with concentrating over the past two weeks.' Criterion A9 (suicidal thoughts): NOT MET \u2014 patient explicitly denied thoughts of death or self-harm. Total: 8 of 9 criteria met (threshold \u22655). Duration: met (patient reports symptoms for 2 weeks). Functional impairment: met ('These symptoms have definitely caused problems in my daily life.'). Exclusions: not triggered (no substance use or medical conditions reported). Diagnosis: TRUE \u2014 full threshold met with significant functional impairment confirmed.",
+        "timeFrame": "recent"
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "reasoning": "Criterion A5: YES \u2014 patient reported experiencing a previous episode about a year ago. O1a = NO AND O1b = NO \u2014 patient did not report any significant periods without depression lasting at least 2 months. Diagnosis: FALSE \u2014 while there is a history of a previous episode, the criteria for recurrent episodes are not met due to lack of sufficient remission."
+    }
+}

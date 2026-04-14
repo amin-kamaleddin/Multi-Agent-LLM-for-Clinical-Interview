@@ -1,0 +1,12 @@
+{
+    "positive": {
+        "diagnosis": true,
+        "reasoning": "Criterion 1 (recurrent thoughts): MET \u2014 patient stated, 'I have been increasingly aware of distressing thoughts that intrude into my mind.' Criterion 2 (attempt to suppress): MET \u2014 'I found myself trying to suppress the thoughts that keep creeping in.' Criterion 3 (thoughts keep returning): MET \u2014 'These thoughts have a way of lingering, even when I try to push them aside.' Criterion 4 (compulsive behavior): MET \u2014 'I\u2019ve found myself needing to check the door multiple times.' Criterion 5 (rituals to prevent harm): MET \u2014 'The rituals... are performed to prevent something bad from happening.' Criterion 6 (significant distress/interference): MET \u2014 'These obsessive thoughts and compulsive behaviors have indeed affected my daily life.' Total: 6 of 6 criteria met (threshold \u22654). Duration: met (symptoms reported in the past month). Functional impairment: met (interferes with daily life and social interactions). Exclusions: not triggered (no substance use or medical conditions reported as causative). Diagnosis: TRUE \u2014 full criteria met with significant functional impairment confirmed.",
+        "insight": "goodOrFair",
+        "ticRelated": false
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (recurrent thoughts): MET \u2014 patient stated, 'I have been increasingly aware of distressing thoughts that intrude into my mind.' Criterion 2 (attempt to suppress): MET \u2014 'I found myself trying to suppress the thoughts that keep creeping in.' Criterion 3 (thoughts keep returning): MET \u2014 'These thoughts have a way of lingering, even when I try to push them aside.' Criterion 4 (compulsive behavior): MET \u2014 'I\u2019ve found myself needing to check the door multiple times.' Criterion 5 (rituals to prevent harm): MET \u2014 'The rituals... are performed to prevent something bad from happening.' Criterion 6 (significant distress/interference): MET \u2014 'These obsessive thoughts and compulsive behaviors have indeed affected my daily life.' Total: 6 of 6 criteria met (threshold \u22654). Duration: met (symptoms reported in the past month). Functional impairment: met (interferes with daily life and social interactions). Exclusions: not triggered (no substance use or medical conditions reported as causative). Diagnosis: TRUE \u2014 full criteria met with significant functional impairment confirmed."
+    }
+}

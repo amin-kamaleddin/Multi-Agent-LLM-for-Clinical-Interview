@@ -1,0 +1,10 @@
+{
+    "current": {
+        "diagnosis": false,
+        "reasoning": ""
+    },
+    "recurrent": {
+        "diagnosis": true,
+        "reasoning": "The individual experiences binge eating episodes approximately three to four times per week, which indicates a recurrent pattern consistent with the diagnosis of Binge Eating Disorder."
+    }
+}

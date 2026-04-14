@@ -1,0 +1,10 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "reasoning": "Criterion A1 (depressed mood): NOT MET \u2014 patient stated 'I haven\u2019t really felt that way most days' and described their mood as 'generally stable.' Criterion A2 (anhedonia): NOT MET \u2014 patient reported 'I still enjoy activities I used to' and indicated that their mood is 'mostly stable.' Total: 0 of 9 criteria met (threshold \u22655). Duration: not applicable as no symptoms were endorsed. Functional impairment: NOT MET \u2014 patient did not report any significant distress or impairment in functioning. Exclusions: not triggered. Diagnosis: FALSE \u2014 no criteria for a major depressive episode were met."
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "reasoning": "Criterion A5: NOT MET \u2014 patient did not report any previous episodes of depression. Exclusions: not triggered. Diagnosis: FALSE \u2014 no recurrent episodes were indicated."
+    }
+}

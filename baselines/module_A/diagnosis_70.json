@@ -1,0 +1,11 @@
+{
+    "positive": {
+        "diagnosis": true,
+        "reasoning": "Criterion A1 (depressed mood): MET \u2014 patient stated 'there\u2019s been this heaviness that I can\u2019t quite shake off' and 'I feel sad and empty almost every day.' Criterion A2 (anhedonia): MET \u2014 patient reported 'hard to enjoy things I used to find joy in' and 'I\u2019ve struggled to find joy in things that used to excite me.' Criterion A3 (weight/appetite): MET \u2014 patient stated 'my appetite has definitely decreased' and 'I think I\u2019ve likely lost more than 5% without trying.' Criterion A4 (sleep): MET \u2014 patient described 'tossing and turning almost every night' and 'I often lie in bed for what feels like hours.' Criterion A5 (psychomotor agitation/retardation): MET \u2014 patient noted 'I could sense that I paused for too long before answering questions' and 'I find myself fidgeting a lot.' Criterion A6 (fatigue): MET \u2014 patient expressed 'getting out of bed feels like an insurmountable task' and 'I find myself scrolling aimlessly through my phone, unable to muster the energy.' Criterion A7 (worthlessness/guilt): MET \u2014 patient reported 'I\u2019ve been feeling this sense of worthlessness' and 'I keep telling myself that I\u2019m just busy or have other things to focus on.' Criterion A8 (concentration): MET \u2014 patient stated 'I find myself frequently struggling to focus' and 'making decisions has become a real challenge too.' Criterion A9 (thoughts of death): UNCLEAR \u2014 patient mentioned 'thoughts about death have occasionally crossed my mind' but did not express intent or plans. Total: 9 of 9 criteria met (threshold \u22655). Duration: met (patient reports symptoms for at least 2 weeks). Functional impairment: met ('I\u2019ve noticed I\u2019ve been avoiding social situations more than usual'). Exclusions: not triggered. Diagnosis: TRUE \u2014 full threshold met with significant functional impairment confirmed.",
+        "timeFrame": "recent"
+    },
+    "recurrent": {
+        "diagnosis": true,
+        "reasoning": "Criterion A5: YES \u2014 patient reported multiple past episodes of depression with at least 2 months between them. Exclusions: not triggered. Diagnosis: TRUE \u2014 recurrent episodes confirmed with significant distress and functional impairment."
+    }
+}

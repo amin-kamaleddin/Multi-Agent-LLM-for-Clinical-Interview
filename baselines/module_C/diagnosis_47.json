@@ -1,0 +1,10 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1: NOT MET \u2014 patient stated 'There hasn\u2019t been a time like that' regarding periods of feeling 'up' or 'high'. Criterion 2: NOT MET \u2014 patient reported stable mood without unusual high energy. Criterion 3: NOT MET \u2014 patient denied persistent irritability, stating 'I haven't experienced persistent irritability over several days'. Total: 0 of 5 criteria met (threshold \u22653). Duration: not applicable as no symptoms were endorsed. Functional impairment: not applicable as no symptoms were present. Exclusions: not triggered. Diagnosis: FALSE \u2014 no criteria for manic or hypomanic episodes were met."
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1: NOT MET \u2014 patient stated 'There hasn\u2019t been a time like that' regarding periods of feeling 'up' or 'high'. Criterion 2: NOT MET \u2014 patient reported stable mood without unusual high energy. Criterion 3: NOT MET \u2014 patient denied persistent irritability, stating 'I haven't experienced persistent irritability over several days'. Total: 0 of 5 criteria met (threshold \u22653). Duration: not applicable as no symptoms were endorsed. Functional impairment: not applicable as no symptoms were present. Exclusions: not triggered. Diagnosis: FALSE \u2014 no criteria for recurrent manic or hypomanic episodes were met."
+    }
+}
