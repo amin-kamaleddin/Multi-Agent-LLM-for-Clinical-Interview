@@ -1,0 +1,1351 @@
+id,label,prediction,Module,Tier of Symptom Disclosure,Expected Symptom Direction,Emotion/Tone Tier
+1,True,True,A - Major Depressive Episode,Tier 1: Superficial/Vague,Positive Symptom Presentation,Flat/Detached
+2,True,True,A - Major Depressive Episode,Tier 1: Superficial/Vague,Positive Symptom Presentation,Flat/Detached
+3,True,True,A - Major Depressive Episode,Tier 1: Superficial/Vague,Positive Symptom Presentation,Flat/Detached
+4,True,True,A - Major Depressive Episode,Tier 1: Superficial/Vague,Positive Symptom Presentation,Neutral/Cooperative
+5,True,True,A - Major Depressive Episode,Tier 1: Superficial/Vague,Positive Symptom Presentation,Neutral/Cooperative
+6,True,True,A - Major Depressive Episode,Tier 1: Superficial/Vague,Positive Symptom Presentation,Neutral/Cooperative
+7,True,True,A - Major Depressive Episode,Tier 1: Superficial/Vague,Positive Symptom Presentation,Emotional/Expressive
+8,True,True,A - Major Depressive Episode,Tier 1: Superficial/Vague,Positive Symptom Presentation,Emotional/Expressive
+9,True,False,A - Major Depressive Episode,Tier 1: Superficial/Vague,Positive Symptom Presentation,Emotional/Expressive
+10,False,False,A - Major Depressive Episode,Tier 1: Superficial/Vague,Negative Symptom Presentation,Flat/Detached
+11,False,False,A - Major Depressive Episode,Tier 1: Superficial/Vague,Negative Symptom Presentation,Flat/Detached
+12,False,False,A - Major Depressive Episode,Tier 1: Superficial/Vague,Negative Symptom Presentation,Flat/Detached
+13,False,True,A - Major Depressive Episode,Tier 1: Superficial/Vague,Negative Symptom Presentation,Neutral/Cooperative
+14,False,False,A - Major Depressive Episode,Tier 1: Superficial/Vague,Negative Symptom Presentation,Neutral/Cooperative
+15,False,False,A - Major Depressive Episode,Tier 1: Superficial/Vague,Negative Symptom Presentation,Neutral/Cooperative
+16,False,True,A - Major Depressive Episode,Tier 1: Superficial/Vague,Negative Symptom Presentation,Emotional/Expressive
+17,False,False,A - Major Depressive Episode,Tier 1: Superficial/Vague,Negative Symptom Presentation,Emotional/Expressive
+18,False,False,A - Major Depressive Episode,Tier 1: Superficial/Vague,Negative Symptom Presentation,Emotional/Expressive
+19,True,False,A - Major Depressive Episode,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Flat/Detached
+20,True,True,A - Major Depressive Episode,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Flat/Detached
+21,True,True,A - Major Depressive Episode,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Flat/Detached
+22,True,False,A - Major Depressive Episode,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Neutral/Cooperative
+23,True,True,A - Major Depressive Episode,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Neutral/Cooperative
+24,True,True,A - Major Depressive Episode,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Neutral/Cooperative
+25,True,True,A - Major Depressive Episode,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Emotional/Expressive
+26,True,True,A - Major Depressive Episode,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Emotional/Expressive
+27,True,True,A - Major Depressive Episode,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Emotional/Expressive
+28,False,True,A - Major Depressive Episode,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Flat/Detached
+29,False,False,A - Major Depressive Episode,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Flat/Detached
+30,False,False,A - Major Depressive Episode,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Flat/Detached
+31,False,True,A - Major Depressive Episode,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Neutral/Cooperative
+32,False,False,A - Major Depressive Episode,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Neutral/Cooperative
+33,False,False,A - Major Depressive Episode,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Neutral/Cooperative
+34,False,True,A - Major Depressive Episode,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Emotional/Expressive
+35,False,False,A - Major Depressive Episode,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Emotional/Expressive
+36,False,False,A - Major Depressive Episode,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Emotional/Expressive
+37,True,True,A - Major Depressive Episode,Tier 3: Moderate Detail,Positive Symptom Presentation,Flat/Detached
+38,True,True,A - Major Depressive Episode,Tier 3: Moderate Detail,Positive Symptom Presentation,Flat/Detached
+39,True,True,A - Major Depressive Episode,Tier 3: Moderate Detail,Positive Symptom Presentation,Flat/Detached
+40,True,False,A - Major Depressive Episode,Tier 3: Moderate Detail,Positive Symptom Presentation,Neutral/Cooperative
+41,True,True,A - Major Depressive Episode,Tier 3: Moderate Detail,Positive Symptom Presentation,Neutral/Cooperative
+42,True,True,A - Major Depressive Episode,Tier 3: Moderate Detail,Positive Symptom Presentation,Neutral/Cooperative
+43,True,False,A - Major Depressive Episode,Tier 3: Moderate Detail,Positive Symptom Presentation,Emotional/Expressive
+44,True,True,A - Major Depressive Episode,Tier 3: Moderate Detail,Positive Symptom Presentation,Emotional/Expressive
+45,True,True,A - Major Depressive Episode,Tier 3: Moderate Detail,Positive Symptom Presentation,Emotional/Expressive
+46,False,True,A - Major Depressive Episode,Tier 3: Moderate Detail,Negative Symptom Presentation,Flat/Detached
+47,False,False,A - Major Depressive Episode,Tier 3: Moderate Detail,Negative Symptom Presentation,Flat/Detached
+48,False,False,A - Major Depressive Episode,Tier 3: Moderate Detail,Negative Symptom Presentation,Flat/Detached
+49,False,True,A - Major Depressive Episode,Tier 3: Moderate Detail,Negative Symptom Presentation,Neutral/Cooperative
+50,False,False,A - Major Depressive Episode,Tier 3: Moderate Detail,Negative Symptom Presentation,Neutral/Cooperative
+51,False,False,A - Major Depressive Episode,Tier 3: Moderate Detail,Negative Symptom Presentation,Neutral/Cooperative
+52,False,True,A - Major Depressive Episode,Tier 3: Moderate Detail,Negative Symptom Presentation,Emotional/Expressive
+53,False,False,A - Major Depressive Episode,Tier 3: Moderate Detail,Negative Symptom Presentation,Emotional/Expressive
+54,False,True,A - Major Depressive Episode,Tier 3: Moderate Detail,Negative Symptom Presentation,Emotional/Expressive
+55,True,False,A - Major Depressive Episode,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Flat/Detached
+56,True,True,A - Major Depressive Episode,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Flat/Detached
+57,True,True,A - Major Depressive Episode,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Flat/Detached
+58,True,True,A - Major Depressive Episode,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Neutral/Cooperative
+59,True,True,A - Major Depressive Episode,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Neutral/Cooperative
+60,True,True,A - Major Depressive Episode,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Neutral/Cooperative
+61,True,False,A - Major Depressive Episode,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Emotional/Expressive
+62,True,True,A - Major Depressive Episode,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Emotional/Expressive
+63,True,True,A - Major Depressive Episode,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Emotional/Expressive
+64,False,True,A - Major Depressive Episode,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Flat/Detached
+65,False,False,A - Major Depressive Episode,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Flat/Detached
+66,False,False,A - Major Depressive Episode,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Flat/Detached
+67,False,True,A - Major Depressive Episode,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Neutral/Cooperative
+68,False,False,A - Major Depressive Episode,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Neutral/Cooperative
+69,False,False,A - Major Depressive Episode,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Neutral/Cooperative
+70,False,True,A - Major Depressive Episode,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Emotional/Expressive
+71,False,False,A - Major Depressive Episode,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Emotional/Expressive
+72,False,False,A - Major Depressive Episode,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Emotional/Expressive
+73,True,True,A - Major Depressive Episode,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Flat/Detached
+74,True,True,A - Major Depressive Episode,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Flat/Detached
+75,True,True,A - Major Depressive Episode,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Flat/Detached
+76,True,True,A - Major Depressive Episode,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Neutral/Cooperative
+77,True,True,A - Major Depressive Episode,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Neutral/Cooperative
+78,True,True,A - Major Depressive Episode,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Neutral/Cooperative
+79,True,True,A - Major Depressive Episode,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Emotional/Expressive
+80,True,True,A - Major Depressive Episode,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Emotional/Expressive
+81,True,True,A - Major Depressive Episode,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Emotional/Expressive
+82,False,True,A - Major Depressive Episode,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Flat/Detached
+83,False,False,A - Major Depressive Episode,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Flat/Detached
+84,False,False,A - Major Depressive Episode,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Flat/Detached
+85,False,True,A - Major Depressive Episode,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Neutral/Cooperative
+86,False,False,A - Major Depressive Episode,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Neutral/Cooperative
+87,False,False,A - Major Depressive Episode,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Neutral/Cooperative
+88,False,True,A - Major Depressive Episode,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Emotional/Expressive
+89,False,False,A - Major Depressive Episode,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Emotional/Expressive
+90,False,False,A - Major Depressive Episode,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Emotional/Expressive
+91,True,True,B - Suicidality,Tier 1: Superficial/Vague,Positive Symptom Presentation,Flat/Detached
+92,True,True,B - Suicidality,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Flat/Detached
+93,True,True,B - Suicidality,Tier 3: Moderate Detail,Positive Symptom Presentation,Flat/Detached
+94,True,True,B - Suicidality,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Flat/Detached
+95,True,True,B - Suicidality,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Flat/Detached
+96,True,True,B - Suicidality,Tier 1: Superficial/Vague,Positive Symptom Presentation,Neutral/Cooperative
+97,True,True,B - Suicidality,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Neutral/Cooperative
+98,True,True,B - Suicidality,Tier 3: Moderate Detail,Positive Symptom Presentation,Neutral/Cooperative
+99,True,True,B - Suicidality,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Neutral/Cooperative
+100,True,True,B - Suicidality,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Neutral/Cooperative
+101,True,True,B - Suicidality,Tier 1: Superficial/Vague,Positive Symptom Presentation,Emotional/Expressive
+102,True,True,B - Suicidality,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Emotional/Expressive
+103,True,True,B - Suicidality,Tier 3: Moderate Detail,Positive Symptom Presentation,Emotional/Expressive
+104,True,True,B - Suicidality,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Emotional/Expressive
+105,True,True,B - Suicidality,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Emotional/Expressive
+106,False,False,B - Suicidality,Tier 1: Superficial/Vague,Negative Symptom Presentation,Flat/Detached
+107,False,False,B - Suicidality,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Flat/Detached
+108,False,True,B - Suicidality,Tier 3: Moderate Detail,Negative Symptom Presentation,Flat/Detached
+109,False,False,B - Suicidality,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Flat/Detached
+110,False,False,B - Suicidality,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Flat/Detached
+111,False,False,B - Suicidality,Tier 1: Superficial/Vague,Negative Symptom Presentation,Neutral/Cooperative
+112,False,False,B - Suicidality,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Neutral/Cooperative
+113,False,False,B - Suicidality,Tier 3: Moderate Detail,Negative Symptom Presentation,Neutral/Cooperative
+114,False,False,B - Suicidality,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Neutral/Cooperative
+115,False,False,B - Suicidality,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Neutral/Cooperative
+116,False,False,B - Suicidality,Tier 1: Superficial/Vague,Negative Symptom Presentation,Emotional/Expressive
+117,False,False,B - Suicidality,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Emotional/Expressive
+118,False,False,B - Suicidality,Tier 3: Moderate Detail,Negative Symptom Presentation,Emotional/Expressive
+119,False,True,B - Suicidality,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Emotional/Expressive
+120,False,False,B - Suicidality,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Emotional/Expressive
+121,True,False,B - Suicidality,Tier 1: Superficial/Vague,Positive Symptom Presentation,Flat/Detached
+122,True,True,B - Suicidality,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Flat/Detached
+123,True,True,B - Suicidality,Tier 3: Moderate Detail,Positive Symptom Presentation,Flat/Detached
+124,True,True,B - Suicidality,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Flat/Detached
+125,True,True,B - Suicidality,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Flat/Detached
+126,True,True,B - Suicidality,Tier 1: Superficial/Vague,Positive Symptom Presentation,Neutral/Cooperative
+127,True,True,B - Suicidality,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Neutral/Cooperative
+128,True,True,B - Suicidality,Tier 3: Moderate Detail,Positive Symptom Presentation,Neutral/Cooperative
+129,True,True,B - Suicidality,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Neutral/Cooperative
+130,True,True,B - Suicidality,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Neutral/Cooperative
+131,True,True,B - Suicidality,Tier 1: Superficial/Vague,Positive Symptom Presentation,Emotional/Expressive
+132,True,True,B - Suicidality,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Emotional/Expressive
+133,True,True,B - Suicidality,Tier 3: Moderate Detail,Positive Symptom Presentation,Emotional/Expressive
+134,True,True,B - Suicidality,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Emotional/Expressive
+135,True,True,B - Suicidality,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Emotional/Expressive
+136,False,False,B - Suicidality,Tier 1: Superficial/Vague,Negative Symptom Presentation,Flat/Detached
+137,False,False,B - Suicidality,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Flat/Detached
+138,False,False,B - Suicidality,Tier 3: Moderate Detail,Negative Symptom Presentation,Flat/Detached
+139,False,False,B - Suicidality,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Flat/Detached
+140,False,False,B - Suicidality,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Flat/Detached
+141,False,False,B - Suicidality,Tier 1: Superficial/Vague,Negative Symptom Presentation,Neutral/Cooperative
+142,False,False,B - Suicidality,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Neutral/Cooperative
+143,False,False,B - Suicidality,Tier 3: Moderate Detail,Negative Symptom Presentation,Neutral/Cooperative
+144,False,False,B - Suicidality,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Neutral/Cooperative
+145,False,False,B - Suicidality,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Neutral/Cooperative
+146,False,False,B - Suicidality,Tier 1: Superficial/Vague,Negative Symptom Presentation,Emotional/Expressive
+147,False,False,B - Suicidality,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Emotional/Expressive
+148,False,False,B - Suicidality,Tier 3: Moderate Detail,Negative Symptom Presentation,Emotional/Expressive
+149,False,False,B - Suicidality,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Emotional/Expressive
+150,False,False,B - Suicidality,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Emotional/Expressive
+151,True,True,B - Suicidality,Tier 1: Superficial/Vague,Positive Symptom Presentation,Flat/Detached
+152,True,True,B - Suicidality,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Flat/Detached
+153,True,True,B - Suicidality,Tier 3: Moderate Detail,Positive Symptom Presentation,Flat/Detached
+154,True,True,B - Suicidality,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Flat/Detached
+155,True,True,B - Suicidality,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Flat/Detached
+156,True,True,B - Suicidality,Tier 1: Superficial/Vague,Positive Symptom Presentation,Neutral/Cooperative
+157,True,True,B - Suicidality,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Neutral/Cooperative
+158,True,True,B - Suicidality,Tier 3: Moderate Detail,Positive Symptom Presentation,Neutral/Cooperative
+159,True,True,B - Suicidality,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Neutral/Cooperative
+160,True,True,B - Suicidality,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Neutral/Cooperative
+161,True,False,B - Suicidality,Tier 1: Superficial/Vague,Positive Symptom Presentation,Emotional/Expressive
+162,True,True,B - Suicidality,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Emotional/Expressive
+163,True,True,B - Suicidality,Tier 3: Moderate Detail,Positive Symptom Presentation,Emotional/Expressive
+164,True,True,B - Suicidality,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Emotional/Expressive
+165,True,True,B - Suicidality,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Emotional/Expressive
+166,False,False,B - Suicidality,Tier 1: Superficial/Vague,Negative Symptom Presentation,Flat/Detached
+167,False,False,B - Suicidality,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Flat/Detached
+168,False,False,B - Suicidality,Tier 3: Moderate Detail,Negative Symptom Presentation,Flat/Detached
+169,False,False,B - Suicidality,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Flat/Detached
+170,False,False,B - Suicidality,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Flat/Detached
+171,False,False,B - Suicidality,Tier 1: Superficial/Vague,Negative Symptom Presentation,Neutral/Cooperative
+172,False,False,B - Suicidality,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Neutral/Cooperative
+173,False,True,B - Suicidality,Tier 3: Moderate Detail,Negative Symptom Presentation,Neutral/Cooperative
+174,False,False,B - Suicidality,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Neutral/Cooperative
+175,False,False,B - Suicidality,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Neutral/Cooperative
+176,False,False,B - Suicidality,Tier 1: Superficial/Vague,Negative Symptom Presentation,Emotional/Expressive
+177,False,False,B - Suicidality,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Emotional/Expressive
+178,False,False,B - Suicidality,Tier 3: Moderate Detail,Negative Symptom Presentation,Emotional/Expressive
+179,False,False,B - Suicidality,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Emotional/Expressive
+180,False,False,B - Suicidality,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Emotional/Expressive
+181,True,True,C - Manic and Hypomanic Episodes,Tier 1: Superficial/Vague,Positive Symptom Presentation,Flat/Detached
+182,True,True,C - Manic and Hypomanic Episodes,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Flat/Detached
+183,True,True,C - Manic and Hypomanic Episodes,Tier 3: Moderate Detail,Positive Symptom Presentation,Flat/Detached
+184,True,True,C - Manic and Hypomanic Episodes,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Flat/Detached
+185,True,True,C - Manic and Hypomanic Episodes,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Flat/Detached
+186,True,True,C - Manic and Hypomanic Episodes,Tier 1: Superficial/Vague,Positive Symptom Presentation,Neutral/Cooperative
+187,True,True,C - Manic and Hypomanic Episodes,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Neutral/Cooperative
+188,True,True,C - Manic and Hypomanic Episodes,Tier 3: Moderate Detail,Positive Symptom Presentation,Neutral/Cooperative
+189,True,True,C - Manic and Hypomanic Episodes,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Neutral/Cooperative
+190,True,True,C - Manic and Hypomanic Episodes,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Neutral/Cooperative
+191,True,True,C - Manic and Hypomanic Episodes,Tier 1: Superficial/Vague,Positive Symptom Presentation,Emotional/Expressive
+192,True,True,C - Manic and Hypomanic Episodes,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Emotional/Expressive
+193,True,True,C - Manic and Hypomanic Episodes,Tier 3: Moderate Detail,Positive Symptom Presentation,Emotional/Expressive
+194,True,True,C - Manic and Hypomanic Episodes,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Emotional/Expressive
+195,True,True,C - Manic and Hypomanic Episodes,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Emotional/Expressive
+196,False,False,C - Manic and Hypomanic Episodes,Tier 1: Superficial/Vague,Negative Symptom Presentation,Flat/Detached
+197,False,False,C - Manic and Hypomanic Episodes,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Flat/Detached
+198,False,False,C - Manic and Hypomanic Episodes,Tier 3: Moderate Detail,Negative Symptom Presentation,Flat/Detached
+199,False,False,C - Manic and Hypomanic Episodes,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Flat/Detached
+200,False,False,C - Manic and Hypomanic Episodes,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Flat/Detached
+201,False,False,C - Manic and Hypomanic Episodes,Tier 1: Superficial/Vague,Negative Symptom Presentation,Neutral/Cooperative
+202,False,False,C - Manic and Hypomanic Episodes,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Neutral/Cooperative
+203,False,False,C - Manic and Hypomanic Episodes,Tier 3: Moderate Detail,Negative Symptom Presentation,Neutral/Cooperative
+204,False,False,C - Manic and Hypomanic Episodes,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Neutral/Cooperative
+205,False,False,C - Manic and Hypomanic Episodes,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Neutral/Cooperative
+206,False,False,C - Manic and Hypomanic Episodes,Tier 1: Superficial/Vague,Negative Symptom Presentation,Emotional/Expressive
+207,False,False,C - Manic and Hypomanic Episodes,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Emotional/Expressive
+208,False,False,C - Manic and Hypomanic Episodes,Tier 3: Moderate Detail,Negative Symptom Presentation,Emotional/Expressive
+209,False,False,C - Manic and Hypomanic Episodes,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Emotional/Expressive
+210,False,False,C - Manic and Hypomanic Episodes,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Emotional/Expressive
+211,True,True,C - Manic and Hypomanic Episodes,Tier 1: Superficial/Vague,Positive Symptom Presentation,Flat/Detached
+212,True,False,C - Manic and Hypomanic Episodes,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Flat/Detached
+213,True,True,C - Manic and Hypomanic Episodes,Tier 3: Moderate Detail,Positive Symptom Presentation,Flat/Detached
+214,True,True,C - Manic and Hypomanic Episodes,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Flat/Detached
+215,True,True,C - Manic and Hypomanic Episodes,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Flat/Detached
+216,True,True,C - Manic and Hypomanic Episodes,Tier 1: Superficial/Vague,Positive Symptom Presentation,Neutral/Cooperative
+217,True,True,C - Manic and Hypomanic Episodes,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Neutral/Cooperative
+218,True,True,C - Manic and Hypomanic Episodes,Tier 3: Moderate Detail,Positive Symptom Presentation,Neutral/Cooperative
+219,True,True,C - Manic and Hypomanic Episodes,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Neutral/Cooperative
+220,True,True,C - Manic and Hypomanic Episodes,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Neutral/Cooperative
+221,True,True,C - Manic and Hypomanic Episodes,Tier 1: Superficial/Vague,Positive Symptom Presentation,Emotional/Expressive
+222,True,True,C - Manic and Hypomanic Episodes,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Emotional/Expressive
+223,True,True,C - Manic and Hypomanic Episodes,Tier 3: Moderate Detail,Positive Symptom Presentation,Emotional/Expressive
+224,True,True,C - Manic and Hypomanic Episodes,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Emotional/Expressive
+225,True,True,C - Manic and Hypomanic Episodes,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Emotional/Expressive
+226,False,False,C - Manic and Hypomanic Episodes,Tier 1: Superficial/Vague,Negative Symptom Presentation,Flat/Detached
+227,False,False,C - Manic and Hypomanic Episodes,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Flat/Detached
+228,False,False,C - Manic and Hypomanic Episodes,Tier 3: Moderate Detail,Negative Symptom Presentation,Flat/Detached
+229,False,False,C - Manic and Hypomanic Episodes,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Flat/Detached
+230,False,False,C - Manic and Hypomanic Episodes,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Flat/Detached
+231,False,False,C - Manic and Hypomanic Episodes,Tier 1: Superficial/Vague,Negative Symptom Presentation,Neutral/Cooperative
+232,False,False,C - Manic and Hypomanic Episodes,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Neutral/Cooperative
+233,False,False,C - Manic and Hypomanic Episodes,Tier 3: Moderate Detail,Negative Symptom Presentation,Neutral/Cooperative
+234,False,False,C - Manic and Hypomanic Episodes,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Neutral/Cooperative
+235,False,False,C - Manic and Hypomanic Episodes,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Neutral/Cooperative
+236,False,False,C - Manic and Hypomanic Episodes,Tier 1: Superficial/Vague,Negative Symptom Presentation,Emotional/Expressive
+237,False,False,C - Manic and Hypomanic Episodes,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Emotional/Expressive
+238,False,False,C - Manic and Hypomanic Episodes,Tier 3: Moderate Detail,Negative Symptom Presentation,Emotional/Expressive
+239,False,False,C - Manic and Hypomanic Episodes,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Emotional/Expressive
+240,False,False,C - Manic and Hypomanic Episodes,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Emotional/Expressive
+241,True,True,C - Manic and Hypomanic Episodes,Tier 1: Superficial/Vague,Positive Symptom Presentation,Flat/Detached
+242,True,False,C - Manic and Hypomanic Episodes,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Flat/Detached
+243,True,True,C - Manic and Hypomanic Episodes,Tier 3: Moderate Detail,Positive Symptom Presentation,Flat/Detached
+244,True,True,C - Manic and Hypomanic Episodes,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Flat/Detached
+245,True,True,C - Manic and Hypomanic Episodes,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Flat/Detached
+246,True,True,C - Manic and Hypomanic Episodes,Tier 1: Superficial/Vague,Positive Symptom Presentation,Neutral/Cooperative
+247,True,True,C - Manic and Hypomanic Episodes,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Neutral/Cooperative
+248,True,True,C - Manic and Hypomanic Episodes,Tier 3: Moderate Detail,Positive Symptom Presentation,Neutral/Cooperative
+249,True,True,C - Manic and Hypomanic Episodes,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Neutral/Cooperative
+250,True,True,C - Manic and Hypomanic Episodes,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Neutral/Cooperative
+251,True,True,C - Manic and Hypomanic Episodes,Tier 1: Superficial/Vague,Positive Symptom Presentation,Emotional/Expressive
+252,True,True,C - Manic and Hypomanic Episodes,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Emotional/Expressive
+253,True,True,C - Manic and Hypomanic Episodes,Tier 3: Moderate Detail,Positive Symptom Presentation,Emotional/Expressive
+254,True,True,C - Manic and Hypomanic Episodes,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Emotional/Expressive
+255,True,True,C - Manic and Hypomanic Episodes,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Emotional/Expressive
+256,False,False,C - Manic and Hypomanic Episodes,Tier 1: Superficial/Vague,Negative Symptom Presentation,Flat/Detached
+257,False,False,C - Manic and Hypomanic Episodes,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Flat/Detached
+258,False,False,C - Manic and Hypomanic Episodes,Tier 3: Moderate Detail,Negative Symptom Presentation,Flat/Detached
+259,False,False,C - Manic and Hypomanic Episodes,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Flat/Detached
+260,False,False,C - Manic and Hypomanic Episodes,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Flat/Detached
+261,False,False,C - Manic and Hypomanic Episodes,Tier 1: Superficial/Vague,Negative Symptom Presentation,Neutral/Cooperative
+262,False,False,C - Manic and Hypomanic Episodes,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Neutral/Cooperative
+263,False,False,C - Manic and Hypomanic Episodes,Tier 3: Moderate Detail,Negative Symptom Presentation,Neutral/Cooperative
+264,False,False,C - Manic and Hypomanic Episodes,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Neutral/Cooperative
+265,False,False,C - Manic and Hypomanic Episodes,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation, Neutral/Cooperative
+266,False,False,C - Manic and Hypomanic Episodes,Tier 1: Superficial/Vague,Negative Symptom Presentation,Emotional/Expressive
+267,False,False,C - Manic and Hypomanic Episodes,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Emotional/Expressive
+268,False,False,C - Manic and Hypomanic Episodes,Tier 3: Moderate Detail,Negative Symptom Presentation,Emotional/Expressive
+269,False,False,C - Manic and Hypomanic Episodes,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Emotional/Expressive
+270,False,False,C - Manic and Hypomanic Episodes,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Emotional/Expressive
+271,True,True,D - Panic Disorder,Tier 1: Superficial/Vague,Positive Symptom Presentation,Flat/Detached
+272,True,True,D - Panic Disorder,Tier 1: Superficial/Vague,Positive Symptom Presentation,Flat/Detached
+273,True,True,D - Panic Disorder,Tier 1: Superficial/Vague,Positive Symptom Presentation,Flat/Detached
+274,True,True,D - Panic Disorder,Tier 1: Superficial/Vague,Positive Symptom Presentation,Neutral/Cooperative
+275,True,True,D - Panic Disorder,Tier 1: Superficial/Vague,Positive Symptom Presentation,Neutral/Cooperative
+276,True,True,D - Panic Disorder,Tier 1: Superficial/Vague,Positive Symptom Presentation,Neutral/Cooperative
+277,True,True,D - Panic Disorder,Tier 1: Superficial/Vague,Positive Symptom Presentation,Emotional/Expressive
+278,True,False,D - Panic Disorder,Tier 1: Superficial/Vague,Positive Symptom Presentation,Emotional/Expressive
+279,True,True,D - Panic Disorder,Tier 1: Superficial/Vague,Positive Symptom Presentation,Emotional/Expressive
+280,False,False,D - Panic Disorder,Tier 1: Superficial/Vague,Negative Symptom Presentation,Flat/Detached
+281,False,False,D - Panic Disorder,Tier 1: Superficial/Vague,Negative Symptom Presentation,Flat/Detached
+282,False,False,D - Panic Disorder,Tier 1: Superficial/Vague,Negative Symptom Presentation,Flat/Detached
+283,False,True,D - Panic Disorder,Tier 1: Superficial/Vague,Negative Symptom Presentation,Neutral/Cooperative
+284,False,False,D - Panic Disorder,Tier 1: Superficial/Vague,Negative Symptom Presentation,Neutral/Cooperative
+285,False,False,D - Panic Disorder,Tier 1: Superficial/Vague,Negative Symptom Presentation,Neutral/Cooperative
+286,False,True,D - Panic Disorder,Tier 1: Superficial/Vague,Negative Symptom Presentation,Emotional/Expressive
+287,False,False,D - Panic Disorder,Tier 1: Superficial/Vague,Negative Symptom Presentation,Emotional/Expressive
+288,False,False,D - Panic Disorder,Tier 1: Superficial/Vague,Negative Symptom Presentation,Emotional/Expressive
+289,True,True,D - Panic Disorder,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Flat/Detached
+290,True,True,D - Panic Disorder,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Flat/Detached
+291,True,True,D - Panic Disorder,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Flat/Detached
+292,True,True,D - Panic Disorder,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Neutral/Cooperative
+293,True,True,D - Panic Disorder,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Neutral/Cooperative
+294,True,True,D - Panic Disorder,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Neutral/Cooperative
+295,True,True,D - Panic Disorder,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Emotional/Expressive
+296,True,True,D - Panic Disorder,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Emotional/Expressive
+297,True,True,D - Panic Disorder,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Emotional/Expressive
+298,False,False,D - Panic Disorder,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Flat/Detached
+299,False,False,D - Panic Disorder,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Flat/Detached
+300,False,False,D - Panic Disorder,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Flat/Detached
+301,False,False,D - Panic Disorder,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Neutral/Cooperative
+302,False,False,D - Panic Disorder,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Neutral/Cooperative
+303,False,False,D - Panic Disorder,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Neutral/Cooperative
+304,False,True,D - Panic Disorder,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Emotional/Expressive
+305,False,False,D - Panic Disorder,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Emotional/Expressive
+306,False,False,D - Panic Disorder,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Emotional/Expressive
+307,True,False,D - Panic Disorder,Tier 3: Moderate Detail,Positive Symptom Presentation,Flat/Detached
+308,True,True,D - Panic Disorder,Tier 3: Moderate Detail,Positive Symptom Presentation,Flat/Detached
+309,True,True,D - Panic Disorder,Tier 3: Moderate Detail,Positive Symptom Presentation,Flat/Detached
+310,True,False,D - Panic Disorder,Tier 3: Moderate Detail,Positive Symptom Presentation,Neutral/Cooperative
+311,True,True,D - Panic Disorder,Tier 3: Moderate Detail,Positive Symptom Presentation,Neutral/Cooperative
+312,True,True,D - Panic Disorder,Tier 3: Moderate Detail,Positive Symptom Presentation,Neutral/Cooperative
+313,True,False,D - Panic Disorder,Tier 3: Moderate Detail,Positive Symptom Presentation,Emotional/Expressive
+314,True,True,D - Panic Disorder,Tier 3: Moderate Detail,Positive Symptom Presentation,Emotional/Expressive
+315,True,True,D - Panic Disorder,Tier 3: Moderate Detail,Positive Symptom Presentation,Emotional/Expressive
+316,False,True,D - Panic Disorder,Tier 3: Moderate Detail,Negative Symptom Presentation,Flat/Detached
+317,False,False,D - Panic Disorder,Tier 3: Moderate Detail,Negative Symptom Presentation,Flat/Detached
+318,False,False,D - Panic Disorder,Tier 3: Moderate Detail,Negative Symptom Presentation,Flat/Detached
+319,False,True,D - Panic Disorder,Tier 3: Moderate Detail,Negative Symptom Presentation,Neutral/Cooperative
+320,False,False,D - Panic Disorder,Tier 3: Moderate Detail,Negative Symptom Presentation,Neutral/Cooperative
+321,False,False,D - Panic Disorder,Tier 3: Moderate Detail,Negative Symptom Presentation,Neutral/Cooperative
+322,False,False,D - Panic Disorder,Tier 3: Moderate Detail,Negative Symptom Presentation,Emotional/Expressive
+323,False,False,D - Panic Disorder,Tier 3: Moderate Detail,Negative Symptom Presentation,Emotional/Expressive
+324,False,False,D - Panic Disorder,Tier 3: Moderate Detail,Negative Symptom Presentation,Emotional/Expressive
+325,True,True,D - Panic Disorder,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Flat/Detached
+326,True,True,D - Panic Disorder,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Flat/Detached
+327,True,True,D - Panic Disorder,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Flat/Detached
+328,True,False,D - Panic Disorder,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Neutral/Cooperative
+329,True,True,D - Panic Disorder,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Neutral/Cooperative
+330,True,True,D - Panic Disorder,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Neutral/Cooperative
+331,True,True,D - Panic Disorder,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Emotional/Expressive
+332,True,True,D - Panic Disorder,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Emotional/Expressive
+333,True,True,D - Panic Disorder,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Emotional/Expressive
+334,False,True,D - Panic Disorder,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Flat/Detached
+335,False,False,D - Panic Disorder,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Flat/Detached
+336,False,False,D - Panic Disorder,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Flat/Detached
+337,False,False,D - Panic Disorder,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Neutral/Cooperative
+338,False,False,D - Panic Disorder,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Neutral/Cooperative
+339,False,False,D - Panic Disorder,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Neutral/Cooperative
+340,False,True,D - Panic Disorder,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Emotional/Expressive
+341,False,False,D - Panic Disorder,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Emotional/Expressive
+342,False,False,D - Panic Disorder,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Emotional/Expressive
+343,True,False,D - Panic Disorder,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Flat/Detached
+344,True,True,D - Panic Disorder,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Flat/Detached
+345,True,False,D - Panic Disorder,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Flat/Detached
+346,True,True,D - Panic Disorder,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Neutral/Cooperative
+347,True,True,D - Panic Disorder,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Neutral/Cooperative
+348,True,True,D - Panic Disorder,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Neutral/Cooperative
+349,True,True,D - Panic Disorder,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Emotional/Expressive
+350,True,True,D - Panic Disorder,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Emotional/Expressive
+351,True,True,D - Panic Disorder,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Emotional/Expressive
+352,False,True,D - Panic Disorder,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Flat/Detached
+353,False,False,D - Panic Disorder,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Flat/Detached
+354,False,False,D - Panic Disorder,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Flat/Detached
+355,False,False,D - Panic Disorder,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Neutral/Cooperative
+356,False,False,D - Panic Disorder,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Neutral/Cooperative
+357,False,False,D - Panic Disorder,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Neutral/Cooperative
+358,False,True,D - Panic Disorder,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Emotional/Expressive
+359,False,False,D - Panic Disorder,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Emotional/Expressive
+360,False,False,D - Panic Disorder,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Emotional/Expressive
+361,True,True,E - Agoraphobia,Tier 1: Superficial/Vague,Positive Symptom Presentation,Flat/Detached
+362,True,True,E - Agoraphobia,Tier 1: Superficial/Vague,Positive Symptom Presentation,Flat/Detached
+363,True,True,E - Agoraphobia,Tier 1: Superficial/Vague,Positive Symptom Presentation,Flat/Detached
+364,True,True,E - Agoraphobia,Tier 1: Superficial/Vague,Positive Symptom Presentation,Neutral/Cooperative
+365,True,True,E - Agoraphobia,Tier 1: Superficial/Vague,Positive Symptom Presentation,Neutral/Cooperative
+366,True,True,E - Agoraphobia,Tier 1: Superficial/Vague,Positive Symptom Presentation,Neutral/Cooperative
+367,True,True,E - Agoraphobia,Tier 1: Superficial/Vague,Positive Symptom Presentation,Emotional/Expressive
+368,True,True,E - Agoraphobia,Tier 1: Superficial/Vague,Positive Symptom Presentation,Emotional/Expressive
+369,True,True,E - Agoraphobia,Tier 1: Superficial/Vague,Positive Symptom Presentation,Emotional/Expressive
+370,False,True,E - Agoraphobia,Tier 1: Superficial/Vague,Negative Symptom Presentation,Flat/Detached
+371,False,False,E - Agoraphobia,Tier 1: Superficial/Vague,Negative Symptom Presentation,Flat/Detached
+372,False,False,E - Agoraphobia,Tier 1: Superficial/Vague,Negative Symptom Presentation,Flat/Detached
+373,False,False,E - Agoraphobia,Tier 1: Superficial/Vague,Negative Symptom Presentation,Neutral/Cooperative
+374,False,False,E - Agoraphobia,Tier 1: Superficial/Vague,Negative Symptom Presentation,Neutral/Cooperative
+375,False,False,E - Agoraphobia,Tier 1: Superficial/Vague,Negative Symptom Presentation,Neutral/Cooperative
+376,False,False,E - Agoraphobia,Tier 1: Superficial/Vague,Negative Symptom Presentation,Emotional/Expressive
+377,False,False,E - Agoraphobia,Tier 1: Superficial/Vague,Negative Symptom Presentation,Emotional/Expressive
+378,False,False,E - Agoraphobia,Tier 1: Superficial/Vague,Negative Symptom Presentation,Emotional/Expressive
+379,True,True,E - Agoraphobia,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Flat/Detached
+380,True,True,E - Agoraphobia,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Flat/Detached
+381,True,True,E - Agoraphobia,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Flat/Detached
+382,True,True,E - Agoraphobia,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Neutral/Cooperative
+383,True,True,E - Agoraphobia,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Neutral/Cooperative
+384,True,True,E - Agoraphobia,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Neutral/Cooperative
+385,True,True,E - Agoraphobia,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Emotional/Expressive
+386,True,True,E - Agoraphobia,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Emotional/Expressive
+387,True,True,E - Agoraphobia,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Emotional/Expressive
+388,False,False,E - Agoraphobia,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Flat/Detached
+389,False,False,E - Agoraphobia,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Flat/Detached
+390,False,False,E - Agoraphobia,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Flat/Detached
+391,False,True,E - Agoraphobia,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Neutral/Cooperative
+392,False,False,E - Agoraphobia,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Neutral/Cooperative
+393,False,False,E - Agoraphobia,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Neutral/Cooperative
+394,False,True,E - Agoraphobia,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Emotional/Expressive
+395,False,False,E - Agoraphobia,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Emotional/Expressive
+396,False,False,E - Agoraphobia,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Emotional/Expressive
+397,True,True,E - Agoraphobia,Tier 3: Moderate Detail,Positive Symptom Presentation,Flat/Detached
+398,True,True,E - Agoraphobia,Tier 3: Moderate Detail,Positive Symptom Presentation,Flat/Detached
+399,True,True,E - Agoraphobia,Tier 3: Moderate Detail,Positive Symptom Presentation,Flat/Detached
+400,True,True,E - Agoraphobia,Tier 3: Moderate Detail,Positive Symptom Presentation,Neutral/Cooperative
+401,True,True,E - Agoraphobia,Tier 3: Moderate Detail,Positive Symptom Presentation,Neutral/Cooperative
+402,True,True,E - Agoraphobia,Tier 3: Moderate Detail,Positive Symptom Presentation,Neutral/Cooperative
+403,True,True,E - Agoraphobia,Tier 3: Moderate Detail,Positive Symptom Presentation,Emotional/Expressive
+404,True,True,E - Agoraphobia,Tier 3: Moderate Detail,Positive Symptom Presentation,Emotional/Expressive
+405,True,True,E - Agoraphobia,Tier 3: Moderate Detail,Positive Symptom Presentation,Emotional/Expressive
+406,False,True,E - Agoraphobia,Tier 3: Moderate Detail,Negative Symptom Presentation,Flat/Detached
+407,False,False,E - Agoraphobia,Tier 3: Moderate Detail,Negative Symptom Presentation,Flat/Detached
+408,False,False,E - Agoraphobia,Tier 3: Moderate Detail,Negative Symptom Presentation,Flat/Detached
+409,False,False,E - Agoraphobia,Tier 3: Moderate Detail,Negative Symptom Presentation,Neutral/Cooperative
+410,False,False,E - Agoraphobia,Tier 3: Moderate Detail,Negative Symptom Presentation,Neutral/Cooperative
+411,False,False,E - Agoraphobia,Tier 3: Moderate Detail,Negative Symptom Presentation,Neutral/Cooperative
+412,False,True,E - Agoraphobia,Tier 3: Moderate Detail,Negative Symptom Presentation,Emotional/Expressive
+413,False,False,E - Agoraphobia,Tier 3: Moderate Detail,Negative Symptom Presentation,Emotional/Expressive
+414,False,False,E - Agoraphobia,Tier 3: Moderate Detail,Negative Symptom Presentation,Emotional/Expressive
+415,True,True,E - Agoraphobia,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Flat/Detached
+416,True,True,E - Agoraphobia,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Flat/Detached
+417,True,True,E - Agoraphobia,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Flat/Detached
+418,True,True,E - Agoraphobia,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Neutral/Cooperative
+419,True,True,E - Agoraphobia,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Neutral/Cooperative
+420,True,True,E - Agoraphobia,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Neutral/Cooperative
+421,True,True,E - Agoraphobia,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Emotional/Expressive
+422,True,True,E - Agoraphobia,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Emotional/Expressive
+423,True,True,E - Agoraphobia,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Emotional/Expressive
+424,False,True,E - Agoraphobia,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Flat/Detached
+425,False,False,E - Agoraphobia,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Flat/Detached
+426,False,False,E - Agoraphobia,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Flat/Detached
+427,False,True,E - Agoraphobia,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Neutral/Cooperative
+428,False,False,E - Agoraphobia,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Neutral/Cooperative
+429,False,False,E - Agoraphobia,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Neutral/Cooperative
+430,False,True,E - Agoraphobia,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Emotional/Expressive
+431,False,False,E - Agoraphobia,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Emotional/Expressive
+432,False,False,E - Agoraphobia,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Emotional/Expressive
+433,True,True,E - Agoraphobia,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Flat/Detached
+434,True,True,E - Agoraphobia,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Flat/Detached
+435,True,True,E - Agoraphobia,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Flat/Detached
+436,True,True,E - Agoraphobia,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Neutral/Cooperative
+437,True,True,E - Agoraphobia,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Neutral/Cooperative
+438,True,True,E - Agoraphobia,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Neutral/Cooperative
+439,True,True,E - Agoraphobia,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Emotional/Expressive
+440,True,True,E - Agoraphobia,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Emotional/Expressive
+441,True,True,E - Agoraphobia,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Emotional/Expressive
+442,False,True,E - Agoraphobia,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Flat/Detached
+443,False,False,E - Agoraphobia,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Flat/Detached
+444,False,False,E - Agoraphobia,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Flat/Detached
+445,False,True,E - Agoraphobia,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Neutral/Cooperative
+446,False,False,E - Agoraphobia,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Neutral/Cooperative
+447,False,False,E - Agoraphobia,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Neutral/Cooperative
+448,False,True,E - Agoraphobia,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Emotional/Expressive
+449,False,False,E - Agoraphobia,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Emotional/Expressive
+450,False,False,E - Agoraphobia,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Emotional/Expressive
+451,True,True,F - Social Anxiety Disorder,Tier 1: Superficial/Vague,Positive Symptom Presentation,Flat/Detached
+452,True,True,F - Social Anxiety Disorder,Tier 1: Superficial/Vague,Positive Symptom Presentation,Flat/Detached
+453,True,True,F - Social Anxiety Disorder,Tier 1: Superficial/Vague,Positive Symptom Presentation,Flat/Detached
+454,True,True,F - Social Anxiety Disorder,Tier 1: Superficial/Vague,Positive Symptom Presentation,Neutral/Cooperative
+455,True,True,F - Social Anxiety Disorder,Tier 1: Superficial/Vague,Positive Symptom Presentation,Neutral/Cooperative
+456,True,True,F - Social Anxiety Disorder,Tier 1: Superficial/Vague,Positive Symptom Presentation,Neutral/Cooperative
+457,True,True,F - Social Anxiety Disorder,Tier 1: Superficial/Vague,Positive Symptom Presentation,Emotional/Expressive
+458,True,True,F - Social Anxiety Disorder,Tier 1: Superficial/Vague,Positive Symptom Presentation,Emotional/Expressive
+459,True,True,F - Social Anxiety Disorder,Tier 1: Superficial/Vague,Positive Symptom Presentation,Emotional/Expressive
+460,False,False,F - Social Anxiety Disorder,Tier 1: Superficial/Vague,Negative Symptom Presentation,Flat/Detached
+461,False,False,F - Social Anxiety Disorder,Tier 1: Superficial/Vague,Negative Symptom Presentation,Flat/Detached
+462,False,False,F - Social Anxiety Disorder,Tier 1: Superficial/Vague,Negative Symptom Presentation,Flat/Detached
+463,False,False,F - Social Anxiety Disorder,Tier 1: Superficial/Vague,Negative Symptom Presentation,Neutral/Cooperative
+464,False,False,F - Social Anxiety Disorder,Tier 1: Superficial/Vague,Negative Symptom Presentation,Neutral/Cooperative
+465,False,False,F - Social Anxiety Disorder,Tier 1: Superficial/Vague,Negative Symptom Presentation,Neutral/Cooperative
+466,False,True,F - Social Anxiety Disorder,Tier 1: Superficial/Vague,Negative Symptom Presentation,Emotional/Expressive
+467,False,False,F - Social Anxiety Disorder,Tier 1: Superficial/Vague,Negative Symptom Presentation,Emotional/Expressive
+468,False,False,F - Social Anxiety Disorder,Tier 1: Superficial/Vague,Negative Symptom Presentation,Emotional/Expressive
+469,True,True,F - Social Anxiety Disorder,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Flat/Detached
+470,True,True,F - Social Anxiety Disorder,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Flat/Detached
+471,True,True,F - Social Anxiety Disorder,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Flat/Detached
+472,True,True,F - Social Anxiety Disorder,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Neutral/Cooperative
+473,True,True,F - Social Anxiety Disorder,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Neutral/Cooperative
+474,True,True,F - Social Anxiety Disorder,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Neutral/Cooperative
+475,True,True,F - Social Anxiety Disorder,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Emotional/Expressive
+476,True,True,F - Social Anxiety Disorder,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Emotional/Expressive
+477,True,True,F - Social Anxiety Disorder,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Emotional/Expressive
+478,False,True,F - Social Anxiety Disorder,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Flat/Detached
+479,False,False,F - Social Anxiety Disorder,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Flat/Detached
+480,False,False,F - Social Anxiety Disorder,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Flat/Detached
+481,False,True,F - Social Anxiety Disorder,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Neutral/Cooperative
+482,False,False,F - Social Anxiety Disorder,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Neutral/Cooperative
+483,False,False,F - Social Anxiety Disorder,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Neutral/Cooperative
+484,False,True,F - Social Anxiety Disorder,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Emotional/Expressive
+485,False,False,F - Social Anxiety Disorder,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Emotional/Expressive
+486,False,False,F - Social Anxiety Disorder,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Emotional/Expressive
+487,True,True,F - Social Anxiety Disorder,Tier 3: Moderate Detail,Positive Symptom Presentation,Flat/Detached
+488,True,True,F - Social Anxiety Disorder,Tier 3: Moderate Detail,Positive Symptom Presentation,Flat/Detached
+489,True,True,F - Social Anxiety Disorder,Tier 3: Moderate Detail,Positive Symptom Presentation,Flat/Detached
+490,True,True,F - Social Anxiety Disorder,Tier 3: Moderate Detail,Positive Symptom Presentation,Neutral/Cooperative
+491,True,True,F - Social Anxiety Disorder,Tier 3: Moderate Detail,Positive Symptom Presentation,Neutral/Cooperative
+492,True,True,F - Social Anxiety Disorder,Tier 3: Moderate Detail,Positive Symptom Presentation,Neutral/Cooperative
+493,True,True,F - Social Anxiety Disorder,Tier 3: Moderate Detail,Positive Symptom Presentation,Emotional/Expressive
+494,True,True,F - Social Anxiety Disorder,Tier 3: Moderate Detail,Positive Symptom Presentation,Emotional/Expressive
+495,True,True,F - Social Anxiety Disorder,Tier 3: Moderate Detail,Positive Symptom Presentation,Emotional/Expressive
+496,False,True,F - Social Anxiety Disorder,Tier 3: Moderate Detail,Negative Symptom Presentation,Flat/Detached
+497,False,False,F - Social Anxiety Disorder,Tier 3: Moderate Detail,Negative Symptom Presentation,Flat/Detached
+498,False,False,F - Social Anxiety Disorder,Tier 3: Moderate Detail,Negative Symptom Presentation,Flat/Detached
+499,False,True,F - Social Anxiety Disorder,Tier 3: Moderate Detail,Negative Symptom Presentation,Neutral/Cooperative
+500,False,False,F - Social Anxiety Disorder,Tier 3: Moderate Detail,Negative Symptom Presentation,Neutral/Cooperative
+501,False,False,F - Social Anxiety Disorder,Tier 3: Moderate Detail,Negative Symptom Presentation,Neutral/Cooperative
+502,False,True,F - Social Anxiety Disorder,Tier 3: Moderate Detail,Negative Symptom Presentation,Emotional/Expressive
+503,False,False,F - Social Anxiety Disorder,Tier 3: Moderate Detail,Negative Symptom Presentation,Emotional/Expressive
+504,False,False,F - Social Anxiety Disorder,Tier 3: Moderate Detail,Negative Symptom Presentation,Emotional/Expressive
+505,True,True,F - Social Anxiety Disorder,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Flat/Detached
+506,True,True,F - Social Anxiety Disorder,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Flat/Detached
+507,True,True,F - Social Anxiety Disorder,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Flat/Detached
+508,True,True,F - Social Anxiety Disorder,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Neutral/Cooperative
+509,True,True,F - Social Anxiety Disorder,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Neutral/Cooperative
+510,True,True,F - Social Anxiety Disorder,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Neutral/Cooperative
+511,True,True,F - Social Anxiety Disorder,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Emotional/Expressive
+512,True,True,F - Social Anxiety Disorder,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Emotional/Expressive
+513,True,True,F - Social Anxiety Disorder,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Emotional/Expressive
+514,False,True,F - Social Anxiety Disorder,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Flat/Detached
+515,False,False,F - Social Anxiety Disorder,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Flat/Detached
+516,False,False,F - Social Anxiety Disorder,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Flat/Detached
+517,False,True,F - Social Anxiety Disorder,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Neutral/Cooperative
+518,False,False,F - Social Anxiety Disorder,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Neutral/Cooperative
+519,False,False,F - Social Anxiety Disorder,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Neutral/Cooperative
+520,False,True,F - Social Anxiety Disorder,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Emotional/Expressive
+521,False,False,F - Social Anxiety Disorder,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Emotional/Expressive
+522,False,False,F - Social Anxiety Disorder,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Emotional/Expressive
+523,True,True,F - Social Anxiety Disorder,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Flat/Detached
+524,True,True,F - Social Anxiety Disorder,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Flat/Detached
+525,True,True,F - Social Anxiety Disorder,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Flat/Detached
+526,True,True,F - Social Anxiety Disorder,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Neutral/Cooperative
+527,True,True,F - Social Anxiety Disorder,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Neutral/Cooperative
+528,True,True,F - Social Anxiety Disorder,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Neutral/Cooperative
+529,True,True,F - Social Anxiety Disorder,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Emotional/Expressive
+530,True,True,F - Social Anxiety Disorder,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Emotional/Expressive
+531,True,True,F - Social Anxiety Disorder,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Emotional/Expressive
+532,False,True,F - Social Anxiety Disorder,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Flat/Detached
+533,False,False,F - Social Anxiety Disorder,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Flat/Detached
+534,False,False,F - Social Anxiety Disorder,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Flat/Detached
+535,False,True,F - Social Anxiety Disorder,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Neutral/Cooperative
+536,False,False,F - Social Anxiety Disorder,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Neutral/Cooperative
+537,False,False,F - Social Anxiety Disorder,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Neutral/Cooperative
+538,False,True,F - Social Anxiety Disorder,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Emotional/Expressive
+539,False,False,F - Social Anxiety Disorder,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Emotional/Expressive
+540,False,False,F - Social Anxiety Disorder,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Emotional/Expressive
+541,True,True,G - Obsessive-Compulsive Disorder,Tier 1: Superficial/Vague,Positive Symptom Presentation,Flat/Detached
+542,True,True,G - Obsessive-Compulsive Disorder,Tier 1: Superficial/Vague,Positive Symptom Presentation,Flat/Detached
+543,True,True,G - Obsessive-Compulsive Disorder,Tier 1: Superficial/Vague,Positive Symptom Presentation,Flat/Detached
+544,True,True,G - Obsessive-Compulsive Disorder,Tier 1: Superficial/Vague,Positive Symptom Presentation,Neutral/Cooperative
+545,True,True,G - Obsessive-Compulsive Disorder,Tier 1: Superficial/Vague,Positive Symptom Presentation,Neutral/Cooperative
+546,True,True,G - Obsessive-Compulsive Disorder,Tier 1: Superficial/Vague,Positive Symptom Presentation,Neutral/Cooperative
+547,True,True,G - Obsessive-Compulsive Disorder,Tier 1: Superficial/Vague,Positive Symptom Presentation,Emotional/Expressive
+548,True,True,G - Obsessive-Compulsive Disorder,Tier 1: Superficial/Vague,Positive Symptom Presentation,Emotional/Expressive
+549,True,True,G - Obsessive-Compulsive Disorder,Tier 1: Superficial/Vague,Positive Symptom Presentation,Emotional/Expressive
+550,False,True,G - Obsessive-Compulsive Disorder,Tier 1: Superficial/Vague,Negative Symptom Presentation,Flat/Detached
+551,False,False,G - Obsessive-Compulsive Disorder,Tier 1: Superficial/Vague,Negative Symptom Presentation,Flat/Detached
+552,False,False,G - Obsessive-Compulsive Disorder,Tier 1: Superficial/Vague,Negative Symptom Presentation,Flat/Detached
+553,False,True,G - Obsessive-Compulsive Disorder,Tier 1: Superficial/Vague,Negative Symptom Presentation,Neutral/Cooperative
+554,False,False,G - Obsessive-Compulsive Disorder,Tier 1: Superficial/Vague,Negative Symptom Presentation,Neutral/Cooperative
+555,False,False,G - Obsessive-Compulsive Disorder,Tier 1: Superficial/Vague,Negative Symptom Presentation,Neutral/Cooperative
+556,False,True,G - Obsessive-Compulsive Disorder,Tier 1: Superficial/Vague,Negative Symptom Presentation,Emotional/Expressive
+557,False,False,G - Obsessive-Compulsive Disorder,Tier 1: Superficial/Vague,Negative Symptom Presentation,Emotional/Expressive
+558,False,False,G - Obsessive-Compulsive Disorder,Tier 1: Superficial/Vague,Negative Symptom Presentation,Emotional/Expressive
+559,True,True,G - Obsessive-Compulsive Disorder,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Flat/Detached
+560,True,True,G - Obsessive-Compulsive Disorder,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Flat/Detached
+561,True,True,G - Obsessive-Compulsive Disorder,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Flat/Detached
+562,True,True,G - Obsessive-Compulsive Disorder,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Neutral/Cooperative
+563,True,True,G - Obsessive-Compulsive Disorder,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Neutral/Cooperative
+564,True,True,G - Obsessive-Compulsive Disorder,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Neutral/Cooperative
+565,True,True,G - Obsessive-Compulsive Disorder,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Emotional/Expressive
+566,True,True,G - Obsessive-Compulsive Disorder,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Emotional/Expressive
+567,True,True,G - Obsessive-Compulsive Disorder,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Emotional/Expressive
+568,False,True,G - Obsessive-Compulsive Disorder,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Flat/Detached
+569,False,False,G - Obsessive-Compulsive Disorder,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Flat/Detached
+570,False,False,G - Obsessive-Compulsive Disorder,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Flat/Detached
+571,False,False,G - Obsessive-Compulsive Disorder,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Neutral/Cooperative
+572,False,False,G - Obsessive-Compulsive Disorder,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Neutral/Cooperative
+573,False,False,G - Obsessive-Compulsive Disorder,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Neutral/Cooperative
+574,False,True,G - Obsessive-Compulsive Disorder,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Emotional/Expressive
+575,False,False,G - Obsessive-Compulsive Disorder,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Emotional/Expressive
+576,False,False,G - Obsessive-Compulsive Disorder,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Emotional/Expressive
+577,True,True,G - Obsessive-Compulsive Disorder,Tier 3: Moderate Detail,Positive Symptom Presentation,Flat/Detached
+578,True,True,G - Obsessive-Compulsive Disorder,Tier 3: Moderate Detail,Positive Symptom Presentation,Flat/Detached
+579,True,True,G - Obsessive-Compulsive Disorder,Tier 3: Moderate Detail,Positive Symptom Presentation,Flat/Detached
+580,True,True,G - Obsessive-Compulsive Disorder,Tier 3: Moderate Detail,Positive Symptom Presentation,Neutral/Cooperative
+581,True,True,G - Obsessive-Compulsive Disorder,Tier 3: Moderate Detail,Positive Symptom Presentation,Neutral/Cooperative
+582,True,True,G - Obsessive-Compulsive Disorder,Tier 3: Moderate Detail,Positive Symptom Presentation,Neutral/Cooperative
+583,True,True,G - Obsessive-Compulsive Disorder,Tier 3: Moderate Detail,Positive Symptom Presentation,Emotional/Expressive
+584,True,True,G - Obsessive-Compulsive Disorder,Tier 3: Moderate Detail,Positive Symptom Presentation,Emotional/Expressive
+585,True,True,G - Obsessive-Compulsive Disorder,Tier 3: Moderate Detail,Positive Symptom Presentation,Emotional/Expressive
+586,False,True,G - Obsessive-Compulsive Disorder,Tier 3: Moderate Detail,Negative Symptom Presentation,Flat/Detached
+587,False,False,G - Obsessive-Compulsive Disorder,Tier 3: Moderate Detail,Negative Symptom Presentation,Flat/Detached
+588,False,False,G - Obsessive-Compulsive Disorder,Tier 3: Moderate Detail,Negative Symptom Presentation,Flat/Detached
+589,False,True,G - Obsessive-Compulsive Disorder,Tier 3: Moderate Detail,Negative Symptom Presentation,Neutral/Cooperative
+590,False,False,G - Obsessive-Compulsive Disorder,Tier 3: Moderate Detail,Negative Symptom Presentation,Neutral/Cooperative
+591,False,False,G - Obsessive-Compulsive Disorder,Tier 3: Moderate Detail,Negative Symptom Presentation,Neutral/Cooperative
+592,False,True,G - Obsessive-Compulsive Disorder,Tier 3: Moderate Detail,Negative Symptom Presentation,Emotional/Expressive
+593,False,False,G - Obsessive-Compulsive Disorder,Tier 3: Moderate Detail,Negative Symptom Presentation,Emotional/Expressive
+594,False,False,G - Obsessive-Compulsive Disorder,Tier 3: Moderate Detail,Negative Symptom Presentation,Emotional/Expressive
+595,True,False,G - Obsessive-Compulsive Disorder,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Flat/Detached
+596,True,True,G - Obsessive-Compulsive Disorder,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Flat/Detached
+597,True,True,G - Obsessive-Compulsive Disorder,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Flat/Detached
+598,True,True,G - Obsessive-Compulsive Disorder,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Neutral/Cooperative
+599,True,True,G - Obsessive-Compulsive Disorder,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Neutral/Cooperative
+600,True,True,G - Obsessive-Compulsive Disorder,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Neutral/Cooperative
+601,True,True,G - Obsessive-Compulsive Disorder,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Emotional/Expressive
+602,True,True,G - Obsessive-Compulsive Disorder,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Emotional/Expressive
+603,True,True,G - Obsessive-Compulsive Disorder,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Emotional/Expressive
+604,False,True,G - Obsessive-Compulsive Disorder,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Flat/Detached
+605,False,False,G - Obsessive-Compulsive Disorder,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Flat/Detached
+606,False,False,G - Obsessive-Compulsive Disorder,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Flat/Detached
+607,False,True,G - Obsessive-Compulsive Disorder,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Neutral/Cooperative
+608,False,False,G - Obsessive-Compulsive Disorder,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Neutral/Cooperative
+609,False,False,G - Obsessive-Compulsive Disorder,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Neutral/Cooperative
+610,False,True,G - Obsessive-Compulsive Disorder,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Emotional/Expressive
+611,False,False,G - Obsessive-Compulsive Disorder,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Emotional/Expressive
+612,False,False,G - Obsessive-Compulsive Disorder,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Emotional/Expressive
+613,True,True,G - Obsessive-Compulsive Disorder,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Flat/Detached
+614,True,True,G - Obsessive-Compulsive Disorder,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Flat/Detached
+615,True,True,G - Obsessive-Compulsive Disorder,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Flat/Detached
+616,True,False,G - Obsessive-Compulsive Disorder,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Neutral/Cooperative
+617,True,True,G - Obsessive-Compulsive Disorder,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Neutral/Cooperative
+618,True,True,G - Obsessive-Compulsive Disorder,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Neutral/Cooperative
+619,True,True,G - Obsessive-Compulsive Disorder,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Emotional/Expressive
+620,True,True,G - Obsessive-Compulsive Disorder,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Emotional/Expressive
+621,True,True,G - Obsessive-Compulsive Disorder,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Emotional/Expressive
+622,False,True,G - Obsessive-Compulsive Disorder,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Flat/Detached
+623,False,False,G - Obsessive-Compulsive Disorder,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Flat/Detached
+624,False,False,G - Obsessive-Compulsive Disorder,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Flat/Detached
+625,False,True,G - Obsessive-Compulsive Disorder,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Neutral/Cooperative
+626,False,False,G - Obsessive-Compulsive Disorder,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Neutral/Cooperative
+627,False,False,G - Obsessive-Compulsive Disorder,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Neutral/Cooperative
+628,False,True,G - Obsessive-Compulsive Disorder,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Emotional/Expressive
+629,False,False,G - Obsessive-Compulsive Disorder,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Emotional/Expressive
+630,False,False,G - Obsessive-Compulsive Disorder,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Emotional/Expressive
+631,True,False,H - Posttraumatic Stress Disorder,Tier 1: Superficial/Vague,Positive Symptom Presentation,Flat/Detached
+632,True,True,H - Posttraumatic Stress Disorder,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Flat/Detached
+633,True,True,H - Posttraumatic Stress Disorder,Tier 3: Moderate Detail,Positive Symptom Presentation,Flat/Detached
+634,True,True,H - Posttraumatic Stress Disorder,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Flat/Detached
+635,True,True,H - Posttraumatic Stress Disorder,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Flat/Detached
+636,True,True,H - Posttraumatic Stress Disorder,Tier 1: Superficial/Vague,Positive Symptom Presentation,Neutral/Cooperative
+637,True,True,H - Posttraumatic Stress Disorder,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Neutral/Cooperative
+638,True,True,H - Posttraumatic Stress Disorder,Tier 3: Moderate Detail,Positive Symptom Presentation,Neutral/Cooperative
+639,True,True,H - Posttraumatic Stress Disorder,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Neutral/Cooperative
+640,True,True,H - Posttraumatic Stress Disorder,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Neutral/Cooperative
+641,True,False,H - Posttraumatic Stress Disorder,Tier 1: Superficial/Vague,Positive Symptom Presentation,Emotional/Expressive
+642,True,True,H - Posttraumatic Stress Disorder,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Emotional/Expressive
+643,True,True,H - Posttraumatic Stress Disorder,Tier 3: Moderate Detail,Positive Symptom Presentation,Emotional/Expressive
+644,True,True,H - Posttraumatic Stress Disorder,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Emotional/Expressive
+645,True,True,H - Posttraumatic Stress Disorder,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Emotional/Expressive
+646,False,False,H - Posttraumatic Stress Disorder,Tier 1: Superficial/Vague,Negative Symptom Presentation,Flat/Detached
+647,False,False,H - Posttraumatic Stress Disorder,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Flat/Detached
+648,False,False,H - Posttraumatic Stress Disorder,Tier 3: Moderate Detail,Negative Symptom Presentation,Flat/Detached
+649,False,False,H - Posttraumatic Stress Disorder,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Flat/Detached
+650,False,False,H - Posttraumatic Stress Disorder,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Flat/Detached
+651,False,False,H - Posttraumatic Stress Disorder,Tier 1: Superficial/Vague,Negative Symptom Presentation,Neutral/Cooperative
+652,False,False,H - Posttraumatic Stress Disorder,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Neutral/Cooperative
+653,False,False,H - Posttraumatic Stress Disorder,Tier 3: Moderate Detail,Negative Symptom Presentation,Neutral/Cooperative
+654,False,False,H - Posttraumatic Stress Disorder,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Neutral/Cooperative
+655,False,False,H - Posttraumatic Stress Disorder,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Neutral/Cooperative
+656,False,False,H - Posttraumatic Stress Disorder,Tier 1: Superficial/Vague,Negative Symptom Presentation,Emotional/Expressive
+657,False,False,H - Posttraumatic Stress Disorder,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Emotional/Expressive
+658,False,False,H - Posttraumatic Stress Disorder,Tier 3: Moderate Detail,Negative Symptom Presentation,Emotional/Expressive
+659,False,False,H - Posttraumatic Stress Disorder,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Emotional/Expressive
+660,False,False,H - Posttraumatic Stress Disorder,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Emotional/Expressive
+661,True,True,H - Posttraumatic Stress Disorder,Tier 1: Superficial/Vague,Positive Symptom Presentation,Flat/Detached
+662,True,False,H - Posttraumatic Stress Disorder,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Flat/Detached
+663,True,True,H - Posttraumatic Stress Disorder,Tier 3: Moderate Detail,Positive Symptom Presentation,Flat/Detached
+664,True,True,H - Posttraumatic Stress Disorder,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Flat/Detached
+665,True,True,H - Posttraumatic Stress Disorder,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Flat/Detached
+666,True,True,H - Posttraumatic Stress Disorder,Tier 1: Superficial/Vague,Positive Symptom Presentation,Neutral/Cooperative
+667,True,True,H - Posttraumatic Stress Disorder,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Neutral/Cooperative
+668,True,True,H - Posttraumatic Stress Disorder,Tier 3: Moderate Detail,Positive Symptom Presentation,Neutral/Cooperative
+669,True,True,H - Posttraumatic Stress Disorder,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Neutral/Cooperative
+670,True,False,H - Posttraumatic Stress Disorder,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Neutral/Cooperative
+671,True,False,H - Posttraumatic Stress Disorder,Tier 1: Superficial/Vague,Positive Symptom Presentation,Emotional/Expressive
+672,True,True,H - Posttraumatic Stress Disorder,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Emotional/Expressive
+673,True,True,H - Posttraumatic Stress Disorder,Tier 3: Moderate Detail,Positive Symptom Presentation,Emotional/Expressive
+674,True,True,H - Posttraumatic Stress Disorder,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Emotional/Expressive
+675,True,True,H - Posttraumatic Stress Disorder,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Emotional/Expressive
+676,False,False,H - Posttraumatic Stress Disorder,Tier 1: Superficial/Vague,Negative Symptom Presentation,Flat/Detached
+677,False,False,H - Posttraumatic Stress Disorder,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Flat/Detached
+678,False,False,H - Posttraumatic Stress Disorder,Tier 3: Moderate Detail,Negative Symptom Presentation,Flat/Detached
+679,False,False,H - Posttraumatic Stress Disorder,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Flat/Detached
+680,False,False,H - Posttraumatic Stress Disorder,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Flat/Detached
+681,False,False,H - Posttraumatic Stress Disorder,Tier 1: Superficial/Vague,Negative Symptom Presentation,Neutral/Cooperative
+682,False,False,H - Posttraumatic Stress Disorder,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Neutral/Cooperative
+683,False,False,H - Posttraumatic Stress Disorder,Tier 3: Moderate Detail,Negative Symptom Presentation,Neutral/Cooperative
+684,False,False,H - Posttraumatic Stress Disorder,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Neutral/Cooperative
+685,False,False,H - Posttraumatic Stress Disorder,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Neutral/Cooperative
+686,False,False,H - Posttraumatic Stress Disorder,Tier 1: Superficial/Vague,Negative Symptom Presentation,Emotional/Expressive
+687,False,False,H - Posttraumatic Stress Disorder,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Emotional/Expressive
+688,False,False,H - Posttraumatic Stress Disorder,Tier 3: Moderate Detail,Negative Symptom Presentation,Emotional/Expressive
+689,False,False,H - Posttraumatic Stress Disorder,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Emotional/Expressive
+690,False,False,H - Posttraumatic Stress Disorder,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Emotional/Expressive
+691,True,True,H - Posttraumatic Stress Disorder,Tier 1: Superficial/Vague,Positive Symptom Presentation,Flat/Detached
+692,True,True,H - Posttraumatic Stress Disorder,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Flat/Detached
+693,True,True,H - Posttraumatic Stress Disorder,Tier 3: Moderate Detail,Positive Symptom Presentation,Flat/Detached
+694,True,True,H - Posttraumatic Stress Disorder,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Flat/Detached
+695,True,True,H - Posttraumatic Stress Disorder,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Flat/Detached
+696,True,True,H - Posttraumatic Stress Disorder,Tier 1: Superficial/Vague,Positive Symptom Presentation,Neutral/Cooperative
+697,True,True,H - Posttraumatic Stress Disorder,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Neutral/Cooperative
+698,True,True,H - Posttraumatic Stress Disorder,Tier 3: Moderate Detail,Positive Symptom Presentation,Neutral/Cooperative
+699,True,False,H - Posttraumatic Stress Disorder,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Neutral/Cooperative
+700,True,True,H - Posttraumatic Stress Disorder,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Neutral/Cooperative
+701,True,True,H - Posttraumatic Stress Disorder,Tier 1: Superficial/Vague,Positive Symptom Presentation,Emotional/Expressive
+702,True,True,H - Posttraumatic Stress Disorder,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Emotional/Expressive
+703,True,True,H - Posttraumatic Stress Disorder,Tier 3: Moderate Detail,Positive Symptom Presentation,Emotional/Expressive
+704,True,True,H - Posttraumatic Stress Disorder,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Emotional/Expressive
+705,True,True,H - Posttraumatic Stress Disorder,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Emotional/Expressive
+706,False,False,H - Posttraumatic Stress Disorder,Tier 1: Superficial/Vague,Negative Symptom Presentation,Flat/Detached
+707,False,False,H - Posttraumatic Stress Disorder,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Flat/Detached
+708,False,False,H - Posttraumatic Stress Disorder,Tier 3: Moderate Detail,Negative Symptom Presentation,Flat/Detached
+709,False,False,H - Posttraumatic Stress Disorder,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Flat/Detached
+710,False,False,H - Posttraumatic Stress Disorder,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Flat/Detached
+711,False,False,H - Posttraumatic Stress Disorder,Tier 1: Superficial/Vague,Negative Symptom Presentation,Neutral/Cooperative
+712,False,False,H - Posttraumatic Stress Disorder,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Neutral/Cooperative
+713,False,False,H - Posttraumatic Stress Disorder,Tier 3: Moderate Detail,Negative Symptom Presentation,Neutral/Cooperative
+714,False,False,H - Posttraumatic Stress Disorder,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Neutral/Cooperative
+715,False,False,H - Posttraumatic Stress Disorder,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Neutral/Cooperative
+716,False,False,H - Posttraumatic Stress Disorder,Tier 1: Superficial/Vague,Negative Symptom Presentation,Emotional/Expressive
+717,False,False,H - Posttraumatic Stress Disorder,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Emotional/Expressive
+718,False,False,H - Posttraumatic Stress Disorder,Tier 3: Moderate Detail,Negative Symptom Presentation,Emotional/Expressive
+719,False,False,H - Posttraumatic Stress Disorder,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Emotional/Expressive
+720,False,False,H - Posttraumatic Stress Disorder,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Emotional/Expressive
+721,True,True,I - Alcohol Use Disorder,Tier 1: Superficial/Vague,Positive Symptom Presentation,Flat/Detached
+722,True,True,I - Alcohol Use Disorder,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Flat/Detached
+723,True,True,I - Alcohol Use Disorder,Tier 3: Moderate Detail,Positive Symptom Presentation,Flat/Detached
+724,True,True,I - Alcohol Use Disorder,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Flat/Detached
+725,True,True,I - Alcohol Use Disorder,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Flat/Detached
+726,True,False,I - Alcohol Use Disorder,Tier 1: Superficial/Vague,Positive Symptom Presentation,Neutral/Cooperative
+727,True,True,I - Alcohol Use Disorder,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Neutral/Cooperative
+728,True,True,I - Alcohol Use Disorder,Tier 3: Moderate Detail,Positive Symptom Presentation,Neutral/Cooperative
+729,True,True,I - Alcohol Use Disorder,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Neutral/Cooperative
+730,True,True,I - Alcohol Use Disorder,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Neutral/Cooperative
+731,True,True,I - Alcohol Use Disorder,Tier 1: Superficial/Vague,Positive Symptom Presentation,Emotional/Expressive
+732,True,True,I - Alcohol Use Disorder,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Emotional/Expressive
+733,True,True,I - Alcohol Use Disorder,Tier 3: Moderate Detail,Positive Symptom Presentation,Emotional/Expressive
+734,True,True,I - Alcohol Use Disorder,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Emotional/Expressive
+735,True,True,I - Alcohol Use Disorder,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Emotional/Expressive
+736,False,False,I - Alcohol Use Disorder,Tier 1: Superficial/Vague,Negative Symptom Presentation,Flat/Detached
+737,False,False,I - Alcohol Use Disorder,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Flat/Detached
+738,False,False,I - Alcohol Use Disorder,Tier 3: Moderate Detail,Negative Symptom Presentation,Flat/Detached
+739,False,False,I - Alcohol Use Disorder,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Flat/Detached
+740,False,False,I - Alcohol Use Disorder,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Flat/Detached
+741,False,False,I - Alcohol Use Disorder,Tier 1: Superficial/Vague,Negative Symptom Presentation,Neutral/Cooperative
+742,False,False,I - Alcohol Use Disorder,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Neutral/Cooperative
+743,False,False,I - Alcohol Use Disorder,Tier 3: Moderate Detail,Negative Symptom Presentation,Neutral/Cooperative
+744,False,False,I - Alcohol Use Disorder,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Neutral/Cooperative
+745,False,False,I - Alcohol Use Disorder,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Neutral/Cooperative
+746,False,False,I - Alcohol Use Disorder,Tier 1: Superficial/Vague,Negative Symptom Presentation,Emotional/Expressive
+747,False,False,I - Alcohol Use Disorder,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Emotional/Expressive
+748,False,False,I - Alcohol Use Disorder,Tier 3: Moderate Detail,Negative Symptom Presentation,Emotional/Expressive
+749,False,False,I - Alcohol Use Disorder,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Emotional/Expressive
+750,False,False,I - Alcohol Use Disorder,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Emotional/Expressive
+751,True,True,I - Alcohol Use Disorder,Tier 1: Superficial/Vague,Positive Symptom Presentation,Flat/Detached
+752,True,True,I - Alcohol Use Disorder,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Flat/Detached
+753,True,True,I - Alcohol Use Disorder,Tier 3: Moderate Detail,Positive Symptom Presentation,Flat/Detached
+754,True,True,I - Alcohol Use Disorder,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Flat/Detached
+755,True,True,I - Alcohol Use Disorder,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Flat/Detached
+756,True,True,I - Alcohol Use Disorder,Tier 1: Superficial/Vague,Positive Symptom Presentation,Neutral/Cooperative
+757,True,True,I - Alcohol Use Disorder,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Neutral/Cooperative
+758,True,True,I - Alcohol Use Disorder,Tier 3: Moderate Detail,Positive Symptom Presentation,Neutral/Cooperative
+759,True,True,I - Alcohol Use Disorder,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Neutral/Cooperative
+760,True,False,I - Alcohol Use Disorder,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Neutral/Cooperative
+761,True,True,I - Alcohol Use Disorder,Tier 1: Superficial/Vague,Positive Symptom Presentation,Emotional/Expressive
+762,True,True,I - Alcohol Use Disorder,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Emotional/Expressive
+763,True,True,I - Alcohol Use Disorder,Tier 3: Moderate Detail,Positive Symptom Presentation,Emotional/Expressive
+764,True,True,I - Alcohol Use Disorder,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Emotional/Expressive
+765,True,True,I - Alcohol Use Disorder,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Emotional/Expressive
+766,False,False,I - Alcohol Use Disorder,Tier 1: Superficial/Vague,Negative Symptom Presentation,Flat/Detached
+767,False,False,I - Alcohol Use Disorder,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Flat/Detached
+768,False,False,I - Alcohol Use Disorder,Tier 3: Moderate Detail,Negative Symptom Presentation,Flat/Detached
+769,False,False,I - Alcohol Use Disorder,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Flat/Detached
+770,False,False,I - Alcohol Use Disorder,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Flat/Detached
+771,False,False,I - Alcohol Use Disorder,Tier 1: Superficial/Vague,Negative Symptom Presentation,Neutral/Cooperative
+772,False,False,I - Alcohol Use Disorder,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Neutral/Cooperative
+773,False,False,I - Alcohol Use Disorder,Tier 3: Moderate Detail,Negative Symptom Presentation,Neutral/Cooperative
+774,False,False,I - Alcohol Use Disorder,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Neutral/Cooperative
+775,False,False,I - Alcohol Use Disorder,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Neutral/Cooperative
+776,False,False,I - Alcohol Use Disorder,Tier 1: Superficial/Vague,Negative Symptom Presentation,Emotional/Expressive
+777,False,False,I - Alcohol Use Disorder,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Emotional/Expressive
+778,False,False,I - Alcohol Use Disorder,Tier 3: Moderate Detail,Negative Symptom Presentation,Emotional/Expressive
+779,False,False,I - Alcohol Use Disorder,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Emotional/Expressive
+780,False,False,I - Alcohol Use Disorder,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Emotional/Expressive
+781,True,True,I - Alcohol Use Disorder,Tier 1: Superficial/Vague,Positive Symptom Presentation,Flat/Detached
+782,True,True,I - Alcohol Use Disorder,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Flat/Detached
+783,True,True,I - Alcohol Use Disorder,Tier 3: Moderate Detail,Positive Symptom Presentation,Flat/Detached
+784,True,True,I - Alcohol Use Disorder,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Flat/Detached
+785,True,True,I - Alcohol Use Disorder,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Flat/Detached
+786,True,True,I - Alcohol Use Disorder,Tier 1: Superficial/Vague,Positive Symptom Presentation,Neutral/Cooperative
+787,True,False,I - Alcohol Use Disorder,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Neutral/Cooperative
+788,True,True,I - Alcohol Use Disorder,Tier 3: Moderate Detail,Positive Symptom Presentation,Neutral/Cooperative
+789,True,False,I - Alcohol Use Disorder,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Neutral/Cooperative
+790,True,True,I - Alcohol Use Disorder,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Neutral/Cooperative
+791,True,True,I - Alcohol Use Disorder,Tier 1: Superficial/Vague,Positive Symptom Presentation,Emotional/Expressive
+792,True,True,I - Alcohol Use Disorder,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Emotional/Expressive
+793,True,True,I - Alcohol Use Disorder,Tier 3: Moderate Detail,Positive Symptom Presentation,Emotional/Expressive
+794,True,True,I - Alcohol Use Disorder,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Emotional/Expressive
+795,True,True,I - Alcohol Use Disorder,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Emotional/Expressive
+796,False,False,I - Alcohol Use Disorder,Tier 1: Superficial/Vague,Negative Symptom Presentation,Flat/Detached
+797,False,False,I - Alcohol Use Disorder,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Flat/Detached
+798,False,False,I - Alcohol Use Disorder,Tier 3: Moderate Detail,Negative Symptom Presentation,Flat/Detached
+799,False,False,I - Alcohol Use Disorder,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Flat/Detached
+800,False,False,I - Alcohol Use Disorder,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Flat/Detached
+801,False,False,I - Alcohol Use Disorder,Tier 1: Superficial/Vague,Negative Symptom Presentation,Neutral/Cooperative
+802,False,False,I - Alcohol Use Disorder,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Neutral/Cooperative
+803,False,False,I - Alcohol Use Disorder,Tier 3: Moderate Detail,Negative Symptom Presentation,Neutral/Cooperative
+804,False,False,I - Alcohol Use Disorder,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Neutral/Cooperative
+805,False,False,I - Alcohol Use Disorder,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Neutral/Cooperative
+806,False,False,I - Alcohol Use Disorder,Tier 1: Superficial/Vague,Negative Symptom Presentation,Emotional/Expressive
+807,False,False,I - Alcohol Use Disorder,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Emotional/Expressive
+808,False,False,I - Alcohol Use Disorder,Tier 3: Moderate Detail,Negative Symptom Presentation,Emotional/Expressive
+809,False,False,I - Alcohol Use Disorder,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Emotional/Expressive
+810,False,False,I - Alcohol Use Disorder,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Emotional/Expressive
+811,True,True,J - Substance Use Disorders,Tier 1: Superficial/Vague,Positive Symptom Presentation,Flat/Detached
+812,True,True,J - Substance Use Disorders,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Flat/Detached
+813,True,True,J - Substance Use Disorders,Tier 3: Moderate Detail,Positive Symptom Presentation,Flat/Detached
+814,True,True,J - Substance Use Disorders,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Flat/Detached
+815,True,True,J - Substance Use Disorders,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Flat/Detached
+816,True,True,J - Substance Use Disorders,Tier 1: Superficial/Vague,Positive Symptom Presentation,Neutral/Cooperative
+817,True,True,J - Substance Use Disorders,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Neutral/Cooperative
+818,True,True,J - Substance Use Disorders,Tier 3: Moderate Detail,Positive Symptom Presentation,Neutral/Cooperative
+819,True,True,J - Substance Use Disorders,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Neutral/Cooperative
+820,True,True,J - Substance Use Disorders,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Neutral/Cooperative
+821,True,True,J - Substance Use Disorders,Tier 1: Superficial/Vague,Positive Symptom Presentation,Emotional/Expressive
+822,True,True,J - Substance Use Disorders,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Emotional/Expressive
+823,True,True,J - Substance Use Disorders,Tier 3: Moderate Detail,Positive Symptom Presentation,Emotional/Expressive
+824,True,True,J - Substance Use Disorders,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Emotional/Expressive
+825,True,True,J - Substance Use Disorders,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Emotional/Expressive
+826,False,False,J - Substance Use Disorders,Tier 1: Superficial/Vague,Negative Symptom Presentation,Flat/Detached
+827,False,False,J - Substance Use Disorders,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Flat/Detached
+828,False,False,J - Substance Use Disorders,Tier 3: Moderate Detail,Negative Symptom Presentation,Flat/Detached
+829,False,False,J - Substance Use Disorders,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Flat/Detached
+830,False,False,J - Substance Use Disorders,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Flat/Detached
+831,False,False,J - Substance Use Disorders,Tier 1: Superficial/Vague,Negative Symptom Presentation,Neutral/Cooperative
+832,False,False,J - Substance Use Disorders,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Neutral/Cooperative
+833,False,False,J - Substance Use Disorders,Tier 3: Moderate Detail,Negative Symptom Presentation,Neutral/Cooperative
+834,False,False,J - Substance Use Disorders,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Neutral/Cooperative
+835,False,False,J - Substance Use Disorders,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Neutral/Cooperative
+836,False,False,J - Substance Use Disorders,Tier 1: Superficial/Vague,Negative Symptom Presentation,Emotional/Expressive
+837,False,False,J - Substance Use Disorders,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Emotional/Expressive
+838,False,False,J - Substance Use Disorders,Tier 3: Moderate Detail,Negative Symptom Presentation,Emotional/Expressive
+839,False,False,J - Substance Use Disorders,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Emotional/Expressive
+840,False,False,J - Substance Use Disorders,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Emotional/Expressive
+841,True,True,J - Substance Use Disorders,Tier 1: Superficial/Vague,Positive Symptom Presentation,Flat/Detached
+842,True,True,J - Substance Use Disorders,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Flat/Detached
+843,True,True,J - Substance Use Disorders,Tier 3: Moderate Detail,Positive Symptom Presentation,Flat/Detached
+844,True,True,J - Substance Use Disorders,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Flat/Detached
+845,True,True,J - Substance Use Disorders,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Flat/Detached
+846,True,True,J - Substance Use Disorders,Tier 1: Superficial/Vague,Positive Symptom Presentation,Neutral/Cooperative
+847,True,True,J - Substance Use Disorders,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Neutral/Cooperative
+848,True,True,J - Substance Use Disorders,Tier 3: Moderate Detail,Positive Symptom Presentation,Neutral/Cooperative
+849,True,True,J - Substance Use Disorders,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Neutral/Cooperative
+850,True,True,J - Substance Use Disorders,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Neutral/Cooperative
+851,True,True,J - Substance Use Disorders,Tier 1: Superficial/Vague,Positive Symptom Presentation,Emotional/Expressive
+852,True,True,J - Substance Use Disorders,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Emotional/Expressive
+853,True,True,J - Substance Use Disorders,Tier 3: Moderate Detail,Positive Symptom Presentation,Emotional/Expressive
+854,True,True,J - Substance Use Disorders,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Emotional/Expressive
+855,True,True,J - Substance Use Disorders,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Emotional/Expressive
+856,False,False,J - Substance Use Disorders,Tier 1: Superficial/Vague,Negative Symptom Presentation,Flat/Detached
+857,False,False,J - Substance Use Disorders,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Flat/Detached
+858,False,False,J - Substance Use Disorders,Tier 3: Moderate Detail,Negative Symptom Presentation,Flat/Detached
+859,False,False,J - Substance Use Disorders,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Flat/Detached
+860,False,False,J - Substance Use Disorders,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Flat/Detached
+861,False,False,J - Substance Use Disorders,Tier 1: Superficial/Vague,Negative Symptom Presentation,Neutral/Cooperative
+862,False,False,J - Substance Use Disorders,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Neutral/Cooperative
+863,False,False,J - Substance Use Disorders,Tier 3: Moderate Detail,Negative Symptom Presentation,Neutral/Cooperative
+864,False,False,J - Substance Use Disorders,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Neutral/Cooperative
+865,False,False,J - Substance Use Disorders,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Neutral/Cooperative
+866,False,False,J - Substance Use Disorders,Tier 1: Superficial/Vague,Negative Symptom Presentation,Emotional/Expressive
+867,False,False,J - Substance Use Disorders,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Emotional/Expressive
+868,False,False,J - Substance Use Disorders,Tier 3: Moderate Detail,Negative Symptom Presentation,Emotional/Expressive
+869,False,False,J - Substance Use Disorders,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Emotional/Expressive
+870,False,False,J - Substance Use Disorders,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Emotional/Expressive
+871,True,True,J - Substance Use Disorders,Tier 1: Superficial/Vague,Positive Symptom Presentation,Flat/Detached
+872,True,True,J - Substance Use Disorders,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Flat/Detached
+873,True,True,J - Substance Use Disorders,Tier 3: Moderate Detail,Positive Symptom Presentation,Flat/Detached
+874,True,True,J - Substance Use Disorders,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Flat/Detached
+875,True,True,J - Substance Use Disorders,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Flat/Detached
+876,True,True,J - Substance Use Disorders,Tier 1: Superficial/Vague,Positive Symptom Presentation,Neutral/Cooperative
+877,True,True,J - Substance Use Disorders,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Neutral/Cooperative
+878,True,True,J - Substance Use Disorders,Tier 3: Moderate Detail,Positive Symptom Presentation,Neutral/Cooperative
+879,True,True,J - Substance Use Disorders,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Neutral/Cooperative
+880,True,True,J - Substance Use Disorders,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Neutral/Cooperative
+881,True,True,J - Substance Use Disorders,Tier 1: Superficial/Vague,Positive Symptom Presentation,Emotional/Expressive
+882,True,True,J - Substance Use Disorders,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Emotional/Expressive
+883,True,True,J - Substance Use Disorders,Tier 3: Moderate Detail,Positive Symptom Presentation,Emotional/Expressive
+884,True,True,J - Substance Use Disorders,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Emotional/Expressive
+885,True,True,J - Substance Use Disorders,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Emotional/Expressive
+886,False,False,J - Substance Use Disorders,Tier 1: Superficial/Vague,Negative Symptom Presentation,Flat/Detached
+887,False,False,J - Substance Use Disorders,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Flat/Detached
+888,False,False,J - Substance Use Disorders,Tier 3: Moderate Detail,Negative Symptom Presentation,Flat/Detached
+889,False,False,J - Substance Use Disorders,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Flat/Detached
+890,False,False,J - Substance Use Disorders,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Flat/Detached
+891,False,False,J - Substance Use Disorders,Tier 1: Superficial/Vague,Negative Symptom Presentation,Neutral/Cooperative
+892,False,False,J - Substance Use Disorders,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Neutral/Cooperative
+893,False,False,J - Substance Use Disorders,Tier 3: Moderate Detail,Negative Symptom Presentation,Neutral/Cooperative
+894,False,False,J - Substance Use Disorders,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Neutral/Cooperative
+895,False,False,J - Substance Use Disorders,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Neutral/Cooperative
+896,False,False,J - Substance Use Disorders,Tier 1: Superficial/Vague,Negative Symptom Presentation,Emotional/Expressive
+897,False,False,J - Substance Use Disorders,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Emotional/Expressive
+898,False,False,J - Substance Use Disorders,Tier 3: Moderate Detail,Negative Symptom Presentation,Emotional/Expressive
+899,False,False,J - Substance Use Disorders,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Emotional/Expressive
+900,False,False,J - Substance Use Disorders,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Emotional/Expressive
+901,True,False,L - Anorexia Nervosa,Tier 1: Superficial/Vague,Positive Symptom Presentation,Flat/Detached
+902,True,False,L - Anorexia Nervosa,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Flat/Detached
+903,True,True,L - Anorexia Nervosa,Tier 3: Moderate Detail,Positive Symptom Presentation,Flat/Detached
+904,True,True,L - Anorexia Nervosa,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Flat/Detached
+905,True,True,L - Anorexia Nervosa,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Flat/Detached
+906,True,False,L - Anorexia Nervosa,Tier 1: Superficial/Vague,Positive Symptom Presentation,Neutral/Cooperative
+907,True,True,L - Anorexia Nervosa,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Neutral/Cooperative
+908,True,True,L - Anorexia Nervosa,Tier 3: Moderate Detail,Positive Symptom Presentation,Neutral/Cooperative
+909,True,True,L - Anorexia Nervosa,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Neutral/Cooperative
+910,True,True,L - Anorexia Nervosa,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Neutral/Cooperative
+911,True,False,L - Anorexia Nervosa,Tier 1: Superficial/Vague,Positive Symptom Presentation,Emotional/Expressive
+912,True,True,L - Anorexia Nervosa,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Emotional/Expressive
+913,True,True,L - Anorexia Nervosa,Tier 3: Moderate Detail,Positive Symptom Presentation,Emotional/Expressive
+914,True,True,L - Anorexia Nervosa,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Emotional/Expressive
+915,True,True,L - Anorexia Nervosa,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Emotional/Expressive
+916,False,False,L - Anorexia Nervosa,Tier 1: Superficial/Vague,Negative Symptom Presentation,Flat/Detached
+917,False,False,L - Anorexia Nervosa,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Flat/Detached
+918,False,False,L - Anorexia Nervosa,Tier 3: Moderate Detail,Negative Symptom Presentation,Flat/Detached
+919,False,False,L - Anorexia Nervosa,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Flat/Detached
+920,False,False,L - Anorexia Nervosa,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Flat/Detached
+921,False,False,L - Anorexia Nervosa,Tier 1: Superficial/Vague,Negative Symptom Presentation,Neutral/Cooperative
+922,False,False,L - Anorexia Nervosa,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Neutral/Cooperative
+923,False,False,L - Anorexia Nervosa,Tier 3: Moderate Detail,Negative Symptom Presentation,Neutral/Cooperative
+924,False,False,L - Anorexia Nervosa,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Neutral/Cooperative
+925,False,False,L - Anorexia Nervosa,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Neutral/Cooperative
+926,False,False,L - Anorexia Nervosa,Tier 1: Superficial/Vague,Negative Symptom Presentation,Emotional/Expressive
+927,False,False,L - Anorexia Nervosa,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Emotional/Expressive
+928,False,False,L - Anorexia Nervosa,Tier 3: Moderate Detail,Negative Symptom Presentation,Emotional/Expressive
+929,False,False,L - Anorexia Nervosa,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Emotional/Expressive
+930,False,False,L - Anorexia Nervosa,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Emotional/Expressive
+931,True,False,L - Anorexia Nervosa,Tier 1: Superficial/Vague,Positive Symptom Presentation,Flat/Detached
+932,True,False,L - Anorexia Nervosa,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Flat/Detached
+933,True,True,L - Anorexia Nervosa,Tier 3: Moderate Detail,Positive Symptom Presentation,Flat/Detached
+934,True,True,L - Anorexia Nervosa,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Flat/Detached
+935,True,True,L - Anorexia Nervosa,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Flat/Detached
+936,True,False,L - Anorexia Nervosa,Tier 1: Superficial/Vague,Positive Symptom Presentation,Neutral/Cooperative
+937,True,True,L - Anorexia Nervosa,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Neutral/Cooperative
+938,True,False,L - Anorexia Nervosa,Tier 3: Moderate Detail,Positive Symptom Presentation,Neutral/Cooperative
+939,True,True,L - Anorexia Nervosa,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Neutral/Cooperative
+940,True,True,L - Anorexia Nervosa,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Neutral/Cooperative
+941,True,False,L - Anorexia Nervosa,Tier 1: Superficial/Vague,Positive Symptom Presentation,Emotional/Expressive
+942,True,True,L - Anorexia Nervosa,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Emotional/Expressive
+943,True,False,L - Anorexia Nervosa,Tier 3: Moderate Detail,Positive Symptom Presentation,Emotional/Expressive
+944,True,True,L - Anorexia Nervosa,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Emotional/Expressive
+945,True,True,L - Anorexia Nervosa,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Emotional/Expressive
+946,False,False,L - Anorexia Nervosa,Tier 1: Superficial/Vague,Negative Symptom Presentation,Flat/Detached
+947,False,False,L - Anorexia Nervosa,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Flat/Detached
+948,False,False,L - Anorexia Nervosa,Tier 3: Moderate Detail,Negative Symptom Presentation,Flat/Detached
+949,False,False,L - Anorexia Nervosa,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Flat/Detached
+950,False,False,L - Anorexia Nervosa,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Flat/Detached
+951,False,False,L - Anorexia Nervosa,Tier 1: Superficial/Vague,Negative Symptom Presentation,Neutral/Cooperative
+952,False,False,L - Anorexia Nervosa,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Neutral/Cooperative
+953,False,False,L - Anorexia Nervosa,Tier 3: Moderate Detail,Negative Symptom Presentation,Neutral/Cooperative
+954,False,False,L - Anorexia Nervosa,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Neutral/Cooperative
+955,False,False,L - Anorexia Nervosa,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Neutral/Cooperative
+956,False,False,L - Anorexia Nervosa,Tier 1: Superficial/Vague,Negative Symptom Presentation,Emotional/Expressive
+957,False,False,L - Anorexia Nervosa,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Emotional/Expressive
+958,False,False,L - Anorexia Nervosa,Tier 3: Moderate Detail,Negative Symptom Presentation,Emotional/Expressive
+959,False,False,L - Anorexia Nervosa,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Emotional/Expressive
+960,False,False,L - Anorexia Nervosa,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Emotional/Expressive
+961,True,False,L - Anorexia Nervosa,Tier 1: Superficial/Vague,Positive Symptom Presentation,Flat/Detached
+962,True,True,L - Anorexia Nervosa,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Flat/Detached
+963,True,True,L - Anorexia Nervosa,Tier 3: Moderate Detail,Positive Symptom Presentation,Flat/Detached
+964,True,True,L - Anorexia Nervosa,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Flat/Detached
+965,True,True,L - Anorexia Nervosa,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Flat/Detached
+966,True,False,L - Anorexia Nervosa,Tier 1: Superficial/Vague,Positive Symptom Presentation,Neutral/Cooperative
+967,True,False,L - Anorexia Nervosa,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Neutral/Cooperative
+968,True,False,L - Anorexia Nervosa,Tier 3: Moderate Detail,Positive Symptom Presentation,Neutral/Cooperative
+969,True,True,L - Anorexia Nervosa,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Neutral/Cooperative
+970,True,True,L - Anorexia Nervosa,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Neutral/Cooperative
+971,True,False,L - Anorexia Nervosa,Tier 1: Superficial/Vague,Positive Symptom Presentation,Emotional/Expressive
+972,True,True,L - Anorexia Nervosa,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Emotional/Expressive
+973,True,False,L - Anorexia Nervosa,Tier 3: Moderate Detail,Positive Symptom Presentation,Emotional/Expressive
+974,True,True,L - Anorexia Nervosa,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Emotional/Expressive
+975,True,True,L - Anorexia Nervosa,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Emotional/Expressive
+976,False,False,L - Anorexia Nervosa,Tier 1: Superficial/Vague,Negative Symptom Presentation,Flat/Detached
+977,False,False,L - Anorexia Nervosa,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Flat/Detached
+978,False,False,L - Anorexia Nervosa,Tier 3: Moderate Detail,Negative Symptom Presentation,Flat/Detached
+979,False,False,L - Anorexia Nervosa,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Flat/Detached
+980,False,False,L - Anorexia Nervosa,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Flat/Detached
+981,False,False,L - Anorexia Nervosa,Tier 1: Superficial/Vague,Negative Symptom Presentation,Neutral/Cooperative
+982,False,False,L - Anorexia Nervosa,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Neutral/Cooperative
+983,False,False,L - Anorexia Nervosa,Tier 3: Moderate Detail,Negative Symptom Presentation,Neutral/Cooperative
+984,False,False,L - Anorexia Nervosa,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Neutral/Cooperative
+985,False,False,L - Anorexia Nervosa,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Neutral/Cooperative
+986,False,False,L - Anorexia Nervosa,Tier 1: Superficial/Vague,Negative Symptom Presentation,Emotional/Expressive
+987,False,False,L - Anorexia Nervosa,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Emotional/Expressive
+988,False,False,L - Anorexia Nervosa,Tier 3: Moderate Detail,Negative Symptom Presentation,Emotional/Expressive
+989,False,False,L - Anorexia Nervosa,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Emotional/Expressive
+990,False,False,L - Anorexia Nervosa,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Emotional/Expressive
+991,True,False,M - Bulimia Nervosa,Tier 1: Superficial/Vague,Positive Symptom Presentation,Flat/Detached
+992,True,False,M - Bulimia Nervosa,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Flat/Detached
+993,True,False,M - Bulimia Nervosa,Tier 3: Moderate Detail,Positive Symptom Presentation,Flat/Detached
+994,True,True,M - Bulimia Nervosa,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Flat/Detached
+995,True,False,M - Bulimia Nervosa,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Flat/Detached
+996,True,True,M - Bulimia Nervosa,Tier 1: Superficial/Vague,Positive Symptom Presentation,Neutral/Cooperative
+997,True,True,M - Bulimia Nervosa,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Neutral/Cooperative
+998,True,True,M - Bulimia Nervosa,Tier 3: Moderate Detail,Positive Symptom Presentation,Neutral/Cooperative
+999,True,True,M - Bulimia Nervosa,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Neutral/Cooperative
+1000,True,True,M - Bulimia Nervosa,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Neutral/Cooperative
+1001,True,True,M - Bulimia Nervosa,Tier 1: Superficial/Vague,Positive Symptom Presentation,Emotional/Expressive
+1002,True,True,M - Bulimia Nervosa,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Emotional/Expressive
+1003,True,True,M - Bulimia Nervosa,Tier 3: Moderate Detail,Positive Symptom Presentation,Emotional/Expressive
+1004,True,True,M - Bulimia Nervosa,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Emotional/Expressive
+1005,True,True,M - Bulimia Nervosa,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Emotional/Expressive
+1006,False,False,M - Bulimia Nervosa,Tier 1: Superficial/Vague,Negative Symptom Presentation,Flat/Detached
+1007,False,False,M - Bulimia Nervosa,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Flat/Detached
+1008,False,False,M - Bulimia Nervosa,Tier 3: Moderate Detail,Negative Symptom Presentation,Flat/Detached
+1009,False,False,M - Bulimia Nervosa,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Flat/Detached
+1010,False,False,M - Bulimia Nervosa,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Flat/Detached
+1011,False,False,M - Bulimia Nervosa,Tier 1: Superficial/Vague,Negative Symptom Presentation,Neutral/Cooperative
+1012,False,False,M - Bulimia Nervosa,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Neutral/Cooperative
+1013,False,False,M - Bulimia Nervosa,Tier 3: Moderate Detail,Negative Symptom Presentation,Neutral/Cooperative
+1014,False,False,M - Bulimia Nervosa,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Neutral/Cooperative
+1015,False,False,M - Bulimia Nervosa,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Neutral/Cooperative
+1016,False,False,M - Bulimia Nervosa,Tier 1: Superficial/Vague,Negative Symptom Presentation,Emotional/Expressive
+1017,False,False,M - Bulimia Nervosa,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Emotional/Expressive
+1018,False,False,M - Bulimia Nervosa,Tier 3: Moderate Detail,Negative Symptom Presentation,Emotional/Expressive
+1019,False,False,M - Bulimia Nervosa,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Emotional/Expressive
+1020,False,False,M - Bulimia Nervosa,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Emotional/Expressive
+1021,True,False,M - Bulimia Nervosa,Tier 1: Superficial/Vague,Positive Symptom Presentation,Flat/Detached
+1022,True,False,M - Bulimia Nervosa,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Flat/Detached
+1023,True,False,M - Bulimia Nervosa,Tier 3: Moderate Detail,Positive Symptom Presentation,Flat/Detached
+1024,True,False,M - Bulimia Nervosa,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Flat/Detached
+1025,True,False,M - Bulimia Nervosa,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Flat/Detached
+1026,True,True,M - Bulimia Nervosa,Tier 1: Superficial/Vague,Positive Symptom Presentation,Neutral/Cooperative
+1027,True,True,M - Bulimia Nervosa,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Neutral/Cooperative
+1028,True,True,M - Bulimia Nervosa,Tier 3: Moderate Detail,Positive Symptom Presentation,Neutral/Cooperative
+1029,True,True,M - Bulimia Nervosa,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Neutral/Cooperative
+1030,True,True,M - Bulimia Nervosa,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Neutral/Cooperative
+1031,True,True,M - Bulimia Nervosa,Tier 1: Superficial/Vague,Positive Symptom Presentation,Emotional/Expressive
+1032,True,True,M - Bulimia Nervosa,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Emotional/Expressive
+1033,True,True,M - Bulimia Nervosa,Tier 3: Moderate Detail,Positive Symptom Presentation,Emotional/Expressive
+1034,True,True,M - Bulimia Nervosa,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Emotional/Expressive
+1035,True,True,M - Bulimia Nervosa,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Emotional/Expressive
+1036,False,False,M - Bulimia Nervosa,Tier 1: Superficial/Vague,Negative Symptom Presentation,Flat/Detached
+1037,False,False,M - Bulimia Nervosa,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Flat/Detached
+1038,False,False,M - Bulimia Nervosa,Tier 3: Moderate Detail,Negative Symptom Presentation,Flat/Detached
+1039,False,False,M - Bulimia Nervosa,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Flat/Detached
+1040,False,False,M - Bulimia Nervosa,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Flat/Detached
+1041,False,False,M - Bulimia Nervosa,Tier 1: Superficial/Vague,Negative Symptom Presentation,Neutral/Cooperative
+1042,False,False,M - Bulimia Nervosa,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Neutral/Cooperative
+1043,False,False,M - Bulimia Nervosa,Tier 3: Moderate Detail,Negative Symptom Presentation,Neutral/Cooperative
+1044,False,False,M - Bulimia Nervosa,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Neutral/Cooperative
+1045,False,False,M - Bulimia Nervosa,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Neutral/Cooperative
+1046,False,False,M - Bulimia Nervosa,Tier 1: Superficial/Vague,Negative Symptom Presentation,Emotional/Expressive
+1047,False,False,M - Bulimia Nervosa,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Emotional/Expressive
+1048,False,False,M - Bulimia Nervosa,Tier 3: Moderate Detail,Negative Symptom Presentation,Emotional/Expressive
+1049,False,False,M - Bulimia Nervosa,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Emotional/Expressive
+1050,False,False,M - Bulimia Nervosa,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Emotional/Expressive
+1051,True,False,M - Bulimia Nervosa,Tier 1: Superficial/Vague,Positive Symptom Presentation,Flat/Detached
+1052,True,False,M - Bulimia Nervosa,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Flat/Detached
+1053,True,False,M - Bulimia Nervosa,Tier 3: Moderate Detail,Positive Symptom Presentation,Flat/Detached
+1054,True,False,M - Bulimia Nervosa,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Flat/Detached
+1055,True,True,M - Bulimia Nervosa,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Flat/Detached
+1056,True,True,M - Bulimia Nervosa,Tier 1: Superficial/Vague,Positive Symptom Presentation,Neutral/Cooperative
+1057,True,True,M - Bulimia Nervosa,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Neutral/Cooperative
+1058,True,True,M - Bulimia Nervosa,Tier 3: Moderate Detail,Positive Symptom Presentation,Neutral/Cooperative
+1059,True,True,M - Bulimia Nervosa,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Neutral/Cooperative
+1060,True,True,M - Bulimia Nervosa,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Neutral/Cooperative
+1061,True,True,M - Bulimia Nervosa,Tier 1: Superficial/Vague,Positive Symptom Presentation,Emotional/Expressive
+1062,True,True,M - Bulimia Nervosa,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Emotional/Expressive
+1063,True,True,M - Bulimia Nervosa,Tier 3: Moderate Detail,Positive Symptom Presentation,Emotional/Expressive
+1064,True,True,M - Bulimia Nervosa,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Emotional/Expressive
+1065,True,True,M - Bulimia Nervosa,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Emotional/Expressive
+1066,False,False,M - Bulimia Nervosa,Tier 1: Superficial/Vague,Negative Symptom Presentation,Flat/Detached
+1067,False,False,M - Bulimia Nervosa,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Flat/Detached
+1068,False,False,M - Bulimia Nervosa,Tier 3: Moderate Detail,Negative Symptom Presentation,Flat/Detached
+1069,False,False,M - Bulimia Nervosa,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Flat/Detached
+1070,False,False,M - Bulimia Nervosa,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Flat/Detached
+1071,False,False,M - Bulimia Nervosa,Tier 1: Superficial/Vague,Negative Symptom Presentation,Neutral/Cooperative
+1072,False,False,M - Bulimia Nervosa,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Neutral/Cooperative
+1073,False,False,M - Bulimia Nervosa,Tier 3: Moderate Detail,Negative Symptom Presentation,Neutral/Cooperative
+1074,False,False,M - Bulimia Nervosa,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Neutral/Cooperative
+1075,False,False,M - Bulimia Nervosa,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Neutral/Cooperative
+1076,False,False,M - Bulimia Nervosa,Tier 1: Superficial/Vague,Negative Symptom Presentation,Emotional/Expressive
+1077,False,False,M - Bulimia Nervosa,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Emotional/Expressive
+1078,False,False,M - Bulimia Nervosa,Tier 3: Moderate Detail,Negative Symptom Presentation,Emotional/Expressive
+1079,False,False,M - Bulimia Nervosa,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Emotional/Expressive
+1080,False,False,M - Bulimia Nervosa,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Emotional/Expressive
+1081,True,True,MB - Binge Eating Disorder,Tier 1: Superficial/Vague,Positive Symptom Presentation,Flat/Detached
+1082,True,True,MB - Binge Eating Disorder,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Flat/Detached
+1083,True,False,MB - Binge Eating Disorder,Tier 3: Moderate Detail,Positive Symptom Presentation,Flat/Detached
+1084,True,True,MB - Binge Eating Disorder,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Flat/Detached
+1085,True,True,MB - Binge Eating Disorder,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Flat/Detached
+1086,True,True,MB - Binge Eating Disorder,Tier 1: Superficial/Vague,Positive Symptom Presentation,Neutral/Cooperative
+1087,True,True,MB - Binge Eating Disorder,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Neutral/Cooperative
+1088,True,True,MB - Binge Eating Disorder,Tier 3: Moderate Detail,Positive Symptom Presentation,Neutral/Cooperative
+1089,True,True,MB - Binge Eating Disorder,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Neutral/Cooperative
+1090,True,True,MB - Binge Eating Disorder,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Neutral/Cooperative
+1091,True,True,MB - Binge Eating Disorder,Tier 1: Superficial/Vague,Positive Symptom Presentation,Emotional/Expressive
+1092,True,False,MB - Binge Eating Disorder,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Emotional/Expressive
+1093,True,False,MB - Binge Eating Disorder,Tier 3: Moderate Detail,Positive Symptom Presentation,Emotional/Expressive
+1094,True,False,MB - Binge Eating Disorder,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Emotional/Expressive
+1095,True,False,MB - Binge Eating Disorder,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Emotional/Expressive
+1096,False,False,MB - Binge Eating Disorder,Tier 1: Superficial/Vague,Negative Symptom Presentation,Flat/Detached
+1097,False,False,MB - Binge Eating Disorder,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Flat/Detached
+1098,False,False,MB - Binge Eating Disorder,Tier 3: Moderate Detail,Negative Symptom Presentation,Flat/Detached
+1099,False,False,MB - Binge Eating Disorder,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Flat/Detached
+1100,False,False,MB - Binge Eating Disorder,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Flat/Detached
+1101,False,False,MB - Binge Eating Disorder,Tier 1: Superficial/Vague,Negative Symptom Presentation,Neutral/Cooperative
+1102,False,False,MB - Binge Eating Disorder,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Neutral/Cooperative
+1103,False,False,MB - Binge Eating Disorder,Tier 3: Moderate Detail,Negative Symptom Presentation,Neutral/Cooperative
+1104,False,False,MB - Binge Eating Disorder,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Neutral/Cooperative
+1105,False,False,MB - Binge Eating Disorder,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Neutral/Cooperative
+1106,False,False,MB - Binge Eating Disorder,Tier 1: Superficial/Vague,Negative Symptom Presentation,Emotional/Expressive
+1107,False,False,MB - Binge Eating Disorder,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Emotional/Expressive
+1108,False,False,MB - Binge Eating Disorder,Tier 3: Moderate Detail,Negative Symptom Presentation,Emotional/Expressive
+1109,False,False,MB - Binge Eating Disorder,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Emotional/Expressive
+1110,False,False,MB - Binge Eating Disorder,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Emotional/Expressive
+1111,True,True,MB - Binge Eating Disorder,Tier 1: Superficial/Vague,Positive Symptom Presentation,Flat/Detached
+1112,True,True,MB - Binge Eating Disorder,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Flat/Detached
+1113,True,False,MB - Binge Eating Disorder,Tier 3: Moderate Detail,Positive Symptom Presentation,Flat/Detached
+1114,True,True,MB - Binge Eating Disorder,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Flat/Detached
+1115,True,True,MB - Binge Eating Disorder,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Flat/Detached
+1116,True,True,MB - Binge Eating Disorder,Tier 1: Superficial/Vague,Positive Symptom Presentation,Neutral/Cooperative
+1117,True,True,MB - Binge Eating Disorder,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Neutral/Cooperative
+1118,True,True,MB - Binge Eating Disorder,Tier 3: Moderate Detail,Positive Symptom Presentation,Neutral/Cooperative
+1119,True,True,MB - Binge Eating Disorder,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Neutral/Cooperative
+1120,True,True,MB - Binge Eating Disorder,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Neutral/Cooperative
+1121,True,False,MB - Binge Eating Disorder,Tier 1: Superficial/Vague,Positive Symptom Presentation,Emotional/Expressive
+1122,True,False,MB - Binge Eating Disorder,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Emotional/Expressive
+1123,True,True,MB - Binge Eating Disorder,Tier 3: Moderate Detail,Positive Symptom Presentation,Emotional/Expressive
+1124,True,False,MB - Binge Eating Disorder,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Emotional/Expressive
+1125,True,False,MB - Binge Eating Disorder,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Emotional/Expressive
+1126,False,False,MB - Binge Eating Disorder,Tier 1: Superficial/Vague,Negative Symptom Presentation,Flat/Detached
+1127,False,False,MB - Binge Eating Disorder,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Flat/Detached
+1128,False,False,MB - Binge Eating Disorder,Tier 3: Moderate Detail,Negative Symptom Presentation,Flat/Detached
+1129,False,False,MB - Binge Eating Disorder,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Flat/Detached
+1130,False,False,MB - Binge Eating Disorder,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Flat/Detached
+1131,False,False,MB - Binge Eating Disorder,Tier 1: Superficial/Vague,Negative Symptom Presentation,Neutral/Cooperative
+1132,False,False,MB - Binge Eating Disorder,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Neutral/Cooperative
+1133,False,False,MB - Binge Eating Disorder,Tier 3: Moderate Detail,Negative Symptom Presentation,Neutral/Cooperative
+1134,False,False,MB - Binge Eating Disorder,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Neutral/Cooperative
+1135,False,False,MB - Binge Eating Disorder,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Neutral/Cooperative
+1136,False,False,MB - Binge Eating Disorder,Tier 1: Superficial/Vague,Negative Symptom Presentation,Emotional/Expressive
+1137,False,False,MB - Binge Eating Disorder,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Emotional/Expressive
+1138,False,False,MB - Binge Eating Disorder,Tier 3: Moderate Detail,Negative Symptom Presentation,Emotional/Expressive
+1139,False,False,MB - Binge Eating Disorder,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Emotional/Expressive
+1140,False,False,MB - Binge Eating Disorder,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Emotional/Expressive
+1141,True,True,MB - Binge Eating Disorder,Tier 1: Superficial/Vague,Positive Symptom Presentation,Flat/Detached
+1142,True,True,MB - Binge Eating Disorder,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Flat/Detached
+1143,True,False,MB - Binge Eating Disorder,Tier 3: Moderate Detail,Positive Symptom Presentation,Flat/Detached
+1144,True,True,MB - Binge Eating Disorder,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Flat/Detached
+1145,True,True,MB - Binge Eating Disorder,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Flat/Detached
+1146,True,True,MB - Binge Eating Disorder,Tier 1: Superficial/Vague,Positive Symptom Presentation,Neutral/Cooperative
+1147,True,True,MB - Binge Eating Disorder,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Neutral/Cooperative
+1148,True,True,MB - Binge Eating Disorder,Tier 3: Moderate Detail,Positive Symptom Presentation,Neutral/Cooperative
+1149,True,True,MB - Binge Eating Disorder,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Neutral/Cooperative
+1150,True,True,MB - Binge Eating Disorder,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Neutral/Cooperative
+1151,True,True,MB - Binge Eating Disorder,Tier 1: Superficial/Vague,Positive Symptom Presentation,Emotional/Expressive
+1152,True,False,MB - Binge Eating Disorder,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Emotional/Expressive
+1153,True,True,MB - Binge Eating Disorder,Tier 3: Moderate Detail,Positive Symptom Presentation,Emotional/Expressive
+1154,True,True,MB - Binge Eating Disorder,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Emotional/Expressive
+1155,True,False,MB - Binge Eating Disorder,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Emotional/Expressive
+1156,False,False,MB - Binge Eating Disorder,Tier 1: Superficial/Vague,Negative Symptom Presentation,Flat/Detached
+1157,False,False,MB - Binge Eating Disorder,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Flat/Detached
+1158,False,False,MB - Binge Eating Disorder,Tier 3: Moderate Detail,Negative Symptom Presentation,Flat/Detached
+1159,False,False,MB - Binge Eating Disorder,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Flat/Detached
+1160,False,False,MB - Binge Eating Disorder,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Flat/Detached
+1161,False,False,MB - Binge Eating Disorder,Tier 1: Superficial/Vague,Negative Symptom Presentation,Neutral/Cooperative
+1162,False,False,MB - Binge Eating Disorder,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Neutral/Cooperative
+1163,False,False,MB - Binge Eating Disorder,Tier 3: Moderate Detail,Negative Symptom Presentation,Neutral/Cooperative
+1164,False,False,MB - Binge Eating Disorder,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Neutral/Cooperative
+1165,False,False,MB - Binge Eating Disorder,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Neutral/Cooperative
+1166,False,False,MB - Binge Eating Disorder,Tier 1: Superficial/Vague,Negative Symptom Presentation,Emotional/Expressive
+1167,False,False,MB - Binge Eating Disorder,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Emotional/Expressive
+1168,False,False,MB - Binge Eating Disorder,Tier 3: Moderate Detail,Negative Symptom Presentation,Emotional/Expressive
+1169,False,False,MB - Binge Eating Disorder,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Emotional/Expressive
+1170,False,False,MB - Binge Eating Disorder,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Emotional/Expressive
+1171,True,False,N - Generalized Anxiety Disorder,Tier 1: Superficial/Vague,Positive Symptom Presentation,Flat/Detached
+1172,True,True,N - Generalized Anxiety Disorder,Tier 1: Superficial/Vague,Positive Symptom Presentation,Flat/Detached
+1173,True,True,N - Generalized Anxiety Disorder,Tier 1: Superficial/Vague,Positive Symptom Presentation,Flat/Detached
+1174,True,True,N - Generalized Anxiety Disorder,Tier 1: Superficial/Vague,Positive Symptom Presentation,Neutral/Cooperative
+1175,True,True,N - Generalized Anxiety Disorder,Tier 1: Superficial/Vague,Positive Symptom Presentation,Neutral/Cooperative
+1176,True,True,N - Generalized Anxiety Disorder,Tier 1: Superficial/Vague,Positive Symptom Presentation,Neutral/Cooperative
+1177,True,True,N - Generalized Anxiety Disorder,Tier 1: Superficial/Vague,Positive Symptom Presentation,Emotional/Expressive
+1178,True,True,N - Generalized Anxiety Disorder,Tier 1: Superficial/Vague,Positive Symptom Presentation,Emotional/Expressive
+1179,True,True,N - Generalized Anxiety Disorder,Tier 1: Superficial/Vague,Positive Symptom Presentation,Emotional/Expressive
+1180,False,False,N - Generalized Anxiety Disorder,Tier 1: Superficial/Vague,Negative Symptom Presentation,Flat/Detached
+1181,False,False,N - Generalized Anxiety Disorder,Tier 1: Superficial/Vague,Negative Symptom Presentation,Flat/Detached
+1182,False,False,N - Generalized Anxiety Disorder,Tier 1: Superficial/Vague,Negative Symptom Presentation,Flat/Detached
+1183,False,False,N - Generalized Anxiety Disorder,Tier 1: Superficial/Vague,Negative Symptom Presentation,Neutral/Cooperative
+1184,False,False,N - Generalized Anxiety Disorder,Tier 1: Superficial/Vague,Negative Symptom Presentation,Neutral/Cooperative
+1185,False,False,N - Generalized Anxiety Disorder,Tier 1: Superficial/Vague,Negative Symptom Presentation,Neutral/Cooperative
+1186,False,True,N - Generalized Anxiety Disorder,Tier 1: Superficial/Vague,Negative Symptom Presentation,Emotional/Expressive
+1187,False,False,N - Generalized Anxiety Disorder,Tier 1: Superficial/Vague,Negative Symptom Presentation,Emotional/Expressive
+1188,False,False,N - Generalized Anxiety Disorder,Tier 1: Superficial/Vague,Negative Symptom Presentation,Emotional/Expressive
+1189,True,True,N - Generalized Anxiety Disorder,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Flat/Detached
+1190,True,True,N - Generalized Anxiety Disorder,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Flat/Detached
+1191,True,True,N - Generalized Anxiety Disorder,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Flat/Detached
+1192,True,True,N - Generalized Anxiety Disorder,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Neutral/Cooperative
+1193,True,True,N - Generalized Anxiety Disorder,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Neutral/Cooperative
+1194,True,True,N - Generalized Anxiety Disorder,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Neutral/Cooperative
+1195,True,True,N - Generalized Anxiety Disorder,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Emotional/Expressive
+1196,True,True,N - Generalized Anxiety Disorder,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Emotional/Expressive
+1197,True,True,N - Generalized Anxiety Disorder,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Emotional/Expressive
+1198,False,True,N - Generalized Anxiety Disorder,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Flat/Detached
+1199,False,False,N - Generalized Anxiety Disorder,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Flat/Detached
+1200,False,False,N - Generalized Anxiety Disorder,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Flat/Detached
+1201,False,True,N - Generalized Anxiety Disorder,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Neutral/Cooperative
+1202,False,False,N - Generalized Anxiety Disorder,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Neutral/Cooperative
+1203,False,False,N - Generalized Anxiety Disorder,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Neutral/Cooperative
+1204,False,True,N - Generalized Anxiety Disorder,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Emotional/Expressive
+1205,False,False,N - Generalized Anxiety Disorder,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Emotional/Expressive
+1206,False,False,N - Generalized Anxiety Disorder,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Emotional/Expressive
+1207,True,False,N - Generalized Anxiety Disorder,Tier 3: Moderate Detail,Positive Symptom Presentation,Flat/Detached
+1208,True,True,N - Generalized Anxiety Disorder,Tier 3: Moderate Detail,Positive Symptom Presentation,Flat/Detached
+1209,True,True,N - Generalized Anxiety Disorder,Tier 3: Moderate Detail,Positive Symptom Presentation,Flat/Detached
+1210,True,True,N - Generalized Anxiety Disorder,Tier 3: Moderate Detail,Positive Symptom Presentation,Neutral/Cooperative
+1211,True,True,N - Generalized Anxiety Disorder,Tier 3: Moderate Detail,Positive Symptom Presentation,Neutral/Cooperative
+1212,True,True,N - Generalized Anxiety Disorder,Tier 3: Moderate Detail,Positive Symptom Presentation,Neutral/Cooperative
+1213,True,True,N - Generalized Anxiety Disorder,Tier 3: Moderate Detail,Positive Symptom Presentation,Emotional/Expressive
+1214,True,True,N - Generalized Anxiety Disorder,Tier 3: Moderate Detail,Positive Symptom Presentation,Emotional/Expressive
+1215,True,True,N - Generalized Anxiety Disorder,Tier 3: Moderate Detail,Positive Symptom Presentation,Emotional/Expressive
+1216,False,False,N - Generalized Anxiety Disorder,Tier 3: Moderate Detail,Negative Symptom Presentation,Flat/Detached
+1217,False,False,N - Generalized Anxiety Disorder,Tier 3: Moderate Detail,Negative Symptom Presentation,Flat/Detached
+1218,False,False,N - Generalized Anxiety Disorder,Tier 3: Moderate Detail,Negative Symptom Presentation,Flat/Detached
+1219,False,True,N - Generalized Anxiety Disorder,Tier 3: Moderate Detail,Negative Symptom Presentation,Neutral/Cooperative
+1220,False,False,N - Generalized Anxiety Disorder,Tier 3: Moderate Detail,Negative Symptom Presentation,Neutral/Cooperative
+1221,False,False,N - Generalized Anxiety Disorder,Tier 3: Moderate Detail,Negative Symptom Presentation,Neutral/Cooperative
+1222,False,True,N - Generalized Anxiety Disorder,Tier 3: Moderate Detail,Negative Symptom Presentation,Emotional/Expressive
+1223,False,False,N - Generalized Anxiety Disorder,Tier 3: Moderate Detail,Negative Symptom Presentation,Emotional/Expressive
+1224,False,False,N - Generalized Anxiety Disorder,Tier 3: Moderate Detail,Negative Symptom Presentation,Emotional/Expressive
+1225,True,False,N - Generalized Anxiety Disorder,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Flat/Detached
+1226,True,True,N - Generalized Anxiety Disorder,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Flat/Detached
+1227,True,True,N - Generalized Anxiety Disorder,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Flat/Detached
+1228,True,True,N - Generalized Anxiety Disorder,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Neutral/Cooperative
+1229,True,True,N - Generalized Anxiety Disorder,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Neutral/Cooperative
+1230,True,True,N - Generalized Anxiety Disorder,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Neutral/Cooperative
+1231,True,True,N - Generalized Anxiety Disorder,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Emotional/Expressive
+1232,True,True,N - Generalized Anxiety Disorder,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Emotional/Expressive
+1233,True,True,N - Generalized Anxiety Disorder,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Emotional/Expressive
+1234,False,False,N - Generalized Anxiety Disorder,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Flat/Detached
+1235,False,False,N - Generalized Anxiety Disorder,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Flat/Detached
+1236,False,False,N - Generalized Anxiety Disorder,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Flat/Detached
+1237,False,True,N - Generalized Anxiety Disorder,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Neutral/Cooperative
+1238,False,False,N - Generalized Anxiety Disorder,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Neutral/Cooperative
+1239,False,False,N - Generalized Anxiety Disorder,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Neutral/Cooperative
+1240,False,False,N - Generalized Anxiety Disorder,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Emotional/Expressive
+1241,False,False,N - Generalized Anxiety Disorder,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Emotional/Expressive
+1242,False,False,N - Generalized Anxiety Disorder,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Emotional/Expressive
+1243,True,True,N - Generalized Anxiety Disorder,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Flat/Detached
+1244,True,True,N - Generalized Anxiety Disorder,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Flat/Detached
+1245,True,True,N - Generalized Anxiety Disorder,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Flat/Detached
+1246,True,True,N - Generalized Anxiety Disorder,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Neutral/Cooperative
+1247,True,True,N - Generalized Anxiety Disorder,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Neutral/Cooperative
+1248,True,True,N - Generalized Anxiety Disorder,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Neutral/Cooperative
+1249,True,True,N - Generalized Anxiety Disorder,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Emotional/Expressive
+1250,True,True,N - Generalized Anxiety Disorder,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Emotional/Expressive
+1251,True,True,N - Generalized Anxiety Disorder,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Emotional/Expressive
+1252,False,True,N - Generalized Anxiety Disorder,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Flat/Detached
+1253,False,False,N - Generalized Anxiety Disorder,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Flat/Detached
+1254,False,False,N - Generalized Anxiety Disorder,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Flat/Detached
+1255,False,True,N - Generalized Anxiety Disorder,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Neutral/Cooperative
+1256,False,False,N - Generalized Anxiety Disorder,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Neutral/Cooperative
+1257,False,False,N - Generalized Anxiety Disorder,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Neutral/Cooperative
+1258,False,True,N - Generalized Anxiety Disorder,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Emotional/Expressive
+1259,False,False,N - Generalized Anxiety Disorder,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Emotional/Expressive
+1260,False,False,N - Generalized Anxiety Disorder,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Emotional/Expressive
+1261,True,True,P - Antisocial Personality Disorder,Tier 1: Superficial/Vague,Positive Symptom Presentation,Flat/Detached
+1262,True,True,P - Antisocial Personality Disorder,Tier 1: Superficial/Vague,Positive Symptom Presentation,Flat/Detached
+1263,True,True,P - Antisocial Personality Disorder,Tier 1: Superficial/Vague,Positive Symptom Presentation,Flat/Detached
+1264,True,True,P - Antisocial Personality Disorder,Tier 1: Superficial/Vague,Positive Symptom Presentation,Neutral/Cooperative
+1265,True,True,P - Antisocial Personality Disorder,Tier 1: Superficial/Vague,Positive Symptom Presentation,Neutral/Cooperative
+1266,True,True,P - Antisocial Personality Disorder,Tier 1: Superficial/Vague,Positive Symptom Presentation,Neutral/Cooperative
+1267,True,True,P - Antisocial Personality Disorder,Tier 1: Superficial/Vague,Positive Symptom Presentation,Emotional/Expressive
+1268,True,True,P - Antisocial Personality Disorder,Tier 1: Superficial/Vague,Positive Symptom Presentation,Emotional/Expressive
+1269,True,True,P - Antisocial Personality Disorder,Tier 1: Superficial/Vague,Positive Symptom Presentation,Emotional/Expressive
+1270,False,True,P - Antisocial Personality Disorder,Tier 1: Superficial/Vague,Negative Symptom Presentation,Flat/Detached
+1271,False,False,P - Antisocial Personality Disorder,Tier 1: Superficial/Vague,Negative Symptom Presentation,Flat/Detached
+1272,False,False,P - Antisocial Personality Disorder,Tier 1: Superficial/Vague,Negative Symptom Presentation,Flat/Detached
+1273,False,True,P - Antisocial Personality Disorder,Tier 1: Superficial/Vague,Negative Symptom Presentation,Neutral/Cooperative
+1274,False,False,P - Antisocial Personality Disorder,Tier 1: Superficial/Vague,Negative Symptom Presentation,Neutral/Cooperative
+1275,False,False,P - Antisocial Personality Disorder,Tier 1: Superficial/Vague,Negative Symptom Presentation,Neutral/Cooperative
+1276,False,True,P - Antisocial Personality Disorder,Tier 1: Superficial/Vague,Negative Symptom Presentation,Emotional/Expressive
+1277,False,False,P - Antisocial Personality Disorder,Tier 1: Superficial/Vague,Negative Symptom Presentation,Emotional/Expressive
+1278,False,False,P - Antisocial Personality Disorder,Tier 1: Superficial/Vague,Negative Symptom Presentation,Emotional/Expressive
+1279,True,True,P - Antisocial Personality Disorder,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Flat/Detached
+1280,True,True,P - Antisocial Personality Disorder,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Flat/Detached
+1281,True,True,P - Antisocial Personality Disorder,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Flat/Detached
+1282,True,True,P - Antisocial Personality Disorder,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Neutral/Cooperative
+1283,True,True,P - Antisocial Personality Disorder,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Neutral/Cooperative
+1284,True,True,P - Antisocial Personality Disorder,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Neutral/Cooperative
+1285,True,True,P - Antisocial Personality Disorder,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Emotional/Expressive
+1286,True,True,P - Antisocial Personality Disorder,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Emotional/Expressive
+1287,True,True,P - Antisocial Personality Disorder,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Emotional/Expressive
+1288,False,True,P - Antisocial Personality Disorder,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Flat/Detached
+1289,False,False,P - Antisocial Personality Disorder,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Flat/Detached
+1290,False,False,P - Antisocial Personality Disorder,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Flat/Detached
+1291,False,True,P - Antisocial Personality Disorder,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Neutral/Cooperative
+1292,False,False,P - Antisocial Personality Disorder,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Neutral/Cooperative
+1293,False,False,P - Antisocial Personality Disorder,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Neutral/Cooperative
+1294,False,True,P - Antisocial Personality Disorder,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Emotional/Expressive
+1295,False,False,P - Antisocial Personality Disorder,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Emotional/Expressive
+1296,False,False,P - Antisocial Personality Disorder,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Emotional/Expressive
+1297,True,True,P - Antisocial Personality Disorder,Tier 3: Moderate Detail,Positive Symptom Presentation,Flat/Detached
+1298,True,True,P - Antisocial Personality Disorder,Tier 3: Moderate Detail,Positive Symptom Presentation,Flat/Detached
+1299,True,True,P - Antisocial Personality Disorder,Tier 3: Moderate Detail,Positive Symptom Presentation,Flat/Detached
+1300,True,True,P - Antisocial Personality Disorder,Tier 3: Moderate Detail,Positive Symptom Presentation,Neutral/Cooperative
+1301,True,True,P - Antisocial Personality Disorder,Tier 3: Moderate Detail,Positive Symptom Presentation,Neutral/Cooperative
+1302,True,True,P - Antisocial Personality Disorder,Tier 3: Moderate Detail,Positive Symptom Presentation,Neutral/Cooperative
+1303,True,True,P - Antisocial Personality Disorder,Tier 3: Moderate Detail,Positive Symptom Presentation,Emotional/Expressive
+1304,True,True,P - Antisocial Personality Disorder,Tier 3: Moderate Detail,Positive Symptom Presentation,Emotional/Expressive
+1305,True,True,P - Antisocial Personality Disorder,Tier 3: Moderate Detail,Positive Symptom Presentation,Emotional/Expressive
+1306,False,True,P - Antisocial Personality Disorder,Tier 3: Moderate Detail,Negative Symptom Presentation,Flat/Detached
+1307,False,False,P - Antisocial Personality Disorder,Tier 3: Moderate Detail,Negative Symptom Presentation,Flat/Detached
+1308,False,False,P - Antisocial Personality Disorder,Tier 3: Moderate Detail,Negative Symptom Presentation,Flat/Detached
+1309,False,True,P - Antisocial Personality Disorder,Tier 3: Moderate Detail,Negative Symptom Presentation,Neutral/Cooperative
+1310,False,False,P - Antisocial Personality Disorder,Tier 3: Moderate Detail,Negative Symptom Presentation,Neutral/Cooperative
+1311,False,False,P - Antisocial Personality Disorder,Tier 3: Moderate Detail,Negative Symptom Presentation,Neutral/Cooperative
+1312,False,True,P - Antisocial Personality Disorder,Tier 3: Moderate Detail,Negative Symptom Presentation,Emotional/Expressive
+1313,False,False,P - Antisocial Personality Disorder,Tier 3: Moderate Detail,Negative Symptom Presentation,Emotional/Expressive
+1314,False,False,P - Antisocial Personality Disorder,Tier 3: Moderate Detail,Negative Symptom Presentation,Emotional/Expressive
+1315,True,True,P - Antisocial Personality Disorder,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Flat/Detached
+1316,True,True,P - Antisocial Personality Disorder,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Flat/Detached
+1317,True,True,P - Antisocial Personality Disorder,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Flat/Detached
+1318,True,True,P - Antisocial Personality Disorder,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Neutral/Cooperative
+1319,True,True,P - Antisocial Personality Disorder,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Neutral/Cooperative
+1320,True,True,P - Antisocial Personality Disorder,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Neutral/Cooperative
+1321,True,True,P - Antisocial Personality Disorder,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Emotional/Expressive
+1322,True,True,P - Antisocial Personality Disorder,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Emotional/Expressive
+1323,True,True,P - Antisocial Personality Disorder,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Emotional/Expressive
+1324,False,True,P - Antisocial Personality Disorder,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Flat/Detached
+1325,False,False,P - Antisocial Personality Disorder,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Flat/Detached
+1326,False,False,P - Antisocial Personality Disorder,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Flat/Detached
+1327,False,True,P - Antisocial Personality Disorder,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Neutral/Cooperative
+1328,False,False,P - Antisocial Personality Disorder,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Neutral/Cooperative
+1329,False,False,P - Antisocial Personality Disorder,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Neutral/Cooperative
+1330,False,True,P - Antisocial Personality Disorder,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Emotional/Expressive
+1331,False,False,P - Antisocial Personality Disorder,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Emotional/Expressive
+1332,False,False,P - Antisocial Personality Disorder,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Emotional/Expressive
+1333,True,True,P - Antisocial Personality Disorder,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Flat/Detached
+1334,True,True,P - Antisocial Personality Disorder,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Flat/Detached
+1335,True,True,P - Antisocial Personality Disorder,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Flat/Detached
+1336,True,True,P - Antisocial Personality Disorder,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Neutral/Cooperative
+1337,True,True,P - Antisocial Personality Disorder,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Neutral/Cooperative
+1338,True,True,P - Antisocial Personality Disorder,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Neutral/Cooperative
+1339,True,True,P - Antisocial Personality Disorder,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Emotional/Expressive
+1340,True,True,P - Antisocial Personality Disorder,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Emotional/Expressive
+1341,True,True,P - Antisocial Personality Disorder,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Emotional/Expressive
+1342,False,True,P - Antisocial Personality Disorder,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Flat/Detached
+1343,False,False,P - Antisocial Personality Disorder,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Flat/Detached
+1344,False,False,P - Antisocial Personality Disorder,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Flat/Detached
+1345,False,True,P - Antisocial Personality Disorder,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Neutral/Cooperative
+1346,False,False,P - Antisocial Personality Disorder,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Neutral/Cooperative
+1347,False,False,P - Antisocial Personality Disorder,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Neutral/Cooperative
+1348,False,True,P - Antisocial Personality Disorder,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Emotional/Expressive
+1349,False,False,P - Antisocial Personality Disorder,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Emotional/Expressive
+1350,False,False,P - Antisocial Personality Disorder,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Emotional/Expressive
