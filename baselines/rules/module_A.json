@@ -1,0 +1,40 @@
+{
+  "module": "A",
+  "evaluation_order": ["positive", "negative", "exclusion"],
+  "positive_patterns": [
+    "\byes\b",
+    "\byeah\b",
+    "\byep\b",
+    "\btrue\b",
+    "\bdefinitely\b",
+    "\boften\b",
+    "\bfrequently\b",
+    "\bregularly\b",
+    "\bnearly every day\b",
+    "\balmost every day\b",
+    "\bevery day\b",
+    "\bpresent\b"
+  ],
+  "negative_patterns": [
+    "\bno\b",
+    "\bnot really\b",
+    "\bnone\b",
+    "\bnever\b",
+    "\bden(?:y|ies|ied)\b",
+    "\bwithout\b",
+    "\bnot at all\b",
+    "\bdo not\b",
+    "\bdon't\b",
+    "\bdoesn't\b",
+    "\bhaven't\b",
+    "\bhasn't\b"
+  ],
+  "exclusion_patterns": [
+    "because of (?:my|the) (?:partner|wife|husband|job|work|school|exam|breakup|divorce|bereavement|grief)",
+    "since (?:my|the) (?:partner|wife|husband) (?:passed|died)",
+    "situational",
+    "just stress",
+    "normal reaction"
+  ],
+  "question_rules": {}
+}
