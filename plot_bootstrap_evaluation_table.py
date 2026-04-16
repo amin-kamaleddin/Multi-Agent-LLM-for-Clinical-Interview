@@ -13,7 +13,7 @@ import warnings
 warnings.filterwarnings('ignore')
 
 # ── Config ─────────────────────────────────────────────────────────────────────
-RESULTS_PATH       = "evaluation_results.csv"
+RESULTS_PATH       = "patient_agent_results/evaluation_results.csv"
 FIGURES_OUTPUT_DIR = "./figures"
 
 os.makedirs(FIGURES_OUTPUT_DIR, exist_ok=True)

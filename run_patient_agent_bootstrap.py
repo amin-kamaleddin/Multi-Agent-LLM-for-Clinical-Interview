@@ -13,7 +13,7 @@ logging.basicConfig(
 log = logging.getLogger(__name__)
 
 # ── Config ────────────────────────────────────────────────────────────────────
-CSV_PATH    = "prediction_combined_all_modules.csv"
+CSV_PATH    = "patient_agent_results/prediction_combined_all_modules.csv"
 N_BOOTSTRAP = 10_000
 RANDOM_SEED = 42
 
@@ -154,7 +154,7 @@ def main():
                 rows.append(row)
 
     result_df = pd.DataFrame(rows)
-    out_path = "evaluation_results.csv"
+    out_path = "patient_agent_results/evaluation_results.csv"
     result_df.to_csv(out_path, index=False)
     log.info(f"Saved: {out_path} ({len(result_df)} rows)")
 
