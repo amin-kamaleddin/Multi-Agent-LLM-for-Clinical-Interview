@@ -1,0 +1,10 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "reasoning": "Criterion A1 (exposure to trauma): MET \u2014 patient stated 'I was present during a significant accident involving others, which was distressing.' Criterion A2 (intrusive memories): NOT MET \u2014 patient did not report any persistent feelings of distress or negative thoughts. Criterion A3 (avoidance): NOT MET \u2014 patient mentioned feeling connected to friends and family and enjoying activities. Criterion A4 (negative alterations in cognition and mood): NOT MET \u2014 patient described a stable outlook and normal mood fluctuations. Criterion A5 (arousal symptoms): NOT MET \u2014 no symptoms of hyperarousal were reported. Total: 1 of 5 criteria met (threshold \u22651). Duration: not applicable as no symptoms were endorsed. Functional impairment: NOT MET \u2014 patient reported stable functioning and enjoyment in life. Exclusions: not triggered. Diagnosis: FALSE \u2014 insufficient criteria met for PTSD diagnosis."
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "reasoning": "Not applicable as the positive group did not meet criteria for diagnosis."
+    }
+}

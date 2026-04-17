@@ -1,0 +1,10 @@
+{
+    "lifetime": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (spells of anxiety): NOT MET \u2014 patient stated 'I haven't really had those spells' and described feelings as manageable stress. Criterion 2 (4 or more symptoms): NOT MET \u2014 no symptoms of panic attacks were endorsed. Criterion 3 (O1a and O1b): O1a = NO and O1b = NO \u2014 patient did not report any significant impairment or distress. Total: 0 of 4 criteria met (threshold \u22651). Exclusions: not triggered. Diagnosis: FALSE \u2014 no evidence of panic attacks or significant distress."
+    },
+    "current": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (current panic attacks): NOT MET \u2014 patient denied having spells of anxiety or panic attacks. Criterion 2 (O1a and O1b): O1a = NO and O1b = NO \u2014 no current symptoms reported. Total: 0 of 2 criteria met (threshold \u22651). Exclusions: not triggered. Diagnosis: FALSE \u2014 no current symptoms of panic disorder."
+    }
+}

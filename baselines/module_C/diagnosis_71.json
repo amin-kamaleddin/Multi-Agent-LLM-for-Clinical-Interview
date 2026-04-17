@@ -1,0 +1,10 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1: MET \u2014 Patient described experiencing overwhelming energy and a need to talk excessively, stating, 'I feel this overwhelming energy, and I just can't stop talking.' Criterion 2: MET \u2014 Patient reported feeling energized and needing less sleep, stating, 'I've definitely noticed that I've felt energized and still ready to go after just a few hours of sleep.' Criterion 3: MET \u2014 Patient indicated feeling more irritable, stating, 'There have been times when the smallest things set me off.' Criterion 4: MET \u2014 Patient reported racing thoughts and difficulty focusing, stating, 'Absolutely, my thoughts were racing.' Criterion 5: MET \u2014 Patient confirmed that symptoms caused significant problems in relationships and work, stating, 'It affected my ability to engage meaningfully.' Total: 5 of 5 criteria met (threshold \u22654). Duration: met (symptoms lasted for 4-5 days). Functional impairment: met (significant issues in relationships and work). Exclusions: not triggered (no substance use or medical conditions reported). Diagnosis: TRUE \u2014 full threshold met with significant functional impairment confirmed."
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1: NOT MET \u2014 Patient did not report a history of previous episodes that meet full criteria for a manic episode. Total: 0 of 1 criteria met (threshold \u22651). Diagnosis: FALSE \u2014 no evidence of recurrent episodes."
+    }
+}

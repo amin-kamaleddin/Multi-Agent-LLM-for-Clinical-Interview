@@ -1,0 +1,11 @@
+{
+    "positive": {
+        "diagnosis": true,
+        "reasoning": "Criterion A1 (depressed mood): MET \u2014 patient stated 'I feel this heavy sadness, like there's this weight I can't shake off.' Criterion A2 (anhedonia): MET \u2014 'I find it hard to find joy in things I used to love.' Criterion A3 (weight/appetite): MET \u2014 'I've noticed my appetite has definitely changed... I think I\u2019ve lost a bit of weight.' Criterion A4 (sleep): MET \u2014 'I've definitely been having trouble sleeping almost every night.' Criterion A5 (psychomotor agitation/retardation): MET \u2014 'I've definitely felt like I'm moving slower.' Criterion A6 (fatigue): MET \u2014 'I've definitely felt really worn out most days.' Criterion A7 (worthlessness/guilt): MET \u2014 'I really have felt a strong sense of worthlessness.' Criterion A8 (concentration): MET \u2014 'Lately, it has been really hard for me to focus on anything.' Criterion A9 (suicidal thoughts): NOT MET \u2014 patient denied thoughts of self-harm. Total: 8 of 9 criteria met (threshold \u22655). Duration: met (patient reports symptoms for 2 weeks). Functional impairment: met ('It's really affecting my day-to-day life'). Exclusions: not triggered (no substance use or medical issues reported). Diagnosis: TRUE \u2014 full threshold met with significant functional impairment confirmed.",
+        "timeFrame": "recent"
+    },
+    "recurrent": {
+        "diagnosis": true,
+        "reasoning": "Criterion A5: YES \u2014 patient described past episodes of depression lasting at least 2 months. Exclusion criteria: not triggered (no substance use or medical issues reported). Diagnosis: TRUE \u2014 patient has experienced multiple distinct episodes of depression."
+    }
+}

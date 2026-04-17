@@ -1,0 +1,10 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (recurrent thoughts): NOT MET \u2014 patient stated 'I haven't really been bothered by those kinds of thoughts.' Criterion 2 (compulsive behaviors): NOT MET \u2014 patient reported 'I haven't felt the need to do things like washing or checking repeatedly.' Criterion 3 (distress/functioning): NOT MET \u2014 patient indicated 'I don't think I've experienced any significant distress related to thoughts or behaviors like that.' Total: 0 of 3 criteria met (threshold \u22651). Exclusions: not triggered. Diagnosis: FALSE \u2014 no criteria for OCD are met based on the patient's clear denials of obsessions and compulsions."
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (recurrent thoughts): NOT MET \u2014 patient stated 'I haven't really been bothered by those kinds of thoughts.' Criterion 2 (compulsive behaviors): NOT MET \u2014 patient reported 'I haven't felt the need to do things like washing or checking repeatedly.' Total: 0 of 3 criteria met (threshold \u22652). Diagnosis: FALSE \u2014 no recurrent episodes of OCD symptoms are reported."
+    }
+}

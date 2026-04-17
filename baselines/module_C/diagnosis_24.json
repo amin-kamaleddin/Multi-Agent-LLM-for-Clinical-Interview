@@ -1,0 +1,10 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1: NOT MET \u2014 patient stated, 'I haven't experienced any periods where I felt unusually 'up' or 'hyper' beyond my normal state.' Criterion 2: NOT MET \u2014 patient did not report any episodes of elevated mood or energy. Criterion 3: NOT MET \u2014 patient denied persistent irritability, stating, 'I haven't really experienced persistent irritability lately.' Criterion 4: NOT MET \u2014 no evidence of significant behavioral changes or disturbances reported. Criterion 5: MET \u2014 patient has no family history of manic-depressive illness or bipolar disorder. Total: 0 of 5 criteria met (threshold \u22653). Duration: not applicable as no symptoms were endorsed. Functional impairment: not applicable as no symptoms were endorsed. Exclusions: not triggered. Diagnosis: FALSE \u2014 no criteria for manic or hypomanic episodes were met."
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1: NOT MET \u2014 patient stated, 'I haven't experienced any periods where I felt unusually 'up' or 'hyper' beyond my normal state.' Criterion 2: NOT MET \u2014 patient did not report any episodes of elevated mood or energy. Criterion 3: NOT MET \u2014 patient denied persistent irritability, stating, 'I haven't really experienced persistent irritability lately.' Criterion 4: NOT MET \u2014 no evidence of significant behavioral changes or disturbances reported. Criterion 5: MET \u2014 patient has no family history of manic-depressive illness or bipolar disorder. Total: 0 of 5 criteria met (threshold \u22653). Duration: not applicable as no symptoms were endorsed. Functional impairment: not applicable as no symptoms were endorsed. Exclusions: not triggered. Diagnosis: FALSE \u2014 no criteria for recurrent manic or hypomanic episodes were met."
+    }
+}

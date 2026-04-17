@@ -1,0 +1,10 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "reasoning": "Criterion A1 (depressed mood): NOT MET \u2014 patient described feeling overwhelmed and having moments of sadness but did not confirm feeling sad, empty, or hopeless most of the day, nearly every day, for at least two weeks. Criterion A2 (anhedonia): NOT MET \u2014 patient stated they have not lost interest in most things and still find comfort in usual activities. Criterion A3 (weight/appetite): NOT MET \u2014 patient did not mention any changes in weight or appetite. Criterion A4 (sleep): NOT MET \u2014 no information provided regarding sleep patterns. Total: 0 of 9 criteria met (threshold \u22655). Duration: not met (patient did not confirm symptoms lasting for the required duration). Functional impairment: UNCLEAR \u2014 patient mentioned feeling pressure from work but did not specify significant impairment in functioning. Exclusions: not triggered. Diagnosis: FALSE \u2014 insufficient evidence to meet the criteria for a major depressive episode."
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "reasoning": "Criterion A5: NOT MET \u2014 patient did not report a history of previous episodes that meet full criteria for major depressive episodes. Exclusions: not triggered. Diagnosis: FALSE \u2014 no evidence of recurrent episodes."
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "reasoning": "Criterion A1 (depressed mood): MET \u2014 patient stated 'I have experienced a lack of enjoyment and a sense of emptiness for a period of time.' Criterion A2 (anhedonia): MET \u2014 'There has been a noticeable decrease in interest and enjoyment in activities that were once pleasurable for an extended period.' Criterion A3 (weight/appetite): MET \u2014 'This change in appetite has been consistent, and there has been a noticeable weight loss of about 5%.' Criterion A4 (sleep): MET \u2014 'I find it difficult to fall asleep most nights and wake up earlier than I would like.' Criterion A5 (psychomotor agitation/retardation): NOT MET \u2014 'I have not noticed any significant changes in my speaking or moving speed.' Criterion A6 (fatigue): MET \u2014 'There has been a noticeable lack of energy lately, almost every day.' Criterion A7 (worthlessness/guilt): MET \u2014 'There have been moments where I have questioned my worth and felt guilt.' Criterion A8 (concentration): MET \u2014 'These difficulties occur almost every day.' Criterion A9 (suicidal thoughts): NOT MET \u2014 'I haven\u2019t actively thought about harming myself or made plans to do so.' Total: 7 of 9 criteria met (threshold \u22655). Duration: met (patient reports symptoms for more than 2 weeks). Functional impairment: met ('There has been a noticeable change in functioning lately. Activities that used to bring pleasure no longer do, and social interactions have been minimal.'). Exclusions: not triggered (no substance use or medical conditions reported). Diagnosis: TRUE \u2014 full threshold met with significant functional impairment confirmed."
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "reasoning": "Criterion A5: MET \u2014 patient confirmed experiencing multiple episodes lasting at least two months each. Exclusions: not triggered (no substance use or medical conditions reported). Diagnosis: TRUE \u2014 patient has experienced recurrent episodes of depression."
+    }
+}

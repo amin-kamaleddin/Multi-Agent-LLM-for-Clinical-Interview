@@ -1,0 +1,10 @@
+{
+    "positive": {
+        "diagnosis": true,
+        "reasoning": "Criterion I2a (drinking more than intended): MET \u2014 patient stated, 'I told myself I\u2019d just have a couple of drinks, but then it spiraled into much more.' Criterion I2b (unsuccessful attempts to cut down): MET \u2014 'I really want to have better control over it, but every time I try, I find myself slipping back into old habits.' Criterion I2c (spending substantial time on alcohol-related activities): MET \u2014 'I\u2019ve spent more time than I should have focused on drinking or recovering from it.' Criterion I2d (craving): MET \u2014 'I felt this overwhelming pull towards alcohol, especially during stressful times.' Criterion I2e (neglecting responsibilities): MET \u2014 'I just couldn\u2019t pull myself together for work after a drinking night.' Criterion I2f (continuing despite problems): MET \u2014 'I\u2019ve been drinking even when I know it doesn't help.' Criterion I2g (risk-taking behavior): MET \u2014 'I decided to drive home after having quite a few drinks.' Criterion I2h (interpersonal problems): MET \u2014 'There have been times when my drinking definitely strained my relationships with family and friends.' Criterion I2i (reduction of activities): MET \u2014 'I\u2019ve found myself missing important events or just not giving my best at work because of how much I\u2019ve been drinking.' Criterion I2j (tolerance): MET \u2014 'I've needed to drink a lot more lately just to feel that same buzz.' Criterion I2k (withdrawal symptoms): MET \u2014 'I would wake up in a sweat, my heart racing, and I couldn\u2019t shake that anxious feeling.' Total: Requires \u22652 symptoms; found 11 clearly met. Duration: met (symptoms reported in the past 12 months). Functional impairment: met (patient describes significant impact on work and relationships). Exclusions: not triggered. Diagnosis: TRUE \u2014 full criteria met with significant functional impairment confirmed."
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "reasoning": "Not applicable as the current module does not assess for recurrent episodes."
+    }
+}

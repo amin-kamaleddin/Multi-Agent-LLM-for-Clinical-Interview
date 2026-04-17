@@ -1,0 +1,10 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (obsessions): NOT MET \u2014 patient stated 'I haven\u2019t really experienced much of that lately. It\u2019s mostly been fine. No unwanted thoughts or anything like that.' Criterion 2 (compulsions): NOT MET \u2014 patient said, 'I haven't really felt that way... I just go about my day like everyone else.' Criterion 3 (distress/impairment): NOT MET \u2014 patient reported, 'It\u2019s been fine... nothing taking up too much time. No distress, really.' Total: 0 of 3 criteria met (threshold \u22651). Exclusions: not triggered as no substance use or medical issues reported. Diagnosis: FALSE \u2014 no evidence of obsessions or compulsions present."
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (recurrent obsessions): NOT MET \u2014 patient indicated no recurrent thoughts or impulses. Criterion 2 (compulsions): NOT MET \u2014 patient did not report any compulsive behaviors. Total: 0 of 2 criteria met (threshold \u22651). Diagnosis: FALSE \u2014 no recurrent episodes of obsessions or compulsions indicated."
+    }
+}

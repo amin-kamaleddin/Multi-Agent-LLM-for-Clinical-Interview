@@ -1,0 +1,11 @@
+{
+    "positive": {
+        "diagnosis": true,
+        "reasoning": "Criterion A1 (depressed mood): MET \u2014 patient stated 'I\u2019ve definitely been going through a rough patch lately' and 'I guess you could say I\u2019ve been feeling that way for most of the day, almost every day.' Criterion A2 (anhedonia): MET \u2014 patient reported 'I\u2019ve noticed I feel a lot less excitement or joy in things I used to enjoy.' Criterion A3 (weight/appetite): MET \u2014 patient indicated 'I\u2019ve definitely noticed some changes with my appetite lately. It\u2019s been pretty low, and I find myself not really feeling hungry.' Criterion A4 (sleep): MET \u2014 patient stated 'Lately, sleep has been a bit off. It's like I just can\u2019t find the rest I need.' Criterion A5 (psychomotor agitation/retardation): MET \u2014 patient noted 'I've noticed that I might be moving a bit slower lately, and sometimes I feel restless too.' Criterion A6 (fatigue): MET \u2014 patient expressed 'I've definitely been feeling pretty drained lately.' Criterion A7 (worthlessness/guilt): MET \u2014 patient described feelings of worthlessness and guilt, stating 'I can\u2019t shake this feeling of not really measuring up.' Criterion A8 (concentration): MET \u2014 patient reported 'I've definitely noticed some difficulty in concentrating lately.' Criterion A9 (suicidal thoughts): UNCLEAR \u2014 patient mentioned 'I have had some really heavy thoughts at times' but did not specify plans. Total: 9 of 9 criteria met (threshold \u22655). Duration: met (patient reports symptoms for 2 weeks). Functional impairment: met ('I just can't find joy in things that used to make me happy'). Exclusions: not triggered (no substance use or medical conditions reported). Diagnosis: TRUE \u2014 full threshold met with significant functional impairment confirmed.",
+        "timeFrame": "recent"
+    },
+    "recurrent": {
+        "diagnosis": true,
+        "reasoning": "Criterion A5: YES \u2014 patient indicated experiencing multiple episodes of depression, stating 'I guess you could say there have been times when I've felt really low.' Exclusions: not triggered (no substance use or medical conditions reported). Diagnosis: TRUE \u2014 patient has experienced at least two distinct episodes lasting more than two months."
+    }
+}

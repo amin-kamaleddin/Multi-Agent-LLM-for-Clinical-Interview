@@ -1,0 +1,12 @@
+{
+    "positive": {
+        "diagnosis": true,
+        "reasoning": "Criterion 1 (recurrent thoughts): MET \u2014 patient stated, 'I've been struggling a lot with persistent thoughts that I just can\u2019t shake off over the past month.' Criterion 2 (attempt to suppress): MET \u2014 'I often try to push them away or distract myself.' Criterion 3 (thoughts keep coming back): MET \u2014 'Absolutely, they just keep looping in my head.' Criterion 4 (compulsive behaviors): MET \u2014 'I've really been struggling with this need to double-check everything.' Criterion 5 (rituals to reduce anxiety): MET \u2014 'I can definitely say that these rituals are done to reduce my anxiety.' Criterion 6 (significant distress/interference): MET \u2014 'They have caused a lot of distress for me... it definitely interferes with my day-to-day life.' Total: 6 of 6 criteria met (threshold \u22654). Duration: met (symptoms reported for the past month). Functional impairment: met (difficulty focusing at work and missing out on family time). Exclusions: not triggered (no substance use or medical conditions reported). Diagnosis: TRUE \u2014 full criteria met with significant functional impairment confirmed.",
+        "insight": "goodOrFair",
+        "ticRelated": false
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (recurrent thoughts): MET \u2014 patient stated, 'I've been struggling a lot with persistent thoughts that I just can\u2019t shake off over the past month.' Criterion 2 (attempt to suppress): MET \u2014 'I often try to push them away or distract myself.' Criterion 3 (thoughts keep coming back): MET \u2014 'Absolutely, they just keep looping in my head.' Criterion 4 (compulsive behaviors): MET \u2014 'I've really been struggling with this need to double-check everything.' Criterion 5 (rituals to reduce anxiety): MET \u2014 'I can definitely say that these rituals are done to reduce my anxiety.' Criterion 6 (significant distress/interference): MET \u2014 'They have caused a lot of distress for me... it definitely interferes with my day-to-day life.' Total: 6 of 6 criteria met (threshold \u22654). Duration: met (symptoms reported for the past month). Functional impairment: met (difficulty focusing at work and missing out on family time). Exclusions: not triggered (no substance use or medical conditions reported). Diagnosis: TRUE \u2014 full criteria met with significant functional impairment confirmed."
+    }
+}

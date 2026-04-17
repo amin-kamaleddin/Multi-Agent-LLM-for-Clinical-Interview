@@ -1,0 +1,10 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "reasoning": "Criterion A1 (restriction of energy intake): NOT MET \u2014 patient emphasized maintaining a stable weight and balanced nutrition, stating 'I feel stable and comfortable with my height and weight.' Criterion A2 (intense fear of gaining weight): NOT MET \u2014 patient did not express any fear of weight gain, focusing instead on health. Criterion A3 (disturbance in body image): NOT MET \u2014 patient did not report any distortion in body image, stating they feel healthy and have energy. Criterion A4 (underweight): NOT MET \u2014 patient reported their lowest weight was not below 120 pounds and maintained a stable weight. Total: 0 of 4 criteria met (threshold \u22651). Duration: not applicable as no criteria were met. Functional impairment: not applicable as no criteria were met. Exclusions: not triggered. Diagnosis: FALSE \u2014 no criteria for anorexia nervosa were met based on the patient's responses."
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "reasoning": "Criterion A1 (restriction of energy intake): NOT MET \u2014 patient emphasized maintaining a stable weight and balanced nutrition, stating 'I feel stable and comfortable with my height and weight.' Criterion A2 (intense fear of gaining weight): NOT MET \u2014 patient did not express any fear of weight gain, focusing instead on health. Criterion A3 (disturbance in body image): NOT MET \u2014 patient did not report any distortion in body image, stating they feel healthy and have energy. Criterion A4 (underweight): NOT MET \u2014 patient reported their lowest weight was not below 120 pounds and maintained a stable weight. Total: 0 of 4 criteria met (threshold \u22651). Duration: not applicable as no criteria were met. Functional impairment: not applicable as no criteria were met. Exclusions: not triggered. Diagnosis: FALSE \u2014 no criteria for anorexia nervosa were met based on the patient's responses."
+    }
+}

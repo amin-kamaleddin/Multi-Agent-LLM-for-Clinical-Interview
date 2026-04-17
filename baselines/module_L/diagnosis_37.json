@@ -1,0 +1,6 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "reasoning": "Criterion A1 (restricting food intake): MET \u2014 patient stated 'I often avoid certain foods and limit my intake.' Criterion A2 (intense fear of gaining weight): MET \u2014 'I often feel a strong fear of gaining weight, even when I know I am underweight.' Criterion A3 (distorted body image): MET \u2014 'I often feel that my body is larger than it should be.' Criterion A4 (self-worth influenced by weight): MET \u2014 'My feelings about myself often depend on my body weight and shape.' Criterion A5 (low body weight): MET \u2014 patient reported a lowest weight below 100 pounds. Total: 5 of 5 criteria met (threshold \u22651). Duration: not explicitly stated, but the patient mentions ongoing behaviors and thoughts. Functional impairment: UNCLEAR \u2014 while the patient expresses significant concern about weight, there is no clear evidence of marked distress or impairment in functioning. Exclusions: not triggered. Diagnosis: TRUE \u2014 full threshold met with multiple criteria satisfied."
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "positive": {
+        "diagnosis": true,
+        "reasoning": "Criterion A1 (depressed mood): MET \u2014 patient stated 'I've been feeling down for quite a while now, like most days just don\u2019t feel great.' Criterion A2 (anhedonia): MET \u2014 'Not really feeling up for things I used to like.' Criterion A3 (weight/appetite): MET \u2014 'I've noticed my appetite isn\u2019t quite the same. It\u2019s been less than normal.' Criterion A4 (sleep): MET \u2014 'I've had some trouble with sleep lately. Sometimes it takes a while to fall asleep.' Criterion A5 (psychomotor agitation/retardation): MET \u2014 'It\u2019s been pretty much like that almost daily. I sometimes feel like I'm just dragging through the day.' Criterion A6 (fatigue): MET \u2014 'I've been feeling pretty drained lately, like I just don\u2019t have much energy.' Criterion A7 (worthlessness/guilt): MET \u2014 'Sometimes I feel like I haven't been doing enough at work or in my life.' Criterion A8 (concentration): MET \u2014 'It's been hard to focus on things lately. Decisions take longer.' Criterion A9 (suicidal thoughts): NOT MET \u2014 patient stated, 'I\u2019m safe right now. Just been feeling a bit down and tired.' Total: 8 of 9 criteria met (threshold \u22655). Duration: met (patient reports symptoms for at least 2 weeks). Functional impairment: met ('I haven't been doing much of what I usually do. It's been hard to keep up at work.'). Exclusions: not triggered (no substance use or medical conditions reported). Diagnosis: TRUE \u2014 full threshold met with significant functional impairment confirmed.",
+        "timeFrame": "recent"
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "reasoning": "Criterion A5: UNCLEAR \u2014 patient indicated there have been a couple of past episodes but was vague about the exact number and duration. Patient stated, 'It\u2019s been hard to keep track.' Criterion O1a: NO \u2014 patient did not report a period of at least 2 months without significant depression or loss of interest. Criterion O1b: NO \u2014 patient indicated ongoing symptoms without clear periods of remission. Diagnosis: FALSE \u2014 insufficient evidence for recurrent episodes as defined by the criteria."
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "positive": {
+        "diagnosis": true,
+        "reasoning": "Criterion 1 (recurrent thoughts): MET \u2014 patient stated 'Yes, I have experienced recurrent thoughts about contamination and the fear of germs.' Criterion 2 (attempts to suppress): MET \u2014 'I have indeed made efforts to manage those thoughts...by washing my hands.' Criterion 3 (thoughts keep returning): MET \u2014 'I frequently notice these thoughts returning even when I try to focus on other things.' Criterion 4 (compulsive behavior): MET \u2014 'I have felt a strong urge to wash my hands repeatedly.' Criterion 5 (rituals to reduce anxiety): MET \u2014 'The rituals...are primarily to reduce my anxiety and discomfort related to contamination fears.' Criterion 6 (significant distress or impairment): MET \u2014 'This has affected my daily routine...leading to about an hour a day spent on these compulsions.' Total: 6 of 6 criteria met (threshold \u22654). Duration: met (symptoms reported in the past month). Functional impairment: met (interferes with daily routine). Exclusions: not triggered (no substance use or medical conditions linked). Diagnosis: TRUE \u2014 full criteria met with significant functional impairment confirmed.",
+        "insight": "goodOrFair",
+        "ticRelated": false
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (recurrent thoughts): MET \u2014 patient stated 'Yes, I have experienced recurrent thoughts about contamination and the fear of germs.' Criterion 2 (attempts to suppress): MET \u2014 'I have indeed made efforts to manage those thoughts...by washing my hands.' Criterion 3 (thoughts keep returning): MET \u2014 'I frequently notice these thoughts returning even when I try to focus on other things.' Criterion 4 (compulsive behavior): MET \u2014 'I have felt a strong urge to wash my hands repeatedly.' Criterion 5 (rituals to reduce anxiety): MET \u2014 'The rituals...are primarily to reduce my anxiety and discomfort related to contamination fears.' Criterion 6 (significant distress or impairment): MET \u2014 'This has affected my daily routine...leading to about an hour a day spent on these compulsions.' Total: 6 of 6 criteria met (threshold \u22654). Duration: met (symptoms reported in the past month). Functional impairment: met (interferes with daily routine). Exclusions: not triggered (no substance use or medical conditions linked). Diagnosis: TRUE \u2014 full criteria met with significant functional impairment confirmed."
+    }
+}

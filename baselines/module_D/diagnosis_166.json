@@ -1,0 +1,10 @@
+{
+    "lifetime": {
+        "diagnosis": true,
+        "reasoning": "Criterion 1 (panic attacks): MET \u2014 patient confirmed experiencing spells of anxiety and panic attacks in public places without clear triggers. Criterion 2 (4 or more symptoms): MET \u2014 patient reported experiencing racing heart, sweating, trembling, shortness of breath, choking sensation, chest discomfort, dizziness, and feelings of detachment, totaling 8 symptoms clearly met. Criterion 3 (no other disorders): MET \u2014 patient denied any other medical conditions or substance use that could explain symptoms. Total: 8 of 9 symptoms met (threshold \u22654). Diagnosis: TRUE \u2014 full threshold met with no exclusion criteria triggered."
+    },
+    "current": {
+        "diagnosis": true,
+        "reasoning": "Criterion 1 (current panic attacks): MET \u2014 patient reported persistent concern about having another attack and behavioral changes over the past month. Criterion 2 (no other disorders): MET \u2014 patient denied any substance use or medical conditions that could explain symptoms. Diagnosis: TRUE \u2014 current symptoms and concerns are consistent with panic disorder criteria."
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "reasoning": "Criterion A1 (depressed mood): NOT MET \u2014 patient stated 'things have been okay' and 'it's nothing I can't handle,' indicating no significant depressed mood. Criterion A2 (anhedonia): NOT MET \u2014 patient repeatedly indicated 'things are fine' and 'I still do stuff,' suggesting no significant loss of interest or enjoyment. Criterion A3 (weight/appetite): NOT MET \u2014 no mention of changes in weight or appetite. Criterion A4 (sleep): NOT MET \u2014 no information provided regarding sleep patterns. Total: 0 of 9 criteria met (threshold \u22655). Duration: not met (no symptoms reported for 2 weeks). Functional impairment: NOT MET \u2014 patient did not report any significant distress or impairment in functioning. Exclusions: not triggered. Diagnosis: FALSE \u2014 no criteria met for a major depressive episode."
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "reasoning": "Criterion A5: NOT MET \u2014 patient did not report any previous episodes of depression. Exclusions: not triggered. Diagnosis: FALSE \u2014 no evidence of recurrent episodes."
+    }
+}

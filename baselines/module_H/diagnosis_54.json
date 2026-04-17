@@ -1,0 +1,10 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "reasoning": "Criterion A1 (traumatic event): NOT MET \u2014 patient explicitly stated, 'I haven't experienced or witnessed any events that would qualify as extremely traumatic.' Criterion A2 (symptoms related to trauma): NOT MET \u2014 no trauma-related symptoms were reported. Criterion A3 (duration): NOT MET \u2014 no symptoms were endorsed. Criterion A4 (functional impairment): NOT MET \u2014 patient mentioned no lasting effects on functioning or emotional state. Total: 0 of 4 criteria met (threshold \u22651). Exclusions: not applicable as no trauma was reported. Diagnosis: FALSE \u2014 no evidence of a traumatic event or related symptoms."
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "reasoning": "Criterion A1 (traumatic event): NOT MET \u2014 patient explicitly stated, 'I haven't experienced or witnessed any events that would qualify as extremely traumatic.' Total: 0 of 4 criteria met (threshold \u22652). Diagnosis: FALSE \u2014 no evidence of recurrent symptoms as no trauma was reported."
+    }
+}

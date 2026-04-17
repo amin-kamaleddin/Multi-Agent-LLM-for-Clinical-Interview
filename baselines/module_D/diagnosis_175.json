@@ -1,0 +1,10 @@
+{
+    "current": {
+        "diagnosis": false,
+        "reasoning": "Criterion D6 (panic attacks): MET \u2014 patient stated they have experienced episodes of anxiety and discomfort in situations that seem ordinary, indicating recurrent panic attacks. Criterion O1a (substance-induced): NO \u2014 patient did not mention any substance use related to these experiences. Criterion O1b (medical condition): NO \u2014 no medical conditions were reported that could explain the symptoms. Total: 1 of 1 criterion met. Duration: not applicable as current criteria are assessed. Functional impairment: not explicitly described, but the patient indicates distress from these episodes. Exclusions: not triggered. Diagnosis: TRUE \u2014 the patient meets the criteria for current panic disorder with recurrent panic attacks and no exclusion factors present."
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "reasoning": "Criterion D6 (panic attacks): MET \u2014 patient described experiencing episodes of anxiety and discomfort in ordinary situations, indicating recurrent panic attacks. Criterion O1a (substance-induced): NO \u2014 no mention of substance use. Criterion O1b (medical condition): NO \u2014 no medical conditions reported. Total: 1 of 1 criterion met. Duration: not applicable as recurrent criteria are assessed. Functional impairment: not explicitly described, but distress is indicated. Exclusions: not triggered. Diagnosis: TRUE \u2014 the patient meets the criteria for recurrent panic disorder with no exclusion factors."
+    }
+}

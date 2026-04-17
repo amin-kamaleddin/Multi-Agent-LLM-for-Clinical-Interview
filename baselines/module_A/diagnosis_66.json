@@ -1,0 +1,10 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "reasoning": "Criterion A1 (depressed mood): NOT MET \u2014 patient stated 'I haven't really felt that way for a while now' indicating no current depressed mood. Criterion A2 (anhedonia): NOT MET \u2014 patient stated 'I still find some enjoyment in things I used to like,' indicating no significant loss of interest. Criterion A3 (weight/appetite): NOT MET \u2014 patient did not mention any changes in weight or appetite. Criterion A4 (sleep): NOT MET \u2014 patient did not report any sleep disturbances. Criterion A5 (psychomotor agitation/retardation): NOT MET \u2014 patient did not mention any issues with movement or activity levels. Criterion A6 (fatigue/loss of energy): NOT MET \u2014 patient did not report fatigue. Criterion A7 (feelings of worthlessness/excessive guilt): NOT MET \u2014 patient did not express feelings of worthlessness or guilt. Criterion A8 (difficulty concentrating): NOT MET \u2014 patient did not report any concentration issues. Criterion A9 (suicidal ideation): NOT MET \u2014 patient did not express any thoughts of self-harm or suicide. Total: 0 of 9 criteria met (threshold \u22655). Duration: not applicable as no symptoms were endorsed. Functional impairment: NOT MET \u2014 patient indicated they manage their stress and have a stable mood. Exclusions: not triggered. Diagnosis: FALSE \u2014 no criteria met for a major depressive episode."
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "reasoning": "Criterion A5: NOT MET \u2014 patient did not report any previous episodes of depression. Exclusions: not triggered. Diagnosis: FALSE \u2014 no recurrent episodes reported."
+    }
+}

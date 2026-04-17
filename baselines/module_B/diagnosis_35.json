@@ -1,0 +1,10 @@
+{
+    "current": {
+        "diagnosis": true,
+        "reasoning": "Criterion 1 (thoughts of being better off dead): MET \u2014 patient stated, 'There have been moments in the past month where I've had thoughts about being dead.' Criterion 2 (thoughts of self-harm): MET \u2014 patient reported, 'I find myself having thoughts about hurting myself.' Criterion 3 (frequency of thoughts): MET \u2014 patient indicated these thoughts occur 'several times' during intense stress. Criterion 4 (intensity of thoughts): MET \u2014 patient described thoughts as 'moderately intense' and 'unsettling.' Criterion 5 (intent to act): NOT MET \u2014 patient explicitly stated, 'I do not intend to act on them.' Criterion 6 (plan): NOT MET \u2014 patient denied having a plan or specific means. Criterion 7 (access to means): NOT MET \u2014 patient stated, 'I do not have access to any harmful means.' Criterion 8 (functional impairment): MET \u2014 patient expressed feelings of guilt and confusion, indicating distress. Total: 5 of 8 criteria met (threshold \u22651). Duration: met (symptoms reported in the past month). Functional impairment: met (significant distress noted). Exclusions: not triggered (no substance use or medical conditions reported). Diagnosis: TRUE \u2014 current suicidal thoughts present with significant distress but no intent or plan to act."
+    },
+    "lifetime": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (lifetime suicide attempt): NOT MET \u2014 patient stated, 'I have never actually wanted to end my life.' Criterion 2 (lifetime thoughts of self-harm): MET \u2014 patient reported experiencing fleeting thoughts of self-harm during overwhelming situations. Total: 1 of 2 criteria met (threshold \u22651). Diagnosis: FALSE \u2014 no lifetime suicide attempts reported, and the patient does not express a desire to end their life."
+    }
+}

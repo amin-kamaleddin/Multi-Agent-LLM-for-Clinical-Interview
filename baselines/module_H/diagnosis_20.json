@@ -1,0 +1,10 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "reasoning": "Criterion H7 (exposure to trauma): NOT MET \u2014 patient explicitly stated that they have not experienced or witnessed an extreme traumatic event as defined by the criteria. Criterion H3a (intrusive memories): NOT MET \u2014 patient did not report any intrusive memories related to trauma. Criterion H3b (distressing dreams): NOT MET \u2014 patient did not report distressing dreams related to trauma. Criterion H4a (dissociative reactions): NOT MET \u2014 patient did not endorse any dissociative reactions. Criterion H4b (psychological distress): NOT MET \u2014 patient did not report psychological distress related to reminders of trauma. Criterion H4c (physiological reactions): NOT MET \u2014 patient did not report physiological reactions to reminders of trauma. Criterion H5a (avoidance of memories): NOT MET \u2014 patient did not endorse avoidance of memories related to trauma. Criterion H5b (avoidance of reminders): NOT MET \u2014 patient did not endorse avoidance of reminders related to trauma. Criterion H5c (negative alterations in cognitions): NOT MET \u2014 patient did not report negative alterations in cognitions. Criterion H5d (negative mood): NOT MET \u2014 patient did not report negative mood. Criterion H5e (diminished interest): NOT MET \u2014 patient stated they can still enjoy activities. Criterion H5f (feeling detached): NOT MET \u2014 patient did not report feeling detached from others. Total: 0 of 6 criteria met (threshold \u22651). Duration: not applicable as no criteria were met. Functional impairment: not applicable as no criteria were met. Exclusions: not triggered. Diagnosis: FALSE \u2014 no evidence of exposure to trauma or related symptoms."
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "reasoning": "Criterion H7 (exposure to trauma): NOT MET \u2014 patient explicitly stated that they have not experienced or witnessed an extreme traumatic event as defined by the criteria. Total: 0 of 6 criteria met (threshold \u22652). Diagnosis: FALSE \u2014 no evidence of recurrent episodes as no trauma exposure was reported."
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "positive": {
+        "diagnosis": true,
+        "reasoning": "Criterion 1 (recurrent thoughts): MET \u2014 patient stated 'I have experienced recurrent thoughts about contamination.' Criterion 2 (attempt to suppress): MET \u2014 'I have tried to suppress these thoughts of contamination at times.' Criterion 3 (thoughts persist): MET \u2014 'They persistently return, even when I try to push them away.' Criterion 4 (compulsive behavior): MET \u2014 'I felt compelled to wash my hands repeatedly.' Criterion 5 (rituals to reduce anxiety): MET \u2014 'The rituals I perform...are done to prevent anxiety and distress.' Criterion 6 (significant distress/functional impairment): MET \u2014 'These intrusive thoughts...take up more than an hour daily...interfere with my work and social interactions.' Total: 6 of 6 criteria met (threshold \u22654). Exclusions: not triggered (no substance use or medical conditions reported). Diagnosis: TRUE \u2014 full criteria met with significant functional impairment confirmed.",
+        "insight": "goodOrFair",
+        "ticRelated": false
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (recurrent thoughts): MET \u2014 patient stated 'I have experienced recurrent thoughts about contamination.' Criterion 2 (attempt to suppress): MET \u2014 'I have tried to suppress these thoughts of contamination at times.' Criterion 3 (thoughts persist): MET \u2014 'They persistently return, even when I try to push them away.' Criterion 4 (compulsive behavior): MET \u2014 'I felt compelled to wash my hands repeatedly.' Criterion 5 (rituals to reduce anxiety): MET \u2014 'The rituals I perform...are done to prevent anxiety and distress.' Criterion 6 (significant distress/functional impairment): MET \u2014 'These intrusive thoughts...take up more than an hour daily...interfere with my work and social interactions.' Total: 6 of 6 criteria met (threshold \u22654). Exclusions: not triggered (no substance use or medical conditions reported). Diagnosis: TRUE \u2014 full criteria met with significant functional impairment confirmed."
+    }
+}

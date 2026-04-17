@@ -1,0 +1,10 @@
+{
+    "current": {
+        "diagnosis": true,
+        "reasoning": "Criterion 1 (thoughts of being better off dead): MET \u2014 patient stated, 'I wonder if it would be easier not to be here.' Criterion 2 (thoughts of harming self): MET \u2014 'I\u2019ve had moments where those thoughts crept in.' Criterion 3 (frequency of thoughts): MET \u2014 patient indicated thoughts occur 'more often than I\u2019d like to admit.' Criterion 4 (intensity of thoughts): MET \u2014 'the idea feels like a release, almost comforting.' Criterion 5 (intent to act): MET \u2014 'there were moments when the weight of despair felt unbearable... I was seriously considering it.' Criterion 6 (impulse to act): MET \u2014 'I found myself thinking about not wanting to be here anymore.' Criterion 7 (difficulty resisting impulses): MET \u2014 'I really struggle to push those thoughts away.' Criterion 8 (active steps towards suicide): NOT MET \u2014 patient stated, 'I recognize I haven't taken any steps towards actually following through with them.' Total: 7 of 8 criteria met (threshold \u22651). Duration: met (symptoms reported in the past month). Functional impairment: met (patient describes feelings as overwhelming and affecting daily life). Exclusions: not triggered as symptoms are not solely due to substance use or medical conditions. Diagnosis: TRUE \u2014 significant current suicidal ideation with intent and functional impairment confirmed."
+    },
+    "lifetime": {
+        "diagnosis": true,
+        "reasoning": "Criterion 1 (lifetime attempts): MET \u2014 patient confirmed, 'there have been multiple attempts.' Criterion 2 (number of attempts): MET \u2014 patient stated, 'I could say there were a few critical times I can remember vividly.' Criterion 3 (last attempt): MET \u2014 patient indicated it was 'a long time ago.' Total: 3 of 3 criteria met (threshold \u22651). Diagnosis: TRUE \u2014 patient has a history of multiple suicide attempts."
+    }
+}

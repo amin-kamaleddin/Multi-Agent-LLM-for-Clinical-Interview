@@ -1,0 +1,10 @@
+{
+    "current": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1: MET \u2014 patient reported fleeting thoughts of being better off dead. Criterion 2: MET \u2014 patient indicated thoughts of self-harm during overwhelming moments. Criterion 3: MET \u2014 patient described these thoughts as frightening and intense but without intent to act. Criterion 4: MET \u2014 patient experiences these thoughts occasionally, particularly when overwhelmed. Criterion 5: NOT MET \u2014 patient does not have a specific plan or intent to follow through. Criterion 6: NOT MET \u2014 patient does not hear voices or have dreams with suicidal content. Criterion 7: NOT MET \u2014 patient does not have a specific method or means in mind. Criterion 8: NOT MET \u2014 patient does not have a specific timeframe or tasks in mind related to suicide. Criterion 9: NOT MET \u2014 patient has not taken active steps towards a suicide attempt. Criterion 10: NOT MET \u2014 patient has not injured themselves on purpose. Criterion 11: NOT MET \u2014 patient has not attempted suicide. Criterion 12: MET \u2014 patient experiences these thoughts occasionally, but they are fleeting and do not dominate their day. Total: Requires \u22651 of 1 current criteria; found 1 clearly met. Duration: met (thoughts occurred within the past month). Functional impairment: unclear, as the patient describes distress but does not specify significant impairment. Exclusions: not triggered, as symptoms are not attributed to substances or medical conditions. Diagnosis: TRUE \u2014 the patient meets the criteria for current suicidal ideation with no intent to act, indicating significant distress without a plan or means."
+    },
+    "lifetime": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1: NOT MET \u2014 patient has never made a suicide attempt. Total: Requires \u22651 of 1 lifetime criteria; found 0 clearly met. Diagnosis: FALSE \u2014 the patient does not meet the criteria for a lifetime suicide attempt."
+    }
+}

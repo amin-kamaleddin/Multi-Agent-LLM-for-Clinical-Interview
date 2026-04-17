@@ -1,0 +1,10 @@
+{
+    "lifetime": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (D3): MET \u2014 patient confirmed experiencing multiple instances of anxiety, fear, or discomfort in public spaces. Criterion 2 (D4a-D4m): NOT MET \u2014 patient did not report 4 or more symptoms from the list; only mentioned feelings of anxiety and discomfort without specifying additional symptoms. Criterion 3 (O1a and O1b): O1a = NO and O1b = NO \u2014 patient did not report any significant medical conditions or substance use that could explain the symptoms. Total: 1 of 3 criteria met (threshold \u22652). Exclusions: not triggered. Diagnosis: FALSE \u2014 insufficient symptom count and no full syndromal episode established."
+    },
+    "current": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (D6): UNCLEAR \u2014 patient described feelings of anxiety in public but did not specify if these are current or ongoing. Criterion 2 (O1a and O1b): O1a = NO and O1b = NO \u2014 patient did not report any significant medical conditions or substance use that could explain the symptoms. Total: 0 of 1 criteria met (threshold \u22651). Exclusions: not triggered. Diagnosis: FALSE \u2014 current symptoms not clearly established."
+    }
+}

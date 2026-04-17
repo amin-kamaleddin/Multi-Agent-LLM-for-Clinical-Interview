@@ -1,0 +1,14 @@
+{
+    "current": {
+        "diagnosis": false,
+        "reasoning": ""
+    },
+    "severity": {
+        "diagnosis": "Moderate",
+        "reasoning": "The individual has reported binge eating episodes at least once a week, which qualifies as moderate severity (4-7 episodes per week)."
+    },
+    "exclusions": {
+        "diagnosis": false,
+        "reasoning": ""
+    }
+}

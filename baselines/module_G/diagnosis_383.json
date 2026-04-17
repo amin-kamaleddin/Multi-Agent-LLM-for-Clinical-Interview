@@ -1,0 +1,12 @@
+{
+    "positive": {
+        "diagnosis": true,
+        "reasoning": "Criterion 1 (recurrent thoughts): MET \u2014 patient stated 'I've been dealing with some unwanted thoughts lately... It's been happening more often in the past month.' Criterion 2 (attempt to suppress): MET \u2014 'I\u2019ve been trying to push those thoughts away, but they keep coming back.' Criterion 3 (thoughts keep returning): MET \u2014 'They often pop back into my mind, even when I try to push them away.' Criterion 4 (compulsive behavior): MET \u2014 'I've found myself checking the locks repeatedly whenever I leave the house.' Criterion 5 (rituals to reduce anxiety): MET \u2014 'It often feels like I need to do them, and sometimes they can seem a bit much.' Criterion 6 (distress and functional impairment): MET \u2014 'I would say they have caused some distress and made it tough to focus at work.' Total: 6 of 6 criteria met (threshold \u22654). Duration: met (symptoms reported for the past month). Functional impairment: met (difficulty focusing at work). Exclusions: not triggered (no substance use or medical issues reported). Diagnosis: TRUE \u2014 full criteria met with significant distress and functional impairment confirmed.",
+        "insight": "goodOrFair",
+        "ticRelated": false
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (recurrent thoughts): MET \u2014 patient stated 'I've been dealing with some unwanted thoughts lately... It's been happening more often in the past month.' Criterion 2 (attempt to suppress): MET \u2014 'I\u2019ve been trying to push those thoughts away, but they keep coming back.' Criterion 3 (thoughts keep returning): MET \u2014 'They often pop back into my mind, even when I try to push them away.' Criterion 4 (compulsive behavior): MET \u2014 'I've found myself checking the locks repeatedly whenever I leave the house.' Criterion 5 (rituals to reduce anxiety): MET \u2014 'It often feels like I need to do them, and sometimes they can seem a bit much.' Criterion 6 (distress and functional impairment): MET \u2014 'I would say they have caused some distress and made it tough to focus at work.' Total: 6 of 6 criteria met (threshold \u22654). Duration: met (symptoms reported for the past month). Functional impairment: met (difficulty focusing at work). Exclusions: not triggered (no substance use or medical issues reported). Diagnosis: TRUE \u2014 full criteria met with significant distress and functional impairment confirmed."
+    }
+}

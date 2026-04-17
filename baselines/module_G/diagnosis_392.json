@@ -1,0 +1,10 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (obsessive thoughts): NOT MET \u2014 patient stated 'I haven't really experienced any of those thoughts or feelings in the past month.' Criterion 2 (compulsive behaviors): NOT MET \u2014 patient reported 'I haven't really experienced anything like that in the past month.' Criterion 3 (distress/functioning): NOT MET \u2014 patient indicated 'I wouldn't say they have caused significant distress or interfered much with my daily life.' Total: 0 of 3 criteria met (threshold \u22651). Duration: not applicable as no symptoms were endorsed. Functional impairment: not met as patient reports no significant distress or interference. Exclusions: not triggered as patient denies substance use or medical issues. Diagnosis: FALSE \u2014 no criteria for obsessive-compulsive disorder were met."
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (obsessive thoughts): NOT MET \u2014 patient stated 'I haven't really experienced any of those thoughts or feelings in the past month.' Criterion 2 (compulsive behaviors): NOT MET \u2014 patient reported 'I haven't really experienced anything like that in the past month.' Total: 0 of 3 criteria met (threshold \u22652). Duration: not applicable as no symptoms were endorsed. Functional impairment: not met as patient reports no significant distress or interference. Exclusions: not triggered as patient denies substance use or medical issues. Diagnosis: FALSE \u2014 no recurrent episodes of obsessive-compulsive disorder were identified."
+    }
+}

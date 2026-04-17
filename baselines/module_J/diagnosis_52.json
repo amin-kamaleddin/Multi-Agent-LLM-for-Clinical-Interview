@@ -1,0 +1,10 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "reasoning": "Criterion J2a (using substances more than once): NOT MET \u2014 patient stated 'I haven\u2019t taken any of those substances more than once for those reasons.' Criterion J2b (using substances to get high): NOT MET \u2014 patient indicated they do not seek substances to change mood or for a high. Criterion J2c (craving): NOT MET \u2014 patient did not express any craving for substances. Criterion J2d (failure to fulfill obligations): NOT MET \u2014 patient reported that their life remains stable and unaffected. Criterion J2e (social problems): NOT MET \u2014 no indication of social issues related to substance use. Criterion J2f (hazardous use): NOT MET \u2014 no mention of using substances in hazardous situations. Criterion J2g (legal problems): NOT MET \u2014 no legal issues reported. Criterion J2h (tolerance): NOT MET \u2014 no evidence of needing more of the substance to achieve the same effect. Criterion J2i (withdrawal): NOT MET \u2014 no withdrawal symptoms reported. Criterion J2j (using larger amounts): NOT MET \u2014 patient stated they do not use substances more than once. Total: 0 of 11 criteria met (threshold \u22652). Duration: not applicable as no criteria are met. Functional impairment: NOT MET \u2014 patient explicitly stated their life remains stable and unaffected. Exclusions: not triggered. Diagnosis: FALSE \u2014 no criteria for substance use disorder are met."
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "reasoning": "Criterion J2a (using substances more than once): NOT MET \u2014 patient stated 'I haven\u2019t taken any of those substances more than once for those reasons.' Total: 0 of 11 criteria met (threshold \u22652). Duration: not applicable as no criteria are met. Functional impairment: NOT MET \u2014 patient explicitly stated their life remains stable and unaffected. Exclusions: not triggered. Diagnosis: FALSE \u2014 no criteria for recurrent substance use disorder are met."
+    }
+}

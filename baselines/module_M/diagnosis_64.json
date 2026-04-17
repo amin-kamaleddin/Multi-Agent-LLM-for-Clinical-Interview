@@ -1,0 +1,10 @@
+{
+    "current": {
+        "diagnosis": true,
+        "reasoning": "The individual reports engaging in binge eating episodes at least once a week, feeling out of control during these episodes, and compensating through fasting multiple times a week. This aligns with the diagnostic criteria for bulimia nervosa."
+    },
+    "recurrent": {
+        "diagnosis": true,
+        "reasoning": "The individual has described a pattern of binge eating and compensatory behaviors occurring weekly for the past three months, indicating a recurrent nature of the disorder."
+    }
+}

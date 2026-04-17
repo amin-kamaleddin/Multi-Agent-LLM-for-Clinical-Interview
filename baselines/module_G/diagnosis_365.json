@@ -1,0 +1,11 @@
+{
+    "positive": {
+        "diagnosis": true,
+        "reasoning": "Criterion 1 (recurrent thoughts): MET \u2014 patient stated 'I've had some thoughts lately that I find hard to shake off.' Criterion 2 (attempt to suppress): MET \u2014 'I\u2019ve definitely been trying to push those thoughts away.' Criterion 3 (thoughts keep coming back): MET \u2014 'It's pretty common for those thoughts to pop back up.' Criterion 4 (compulsive behaviors): MET \u2014 'I\u2019ve noticed that I tend to check things multiple times.' Criterion 5 (rituals to prevent anxiety): MET \u2014 'I think the things I do sometimes feel like they're to keep things from going wrong.' Criterion 6 (significant distress/functional impairment): MET \u2014 'It can get in the way of getting things done at work.' Total: 6 of 6 criteria met (threshold \u22654). Duration: met (symptoms reported for the past month). Functional impairment: met (affects work). Exclusions: not triggered (no substance use or medical conditions reported). Diagnosis: TRUE \u2014 full criteria met with significant functional impairment confirmed.",
+        "insight": "goodOrFair"
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (recurrent thoughts): MET \u2014 patient stated 'I've had some thoughts lately that I find hard to shake off.' Criterion 2 (attempt to suppress): MET \u2014 'I\u2019ve definitely been trying to push those thoughts away.' Criterion 3 (thoughts keep coming back): MET \u2014 'It's pretty common for those thoughts to pop back up.' Criterion 4 (compulsive behaviors): MET \u2014 'I\u2019ve noticed that I tend to check things multiple times.' Criterion 5 (rituals to prevent anxiety): MET \u2014 'I think the things I do sometimes feel like they're to keep things from going wrong.' Criterion 6 (significant distress/functional impairment): MET \u2014 'It can get in the way of getting things done at work.' Total: 6 of 6 criteria met (threshold \u22654). Duration: met (symptoms reported for the past month). Functional impairment: met (affects work). Exclusions: not triggered (no substance use or medical conditions reported). Diagnosis: TRUE \u2014 full criteria met with significant functional impairment confirmed."
+    }
+}

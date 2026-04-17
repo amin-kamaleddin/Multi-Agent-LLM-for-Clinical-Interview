@@ -1,0 +1,18 @@
+{
+    "current": {
+        "diagnosis": true,
+        "reasoning": "Criterion 1 (thoughts of being better off dead): MET \u2014 patient stated, 'There have been moments recently when I thought it would be easier if I wasn't here.' Criterion 2 (thoughts of harming self): MET \u2014 'I have had thoughts about harming myself.' Criterion 3 (frequency of thoughts): MET \u2014 patient described thoughts as 'occasionally' occurring. Criterion 4 (intensity of thoughts): MET \u2014 'I have thought about it a few times, especially when feeling overwhelmed.' Criterion 5 (intent to act): NOT MET \u2014 patient explicitly stated, 'I don\u2019t want to act on them.' Criterion 6 (specific method): NOT MET \u2014 'I haven't focused on a specific method.' Criterion 7 (specific means): NOT MET \u2014 'I don\u2019t have a specific means in mind.' Criterion 8 (specific location): NOT MET \u2014 'I haven't really focused on a specific location.' Criterion 9 (specific timeframe): NOT MET \u2014 'I haven\u2019t set a specific date or timeframe.' Criterion 10 (tasks before attempt): NOT MET \u2014 'I haven\u2019t thought about specific tasks or plans.' Criterion 11 (intent to act): NOT MET \u2014 'I never intended to act on those thoughts.' Criterion 12 (impulse to kill): NOT MET \u2014 'I don\u2019t want to follow through with anything.' Criterion 13 (difficulty resisting impulses): MET \u2014 'Sometimes it's hard to push those thoughts away.' Criterion 14 (active steps toward attempt): NOT MET \u2014 'I haven't taken any active steps toward that.' Criterion 15 (self-injury): NOT MET \u2014 'I haven't actually done anything to cause injury.' Criterion 16 (suicide attempt): NOT MET \u2014 'I have never made a suicide attempt.' Total: 3 of 16 criteria met (threshold \u22651). Duration: met (thoughts occurred in the past month). Functional impairment: met (patient expressed feelings of confusion and guilt). Exclusions: not triggered (no substance use or medical conditions reported). Diagnosis: TRUE \u2014 current suicidal thoughts are present with significant distress but no intent to act."
+    },
+    "lifetime": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (lifetime suicide attempt): NOT MET \u2014 patient stated, 'I have never made a suicide attempt.' Total: 0 of 1 criteria met (threshold \u22651). Diagnosis: FALSE \u2014 no lifetime suicide attempts reported."
+    },
+    "likely_in_near_future": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (likelihood of attempt in next 3 months): UNCLEAR \u2014 patient rated likelihood as 30 on a scale of 0-100, indicating some risk but not a strong intent. Total: 0 of 1 criteria met (threshold \u22651). Diagnosis: FALSE \u2014 insufficient evidence of intent to act in the near future."
+    },
+    "suicidal_behavior_disorder": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (B18): NOT MET \u2014 patient has not attempted suicide. Total: 0 of 1 criteria met (threshold \u22651). Diagnosis: FALSE \u2014 no evidence of suicidal behavior disorder."
+    }
+}

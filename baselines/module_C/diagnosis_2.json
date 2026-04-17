@@ -1,0 +1,6 @@
+{
+    "current": {
+        "diagnosis": true,
+        "reasoning": "Criterion C1b: YES \u2014 patient reports feeling unusually high in mood and energy, with others noticing the change. Criterion C3: MET \u2014 patient endorsed 5 symptoms: elevated mood, increased energy, decreased need for sleep, increased talkativeness, and racing thoughts. Criterion C4b: YES \u2014 patient reported symptoms lasting over 7 days. Criterion C7: YES \u2014 patient confirmed no hospitalization. Criterion C4C: YES \u2014 patient described a significant increase in activity and drive. Criterion O1a: NO and O1b: NO \u2014 patient did not report substance use or withdrawal. Total: 5 of 9 criteria met (threshold \u22654). Duration: met (symptoms lasted over 7 days). Functional impairment: unclear \u2014 while productivity increased, there were mentions of impatience and potential strain in relationships. Exclusions: not triggered. Diagnosis: TRUE \u2014 full criteria met with significant mood elevation and functional changes noted, despite some ambiguity in the impact on relationships."
+    }
+}

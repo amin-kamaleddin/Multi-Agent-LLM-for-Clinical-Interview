@@ -1,0 +1,10 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "reasoning": "Criterion C1 (elevated mood): NOT MET \u2014 patient stated 'I haven't experienced a period of feeling 'up' or 'high'.' Criterion C2 (increased energy): NOT MET \u2014 patient reported 'My energy levels have been consistent.' Criterion C3 (irritability): NOT MET \u2014 patient denied persistent irritability, stating 'I haven\u2019t had persistent irritability that led to arguments.' Total: 0 of 4 criteria met (threshold \u22654). Duration: not applicable as no symptoms were endorsed. Functional impairment: not applicable as no symptoms were endorsed. Exclusions: not triggered. Diagnosis: FALSE \u2014 no criteria for a manic or hypomanic episode were met."
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "reasoning": "Criterion C1 (elevated mood): NOT MET \u2014 patient stated 'I haven't experienced a period of feeling 'up' or 'high'.' Criterion C2 (increased energy): NOT MET \u2014 patient reported 'My energy levels have been consistent.' Criterion C3 (irritability): NOT MET \u2014 patient denied persistent irritability, stating 'I haven\u2019t had persistent irritability that led to arguments.' Total: 0 of 4 criteria met (threshold \u22654). Duration: not applicable as no symptoms were endorsed. Functional impairment: not applicable as no symptoms were endorsed. Exclusions: not triggered. Diagnosis: FALSE \u2014 no criteria for a recurrent manic or hypomanic episode were met."
+    }
+}

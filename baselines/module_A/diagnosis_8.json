@@ -1,0 +1,11 @@
+{
+    "positive": {
+        "diagnosis": true,
+        "reasoning": "Criterion A1 (depressed mood): MET \u2014 patient stated 'it\u2019s just hard to feel anything good' and 'there\u2019s this emptiness that just lingers.' Criterion A2 (anhedonia): MET \u2014 'the things I used to love don\u2019t bring me any joy at all.' Criterion A3 (weight/appetite): MET \u2014 'my appetite isn't what it used to be' and 'I think I've lost a bit of weight without really trying.' Criterion A4 (sleep): MET \u2014 'I've definitely been having issues with my sleep lately.' Criterion A5 (psychomotor agitation/retardation): MET \u2014 'I've definitely felt a bit slower these days.' Criterion A6 (fatigue): MET \u2014 'most days, I just feel so drained.' Criterion A7 (worthlessness/guilt): MET \u2014 'it's hard not to feel guilty about not meeting my own expectations.' Criterion A8 (concentration): MET \u2014 'it\u2019s been pretty tough to stay focused lately.' Criterion A9 (suicidal thoughts): NOT MET \u2014 patient denied current suicidal thoughts, stating 'I'm not in that place right now.' Total: 8 of 9 criteria met (threshold \u22655). Duration: met (patient reports symptoms for the past two weeks). Functional impairment: met ('it's impacting my work and how I interact with others'). Exclusions: not triggered (no substance use or medical conditions reported). Diagnosis: TRUE \u2014 full threshold met with significant functional impairment confirmed.",
+        "timeFrame": "recent"
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "reasoning": "Criterion A5: UNCLEAR \u2014 patient indicated there have been 'a couple of stretches that were really tough' but did not clearly confirm two distinct episodes lasting at least two months each. Total: unclear on the number of episodes. Exclusions: not triggered. Diagnosis: FALSE \u2014 insufficient evidence for recurrent episodes as the patient could not confirm distinct episodes lasting the required duration."
+    }
+}

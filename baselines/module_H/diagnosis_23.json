@@ -1,0 +1,10 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "reasoning": "Criterion A1 (exposure to trauma): NOT MET \u2014 patient explicitly stated, 'I haven't experienced or witnessed any extreme traumatic events that involved actual or threatened death or serious injury.' Criterion A2 (intrusive symptoms): NOT MET \u2014 no evidence of intrusive symptoms as the patient did not endorse any traumatic experiences. Criterion A3 (avoidance): NOT MET \u2014 no avoidance symptoms were reported. Criterion A4 (negative alterations in cognition and mood): NOT MET \u2014 no negative alterations were indicated. Criterion A5 (arousal symptoms): NOT MET \u2014 no arousal symptoms were mentioned. Total: 0 of 5 criteria met (threshold \u22651). Duration: not applicable as no criteria were met. Functional impairment: not applicable as no symptoms were endorsed. Exclusions: not triggered. Diagnosis: FALSE \u2014 no evidence of trauma exposure or related symptoms."
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "reasoning": "Not applicable as no criteria for PTSD were met."
+    }
+}

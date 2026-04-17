@@ -1,0 +1,10 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "reasoning": "Criterion J2a (using substances to get high): NOT MET \u2014 patient explicitly stated 'I have not taken any of these substances for the purpose of getting high.' Criterion J2b (using substances in larger amounts or over a longer period than intended): NOT MET \u2014 patient did not endorse this behavior. Criterion J2c (unsuccessful efforts to cut down): NOT MET \u2014 patient did not indicate any attempts to reduce use. Criterion J2d (craving): NOT MET \u2014 patient did not express any cravings for substances. Criterion J2e (failure to fulfill major role obligations): NOT MET \u2014 patient stated they manage responsibilities consistently. Criterion J2f (continued use despite social problems): NOT MET \u2014 patient reported no negative effects from cannabis use. Criterion J2g (giving up important activities): NOT MET \u2014 patient did not indicate any loss of interest in activities. Criterion J2h (using substances in physically hazardous situations): NOT MET \u2014 patient did not report any such behavior. Criterion J2i (continued use despite physical or psychological problems): NOT MET \u2014 patient did not indicate any problems related to substance use. Criterion J2j (tolerance): NOT MET \u2014 patient did not report needing more of the substance to achieve desired effects. Criterion J2k (withdrawal): NOT MET \u2014 patient did not report experiencing withdrawal symptoms. Total: 0 of 11 criteria met (threshold \u22652). Duration: not applicable as no criteria were met. Functional impairment: not applicable as no criteria were met. Exclusions: not triggered. Diagnosis: FALSE \u2014 no criteria for substance use disorder were met."
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "reasoning": "Not applicable as the positive group criteria were not met."
+    }
+}
