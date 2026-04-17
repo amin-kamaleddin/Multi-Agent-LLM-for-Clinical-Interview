@@ -13,7 +13,7 @@ logging.basicConfig(
 log = logging.getLogger(__name__)
 
 # ── Config ────────────────────────────────────────────────────────────────────
-CSV_PATH    = "patient_agent_results/prediction_combined_all_modules.csv"
+CSV_PATH    = "./patient_agent_results/prediction_combined_all_modules.csv"
 N_BOOTSTRAP = 10_000
 RANDOM_SEED = 42
 
@@ -57,12 +57,15 @@ def bootstrap_cell(subset, n_bootstrap, seed):
         for key in results:
             results[key][i] = m[key]
 
+    # Point estimate from original data (plug-in estimator)
+    original_metrics = compute_metrics(y_true, y_pred)
+
     out = {}
     for key, vals in results.items():
         vals_pct = vals * 100
         out[key] = (
-            round(float(np.mean(vals_pct)), 2),
-            round(float(np.percentile(vals_pct, 2.5)),  2),
+            round(original_metrics[key] * 100, 2),           # mean from original data
+            round(float(np.percentile(vals_pct, 2.5)),  2),  # CI from bootstrap distribution
             round(float(np.percentile(vals_pct, 97.5)), 2),
         )
     return out
@@ -154,7 +157,7 @@ def main():
                 rows.append(row)
 
     result_df = pd.DataFrame(rows)
-    out_path = "patient_agent_results/evaluation_results.csv"
+    out_path = "./patient_agent_results/evaluation_results.csv"
     result_df.to_csv(out_path, index=False)
     log.info(f"Saved: {out_path} ({len(result_df)} rows)")
 
