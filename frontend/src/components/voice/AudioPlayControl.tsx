@@ -15,6 +15,7 @@ export default function AudioPlayControl({ text, uiLocked, onLock, onUnlock, lab
   const [progress, setProgress] = useState(0)
   const [indeterminate, setIndeterminate] = useState(false)
   const audioRef = useRef<HTMLAudioElement | null>(null)
+  const audioTextRef = useRef<string | null>(null)
   const rafRef = useRef<number | null>(null)
 
   useEffect(() => {
@@ -58,18 +59,27 @@ export default function AudioPlayControl({ text, uiLocked, onLock, onUnlock, lab
       stopPlayback()
       return
     }
-    // reuse audio if present
-    if (audioRef.current) {
+    // reuse audio ONLY if it matches the current text
+    if (audioRef.current && audioTextRef.current === text) {
       await audioRef.current.play()
       setPlaying(true)
       onLock?.()
       rafRef.current = requestAnimationFrame(tick)
       return
     }
+
+    // Otherwise, clear state and fetch new
+    if (audioRef.current) {
+      audioRef.current.pause()
+      audioRef.current = null
+    }
+
     setLoading(true)
     try {
-      const audio = new Audio(`${BASE_URL}/api/voice/tts?` + new URLSearchParams({ text }))
+      // Add timestamp to ensure browser doesn't cache stale text
+      const audio = new Audio(`${BASE_URL}/api/voice/tts?` + new URLSearchParams({ text, t: Date.now().toString() }))
       audioRef.current = audio
+      audioTextRef.current = text
       audio.onended = () => stopPlayback()
       audio.onloadedmetadata = () => {
         const dur = audio.duration || 0

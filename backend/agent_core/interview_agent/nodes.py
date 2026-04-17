@@ -42,8 +42,8 @@ _diagnosis_llm_cache = {}
 _patient_llm_cache = {}
 
 # Context variable to enable per-session API keys
-session_openai_api_key: contextvars.ContextVar[str | None] = contextvars.ContextVar(
-    "session_openai_api_key", default=None
+session_openai_api_key: contextvars.ContextVar[str] = contextvars.ContextVar(
+    "session_openai_api_key", default= ""
 )
 
 
