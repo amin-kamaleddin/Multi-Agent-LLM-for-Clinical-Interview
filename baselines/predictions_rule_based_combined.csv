@@ -1,0 +1,91 @@
+id,label,prediction,Module,Tier of Symptom Disclosure,Expected Symptom Direction,Emotion/Tone Tier
+1,TRUE,TRUE,A - Major Depressive Episode,Tier 1: Superficial/Vague,Positive Symptom Presentation,Flat/Detached
+2,TRUE,FALSE,A - Major Depressive Episode,Tier 1: Superficial/Vague,Positive Symptom Presentation,Flat/Detached
+3,TRUE,FALSE,A - Major Depressive Episode,Tier 1: Superficial/Vague,Positive Symptom Presentation,Flat/Detached
+4,TRUE,FALSE,A - Major Depressive Episode,Tier 1: Superficial/Vague,Positive Symptom Presentation,Neutral/Cooperative
+5,TRUE,FALSE,A - Major Depressive Episode,Tier 1: Superficial/Vague,Positive Symptom Presentation,Neutral/Cooperative
+6,TRUE,FALSE,A - Major Depressive Episode,Tier 1: Superficial/Vague,Positive Symptom Presentation,Neutral/Cooperative
+7,TRUE,TRUE,A - Major Depressive Episode,Tier 1: Superficial/Vague,Positive Symptom Presentation,Emotional/Expressive
+8,TRUE,FALSE,A - Major Depressive Episode,Tier 1: Superficial/Vague,Positive Symptom Presentation,Emotional/Expressive
+9,TRUE,FALSE,A - Major Depressive Episode,Tier 1: Superficial/Vague,Positive Symptom Presentation,Emotional/Expressive
+10,FALSE,FALSE,A - Major Depressive Episode,Tier 1: Superficial/Vague,Negative Symptom Presentation,Flat/Detached
+11,FALSE,FALSE,A - Major Depressive Episode,Tier 1: Superficial/Vague,Negative Symptom Presentation,Flat/Detached
+12,FALSE,FALSE,A - Major Depressive Episode,Tier 1: Superficial/Vague,Negative Symptom Presentation,Flat/Detached
+13,FALSE,FALSE,A - Major Depressive Episode,Tier 1: Superficial/Vague,Negative Symptom Presentation,Neutral/Cooperative
+14,FALSE,FALSE,A - Major Depressive Episode,Tier 1: Superficial/Vague,Negative Symptom Presentation,Neutral/Cooperative
+15,FALSE,FALSE,A - Major Depressive Episode,Tier 1: Superficial/Vague,Negative Symptom Presentation,Neutral/Cooperative
+16,FALSE,TRUE,A - Major Depressive Episode,Tier 1: Superficial/Vague,Negative Symptom Presentation,Emotional/Expressive
+17,FALSE,FALSE,A - Major Depressive Episode,Tier 1: Superficial/Vague,Negative Symptom Presentation,Emotional/Expressive
+18,FALSE,FALSE,A - Major Depressive Episode,Tier 1: Superficial/Vague,Negative Symptom Presentation,Emotional/Expressive
+19,TRUE,FALSE,A - Major Depressive Episode,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Flat/Detached
+20,TRUE,FALSE,A - Major Depressive Episode,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Flat/Detached
+21,TRUE,FALSE,A - Major Depressive Episode,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Flat/Detached
+22,TRUE,FALSE,A - Major Depressive Episode,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Neutral/Cooperative
+23,TRUE,FALSE,A - Major Depressive Episode,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Neutral/Cooperative
+24,TRUE,FALSE,A - Major Depressive Episode,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Neutral/Cooperative
+25,TRUE,FALSE,A - Major Depressive Episode,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Emotional/Expressive
+26,TRUE,TRUE,A - Major Depressive Episode,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Emotional/Expressive
+27,TRUE,TRUE,A - Major Depressive Episode,Tier 2: Basic with Minimal Detail,Positive Symptom Presentation,Emotional/Expressive
+28,FALSE,FALSE,A - Major Depressive Episode,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Flat/Detached
+29,FALSE,FALSE,A - Major Depressive Episode,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Flat/Detached
+30,FALSE,FALSE,A - Major Depressive Episode,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Flat/Detached
+31,FALSE,FALSE,A - Major Depressive Episode,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Neutral/Cooperative
+32,FALSE,FALSE,A - Major Depressive Episode,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Neutral/Cooperative
+33,FALSE,FALSE,A - Major Depressive Episode,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Neutral/Cooperative
+34,FALSE,TRUE,A - Major Depressive Episode,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Emotional/Expressive
+35,FALSE,FALSE,A - Major Depressive Episode,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Emotional/Expressive
+36,FALSE,FALSE,A - Major Depressive Episode,Tier 2: Basic with Minimal Detail,Negative Symptom Presentation,Emotional/Expressive
+37,TRUE,TRUE,A - Major Depressive Episode,Tier 3: Moderate Detail,Positive Symptom Presentation,Flat/Detached
+38,TRUE,FALSE,A - Major Depressive Episode,Tier 3: Moderate Detail,Positive Symptom Presentation,Flat/Detached
+39,TRUE,FALSE,A - Major Depressive Episode,Tier 3: Moderate Detail,Positive Symptom Presentation,Flat/Detached
+40,TRUE,FALSE,A - Major Depressive Episode,Tier 3: Moderate Detail,Positive Symptom Presentation,Neutral/Cooperative
+41,TRUE,FALSE,A - Major Depressive Episode,Tier 3: Moderate Detail,Positive Symptom Presentation,Neutral/Cooperative
+42,TRUE,TRUE,A - Major Depressive Episode,Tier 3: Moderate Detail,Positive Symptom Presentation,Neutral/Cooperative
+43,TRUE,FALSE,A - Major Depressive Episode,Tier 3: Moderate Detail,Positive Symptom Presentation,Emotional/Expressive
+44,TRUE,TRUE,A - Major Depressive Episode,Tier 3: Moderate Detail,Positive Symptom Presentation,Emotional/Expressive
+45,TRUE,TRUE,A - Major Depressive Episode,Tier 3: Moderate Detail,Positive Symptom Presentation,Emotional/Expressive
+46,FALSE,FALSE,A - Major Depressive Episode,Tier 3: Moderate Detail,Negative Symptom Presentation,Flat/Detached
+47,FALSE,FALSE,A - Major Depressive Episode,Tier 3: Moderate Detail,Negative Symptom Presentation,Flat/Detached
+48,FALSE,FALSE,A - Major Depressive Episode,Tier 3: Moderate Detail,Negative Symptom Presentation,Flat/Detached
+49,FALSE,TRUE,A - Major Depressive Episode,Tier 3: Moderate Detail,Negative Symptom Presentation,Neutral/Cooperative
+50,FALSE,FALSE,A - Major Depressive Episode,Tier 3: Moderate Detail,Negative Symptom Presentation,Neutral/Cooperative
+51,FALSE,FALSE,A - Major Depressive Episode,Tier 3: Moderate Detail,Negative Symptom Presentation,Neutral/Cooperative
+52,FALSE,TRUE,A - Major Depressive Episode,Tier 3: Moderate Detail,Negative Symptom Presentation,Emotional/Expressive
+53,FALSE,FALSE,A - Major Depressive Episode,Tier 3: Moderate Detail,Negative Symptom Presentation,Emotional/Expressive
+54,FALSE,FALSE,A - Major Depressive Episode,Tier 3: Moderate Detail,Negative Symptom Presentation,Emotional/Expressive
+55,TRUE,FALSE,A - Major Depressive Episode,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Flat/Detached
+56,TRUE,FALSE,A - Major Depressive Episode,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Flat/Detached
+57,TRUE,FALSE,A - Major Depressive Episode,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Flat/Detached
+58,TRUE,FALSE,A - Major Depressive Episode,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Neutral/Cooperative
+59,TRUE,FALSE,A - Major Depressive Episode,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Neutral/Cooperative
+60,TRUE,TRUE,A - Major Depressive Episode,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Neutral/Cooperative
+61,TRUE,FALSE,A - Major Depressive Episode,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Emotional/Expressive
+62,TRUE,TRUE,A - Major Depressive Episode,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Emotional/Expressive
+63,TRUE,TRUE,A - Major Depressive Episode,Tier 4: Detailed/Coherent,Positive Symptom Presentation,Emotional/Expressive
+64,FALSE,FALSE,A - Major Depressive Episode,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Flat/Detached
+65,FALSE,FALSE,A - Major Depressive Episode,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Flat/Detached
+66,FALSE,FALSE,A - Major Depressive Episode,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Flat/Detached
+67,FALSE,TRUE,A - Major Depressive Episode,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Neutral/Cooperative
+68,FALSE,FALSE,A - Major Depressive Episode,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Neutral/Cooperative
+69,FALSE,FALSE,A - Major Depressive Episode,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Neutral/Cooperative
+70,FALSE,TRUE,A - Major Depressive Episode,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Emotional/Expressive
+71,FALSE,FALSE,A - Major Depressive Episode,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Emotional/Expressive
+72,FALSE,FALSE,A - Major Depressive Episode,Tier 4: Detailed/Coherent,Negative Symptom Presentation,Emotional/Expressive
+73,TRUE,FALSE,A - Major Depressive Episode,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Flat/Detached
+74,TRUE,FALSE,A - Major Depressive Episode,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Flat/Detached
+75,TRUE,FALSE,A - Major Depressive Episode,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Flat/Detached
+76,TRUE,TRUE,A - Major Depressive Episode,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Neutral/Cooperative
+77,TRUE,TRUE,A - Major Depressive Episode,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Neutral/Cooperative
+78,TRUE,FALSE,A - Major Depressive Episode,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Neutral/Cooperative
+79,TRUE,FALSE,A - Major Depressive Episode,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Emotional/Expressive
+80,TRUE,TRUE,A - Major Depressive Episode,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Emotional/Expressive
+81,TRUE,TRUE,A - Major Depressive Episode,Tier 5: Rich/Nuanced + Background,Positive Symptom Presentation,Emotional/Expressive
+82,FALSE,FALSE,A - Major Depressive Episode,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Flat/Detached
+83,FALSE,FALSE,A - Major Depressive Episode,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Flat/Detached
+84,FALSE,FALSE,A - Major Depressive Episode,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Flat/Detached
+85,FALSE,TRUE,A - Major Depressive Episode,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Neutral/Cooperative
+86,FALSE,FALSE,A - Major Depressive Episode,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Neutral/Cooperative
+87,FALSE,FALSE,A - Major Depressive Episode,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Neutral/Cooperative
+88,FALSE,FALSE,A - Major Depressive Episode,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Emotional/Expressive
+89,FALSE,FALSE,A - Major Depressive Episode,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Emotional/Expressive
+90,FALSE,FALSE,A - Major Depressive Episode,Tier 5: Rich/Nuanced + Background,Negative Symptom Presentation,Emotional/Expressive

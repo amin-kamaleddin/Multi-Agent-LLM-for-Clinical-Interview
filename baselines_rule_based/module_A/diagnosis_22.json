@@ -1,0 +1,10 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "reasoning": "recent symptom groups>=5: NOT MET; past symptom groups>=5: NOT MET; core symptom: NOT MET; functional impairment: MET; organic rule-out: MET"
+    },
+    "recurrent": {
+        "diagnosis": true,
+        "reasoning": "A5 coded YES: MET; organic rule-out: MET"
+    }
+}
