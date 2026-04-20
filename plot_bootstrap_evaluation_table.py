@@ -3,6 +3,7 @@
 # one heatmap figure per metric per group, in the same visual style as the
 # original evaluation script.
 
+import argparse
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -13,10 +14,8 @@ import warnings
 warnings.filterwarnings('ignore')
 
 # ── Config ─────────────────────────────────────────────────────────────────────
-RESULTS_PATH       = "patient_agent_results/evaluation_results.csv"
-FIGURES_OUTPUT_DIR = "./figures"
-
-os.makedirs(FIGURES_OUTPUT_DIR, exist_ok=True)
+DEFAULT_RESULTS_PATH = "patient_agent_results/evaluation_results.csv"
+DEFAULT_FIGURES_OUTPUT_DIR = "./figures"
 
 METRICS = ["accuracy", "sensitivity", "specificity", "f1", "f2"]
 
@@ -30,7 +29,7 @@ GROUP_TITLES = {
 
 # ── Helpers ────────────────────────────────────────────────────────────────────
 
-def save_figure(fig, filename_base, output_dir=FIGURES_OUTPUT_DIR):
+def save_figure(fig, filename_base, output_dir):
     clean = "".join(
         c for c in filename_base if c.isalnum() or c in (' ', '-', '_')
     ).rstrip().replace(' ', '_')
@@ -154,13 +153,34 @@ def plot_heatmap(mean_matrix, annot_matrix, metric, group, title_suffix):
     return fig
 
 
+def parse_args():
+    parser = argparse.ArgumentParser(
+        description="Generate bootstrap heatmaps from evaluation results CSV."
+    )
+    parser.add_argument(
+        "--results-csv",
+        default=DEFAULT_RESULTS_PATH,
+        help=f"Path to evaluation results CSV (default: {DEFAULT_RESULTS_PATH})",
+    )
+    parser.add_argument(
+        "--figures-dir",
+        default=DEFAULT_FIGURES_OUTPUT_DIR,
+        help=f"Output directory for generated figures (default: {DEFAULT_FIGURES_OUTPUT_DIR})",
+    )
+    return parser.parse_args()
+
+
 # ── Main ───────────────────────────────────────────────────────────────────────
 
 def main():
-    print(f"Reading: {RESULTS_PATH}")
-    df = pd.read_csv(RESULTS_PATH)
+    args = parse_args()
 
-    print(f"Figures will be saved to: {os.path.abspath(FIGURES_OUTPUT_DIR)}\n")
+    os.makedirs(args.figures_dir, exist_ok=True)
+
+    print(f"Reading: {args.results_csv}")
+    df = pd.read_csv(args.results_csv)
+
+    print(f"Figures will be saved to: {os.path.abspath(args.figures_dir)}\n")
     print("=" * 60)
 
     for group in GROUPS:
@@ -180,12 +200,12 @@ def main():
             fig = plot_heatmap(mean_matrix, annot_matrix, metric, group, title)
 
             filename = f"{metric}_{group}_heatmap"
-            save_figure(fig, filename)
+            save_figure(fig, filename, args.figures_dir)
             plt.close(fig)
 
     print("\n" + "=" * 60)
     print("DONE")
-    print(f"All figures saved to: {os.path.abspath(FIGURES_OUTPUT_DIR)}")
+    print(f"All figures saved to: {os.path.abspath(args.figures_dir)}")
     print("=" * 60)
 
 

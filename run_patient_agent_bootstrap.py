@@ -1,3 +1,5 @@
+import argparse
+import os
 import pandas as pd
 import numpy as np
 import logging
@@ -13,9 +15,10 @@ logging.basicConfig(
 log = logging.getLogger(__name__)
 
 # ── Config ────────────────────────────────────────────────────────────────────
-CSV_PATH    = "./patient_agent_results/prediction_combined_all_modules.csv"
-N_BOOTSTRAP = 10_000
-RANDOM_SEED = 42
+DEFAULT_CSV_PATH = "./patient_agent_results/prediction_combined_all_modules.csv"
+DEFAULT_OUTPUT_PATH = "./patient_agent_results/evaluation_results.csv"
+DEFAULT_N_BOOTSTRAP = 10_000
+DEFAULT_RANDOM_SEED = 42
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
 
@@ -71,12 +74,57 @@ def bootstrap_cell(subset, n_bootstrap, seed):
     return out
 
 
+def parse_args():
+    parser = argparse.ArgumentParser(
+        description="Run bootstrap evaluation over module-stratified predictions."
+    )
+    parser.add_argument(
+        "--input-csv",
+        default=DEFAULT_CSV_PATH,
+        help=f"Input combined predictions CSV (default: {DEFAULT_CSV_PATH})",
+    )
+    parser.add_argument(
+        "--output-csv",
+        default=DEFAULT_OUTPUT_PATH,
+        help=f"Output evaluation CSV path (default: {DEFAULT_OUTPUT_PATH})",
+    )
+    parser.add_argument(
+        "--n-bootstrap",
+        type=int,
+        default=DEFAULT_N_BOOTSTRAP,
+        help=f"Bootstrap iterations per cell (default: {DEFAULT_N_BOOTSTRAP})",
+    )
+    parser.add_argument(
+        "--seed",
+        type=int,
+        default=DEFAULT_RANDOM_SEED,
+        help=f"Base random seed for bootstrap runs (default: {DEFAULT_RANDOM_SEED})",
+    )
+    return parser.parse_args()
+
+
 # ── Main ──────────────────────────────────────────────────────────────────────
 
 def main():
-    log.info(f"Loading data from: {CSV_PATH}")
-    df = pd.read_csv(CSV_PATH)
+    args = parse_args()
+
+    log.info(f"Loading data from: {args.input_csv}")
+    df = pd.read_csv(args.input_csv)
     log.info(f"Loaded {len(df)} rows")
+
+    required_columns = {
+        "Module",
+        "label",
+        "prediction",
+        "Expected Symptom Direction",
+        "Tier of Symptom Disclosure",
+        "Emotion/Tone Tier",
+    }
+    missing = sorted(required_columns - set(df.columns))
+    if missing:
+        raise ValueError(
+            "Missing required input columns: " + ", ".join(missing)
+        )
 
     for col in ("label", "prediction"):
         df[col] = df[col].astype(str).str.strip().str.lower().map(
@@ -107,7 +155,7 @@ def main():
     total_cells = n_modules * sum(len(c) for _, c in groups.values())
 
     log.info(f"Modules: {n_modules} | Groups: {len(groups)} | "
-             f"Total cells: {total_cells} | Bootstrap iterations: {N_BOOTSTRAP:,}")
+             f"Total cells: {total_cells} | Bootstrap iterations: {args.n_bootstrap:,}")
 
     rows = []
     seed_counter = 0
@@ -142,8 +190,7 @@ def main():
                 else:
                     log.info(f"  [{cell_counter}/{total_cells}] "
                              f"{group_label} | {condition} (n={n_total})")
-                    cell = bootstrap_cell(subset, N_BOOTSTRAP,
-                                          RANDOM_SEED + seed_counter)
+                    cell = bootstrap_cell(subset, args.n_bootstrap, args.seed + seed_counter)
                     seed_counter += 1
                     for m in metrics:
                         row[f"{m}_mean"]    = cell[m][0]
@@ -157,9 +204,11 @@ def main():
                 rows.append(row)
 
     result_df = pd.DataFrame(rows)
-    out_path = "./patient_agent_results/evaluation_results.csv"
-    result_df.to_csv(out_path, index=False)
-    log.info(f"Saved: {out_path} ({len(result_df)} rows)")
+    output_dir = os.path.dirname(args.output_csv)
+    if output_dir:
+        os.makedirs(output_dir, exist_ok=True)
+    result_df.to_csv(args.output_csv, index=False)
+    log.info(f"Saved: {args.output_csv} ({len(result_df)} rows)")
 
 
 if __name__ == "__main__":
