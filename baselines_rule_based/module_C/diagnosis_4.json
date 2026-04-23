@@ -1,0 +1,10 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "reasoning": "C3 count>=4: NOT MET; C3f present: MET; C4 valid quantity present: MET; C7 impairment: NOT MET; duration/extra criterion: NOT MET; organic rule-out: MET"
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "reasoning": "past C3 count>=4: NOT MET; past C3f present: MET"
+    }
+}

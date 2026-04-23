@@ -1,0 +1,6 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "reasoning": "any L4 coded YES: NOT MET"
+    }
+}

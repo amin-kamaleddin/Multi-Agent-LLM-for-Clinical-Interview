@@ -1,0 +1,10 @@
+{
+    "current": {
+        "diagnosis": false,
+        "reasoning": "M5 coded YES: NOT MET; M7 coded YES: NOT MET"
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "reasoning": "current diagnosis true: NOT MET; binge frequency marker present: NOT MET"
+    }
+}

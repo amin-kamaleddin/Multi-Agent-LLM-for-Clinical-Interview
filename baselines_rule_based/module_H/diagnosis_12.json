@@ -1,0 +1,10 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "reasoning": "H7 coded YES: MET; H3 cluster >=1: NOT MET; H4 cluster >=2: NOT MET; H5 cluster >=2: MET; organic rule-out: NOT MET"
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "reasoning": "recurrent criterion not configured in module rules"
+    }
+}

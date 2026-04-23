@@ -1,0 +1,6 @@
+{
+    "lifetime": {
+        "diagnosis": true,
+        "reasoning": "P1 cluster >=2: MET; P2 cluster >=3: MET"
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "reasoning": "G4 coded YES: NOT MET; obsession/compulsion pattern: MET; organic rule-out: NOT MET"
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "reasoning": "recurrent criterion not configured in module rules"
+    }
+}
