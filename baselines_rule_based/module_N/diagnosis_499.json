@@ -1,0 +1,6 @@
+{
+    "current": {
+        "diagnosis": false,
+        "reasoning": "N4 yes: MET; N3 symptom groups>=3: MET; organic rule-out: NOT MET"
+    }
+}

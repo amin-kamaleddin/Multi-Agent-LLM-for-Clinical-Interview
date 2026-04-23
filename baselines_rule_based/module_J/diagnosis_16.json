@@ -1,0 +1,10 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "reasoning": "J2 symptoms >=2: NOT MET"
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "reasoning": "proxy recurrent flag from persistent symptom burden"
+    }
+}

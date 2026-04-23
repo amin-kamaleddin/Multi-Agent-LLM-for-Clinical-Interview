@@ -1,11 +1,18 @@
 import argparse
 import os
 from pathlib import Path
+import sys
 
 import pandas as pd
 
+ROOT_DIR = Path(__file__).resolve().parents[1]
+if str(ROOT_DIR) not in sys.path:
+    sys.path.insert(0, str(ROOT_DIR))
 
-DEFAULT_MODULES = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "L", "M", "MB", "N", "P"]
+from benchmark_modules import MODULES
+
+
+DEFAULT_MODULES = MODULES
 DEFAULT_OUTPUT_CSV = "baselines/predictions_single_llm_combined_clean.csv"
 
 
