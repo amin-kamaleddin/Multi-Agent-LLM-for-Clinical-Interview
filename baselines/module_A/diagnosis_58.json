@@ -1,0 +1,10 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "reasoning": "Criterion A1 (depressed mood): MET \u2014 patient stated 'I often wake up feeling a sense of emptiness and struggle to find motivation throughout the day.' Criterion A2 (anhedonia): MET \u2014 'I\u2019ve found myself avoiding those gatherings lately.' Criterion A3 (weight/appetite): MET \u2014 'I've noticed a significant decrease in my appetite.' Criterion A4 (sleep): MET \u2014 'I\u2019ve struggled with sleep... falling asleep takes longer than it used to.' Criterion A5 (psychomotor agitation/retardation): MET \u2014 'I find myself taking longer to respond during conversations.' Criterion A6 (fatigue): MET \u2014 'I\u2019ve felt extremely fatigued and found it hard to muster energy for even simple tasks.' Criterion A7 (worthlessness/guilt): MET \u2014 'I often find myself questioning my abilities at work... feeling that I'm not meeting expectations.' Criterion A8 (concentration): MET \u2014 'I\u2019ve found it quite challenging to concentrate and think clearly over the past two weeks.' Criterion A9 (thoughts of death): UNCLEAR \u2014 patient mentioned thoughts of not existing but did not express intent to harm. Total: 8 of 9 criteria met (threshold \u22655). Duration: met (symptoms reported for the past two weeks). Functional impairment: met ('I\u2019ve avoided social gatherings... this shift has affected my life significantly.'). Exclusions: not triggered. Diagnosis: TRUE \u2014 full threshold met with significant functional impairment confirmed."
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "reasoning": "Criterion A5: YES \u2014 patient reported experiencing three distinct episodes of depression throughout life. Exclusions: not triggered. Diagnosis: TRUE \u2014 recurrent episodes confirmed."
+    }
+}

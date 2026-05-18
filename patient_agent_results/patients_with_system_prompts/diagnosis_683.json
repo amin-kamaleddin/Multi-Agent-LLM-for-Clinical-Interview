@@ -1,0 +1,16 @@
+{
+    "lifetime": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 is not met as there are no 'YES' responses in the P1 group (P1a-P1f). Criterion 2 is met with one 'YES' response in the P2 group (P2c), but it requires at least three 'YES' responses. Therefore, not all criteria are satisfied.",
+        "insight": null,
+        "ticRelated": null
+    },
+    "note": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "The patient has only one 'YES' response (P2c) which falls under the symptom group criteria. However, this response does not meet the requirement of at least 5 positive symptom groups from the same time frame. Therefore, the criteria are not fully satisfied.",
+        "insight": null,
+        "ticRelated": null
+    }
+}

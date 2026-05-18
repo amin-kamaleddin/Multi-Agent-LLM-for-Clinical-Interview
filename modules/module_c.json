@@ -1,0 +1,346 @@
+{
+  "module": {
+    "id": "C",
+    "name": "Manic and hypomanic episodes"
+  },
+  "instructions": [
+  ],
+  "questions": [
+    {
+      "id": "C0",
+      "prompt": "Do you have any family history of manic-depressive illness or bipolar disorder, or any family member who had mood swings treated with a medication like lithium, sodium valproate (Depakote) or lamotrigine (Lamictal)?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "C0a",
+        "no": "C1a"
+      }
+    },
+    {
+      "id": "C0a",
+      "prompt": "Who in your family had this problem?",
+      "responseType": "descriptive",
+      "next": {
+        "valid_response": "C1a"
+      }
+    },
+    {
+      "id": "C1a",
+      "prompt": "Have you ever had a period of time when you were feeling 'up' or 'high' or ‘hyper’ and so active or full of energy or full of yourself that you got into trouble, - or that other people thought you were not your usual self? (Do not consider times when you were intoxicated on drugs or alcohol.)",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "C1b",
+        "no": "C2a_1"
+      }
+    },
+    {
+      "id": "C1b",
+      "prompt": "Are you currently feeling ‘up’ or ‘high’ or ‘hyper’ or full of energy?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "C2a_2",
+        "no": "C2a_3"
+      }
+    },
+    {
+      "id": "C2a_1",
+      "prompt": "Have you ever been persistently irritable, for several days, so that you had arguments or verbal or physical fights, or shouted at people outside your family? Have you or others noticed that you have been more irritable or over reacted, compared to other people, even in situations that you felt were justified?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "C2b_1",
+        "no": "DIAGNOSTIC"
+      }
+    },
+    {
+      "id": "C2a_2",
+      "prompt": "Have you ever been persistently irritable, for several days, so that you had arguments or verbal or physical fights, or shouted at people outside your family? Have you or others noticed that you have been more irritable or over reacted, compared to other people, even in situations that you felt were justified?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "C2b_2",
+        "no": "C3a_current"
+      }
+    },
+    {
+      "id": "C2a_3",
+      "prompt": "Have you ever been persistently irritable, for several days, so that you had arguments or verbal or physical fights, or shouted at people outside your family? Have you or others noticed that you have been more irritable or over reacted, compared to other people, even in situations that you felt were justified?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "C2b_3",
+        "no": "C3a_past"
+      }
+    },
+    {
+      "id": "C2b_1",
+      "prompt": "Are you currently feeling persistently irritable?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "C3a_current",
+        "no": "C3a_past"
+      }
+    },
+    {
+      "id": "C2b_2",
+      "prompt": "Are you currently feeling persistently irritable?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "C3a_current",
+        "no": "C3a_current"
+      }
+    },
+    {
+      "id": "C2b_3",
+      "prompt": "Are you currently feeling persistently irritable?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "C3a_current",
+        "no": "C3a_past"
+      }
+    },
+    {
+      "id": "C3a_current",
+      "prompt": "Over the past few days including today, when you felt high and full of energy or irritable, did you feel that you could do things others couldn't do, or that you were an especially important person?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "C3a_current_example",
+        "no": "C3b_current"
+      }
+    },
+    {
+      "id": "C3a_current_example",
+      "prompt": "can you give me an example of when you felt this way?",
+      "responseType": "desctiptive",
+      "next": {
+        "valid_response": "C3b_current"
+      }
+    },
+    {
+      "id": "C3b_current",
+      "prompt": "Over the past few days including today, when you felt high and full of energy or irritable, did you need less sleep (for example, feel rested after only a few hours sleep)?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "C3c_current",
+        "no": "C3c_current"
+      }
+    },
+    {
+      "id": "C3c_current",
+      "prompt": "Over the past few days including today, when you felt high and full of energy or irritable, did you talk too much without stopping, or felt a pressure to keep talking?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "C3d_current",
+        "no": "C3d_current"
+      }
+    },
+    {
+      "id": "C3d_current",
+      "prompt": "Over the past few days including today, when you felt high and full of energy or irritable, did you notice your thoughts going very fast or running together or racing or moving very quickly from one subject to another?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "C3e_current",
+        "no": "C3e_current"
+      }
+    },
+    {
+      "id": "C3e_current",
+      "prompt": "Over the past few days including today, when you felt high and full of energy or irritable, did you become easily distracted so that any little interruption could distract you?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "C3f_current",
+        "no": "C3f_current"
+      }
+    },
+    {
+      "id": "C3f_current",
+      "prompt": "Over the past few days including today, when you felt high and full of energy or irritable, did you have a significant increase in your activity or drive, at work, at school, socially or sexually or did you become physically or mentally restless? This increase in activity may be with or without a purpose.",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "C3g_current",
+        "no": "C3g_current"
+      }
+    },
+    {
+      "id": "C3g_current",
+      "prompt": "Over the past few days including today, when you felt high and full of energy or irritable, did you want so much to engage in pleasurable activities that you ignored the risks or NO consequences (for example, spending sprees, reckless driving, or sexual indiscretions)?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "C4_current",
+        "no": "C4_current"
+      }
+    },
+    {
+      "id": "C4_current",
+      "prompt": "Over the past few days including today, when you felt high and full of energy or irritable, what is the longest time these symptoms lasted? a) 3 consecutive days or less\nb) 4, 5 or 6 consecutive days or more\nc) 7 consecutive days or more",
+      "responseType": "quantity",
+      "next": {
+        "valid_quantity": "C5_current"
+      }
+    },
+    {
+      "id": "C5_current",
+      "prompt": "Over the past few days including today, when you felt high and full of energy or irritable, were you hospitalized for these problems?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "C7_current",
+        "no": "C6_current"
+      }
+    },
+    {
+      "id": "C7_current",
+      "prompt": "Over the past few days including today, when you felt high and full of energy or irritable, were these symptoms associated with a clear change in the way that you previously functioned and that was different from the way that you usually are?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "C3a_past",
+        "no": "C3a_past"
+      }
+    },
+    {
+      "id": "C6_current",
+      "prompt": "Over the past few days including today, when you felt high and full of energy or irritable, did these symptoms cause significant problems at home, at work, socially,in your relationships, at school or in some other important way?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "C7_current",
+        "no": "C7_current"
+      }
+    },
+
+
+    {
+      "id": "C3a_past",
+      "prompt": "Over a period of a few days in the past, when you felt most high and most full of energy or most irritable, did you feel that you could do things others couldn't do, or that you were an especially important person?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "C3a_past_example",
+        "no": "C3b_past"
+      }
+    },
+    {
+      "id": "C3a_past_example",
+      "prompt": "can you give me an example of when you felt this way?",
+      "responseType": "desctiptive",
+      "next": {
+        "valid_response": "C3b_past"
+      }
+    },
+    {
+      "id": "C3b_past",
+      "prompt": "Over a period of a few days in the past, when you felt most high and most full of energy or most irritable, did you need less sleep (for example, feel rested after only a few hours sleep)?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "C3c_past",
+        "no": "C3c_past"
+      }
+    },
+    {
+      "id": "C3c_past",
+      "prompt": "Over a period of a few days in the past, when you felt most high and most full of energy or most irritable, did you talk too much without stopping, or felt a pressure to keep talking?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "C3d_past",
+        "no": "C3d_past"
+      }
+    },
+    {
+      "id": "C3d_past",
+      "prompt": "Over a period of a few days in the past, when you felt most high and most full of energy or most irritable, did you notice your thoughts going very fast or running together or racing or moving very quickly from one subject to another?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "C3e_past",
+        "no": "C3e_past"
+      }
+    },
+    {
+      "id": "C3e_past",
+      "prompt": "Over a period of a few days in the past, when you felt most high and most full of energy or most irritable, did you become easily distracted so that any little interruption could distract you?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "C3f_past",
+        "no": "C3f_past"
+      }
+    },
+    {
+      "id": "C3f_past",
+      "prompt": "Over a period of a few days in the past, when you felt most high and most full of energy or most irritable, did you have a significant increase in your activity or drive, at work, at school, socially or sexually or did you become physically or mentally restless? This increase in activity may be with or without a purpose.",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "C3g_past",
+        "no": "C3g_past"
+      }
+    },
+    {
+      "id": "C3g_past",
+      "prompt": "Over a period of a few days in the past, when you felt most high and most full of energy or most irritable, did you want so much to engage in pleasurable activities that you ignored the risks or NO consequences (for example, spending sprees, reckless driving, or sexual indiscretions)?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "C4_past",
+        "no": "C4_past"
+      }
+    },
+    {
+      "id": "C4_past",
+      "prompt": "what is the longest time these symptoms lasted? a) 3 consecutive days or less\nb) 4, 5 or 6 consecutive days or more\nc) 7 consecutive days or more",
+      "responseType": "quantity",
+      "next": {
+        "valid_quantity": "C5_past"
+      }
+    },
+    {
+      "id": "C5_past",
+      "prompt": "were you hospitalized for these problems?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "C7_past",
+        "no": "C6_past"
+      }
+    },
+    {
+      "id": "C7_past",
+      "prompt": "were these symptoms associated with a clear change in the way that you previously functioned and that was different from the way that you usually are?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "C3a_past",
+        "no": "C3a_past"
+      }
+    },
+    {
+      "id": "C6_past",
+      "prompt": "Did these symptoms cause significant problems at home, at work, socially,in your relationships, at school or in some other important way?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "O1a",
+        "no": "O1a"
+      }
+    },
+
+
+    {
+      "id": "O1a",
+      "prompt": "Were you taking any drugs or medicines or in withdrawal from any of these? I am trying to understand if the symptoms you have described could be caused by other organic factors.",
+      "responseType": "choice",
+      "options": "yes_no",
+      "next": {
+        "no": "O1b",
+        "yes": "O1b"
+      }
+    },
+    {
+      "id": "O1b",
+      "prompt": "Did you have any other medical illness unrelated to the one we discussed today? I am trying to understand if the symptoms you have described could be caused by other organic factors.",
+      "responseType": "choice",
+      "options": "yes_no",
+      "next": {
+        "no": "DIAGNOSTIC",
+        "yes": "DIAGNOSTIC"
+      }
+    }
+  ],
+  "diagnosticCriteria": {
+    "manicandhypomanicepisodes": {
+      "positive": [
+        "(IF C1b IS NO, ARE 4 OR MORE C3 ANSWERS INCLUDING C3f CODED YES?) OR (IF C1b IS YES, ARE 3 OR MORE C3 ANSWERS INCLUDING C3f CODED YES?)",
+        "IS EITHER C4b OR C4C CODED VALID_QUANTITY?",
+        "Is C7 coded YES?",
+        "either C4C OR C5 OR C6 coded YES?",
+        "O1a = NO AND O1b = NO"
+      ]
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+    "lifetime": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (recurrent panic attacks): MET \u2014 patient stated, 'Absolutely, there have definitely been moments where I suddenly felt a wave of anxiety wash over me.' Criterion 2 (4 or more symptoms): MET \u2014 patient endorsed racing heart, sweating, trembling, shortness of breath, choking sensation, chest discomfort, dizziness, feelings of unreality, fear of losing control, and fear of dying. Total: 10 symptoms clearly met. Criterion 3 (no other disorders): MET \u2014 patient confirmed no current substance use or withdrawal and no other medical illnesses. Diagnosis: TRUE \u2014 full criteria met with significant symptom endorsement and no exclusion factors present."
+    },
+    "current": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (current panic attacks): MET \u2014 patient described ongoing experiences of panic attacks and persistent concern about having another. Criterion 2 (no other disorders): MET \u2014 patient confirmed no current substance use or withdrawal and no other medical illnesses. Diagnosis: TRUE \u2014 current symptoms are present, and exclusion criteria are satisfied."
+    }
+}

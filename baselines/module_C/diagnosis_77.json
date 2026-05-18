@@ -1,0 +1,10 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1: NOT MET \u2014 patient denied ever feeling 'up' or 'hyper' and stated energy levels have been consistent. Criterion 2: NOT MET \u2014 patient has not experienced persistent irritability or arguments. Criterion 3: NOT MET \u2014 no evidence of significant changes in behavior or energy levels. Total: 0 of 3 criteria met (threshold \u22653). Duration: not applicable as no symptoms were endorsed. Functional impairment: not applicable as no symptoms were present. Exclusions: not triggered. Diagnosis: FALSE \u2014 no criteria for manic or hypomanic episodes were met."
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1: NOT MET \u2014 patient denied any past episodes of feeling 'up' or 'hyper.' Criterion 2: NOT MET \u2014 no history of persistent irritability or arguments. Total: 0 of 3 criteria met (threshold \u22653). Duration: not applicable as no symptoms were endorsed. Functional impairment: not applicable as no symptoms were present. Exclusions: not triggered. Diagnosis: FALSE \u2014 no recurrent episodes of manic or hypomanic symptoms were reported."
+    }
+}

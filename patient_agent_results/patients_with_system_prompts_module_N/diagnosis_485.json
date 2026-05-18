@@ -1,0 +1,9 @@
+{
+    "current": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 (N4 == 'YES') is met since N4 is YES. For criterion 2, symptom groups N3a (YES), N3d (YES) are positive; N3b, N3c, N3e, N3f are NO. Only 2 symptom groups are positive, which is less than the required 3. Criterion 3 (O1a = NO and O1b = NO) is met. Since criterion 2 is not met, overall diagnosis is false.",
+        "insight": null,
+        "ticRelated": null
+    }
+}

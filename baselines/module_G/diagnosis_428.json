@@ -1,0 +1,10 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (obsessive thoughts): NOT MET \u2014 patient stated 'I haven't experienced any recurrent thoughts or impulses like that in the past month.' Criterion 2 (compulsive behaviors): NOT MET \u2014 patient reported 'I haven't felt driven to do anything repeatedly like washing or cleaning excessively.' Criterion 3 (distress/functional impairment): NOT MET \u2014 patient indicated 'I haven\u2019t experienced any obsessive thoughts or compulsive behaviors that caused me significant distress.' Total: 0 of 3 criteria met (threshold \u22651). Exclusions: not triggered as no symptoms were reported. Diagnosis: FALSE \u2014 no evidence of obsessive-compulsive symptoms present."
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (recurrent episodes): NOT MET \u2014 patient did not report any past episodes of obsessive thoughts or compulsive behaviors. Total: 0 of 1 criteria met (threshold \u22651). Diagnosis: FALSE \u2014 no recurrent episodes of obsessive-compulsive symptoms were reported."
+    }
+}

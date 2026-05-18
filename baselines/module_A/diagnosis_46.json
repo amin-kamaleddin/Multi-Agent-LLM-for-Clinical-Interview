@@ -1,0 +1,11 @@
+{
+    "positive": {
+        "diagnosis": true,
+        "reasoning": "Criterion A1 (depressed mood): MET \u2014 patient described a 'certain heaviness' and 'emptiness' that lingers most days. Criterion A2 (anhedonia): MET \u2014 patient stated they have lost interest in activities like gardening and reading. Criterion A3 (weight/appetite): MET \u2014 patient reported decreased appetite and unintentional weight loss. Criterion A4 (sleep): MET \u2014 patient mentioned difficulty falling asleep and waking early. Criterion A5 (psychomotor agitation/retardation): MET \u2014 patient noted speaking more slowly and feeling less engaged. Criterion A6 (fatigue): MET \u2014 patient expressed feeling drained and lacking energy. Criterion A7 (worthlessness/guilt): MET \u2014 patient described feelings of guilt related to their partner's passing. Criterion A8 (concentration): MET \u2014 patient reported trouble concentrating and making decisions. Criterion A9 (death/suicidal thoughts): MET \u2014 patient acknowledged thoughts about death but no intent to harm themselves. Total: 9 of 9 criteria met (threshold \u22655). Duration: met (symptoms reported for the past two weeks). Functional impairment: met (patient described significant withdrawal from activities and social interactions). Exclusions: not triggered (symptoms not attributed to substance use or medical conditions). Diagnosis: TRUE \u2014 full criteria met with significant functional impairment confirmed.",
+        "timeFrame": "recent"
+    },
+    "recurrent": {
+        "diagnosis": true,
+        "reasoning": "Criterion A5: YES \u2014 patient reported multiple past episodes of depression, indicating recurrent major depressive episodes. Exclusions: not triggered (symptoms not attributed to substance use or medical conditions). Diagnosis: TRUE \u2014 evidence supports recurrent episodes based on patient history."
+    }
+}

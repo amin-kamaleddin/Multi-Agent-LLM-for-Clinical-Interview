@@ -1,0 +1,18 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "The criterion requires 2 or more J2 answers coded YES from J2a through J2k (counting J2k1 and J2k2 together as one). Since no J2 answers are provided, and J1 is NO, there is no evidence that this criterion is met.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    },
+    "severity": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Only J1 is answered NO; no information about J2 symptoms is provided, so no symptom groups can be considered positive. Therefore, criteria for mild, moderate, or severe are not met.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    }
+}

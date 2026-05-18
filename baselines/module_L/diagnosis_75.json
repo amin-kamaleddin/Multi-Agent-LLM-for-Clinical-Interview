@@ -1,0 +1,6 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "reasoning": "Criterion A1 (restriction of energy intake): MET \u2014 patient stated, 'I often find myself counting calories obsessively and limiting what I eat.' Criterion A2 (intense fear of gaining weight): MET \u2014 patient described a 'constant, gnawing fear' of gaining weight despite being underweight. Criterion A3 (distorted body image): MET \u2014 patient expressed feeling 'too big' and described avoiding mirrors due to a distorted self-image. Criterion A4 (significant impact on self-worth): MET \u2014 patient indicated that their body weight and shape greatly influence their self-esteem, stating, 'my worth is tangled up in my size.' Total: 4 of 4 criteria met (threshold \u22651). Duration: unclear, as the patient did not specify how long these symptoms have been present. Functional impairment: met \u2014 the patient described significant distress and avoidance behaviors impacting their daily life. Exclusions: not triggered. Diagnosis: TRUE \u2014 full criteria met with significant functional impairment and distress confirmed."
+    }
+}

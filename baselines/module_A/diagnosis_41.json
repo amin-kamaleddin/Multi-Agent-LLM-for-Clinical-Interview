@@ -1,0 +1,10 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "reasoning": "Criterion A1 (depressed mood): MET \u2014 patient stated 'I\u2019ve definitely been feeling down for most days lately.' Criterion A2 (anhedonia): MET \u2014 'I\u2019ve definitely noticed that I\u2019m not enjoying things as much as I used to.' Criterion A3 (weight/appetite): MET \u2014 'I've noticed that my appetite has decreased quite a bit over the past two weeks.' Criterion A4 (sleep): MET \u2014 'I've had some trouble sleeping lately.' Criterion A5 (psychomotor agitation/retardation): MET \u2014 'I've definitely felt a bit sluggish and find myself moving slower than I usually do.' Criterion A6 (fatigue): MET \u2014 'I think I've felt pretty tired most days lately.' Criterion A7 (worthlessness/guilt): MET \u2014 'I've been feeling pretty down lately, like I\u2019m not good enough at my job.' Criterion A8 (concentration): MET \u2014 'I've definitely been having some trouble concentrating.' Criterion A9 (suicidal thoughts): NOT MET \u2014 patient denied thoughts of self-harm. Total: 8 of 9 criteria met (threshold \u22655). Duration: met (patient reports symptoms for 2 weeks). Functional impairment: met ('I\u2019ve definitely noticed a change in how I\u2019m functioning lately.'). Exclusions: not triggered (no substance use or medical conditions reported). Diagnosis: TRUE \u2014 full threshold met with significant functional impairment confirmed."
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "reasoning": "Criterion A5: YES \u2014 patient reported multiple past episodes lasting at least two months. O1a = NO AND O1b = NO \u2014 patient did not report any significant periods of feeling well for two months. Diagnosis: TRUE \u2014 evidence supports recurrent episodes of major depressive disorder."
+    }
+}

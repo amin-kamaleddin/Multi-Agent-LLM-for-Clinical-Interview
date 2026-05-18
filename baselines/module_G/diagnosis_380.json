@@ -1,0 +1,12 @@
+{
+    "positive": {
+        "diagnosis": true,
+        "reasoning": "Criterion 1 (recurrent thoughts): MET \u2014 patient stated 'I have had thoughts that are hard to shake off. They feel unwanted and unnerving.' Criterion 2 (attempt to suppress): MET \u2014 'I've been trying to push those thoughts away.' Criterion 3 (thoughts keep coming back): MET \u2014 'They do keep coming back, even when I try to push them away.' Criterion 4 (compulsive behavior): MET \u2014 'I\u2019ve been feeling the need to wash my hands a lot more than usual.' Criterion 5 (rituals to reduce anxiety): MET \u2014 'They help with anxiety. It feels like I have to do them.' Criterion 6 (significant distress/functional impairment): MET \u2014 'It\u2019s been hard to focus on my work lately... it definitely impacts my day.' Total: 6 of 6 criteria met (threshold \u22654). Duration: met (symptoms reported in the past month). Functional impairment: met (impact on work). Exclusions: not triggered (no substance use or medical conditions reported). Diagnosis: TRUE \u2014 full criteria met with significant functional impairment confirmed.",
+        "insight": "goodOrFair",
+        "ticRelated": false
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (recurrent thoughts): MET \u2014 patient stated 'I have had thoughts that are hard to shake off. They feel unwanted and unnerving.' Criterion 2 (attempt to suppress): MET \u2014 'I've been trying to push those thoughts away.' Criterion 3 (thoughts keep coming back): MET \u2014 'They do keep coming back, even when I try to push them away.' Criterion 4 (compulsive behavior): MET \u2014 'I\u2019ve been feeling the need to wash my hands a lot more than usual.' Criterion 5 (rituals to reduce anxiety): MET \u2014 'They help with anxiety. It feels like I have to do them.' Criterion 6 (significant distress/functional impairment): MET \u2014 'It\u2019s been hard to focus on my work lately... it definitely impacts my day.' Total: 6 of 6 criteria met (threshold \u22654). Duration: met (symptoms reported in the past month). Functional impairment: met (impact on work). Exclusions: not triggered (no substance use or medical conditions reported). Diagnosis: TRUE \u2014 full criteria met with significant functional impairment confirmed."
+    }
+}

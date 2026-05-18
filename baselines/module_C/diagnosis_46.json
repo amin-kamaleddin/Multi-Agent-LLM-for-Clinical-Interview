@@ -1,0 +1,10 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1: NOT MET \u2014 patient stated 'There hasn't been a time like that' regarding periods of feeling 'up' or 'high'. Criterion 2: NOT MET \u2014 patient has not reported any episodes of irritability or unusual behavior. Criterion 3: NOT MET \u2014 patient did not endorse any symptoms indicative of a manic or hypomanic episode. Criterion 4: NOT MET \u2014 no symptoms of elevated mood or irritability were reported. Criterion 5: MET \u2014 patient has no family history of manic-depressive illness. Total: 0 of 5 criteria met (threshold \u22653 for C1b = NO). Duration: not applicable as no symptoms were endorsed. Functional impairment: not applicable as no symptoms were present. Exclusions: not triggered. Diagnosis: FALSE \u2014 no criteria for manic or hypomanic episodes were met."
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1: NOT MET \u2014 patient stated 'There hasn't been a time like that' regarding periods of feeling 'up' or 'high'. Criterion 2: NOT MET \u2014 patient has not reported any episodes of irritability or unusual behavior. Criterion 3: NOT MET \u2014 patient did not endorse any symptoms indicative of a manic or hypomanic episode. Criterion 4: NOT MET \u2014 no symptoms of elevated mood or irritability were reported. Criterion 5: MET \u2014 patient has no family history of manic-depressive illness. Total: 0 of 5 criteria met (threshold \u22653 for C1b = NO). Duration: not applicable as no symptoms were endorsed. Functional impairment: not applicable as no symptoms were present. Exclusions: not triggered. Diagnosis: FALSE \u2014 no criteria for recurrent manic or hypomanic episodes were met."
+    }
+}

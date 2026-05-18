@@ -1,0 +1,12 @@
+{
+    "positive": {
+        "diagnosis": true,
+        "reasoning": "Criterion 1 (recurrent thoughts): MET \u2014 patient stated 'I've definitely been struggling with those kinds of thoughts lately. It\u2019s overwhelming, really.' Criterion 2 (attempt to suppress): MET \u2014 'I\u2019ve found myself trying to push away these persistent thoughts.' Criterion 3 (thoughts keep returning): MET \u2014 'They definitely do keep coming back, no matter how hard I try to push them out.' Criterion 4 (compulsive behaviors): MET \u2014 'I\u2019ve definitely been feeling like I need to check things over and over.' Criterion 5 (rituals to reduce anxiety): MET \u2014 'I feel like these rituals are really tied to my anxiety.' Criterion 6 (significant distress/functional impairment): MET \u2014 'These thoughts and patterns have been weighing me down... they definitely interfere with my daily life.' Total: 6 of 6 criteria met (threshold \u22654). Duration: met (symptoms reported in the past month). Functional impairment: met (interferes with daily life and relationships). Exclusions: not triggered (no substance use or medical conditions reported). Diagnosis: TRUE \u2014 full criteria met with significant distress and functional impairment confirmed.",
+        "insight": "goodOrFair",
+        "ticRelated": false
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (recurrent thoughts): MET \u2014 patient stated 'I've definitely been struggling with those kinds of thoughts lately.' Criterion 2 (attempt to suppress): MET \u2014 'I\u2019ve found myself trying to push away these persistent thoughts.' Criterion 3 (thoughts keep returning): MET \u2014 'They definitely do keep coming back, no matter how hard I try to push them out.' Criterion 4 (compulsive behaviors): MET \u2014 'I\u2019ve definitely been feeling like I need to check things over and over.' Criterion 5 (rituals to reduce anxiety): MET \u2014 'I feel like these rituals are really tied to my anxiety.' Criterion 6 (significant distress/functional impairment): MET \u2014 'These thoughts and patterns have been weighing me down... they definitely interfere with my daily life.' Total: 6 of 6 criteria met (threshold \u22654). Duration: met (symptoms reported in the past month). Functional impairment: met (interferes with daily life and relationships). Exclusions: not triggered (no substance use or medical conditions reported). Diagnosis: TRUE \u2014 full criteria met with significant distress and functional impairment confirmed."
+    }
+}

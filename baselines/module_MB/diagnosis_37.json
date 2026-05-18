@@ -1,0 +1,10 @@
+{
+    "current": {
+        "diagnosis": true,
+        "reasoning": "The individual reports experiencing binge eating episodes at least once a week, feeling a lack of control during these episodes, and does not engage in compensatory behaviors. They also report eating rapidly, to the point of discomfort, and feeling embarrassed and guilty about their eating habits. This aligns with the diagnostic criteria for Binge Eating Disorder."
+    },
+    "recurrent": {
+        "diagnosis": true,
+        "reasoning": "The individual experiences binge eating episodes approximately three to four times a week, indicating a recurrent pattern of behavior that meets the frequency criteria for Binge Eating Disorder."
+    }
+}

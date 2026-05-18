@@ -1,0 +1,26 @@
+{
+    "current": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criteria 1 (MB1=YES), 2 (MB2=YES), and 3 (MB3=YES) are met. Criterion 4 requires MB4=NO, but MB4=YES, so criterion 4 is not met. Criteria 5 and 6 cannot be evaluated due to missing data on MB6a-MB6e and MB7, but failure of criterion 4 alone is sufficient to conclude diagnosis is false.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    },
+    "severity": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "The severity criteria depend on the frequency of MB8a episodes per week, but no information about MB8a episodes frequency is provided. Therefore, none of the severity criteria (Mild, Moderate, Severe, Extreme) can be confirmed as met.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    },
+    "exclusions": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 (Does not meet criteria for Anorexia Nervosa) is met because there is no information indicating the patient meets Anorexia Nervosa criteria. Criterion 2 (Does not meet criteria for Bulimia Nervosa) is met because MB4 is YES, but the instruction states MB4 coded NO is required to exclude Bulimia Nervosa; since MB4 is YES, the patient does not meet the exclusion criterion for Bulimia Nervosa. Therefore, not all exclusion criteria are met.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    }
+}

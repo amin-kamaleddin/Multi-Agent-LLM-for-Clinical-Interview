@@ -1,0 +1,6 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "reasoning": "Criterion A1 (restrictive eating): MET \u2014 patient stated they monitor their weight closely and engage in severe restriction. Criterion A2 (intense fear of weight gain): MET \u2014 patient described a constant concern about weight and pervasive fear of gaining. Criterion A3 (distorted body image): MET \u2014 patient feels their body is larger than it should be and struggles to accept their weight. Criterion A4 (self-esteem influenced by weight): MET \u2014 patient reports self-esteem is closely tied to body weight and shape. Total: 4 of 4 criteria met (threshold \u22651). Duration: not explicitly stated, but behaviors described suggest ongoing issues. Functional impairment: not directly assessed, but the impact on self-esteem and behaviors indicates significant distress. Exclusions: not triggered. Diagnosis: TRUE \u2014 all criteria for anorexia nervosa are met based on the patient's endorsement of restrictive eating, fear of weight gain, distorted body image, and self-esteem issues related to weight."
+    }
+}

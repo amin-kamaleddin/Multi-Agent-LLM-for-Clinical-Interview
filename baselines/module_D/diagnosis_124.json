@@ -1,0 +1,10 @@
+{
+    "lifetime": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (spells of anxiety): MET \u2014 patient stated, 'There have been times I've felt sudden anxiety or fear in situations that seem normal to others.' Criterion 2 (4 or more symptoms): MET \u2014 patient endorsed heart racing, sweating, difficulty breathing, dizziness, feelings of unreality, fear of losing control, and fear of dying, totaling 7 symptoms. Criterion 3 (no substance or medical issues): MET \u2014 patient confirmed no drugs or medications and stated, 'I don\u2019t have any other significant medical conditions.' Total: Requires \u22654 symptoms; found 7 clearly met. Duration: met (patient reports persistent concern and behavior change since the attacks). Functional impairment: met (patient indicated changes in habits and increased caution in daily activities). Exclusions: not triggered. Diagnosis: TRUE \u2014 full threshold met with significant functional impairment confirmed."
+    },
+    "current": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (current spells of anxiety): MET \u2014 patient confirmed ongoing concern about having another attack and described recent experiences of anxiety. Criterion 2 (no substance or medical issues): MET \u2014 patient confirmed no drugs or medications and stated, 'I don\u2019t have any other significant medical conditions.' Total: Requires current symptoms; found current anxiety and concern about attacks. Duration: met (patient reports ongoing concerns and behavior changes). Functional impairment: met (patient indicated changes in habits and increased caution in daily activities). Exclusions: not triggered. Diagnosis: TRUE \u2014 current symptoms and functional impairment are present."
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "current": {
+        "diagnosis": false,
+        "reasoning": "Criterion C1 (panic attacks): MET \u2014 patient stated 'Absolutely, I have experienced those spells more than once.' Criterion C2 (persistent concern): MET \u2014 'I've found myself frequently worrying about having another panic attack.' Criterion C3 (exclusion criteria): O1a = NO AND O1b = NO \u2014 patient confirmed no substance use or withdrawal affecting symptoms. Total: 2 of 2 criteria met. Functional impairment: met \u2014 patient described avoiding crowded places and feeling isolated due to panic attacks. Diagnosis: TRUE \u2014 full criteria met with significant functional impairment confirmed."
+    },
+    "lifetime": {
+        "diagnosis": false,
+        "reasoning": "Criterion D1 (panic attacks): MET \u2014 patient confirmed multiple episodes of panic attacks. Criterion D2 (4 or more symptoms): MET \u2014 patient endorsed 10 symptoms: racing heart, sweating, trembling, shortness of breath, choking sensation, chest discomfort, nausea, dizziness, feelings of unreality, fear of losing control. Criterion D3 (exclusion criteria): O1a = NO AND O1b = NO \u2014 patient confirmed no substance use or withdrawal affecting symptoms. Total: 2 of 2 criteria met. Functional impairment: met \u2014 patient described significant behavioral changes and avoidance due to panic attacks. Diagnosis: TRUE \u2014 full criteria met with significant functional impairment confirmed."
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "reasoning": "Not applicable for this module."
+    }
+}

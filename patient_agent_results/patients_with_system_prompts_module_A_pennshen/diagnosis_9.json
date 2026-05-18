@@ -1,0 +1,18 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "1. Symptom groups (A3a\u2013A3g): Past positive groups are A3d, A3e, A3f (3 groups). Recent positive groups are A3a, A3c, A3d, A3e, A4 (5 groups). Note A4 is not a symptom group but functional impairment. So recent symptom groups positive: A3a, A3c, A3d, A3e (4 groups). A3f recent is NO. A3g both NO. So recent symptom groups positive = 4, past = 3. Neither past nor recent has at least 5 symptom groups positive. Therefore, criterion 1 is NOT met. 2. Core symptom: A1a=YES, A1b=YES, A2a_1=YES, A2b=YES, so criterion 2 is met. 3. Functional impairment: A4_recent=YES, so criterion 3 is met. 4. O1a=NO and O1b=NO, so criterion 4 is met. Since criterion 1 is not met, overall diagnosis is false.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    },
+    "recurrent": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 (A5=YES) is met as A5 is YES. Criterion 2 (O1a=NO AND O1b=NO) is met since both O1a and O1b are NO.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    }
+}

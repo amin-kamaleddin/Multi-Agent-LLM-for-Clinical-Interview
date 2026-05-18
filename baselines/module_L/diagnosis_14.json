@@ -1,0 +1,6 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "reasoning": "Criterion A1 (restriction of energy intake): MET \u2014 patient states they constantly think about reducing their food intake and feel that being smaller gives them control. Criterion A2 (intense fear of gaining weight): MET \u2014 patient expresses a terror of gaining weight and feeling unworthy if they do. Criterion A3 (distorted body image): MET \u2014 patient describes seeing themselves as bigger than they are and fixating on perceived flaws. Criterion A4 (self-worth influenced by body weight/shape): MET \u2014 patient indicates their self-esteem is tied to being thin and feels unbearable when they perceive themselves as less. Criterion A5 (lack of recognition of seriousness of low weight): UNCLEAR \u2014 patient does not explicitly state whether they consider their low weight normal or excessive, but they express a desire to be thinner. Total: 4 of 5 criteria met (threshold \u22654). Duration: not explicitly stated, but symptoms appear to be ongoing based on the context. Functional impairment: MET \u2014 patient describes significant distress and a negative impact on their self-worth and daily life. Exclusions: not triggered. Diagnosis: TRUE \u2014 full threshold met with significant functional impairment confirmed."
+    }
+}

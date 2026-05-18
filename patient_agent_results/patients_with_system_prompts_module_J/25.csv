@@ -1,0 +1,14 @@
+question_id,ai_question,patient_response,classification,reasoning,timestamp,exchange_type
+J1,"In the past 12 months, did you take any of these drugs more than once, to get high, to feel elated, to get “a buzz” or to change your mood? 
+
+Stimulants: amphetamines, ""speed"", crystal meth, “crank”, Dexedrine, Ritalin, diet pills.  
+Cocaine: snorting, IV, freebase, crack, ""speedball"".  
+Opiates: heroin, morphine, Dilaudid, opium, Demerol, methadone, Darvon, codeine, Percodan, Vicodin, OxyContin.  
+Hallucinogens: LSD (""acid""), mescaline, peyote, psilocybin, STP, ""mushrooms"", “ecstasy”, MDA, MDMA.  
+Dissociative Drugs: PCP (Phencyclidine, ""Angel Dust"", ""Peace Pill"", “Hog”), or ketamine (“Special K”).  
+Inhalants: ""glue"", ethyl chloride, “rush”, nitrous oxide (""laughing gas""), amyl or butyl nitrate (""poppers"").  
+Cannabis: marijuana, hashish (""hash""), THC, ""pot"", ""grass"", ""weed"", ""reefer"".  
+Sedatives, Hypnotics or Anxiolytics: Quaalude, Seconal (""reds""), Valium, Xanax, Librium, Ativan, Dalmane, Halcion, barbiturates, Miltown, GHB, Roofinol, “Roofies”.  
+Miscellaneous: steroids, nonprescription sleep or diet pills. Cough Medicine? Any others?  
+
+Please feel free to explain if you are uncertain.","I occasionally use cannabis, perhaps a few times a month, typically in social settings with friends. It’s more about enhancing the experience of being together rather than trying to escape or alter my mood. I don’t feel that this impacts my relationships or work obligations at all; I’ve managed to maintain a stable job and productive life alongside this occasional use. No one in my social circle has expressed any concern about my behavior, and I’ve never felt compelled to use more than I do. For me, it seems like a low-key, recreational activity that fits well within my lifestyle. I’m confident it doesn’t cross into problematic use for me.",no,"The patient indicates that they occasionally use cannabis a few times a month, which suggests a frequency of use. However, they also emphasize that this use is social and recreational, and they do not feel it impacts their life negatively. Since the question specifically asks about using drugs to get high or change mood, and the patient attributes their use to social enhancement rather than mood alteration, this suggests that the use is not problematic. Therefore, the response indicates that the symptom (problematic drug use) is not present, leading to a classification of 'no'.",2025-10-08T14:01:23.808457,initial

@@ -1,0 +1,42 @@
+{
+    "positive": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "1. At least one question except B1 is coded YES: B2 and B3_2 and B4b are YES, so criterion 1 is met. 2. Total points for YES answers (B1-B19): B2=YES, B3_2=YES, B4b=YES; others NO. Assuming each YES counts as 1 point, total is 3 points, which falls into the Low (1-8) suicidality score category. 3. O1a=NO and O1b=NO, criterion 3 is met. All criteria are met, so diagnosis is true.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    },
+    "Current": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 is met because there are multiple questions coded YES other than B1 (e.g., B2, B3_2, B4b). Criterion 2 (suicidality current) is not met as all suicidality-related questions (B10, B11, B12, B14, B15, B16, B18) are NO. Criterion 3 is met since O1a and O1b are both NO. However, since Criterion 2 is not met, the overall diagnosis is false.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    },
+    "LIFETIME ATTEMPT": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "Criterion 1: At least one question except B1 coded YES - B2 and B3_2 and B4b are YES, so criterion met. Criterion 2: Suicidality is lifetime - implied by presence of lifetime attempt questions (no direct info to contradict). Criterion 3: O1a = NO and O1b = NO - both are NO, criterion met. All criteria met.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    },
+    "LIKELY IN NEAR FUTURE": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "Criterion 1: At least one question except B1 is coded YES (B2=YES, B3_2=YES, B4b=YES), so criterion 1 is met. Criterion 2: Suicidality is indicated as LIKELY IN NEAR FUTURE (implied by presence of VALID_QUANTITY answers in B17, B17a, B17b, B19, B3a, B3b, which likely relate to suicidality measures), so criterion 2 is met. Criterion 3: O1a=NO and O1b=NO, so criterion 3 is met. Therefore, all criteria are met for diagnosis true.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    },
+    "SUICIDAL BEHAVIOR DISORDER": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 is not met because B18 is coded NO. Since the first criterion requires B18 to be YES, the diagnosis cannot be true. Criteria 2 and 3 cannot be evaluated as the first criterion fails. Criterion 4 is met as O1a and O1b are both NO, but this alone is insufficient for diagnosis.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    }
+}

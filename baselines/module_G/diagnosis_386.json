@@ -1,0 +1,12 @@
+{
+    "positive": {
+        "diagnosis": true,
+        "reasoning": "Criterion 1 (recurrent thoughts): MET \u2014 patient stated 'I've definitely been dealing with some really overwhelming thoughts lately.' Criterion 2 (attempt to suppress): MET \u2014 'I've been really trying to push those thoughts away.' Criterion 3 (thoughts persist): MET \u2014 'It feels like those thoughts just won\u2019t let go.' Criterion 4 (compulsive behaviors): MET \u2014 'I wash my hands more than I used to... I also find myself checking the locks at home repeatedly.' Criterion 5 (rituals to reduce anxiety): MET \u2014 'I would say they feel necessary to help me feel less anxious.' Criterion 6 (significant distress/functional impairment): MET \u2014 'It definitely interferes with getting to my tasks and makes me feel anxious all the time.' Total: 6 of 6 criteria met (threshold \u22654). Duration: met (symptoms reported for the past month). Functional impairment: met (interferes with tasks and causes anxiety). Exclusions: not triggered (no substance use or medical issues reported). Diagnosis: TRUE \u2014 full criteria met with significant distress and functional impairment confirmed.",
+        "insight": "goodOrFair",
+        "ticRelated": false
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (recurrent thoughts): MET \u2014 patient stated 'I've definitely been dealing with some really overwhelming thoughts lately.' Criterion 2 (attempt to suppress): MET \u2014 'I've been really trying to push those thoughts away.' Criterion 3 (thoughts persist): MET \u2014 'It feels like those thoughts just won\u2019t let go.' Criterion 4 (compulsive behaviors): MET \u2014 'I wash my hands more than I used to... I also find myself checking the locks at home repeatedly.' Criterion 5 (rituals to reduce anxiety): MET \u2014 'I would say they feel necessary to help me feel less anxious.' Criterion 6 (significant distress/functional impairment): MET \u2014 'It definitely interferes with getting to my tasks and makes me feel anxious all the time.' Total: 6 of 6 criteria met (threshold \u22654). Duration: met (symptoms reported for the past month). Functional impairment: met (interferes with tasks and causes anxiety). Exclusions: not triggered (no substance use or medical issues reported). Diagnosis: TRUE \u2014 full criteria met with significant distress and functional impairment confirmed."
+    }
+}

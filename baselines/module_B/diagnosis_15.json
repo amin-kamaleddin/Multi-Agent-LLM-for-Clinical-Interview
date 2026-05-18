@@ -1,0 +1,10 @@
+{
+    "current": {
+        "diagnosis": true,
+        "reasoning": "Criterion 1 (thoughts of being better off dead): MET \u2014 patient stated, 'I\u2019ve found myself wishing I could just disappear.' Criterion 2 (thoughts of harming self): MET \u2014 'I catch myself wondering if anyone would even notice if I weren't here anymore.' Criterion 3 (frequency of thoughts): MET \u2014 'Those thoughts seem to creep in almost every night.' Criterion 4 (intensity of thoughts): MET \u2014 'My thoughts about ending my life have crept in more often.' Criterion 5 (intent to act): UNCLEAR \u2014 patient states, 'I haven\u2019t made any plans,' but expresses a desire to escape the pain. Criterion 6 (impulse to act): UNCLEAR \u2014 patient indicates thoughts are overwhelming but has not acted on them. Criterion 7 (difficulty resisting impulses): MET \u2014 'It\u2019s tough to push those thoughts away.' Criterion 8 (active steps towards suicide): NOT MET \u2014 patient has not taken any steps towards a suicide attempt. Criterion 9 (self-injury): NOT MET \u2014 patient has not injured themselves on purpose. Criterion 10 (lifetime attempt): NOT MET \u2014 patient has not made a full suicide attempt but has had moments of despair. Total: 6 of 10 criteria met (threshold \u22651). Duration: met (patient reports symptoms for the past month). Functional impairment: met (patient describes feeling overwhelmed and isolated). Exclusions: not triggered. Diagnosis: TRUE \u2014 current suicidal thoughts and feelings are present with significant functional impairment."
+    },
+    "lifetime": {
+        "diagnosis": true,
+        "reasoning": "Criterion 1 (lifetime attempt): MET \u2014 patient indicated a past moment of impulsive choices that put them in a dark place. Total: 1 of 1 criteria met (threshold \u22651). Diagnosis: TRUE \u2014 patient has a history of suicidal thoughts and impulsive behavior."
+    }
+}

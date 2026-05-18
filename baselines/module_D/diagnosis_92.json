@@ -1,0 +1,10 @@
+{
+    "lifetime": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (spells of anxiety): MET \u2014 patient stated 'It's happened more than once' and described feeling a wave of fear suddenly. Criterion 2 (4 or more symptoms): MET \u2014 patient endorsed racing heart, sweating, trembling, shortness of breath, dizziness, and feelings of detachment, totaling 6 symptoms clearly met. Criterion 3 (concern about attacks): MET \u2014 patient indicated persistent concern and behavior change, stating 'I try to avoid certain situations.' Total: 6 of 13 symptoms met (threshold \u22654). Exclusions: NOT TRIGGERED \u2014 patient denied substance use and reported no other medical conditions. Diagnosis: TRUE \u2014 full threshold met with significant concern and behavioral changes confirmed."
+    },
+    "current": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (current spells of anxiety): MET \u2014 patient described ongoing experiences of anxiety and fear. Criterion 2 (current concern about attacks): MET \u2014 patient reported persistent concern and avoidance behavior. Exclusions: NOT TRIGGERED \u2014 patient denied substance use and reported no other medical conditions. Diagnosis: TRUE \u2014 current symptoms and concerns meet the diagnostic criteria."
+    }
+}

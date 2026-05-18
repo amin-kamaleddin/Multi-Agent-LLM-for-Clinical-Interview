@@ -1,0 +1,6 @@
+{
+    "current": {
+        "diagnosis": false,
+        "reasoning": "MB1 yes: NOT MET; MB2 yes: MET; MB3 yes: MET; MB4 no: NOT MET; MB6 cluster >=3: MET; MB7 yes: MET"
+    }
+}

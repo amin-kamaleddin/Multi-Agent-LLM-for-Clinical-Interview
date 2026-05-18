@@ -1,0 +1,10 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (recurrent intrusive thoughts): MET \u2014 patient stated, 'I have been troubled by recurring thoughts about the safety of my family.' Criterion 2 (attempts to suppress thoughts): MET \u2014 'I have tried to suppress the thoughts about keeping the door locked.' Criterion 3 (thoughts persist despite suppression): MET \u2014 'They do persist in my mind, regardless of my attempts to dismiss them.' Criterion 4 (compulsive behaviors): MET \u2014 'I find myself checking the door to ensure it's locked multiple times.' Criterion 5 (rituals to reduce anxiety): MET \u2014 'The rituals of checking the door multiple times are done to reduce my anxiety.' Criterion 6 (significant distress or impairment): MET \u2014 'These thoughts have occupied a significant amount of my time... it can be quite distressing.' Total: 6 of 6 criteria met (threshold \u22654). Duration: met (symptoms reported in the past month). Functional impairment: met (significant impact on social interactions and time spent checking). Exclusions: not triggered (symptoms not solely due to substance use or medical condition). Diagnosis: TRUE \u2014 full criteria met with significant distress and functional impairment confirmed."
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (recurrent intrusive thoughts): NOT MET \u2014 patient did not report a history of recurrent episodes beyond the past month. Total: 0 of 6 criteria met (threshold \u22652). Diagnosis: FALSE \u2014 no evidence of recurrent episodes."
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "reasoning": "Criterion A1 (depressed mood): NOT MET \u2014 patient stated 'I think I\u2019ve felt down at times, but it hasn't been overwhelming.' This indicates that the patient does not meet the threshold for depressed mood. Criterion A2 (anhedonia): NOT MET \u2014 patient stated 'I wouldn\u2019t say I\u2019ve stopped enjoying things completely,' suggesting that there is no significant loss of interest or pleasure. Criterion A3 (weight/appetite): NOT MET \u2014 patient did not mention any changes in weight or appetite. Criterion A4 (sleep): NOT MET \u2014 no information provided regarding sleep disturbances. Total: 0 of 9 criteria met (threshold \u22655). Duration: not applicable as no symptoms were clearly endorsed. Functional impairment: NOT MET \u2014 patient did not report any significant distress or impairment in functioning. Exclusions: not triggered. Diagnosis: FALSE \u2014 no criteria met for a major depressive episode."
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "reasoning": "Criterion A5: NOT MET \u2014 there is no indication of a previous episode meeting full criteria. Exclusions: not triggered. Diagnosis: FALSE \u2014 no recurrent episodes indicated."
+    }
+}

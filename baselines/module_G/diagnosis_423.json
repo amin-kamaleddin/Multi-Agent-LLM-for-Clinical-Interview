@@ -1,0 +1,12 @@
+{
+    "positive": {
+        "diagnosis": true,
+        "reasoning": "Criterion 1 (recurrent thoughts): MET \u2014 patient stated 'Yes, I have definitely been bothered by those kinds of thoughts lately.' Criterion 2 (attempt to suppress): MET \u2014 'I've definitely tried to suppress these thoughts.' Criterion 3 (thoughts keep coming back): MET \u2014 'Yes, they do keep coming back.' Criterion 4 (driven to do something repeatedly): MET \u2014 'I\u2019ve really felt driven to wash my hands over and over.' Criterion 5 (rituals to prevent anxiety): MET \u2014 'I feel like I have to do these rituals to try to relieve my anxious feelings.' Criterion 6 (significant distress/interference): MET \u2014 'These obsessive thoughts and compulsive behaviors have made it hard for me to focus on anything else.' Total: 6 of 6 criteria met (threshold \u22654). Duration: met (symptoms reported for about a month). Functional impairment: met (affecting work and relationships). Exclusions: not triggered (no substance use or medical conditions reported). Diagnosis: TRUE \u2014 full criteria met with significant functional impairment confirmed.",
+        "insight": "goodOrFair",
+        "ticRelated": false
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (recurrent thoughts): MET \u2014 patient stated 'Yes, I have definitely been bothered by those kinds of thoughts lately.' Criterion 2 (attempt to suppress): MET \u2014 'I've definitely tried to suppress these thoughts.' Criterion 3 (thoughts keep coming back): MET \u2014 'Yes, they do keep coming back.' Criterion 4 (driven to do something repeatedly): MET \u2014 'I\u2019ve really felt driven to wash my hands over and over.' Criterion 5 (rituals to prevent anxiety): MET \u2014 'I feel like I have to do these rituals to try to relieve my anxious feelings.' Criterion 6 (significant distress/interference): MET \u2014 'These obsessive thoughts and compulsive behaviors have made it hard for me to focus on anything else.' Total: 6 of 6 criteria met (threshold \u22654). Duration: met (symptoms reported for about a month). Functional impairment: met (affecting work and relationships). Exclusions: not triggered (no substance use or medical conditions reported). Diagnosis: TRUE \u2014 full criteria met with significant functional impairment confirmed."
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "lifetime": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (spells of anxiety): MET \u2014 patient stated 'Yes, there have been times when I've felt anxious or uneasy in situations where others might not.' Criterion 2 (4 or more symptoms): MET \u2014 patient endorsed heart racing, sweating, trembling, shortness of breath, dizziness, and feelings of detachment, totaling 6 symptoms. Criterion 3 (no other disorders): MET \u2014 patient confirmed no current medications or withdrawal, and while there are other health issues, they stated these are not directly related to the panic attacks. Total: 6 of 13 symptoms met (threshold \u22654). Exclusions: not triggered as the patient attributes symptoms to anxiety rather than medical conditions. Diagnosis: TRUE \u2014 full threshold met with no exclusion criteria triggered."
+    },
+    "current": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (current spells of anxiety): MET \u2014 patient confirmed persistent concern about having another attack and changes in behavior due to this concern. Criterion 2 (no other disorders): MET \u2014 patient confirmed no current medications or withdrawal, and while there are other health issues, they stated these are not directly related to the panic attacks. Total: 1 of 1 criteria met. Diagnosis: TRUE \u2014 current symptoms are present with no exclusion criteria triggered."
+    }
+}

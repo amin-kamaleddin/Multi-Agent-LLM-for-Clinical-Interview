@@ -1,0 +1,14 @@
+{
+    "current": {
+        "diagnosis": false,
+        "reasoning": ""
+    },
+    "recurrent": {
+        "diagnosis": true,
+        "reasoning": "The individual indicates that binge eating occurs several times a week, suggesting a recurrent pattern of behavior."
+    },
+    "severity": {
+        "diagnosis": false,
+        "reasoning": ""
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "current": {
+        "diagnosis": false,
+        "reasoning": ""
+    },
+    "severity": {
+        "diagnosis": false,
+        "reasoning": "The individual experiences binge eating episodes three to four times per week, which falls within the range of 4-7 episodes per week, indicating a moderate severity of binge eating disorder."
+    },
+    "exclusions": {
+        "diagnosis": false,
+        "reasoning": ""
+    }
+}

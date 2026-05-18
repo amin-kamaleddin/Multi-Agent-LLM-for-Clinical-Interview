@@ -1,0 +1,523 @@
+{
+  "module": {
+    "id": "B",
+    "name": "Suicidality"
+  },
+  "instructions": [
+  ],
+  "questions": [
+    {
+      "id": "B1",
+      "prompt": "In the past month did you have any accident? This includes taking too much of your medication accidentally.",
+      "responseType": "yes_no",
+      "points": 0,
+      "next": {
+        "yes": "B1a",
+        "no": "B2"
+      }
+    },
+    {
+      "id": "B1a",
+      "prompt": "In the past month did you plan or intend to hurt yourself in any accident, either by not avoiding a risk or by causing the accident on purpose?",
+      "responseType": "yes_no",
+      "points": 0,
+      "next": {
+        "yes": "B1b",
+        "no": "B2"
+      }
+    },
+    {
+      "id": "B1b",
+      "prompt": "In the past month did you intend to die as a result of any accident?",
+      "responseType": "yes_no",
+      "points": 0,
+      "next": {
+        "yes": "B2",
+        "no": "B2"
+      }
+    },
+    {
+      "id": "B2",
+      "prompt": "In the past month did you Think (even momentarily) that you would be better off dead or wish you were dead or needed to be dead?",
+      "responseType": "yes_no",
+      "points": 1,
+      "next": {
+        "yes": "B3_2",
+        "no": "B3_1"
+      }
+    },
+    {
+      "id": "B3_1",
+      "prompt": "In the past month did you think (even momentarily) about harming or of hurting or of injuring yourself - with at least some intent or awareness that you might die as a result - or think about suicide (i.e. about killing yourself)?",
+      "responseType": "yes_no",
+      "points": 6,
+      "next": {
+        "yes": "B3a",
+        "no": "B4b"
+      }
+    },
+    {
+      "id": "B3_2",
+      "prompt": "In the past month did you think (even momentarily) about harming or of hurting or of injuring yourself - with at least some intent or awareness that you might die as a result - or think about suicide (i.e. about killing yourself)?",
+      "responseType": "yes_no",
+      "points": 6,
+      "next": {
+        "yes": "B3a",
+        "no": "B3a"
+      }
+    },
+    {
+      "id": "B3a",
+      "prompt": "In the past month HOW FREQUENTLY did you think about harming or of hurting or of injuring yourself - with at least some intent or awareness that you might die as a result - or think about suicide (i.e. about killing yourself)?",
+      "responseType": "quantity",
+      "points": 6,
+      "next": {
+        "valid_quantity": "B3b",
+        "default": "B3b"
+      }
+    },
+    {
+      "id": "B3b",
+      "prompt": "In the past month HOW INTENSE did you think about harming or of hurting or of injuring yourself - with at least some intent or awareness that you might die as a result - or think about suicide (i.e. about killing yourself)?",
+      "responseType": "quantity",
+      "points": 6,
+      "next": {
+        "valid_quantity": "B4a",
+        "default": "B4a"
+      }
+    },
+    {
+      "id": "B4a",
+      "prompt": "In the past month did you Hear a voice or voices telling you to kill yourself?",
+      "responseType": "yes_no",
+      "points": 4,
+      "next": {
+        "yes": "B4b",
+        "no": "B4b"
+      }
+    },
+    {
+      "id": "B4b",
+      "prompt": "In the past month did you have dreams with any suicidal content?",
+      "responseType": "yes_no",
+      "points": 4,
+      "next": {
+        "yes": "B5",
+        "no": "B5"
+      }
+    },
+    {
+      "id": "B5",
+      "prompt": "In the past month did you have a suicide method in mind (i.e. how)?",
+      "responseType": "yes_no",
+      "points": 8,
+      "next": {
+        "yes": "B6",
+        "no": "B6"
+      }
+    },
+    {
+      "id": "B6",
+      "prompt": "In the past month did you have a suicide means in mind (i.e. with what)?",
+      "responseType": "yes_no",
+      "points": 8,
+      "next": {
+        "yes": "B7",
+        "no": "B7"
+      }
+    },
+    {
+      "id": "B7",
+      "prompt": "In the past month did you have any place in mind to attempt suicide (i.e. where)?",
+      "responseType": "yes_no",
+      "points": 8,
+      "next": {
+        "yes": "B8",
+        "no": "B8"
+      }
+    },
+    {
+      "id": "B8",
+      "prompt": "In the past month did you have any date/timeframe in mind to attempt suicide (i.e. when)?",
+      "responseType": "yes_no",
+      "points": 8,
+      "next": {
+        "yes": "B9",
+        "no": "B9"
+      }
+    },
+    {
+      "id": "B9",
+      "prompt": "In the past month did you think about any task you would like to complete before trying to kill yourself? (e.g. writing a suicide note)",
+      "responseType": "yes_no",
+      "points": 8,
+      "next": {
+        "yes": "B10",
+        "no": "B10"
+      }
+    },
+    {
+      "id": "B10",
+      "prompt": "In the past month did you intend to act on thoughts of killing yourself?",
+      "responseType": "yes_no",
+      "points": 8,
+      "next": {
+        "yes": "B10a",
+        "no": "B11"
+      }
+    },
+    {
+      "id": "B10a",
+      "prompt": "While having thoughts of killing yourself, did you intend to act at the time?",
+      "responseType": "yes_no",
+      "points": 8,
+      "next": {
+        "yes": "B10b",
+        "no": "B10b"
+      }
+    },
+    {
+      "id": "B10b",
+      "prompt": "While having thoughts of killing yourself, did you intend to act at some time in the future?",
+      "responseType": "yes_no",
+      "points": 8,
+      "next": {
+        "yes": "B11",
+        "no": "B11"
+      }
+    },
+    {
+      "id": "B11",
+      "prompt": "In the past month did you intend to die as a result of a suicidal act?",
+      "responseType": "yes_no",
+      "points": 8,
+      "next": {
+        "yes": "B11a",
+        "no": "B12"
+      }
+    },
+    {
+      "id": "B11a",
+      "prompt": "While intending to die as a result of a suicidal act, did you intend to die by suicide at the time?",
+      "responseType": "yes_no",
+      "points": 8,
+      "next": {
+        "yes": "B11b",
+        "no": "B11b"
+      }
+    },
+    {
+      "id": "B11b",
+      "prompt": "While intending to die as a result of a suicidal act, did you intend to die by suicide at some time in the future?",
+      "responseType": "yes_no",
+      "points": 8,
+      "next": {
+        "yes": "B12",
+        "no": "B12"
+      }
+    },
+    {
+      "id": "B12",
+      "prompt": "In the past month did you feel the need or impulse to kill yourself or to plan to kill yourself sooner rather than later??",
+      "responseType": "yes_no",
+      "points": 8,
+      "next": {
+        "yes": "B12a",
+        "no": "B14"
+      }
+    },
+    {
+      "id": "B12a",
+      "prompt": "Was the impulse or need to kill yourself?",
+      "responseType": "yes_no",
+      "points": 8,
+      "next": {
+        "yes": "B12b",
+        "no": "B12b"
+      }
+    },
+    {
+      "id": "B12b",
+      "prompt": "Was the impulse or need to plan to kill yourself?",
+      "responseType": "yes_no",
+      "points": 8,
+      "next": {
+        "yes": "B12c",
+        "no": "B12c"
+      }
+    },
+    {
+      "id": "B12c",
+      "prompt": "Was the impulse or need largely unprovoked? 5 minutes before this Impulse, could you have predicted it would occur at that time?",
+      "responseType": "yes_no",
+      "points": 8,
+      "next": {
+        "yes": "B12d",
+        "no": "B12d"
+      }
+    },
+    {
+      "id": "B12d",
+      "prompt": "Was the impulse or need provoked?",
+      "responseType": "yes_no",
+      "points": 8,
+      "next": {
+        "yes": "B13",
+        "no": "B13"
+      }
+    },
+    {
+      "id": "B13",
+      "prompt": "In the past month did you have difficulty resisting these impulses?",
+      "responseType": "yes_no",
+      "points": 8,
+      "next": {
+        "yes": "B14",
+        "no": "B14"
+      }
+    },
+    {
+      "id": "B14",
+      "prompt": "In the past month did you Take any active steps to prepare for a suicide attempt in which you expected or intended to die (include anything done or purposely not done that put you closer to making a suicide attempt)? This includes times when you were going to kill yourself, but were interrupted or stopped yourself, before harming yourself.",
+      "responseType": "yes_no",
+      "points": 0,
+      "next": {
+        "yes": "B14a",
+        "no": "B15"
+      }
+    },
+    {
+      "id": "B14a",
+      "prompt": "Did you take active steps to prepare to kill yourself, but you did not start the suicide attempt?",
+      "group": "B14",
+      "responseType": "yes_no",
+      "points": 9,
+      "next": {
+        "yes": "B14b",
+        "no": "B14b"
+      }
+    },
+    {
+      "id": "B14b",
+      "prompt": "Did you take active steps to prepare to kill yourself, but then you stopped yourself just before harming yourself (“aborted”).",
+      "group": "B14",
+      "responseType": "yes_no",
+      "points": 10,
+      "next": {
+        "yes": "B14c",
+        "no": "B14c"
+      }
+    },
+    {
+      "id": "B14c",
+      "prompt": "Did you take active steps to prepare to kill yourself, but then someone or something stopped you just before harming yourself (“interrupted”)?",
+      "group": "B14",
+      "responseType": "yes_no",
+      "points": 11,
+      "next": {
+        "yes": "B15",
+        "no": "B15"
+      }
+    },
+    {
+      "id": "B15",
+      "prompt": "In the past month did you injure yourself on purpose without intending to kill yourself?",
+      "responseType": "yes_no",
+      "points": 0,
+      "next": {
+        "yes": "B16",
+        "no": "B16"
+      }
+    },
+    {
+      "id": "B16",
+      "prompt": "In the past month did you Attempt suicide (to kill yourself)?",
+      "responseType": "yes_no",
+      "points": 0,
+      "next": {
+        "yes": "B16a",
+        "no": "B17"
+      }
+    },
+    {
+      "id": "B16a",
+      "prompt": "Did you start a suicide attempt (to kill yourself), but then you decided to stop and did not finish the attempt?",
+      "group": "B16",
+      "responseType": "yes_no",
+      "points": 12,
+      "next": {
+        "yes": "B16b",
+        "no": "B16b"
+      }
+    },
+    {
+      "id": "B16b",
+      "prompt": "Start a suicide attempt (to kill yourself), but then you were interrupted and did not finish the attempt?",
+      "group": "B16",
+      "responseType": "yes_no",
+      "points": 13,
+      "next": {
+        "yes": "B16c",
+        "no": "B16c"
+      }
+    },
+    {
+      "id": "B16c",
+      "prompt": "Did you went through with a suicide attempt (to kill yourself), completely as you meant to? A suicide attempt means you did something where you could possibly be injured, with at least a slight intent to die.",
+      "group": "B16",
+      "responseType": "yes_no",
+      "points": 14,
+      "next": {
+        "yes": "B16d",
+        "no": "B17"
+      }
+    },
+    {
+      "id": "B16d",
+      "prompt": "Did you hope to be rescued or survive?",
+      "group": "B16",
+      "responseType": "yes_no",
+      "points": 14,
+      "next": {
+        "yes": "B16f",
+        "no": "B16f"
+      }
+    },
+    {
+      "id": "B16f",
+      "prompt": "Did you expected or intended to die?",
+      "group": "B16",
+      "responseType": "yes_no",
+      "points": 14,
+      "next": {
+        "yes": "B17",
+        "no": "B17"
+      }
+    },
+    {
+      "id": "B17",
+      "prompt": "What is the usual time spent per day with any suicidal impulses, thoughts or actions?",
+      "group": "B17",
+      "responseType": "quantity",
+      "points": 0,
+      "next": {
+        "valid_quantity": "B17a",
+        "default": "B17a"
+      }
+    },
+    {
+      "id": "B17a",
+      "prompt": "What is the least amount of time spent per day with any suicidal impulses, thoughts or actions?",
+      "group": "B17",
+      "responseType": "quantity",
+      "points": 0,
+      "next": {
+        "valid_quantity": "B17b",
+        "default": "B17b"
+      }
+    },
+    {
+      "id": "B17b",
+      "prompt": "What is the most amount of time spent per day with any suicidal impulses, thoughts or actions?",
+      "group": "B17",
+      "responseType": "quantity",
+      "points": 0,
+      "next": {
+        "valid_quantity": "B18",
+        "default": "B18"
+      }
+    },
+    {
+      "id": "B18",
+      "prompt": "In your lifetime did you ever make a suicide attempt (try to kill yourself)?",
+      "group": "B18",
+      "responseType": "yes_no",
+      "points": 4,
+      "next": {
+        "yes": "B18a",
+        "no": "B19"
+      }
+    },
+    {
+      "id": "B18a",
+      "prompt": "In your lifetime how many times did you attempt suicide?",
+      "group": "B18",
+      "responseType": "quantity",
+      "points": 4,
+      "next": {
+        "valid_quantity": "B18b",
+        "default": "B18b"
+      }
+    },
+    {
+      "id": "B18b",
+      "prompt": "when was the last suicide attempt?",
+      "group": "B18",
+      "responseType": "quantity",
+      "points": 4,
+      "next": {
+        "valid_quantity": "B19",
+        "default": "B19"
+      }
+    },
+    {
+      "id": "B19",
+      "prompt": "How likely are you to try to kill yourself within the next 3 months on a scale of 0-100?",
+      "responseType": "quantity",
+      "points": 13,
+      "next": {
+        "valid_quantity": "O1a"
+      }
+    },
+    {
+      "id": "O1a",
+      "prompt": "Were you taking any drugs or medicines or in withdrawal from any of these? I am trying to understand if the symptoms you have described could be caused by other organic factors.",
+      "responseType": "choice",
+      "options": "yes_no",
+      "next": {
+        "no": "O1b",
+        "yes": "O1b"
+      }
+    },
+    {
+      "id": "O1b",
+      "prompt": "Did you have any other medical illness unrelated to the one we discussed today? I am trying to understand if the symptoms you have described could be caused by other organic factors.",
+      "responseType": "choice",
+      "options": "yes_no",
+      "next": {
+        "no": "DIAGNOSTIC",
+        "yes": "DIAGNOSTIC"
+      }
+    }
+  ],
+  "diagnosticCriteria": {
+    "suicidality": {
+      "positive": [
+        "IS AT LEAST 1 OF THE questions (EXCEPT B1) CODED YES?",
+        "ADD THE TOTAL POINTS FOR THE ANSWERS (B1-B19) CHECKED ‘YES’ AND SPECIFY THE SUICIDALITY SCORE CATEGORY AS 1-8 points Low, 9-16 points Moderate, > 17 points High",
+        "O1a = NO AND O1b = NO"
+      ],
+      "Current": [
+        "IS AT LEAST 1 OF THE questions (EXCEPT B1) CODED YES?",
+        "If the SUICIDALITY is current",
+        "O1a = NO AND O1b = NO"
+      ],
+      "LIFETIME ATTEMPT": [
+        "IS AT LEAST 1 OF THE questions (EXCEPT B1) CODED YES?",
+        "If the SUICIDALITY is lifetime",
+        "O1a = NO AND O1b = NO"
+      ],
+      "LIKELY IN NEAR FUTURE": [
+        "IS AT LEAST 1 OF THE questions (EXCEPT B1) CODED YES?",
+        "If the SUICIDALITY is LIKELY IN NEAR FUTURE",
+        "O1a = NO AND O1b = NO"
+      ],
+      "SUICIDAL BEHAVIOR DISORDER": [
+        "IS B18 CODED YES?",
+        "AND A YES RESPONSE TO: NO  YES  SUICIDAL BEHAVIOR  DISORDER  Was the suicidal act started when the subject was not in a state of confusion or  delirium?",
+        "AND A YES RESPONSE TO: Was the suicidal act done without a political or religious purpose? IF YES, SPECIFY WHETHER THE DISORDER IS CURRENT, IN EARLY REMISSION OR IN REMISSION.",
+        "O1a = NO AND O1b = NO"
+      ]
+    }
+  }
+}

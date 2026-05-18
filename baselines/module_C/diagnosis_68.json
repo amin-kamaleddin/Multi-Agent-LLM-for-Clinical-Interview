@@ -1,0 +1,10 @@
+{
+    "positive": {
+        "diagnosis": true,
+        "reasoning": "Criterion 1: MET \u2014 Patient reported feeling unusually energized and active, stating 'I found myself starting projects earlier in the day and talking significantly more than usual.' Criterion 2: MET \u2014 Patient indicated a significant increase in activity and energy levels, stating 'I've definitely noticed a significant increase in my activity during those days.' Criterion 3: MET \u2014 Patient confirmed that others have noticed changes, saying 'People have noticed that I seem different and more energetic than my typical self.' Criterion 4: MET \u2014 Patient reported feeling pressured to talk more, stating 'I've definitely been talking more than usual lately.' Criterion 5: MET \u2014 Patient confirmed no hospitalization for these issues. Total: 5 of 9 criteria met (threshold \u22654). Duration: met (symptoms lasted for about 5 days). Functional impairment: met (noted some strain in relationships due to dominating discussions). Exclusions: not triggered (no substance use or medical conditions reported). Diagnosis: TRUE \u2014 full threshold met with significant functional impairment confirmed."
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1: NOT MET \u2014 Patient did not report any previous episodes of similar symptoms that would indicate a recurrent pattern. Criterion 2: NOT MET \u2014 No evidence of prior episodes was provided. Total: 0 of 9 criteria met (threshold \u22652). Diagnosis: FALSE \u2014 no evidence of recurrent episodes."
+    }
+}

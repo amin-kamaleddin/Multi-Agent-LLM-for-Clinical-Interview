@@ -1,0 +1,10 @@
+{
+    "positive": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "Criterion requires at least one item from L4 coded YES. Patient answered YES to L4a, L4b, and L4c, thus criterion is met.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    }
+}

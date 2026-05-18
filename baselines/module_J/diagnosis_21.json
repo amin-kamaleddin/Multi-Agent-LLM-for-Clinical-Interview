@@ -1,0 +1,10 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "reasoning": "Criterion J2a (using substances more than once): NOT MET \u2014 patient stated, 'I wouldn't say I've used any of those substances more than once for the purposes you mentioned.' Criterion J2b (using substances to get high): NOT MET \u2014 patient indicated that their use was 'very occasional' and did not significantly change their mood. Criterion J2c (failure to fulfill obligations): NOT MET \u2014 patient reported no impact on daily life or relationships. Criterion J2d (craving): NOT MET \u2014 no mention of craving for substances. Criterion J2e (using in hazardous situations): NOT MET \u2014 no evidence of using substances in dangerous situations. Criterion J2f (social or interpersonal problems): NOT MET \u2014 patient stated no impact on relationships. Criterion J2g (reduction of activities): NOT MET \u2014 no indication of reduced participation in activities. Criterion J2h (tolerance): NOT MET \u2014 no mention of needing more of the substance. Criterion J2i (withdrawal): NOT MET \u2014 no symptoms of withdrawal reported. Criterion J2j (using despite problems): NOT MET \u2014 no problems reported related to substance use. Total: 0 of 11 criteria met (threshold \u22652). Duration: not applicable as no criteria met. Functional impairment: not applicable as no impairment reported. Exclusions: not triggered. Diagnosis: FALSE \u2014 no criteria met for substance use disorder."
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "reasoning": "Criterion J2a (using substances more than once): NOT MET \u2014 patient stated, 'I wouldn't say I've used any of those substances more than once for the purposes you mentioned.' Total: 0 of 11 criteria met (threshold \u22652). Duration: not applicable as no criteria met. Functional impairment: not applicable as no impairment reported. Exclusions: not triggered. Diagnosis: FALSE \u2014 no criteria met for recurrent substance use disorder."
+    }
+}

@@ -1,0 +1,14 @@
+question_id,ai_question,patient_response,classification,reasoning,timestamp,exchange_type
+J1,"In the past 12 months, did you take any of these drugs more than once, to get high, to feel elated, to get “a buzz” or to change your mood? 
+
+Stimulants: amphetamines, ""speed"", crystal meth, “crank”, Dexedrine, Ritalin, diet pills.  
+Cocaine: snorting, IV, freebase, crack, ""speedball"".  
+Opiates: heroin, morphine, Dilaudid, opium, Demerol, methadone, Darvon, codeine, Percodan, Vicodin, OxyContin.  
+Hallucinogens: LSD (""acid""), mescaline, peyote, psilocybin, STP, ""mushrooms"", “ecstasy”, MDA, MDMA.  
+Dissociative Drugs: PCP (Phencyclidine, ""Angel Dust"", ""Peace Pill"", “Hog”), or ketamine (“Special K”).  
+Inhalants: ""glue"", ethyl chloride, “rush”, nitrous oxide (""laughing gas""), amyl or butyl nitrate (""poppers"").  
+Cannabis: marijuana, hashish (""hash""), THC, ""pot"", ""grass"", ""weed"", ""reefer"".  
+Sedatives, Hypnotics or Anxiolytics: Quaalude, Seconal (""reds""), Valium, Xanax, Librium, Ativan, Dalmane, Halcion, barbiturates, Miltown, GHB, Roofinol, “Roofies”.  
+Miscellaneous: steroids, nonprescription sleep or diet pills. Cough Medicine? Any others?  
+
+Please respond with ""yes"" or ""no,"" and feel free to explain if you're uncertain.","No. I have not taken any of these substances for the purpose of getting high, feeling elated, or altering my mood. My use of cannabis, when it does occur, is occasional and focused more on social settings without any intent to change my emotional state. I manage my responsibilities consistently and do not experience any negative effects from my cannabis use, nor do I seek it out during periods of stress or mood fluctuations. My interactions with friends sometimes involve cannabis, but it does not influence my mental or physical performance. I find that I can maintain a stable outlook regardless of these infrequent uses.",no,"The patient clearly states that they have not taken any of the listed substances for the purpose of getting high or altering their mood. They also specify that their use of cannabis is occasional and social, without intent to change their emotional state. This indicates that they do not engage in substance use for the reasons outlined in the question, which aligns with the classification rule for yes_no questions where the response indicates the symptom/condition is NOT present. Therefore, the classification is 'no'.",2025-10-08T13:59:48.990815,initial

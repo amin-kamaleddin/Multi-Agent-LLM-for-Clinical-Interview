@@ -1,0 +1,6 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "reasoning": "I2 symptoms >=2: NOT MET; I2 yes count: NOT MET"
+    }
+}

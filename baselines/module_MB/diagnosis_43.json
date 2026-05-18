@@ -1,0 +1,14 @@
+{
+    "current": {
+        "diagnosis": false,
+        "reasoning": ""
+    },
+    "severity": {
+        "diagnosis": "Moderate",
+        "reasoning": "The individual experiences binge eating episodes four times a week, which falls under the moderate severity category."
+    },
+    "exclusions": {
+        "diagnosis": false,
+        "reasoning": ""
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "positive": {
+        "diagnosis": true,
+        "reasoning": "Criterion 1 (obsessions): MET \u2014 patient stated, 'There have been thoughts that come to mind often. They are not exactly welcome and can be distressing at times.' Criterion 2 (compulsions): MET \u2014 patient described feeling the need to check the door multiple times, stating, 'It\u2019s part of a routine to ensure everything is secure.' Criterion 3 (distress/functional impairment): MET \u2014 patient reported that these thoughts and behaviors 'have taken up a good portion of my time' and 'create some feeling of distress,' impacting social interactions. Insight: goodOrFair \u2014 patient acknowledges the distress and necessity of the behaviors. Tic-related: null \u2014 no mention of tics. Total: 3 criteria met. Duration: met (symptoms reported in the past month). Functional impairment: met (significant distress and impact on social interactions). Exclusions: not triggered (no substance use or medical conditions reported as relevant). Diagnosis: TRUE \u2014 full criteria met with significant functional impairment confirmed.",
+        "insight": "goodOrFair"
+    },
+    "recurrent": {
+        "diagnosis": true,
+        "reasoning": "Criterion 1 (obsessions): MET \u2014 patient stated, 'There have been thoughts that come to mind often.' Criterion 2 (compulsions): MET \u2014 patient described feeling the need to check the door multiple times. Criterion 3 (distress/functional impairment): MET \u2014 patient reported that these thoughts and behaviors 'have taken up a good portion of my time' and 'create some feeling of distress,' impacting social interactions. Insight: goodOrFair \u2014 patient acknowledges the distress and necessity of the behaviors. Tic-related: null \u2014 no mention of tics. Total: 3 criteria met. Duration: met (symptoms reported in the past month). Functional impairment: met (significant distress and impact on social interactions). Exclusions: not triggered (no substance use or medical conditions reported as relevant). Diagnosis: TRUE \u2014 full criteria met with significant functional impairment confirmed."
+    }
+}

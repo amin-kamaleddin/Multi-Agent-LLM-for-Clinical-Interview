@@ -1,0 +1,151 @@
+{
+  "module": {
+    "id": "MB",
+    "name": "Binge Eating Disorder"
+  },
+  "instructions": [
+    "Administer this module only if Anorexia Nervosa and Bulimia Nervosa have been ruled out"
+  ],
+  "questions": [
+    {
+      "id": "MB1",
+      "prompt": "In the past three months, did you have eating binges or times when you ate a very large amount of food within a 2-hour period?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "MB2",
+        "no": "DIAGNOSTIC",
+        "red_flag": "END_MODULE"
+      }
+    },
+    {
+      "id": "MB2",
+      "prompt": "During these binges, did you feel that your eating was out of control?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "MB3",
+        "no": "DIAGNOSTIC",
+        "red_flag": "END_MODULE"
+      }
+    },
+    {
+      "id": "MB3",
+      "prompt": "In the last 3 months, did you have eating binges as often as once a week?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "MB4",
+        "no": "DIAGNOSTIC",
+        "red_flag": "END_MODULE"
+      }
+    },
+    {
+      "id": "MB4",
+      "prompt": "Did you do anything to compensate for, or to prevent a weight gain, like vomiting, fasting, exercising or taking laxatives, enemas, diuretics (fluid pills), or other medications?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "DIAGNOSTIC",
+        "no": "MB6a",
+        "red_flag": "END_MODULE"
+      }
+    },
+    {
+      "id": "MB6a",
+      "prompt": "In the last 3 months during the binging, did you eat more rapidly than normal?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "MB6b",
+        "no": "MB6b",
+        "red_flag": "END_MODULE"
+      }
+    },
+    {
+      "id": "MB6b",
+      "prompt": "Did you eat until you felt uncomfortably full?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "MB6c",
+        "no": "MB6c",
+        "red_flag": "END_MODULE"
+      }
+    },
+    {
+      "id": "MB6c",
+      "prompt": "Did you eat large amounts of food when you were not hungry?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "MB6d",
+        "no": "MB6d",
+        "red_flag": "END_MODULE"
+      }
+    },
+    {
+      "id": "MB6d",
+      "prompt": "Did you eat alone because you felt embarrassed about how much you were eating?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "MB6e",
+        "no": "MB6e",
+        "red_flag": "END_MODULE"
+      }
+    },
+    {
+      "id": "MB6e",
+      "prompt": "Did you feel guilty, depressed or disgusted with yourself after binging?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "MB7",
+        "no": "MB7",
+        "red_flag": "END_MODULE"
+      }
+    },
+    {
+      "id": "MB7",
+      "prompt": "Does your binging distress you a lot?",
+      "responseType": "yes_no",
+      "next": {
+        "yes": "MB8a",
+        "no": "DIAGNOSTIC",
+        "red_flag": "END_MODULE"
+      }
+    },
+    {
+      "id": "MB8a",
+      "prompt": "Number of Binge Eating Episodes per Week?",
+      "responseType": "quantity",
+      "next": {
+        "valid_quantity": "MB8b",
+        "red_flag": "END_MODULE"
+      }
+    },
+    {
+      "id": "MB8b",
+      "prompt": "Number of Binge Eating Days per Week?",
+      "responseType": "quantity",
+      "next": {
+        "valid_quantity": "DIAGNOSTIC",
+        "red_flag": "END_MODULE"
+      }
+    }
+  ],
+  "diagnosticCriteria": {
+    "bingeEatingDisorder": {
+      "current": [
+        "MB1 coded YES",
+        "MB2 coded YES",
+        "MB3 coded YES",
+        "MB4 coded NO",
+        "At least 3 of MB6a-MB6e coded YES",
+        "MB7 coded YES"
+      ],
+      "severity": [
+        "MB8a episodes 1-3 per week: Mild",
+        "MB8a episodes 4-7 per week: Moderate",
+        "MB8a episodes 8-13 per week: Severe",
+        "MB8a episodes 14+ per week: Extreme"
+      ],
+      "exclusions": [
+        "Does not meet criteria for Anorexia Nervosa",
+        "Does not meet criteria for Bulimia Nervosa (MB4 coded NO)"
+      ]
+    }
+  }
+}

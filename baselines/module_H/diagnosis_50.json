@@ -1,0 +1,10 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "reasoning": "Criterion A1 (exposure to trauma): NOT MET \u2014 patient stated they have encountered distressing situations but do not consider them extreme trauma. Criterion A2 (intrusive memories): NOT MET \u2014 patient did not report any intrusive thoughts or memories related to trauma. Criterion A3 (avoidance): NOT MET \u2014 patient indicated they do not avoid reminders of distressing situations. Criterion A4 (negative alterations in cognition and mood): NOT MET \u2014 patient expressed a stable outlook and does not perceive negative beliefs about themselves. Criterion A5 (arousal symptoms): NOT MET \u2014 patient did not report symptoms such as hypervigilance or exaggerated startle response. Total: 0 of 5 criteria met (threshold \u22651). Duration: not applicable as no criteria were met. Functional impairment: not applicable as no symptoms were endorsed. Exclusions: not triggered. Diagnosis: FALSE \u2014 no criteria for PTSD were met based on the patient's responses."
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "reasoning": "Criterion A1 (exposure to trauma): NOT MET \u2014 patient stated they have encountered distressing situations but do not consider them extreme trauma. Criterion A2 (intrusive memories): NOT MET \u2014 patient did not report any intrusive thoughts or memories related to trauma. Criterion A3 (avoidance): NOT MET \u2014 patient indicated they do not avoid reminders of distressing situations. Criterion A4 (negative alterations in cognition and mood): NOT MET \u2014 patient expressed a stable outlook and does not perceive negative beliefs about themselves. Criterion A5 (arousal symptoms): NOT MET \u2014 patient did not report symptoms such as hypervigilance or exaggerated startle response. Total: 0 of 5 criteria met (threshold \u22652). Duration: not applicable as no criteria were met. Functional impairment: not applicable as no symptoms were endorsed. Exclusions: not triggered. Diagnosis: FALSE \u2014 no criteria for recurrent PTSD were met based on the patient's responses."
+    }
+}

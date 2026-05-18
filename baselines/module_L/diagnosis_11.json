@@ -1,0 +1,6 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "reasoning": "Criterion A1 (restriction of energy intake): MET \u2014 patient stated, 'I often find myself counting calories and planning meals just to avoid feeling out of control.' Criterion A2 (intense fear of gaining weight): MET \u2014 patient expressed, 'I can\u2019t help but feel that gaining weight would be the worst thing.' Criterion A3 (distorted body image): MET \u2014 patient reported, 'I often feel like my body is too big' and described seeing herself as larger than she is. Criterion A4 (influence of body weight on self-worth): MET \u2014 patient stated, 'My feelings about myself often swing with my body image.' Criterion A5 (lack of recognition of low weight): NOT MET \u2014 patient acknowledged that her weight feels excessive at times but does not state that she believes it is normal. Total: 4 of 5 criteria met (threshold \u2265 4). Duration: not explicitly stated, but symptoms appear to be ongoing based on the context. Functional impairment: met \u2014 patient describes significant distress and mood shifts tied to body image. Exclusions: not triggered. Diagnosis: TRUE \u2014 full threshold met with significant functional impairment confirmed."
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "current": {
+        "diagnosis": true,
+        "reasoning": "The individual reports experiencing binge eating episodes more than once a week, feeling out of control during these binges, and engaging in self-induced vomiting as a compensatory behavior multiple times a week. This aligns with the diagnostic criteria for bulimia nervosa."
+    },
+    "recurrent": {
+        "diagnosis": true,
+        "reasoning": "The individual has reported a pattern of binge eating and compensatory behaviors occurring frequently over the past three months, indicating a recurrent issue."
+    }
+}

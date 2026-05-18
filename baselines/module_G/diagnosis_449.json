@@ -1,0 +1,10 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (obsessions): NOT MET \u2014 patient stated 'I haven\u2019t really had those kinds of thoughts lately.' Criterion 2 (compulsions): NOT MET \u2014 patient reported 'I haven't felt driven to do those kinds of things recently.' Criterion 3 (distress/functioning): NOT MET \u2014 patient indicated that their feelings of anxiety about work do not cause significant distress or interfere with daily functioning, stating 'I don't see it disrupting my daily life significantly.' Total: 0 of 3 criteria met (threshold \u22651). Exclusions: not triggered as there are no substance use or medical conditions reported. Diagnosis: FALSE \u2014 no criteria for OCD are met based on the patient's responses."
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (obsessions): NOT MET \u2014 patient stated 'I haven\u2019t really had those kinds of thoughts lately.' Criterion 2 (compulsions): NOT MET \u2014 patient reported 'I haven't felt driven to do those kinds of things recently.' Total: 0 of 3 criteria met (threshold \u22652). Diagnosis: FALSE \u2014 no recurrent episodes of OCD symptoms are reported."
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "lifetime": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (D3): NOT MET \u2014 patient stated 'I haven\u2019t really experienced those sudden feelings of intense anxiety or fright.' Criterion 2 (4 or more symptoms): NOT MET \u2014 patient did not endorse any symptoms of panic attacks. Criterion 3 (O1a and O1b): O1a = NO and O1b = NO \u2014 patient did not report any panic attacks. Total: 0 of 4 criteria met (threshold \u22654). Exclusions: not triggered. Diagnosis: FALSE \u2014 no evidence of panic attacks or related symptoms."
+    },
+    "current": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (D6): NOT MET \u2014 patient did not report any current panic attacks. Criterion 2 (O1a and O1b): O1a = NO and O1b = NO \u2014 patient did not report any panic attacks. Total: 0 of 2 criteria met (threshold \u22651). Exclusions: not triggered. Diagnosis: FALSE \u2014 no evidence of current panic attacks."
+    }
+}

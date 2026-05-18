@@ -1,0 +1,14 @@
+{
+    "current": {
+        "diagnosis": false,
+        "reasoning": ""
+    },
+    "severity": {
+        "diagnosis": "Moderate",
+        "reasoning": "The individual experiences binge eating episodes more than three times a week, which suggests a moderate severity level."
+    },
+    "exclusions": {
+        "diagnosis": false,
+        "reasoning": ""
+    }
+}

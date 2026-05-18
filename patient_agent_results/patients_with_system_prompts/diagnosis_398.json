@@ -1,0 +1,23 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "The patient meets the diagnostic criteria for OCD. G4 is 'YES', indicating the presence of obsessions or compulsions. The combination of G1a, G1b, and G2 being 'YES' satisfies the second criterion. However, O1a is 'YES' and O1b is 'NO', which does not meet the third criterion. Therefore, the overall diagnosis is false. The insight cannot be assessed as the diagnosis is false, so it is set to null. There is no information to suggest tic-related symptoms, so that is also set to null.",
+        "insight": null,
+        "ticRelated": null
+    },
+    "insight": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Invalid criteria format.",
+        "insight": null,
+        "ticRelated": null
+    },
+    "ticRelated": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "The patient has indicated 'YES' to multiple questions related to obsessions and compulsions, suggesting that they experience significant distress and impairment due to these symptoms. The patient recognizes their obsessions and compulsions as unreasonable or excessive, indicating 'goodOrFair' insight. However, there is no indication that the OCD symptoms are related to tics, as the patient answered 'NO' to the relevant question about tics.",
+        "insight": "goodOrFair",
+        "ticRelated": false
+    }
+}

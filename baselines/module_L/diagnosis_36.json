@@ -1,0 +1,6 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "reasoning": "Criterion A1 (restriction of energy intake): MET \u2014 patient stated, 'I've been very careful about what I eat and make adjustments frequently.' Criterion A2 (intense fear of gaining weight): MET \u2014 patient expressed, 'I've always felt a strong fear of gaining weight.' Criterion A3 (distorted body image): MET \u2014 patient reported, 'I often feel that my body isn\u2019t the way it should be.' Criterion A4 (self-worth influenced by weight): MET \u2014 patient indicated, 'My body weight has always been intertwined with my self-worth.' Total: 4 of 4 criteria met (threshold \u22653). Duration: not explicitly assessed, but symptoms appear to be chronic based on the patient's language. Functional impairment: met \u2014 patient describes significant anxiety and a sense of control tied to weight. Exclusions: not triggered. Diagnosis: TRUE \u2014 all criteria met with evidence of functional impairment and chronicity suggested by the patient's responses."
+    }
+}

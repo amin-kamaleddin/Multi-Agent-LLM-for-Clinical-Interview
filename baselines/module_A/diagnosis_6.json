@@ -1,0 +1,11 @@
+{
+    "positive": {
+        "diagnosis": true,
+        "reasoning": "Criterion A1 (depressed mood): MET \u2014 patient stated 'I\u2019ve been feeling down a lot lately, especially over the past few weeks.' Criterion A2 (anhedonia): MET \u2014 'It\u2019s been hard to feel excited about things lately.' Criterion A3 (weight/appetite): UNCLEAR \u2014 patient mentioned decreased appetite but did not confirm significant weight change. Criterion A4 (sleep): MET \u2014 'Some nights it\u2019s hard to fall asleep.' Criterion A5 (psychomotor agitation/retardation): MET \u2014 'I seem to be taking my time more than I used to.' Criterion A6 (fatigue): MET \u2014 'I think I've noticed feeling more tired than usual.' Criterion A7 (worthlessness/guilt): MET \u2014 'I feel down about things... it\u2019s been hard to shake that feeling.' Criterion A8 (concentration): MET \u2014 'It\u2019s been a bit harder to focus lately.' Criterion A9 (suicidal thoughts): NOT MET \u2014 patient denied serious thoughts of self-harm. Total: 8 of 9 criteria met (threshold \u22655). Duration: met (patient reports symptoms for 2 weeks). Functional impairment: met ('It\u2019s been harder to keep up with things that I usually enjoy'). Exclusions: not triggered (no substance use or medical conditions reported). Diagnosis: TRUE \u2014 full threshold met with significant functional impairment confirmed.",
+        "timeFrame": "recent"
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "reasoning": "Criterion A5: UNCLEAR \u2014 patient indicated there have been multiple episodes but was vague about the exact number and duration of symptom-free periods. Criterion O1a: NO \u2014 patient did not report a significant period of feeling well for at least 2 months. Criterion O1b: NO \u2014 patient indicated symptoms have returned frequently. Diagnosis: FALSE \u2014 insufficient evidence of recurrent episodes meeting full criteria."
+    }
+}

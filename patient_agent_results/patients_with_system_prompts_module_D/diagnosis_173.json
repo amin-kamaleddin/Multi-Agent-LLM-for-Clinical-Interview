@@ -1,0 +1,16 @@
+{
+    "lifetime": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 (D3 is YES) is not met because D3 is not provided as YES. Criterion 2 requires 4 or more of the listed symptom groups (D4a-D4m) to be YES, but no answers for these are provided, so cannot be met. Criterion 3 requires O1a and O1b both NO; no data provided, but assuming organic causes are ruled out as per instructions. Since criterion 1 and 2 are not met, overall diagnosis is false.",
+        "insight": null,
+        "ticRelated": null
+    },
+    "current": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 (D6 is 'YES') is not met because there is no information indicating D6 is 'YES'. Criterion 2 (O1a = NO AND O1b = NO) cannot be confirmed as the answers for O1a and O1b are not provided. Therefore, not all criteria are met.",
+        "insight": null,
+        "ticRelated": null
+    }
+}

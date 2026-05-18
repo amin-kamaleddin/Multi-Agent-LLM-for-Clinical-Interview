@@ -1,0 +1,12 @@
+question_id,ai_question,patient_response,classification,reasoning,timestamp,exchange_type
+J1,"In the past 12 months, did you take any of these drugs more than once, to get high, to feel elated, to get “a buzz” or to change your mood? 
+
+Stimulants: amphetamines, ""speed"", crystal meth, “crank”, Dexedrine, Ritalin, diet pills.  
+Cocaine: snorting, IV, freebase, crack, ""speedball"".  
+Opiates: heroin, morphine, Dilaudid, opium, Demerol, methadone, Darvon, codeine, Percodan, Vicodin, OxyContin.  
+Hallucinogens: LSD (""acid""), mescaline, peyote, psilocybin, STP, ""mushrooms"", “ecstasy”, MDA, MDMA.  
+Dissociative Drugs: PCP (Phencyclidine, ""Angel Dust"", ""Peace Pill"", “Hog”), or ketamine (“Special K”).  
+Inhalants: ""glue"", ethyl chloride, “rush”, nitrous oxide (""laughing gas""), amyl or butyl nitrate (""poppers"").  
+Cannabis: marijuana, hashish (""hash""), THC, ""pot"", ""grass"", ""weed"", ""reefer"".  
+Sedatives, Hypnotics or Anxiolytics: Quaalude, Seconal (""reds""), Valium, Xanax, Librium, Ativan, Dalmane, Halcion, barbiturates, Miltown, GHB, Roofinol, “Roofies”.  
+Miscellaneous: steroids, nonprescription sleep or diet pills. Cough Medicine? Any others?","I truly don't feel like I’ve needed to use any of those substances in the past year. To be honest, I barely think about it or even come across opportunities. My social circle really doesn’t indulge in that kind of thing, and it just hasn’t been part of my life. The few times I've been around situations where it was offered, I’ve had no desire. Sometimes I’ll have a drink with friends, but even that is pretty rare and more about enjoying our time together rather than changing my mood or feeling high. I’ve always seen it as a slippery slope, and I’m grateful that my circumstances have kept me on a steady path. I’m confident in maintaining my current lifestyle.",no,"The patient clearly states that they have not needed to use any of the listed substances in the past year and attributes this to their lifestyle and social circle. They do not indicate any use of these substances for mood alteration or recreational purposes, which aligns with the classification rule that situational causes lead to a 'no' response. Therefore, the response indicates that the symptom (substance use) is not present.",2025-10-08T14:02:57.302430,initial

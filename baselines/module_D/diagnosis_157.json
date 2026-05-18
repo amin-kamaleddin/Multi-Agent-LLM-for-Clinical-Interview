@@ -1,0 +1,10 @@
+{
+    "lifetime": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (spells of anxiety): MET \u2014 patient described experiencing sudden spells of tightness in the chest and intense fear while shopping, indicating multiple occurrences. Criterion 2 (4 or more symptoms): NOT MET \u2014 patient endorsed 3 symptoms (tightness in chest, racing heart, sweating) clearly, with 1 unclear (fear of dying), and 5 symptoms not met (no trembling, shortness of breath, choking sensation, chest pain, nausea, dizziness, hot flushes, tingling, detachment, fear of losing control). Criterion 3 (no other disorders): MET \u2014 patient denied substance use or withdrawal and indicated no other medical conditions that could explain symptoms. Total: 3 of 13 criteria met (threshold \u22654). Duration: not explicitly stated but implied concern for a couple of weeks. Functional impairment: some avoidance of crowded places noted, but not clinically significant. Exclusions: not triggered. Diagnosis: FALSE \u2014 insufficient symptom count and functional impairment not clinically significant."
+    },
+    "current": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (current spells of anxiety): MET \u2014 patient reported recent experiences of tightness in the chest and fear while shopping and driving. Criterion 2 (no other disorders): MET \u2014 patient denied substance use or withdrawal and indicated no other medical conditions that could explain symptoms. Total: 1 of 13 criteria met (threshold \u22654). Duration: symptoms reported within the past month. Functional impairment: avoidance of crowded places noted, but not clinically significant. Exclusions: not triggered. Diagnosis: FALSE \u2014 insufficient symptom count and functional impairment not clinically significant."
+    }
+}

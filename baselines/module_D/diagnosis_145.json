@@ -1,0 +1,10 @@
+{
+    "lifetime": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (spells of anxiety): MET \u2014 patient stated, 'I have experienced those spells' multiple times in crowded areas. Criterion 2 (4 or more symptoms): MET \u2014 patient endorsed 7 symptoms: pounding heart, sweating, shortness of breath, chest tightness, stomach discomfort, dizziness, and feelings of unreality. Criterion 3 (no substance or medical issues): MET \u2014 patient confirmed no current medications affecting symptoms and attributed experiences to anxiety. Total: 7 of 13 symptoms met (threshold \u22654). Duration: met (patient described multiple episodes over time). Functional impairment: met (patient reported avoiding stores and limiting outings due to anxiety). Exclusions: not triggered. Diagnosis: TRUE \u2014 full threshold met with significant functional impairment confirmed."
+    },
+    "current": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (current spells of anxiety): MET \u2014 patient described ongoing experiences of anxiety and panic attacks. Criterion 2 (no substance or medical issues): MET \u2014 patient confirmed no current medications affecting symptoms and attributed experiences to anxiety. Total: 7 of 13 symptoms met (threshold \u22654). Duration: met (patient reported persistent concern about future attacks in the past month). Functional impairment: met (patient indicated changes in behavior due to anxiety). Exclusions: not triggered. Diagnosis: TRUE \u2014 full threshold met with significant functional impairment confirmed."
+    }
+}

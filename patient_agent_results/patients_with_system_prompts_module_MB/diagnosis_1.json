@@ -1,0 +1,26 @@
+{
+    "current": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "MB1, MB2, and MB3 are all coded YES, satisfying criteria 1, 2, and 3. MB4 is coded NO, satisfying criterion 4. Among MB6a-MB6e, all five are coded YES, exceeding the requirement of at least 3, satisfying criterion 5. MB7 is coded YES, satisfying criterion 6. All criteria are met based on the patient's answers.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    },
+    "severity": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "MB8a episodes are given as VALID_QUANTITY, which is assumed to be a numeric value. Since the exact number is not specified, the severity cannot be determined. Without a numeric value for MB8a, none of the severity criteria (mild, moderate, severe, extreme) can be confirmed as met.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    },
+    "exclusions": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "The patient does not meet criteria for Anorexia Nervosa as per exclusion. For Bulimia Nervosa, MB4 is NO, which directly excludes the diagnosis. Therefore, the diagnostic criteria for the exclusions group are met (i.e., the patient does not have Anorexia Nervosa or Bulimia Nervosa).",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    }
+}

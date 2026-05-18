@@ -1,0 +1,151 @@
+module,group,condition,n_total,accuracy_mean,accuracy_ci,accuracy_ci_low,accuracy_ci_high,sensitivity_mean,sensitivity_ci,sensitivity_ci_low,sensitivity_ci_high,specificity_mean,specificity_ci,specificity_ci_low,specificity_ci_high,f1_mean,f1_ci,f1_ci_low,f1_ci_high,f2_mean,f2_ci,f2_ci_low,f2_ci_high
+Major Depressive Episode,Symptom Direction,Negative Symptom Presentation,45,84.44,10.0,73.33,93.33,0.0,0.0,0.0,0.0,84.44,10.0,73.33,93.33,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Major Depressive Episode,Symptom Direction,Positive Symptom Presentation,45,33.33,13.34,20.0,46.67,33.33,13.34,20.0,46.67,0.0,0.0,0.0,0.0,50.0,15.16,33.33,63.64,38.46,14.22,23.81,52.24
+Major Depressive Episode,Symptom Disclosure,Tier 1: Superficial/Vague,18,55.56,22.23,33.33,77.78,22.22,25.0,0.0,50.0,88.89,18.18,63.64,100.0,33.33,33.34,0.0,66.67,25.64,27.78,0.0,55.56
+Major Depressive Episode,Symptom Disclosure,Tier 2: Basic with Minimal Detail,18,55.56,22.23,33.33,77.78,22.22,27.27,0.0,54.55,88.89,16.66,66.67,100.0,33.33,33.34,0.0,66.67,25.64,28.57,0.0,57.14
+Major Depressive Episode,Symptom Disclosure,Tier 3: Moderate Detail,18,61.11,22.22,38.89,83.33,44.44,32.64,12.5,77.78,77.78,27.27,45.45,100.0,53.33,31.66,16.67,80.0,47.62,31.75,14.29,77.78
+Major Depressive Episode,Symptom Disclosure,Tier 4: Detailed/Coherent,18,55.56,22.23,33.33,77.78,33.33,33.34,0.0,66.67,77.78,25.0,50.0,100.0,42.86,35.72,0.0,71.43,36.59,34.09,0.0,68.18
+Major Depressive Episode,Symptom Disclosure,Tier 5: Rich/Nuanced + Background,18,66.67,22.23,44.44,88.89,44.44,32.64,12.5,77.78,88.89,18.75,62.5,100.0,57.14,32.58,18.18,83.33,48.78,32.63,14.29,79.55
+Major Depressive Episode,Emotional Tone,Emotional/Expressive,30,66.67,16.66,50.0,83.33,60.0,25.45,33.33,84.22,73.33,21.88,50.0,93.75,64.29,21.17,40.0,82.35,61.64,22.8,36.59,82.19
+Major Depressive Episode,Emotional Tone,Flat/Detached,30,56.67,16.7,39.92,73.33,13.33,16.66,0.0,33.33,100.0,0.0,100.0,100.0,23.53,25.0,0.0,50.0,16.13,19.23,0.0,38.46
+Major Depressive Episode,Emotional Tone,Neutral/Cooperative,30,53.33,16.66,36.67,70.0,26.67,21.88,6.25,50.0,80.0,21.43,57.14,100.0,36.36,25.0,10.0,60.0,29.85,23.0,7.58,53.57
+Suicidality,Symptom Direction,Negative Symptom Presentation,45,26.67,13.34,13.33,40.0,0.0,0.0,0.0,0.0,26.67,13.34,13.33,40.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Suicidality,Symptom Direction,Positive Symptom Presentation,45,100.0,0.0,100.0,100.0,100.0,0.0,100.0,100.0,0.0,0.0,0.0,0.0,100.0,0.0,100.0,100.0,100.0,0.0,100.0,100.0
+Suicidality,Symptom Disclosure,Tier 1: Superficial/Vague,18,61.11,22.22,38.89,83.33,100.0,0.0,100.0,100.0,22.22,27.78,0.0,55.56,72.0,21.02,47.62,89.66,86.54,13.08,69.44,95.59
+Suicidality,Symptom Disclosure,Tier 2: Basic with Minimal Detail,18,83.33,16.66,66.67,100.0,100.0,0.0,100.0,100.0,66.67,33.34,33.33,100.0,85.71,16.66,66.67,100.0,93.75,8.34,83.33,100.0
+Suicidality,Symptom Disclosure,Tier 3: Moderate Detail,18,61.11,22.22,38.89,83.33,100.0,0.0,100.0,100.0,22.22,25.0,0.0,50.0,72.0,21.02,47.62,89.66,86.54,13.08,69.44,95.59
+Suicidality,Symptom Disclosure,Tier 4: Detailed/Coherent,18,55.56,22.23,33.33,77.78,100.0,0.0,100.0,100.0,11.11,18.18,0.0,36.36,69.23,20.61,45.45,86.67,84.91,13.32,67.57,94.2
+Suicidality,Symptom Disclosure,Tier 5: Rich/Nuanced + Background,18,55.56,22.23,33.33,77.78,100.0,0.0,100.0,100.0,11.11,18.75,0.0,37.5,69.23,20.61,45.45,86.67,84.91,13.32,67.57,94.2
+Suicidality,Emotional Tone,Emotional/Expressive,30,50.0,16.67,33.33,66.67,100.0,0.0,100.0,100.0,0.0,0.0,0.0,0.0,66.67,15.0,50.0,80.0,83.33,9.74,71.43,90.91
+Suicidality,Emotional Tone,Flat/Detached,30,73.33,15.0,56.67,86.67,100.0,0.0,100.0,100.0,46.67,25.95,21.43,73.33,78.95,14.4,62.5,91.3,90.36,7.84,80.65,96.33
+Suicidality,Emotional Tone,Neutral/Cooperative,30,66.67,16.66,50.0,83.33,100.0,0.0,100.0,100.0,33.33,25.0,10.0,60.0,75.0,15.62,57.14,88.37,88.24,9.04,76.92,95.0
+Manic and Hypomanic Episodes,Symptom Direction,Negative Symptom Presentation,44,100.0,0.0,100.0,100.0,0.0,0.0,0.0,0.0,100.0,0.0,100.0,100.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Manic and Hypomanic Episodes,Symptom Direction,Positive Symptom Presentation,45,11.11,10.0,2.22,22.22,11.11,10.0,2.22,22.22,0.0,0.0,0.0,0.0,20.0,16.0,4.35,36.36,13.51,11.78,2.76,26.32
+Manic and Hypomanic Episodes,Symptom Disclosure,Tier 1: Superficial/Vague,18,50.0,22.22,27.78,72.22,0.0,0.0,0.0,0.0,100.0,0.0,100.0,100.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Manic and Hypomanic Episodes,Symptom Disclosure,Tier 2: Basic with Minimal Detail,18,61.11,22.22,38.89,83.33,22.22,25.0,0.0,50.0,100.0,0.0,100.0,100.0,36.36,33.34,0.0,66.67,26.32,27.78,0.0,55.56
+Manic and Hypomanic Episodes,Symptom Disclosure,Tier 3: Moderate Detail,18,50.0,22.22,27.78,72.22,0.0,0.0,0.0,0.0,100.0,0.0,100.0,100.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Manic and Hypomanic Episodes,Symptom Disclosure,Tier 4: Detailed/Coherent,18,61.11,22.22,38.89,83.33,22.22,27.27,0.0,54.55,100.0,0.0,100.0,100.0,36.36,35.3,0.0,70.59,26.32,30.0,0.0,60.0
+Manic and Hypomanic Episodes,Symptom Disclosure,Tier 5: Rich/Nuanced + Background,17,52.94,23.53,29.41,76.47,11.11,18.75,0.0,37.5,100.0,0.0,100.0,100.0,20.0,27.27,0.0,54.55,13.51,21.43,0.0,42.86
+Manic and Hypomanic Episodes,Emotional Tone,Emotional/Expressive,30,60.0,16.67,43.33,76.67,20.0,21.43,0.0,42.86,100.0,0.0,100.0,100.0,33.33,30.0,0.0,60.0,23.81,24.2,0.0,48.39
+Manic and Hypomanic Episodes,Emotional Tone,Flat/Detached,30,50.0,16.67,33.33,66.67,0.0,0.0,0.0,0.0,100.0,0.0,100.0,100.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Manic and Hypomanic Episodes,Emotional Tone,Neutral/Cooperative,29,55.17,17.24,37.93,72.41,13.33,16.66,0.0,33.33,100.0,0.0,100.0,100.0,23.53,25.0,0.0,50.0,16.13,19.23,0.0,38.46
+Panic Disorder,Symptom Direction,Negative Symptom Presentation,45,93.33,7.78,84.44,100.0,0.0,0.0,0.0,0.0,93.33,7.78,84.44,100.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Panic Disorder,Symptom Direction,Positive Symptom Presentation,45,35.56,13.34,22.22,48.89,35.56,13.34,22.22,48.89,0.0,0.0,0.0,0.0,52.46,14.66,36.36,65.67,40.82,14.07,26.32,54.46
+Panic Disorder,Symptom Disclosure,Tier 1: Superficial/Vague,18,61.11,22.22,38.89,83.33,22.22,27.27,0.0,54.55,100.0,0.0,100.0,100.0,36.36,35.3,0.0,70.59,26.32,30.0,0.0,60.0
+Panic Disorder,Symptom Disclosure,Tier 2: Basic with Minimal Detail,18,66.67,22.23,44.44,88.89,44.44,32.64,12.5,77.78,88.89,18.75,62.5,100.0,57.14,31.66,20.0,83.33,48.78,32.42,14.71,79.55
+Panic Disorder,Symptom Disclosure,Tier 3: Moderate Detail,18,61.11,22.22,38.89,83.33,33.33,33.34,0.0,66.67,88.89,18.75,62.5,100.0,46.15,37.5,0.0,75.0,37.5,34.88,0.0,69.77
+Panic Disorder,Symptom Disclosure,Tier 4: Detailed/Coherent,18,66.67,22.23,44.44,88.89,44.44,33.34,11.11,77.78,88.89,18.75,62.5,100.0,57.14,32.58,18.18,83.33,48.78,33.02,13.51,79.55
+Panic Disorder,Symptom Disclosure,Tier 5: Rich/Nuanced + Background,18,66.67,22.23,44.44,88.89,33.33,33.34,0.0,66.67,100.0,0.0,100.0,100.0,50.0,40.0,0.0,80.0,38.46,35.72,0.0,71.43
+Panic Disorder,Emotional Tone,Emotional/Expressive,30,76.67,15.0,60.0,90.0,60.0,25.65,33.33,84.62,93.33,10.72,78.57,100.0,72.0,20.64,47.62,88.89,64.29,23.78,38.46,86.02
+Panic Disorder,Emotional Tone,Flat/Detached,30,50.0,16.67,33.33,66.67,13.33,16.66,0.0,33.33,86.67,16.66,66.67,100.0,21.05,22.73,0.0,45.45,15.62,18.52,0.0,37.04
+Panic Disorder,Emotional Tone,Neutral/Cooperative,30,66.67,16.66,50.0,83.33,33.33,24.16,10.51,58.82,100.0,0.0,100.0,100.0,50.0,27.52,19.03,74.07,38.46,25.65,12.8,64.1
+Agoraphobia,Symptom Direction,Negative Symptom Presentation,45,82.22,11.11,71.11,93.33,0.0,0.0,0.0,0.0,82.22,11.11,71.11,93.33,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Agoraphobia,Symptom Direction,Positive Symptom Presentation,45,71.11,13.33,57.78,84.44,71.11,13.33,57.78,84.44,0.0,0.0,0.0,0.0,83.12,9.16,73.24,91.57,75.47,12.02,63.11,87.16
+Agoraphobia,Symptom Disclosure,Tier 1: Superficial/Vague,18,72.22,19.45,50.0,88.89,44.44,32.64,12.5,77.78,100.0,0.0,100.0,100.0,61.54,32.64,22.22,87.5,50.0,33.12,15.15,81.4
+Agoraphobia,Symptom Disclosure,Tier 2: Basic with Minimal Detail,18,77.78,19.44,55.56,94.44,55.56,32.64,22.22,87.5,100.0,0.0,100.0,100.0,71.43,28.48,36.36,93.33,60.98,31.71,26.32,89.74
+Agoraphobia,Symptom Disclosure,Tier 3: Moderate Detail,18,77.78,19.44,55.56,94.44,77.78,25.0,50.0,100.0,77.78,25.0,50.0,100.0,77.78,22.62,50.0,95.24,77.78,23.78,50.0,97.56
+Agoraphobia,Symptom Disclosure,Tier 4: Detailed/Coherent,18,83.33,16.66,66.67,100.0,100.0,0.0,100.0,100.0,66.67,33.34,33.33,100.0,85.71,16.66,66.67,100.0,93.75,8.34,83.33,100.0
+Agoraphobia,Symptom Disclosure,Tier 5: Rich/Nuanced + Background,18,72.22,19.45,50.0,88.89,77.78,25.0,50.0,100.0,66.67,33.34,33.33,100.0,73.68,23.62,44.44,91.67,76.09,24.54,46.51,95.59
+Agoraphobia,Emotional Tone,Emotional/Expressive,30,83.33,13.34,70.0,96.67,86.67,16.66,66.67,100.0,80.0,20.84,58.33,100.0,83.87,14.81,66.67,96.3,85.53,14.95,67.8,97.7
+Agoraphobia,Emotional Tone,Flat/Detached,30,70.0,16.67,53.33,86.67,60.0,25.65,33.33,84.62,80.0,21.43,57.14,100.0,66.67,21.05,42.11,84.21,62.5,23.01,37.31,83.33
+Agoraphobia,Emotional Tone,Neutral/Cooperative,30,76.67,15.0,60.0,90.0,66.67,24.42,41.18,90.01,86.67,16.66,66.67,100.0,74.07,20.01,50.0,90.01,69.44,22.26,44.78,89.29
+Social Anxiety Disorder,Symptom Direction,Negative Symptom Presentation,45,80.0,11.11,68.89,91.11,0.0,0.0,0.0,0.0,80.0,11.11,68.89,91.11,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Social Anxiety Disorder,Symptom Direction,Positive Symptom Presentation,45,75.56,12.23,62.22,86.67,75.56,12.23,62.22,86.67,0.0,0.0,0.0,0.0,86.08,8.08,76.71,92.86,79.44,10.87,67.31,89.04
+Social Anxiety Disorder,Symptom Disclosure,Tier 1: Superficial/Vague,18,77.78,19.44,55.56,94.44,66.67,33.34,33.33,100.0,88.89,18.75,62.5,100.0,75.0,24.84,44.44,94.12,69.77,28.87,37.49,95.24
+Social Anxiety Disorder,Symptom Disclosure,Tier 2: Basic with Minimal Detail,18,77.78,19.44,55.56,94.44,77.78,25.0,50.0,100.0,77.78,25.0,50.0,100.0,77.78,22.62,50.0,95.24,77.78,24.52,48.78,97.83
+Social Anxiety Disorder,Symptom Disclosure,Tier 3: Moderate Detail,18,77.78,19.44,55.56,94.44,77.78,25.0,50.0,100.0,77.78,25.0,50.0,100.0,77.78,22.62,50.0,95.24,77.78,24.72,48.39,97.83
+Social Anxiety Disorder,Symptom Disclosure,Tier 4: Detailed/Coherent,18,72.22,19.45,50.0,88.89,66.67,33.34,33.33,100.0,77.78,25.0,50.0,100.0,70.59,25.45,40.0,90.91,68.18,28.44,35.71,92.59
+Social Anxiety Disorder,Symptom Disclosure,Tier 5: Rich/Nuanced + Background,18,83.33,16.66,66.67,100.0,88.89,18.75,62.5,100.0,77.78,25.0,50.0,100.0,84.21,19.23,61.54,100.0,86.96,17.95,64.1,100.0
+Social Anxiety Disorder,Emotional Tone,Emotional/Expressive,30,83.33,13.34,70.0,96.67,93.33,10.72,78.57,100.0,73.33,21.66,50.0,93.33,84.85,13.66,68.97,96.3,89.74,11.29,75.47,98.04
+Social Anxiety Disorder,Emotional Tone,Flat/Detached,30,70.0,16.67,53.33,86.67,66.67,24.16,41.67,90.0,73.33,21.88,50.0,93.75,68.97,20.13,45.45,85.71,67.57,21.82,43.1,86.73
+Social Anxiety Disorder,Emotional Tone,Neutral/Cooperative,30,80.0,13.33,66.67,93.33,66.67,24.16,41.67,90.0,93.33,11.11,77.78,100.0,76.92,18.57,55.17,92.31,70.42,21.93,46.3,90.16
+Obsessive-Compulsive Disorder,Symptom Direction,Negative Symptom Presentation,45,82.22,11.11,71.11,93.33,0.0,0.0,0.0,0.0,82.22,11.11,71.11,93.33,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Obsessive-Compulsive Disorder,Symptom Direction,Positive Symptom Presentation,45,42.22,14.45,28.89,57.78,42.22,14.45,28.89,57.78,0.0,0.0,0.0,0.0,59.38,14.2,44.83,73.24,47.74,14.71,33.68,63.11
+Obsessive-Compulsive Disorder,Symptom Disclosure,Tier 1: Superficial/Vague,18,50.0,22.22,27.78,72.22,11.11,18.75,0.0,37.5,88.89,18.18,63.64,100.0,18.18,25.0,0.0,50.0,13.16,20.84,0.0,41.67
+Obsessive-Compulsive Disorder,Symptom Disclosure,Tier 2: Basic with Minimal Detail,18,55.56,22.23,33.33,77.78,22.22,25.0,0.0,50.0,88.89,18.18,63.64,100.0,33.33,33.34,0.0,66.67,25.64,27.78,0.0,55.56
+Obsessive-Compulsive Disorder,Symptom Disclosure,Tier 3: Moderate Detail,18,66.67,22.23,44.44,88.89,66.67,33.34,33.33,100.0,66.67,33.34,33.33,100.0,66.67,25.82,36.36,88.0,66.67,28.01,34.88,90.91
+Obsessive-Compulsive Disorder,Symptom Disclosure,Tier 4: Detailed/Coherent,18,61.11,22.22,38.89,83.33,44.44,33.34,11.11,77.78,77.78,25.0,50.0,100.0,53.33,31.66,16.67,80.0,47.62,32.31,13.16,77.78
+Obsessive-Compulsive Disorder,Symptom Disclosure,Tier 5: Rich/Nuanced + Background,18,77.78,19.44,55.56,94.44,66.67,33.34,33.33,100.0,88.89,18.2,63.61,100.0,75.0,25.15,44.44,94.74,69.77,29.33,37.5,96.15
+Obsessive-Compulsive Disorder,Emotional Tone,Emotional/Expressive,30,56.67,16.66,40.0,73.33,40.0,25.64,15.38,66.67,73.33,21.88,50.0,93.75,48.0,24.62,20.0,69.23,42.86,24.72,17.24,66.67
+Obsessive-Compulsive Disorder,Emotional Tone,Flat/Detached,30,63.33,16.66,46.67,80.0,33.33,24.18,10.0,58.35,93.33,11.54,76.92,100.0,47.62,26.96,16.67,70.59,37.88,25.43,11.63,62.5
+Obsessive-Compulsive Disorder,Emotional Tone,Neutral/Cooperative,30,66.67,16.66,50.0,83.33,53.33,26.37,27.27,80.0,80.0,21.43,57.14,100.0,61.54,22.98,35.29,81.25,56.34,24.62,30.12,79.37
+Posttraumatic Stress Disorder,Symptom Direction,Negative Symptom Presentation,45,100.0,0.0,100.0,100.0,0.0,0.0,0.0,0.0,100.0,0.0,100.0,100.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Posttraumatic Stress Disorder,Symptom Direction,Positive Symptom Presentation,45,33.33,13.34,20.0,46.67,33.33,13.34,20.0,46.67,0.0,0.0,0.0,0.0,50.0,15.16,33.33,63.64,38.46,14.22,23.81,52.24
+Posttraumatic Stress Disorder,Symptom Disclosure,Tier 1: Superficial/Vague,18,66.67,22.23,44.44,88.89,33.33,33.34,0.0,66.67,100.0,0.0,100.0,100.0,50.0,40.0,0.0,80.0,38.46,35.72,0.0,71.43
+Posttraumatic Stress Disorder,Symptom Disclosure,Tier 2: Basic with Minimal Detail,18,72.22,19.45,50.0,88.89,44.44,32.64,12.5,77.78,100.0,0.0,100.0,100.0,61.54,32.64,22.22,87.5,50.0,33.12,15.15,81.4
+Posttraumatic Stress Disorder,Symptom Disclosure,Tier 3: Moderate Detail,18,61.11,22.22,38.89,83.33,22.22,25.0,0.0,50.0,100.0,0.0,100.0,100.0,36.36,33.34,0.0,66.67,26.32,27.78,0.0,55.56
+Posttraumatic Stress Disorder,Symptom Disclosure,Tier 4: Detailed/Coherent,18,66.67,22.23,44.44,88.89,33.33,33.34,0.0,66.67,100.0,0.0,100.0,100.0,50.0,40.0,0.0,80.0,38.46,35.72,0.0,71.43
+Posttraumatic Stress Disorder,Symptom Disclosure,Tier 5: Rich/Nuanced + Background,18,66.67,22.23,44.44,88.89,33.33,33.34,0.0,66.67,100.0,0.0,100.0,100.0,50.0,40.0,0.0,80.0,38.46,35.72,0.0,71.43
+Posttraumatic Stress Disorder,Emotional Tone,Emotional/Expressive,30,70.0,16.67,53.33,86.67,40.0,25.64,15.38,66.67,100.0,0.0,100.0,100.0,57.14,26.66,26.67,80.0,45.45,26.46,18.52,71.43
+Posttraumatic Stress Disorder,Emotional Tone,Flat/Detached,30,60.0,16.67,43.33,76.67,20.0,21.43,0.0,42.86,100.0,0.0,100.0,100.0,33.33,30.0,0.0,60.0,23.81,24.2,0.0,48.39
+Posttraumatic Stress Disorder,Emotional Tone,Neutral/Cooperative,30,70.0,16.67,53.33,86.67,40.0,25.64,15.38,66.67,100.0,0.0,100.0,100.0,57.14,26.66,26.67,80.0,45.45,26.46,18.52,71.43
+Alcohol Use Disorder,Symptom Direction,Negative Symptom Presentation,45,100.0,0.0,100.0,100.0,0.0,0.0,0.0,0.0,100.0,0.0,100.0,100.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Alcohol Use Disorder,Symptom Direction,Positive Symptom Presentation,45,91.11,7.78,82.22,97.78,91.11,7.78,82.22,97.78,0.0,0.0,0.0,0.0,95.35,4.32,90.24,98.88,92.76,6.48,85.25,98.21
+Alcohol Use Disorder,Symptom Disclosure,Tier 1: Superficial/Vague,18,94.44,8.34,83.33,100.0,88.89,18.75,62.5,100.0,100.0,0.0,100.0,100.0,94.12,11.54,76.92,100.0,90.91,16.22,67.57,100.0
+Alcohol Use Disorder,Symptom Disclosure,Tier 2: Basic with Minimal Detail,18,94.44,8.34,83.33,100.0,88.89,18.75,62.5,100.0,100.0,0.0,100.0,100.0,94.12,11.54,76.92,100.0,90.91,16.22,67.57,100.0
+Alcohol Use Disorder,Symptom Disclosure,Tier 3: Moderate Detail,18,100.0,0.0,100.0,100.0,100.0,0.0,100.0,100.0,100.0,0.0,100.0,100.0,100.0,0.0,100.0,100.0,100.0,0.0,100.0,100.0
+Alcohol Use Disorder,Symptom Disclosure,Tier 4: Detailed/Coherent,18,94.44,8.34,83.33,100.0,88.89,18.75,62.5,100.0,100.0,0.0,100.0,100.0,94.12,11.54,76.92,100.0,90.91,16.22,67.57,100.0
+Alcohol Use Disorder,Symptom Disclosure,Tier 5: Rich/Nuanced + Background,18,94.44,8.34,83.33,100.0,88.89,18.75,62.5,100.0,100.0,0.0,100.0,100.0,94.12,11.54,76.92,100.0,90.91,16.22,67.57,100.0
+Alcohol Use Disorder,Emotional Tone,Emotional/Expressive,30,100.0,0.0,100.0,100.0,100.0,0.0,100.0,100.0,100.0,0.0,100.0,100.0,100.0,0.0,100.0,100.0,100.0,0.0,100.0,100.0
+Alcohol Use Disorder,Emotional Tone,Flat/Detached,30,100.0,0.0,100.0,100.0,100.0,0.0,100.0,100.0,100.0,0.0,100.0,100.0,100.0,0.0,100.0,100.0,100.0,0.0,100.0,100.0
+Alcohol Use Disorder,Emotional Tone,Neutral/Cooperative,30,86.67,11.67,73.33,96.67,73.33,21.88,50.0,93.75,100.0,0.0,100.0,100.0,84.62,15.05,66.67,96.77,77.46,19.69,55.56,94.94
+Substance Use Disorders,Symptom Direction,Negative Symptom Presentation,45,100.0,0.0,100.0,100.0,0.0,0.0,0.0,0.0,100.0,0.0,100.0,100.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Substance Use Disorders,Symptom Direction,Positive Symptom Presentation,45,100.0,0.0,100.0,100.0,100.0,0.0,100.0,100.0,0.0,0.0,0.0,0.0,100.0,0.0,100.0,100.0,100.0,0.0,100.0,100.0
+Substance Use Disorders,Symptom Disclosure,Tier 1: Superficial/Vague,18,100.0,0.0,100.0,100.0,100.0,0.0,100.0,100.0,100.0,0.0,100.0,100.0,100.0,0.0,100.0,100.0,100.0,0.0,100.0,100.0
+Substance Use Disorders,Symptom Disclosure,Tier 2: Basic with Minimal Detail,18,100.0,0.0,100.0,100.0,100.0,0.0,100.0,100.0,100.0,0.0,100.0,100.0,100.0,0.0,100.0,100.0,100.0,0.0,100.0,100.0
+Substance Use Disorders,Symptom Disclosure,Tier 3: Moderate Detail,18,100.0,0.0,100.0,100.0,100.0,0.0,100.0,100.0,100.0,0.0,100.0,100.0,100.0,0.0,100.0,100.0,100.0,0.0,100.0,100.0
+Substance Use Disorders,Symptom Disclosure,Tier 4: Detailed/Coherent,18,100.0,0.0,100.0,100.0,100.0,0.0,100.0,100.0,100.0,0.0,100.0,100.0,100.0,0.0,100.0,100.0,100.0,0.0,100.0,100.0
+Substance Use Disorders,Symptom Disclosure,Tier 5: Rich/Nuanced + Background,18,100.0,0.0,100.0,100.0,100.0,0.0,100.0,100.0,100.0,0.0,100.0,100.0,100.0,0.0,100.0,100.0,100.0,0.0,100.0,100.0
+Substance Use Disorders,Emotional Tone,Emotional/Expressive,30,100.0,0.0,100.0,100.0,100.0,0.0,100.0,100.0,100.0,0.0,100.0,100.0,100.0,0.0,100.0,100.0,100.0,0.0,100.0,100.0
+Substance Use Disorders,Emotional Tone,Flat/Detached,30,100.0,0.0,100.0,100.0,100.0,0.0,100.0,100.0,100.0,0.0,100.0,100.0,100.0,0.0,100.0,100.0,100.0,0.0,100.0,100.0
+Substance Use Disorders,Emotional Tone,Neutral/Cooperative,30,100.0,0.0,100.0,100.0,100.0,0.0,100.0,100.0,100.0,0.0,100.0,100.0,100.0,0.0,100.0,100.0,100.0,0.0,100.0,100.0
+Anorexia Nervosa,Symptom Direction,Negative Symptom Presentation,45,100.0,0.0,100.0,100.0,0.0,0.0,0.0,0.0,100.0,0.0,100.0,100.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Anorexia Nervosa,Symptom Direction,Positive Symptom Presentation,45,77.78,12.23,64.44,88.89,77.78,12.23,64.44,88.89,0.0,0.0,0.0,0.0,87.5,7.87,78.38,94.12,81.4,10.77,69.38,90.91
+Anorexia Nervosa,Symptom Disclosure,Tier 1: Superficial/Vague,18,100.0,0.0,100.0,100.0,100.0,0.0,100.0,100.0,100.0,0.0,100.0,100.0,100.0,0.0,100.0,100.0,100.0,0.0,100.0,100.0
+Anorexia Nervosa,Symptom Disclosure,Tier 2: Basic with Minimal Detail,18,83.33,16.66,66.67,100.0,66.67,33.34,33.33,100.0,100.0,0.0,100.0,100.0,80.0,25.0,50.0,100.0,71.43,30.77,38.46,100.0
+Anorexia Nervosa,Symptom Disclosure,Tier 3: Moderate Detail,18,88.89,13.89,72.22,100.0,77.78,25.0,50.0,100.0,100.0,0.0,100.0,100.0,87.5,16.66,66.67,100.0,81.4,22.22,55.56,100.0
+Anorexia Nervosa,Symptom Disclosure,Tier 4: Detailed/Coherent,18,72.22,19.45,50.0,88.89,44.44,33.34,11.11,77.78,100.0,0.0,100.0,100.0,61.54,33.75,20.0,87.5,50.0,33.95,13.51,81.4
+Anorexia Nervosa,Symptom Disclosure,Tier 5: Rich/Nuanced + Background,18,100.0,0.0,100.0,100.0,100.0,0.0,100.0,100.0,100.0,0.0,100.0,100.0,100.0,0.0,100.0,100.0,100.0,0.0,100.0,100.0
+Anorexia Nervosa,Emotional Tone,Emotional/Expressive,30,93.33,8.34,83.33,100.0,86.67,16.66,66.67,100.0,100.0,0.0,100.0,100.0,92.86,10.0,80.0,100.0,89.04,14.28,71.43,100.0
+Anorexia Nervosa,Emotional Tone,Flat/Detached,30,83.33,13.34,70.0,96.67,66.67,24.16,41.67,90.0,100.0,0.0,100.0,100.0,80.0,17.96,58.82,94.74,71.43,22.34,47.17,91.84
+Anorexia Nervosa,Emotional Tone,Neutral/Cooperative,30,90.0,11.66,76.67,100.0,80.0,21.43,57.14,100.0,100.0,0.0,100.0,100.0,88.89,13.63,72.73,100.0,83.33,18.75,62.5,100.0
+Bulimia Nervosa,Symptom Direction,Negative Symptom Presentation,45,100.0,0.0,100.0,100.0,0.0,0.0,0.0,0.0,100.0,0.0,100.0,100.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Bulimia Nervosa,Symptom Direction,Positive Symptom Presentation,45,53.33,15.55,37.78,68.89,53.33,15.55,37.78,68.89,0.0,0.0,0.0,0.0,69.57,13.37,54.84,81.58,58.82,15.15,43.15,73.46
+Bulimia Nervosa,Symptom Disclosure,Tier 1: Superficial/Vague,18,72.22,19.45,50.0,88.89,44.44,33.75,12.5,80.0,100.0,0.0,100.0,100.0,61.54,33.34,22.22,88.89,50.0,34.09,15.15,83.33
+Bulimia Nervosa,Symptom Disclosure,Tier 2: Basic with Minimal Detail,18,66.67,22.23,44.44,88.89,33.33,33.34,0.0,66.67,100.0,0.0,100.0,100.0,50.0,40.0,0.0,80.0,38.46,35.72,0.0,71.43
+Bulimia Nervosa,Symptom Disclosure,Tier 3: Moderate Detail,18,77.78,19.44,55.56,94.44,55.56,33.34,22.2,88.89,100.0,0.0,100.0,100.0,71.43,28.89,36.34,94.12,60.98,32.31,26.29,90.91
+Bulimia Nervosa,Symptom Disclosure,Tier 4: Detailed/Coherent,18,83.33,16.66,66.67,100.0,66.67,33.34,33.33,100.0,100.0,0.0,100.0,100.0,80.0,25.0,50.0,100.0,71.43,30.77,38.46,100.0
+Bulimia Nervosa,Symptom Disclosure,Tier 5: Rich/Nuanced + Background,18,83.33,16.66,66.67,100.0,66.67,33.34,33.33,100.0,100.0,0.0,100.0,100.0,80.0,25.0,50.0,100.0,71.43,30.77,38.46,100.0
+Bulimia Nervosa,Emotional Tone,Emotional/Expressive,30,73.33,16.66,56.67,90.0,46.67,25.95,21.43,73.33,100.0,0.0,100.0,100.0,63.64,24.67,35.29,84.62,52.24,26.02,25.42,77.46
+Bulimia Nervosa,Emotional Tone,Flat/Detached,30,76.67,15.0,60.0,90.0,53.33,26.14,26.67,78.95,100.0,0.0,100.0,100.0,69.57,23.06,42.11,88.24,58.82,25.59,31.25,82.42
+Bulimia Nervosa,Emotional Tone,Neutral/Cooperative,30,80.0,13.33,66.67,93.33,60.0,24.67,35.29,84.62,100.0,0.0,100.0,100.0,75.0,19.75,52.17,91.67,65.22,23.38,40.54,87.3
+Binge Eating Disorder,Symptom Direction,Negative Symptom Presentation,45,100.0,0.0,100.0,100.0,0.0,0.0,0.0,0.0,100.0,0.0,100.0,100.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Binge Eating Disorder,Symptom Direction,Positive Symptom Presentation,45,17.78,11.11,6.67,28.89,17.78,11.11,6.67,28.89,0.0,0.0,0.0,0.0,30.19,16.16,12.5,44.83,21.28,12.74,8.2,33.68
+Binge Eating Disorder,Symptom Disclosure,Tier 1: Superficial/Vague,18,61.11,22.22,38.89,83.33,22.22,27.27,0.0,54.55,100.0,0.0,100.0,100.0,36.36,35.3,0.0,70.59,26.32,30.0,0.0,60.0
+Binge Eating Disorder,Symptom Disclosure,Tier 2: Basic with Minimal Detail,18,61.11,22.22,38.89,83.33,22.22,25.0,0.0,50.0,100.0,0.0,100.0,100.0,36.36,33.34,0.0,66.67,26.32,27.78,0.0,55.56
+Binge Eating Disorder,Symptom Disclosure,Tier 3: Moderate Detail,18,55.56,22.23,33.33,77.78,11.11,18.2,0.0,36.39,100.0,0.0,100.0,100.0,20.0,26.68,0.0,53.36,13.51,20.85,0.0,41.7
+Binge Eating Disorder,Symptom Disclosure,Tier 4: Detailed/Coherent,18,55.56,22.23,33.33,77.78,11.11,18.18,0.0,36.36,100.0,0.0,100.0,100.0,20.0,26.66,0.0,53.33,13.51,20.84,0.0,41.67
+Binge Eating Disorder,Symptom Disclosure,Tier 5: Rich/Nuanced + Background,18,61.11,22.22,38.89,83.33,22.22,25.0,0.0,50.0,100.0,0.0,100.0,100.0,36.36,33.34,0.0,66.67,26.32,27.78,0.0,55.56
+Binge Eating Disorder,Emotional Tone,Emotional/Expressive,30,56.67,16.66,40.0,73.33,13.33,16.66,0.0,33.33,100.0,0.0,100.0,100.0,23.53,25.0,0.0,50.0,16.13,19.23,0.0,38.46
+Binge Eating Disorder,Emotional Tone,Flat/Detached,30,56.67,16.66,40.0,73.33,13.33,16.66,0.0,33.33,100.0,0.0,100.0,100.0,23.53,25.0,0.0,50.0,16.13,19.23,0.0,38.46
+Binge Eating Disorder,Emotional Tone,Neutral/Cooperative,30,63.33,16.66,46.67,80.0,26.67,21.88,6.25,50.0,100.0,0.0,100.0,100.0,42.11,27.46,11.76,66.67,31.25,23.94,7.69,55.56
+Generalized Anxiety Disorder,Symptom Direction,Negative Symptom Presentation,45,88.89,8.89,80.0,97.78,0.0,0.0,0.0,0.0,88.89,8.89,80.0,97.78,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Generalized Anxiety Disorder,Symptom Direction,Positive Symptom Presentation,45,64.44,13.34,51.11,77.78,64.44,13.34,51.11,77.78,0.0,0.0,0.0,0.0,78.38,9.92,67.65,87.5,69.38,12.38,56.65,81.4
+Generalized Anxiety Disorder,Symptom Disclosure,Tier 1: Superficial/Vague,18,66.67,22.23,44.44,88.89,44.44,32.64,12.5,77.78,88.89,18.75,62.5,100.0,57.14,32.1,20.0,84.21,48.78,32.42,14.7,79.55
+Generalized Anxiety Disorder,Symptom Disclosure,Tier 2: Basic with Minimal Detail,18,77.78,19.44,55.56,94.44,66.67,33.34,33.33,100.0,88.89,18.18,63.64,100.0,75.0,25.15,44.44,94.74,69.77,29.35,37.04,95.74
+Generalized Anxiety Disorder,Symptom Disclosure,Tier 3: Moderate Detail,18,77.78,19.44,55.56,94.44,66.67,33.34,33.33,100.0,88.89,18.75,62.5,100.0,75.0,25.15,44.44,94.74,69.77,29.12,37.49,95.74
+Generalized Anxiety Disorder,Symptom Disclosure,Tier 4: Detailed/Coherent,18,83.33,16.66,66.67,100.0,88.89,18.18,63.64,100.0,77.78,25.0,50.0,100.0,84.21,19.23,61.54,100.0,86.96,17.95,64.1,100.0
+Generalized Anxiety Disorder,Symptom Disclosure,Tier 5: Rich/Nuanced + Background,18,77.78,19.44,55.56,94.44,55.56,34.45,20.0,88.89,100.0,0.0,100.0,100.0,71.43,30.4,33.33,94.12,60.98,33.55,23.81,90.91
+Generalized Anxiety Disorder,Emotional Tone,Emotional/Expressive,30,73.33,15.0,56.67,86.67,66.67,24.16,41.67,90.0,80.0,21.05,57.89,100.0,71.43,19.86,48.27,88.0,68.49,21.53,44.44,87.5
+Generalized Anxiety Disorder,Emotional Tone,Flat/Detached,30,73.33,15.0,56.67,86.67,60.0,25.65,33.33,84.62,86.67,16.66,66.67,100.0,69.23,20.75,45.45,86.96,63.38,23.43,37.88,84.75
+Generalized Anxiety Disorder,Emotional Tone,Neutral/Cooperative,30,83.33,13.34,70.0,96.67,66.67,25.45,40.0,90.91,100.0,0.0,100.0,100.0,80.0,19.05,57.14,95.24,71.43,23.57,45.45,92.59
+Antisocial Personality Disorder,Symptom Direction,Negative Symptom Presentation,45,77.78,12.23,64.44,88.89,0.0,0.0,0.0,0.0,77.78,12.23,64.44,88.89,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Antisocial Personality Disorder,Symptom Direction,Positive Symptom Presentation,45,66.67,13.34,53.33,80.0,66.67,13.34,53.33,80.0,0.0,0.0,0.0,0.0,80.0,9.66,69.57,88.89,71.43,12.25,58.82,83.33
+Antisocial Personality Disorder,Symptom Disclosure,Tier 1: Superficial/Vague,18,61.11,22.22,38.89,83.33,33.33,33.34,0.0,66.67,88.89,18.18,63.64,100.0,46.15,38.46,0.0,76.92,37.5,35.72,0.0,71.43
+Antisocial Personality Disorder,Symptom Disclosure,Tier 2: Basic with Minimal Detail,18,66.67,22.23,44.44,88.89,44.44,33.75,12.5,80.0,88.89,18.75,62.5,100.0,57.14,31.66,20.0,83.33,48.78,32.86,14.29,80.0
+Antisocial Personality Disorder,Symptom Disclosure,Tier 3: Moderate Detail,18,72.22,19.45,50.0,88.89,66.67,33.34,33.33,100.0,77.78,25.0,50.0,100.0,70.59,25.84,40.0,91.67,68.18,28.75,35.71,93.22
+Antisocial Personality Disorder,Symptom Disclosure,Tier 4: Detailed/Coherent,18,77.78,19.44,55.56,94.44,88.89,18.18,63.64,100.0,66.67,33.34,33.33,100.0,80.0,20.05,55.56,95.65,85.11,17.85,62.5,98.21
+Antisocial Personality Disorder,Symptom Disclosure,Tier 5: Rich/Nuanced + Background,18,83.33,16.66,66.67,100.0,100.0,0.0,100.0,100.0,66.67,33.34,33.33,100.0,85.71,16.66,66.67,100.0,93.75,8.34,83.33,100.0
+Antisocial Personality Disorder,Emotional Tone,Emotional/Expressive,30,83.33,13.34,70.0,96.67,100.0,0.0,100.0,100.0,66.67,24.86,41.18,90.91,85.71,13.0,70.97,96.97,93.75,6.41,85.94,98.77
+Antisocial Personality Disorder,Emotional Tone,Flat/Detached,30,66.67,16.66,50.0,83.33,46.67,25.65,21.43,72.73,86.67,16.66,66.67,100.0,58.33,23.9,30.77,78.57,50.72,24.94,24.59,74.47
+Antisocial Personality Disorder,Emotional Tone,Neutral/Cooperative,30,66.67,16.66,50.0,83.33,53.33,25.65,27.27,78.57,80.0,21.43,57.14,100.0,61.54,22.36,35.29,80.0,56.34,24.13,30.3,78.57

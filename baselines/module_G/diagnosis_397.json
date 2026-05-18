@@ -1,0 +1,12 @@
+{
+    "positive": {
+        "diagnosis": true,
+        "reasoning": "Criterion 1 (recurrent thoughts): MET \u2014 patient stated, 'I have been preoccupied with unwanted and distressing ideas about contamination.' Criterion 2 (attempt to suppress): MET \u2014 'I have attempted to suppress the thoughts and impulses.' Criterion 3 (thoughts persist): MET \u2014 'Yes, they persist even when I try to ignore them.' Criterion 4 (compulsive behavior): MET \u2014 'I have felt driven to wash my hands excessively.' Criterion 5 (rituals to reduce anxiety): MET \u2014 'The rituals are primarily done to reduce anxiety and distress.' Criterion 6 (significant distress/interference): MET \u2014 'The obsessive thoughts and compulsive behaviors have caused significant distress and have interfered with my ability to function.' Total: 6 of 6 criteria met (threshold \u22654). Duration: met (symptoms reported over the past month). Functional impairment: met (interference with daily life and relationships). Exclusions: not triggered (no substance use or medical conditions reported). Diagnosis: TRUE \u2014 full criteria for OCD are met with significant functional impairment confirmed.",
+        "insight": "goodOrFair",
+        "ticRelated": false
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (recurrent thoughts): MET \u2014 patient stated, 'I have been preoccupied with unwanted and distressing ideas about contamination.' Criterion 2 (attempt to suppress): MET \u2014 'I have attempted to suppress the thoughts and impulses.' Criterion 3 (thoughts persist): MET \u2014 'Yes, they persist even when I try to ignore them.' Criterion 4 (compulsive behavior): MET \u2014 'I have felt driven to wash my hands excessively.' Criterion 5 (rituals to reduce anxiety): MET \u2014 'The rituals are primarily done to reduce anxiety and distress.' Criterion 6 (significant distress/interference): MET \u2014 'The obsessive thoughts and compulsive behaviors have caused significant distress and have interfered with my ability to function.' Total: 6 of 6 criteria met (threshold \u22654). Duration: met (symptoms reported over the past month). Functional impairment: met (interference with daily life and relationships). Exclusions: not triggered (no substance use or medical conditions reported). Diagnosis: TRUE \u2014 full criteria for recurrent OCD episodes are met with significant functional impairment confirmed."
+    }
+}

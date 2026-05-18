@@ -1,0 +1,10 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (recurrent intrusive thoughts): NOT MET \u2014 patient stated, 'I haven't really experienced those kinds of thoughts lately.' Criterion 2 (compulsive behaviors): NOT MET \u2014 patient said, 'I haven\u2019t really felt driven to do things like that.' Criterion 3 (distress/interference): NOT MET \u2014 patient indicated, 'I wouldn\u2019t say that I have these obsessive thoughts or compulsive behaviors that really interfere with my life.' Total: 0 of 3 criteria met (threshold \u22651). Duration: not applicable as no criteria were met. Functional impairment: not met as the patient reported no significant distress or interference. Exclusions: not triggered as no symptoms were reported. Diagnosis: FALSE \u2014 no criteria for OCD were met based on the patient's responses."
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (recurrent intrusive thoughts): NOT MET \u2014 patient stated, 'I haven't really experienced those kinds of thoughts lately.' Criterion 2 (compulsive behaviors): NOT MET \u2014 patient said, 'I haven\u2019t really felt driven to do things like that.' Criterion 3 (distress/interference): NOT MET \u2014 patient indicated, 'I wouldn\u2019t say that I have these obsessive thoughts or compulsive behaviors that really interfere with my life.' Total: 0 of 3 criteria met (threshold \u22652). Diagnosis: FALSE \u2014 no recurrent episode of OCD was identified based on the patient's responses."
+    }
+}

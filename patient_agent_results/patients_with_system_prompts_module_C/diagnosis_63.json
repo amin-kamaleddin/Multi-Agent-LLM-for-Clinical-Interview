@@ -1,0 +1,10 @@
+{
+    "positive": {
+        "diagnosis": true,
+        "timeFrame": "recent",
+        "reasoning": "Criterion 1: C1b is YES, so need 3 or more C3 answers including C3f coded YES. C3 groups positive (current): C3a, C3b, C3c, C3d, C3f (5 groups including C3f). Criterion met for recent. Criterion 2: C4_current is VALID_QUANTITY, so criterion met. Criterion 3: C7 is YES, criterion met. Criterion 4: C4_current is YES (VALID_QUANTITY), so criterion met. Criterion 5: O1a and O1b both NO, criterion met. All criteria met with recent time frame.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    }
+}

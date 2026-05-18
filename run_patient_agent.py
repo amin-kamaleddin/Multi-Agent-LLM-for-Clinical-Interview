@@ -1,0 +1,209 @@
+import csv
+import json
+import operator
+import argparse
+from pathlib import Path
+from typing import Any, List, Optional, Sequence, Annotated
+
+from langchain_core.messages import SystemMessage, HumanMessage
+from langchain_openai import ChatOpenAI
+from langgraph.constants import START, END
+from langgraph.graph import StateGraph
+from langgraph.graph.message import add_messages
+from pydantic import BaseModel, Field
+
+from backend.agent_core.interview_agent.cli import _load_key
+from backend.agent_core.interview_agent.models import ModuleLoader, _add_log
+from backend.agent_core.interview_agent.nodes import (
+    evaluator_node,
+    questioner_node,
+    should_clarify,
+    navigator_node,
+    should_diagnose,
+    diagnoser_node,
+)
+
+PATIENT_USER_PROMPT = """
+The questioner asks: {question}
+
+Respond as the patient described in your system prompt. sometimes implicitly answer (dont use 'yes' or 'no') and 
+sometimes 
+explicitly 
+use 
+'yes' or 'no', 
+with a brief 
+clarification if helpful.
+"""
+MAX_RETRIES = 5  # for LLM calls
+GPT_TIMEOUT = 30  # seconds
+
+patient_llm = ChatOpenAI(model="gpt-4o-mini", temperature=1, max_retries=MAX_RETRIES, timeout=GPT_TIMEOUT)
+
+FILE_NAME = "patients_with_system_prompts_module_A"
+
+
+class InterviewState(BaseModel):
+    messages: Annotated[Sequence, add_messages] = Field(default_factory=list)
+    conversation_log: Annotated[list[dict], _add_log] = Field(default_factory=list)
+    module_loader: Any
+    current_question_id: Optional[str] = None
+    question_path: List[str] = Field(default_factory=list)
+    evaluator_results: Annotated[List[Any], operator.add] = Field(default_factory=list)
+    patient_agent: bool = False
+    module_completed: bool = False
+    ready_for_diagnosis: bool = False
+    diagnosis_content: Optional[Any] = Field(default_factory=dict)
+    red_flag: bool = False
+    patient_system_prompt: Optional[str] = None
+
+
+def patient_node(state: InterviewState):
+    print("enter patient node")
+    patient_system_prompt = state.patient_system_prompt
+
+    if not state.patient_agent:
+        result = input("You: ").strip()
+    else:
+        sys_msg = SystemMessage(content=patient_system_prompt)
+        patient_prompt = HumanMessage(
+            content=PATIENT_USER_PROMPT.format(question=state.messages[-1].content)
+        )
+        result = patient_llm.invoke([sys_msg, patient_prompt])
+        print(f"agent response: {result.content}")
+
+    print(15 * '--' + f" End of question {state.current_question_id}" + 15 * '--' + '\n\n')
+    return {'messages': [result]}
+
+
+def build_graph(loader: ModuleLoader, visualize: bool = False):
+    sg = StateGraph(InterviewState)
+
+    sg.add_node("questioner", questioner_node)
+    sg.add_node("patient", patient_node)
+    sg.add_node("evaluator", evaluator_node)
+    sg.add_node("navigator", navigator_node)
+    sg.add_node("diagnoser", diagnoser_node)
+
+    sg.add_edge(START, "questioner")
+    sg.add_edge("questioner", "patient")
+    sg.add_edge("patient", "evaluator")
+
+    sg.add_conditional_edges("evaluator", should_clarify,
+                             {"clarify": "questioner", "continue": "navigator"})
+
+    sg.add_conditional_edges("navigator", should_diagnose,
+                             {"continue": "questioner", "diagnose": "diagnoser", "end": END})
+
+    sg.add_edge("diagnoser", END)
+
+    compiled_sg = sg.compile()
+
+    return compiled_sg
+
+
+def run(start_id=None, end_id=None):
+    _load_key()
+
+    # Load patient data from JSON
+    with open("./interview_agent/prompts/" + FILE_NAME + ".json", "r", encoding="utf-8") as f:
+        patients_data = json.load(f)
+
+    # Filter patients based on range if provided
+    if start_id is not None and end_id is not None:
+        filtered_patients = [
+            entry for entry in patients_data
+            if start_id <= entry.get("id", 0) <= end_id
+        ]
+        print(f"Processing patients from ID {start_id} to {end_id}")
+    else:
+        filtered_patients = patients_data
+        print(f"Processing all patients")
+
+    print(f"Found {len(filtered_patients)} patients to process\n")
+
+    for entry in filtered_patients:
+        if "System Prompt" not in entry or "id" not in entry or "Module" not in entry:
+            continue  # skip if missing data
+
+        # Convert module name into a file-friendly format
+        module_name = entry["Module"].split(" - ")[0].lower()
+        module_filename = f"./modules/module_{module_name}.json"
+
+        # Load module dynamically
+        loader = ModuleLoader.from_file(module_filename)
+        app = build_graph(loader)
+
+        prompt = entry["System Prompt"]
+        run_id = entry["id"]
+
+        print(f"\n--- Starting conversation for ID {run_id} | Module: {entry['Module']} ---\n")
+
+        start_qid = loader.get_first_question_id()
+
+        state = InterviewState(
+            module_loader=loader,
+            current_question_id=start_qid,
+            messages=[],
+            patient_agent=True,
+            patient_system_prompt=prompt
+        )
+
+        result = app.invoke(state, config={"recursion_limit": 800})
+
+        # Save conversation log
+        _save_log(result["conversation_log"], run_id)
+
+        # Extract and save diagnosis content
+        diagnosis_dict = result["diagnosis_content"].root
+        diagnosis_output = {k: v.model_dump() for k, v in diagnosis_dict.items()}
+        _save_diagnosis(diagnosis_output, run_id)
+
+    print(f"\n{'=' * 80}")
+    print(f"COMPLETED processing")
+    print(f"{'=' * 80}\n")
+
+
+def _save_log(log, run_id):
+    # Create main directory
+    base_dir = Path("patient_agent_results")
+    base_dir.mkdir(exist_ok=True)
+
+    # Create subdirectory
+    sub_dir = base_dir / FILE_NAME
+    sub_dir.mkdir(exist_ok=True)
+
+    # Save file in subdirectory
+    path = sub_dir / f"{run_id}.csv"
+    with open(path, "w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=log[0].keys())
+        writer.writeheader()
+        writer.writerows(log)
+
+    print(f"Conversation log saved to {path}")
+
+
+def _save_diagnosis(diagnosis_content, run_id):
+    # Create main directory
+    base_dir = Path("patient_agent_results")
+    base_dir.mkdir(exist_ok=True)
+
+    # Create subdirectory
+    sub_dir = base_dir / FILE_NAME
+    sub_dir.mkdir(exist_ok=True)
+
+    # Save file in subdirectory
+    path = sub_dir / f"diagnosis_{run_id}.json"
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(diagnosis_content, f, indent=4)
+
+    print(diagnosis_content)
+    print(f"Diagnosis saved to {path}")
+
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Process patient interviews")
+    parser.add_argument("--start", type=int, help="Starting patient ID")
+    parser.add_argument("--end", type=int, help="Ending patient ID")
+    args = parser.parse_args()
+
+    run(args.start, args.end)

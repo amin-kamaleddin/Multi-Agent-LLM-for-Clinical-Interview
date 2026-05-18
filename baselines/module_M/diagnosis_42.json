@@ -1,0 +1,10 @@
+{
+    "current": {
+        "diagnosis": true,
+        "reasoning": "The individual reports engaging in binge eating episodes more than once a week, feeling a lack of control during these episodes, and compensating through vomiting multiple times a week. This aligns with the diagnostic criteria for bulimia nervosa."
+    },
+    "recurrent": {
+        "diagnosis": true,
+        "reasoning": "The individual describes a pattern of binge eating and purging behaviors occurring frequently over the past three months, indicating a recurrent nature of the disorder."
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (recurrent thoughts): MET \u2014 patient stated, 'I've had those thoughts for the past month. They just pop up, and they feel really unsettling.' Criterion 2 (attempt to suppress): MET \u2014 'I've been trying to push these thoughts away.' Criterion 3 (thoughts keep returning): MET \u2014 'They just keep popping up, no matter what I do.' Criterion 4 (compulsive behavior): MET \u2014 'I've noticed that I keep checking the door locks repeatedly before I leave.' Criterion 5 (rituals to reduce anxiety): MET \u2014 'They are done to reduce anxiety.' Criterion 6 (significant distress/functional impairment): MET \u2014 'It\u2019s been hard to focus at work because of these thoughts. They often take up more than an hour each day.' Total: 6 of 6 criteria met (threshold \u22654). Duration: met (symptoms present for at least 1 month). Functional impairment: met (difficulty focusing at work). Exclusions: not triggered (no substance use or medical conditions reported). Diagnosis: TRUE \u2014 full criteria for OCD are met with significant functional impairment confirmed."
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (recurrent thoughts): MET \u2014 patient reported ongoing symptoms. Criterion 2 (attempt to suppress): MET \u2014 patient actively tries to suppress thoughts. Criterion 3 (thoughts keep returning): MET \u2014 patient confirms thoughts are persistent. Criterion 4 (compulsive behavior): MET \u2014 patient engages in compulsive checking. Criterion 5 (rituals to reduce anxiety): MET \u2014 patient states rituals are to reduce anxiety. Criterion 6 (significant distress/functional impairment): MET \u2014 patient describes significant distress and impairment. Total: 6 of 6 criteria met (threshold \u22654). Duration: met (symptoms present for at least 1 month). Functional impairment: met (difficulty focusing at work). Exclusions: not triggered (no substance use or medical conditions reported). Diagnosis: TRUE \u2014 full criteria for recurrent OCD episodes are met with significant functional impairment confirmed."
+    }
+}

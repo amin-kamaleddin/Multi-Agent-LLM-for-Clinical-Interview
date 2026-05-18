@@ -1,0 +1,10 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (obsessions): MET \u2014 patient stated 'I have been bothered by those kinds of thoughts' regarding germs and contamination. Criterion 2 (compulsions): MET \u2014 patient described feeling driven to wash hands excessively, stating 'I find myself washing my hands more than I\u2019d like to admit lately.' Criterion 3 (distress and impairment): MET \u2014 patient reported significant distress and functional impairment, noting it takes over an hour a day and affects social interactions. Total: 3 criteria met. Duration: met (symptoms reported in the past month). Functional impairment: met (difficulty in social situations and significant time spent on compulsions). Exclusions: not triggered (no substance use or medical conditions reported). Diagnosis: TRUE \u2014 full criteria met with significant distress and impairment confirmed."
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (obsessions): MET \u2014 patient has recurrent intrusive thoughts about contamination. Criterion 2 (compulsions): MET \u2014 patient engages in compulsive hand washing. Criterion 3 (distress and impairment): MET \u2014 symptoms cause significant distress and interfere with daily functioning. Total: 3 criteria met. Duration: met (symptoms reported in the past month). Functional impairment: met (social and daily life affected). Exclusions: not triggered. Diagnosis: TRUE \u2014 full criteria met with significant distress and impairment confirmed."
+    }
+}

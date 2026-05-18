@@ -1,0 +1,14 @@
+question_id,ai_question,patient_response,classification,reasoning,timestamp,exchange_type
+J1,"In the past 12 months, did you take any of these drugs more than once, to get high, to feel elated, to get “a buzz” or to change your mood? 
+
+Stimulants: amphetamines, ""speed"", crystal meth, “crank”, Dexedrine, Ritalin, diet pills.  
+Cocaine: snorting, IV, freebase, crack, ""speedball"".  
+Opiates: heroin, morphine, Dilaudid, opium, Demerol, methadone, Darvon, codeine, Percodan, Vicodin, OxyContin.  
+Hallucinogens: LSD (""acid""), mescaline, peyote, psilocybin, STP, ""mushrooms"", “ecstasy”, MDA, MDMA.  
+Dissociative Drugs: PCP (Phencyclidine, ""Angel Dust"", ""Peace Pill"", “Hog”), or ketamine (“Special K”).  
+Inhalants: ""glue"", ethyl chloride, “rush”, nitrous oxide (""laughing gas""), amyl or butyl nitrate (""poppers"").  
+Cannabis: marijuana, hashish (""hash""), THC, ""pot"", ""grass"", ""weed"", ""reefer"".  
+Sedatives, Hypnotics or Anxiolytics: Quaalude, Seconal (""reds""), Valium, Xanax, Librium, Ativan, Dalmane, Halcion, barbiturates, Miltown, GHB, Roofinol, “Roofies”.  
+Miscellaneous: steroids, nonprescription sleep or diet pills. Cough Medicine? Any others?  
+
+Please feel free to explain if you are uncertain.","I occasionally use cannabis to unwind after a long day, generally about once or twice a month. It helps me relax without affecting my responsibilities or relationships. Overall, I haven't noticed any negative impact on my life from this use.",no,"The patient indicates that they use cannabis occasionally, specifically about once or twice a month, to unwind. This response provides a clear frequency of use, which fits the criteria for a quantity question. However, the context of the use is framed positively, suggesting it does not impact their responsibilities or relationships negatively. Therefore, the response does not indicate a problematic pattern of use that would classify as taking drugs to get high or change mood in a clinical sense. Thus, the classification is 'no' as the use is not frequent or problematic.",2025-10-08T14:17:34.261421,initial

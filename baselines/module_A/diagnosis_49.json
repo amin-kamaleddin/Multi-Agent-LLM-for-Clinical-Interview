@@ -1,0 +1,11 @@
+{
+    "positive": {
+        "diagnosis": true,
+        "reasoning": "Criterion A1 (depressed mood): UNCLEAR \u2014 patient described a lack of enthusiasm and interest but did not explicitly label it as sadness or hopelessness. Criterion A2 (anhedonia): MET \u2014 patient stated 'I haven't really enjoyed activities that I used to find fulfilling.' Criterion A3 (weight/appetite): MET \u2014 patient reported decreased appetite and a possible weight change of around 5%. Criterion A4 (sleep): MET \u2014 patient noted difficulty falling asleep and waking early. Criterion A5 (psychomotor agitation/retardation): MET \u2014 patient described moving more slowly and feeling restless. Criterion A6 (fatigue): MET \u2014 patient reported a significant drop in energy levels. Criterion A7 (worthlessness/guilt): NOT MET \u2014 patient denied feeling worthless or guilty. Criterion A8 (concentration): MET \u2014 patient reported difficulty concentrating and making decisions. Criterion A9 (thoughts of death): NOT MET \u2014 patient indicated reflective thoughts about life but no active thoughts of self-harm. Total: Requires \u22655 of 9 symptoms; found 6 clearly met, 2 not met, 1 unclear. Duration: met (symptoms present for the past 2 weeks). Functional impairment: met (noted avoidance of social activities and a change in routine). Exclusions: not triggered (no substance use or medical conditions reported). Diagnosis: TRUE \u2014 full threshold met with significant functional impairment confirmed.",
+        "timeFrame": "recent"
+    },
+    "recurrent": {
+        "diagnosis": true,
+        "reasoning": "Criterion A5: MET \u2014 patient reported experiencing at least three distinct episodes of depression with at least two months between episodes. Exclusions: not triggered (no substance use or medical conditions reported). Diagnosis: TRUE \u2014 recurrent episodes confirmed with sufficient time between them."
+    }
+}

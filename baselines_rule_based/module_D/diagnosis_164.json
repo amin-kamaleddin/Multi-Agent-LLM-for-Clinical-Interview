@@ -1,0 +1,6 @@
+{
+    "lifetime": {
+        "diagnosis": false,
+        "reasoning": "D3 coded YES: NOT MET; D4 symptoms >= 4: MET; organic rule-out: MET"
+    }
+}

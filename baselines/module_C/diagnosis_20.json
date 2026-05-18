@@ -1,0 +1,6 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1: NOT MET \u2014 patient denied any periods of feeling 'up' or 'high' or hyperactive, stating 'There has not been a period where I felt 'up' or 'high'.' Criterion 2: NOT MET \u2014 patient did not report any symptoms of irritability or overreactions, stating 'I have not experienced persistent irritability for several days.' Criterion 3: NOT MET \u2014 no evidence of inflated self-esteem or excessive activity was provided. Criterion 4: NOT MET \u2014 patient described stable energy levels and consistent routine without notable shifts in behavior. Criterion 5: NOT MET \u2014 patient confirmed no family history of mood disorders. Total: 0 of 5 criteria met (threshold \u22653). Duration: not applicable as no symptoms were endorsed. Functional impairment: not applicable as no symptoms were present. Exclusions: not triggered. Diagnosis: FALSE \u2014 no criteria for manic or hypomanic episodes were met."
+    }
+}

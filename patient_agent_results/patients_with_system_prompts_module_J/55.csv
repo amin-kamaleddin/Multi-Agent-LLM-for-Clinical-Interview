@@ -1,0 +1,14 @@
+question_id,ai_question,patient_response,classification,reasoning,timestamp,exchange_type
+J1,"In the past 12 months, did you take any of these drugs more than once, to get high, to feel elated, to get “a buzz” or to change your mood? 
+
+Stimulants: amphetamines, ""speed"", crystal meth, “crank”, Dexedrine, Ritalin, diet pills.  
+Cocaine: snorting, IV, freebase, crack, ""speedball"".  
+Opiates: heroin, morphine, Dilaudid, opium, Demerol, methadone, Darvon, codeine, Percodan, Vicodin, OxyContin.  
+Hallucinogens: LSD (""acid""), mescaline, peyote, psilocybin, STP, ""mushrooms"", “ecstasy”, MDA, MDMA.  
+Dissociative Drugs: PCP (Phencyclidine, ""Angel Dust"", ""Peace Pill"", “Hog”), or ketamine (“Special K”).  
+Inhalants: ""glue"", ethyl chloride, “rush”, nitrous oxide (""laughing gas""), amyl or butyl nitrate (""poppers"").  
+Cannabis: marijuana, hashish (""hash""), THC, ""pot"", ""grass"", ""weed"", ""reefer"".  
+Sedatives, Hypnotics or Anxiolytics: Quaalude, Seconal (""reds""), Valium, Xanax, Librium, Ativan, Dalmane, Halcion, barbiturates, Miltown, GHB, Roofinol, “Roofies”.  
+Miscellaneous: steroids, nonprescription sleep or diet pills. Cough Medicine? Any others?  
+
+Please respond with ""yes"" or ""no."" If you're uncertain, feel free to explain.","I've occasionally used substances like cannabis socially, mainly during gatherings with friends. It would be more accurate to say that I've used it on a few occasions, and it’s never been with the intention to achieve a high or change my mood significantly; it's more about relaxing and enjoying time with others. My lifestyle and responsibilities remain stable, and I've never had any issues with my relationships or work performance due to this use. It’s more of a social experience than a necessity for me, and I generally approach it casually. So, I wouldn’t classify my use as problematic in any way.",no,"The patient describes their use of cannabis as occasional and primarily social, indicating that it is not used with the intention to get high or change their mood significantly. They also emphasize that their lifestyle and responsibilities remain stable and that there are no negative impacts on relationships or work performance. This suggests that the use is not problematic. Therefore, the response indicates that the patient does not meet the criteria for having taken drugs to get high or change their mood, leading to a classification of 'no'.",2025-10-08T14:02:21.876268,initial

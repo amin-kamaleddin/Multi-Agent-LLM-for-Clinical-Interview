@@ -1,0 +1,10 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (obsessions): MET \u2014 patient stated 'Yes. I have thoughts about being contaminated and concerns about germs. They happen often.' Criterion 2 (compulsions): MET \u2014 patient reported 'There has been a lot of need to wash hands. It happens frequently. I feel like I have to do it to feel okay.' Criterion 3 (distress/impairment): MET \u2014 patient indicated 'The thoughts and behaviors do disrupt daily life and take more than an hour each day.' Criterion 4 (exclusion criteria): MET \u2014 patient confirmed 'I\u2019m not currently taking any drugs or medicines. There are no withdrawal symptoms.' Total: 5 criteria met. Duration: met (symptoms reported in the past month). Functional impairment: met (disruption in daily life and social situations). Exclusions: not triggered. Diagnosis: TRUE \u2014 full criteria met with significant functional impairment confirmed."
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (recurrent episodes): NOT MET \u2014 patient did not report any distinct episodes of OCD symptoms occurring at different times, only ongoing symptoms. Total: 0 criteria met. Diagnosis: FALSE \u2014 no evidence of recurrent episodes."
+    }
+}

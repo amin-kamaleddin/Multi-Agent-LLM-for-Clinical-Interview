@@ -1,0 +1,18 @@
+{
+    "current": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (thoughts of being better off dead): NOT MET \u2014 patient expressed moments of wishing for peace but clarified it was not about wanting to die. Criterion 2 (thoughts of harming self): NOT MET \u2014 patient stated they never thought about harming themselves. Criterion 3 (suicidal dreams): NOT MET \u2014 patient reported vivid dreams but none with suicidal content. Criterion 4 (suicide method): NOT MET \u2014 patient has not thought about methods. Criterion 5 (suicide means): NOT MET \u2014 patient has not considered means for suicide. Criterion 6 (place for attempt): NOT MET \u2014 patient has never wanted to end their life. Criterion 7 (timeframe for attempt): NOT MET \u2014 patient has not seriously considered a timeframe. Criterion 8 (tasks before suicide): NOT MET \u2014 patient has not thought about completing tasks related to suicide. Criterion 9 (intention to act): NOT MET \u2014 patient has never intended to act on thoughts of ending their life. Criterion 10 (impulse to kill self): NOT MET \u2014 patient expressed wanting peace, not to die. Criterion 11 (active steps for attempt): NOT MET \u2014 patient has not taken steps toward a suicide attempt. Criterion 12 (self-injury): NOT MET \u2014 patient denied self-harm. Criterion 13 (suicide attempt): NOT MET \u2014 patient has never attempted suicide. Criterion 14 (time spent with suicidal thoughts): NOT MET \u2014 patient indicated fleeting moments of wishing for peace, not sustained thoughts. Criterion 15 (duration of thoughts): NOT MET \u2014 patient does not experience prolonged thoughts of wanting to die. Criterion 16 (regularity of thoughts): NOT MET \u2014 patient stated thoughts are not regular. Total: 0 of 8 criteria met (threshold \u22651). Duration: not met (symptoms not present). Functional impairment: not clinically significant (patient focused on responsibilities). Exclusions: not triggered (no substance use or medical conditions). Diagnosis: FALSE \u2014 no current suicidal ideation or intent was endorsed."
+    },
+    "lifetime": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (lifetime suicide attempt): NOT MET \u2014 patient has never made a suicide attempt. Total: 0 of 1 criteria met (threshold \u22651). Diagnosis: FALSE \u2014 no lifetime suicide attempts were reported."
+    },
+    "likely_in_near_future": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (likelihood of attempt): NOT MET \u2014 patient rated likelihood of attempting suicide as closer to 0. Total: 0 of 1 criteria met (threshold \u22651). Diagnosis: FALSE \u2014 patient does not foresee any likelihood of attempting suicide."
+    },
+    "suicidal_behavior_disorder": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (B18): NOT MET \u2014 patient has not engaged in any suicidal behavior. Total: 0 of 1 criteria met (threshold \u22651). Diagnosis: FALSE \u2014 no evidence of suicidal behavior disorder."
+    }
+}

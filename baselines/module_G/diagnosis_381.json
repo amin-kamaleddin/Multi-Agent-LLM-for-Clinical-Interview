@@ -1,0 +1,12 @@
+{
+    "positive": {
+        "diagnosis": true,
+        "reasoning": "Criterion 1 (recurrent thoughts): MET \u2014 patient stated 'I've had some thoughts that I don't really want. They\u2019re bothersome and I can't seem to get rid of them.' Criterion 2 (attempt to suppress): MET \u2014 'I try to push those thoughts away sometimes.' Criterion 3 (thoughts keep coming back): MET \u2014 'They do keep coming back, no matter what I do.' Criterion 4 (compulsive behaviors): MET \u2014 'I've been feeling like I need to check the locks a lot... I wash my hands more than I used to.' Criterion 5 (rituals to reduce anxiety): MET \u2014 'It's mostly to reduce anxiety. They feel excessive.' Criterion 6 (significant distress or impairment): MET \u2014 'It has definitely been tough lately... it gets in the way of everything I need to do, especially at home.' Total: 6 of 6 criteria met (threshold \u22654). Duration: met (symptoms reported in the past month). Functional impairment: met (significant interference with daily activities). Exclusions: not triggered (no substance use or medical conditions reported). Diagnosis: TRUE \u2014 full criteria met with significant functional impairment confirmed.",
+        "insight": "goodOrFair",
+        "ticRelated": false
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (recurrent thoughts): MET \u2014 patient stated 'I've had some thoughts that I don't really want. They\u2019re bothersome and I can't seem to get rid of them.' Criterion 2 (attempt to suppress): MET \u2014 'I try to push those thoughts away sometimes.' Criterion 3 (thoughts keep coming back): MET \u2014 'They do keep coming back, no matter what I do.' Criterion 4 (compulsive behaviors): MET \u2014 'I've been feeling like I need to check the locks a lot... I wash my hands more than I used to.' Criterion 5 (rituals to reduce anxiety): MET \u2014 'It's mostly to reduce anxiety. They feel excessive.' Criterion 6 (significant distress or impairment): MET \u2014 'It has definitely been tough lately... it gets in the way of everything I need to do, especially at home.' Total: 6 of 6 criteria met (threshold \u22654). Duration: met (symptoms reported in the past month). Functional impairment: met (significant interference with daily activities). Exclusions: not triggered (no substance use or medical conditions reported). Diagnosis: TRUE \u2014 full criteria met with significant functional impairment confirmed."
+    }
+}

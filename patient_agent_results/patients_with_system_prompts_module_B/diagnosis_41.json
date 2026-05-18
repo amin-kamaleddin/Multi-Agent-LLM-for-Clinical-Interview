@@ -1,0 +1,42 @@
+{
+    "positive": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "Criterion 1: At least one question except B1 is coded YES (multiple YES answers present). Criterion 2: Counting YES answers from B1-B19 (excluding B1 which is NO): B2, B3_2, B4b, B5, B6, B7, B9, B10, B10a, B10b, B11, B12, B12a, B12c, B13, B14, B14a, B14b are YES. This totals 18 YES answers, placing the suicidality score in the High category (>17). Criterion 3: O1a = NO and O1b = NO, criterion met. All three criteria are met, so diagnosis is true. The module is not specified as 'A', so no timeFrame field is included.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    },
+    "Current": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 is met because multiple questions other than B1 are coded YES (e.g., B2, B3_2, B5, B6, B7, B9, B10, B11, B12, B13, B14). Criterion 2 (suicidality current) cannot be confirmed as no explicit suicidality question is provided or indicated as YES. Criterion 3 is met since O1a = NO and O1b = NO. Since not all criteria are met, diagnosis is false.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    },
+    "LIFETIME ATTEMPT": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 is met because multiple questions other than B1 are coded YES (e.g., B10, B11, B12, B13, B14, B2, B3_2, B4b, B5, B6, B7, B9). Criterion 2 (suicidality is lifetime) is assumed met given the diagnostic group is LIFETIME ATTEMPT. Criterion 3 is met because both O1a and O1b are NO. Therefore, all criteria for LIFETIME ATTEMPT diagnosis are satisfied.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    },
+    "LIKELY IN NEAR FUTURE": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 is met because multiple questions other than B1 are coded YES (e.g., B2, B3_2, B4b, B5, B6, B7, B9, B10, B10a, B10b, B11, B12, B12a, B12c, B13, B14, B14a, B14b). Criterion 2 (SUICIDALITY is LIKELY IN NEAR FUTURE) is assumed met based on the presence of multiple suicidality-related items coded YES (B10, B10a, B10b, B11, B12, B13, B14, etc.). Criterion 3 is met because O1a = NO and O1b = NO. Therefore, all criteria for LIKELY IN NEAR FUTURE diagnosis are met.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    },
+    "SUICIDAL BEHAVIOR DISORDER": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 is not met because B18 is coded NO. Since B18 must be YES to proceed, the diagnosis cannot be true. Criteria 2, 3, and 4 cannot be evaluated further as the first criterion fails.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    }
+}

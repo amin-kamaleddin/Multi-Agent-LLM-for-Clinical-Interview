@@ -1,0 +1,6 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "reasoning": "Criterion A1 (restricting food intake): MET \u2014 patient expressed significant concern about weight in relation to height and described feeling reassured by a lower weight. Criterion A2 (intense fear of gaining weight): MET \u2014 patient stated that gaining even a little weight would feel out of their control and is very distressing. Criterion A3 (disturbance in self-perception of weight/shape): MET \u2014 patient indicated that they worry about how their appearance is perceived and that every inch matters. Criterion A4 (weight below a certain threshold): MET \u2014 patient reported a weight below 100 pounds in the past three months. Total: 4 of 4 criteria met (threshold \u22651). Duration: not explicitly assessed, but symptoms appear current based on recent weight concerns. Functional impairment: met \u2014 patient described anxiety related to weight management and distress over perceived control. Exclusions: not triggered. Diagnosis: TRUE \u2014 all criteria are met with evidence of significant distress and functional impairment related to weight management."
+    }
+}

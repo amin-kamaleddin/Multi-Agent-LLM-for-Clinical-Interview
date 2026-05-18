@@ -1,0 +1,10 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1: MET \u2014 Patient reported feeling unusually energetic and confident, with ideas coming quickly, and others noted the difference. Criterion 2: MET \u2014 Patient described a noticeable elevation in mood and energy levels. Criterion 3: MET \u2014 Patient indicated a significant increase in activity and drive, engaging more socially and tackling tasks with urgency. Criterion 4: MET \u2014 Patient reported a strong desire to engage in activities without considering risks. Criterion 5: MET \u2014 Patient confirmed no hospitalization for these issues. Total: 5 of 9 criteria met (threshold \u22654). Duration: met (symptoms lasted 4-6 days). Functional impairment: NOT MET \u2014 although there were some challenges, the patient stated that symptoms did not cause major issues in daily life. Exclusions: not triggered (no substance use or medical conditions reported). Diagnosis: FALSE \u2014 while the patient met the symptom count, the lack of significant functional impairment is a key deciding factor."
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1: NOT MET \u2014 There is no indication of a previous episode or recurrent episodes described in the transcript. Total: 0 of 9 criteria met. Diagnosis: FALSE \u2014 no evidence of recurrent episodes."
+    }
+}

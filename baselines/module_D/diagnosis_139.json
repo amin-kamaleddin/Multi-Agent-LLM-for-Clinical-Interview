@@ -1,0 +1,10 @@
+{
+    "lifetime": {
+        "diagnosis": true,
+        "reasoning": "Criterion 1 (D3): MET \u2014 patient confirmed experiencing multiple episodes of sudden anxiety and discomfort, particularly while shopping. Criterion 2 (D4 symptoms): MET \u2014 patient endorsed 5 symptoms: (D4a) tightness in chest, (D4b) overwhelming fear, (D4c) sweating, (D4d) shortness of breath, (D4m) feelings of unreality. Criterion 3 (O1a and O1b): MET \u2014 patient reported no significant substance use or withdrawal and no medical conditions that could explain symptoms. Total: 5 of 13 symptoms met (threshold \u22654). Exclusions: not triggered. Diagnosis: TRUE \u2014 full threshold met with no exclusion criteria present."
+    },
+    "current": {
+        "diagnosis": true,
+        "reasoning": "Criterion 1 (D6): MET \u2014 patient reported ongoing concern about having another attack and some behavioral changes, such as avoiding crowded places. Criterion 2 (O1a and O1b): MET \u2014 patient confirmed no significant substance use or withdrawal and no medical conditions that could explain current symptoms. Exclusions: not triggered. Diagnosis: TRUE \u2014 current symptoms meet the threshold with functional impairment indicated by behavioral changes."
+    }
+}

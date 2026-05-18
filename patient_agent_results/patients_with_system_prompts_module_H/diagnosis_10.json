@@ -1,0 +1,18 @@
+{
+    "positive": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "Criterion 1: H7 is YES, so met. Criterion 2: H3a is NO, H3b is YES, so at least one H3a-b is YES, met. Criterion 3: H4a-g all YES (7 total), so 2 or more H4a-g YES, met. Criterion 4: H5a-f all YES (6 total), so 2 or more H5a-f YES, met. Criterion 5: O1a and O1b both NO, so met. All criteria met. No time frame specified for symptom groups, so time frame is null.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    },
+    "depersonalization, derealization or with delayed expression": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 (H7=YES) is met as H7 is YES. Criterion 2 requires specifying association, which is given by the diagnostic group but not contradicted. Criterion 3 requires at least one H3a-b=YES; H3b=YES satisfies this. Criterion 4 requires at least two H4a-g=YES; all H4a-g are YES, so criterion met. Criterion 5 requires at least two H5a-f=YES; all H5a-f are YES, so criterion met. Criterion 6 requires O1a=NO and O1b=NO; both are NO, so criterion met. All criteria are met, so diagnosis is true. No time frame specification is requested for this module.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "current": {
+        "diagnosis": false,
+        "reasoning": "Criterion B1 (thoughts of being better off dead): NOT MET \u2014 patient stated 'No, I\u2019ve never thought about being better off dead.' Criterion B2 (thoughts of harming self): NOT MET \u2014 patient stated 'Absolutely not. I've felt anxious and overwhelmed at times... but that never translates into thoughts of harming myself.' Criterion B3 (suicidal dreams): NOT MET \u2014 patient stated 'I haven\u2019t had any dreams with suicidal content.' Criterion B4 (suicide method in mind): NOT MET \u2014 patient stated 'No, I\u2019ve never thought about ways to harm myself.' Criterion B5 (suicide means in mind): NOT MET \u2014 patient stated 'I haven\u2019t had any means in mind at all.' Criterion B6 (place for suicide): NOT MET \u2014 patient stated 'Absolutely not! I\u2019ve never even thought about that.' Criterion B7 (timeframe for suicide): NOT MET \u2014 patient stated 'No, I\u2019ve honestly never thought about that.' Criterion B8 (tasks before suicide): NOT MET \u2014 patient stated 'I haven\u2019t thought about anything like that at all.' Criterion B9 (intention to act on thoughts): NOT MET \u2014 patient stated 'I absolutely haven't had any thoughts of killing myself.' Criterion B10 (intention to die): NOT MET \u2014 patient stated 'Absolutely not.' Criterion B11 (impulse to kill self): NOT MET \u2014 patient stated 'No, I've never felt the need or impulse to harm myself.' Criterion B12 (active steps for suicide): NOT MET \u2014 patient stated 'I want to be clear that I have never planned or taken steps toward a suicide attempt.' Criterion B13 (self-injury without intent to kill): NOT MET \u2014 patient stated 'I haven't harmed myself at all.' Criterion B14 (suicide attempt): NOT MET \u2014 patient stated 'Absolutely not.' Criterion B15 (time spent on suicidal thoughts): NOT MET \u2014 patient stated 'I don\u2019t spend any time with suicidal thoughts\u2014never have.' Criterion B16 (least time spent): NOT MET \u2014 patient stated 'I don\u2019t spend any time at all on suicidal thoughts or impulses.' Criterion B17 (most time spent): NOT MET \u2014 patient stated 'I can honestly say that there\u2019s never been a time where I spent even a moment each day thinking about suicide.' Total: 0 of 17 criteria met (threshold \u22651). Exclusions: not triggered. Diagnosis: FALSE \u2014 no current suicidal thoughts or behaviors endorsed."
+    },
+    "lifetime": {
+        "diagnosis": false,
+        "reasoning": "Criterion C1 (lifetime suicide attempt): NOT MET \u2014 patient stated 'I\u2019ve never made a suicide attempt.' Total: 0 of 1 criteria met (threshold \u22651). Diagnosis: FALSE \u2014 no lifetime suicide attempts endorsed."
+    },
+    "likely_in_near_future": {
+        "diagnosis": false,
+        "reasoning": "Criterion D1 (likelihood of suicide in next 3 months): NOT MET \u2014 patient stated 'I would say 0.' Total: 0 of 1 criteria met (threshold \u22651). Diagnosis: FALSE \u2014 no indication of likelihood to attempt suicide in the near future."
+    },
+    "suicidal_behavior_disorder": {
+        "diagnosis": false,
+        "reasoning": "Criterion E1 (B18 coded yes): NOT MET \u2014 patient stated 'I absolutely haven't had any thoughts of killing myself.' Total: 0 of 1 criteria met (threshold \u22651). Diagnosis: FALSE \u2014 no evidence of suicidal behavior disorder."
+    }
+}

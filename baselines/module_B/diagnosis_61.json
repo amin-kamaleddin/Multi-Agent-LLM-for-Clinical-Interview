@@ -1,0 +1,14 @@
+{
+    "current": {
+        "diagnosis": true,
+        "reasoning": "Criterion 1 (thoughts of being better off dead): MET \u2014 patient stated 'There have been times when I've felt like I would be better off not being here.' Criterion 2 (thoughts of harming self): MET \u2014 'Sometimes. I have thoughts about ending my life more often, especially at night.' Criterion 3 (frequency of thoughts): MET \u2014 'They occur frequently, usually when it gets late.' Criterion 4 (intensity of thoughts): MET \u2014 'The feelings are overwhelming at times.' Criterion 5 (specific plan): NOT MET \u2014 patient stated 'I haven\u2019t made any plans.' Criterion 6 (specific means): NOT MET \u2014 'No specific method stands out clearly.' Criterion 7 (specific place): NOT MET \u2014 'I don\u2019t have a specific place in mind.' Criterion 8 (specific timeframe): NOT MET \u2014 'I don\u2019t have a specific date or time though.' Criterion 9 (tasks before suicide): MET \u2014 'There have been thoughts about what I might want to do before.' Criterion 10 (intent to act): NOT MET \u2014 'I haven\u2019t made any plans to act on it.' Criterion 11 (need to act): MET \u2014 'There have been times when I felt a strong need to escape everything.' Criterion 12 (difficulty resisting impulses): MET \u2014 'There have been moments where it's felt hard to push those thoughts away.' Criterion 13 (active steps): NOT MET \u2014 'I haven\u2019t taken any active steps like that.' Criterion 14 (self-injury): NOT MET \u2014 'I haven\u2019t seriously harmed myself.' Criterion 15 (suicide attempt): NOT MET \u2014 'I haven't made an attempt.' Criterion 16 (time spent): UNCLEAR \u2014 patient stated 'I experience these thoughts often, especially in the evening.' Total: Requires \u22651 current suicidal thought; found 8 clearly met, 1 unclear, 6 not met. Duration: met (thoughts reported frequently over the past month). Functional impairment: met (patient expresses distress about the thoughts). Exclusions: not triggered (no substance use or medical condition reported). Diagnosis: TRUE \u2014 current suicidal thoughts are present with significant distress and functional impairment."
+    },
+    "lifetime": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (lifetime suicide attempt): NOT MET \u2014 patient stated 'I haven't made any attempts.' Total: Requires \u22651 lifetime suicide attempt; found 0 met. Diagnosis: FALSE \u2014 no lifetime suicide attempts reported."
+    },
+    "likely in near future": {
+        "diagnosis": true,
+        "reasoning": "Criterion 1 (likelihood of suicide attempt): MET \u2014 patient rated likelihood as 75 on a scale of 0-100. Total: Requires \u22651 indication of likelihood; found 1 met. Diagnosis: TRUE \u2014 patient expresses a significant likelihood of attempting suicide in the near future."
+    }
+}

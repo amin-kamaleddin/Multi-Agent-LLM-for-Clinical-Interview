@@ -1,0 +1,16 @@
+{
+    "lifetime": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 is met as there are 6 'YES' responses in the P1 group (P1a-P1f). Criterion 2 is also met as there are 7 'YES' responses in the P2 group (P2a-P2g). Therefore, all criteria are satisfied.",
+        "insight": null,
+        "ticRelated": null
+    },
+    "note": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "All symptom groups are positive based on the patient's answers, indicating that the criteria are met. Since all responses are 'YES', the diagnosis is true.",
+        "insight": null,
+        "ticRelated": null
+    }
+}

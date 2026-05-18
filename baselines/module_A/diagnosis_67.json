@@ -1,0 +1,11 @@
+{
+    "positive": {
+        "diagnosis": true,
+        "reasoning": "Criterion A1 (depressed mood): MET \u2014 patient stated 'I do find myself feeling a mix of emotions... there are days when I feel a sense of emptiness.' Criterion A2 (anhedonia): MET \u2014 'Activities that once brought me joy... have started to feel less appealing.' Criterion A3 (weight/appetite): MET \u2014 'I have noticed a decrease in my appetite.' Criterion A4 (sleep): UNCLEAR \u2014 patient reports changes in sleep but states it's manageable and not every night. Criterion A5 (psychomotor agitation/retardation): MET \u2014 'I've noticed that I tend to move at a slower pace during my daily routines.' Criterion A6 (fatigue): MET \u2014 'I find myself feeling quite fatigued, more than usual.' Criterion A7 (worthlessness/guilt): UNCLEAR \u2014 patient acknowledges feelings of guilt but does not report them as daily occurrences. Criterion A8 (concentration): MET \u2014 'I find that my focus isn\u2019t quite what it used to be.' Criterion A9 (thoughts of death): UNCLEAR \u2014 patient reflects on death but does not express suicidal ideation. Total: Requires \u22655 of 9 symptoms; found 6 clearly met, 3 unclear. Duration: met (symptoms reported for the past 2 weeks). Functional impairment: met ('I've found myself withdrawing from activities I previously enjoyed'). Exclusions: not triggered (no substance use or medical conditions reported). Diagnosis: TRUE \u2014 full threshold met with significant functional impairment confirmed.",
+        "timeFrame": "recent"
+    },
+    "recurrent": {
+        "diagnosis": true,
+        "reasoning": "Criterion A5: YES \u2014 patient reports a past episode following a job loss and another after the partner's passing, with at least 2 months between episodes. Exclusions: not triggered (no substance use or medical conditions reported). Diagnosis: TRUE \u2014 two distinct episodes of depression confirmed."
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (recurrent thoughts): NOT MET \u2014 patient stated, 'I wouldn\u2019t say there are specific thoughts that keep coming back.' Criterion 2 (attempts to suppress): UNCLEAR \u2014 patient mentioned moments of not wanting to think about certain things but did not indicate a consistent effort to suppress thoughts. Criterion 3 (compulsive behaviors): NOT MET \u2014 patient denied feeling driven to perform any compulsive actions, stating, 'I wouldn't say I've been driven to do anything like that.' Criterion 4 (distress/functional impairment): NOT MET \u2014 patient acknowledged feeling overwhelmed but did not report significant distress or impairment, saying, 'I can usually handle my responsibilities.' Total: 0 of 4 criteria met (threshold \u22651). Exclusions: not triggered. Diagnosis: FALSE \u2014 insufficient evidence of obsessions or compulsions meeting diagnostic criteria."
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (recurrent thoughts): NOT MET \u2014 same reasoning as above. Total: 0 of 4 criteria met (threshold \u22652). Diagnosis: FALSE \u2014 no evidence of recurrent episodes meeting full criteria."
+    }
+}

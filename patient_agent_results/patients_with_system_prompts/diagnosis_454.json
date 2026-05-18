@@ -1,0 +1,9 @@
+{
+    "current": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 is met (N4 is YES). Criterion 2 is met as there are 6 symptom groups (N3a to N3f) coded YES, all in the recent time frame. Criterion 3 is not met because O1a is NO but O1b is YES, which disqualifies the criteria. Therefore, not all criteria are satisfied.",
+        "insight": null,
+        "ticRelated": null
+    }
+}

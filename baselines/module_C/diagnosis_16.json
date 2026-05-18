@@ -1,0 +1,10 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1: NOT MET \u2014 patient stated 'I don't recall any period of feeling particularly 'up' or 'high.' My energy levels have been typical.' Criterion 2: NOT MET \u2014 patient did not report any episodes of irritability or overreactions, stating 'I haven't experienced persistent irritability that led to arguments or fights.' Criterion 3: NOT MET \u2014 no evidence of significant changes in mood or behavior that would indicate a manic or hypomanic episode. Total: 0 of 4 criteria met (threshold \u22654). Duration: not applicable as no symptoms were endorsed. Functional impairment: not applicable as no symptoms were reported. Exclusions: not triggered. Diagnosis: FALSE \u2014 no criteria for manic or hypomanic episodes were met."
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1: NOT MET \u2014 patient stated 'I don't recall any period of feeling particularly 'up' or 'high.' My energy levels have been typical.' Criterion 2: NOT MET \u2014 patient did not report any episodes of irritability or overreactions, stating 'I haven't experienced persistent irritability that led to arguments or fights.' Total: 0 of 4 criteria met (threshold \u22654). Duration: not applicable as no symptoms were endorsed. Functional impairment: not applicable as no symptoms were reported. Exclusions: not triggered. Diagnosis: FALSE \u2014 no criteria for recurrent manic or hypomanic episodes were met."
+    }
+}

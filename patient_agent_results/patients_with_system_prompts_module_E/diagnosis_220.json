@@ -1,0 +1,9 @@
+{
+    "current": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "Criterion E6 is met because the patient's answer to E6 is 'YES'.",
+        "insight": null,
+        "ticRelated": null
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "positive": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "Criterion 1: At least one question except B1 is coded YES (multiple YES answers present). Criterion 2: The total points for YES answers from B1-B19 is greater than 17 (many YES responses), placing the suicidality score in the High category. Criterion 3: Both O1a and O1b are NO, meeting the criterion. Therefore, all criteria are met.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    },
+    "Current": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 is met because multiple questions other than B1 are coded YES (e.g., B2, B3_2, B5, B6, B7, B8, B9, B11, B12, B13, B14, B15, B18). Criterion 2 (current suicidality) cannot be confirmed as no explicit suicidality indicator is provided; O1a and O1b are both NO, which satisfies Criterion 3. Since Criterion 2 is not clearly met, overall diagnosis is false.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    },
+    "LIFETIME ATTEMPT": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 is met because multiple questions other than B1 are coded YES (e.g., B2, B3_2, B5, B6, B7, B8, B9, B11, B12, B13, B14, B15, B18). Criterion 2 is met as the diagnostic group is LIFETIME ATTEMPT, implying suicidality is lifetime. Criterion 3 is met since O1a = NO and O1b = NO. Therefore, all criteria for LIFETIME ATTEMPT diagnosis are satisfied.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    },
+    "LIKELY IN NEAR FUTURE": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 is met because multiple questions other than B1 are coded YES (e.g., B2, B3_2, B5, B6, B7, B8, B9, B11, B12, B13, B14, B15, B18). Criterion 2 (suicidality likely in near future) cannot be confirmed or denied based on the provided data as no explicit suicidality indicator is given. Criterion 3 is met because both O1a and O1b are NO. Since criterion 2 is not confirmed, the overall diagnosis is false.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    },
+    "SUICIDAL BEHAVIOR DISORDER": {
+        "diagnosis": true,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 is met because B18 is coded YES. Criterion 2 is met as the suicidal act was started when the subject was not in a state of confusion or delirium (implied by the absence of contradictory information and the requirement to answer YES). Criterion 3 is met since the suicidal act was done without a political or religious purpose (implied by the absence of contradictory information and the requirement to answer YES). Criterion 4 is met because O1a and O1b are both NO. Therefore, all criteria for Suicidal Behavior Disorder are met.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    }
+}

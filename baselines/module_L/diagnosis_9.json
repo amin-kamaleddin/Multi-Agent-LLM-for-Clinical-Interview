@@ -1,0 +1,6 @@
+{
+    "positive": {
+        "diagnosis": true,
+        "reasoning": "Criterion A1 (restriction of energy intake): MET \u2014 patient expresses a need to maintain control over eating and weight, indicating restrictive behaviors. Criterion A2 (intense fear of gaining weight): MET \u2014 patient describes feelings of anxiety when the scale number increases, suggesting a fear of weight gain. Criterion A3 (disturbance in body image): MET \u2014 patient mentions concerns about body image and comparing themselves to others. Criterion A4 (significantly low weight): MET \u2014 patient reports a weight that is ten pounds lower than their usual healthy weight. Total: 4 of 4 criteria met (threshold \u22651). Duration: not explicitly stated, but symptoms appear to be current based on context. Functional impairment: met \u2014 patient describes feeling exhausted from managing these thoughts and pressures. Exclusions: not triggered. Diagnosis: TRUE \u2014 all criteria for anorexia nervosa are met with evidence of functional impairment."
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "lifetime": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (multiple attacks): MET \u2014 patient stated, 'There have definitely been times when I\u2019ve felt an overwhelming wave of anxiety or fear, even in situations that most people seem perfectly relaxed in.' Criterion 2 (4 or more symptoms): MET \u2014 patient endorsed 10 symptoms: racing heart, sweating, trembling, shortness of breath, choking sensation, chest pain, nausea, dizziness, tingling, and feelings of unreality. Criterion 3 (no other disorders): MET \u2014 patient confirmed no substance use or medical conditions that could explain symptoms. Total: 10 of 13 symptoms met (threshold \u22654). Diagnosis: TRUE \u2014 full criteria met with no exclusions."
+    },
+    "current": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (current attacks): MET \u2014 patient described ongoing panic attacks and persistent concern about future attacks. Criterion 2 (no other disorders): MET \u2014 patient confirmed no substance use or medical conditions that could explain symptoms. Diagnosis: TRUE \u2014 current symptoms and concerns meet the criteria."
+    }
+}

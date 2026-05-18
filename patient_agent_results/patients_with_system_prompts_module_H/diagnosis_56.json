@@ -1,0 +1,18 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "H7 is not provided, so cannot confirm it is YES; H3a-b answers are unknown but at least one would be needed as YES; H4a-g and H5a-f answers are unknown but at least two each would be needed as YES; O1a and O1b are not provided, but both must be NO. Given only H1=NO and no other data, none of the criteria can be confirmed as met.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    },
+    "depersonalization, derealization or with delayed expression": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "H7 is not provided, so cannot confirm it is YES; H3a-b, H4a-g, and H5a-f answers are not provided, so cannot confirm if symptom group criteria are met; O1a and O1b answers are not provided, so cannot confirm if both are NO. Therefore, criteria 1, 3, 4, 5, and 6 cannot be confirmed as met. Since H7 is not YES, criterion 1 fails, so diagnosis is false.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    }
+}

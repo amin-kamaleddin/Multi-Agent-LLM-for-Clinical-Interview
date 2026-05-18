@@ -1,0 +1,10 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "reasoning": "Criterion A1 (exposure to trauma): NOT MET \u2014 patient explicitly stated 'I haven't been through anything like that.' No traumatic event was reported. Criterion A2 (intrusive symptoms): NOT MET \u2014 no trauma reported, thus no intrusive symptoms can be assessed. Criterion A3 (avoidance): NOT MET \u2014 avoidance symptoms cannot be assessed without trauma exposure. Criterion A4 (negative alterations in cognition and mood): NOT MET \u2014 no trauma exposure means no negative alterations can be assessed. Criterion A5 (alterations in arousal and reactivity): NOT MET \u2014 again, without trauma exposure, this criterion cannot be assessed. Total: 0 of 5 criteria met (threshold \u22651). Duration: not applicable as no trauma was reported. Functional impairment: not applicable as no symptoms were endorsed. Exclusions: not triggered as no trauma was reported. Diagnosis: FALSE \u2014 no evidence of trauma exposure or related symptoms."
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "reasoning": "Criterion A1 (exposure to trauma): NOT MET \u2014 patient explicitly stated 'I haven't been through anything like that.' No traumatic event was reported. Total: 0 of 5 criteria met (threshold \u22652). Diagnosis: FALSE \u2014 no evidence of trauma exposure or related symptoms."
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "current": {
+        "diagnosis": true,
+        "reasoning": "Criterion 1 (thoughts of being better off dead): MET \u2014 patient stated, 'there have been moments recently when I've thought it might be easier if I weren't here.' Criterion 2 (thoughts of harming self): MET \u2014 patient mentioned, 'I've had those thoughts a few times over the past month.' Criterion 3 (frequency of thoughts): MET \u2014 patient indicated these thoughts occur 'more than just a few times' and 'especially under stress.' Criterion 4 (intensity of thoughts): MET \u2014 patient described the thoughts as 'pretty intense' during stressful times. Criterion 5 (specific plans): NOT MET \u2014 patient denied having a specific plan or timeframe for suicide. Criterion 6 (intent to act): NOT MET \u2014 patient stated, 'I didn't intend to act on those thoughts.' Criterion 7 (impulse to kill): MET \u2014 patient expressed feeling an impulse to end their life during overwhelming moments. Criterion 8 (difficulty resisting impulses): MET \u2014 patient acknowledged it was challenging to push the thoughts away. Criterion 9 (active steps towards suicide): NOT MET \u2014 patient indicated they did not take active steps towards a suicide attempt. Total: 6 of 9 criteria met (threshold \u22655). Duration: met (symptoms reported in the past month). Functional impairment: met (patient described feelings as overwhelming and distressing). Exclusions: not triggered (no substance use or medical conditions reported). Diagnosis: TRUE \u2014 the patient meets the criteria for current suicidality with significant distress and functional impairment."
+    },
+    "lifetime": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (lifetime attempt): NOT MET \u2014 patient stated, 'there have been moments when I've thought about it seriously, but I didn't go through with any attempts.' Total: 0 of 1 criteria met (threshold \u22651). Diagnosis: FALSE \u2014 the patient does not meet the criteria for a lifetime suicide attempt."
+    },
+    "likely in near future": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (likelihood of attempt): NOT MET \u2014 patient rated likelihood of attempting suicide within the next 3 months as 30, indicating low intent. Total: 0 of 1 criteria met (threshold \u22651). Diagnosis: FALSE \u2014 the patient does not meet the criteria for likelihood of a near-future suicide attempt."
+    },
+    "suicidal behavior disorder": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (B18): NOT MET \u2014 patient did not report any suicide attempts. Total: 0 of 1 criteria met (threshold \u22651). Diagnosis: FALSE \u2014 the patient does not meet the criteria for suicidal behavior disorder."
+    }
+}

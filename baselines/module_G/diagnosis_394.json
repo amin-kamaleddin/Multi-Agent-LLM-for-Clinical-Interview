@@ -1,0 +1,10 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (obsessions): MET \u2014 patient stated 'I have had thoughts about being dirty and contaminated quite a bit lately.' Criterion 2 (compulsions): MET \u2014 patient reported 'I've found myself washing my hands quite a lot lately, more than I think is normal.' Criterion 3 (distress/functional impairment): MET \u2014 patient indicated that these thoughts and behaviors 'definitely affect my daily routine and sometimes makes it hard to focus on other things.' Criterion 4 (exclusion criteria): MET \u2014 patient denied substance use or medical conditions that could explain symptoms. Total: 3 criteria met. Insight: goodOrFair \u2014 patient shows awareness of the excessive nature of their behaviors. Diagnosis: TRUE \u2014 full criteria met with significant distress and functional impairment confirmed."
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (recurrent obsessions): MET \u2014 patient described persistent intrusive thoughts. Criterion 2 (compulsions): MET \u2014 patient indicated repetitive hand washing. Total: 2 criteria met. Diagnosis: TRUE \u2014 recurrent nature of symptoms is evident from the patient's description."
+    }
+}

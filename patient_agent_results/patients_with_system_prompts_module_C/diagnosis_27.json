@@ -1,0 +1,10 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "C1b is not provided, so cannot determine if it is YES or NO; therefore, cannot assess criterion 1. C4b and C4c are not provided as valid quantities, so criterion 2 is not met. C7 is not provided as YES, so criterion 3 is not met. C4c, C5, and C6 are not provided as YES, so criterion 4 is not met. O1a and O1b are not provided, but since C0, C1a, and C2a_1 are NO, likely O1a and O1b are NO, so criterion 5 is met. Overall, not all criteria are met.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    }
+}

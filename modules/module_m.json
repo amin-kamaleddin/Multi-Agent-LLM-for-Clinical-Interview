@@ -1,0 +1,110 @@
+{
+  "module": {
+    "id": "M",
+    "name": "Bulimia nervosa"
+  },
+  "instructions": [
+
+  ],
+  "questions": [
+    {
+      "id": "M1",
+      "prompt": "In the past three months, did you have eating binges or times when you ate a very large amount of food within a 2-hour period?",
+      "responseType": "yes_no",
+      "next": { "yes": "M2",
+        "no": "DIAGNOSTIC",
+        "red_flag": "END_MODULE"
+      }
+    },
+    {
+      "id": "M2",
+      "prompt": "During these binges, did you feel that your eating was out of control?",
+      "responseType": "yes_no",
+      "next": { "yes": "M3",
+        "no": "DIAGNOSTIC",
+        "red_flag": "END_MODULE"
+      }
+    },
+    {
+      "id": "M3",
+      "prompt": "In the last 3 months, did you have eating binges as often as once a week?",
+      "responseType": "yes_no",
+      "next": { "yes": "M4",
+        "no": "DIAGNOSTIC",
+        "red_flag": "END_MODULE"
+      }
+    },
+    {
+      "id": "M4",
+      "prompt": "Did you do anything to compensate for, or to prevent a weight gain, like vomiting, fasting, exercising or taking laxatives, enemas, diuretics (fluid pills), or other medications? Did you do this as often as once a week?",
+      "responseType": "yes_no",
+      "next": { "yes": "M4a",
+        "no": "DIAGNOSTIC",
+        "red_flag": "END_MODULE"
+      }
+    },
+    {
+      "id": "M4a",
+      "responseType": "quantity",
+      "prompt": "Number of Episodes of Inappropriate Compensatory Behaviors per Week?",
+      "next": {
+        "valid_quantity": "M4b",
+        "red_flag": "END_MODULE"
+      }
+    },
+    {
+      "id": "M4a",
+      "responseType": "quantity",
+      "prompt": "Number of Episodes of Inappropriate Compensatory Behaviors per Week?",
+      "next": {
+        "valid_quantity": "M4b",
+        "red_flag": "END_MODULE"
+      }
+    },
+    {
+      "id": "M4b",
+      "responseType": "quantity",
+      "prompt": "Number of Days of Inappropriate Compensatory Behaviors per Week?",
+      "next": {
+        "valid_quantity": "M5",
+        "red_flag": "END_MODULE"
+      }
+    },
+    {
+      "id": "M5",
+      "responseType": "yes_no",
+      "prompt": "Does your body weight or shape greatly influence how you feel about yourself?",
+      "next": {
+        "yes": "M7",
+        "no": "DIAGNOSTIC",
+        "red_flag": "END_MODULE"
+      }
+    },
+    {
+      "id": "M7",
+      "responseType": "yes_no",
+      "prompt": "Do these binges occur only when you are under the bmi threshold? for example the threshold for 170 cm (5'7 ft) is 49 kg (109lbs)",
+      "next": {
+        "yes": "DIAGNOSTIC",
+        "no": "DIAGNOSTIC",
+        "red_flag": "END_MODULE"
+      }
+    }
+
+
+  ],
+  "diagnosticCriteria": {
+    "bulimianervosa": {
+      "current": [
+        "M5 coded YES",
+        "M7 coded YES"
+      ],
+      "current, Binge Eating Purging Type": [
+        "M7 coded NO"
+      ],
+      "severity": [
+        "M4a quantity 1-3: Mild, 4-7: Moderate, 8-13: Severe, 14+: Extreme"
+      ]
+    }
+  }
+}

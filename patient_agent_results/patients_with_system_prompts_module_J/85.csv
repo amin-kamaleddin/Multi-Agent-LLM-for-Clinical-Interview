@@ -1,0 +1,14 @@
+question_id,ai_question,patient_response,classification,reasoning,timestamp,exchange_type
+J1,"In the past 12 months, did you take any of these drugs more than once, to get high, to feel elated, to get “a buzz” or to change your mood? 
+
+Stimulants: amphetamines, ""speed"", crystal meth, “crank”, Dexedrine, Ritalin, diet pills.  
+Cocaine: snorting, IV, freebase, crack, ""speedball"".  
+Opiates: heroin, morphine, Dilaudid, opium, Demerol, methadone, Darvon, codeine, Percodan, Vicodin, OxyContin.  
+Hallucinogens: LSD (""acid""), mescaline, peyote, psilocybin, STP, ""mushrooms"", “ecstasy”, MDA, MDMA.  
+Dissociative Drugs: PCP (Phencyclidine, ""Angel Dust"", ""Peace Pill"", “Hog”), or ketamine (“Special K”).  
+Inhalants: ""glue"", ethyl chloride, “rush”, nitrous oxide (""laughing gas""), amyl or butyl nitrate (""poppers"").  
+Cannabis: marijuana, hashish (""hash""), THC, ""pot"", ""grass"", ""weed"", ""reefer"".  
+Sedatives, Hypnotics or Anxiolytics: Quaalude, Seconal (""reds""), Valium, Xanax, Librium, Ativan, Dalmane, Halcion, barbiturates, Miltown, GHB, Roofinol, “Roofies”.  
+Miscellaneous: steroids, nonprescription sleep or diet pills. Cough Medicine? Any others?  
+
+Please feel free to explain if you're uncertain about any of the drugs mentioned.","I appreciate the thoroughness of your questions. Over the past year, I have occasionally used recreational substances like cannabis and a few others in social settings with friends, mostly during gatherings or events to unwind and have fun. My motivation has been more about social enjoyment rather than trying to change my mood or feel elated. It’s typically just a few times a month and never impacts my responsibilities or work performance. I’ve found that it can actually enhance my social interactions rather than cause any negative effects. I haven’t faced any issues with relationships or obligations, and those around me haven’t expressed any concerns about my behavior. Overall, it feels like a controlled aspect of my life rather than a source of disorder.",no,"The patient indicates that they have used recreational substances like cannabis a few times a month in social settings, but they emphasize that their motivation was for social enjoyment rather than to change their mood or feel elated. They also state that this behavior has not impacted their responsibilities or relationships. Therefore, while they acknowledge some use of substances, they do not indicate that it was done to get high or change their mood, which aligns with the situational exclusion rule. Thus, the response should be classified as 'no'.",2025-10-08T14:18:07.445868,initial

@@ -1,0 +1,18 @@
+{
+    "positive": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 is not met because there is no information indicating any of the symptom groups A3a\u2013A3g are coded YES; only A1a and A2a_2 are provided and both are NO. Criterion 2 (core symptom) is not met since A1a=NO and A2a_2=NO, and no other core symptom items are provided as YES. Criteria 3 and 4 cannot be evaluated due to lack of data, but failure of criteria 1 and 2 is sufficient to conclude diagnosis is false.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    },
+    "recurrent": {
+        "diagnosis": false,
+        "timeFrame": null,
+        "reasoning": "Criterion 1 (A5=YES) cannot be evaluated because A5 is not provided; assuming it is NO or unavailable. Criterion 2 requires O1a=NO and O1b=NO; only O1a and O1b are not provided, so cannot confirm. Based solely on given answers (A1a=NO, A2a_2=NO), criteria are not met.",
+        "insight": null,
+        "ticRelated": null,
+        "fearRestricted": null
+    }
+}

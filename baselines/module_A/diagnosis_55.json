@@ -1,0 +1,11 @@
+{
+    "positive": {
+        "diagnosis": true,
+        "reasoning": "Criterion A1 (depressed mood): MET \u2014 patient stated 'I feel sad and empty almost every day.' Criterion A2 (anhedonia): MET \u2014 'I no longer find joy in activities I once enjoyed, like gardening or sewing.' Criterion A3 (weight/appetite): MET \u2014 'My appetite has decreased nearly every day... I would say it has been a noticeable drop, over 5%.' Criterion A4 (sleep): MET \u2014 'I have found that my speech and movements have become slower recently... I have experienced trouble sleeping nearly every night.' Criterion A5 (psychomotor agitation/retardation): MET \u2014 'I have found that my speech and movements have become slower recently.' Criterion A6 (fatigue): MET \u2014 'I have felt tired... I don't have much energy to do things I used to enjoy.' Criterion A7 (worthlessness/guilt): MET \u2014 'I have felt worthless... I often find myself replaying memories and thinking about things I could have done differently.' Criterion A8 (concentration): MET \u2014 'I have had trouble concentrating and thinking clearly.' Criterion A9 (death/suicidal thoughts): UNCLEAR \u2014 patient mentioned thoughts about death but stated they were not serious intentions. Total: 8 of 9 criteria met (threshold \u22655). Duration: met (patient reports symptoms for 4 months). Functional impairment: met ('I find it harder to engage in activities I once enjoyed... I have withdrawn from those interactions.'). Exclusions: not triggered (no substance use or medical condition causing symptoms). Diagnosis: TRUE \u2014 full threshold met with significant functional impairment confirmed.",
+        "timeFrame": "recent"
+    },
+    "recurrent": {
+        "diagnosis": true,
+        "reasoning": "Criterion A5: YES \u2014 patient reported three episodes of depression in their lifetime, with at least 2 months between episodes. Exclusions: not triggered (no substance use or medical condition causing symptoms). Diagnosis: TRUE \u2014 recurrent episodes confirmed with significant distress and functional impairment."
+    }
+}

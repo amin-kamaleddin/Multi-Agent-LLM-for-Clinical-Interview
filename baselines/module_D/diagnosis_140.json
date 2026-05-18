@@ -1,0 +1,10 @@
+{
+    "lifetime": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (D3): NOT MET \u2014 patient stated 'I wouldn\u2019t say I\u2019ve had spells like that,' indicating no history of panic attacks. Criterion 2 (4 or more symptoms): NOT MET \u2014 no symptoms of panic attacks were endorsed. Criterion 3 (O1a and O1b): NOT APPLICABLE as the first criterion is not met. Total: 0 of 4 criteria met (threshold \u22654). Duration: not applicable as no symptoms were endorsed. Functional impairment: not applicable as no panic symptoms were reported. Exclusions: not triggered. Diagnosis: FALSE \u2014 no evidence of panic attacks or related symptoms."
+    },
+    "current": {
+        "diagnosis": false,
+        "reasoning": "Criterion 1 (D6): NOT MET \u2014 patient did not endorse any current panic attacks. Criterion 2 (O1a and O1b): NOT APPLICABLE as the first criterion is not met. Total: 0 of 2 criteria met (threshold \u22651). Duration: not applicable as no symptoms were endorsed. Functional impairment: not applicable as no panic symptoms were reported. Exclusions: not triggered. Diagnosis: FALSE \u2014 no evidence of current panic attacks."
+    }
+}
