@@ -2,9 +2,9 @@
 plot_overall_metric_comparison.py
 
 Produces a figure with 5 panels (one per metric: Accuracy, Specificity,
-Sensitivity, F1, F2).  Each panel shows the grand-mean ± 95 % CI for the
-three systems (Rule-Based, Single-Agent, Multi-Agent), computed from all
-module × condition rows in the respective evaluation-results CSV.
+Sensitivity, F1, F2). Each panel shows the mean ± 95 % CI for the three
+systems (Rule-Based, Single-Agent, Multi-Agent), computed over the matched
+module × group × condition rows in the evaluation-results CSVs.
 
 Output: figures/overall_metric_comparison.svg / .jpg
 """
@@ -32,6 +32,8 @@ METRIC_LABELS = {
     "f2":          "F2",
 }
 
+KEY_COLS = ["module", "group", "condition"]
+
 # ── Scenarios ──────────────────────────────────────────────────────────────────
 SCENARIOS = [
     ("Rule-Based",    RULE_CSV,   "#2ca02c"),   # green
@@ -40,32 +42,61 @@ SCENARIOS = [
 ]
 
 
-# ── Helper: compute grand mean ± 95 % CI ──────────────────────────────────────
-def mean_ci(series: pd.Series):
-    """Return (mean, ci_half_width) using the t-distribution."""
-    vals = series.dropna().values
-    n = len(vals)
-    if n < 2:
-        return float(vals[0]) if n == 1 else (np.nan, np.nan)
-    mean   = vals.mean()
-    se     = vals.std(ddof=1) / np.sqrt(n)
-    ci     = t.ppf(0.975, df=n - 1) * se
+# ── Load & merge on matched keys ──────────────────────────────────────────────
+def load_merged():
+    multi = pd.read_csv(MULTI_CSV)
+    single = pd.read_csv(SINGLE_CSV)
+    rule = pd.read_csv(RULE_CSV)
+
+    def tag(df: pd.DataFrame, tag: str):
+        rename = {f"{metric}_mean": f"{metric}_{tag}" for metric in METRICS}
+        return df[KEY_COLS + list(rename.keys())].rename(columns=rename)
+
+    merged = (tag(rule, "rule")
+              .merge(tag(single, "single"), on=KEY_COLS)
+              .merge(tag(multi, "multi"), on=KEY_COLS))
+
+    return merged
+
+
+# ── Helper: compute matched-row mean ± 95% CI ────────────────────────────────
+def row_mean_and_ci(values: pd.Series):
+    """
+    Compute mean ± 95% CI over the same matched row values used in
+    hypothesis_testing: one observation per module × group × condition row.
+    """
+    values = values.dropna().to_numpy(dtype=float)
+
+    n = len(values)
+    if n == 0:
+        return np.nan, np.nan
+    if n == 1:
+        return values[0], 0.0
+
+    mean = values.mean()
+    std = values.std(ddof=1)
+    se = std / np.sqrt(n)
+    ci = t.ppf(0.975, df=n - 1) * se
+
     return mean, ci
 
 
-# ── Load data ──────────────────────────────────────────────────────────────────
-dfs = {}
-for label, path, _ in SCENARIOS:
-    dfs[label] = pd.read_csv(path)
+# ── Load matched data ─────────────────────────────────────────────────────────
+merged = load_merged()
 
 
 # ── Build summary table ────────────────────────────────────────────────────────
 records = []
+scenario_tags = {
+    "Rule-Based": "rule",
+    "Single-Agent": "single",
+    "Multi-Agent": "multi",
+}
+
 for label, _, _ in SCENARIOS:
-    df = dfs[label]
+    tag = scenario_tags[label]
     for metric in METRICS:
-        col = f"{metric}_mean"
-        m, ci = mean_ci(df[col])
+        m, ci = row_mean_and_ci(merged[f"{metric}_{tag}"])
         records.append({"scenario": label, "metric": metric,
                         "mean": m, "ci": ci})
 
