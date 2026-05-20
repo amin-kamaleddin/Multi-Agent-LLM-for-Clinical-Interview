@@ -165,9 +165,7 @@ $$
 Written out directly:
 
 $$
-\bar{x}
-=
-\frac{x_1 + x_2 + \cdots + x_n}{n}
+\bar{x} = \frac{x_1 + x_2 + \cdots + x_n}{n}
 $$
 
 ### Sample Standard Deviation
@@ -189,11 +187,7 @@ $$
 Substituting the sample standard deviation formula:
 
 $$
-SE
-=
-\frac{
-\sqrt{\frac{1}{n-1}\sum_{i=1}^{n}(x_i-\bar{x})^2}
-}{\sqrt{n}}
+SE = \frac{\sqrt{\frac{1}{n-1}\sum_{i=1}^{n}(x_i-\bar{x})^2}}{\sqrt{n}}
 $$
 
 So the SE is the sample standard deviation of the matched row values divided by the square root of the number of non-missing matched rows.
