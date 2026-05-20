@@ -76,11 +76,7 @@ For one metric and one system, the script constructs the input vector exactly as
 
 1. Read the system-specific metric column from the merged table.
 
-Example for Multi-Agent Accuracy:
-
-$$
-\texttt{merged["accuracy\_multi"]}
-$$
+Example for Multi-Agent Accuracy: `merged["accuracy_multi"]`
 
 2. Drop missing values.
 
@@ -207,16 +203,16 @@ So the SE is the sample standard deviation of the matched row values divided by 
 The script uses a two-sided Student-$t$ confidence interval:
 
 $$
-\bar{x} \pm t_{0.975,\;n-1}\cdot SE
+\bar{x} \pm t_{0.975,\,n-1}\cdot SE
 $$
 
 So the plotted half-width is:
 
 $$
-CI_{95\%,\;half} = t_{0.975,\;n-1}\cdot \frac{s}{\sqrt{n}}
+\mathrm{CI}_{\text{half}} = t_{0.975,\,n-1}\cdot \frac{s}{\sqrt{n}}
 $$
 
-where $t_{0.975,\;n-1}$ is the 97.5th percentile of the $t$-distribution with $n-1$ degrees of freedom.
+where $t_{0.975,\,n-1}$ is the 97.5th percentile of the $t$-distribution with $n-1$ degrees of freedom.
 
 ### Edge Cases
 
@@ -451,16 +447,3 @@ $$
 
 with a `*` appended when the Bonferroni-corrected Wilcoxon result is significant.
 
-## 8. What This Document Does Not Cover
-
-This file intentionally does not document:
-
-- bootstrap confidence intervals from other scripts
-- McNemar's test from other scripts
-- metric definitions derived from raw TP/TN/FP/FN counts
-
-Those are outside the scope requested here.
-
-## 9. File Placement
-
-`docs/evaluation_statistics.md` is still a reasonable location because this is methodology documentation for evaluation outputs rather than implementation-specific inline comments.
