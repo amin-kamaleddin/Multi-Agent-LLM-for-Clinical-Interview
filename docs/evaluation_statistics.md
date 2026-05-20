@@ -46,11 +46,11 @@ and likewise for the other metrics.
 
 So the "raw data" used by these two scripts is not patient-level data. It is the matched row-level metric values already stored in the three evaluation CSVs.
 
-For each matched row \(i\), each system contributes one metric value:
+For each matched row $i$, each system contributes one metric value:
 
-\[
+$$
 x_i^{(\text{rule})}, \quad x_i^{(\text{single})}, \quad x_i^{(\text{multi})}
-\]
+$$
 
 for each metric in:
 
@@ -78,9 +78,9 @@ For one metric and one system, the script constructs the input vector exactly as
 
 Example for Multi-Agent Accuracy:
 
-\[
+$$
 \texttt{merged["accuracy\_multi"]}
-\]
+$$
 
 2. Drop missing values.
 
@@ -92,63 +92,63 @@ values = values.dropna().to_numpy(dtype=float)
 
 If the surviving matched row values are:
 
-\[
+$$
 x_1, x_2, \dots, x_n
-\]
+$$
 
 then those are the exact numbers used to compute the mean, standard deviation, standard error, and confidence interval.
 
-Each \(x_i\) is one matched `(module, group, condition)` row's metric value for that system.
+Each $x_i$ is one matched `(module, group, condition)` row's metric value for that system.
 
 ### Exact Formulas Used
 
 Let the non-missing matched row values for one metric and one system be:
 
-\[
+$$
 x_1, x_2, \dots, x_n
-\]
+$$
 
 where:
 
-\[
+$$
 x_i = \text{the metric value from matched row } i
-\]
+$$
 
 Then the script computes:
 
 Mean:
 
-\[
+$$
 \bar{x} = \frac{1}{n}\sum_{i=1}^{n} x_i
-\]
+$$
 
 Sample variance:
 
-\[
+$$
 s^2 = \frac{1}{n-1}\sum_{i=1}^{n}(x_i-\bar{x})^2
-\]
+$$
 
 Sample standard deviation:
 
-\[
+$$
 s = \sqrt{\frac{1}{n-1}\sum_{i=1}^{n}(x_i-\bar{x})^2}
-\]
+$$
 
 Standard error:
 
-\[
+$$
 SE = \frac{s}{\sqrt{n}}
-\]
+$$
 
 Substituting the standard deviation formula into the SE gives:
 
-\[
+$$
 SE =
 \sqrt{
 \frac{1}{n(n-1)}
 \sum_{i=1}^{n}(x_i-\bar{x})^2
 }
-\]
+$$
 
 This is mathematically equivalent to the implementation:
 
@@ -162,61 +162,61 @@ se = std / np.sqrt(n)
 
 For one metric and one system, the plotted mean is the arithmetic mean of those matched row values:
 
-\[
+$$
 \bar{x} = \frac{1}{n}\sum_{i=1}^{n} x_i
-\]
+$$
 
 Written out directly:
 
-\[
+$$
 \bar{x}
 =
 \frac{x_1 + x_2 + \cdots + x_n}{n}
-\]
+$$
 
 ### Sample Standard Deviation
 
 The script uses the sample standard deviation with `ddof=1`:
 
-\[
+$$
 s = \sqrt{\frac{1}{n-1}\sum_{i=1}^{n}(x_i-\bar{x})^2}
-\]
+$$
 
 ### Standard Error
 
 The standard error is then:
 
-\[
+$$
 SE = \frac{s}{\sqrt{n}}
-\]
+$$
 
 Substituting the sample standard deviation formula:
 
-\[
+$$
 SE
 =
 \frac{
 \sqrt{\frac{1}{n-1}\sum_{i=1}^{n}(x_i-\bar{x})^2}
 }{\sqrt{n}}
-\]
+$$
 
 So the SE is the sample standard deviation of the matched row values divided by the square root of the number of non-missing matched rows.
 
 ### 95% Confidence Interval
 
-The script uses a two-sided Student-\(t\) confidence interval:
+The script uses a two-sided Student-$t$ confidence interval:
 
-\[
+$$
 \bar{x} \pm t_{0.975,\;n-1}\cdot SE
-\]
+$$
 
 So the plotted half-width is:
 
-\[
+$$
 CI_{95\%,\;half} = t_{0.975,\;n-1}\cdot \frac{s}{\sqrt{n}}
-\]
+$$
 
-where \(t_{0.975,\;n-1}\) is the 97.5th percentile of the \(t\)-distribution with \(n-1\) degrees of freedom.
+where $t_{0.975,\;n-1}$ is the 97.5th percentile of the $t$-distribution with $n-1$ degrees of freedom.
 
 ### Edge Cases
 
@@ -254,9 +254,9 @@ The values entering these tests are the same matched row-level vectors described
 
 For each metric separately, the script applies:
 
-\[
+$$
 \text{Friedman}(x^{(\text{rule})}, x^{(\text{single})}, x^{(\text{multi})})
-\]
+$$
 
 using `scipy.stats.friedmanchisquare`.
 
@@ -274,9 +274,9 @@ For each metric, the script writes:
 
 The means reported are:
 
-\[
+$$
 \bar{x}^{(\text{rule})}, \quad \bar{x}^{(\text{single})}, \quad \bar{x}^{(\text{multi})}
-\]
+$$
 
 and the standard deviations are the sample standard deviations with `ddof=1`.
 
@@ -284,9 +284,9 @@ and the standard deviations are the sample standard deviations with `ddof=1`.
 
 Before correction, the script labels a result significant when:
 
-\[
+$$
 p < 0.05
-\]
+$$
 
 ### BH-FDR Correction Across Metrics
 
@@ -310,17 +310,17 @@ For each metric, the script performs three two-sided paired Wilcoxon signed-rank
 - Rule-Based vs Multi-Agent
 - Single-Agent vs Multi-Agent
 
-If two matched systems have row values \(x_i\) and \(y_i\), define the paired differences:
+If two matched systems have row values $x_i$ and $y_i$, define the paired differences:
 
-\[
+$$
 d_i = x_i - y_i
-\]
+$$
 
 The script runs:
 
-\[
+$$
 \text{Wilcoxon}(x, y; \text{two-sided})
-\]
+$$
 
 using `scipy.stats.wilcoxon`.
 
@@ -330,9 +330,9 @@ This tests the null hypothesis that the paired differences are symmetrically cen
 
 The script also reports the average paired difference:
 
-\[
+$$
 \overline{d} = \frac{1}{n}\sum_{i=1}^{n}(x_i - y_i)
-\]
+$$
 
 This is stored as `Mean_Difference`.
 
@@ -340,9 +340,9 @@ This is stored as `Mean_Difference`.
 
 The script assigns a direction based on the sign of `Mean_Difference`:
 
-- if \(\overline{d} > 0\), left system > right system
-- if \(\overline{d} < 0\), right system > left system
-- if \(\overline{d} = 0\), Equal
+- if $\overline{d} > 0$, left system > right system
+- if $\overline{d} < 0$, right system > left system
+- if $\overline{d} = 0$, Equal
 
 ## 5. Multiple-Testing Correction for Pairwise Tests
 
@@ -352,15 +352,15 @@ Two corrections are applied to each pairwise Wilcoxon output table.
 
 The script defines:
 
-\[
+$$
 N_{\text{pairs}} = 3
-\]
+$$
 
 and computes:
 
-\[
+$$
 p_{\text{Bonferroni}} = \min(3p, 1)
-\]
+$$
 
 This is stored as:
 
@@ -368,9 +368,9 @@ This is stored as:
 
 and significance is defined as:
 
-\[
+$$
 p_{\text{Bonferroni}} < 0.05
-\]
+$$
 
 stored in:
 
@@ -389,11 +389,11 @@ The adjusted values are stored as:
 
 ## 6. Effect Size: Rank-Biserial Correlation
 
-For each Wilcoxon test, the script computes the effect size from the Wilcoxon statistic \(W\) and the matched sample size \(n\):
+For each Wilcoxon test, the script computes the effect size from the Wilcoxon statistic $W$ and the matched sample size $n$:
 
-\[
+$$
 r = 1 - \frac{2W}{n(n+1)}
-\]
+$$
 
 This is implemented in:
 
@@ -410,8 +410,8 @@ and saved as:
 
 Because the effect size is computed after calling Wilcoxon on `(x, y)` in that order:
 
-- positive \(r\) means the left-hand system tends to score higher
-- negative \(r\) means the right-hand system tends to score higher
+- positive $r$ means the left-hand system tends to score higher
+- negative $r$ means the right-hand system tends to score higher
 
 This interpretation is also reflected in the summary figure colorbar label:
 
@@ -425,9 +425,9 @@ The script produces a two-panel summary figure.
 
 A horizontal bar chart of:
 
-\[
+$$
 \chi^2_{\text{Friedman}}
-\]
+$$
 
 for each metric.
 
@@ -438,16 +438,16 @@ Bar color is based on FDR-corrected Friedman significance:
 
 ### Right Panel
 
-A heatmap of pairwise Wilcoxon effect sizes \(r\):
+A heatmap of pairwise Wilcoxon effect sizes $r$:
 
 - rows: metrics
 - columns: system pairs
 
 Each cell shows:
 
-\[
+$$
 \text{Effect size } r
-\]
+$$
 
 with a `*` appended when the Bonferroni-corrected Wilcoxon result is significant.
 
